@@ -1,1 +1,14 @@
-{ "extends": "stylelint-config-standard" }
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["custom-variant", "theme"]
+      }
+    ],
+    "hue-degree-notation": null,
+    "import-notation": "string",
+    "lightness-notation": null
+  }
+}
