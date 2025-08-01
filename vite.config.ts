@@ -6,6 +6,7 @@ import stylelint from 'vite-plugin-stylelint'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: 'https://80PercentLean.github.io/cupertino-pogo-map/',
   server: { host: '0.0.0.0' },
   plugins: [
     react(),
