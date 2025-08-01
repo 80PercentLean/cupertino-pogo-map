@@ -9,10 +9,13 @@ body {
 }
 
 html,
-body,
-#map {
+body {
   height: 100vh;
   width: 100vw;
+}
+
+#map {
+  height: calc(100vh - 36px);
 }
 
 @theme inline {

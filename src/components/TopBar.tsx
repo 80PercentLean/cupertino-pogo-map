@@ -8,7 +8,7 @@ import { NavLink } from 'react-router'
 
 export default function TopBar() {
   return (
-    <div className="bg-background fixed top-0 right-0 left-0 z-1000">
+    <div className="bg-background fixed top-0 right-0 left-0 z-1000 h-9">
       <NavigationMenu className="mx-auto my-0">
         <NavigationMenuList className="flex items-center">
           <NavigationMenuItem>
