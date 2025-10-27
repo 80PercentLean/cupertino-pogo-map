@@ -507,6 +507,246 @@
       },
       "geometry": { "coordinates": [-122.046133, 37.326032], "type": "Point" },
       "id": 52
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cupertino Historical Museum",
+        "type": "PokeStop",
+        "source": "Eyeball",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04266995394856, 37.325583870011684],
+        "type": "Point"
+      },
+      "id": 53
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Visual & Performing Arts Center",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.043944, 37.32198],
+        "type": "Point"
+      },
+      "id": 54
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Basketball Courts at Cupertino Sports Center",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.043675, 37.323121],
+        "type": "Point"
+      },
+      "id": 55
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tennis Court 4 at Cupertino Sports Center",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.042349, 37.32349],
+        "type": "Point"
+      },
+      "id": 56
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "In loving memory of Bhimachar Venkatesh",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.043792, 37.326122],
+        "type": "Point"
+      },
+      "id": 57
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pickleball at Memorial Park",
+        "type": "PokeStop",
+        "source": "Eyeball",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0443779230118, 37.326594901760316],
+        "type": "Point"
+      },
+      "id": 58
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Racket Sports Sign",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.045051, 37.326272],
+        "type": "Point"
+      },
+      "id": 59
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza College Beach Gate",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.044265, 37.316356],
+        "type": "Point"
+      },
+      "id": 60
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tennis Court 6 at Cupertino Sports Center",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.042062, 37.32414],
+        "type": "Point"
+      },
+      "id": 61
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tennis Machine Court at Cupertino Sports Center",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.041898, 37.323326],
+        "type": "Point"
+      },
+      "id": 62
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tennis Court 7 at Cupertino Sports Center",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.041764, 37.324126],
+        "type": "Point"
+      },
+      "id": 63
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tennis Court 16 at Cupertino Sports Center",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.044121, 37.323517],
+        "type": "Point"
+      },
+      "id": 64
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza Flea Market",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.043214, 37.320858],
+        "type": "Point"
+      },
+      "id": 65
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tennis Court 15 at Cupertino Sports Center",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.044118, 37.323457],
+        "type": "Point"
+      },
+      "id": 66
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza College Farmers' Market",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.041927, 37.322319],
+        "type": "Point"
+      },
+      "id": 67
     }
   ]
 }

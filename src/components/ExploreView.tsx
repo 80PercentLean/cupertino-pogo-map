@@ -5,6 +5,7 @@ import {
   LayersControl,
   MapContainer,
   TileLayer,
+  ZoomControl,
 } from 'react-leaflet'
 
 import Gyms from './Gyms'
@@ -35,17 +36,16 @@ export default function ExploreView() {
       id="map"
       attributionControl={false}
       center={center}
-      maxBounds={boundaries}
+      // maxBounds={boundaries}
       maxBoundsViscosity={1}
       maxZoom={20}
       minZoom={15}
       scrollWheelZoom={!IS_MOBILE}
       zoom={16}
-      className="mt-9 w-screen"
+      zoomControl={false}
+      className="mt-12 w-screen"
     >
-      <PlacedMarkers />
       <LeafletDebug />
-
       <LayersControl position="topright">
         <LayersControl.BaseLayer name="Regular" checked>
           <TileLayer
@@ -70,19 +70,13 @@ export default function ExploreView() {
           </LayerGroup>
         </LayersControl.Overlay>
         <LayersControl.Overlay name="Parking" checked>
-          <LayerGroup>
-            <Parking />
-          </LayerGroup>
+          <Parking />
         </LayersControl.Overlay>
         <LayersControl.Overlay name="PokeStops" checked>
-          <LayerGroup>
-            <PokeStops />
-          </LayerGroup>
+          <PokeStops />
         </LayersControl.Overlay>
         <LayersControl.Overlay name="Gyms" checked>
-          <LayerGroup>
-            <Gyms />
-          </LayerGroup>
+          <Gyms />
         </LayersControl.Overlay>
         <LayersControl.Overlay name="Power Spots">
           <LayerGroup>
@@ -90,6 +84,8 @@ export default function ExploreView() {
           </LayerGroup>
         </LayersControl.Overlay>
       </LayersControl>
+      <PlacedMarkers />
+      <ZoomControl position="bottomright" />
     </MapContainer>
   )
 }

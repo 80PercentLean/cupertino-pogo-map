@@ -14,7 +14,7 @@ export default function PowerSpots() {
       data={powerSpotsJson}
       style={{ fillOpacity: 0, color: '#FFA500', weight: 1 }}
       pointToLayer={({ properties }, latlng) =>
-        L.marker(latlng, { icon: iconPowerSpot }).bindPopup(
+        L.marker(latlng, { icon: iconPowerSpot, riseOnHover: true }).bindPopup(
           `Power Spot: ${properties.name}`,
         )
       }

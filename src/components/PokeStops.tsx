@@ -14,7 +14,7 @@ export default function PokeStops() {
       data={pokeStopsJson}
       style={{ fillOpacity: 0, color: '#FFA500', weight: 1 }}
       pointToLayer={({ properties }, latlng) =>
-        L.marker(latlng, { icon: iconPokeStop }).bindPopup(
+        L.marker(latlng, { icon: iconPokeStop, riseOnHover: true }).bindPopup(
           `PokeStop: ${properties.name}`,
         )
       }

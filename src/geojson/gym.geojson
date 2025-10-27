@@ -127,6 +127,7 @@
       "properties": {
         "name": "Whole Foods Cupertino Mural",
         "type": "Gym",
+        "disabled": true,
         "source": "Ingress",
         "marker-color": "#ff2600",
         "marker-size": "large",

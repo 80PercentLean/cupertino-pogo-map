@@ -1,9 +1,8 @@
+import { Button } from '@/components/ui/button'
 import { isMobile } from '@/util'
 import type { LatLng, LeafletEventHandlerFnMap } from 'leaflet'
 import { useState } from 'react'
 import { Marker, Popup, useMapEvent } from 'react-leaflet'
-
-import { Button } from './ui/button'
 
 const IS_MOBILE = isMobile()
 

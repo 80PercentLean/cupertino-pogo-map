@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && cp dist/index.html dist/404.html",
     "lint": "eslint .",
     "preview": "vite preview",
     "format": "npm run format:check",
@@ -15,6 +15,7 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@radix-ui/react-dropdown-menu": "^2.1.15",
     "@radix-ui/react-menubar": "^1.1.15",
     "@radix-ui/react-navigation-menu": "^1.2.13",
     "@radix-ui/react-slot": "^1.2.3",
@@ -54,5 +55,6 @@
     "vite": "^7.0.4",
     "vite-plugin-stylelint": "^6.0.2",
     "vitest": "^3.2.4"
-  }
+  },
+  "license": "MIT"
 }
