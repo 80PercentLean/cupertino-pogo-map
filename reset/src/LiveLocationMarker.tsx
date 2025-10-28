@@ -14,7 +14,7 @@ export default function LiveLocationMarker(props: LiveLocationMarkerProps) {
       watchId = navigator.geolocation.watchPosition(
         (position) => {
           console.log(
-            "hey",
+            "GPS coordinates",
             position.coords.latitude,
             position.coords.longitude,
           );
