@@ -1,6 +1,7 @@
+import { type LatLngExpression } from "leaflet";
 import { useEffect, useState } from "react";
 import { Circle } from "react-leaflet";
-import { type LatLngExpression } from "leaflet";
+
 import CMarker, { type CMarkerProps } from "./CMarker";
 
 export type LiveLocationMarkerProps = Omit<CMarkerProps, "position">;

@@ -1,6 +1,7 @@
+import { ErrorBoundary } from "react-error-boundary";
+
 import MapView from "./MapView";
 import TopBar from "./TopBar";
-import { ErrorBoundary } from "react-error-boundary";
 
 export default function App() {
   return (

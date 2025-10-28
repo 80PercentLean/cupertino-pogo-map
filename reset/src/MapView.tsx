@@ -1,5 +1,6 @@
-import { MapContainer, TileLayer } from "react-leaflet";
 import type { LatLngExpression } from "leaflet";
+import { MapContainer, TileLayer } from "react-leaflet";
+
 import LiveLocationMarker from "./LiveLocationMarker";
 
 const CENTER: LatLngExpression = [37.32185397836693, -122.0448660850525];

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { Marker, Popup, type MarkerProps } from "react-leaflet";
+import { Marker, type MarkerProps, Popup } from "react-leaflet";
 
 type CMarkerExclusiveProps = {
   "data-testid"?: string;
