@@ -7,7 +7,7 @@ export type LiveLocationMarkerProps = Omit<CMarkerProps, "position">;
 
 export default function LiveLocationMarker(props: LiveLocationMarkerProps) {
   const [location, setLocation] = useState<LatLngExpression | null>(null);
-  const [accuracy, setAccuracy] = useState<number | null>(null);
+  const [accuracy, setAccuracy] = useState<number | null>(80);
 
   useEffect(() => {
     let watchId: number | null = null;
@@ -28,6 +28,9 @@ export default function LiveLocationMarker(props: LiveLocationMarkerProps) {
           console.log(`ERROR(${error.code}): ${error.message}`);
         },
       );
+    } else {
+      // TODO: Show error message
+      console.error("Geolocation API is not available.");
     }
 
     return () => {
@@ -38,10 +41,10 @@ export default function LiveLocationMarker(props: LiveLocationMarkerProps) {
   }, []);
 
   if (location) {
-    let accuracyCircle = null;
-    if (accuracy) {
-      accuracyCircle = <Circle center={location} radius={accuracy} />;
-    }
+    const accuracyCircle = accuracy && (
+      <Circle center={location} radius={accuracy} />
+    );
+
     return (
       <>
         {accuracyCircle}
