@@ -23,6 +23,7 @@ L.Marker.prototype.options.icon = DefaultIcon;
 export const iconGym = L.icon({
   iconSize: [50, 50],
   iconUrl: gymIcon,
+  popupAnchor: [0, -14],
   shadowSize: [20, 20],
   shadowAnchor: [8, 0],
   shadowUrl: markerShadow,
@@ -31,6 +32,7 @@ export const iconGym = L.icon({
 export const iconPokeStop = L.icon({
   iconUrl: pokeStopIcon,
   iconSize: [40, 40],
+  popupAnchor: [0, -10],
 });
 
 export const iconPowerSpot = L.icon({

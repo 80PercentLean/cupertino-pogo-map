@@ -1,15 +1,15 @@
 import L from "leaflet";
 import { GeoJSON } from "react-leaflet";
 
-import gyms from "./geojson/gyms.geojson?raw";
-import { iconGym } from "./leafletIcons";
+import pokestops from "./geojson/pokestops.geojson?raw";
+import { iconPokeStop } from "./leafletIcons";
 
-const gymsJson = JSON.parse(gyms);
+const pokeStopsJson = JSON.parse(pokestops);
 
-export default function Gyms() {
+export default function PokeStops() {
   return (
     <GeoJSON
-      data={gymsJson}
+      data={pokeStopsJson}
       filter={(feature) => {
         if (feature.properties.disabled) {
           return false;
@@ -18,9 +18,9 @@ export default function Gyms() {
       }}
       pointToLayer={({ properties }, latlng) => {
         const marker = L.marker(latlng, {
-          icon: iconGym,
+          icon: iconPokeStop,
           riseOnHover: true,
-        }).bindPopup(`Gym: ${properties.name}`);
+        }).bindPopup(`PokéStop: ${properties.name}`);
 
         return marker;
       }}

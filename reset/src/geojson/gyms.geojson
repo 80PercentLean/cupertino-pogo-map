@@ -174,6 +174,48 @@
       },
       "geometry": { "coordinates": [-122.039936, 37.315089], "type": "Point" },
       "id": 13
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Tennis Courts",
+        "type": "Gym",
+        "source": "Ingress",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.04556, 37.326333], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gazebo at Cupertino Quinlan Center",
+        "type": "Gym",
+        "source": "Ingress",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.042751, 37.325804], "type": "Point" },
+      "id": 15
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cupertino Historical Museum",
+        "type": "Gym",
+        "source": "Eyeball",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04266995394856, 37.325583870011684],
+        "type": "Point"
+      },
+      "id": 16
     }
   ]
 }

@@ -5,6 +5,7 @@ import Gyms from "./Gyms";
 import L14Grid from "./L14Grid";
 import L17Grid from "./L17Grid";
 import LiveLocationMarker from "./LiveLocationMarker";
+import PokeStops from "./PokeStops";
 import { isMobile } from "./util";
 
 const CENTER: LatLngExpression = [37.32185397836693, -122.0448660850525];
@@ -45,6 +46,9 @@ export default function MapView() {
             maxZoom={20}
           />
         </LayersControl.BaseLayer>
+        <LayersControl.Overlay name="PokéStops" checked>
+          <PokeStops />
+        </LayersControl.Overlay>
         <LayersControl.Overlay name="Gyms" checked>
           <Gyms />
         </LayersControl.Overlay>
