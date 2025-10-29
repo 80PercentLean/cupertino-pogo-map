@@ -1,0 +1,413 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amazing Vijay - Magician",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0455587678593, 37.326824819594876],
+        "type": "Point"
+      },
+      "id": 51
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Made by TessS Embroidery",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04118657648746, 37.326604272317994],
+        "type": "Point"
+      },
+      "id": 52
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04397272495781, 37.32502904158278],
+        "type": "Point"
+      },
+      "id": 53
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lifetime Tennis",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04296024928402, 37.323280576924134],
+        "type": "Point"
+      },
+      "id": 53
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Picnic Area Sign",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044318, 37.325809], "type": "Point" },
+      "id": 54
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aidens Gazebo at Memorial Park",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.0446, 37.324811], "type": "Point" },
+      "id": 56
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Water Fountain",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045525, 37.324781], "type": "Point" },
+      "id": 56
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Toyokawa Stone Lantern",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.0451, 37.32409], "type": "Point" },
+      "id": 57
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sister Cities Bench",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045767, 37.323028], "type": "Point" },
+      "id": 59
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cupertino Historical Society",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04246018792959, 37.32576616758185],
+        "type": "Point"
+      },
+      "id": 60
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook Main Fountain",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.046857, 37.324589], "type": "Point" },
+      "id": 61
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Magda Lattin Trinom",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.046457, 37.322353], "type": "Point" },
+      "id": 78
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pagan Totem Pole",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045742, 37.3217], "type": "Point" },
+      "id": 79
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Two as One",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.04588, 37.321534], "type": "Point" },
+      "id": 80
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stellar Motion",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045898, 37.321455], "type": "Point" },
+      "id": 81
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Donation Tile Mosaic",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.047036, 37.321038], "type": "Point" },
+      "id": 82
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza College Stone",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.047215, 37.32127], "type": "Point" },
+      "id": 83
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "East Cottage",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.04744, 37.321161], "type": "Point" },
+      "id": 84
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mr. Sun Tea | Cupertino",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04050961121467, 37.322595764617716],
+        "type": "Point"
+      },
+      "id": 85
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Whole Foods Market",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.03955029836303, 37.32362016695076],
+        "type": "Point"
+      },
+      "id": 86
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nina Piano Lessons",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.03864090501474, 37.32686126350964],
+        "type": "Point"
+      },
+      "id": 87
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shell",
+        "type": "Power Spot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0410276585766, 37.32313692451723],
+        "type": "Point"
+      },
+      "id": 97
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Abundant Life Assembly Of God",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04030790913308, 37.32467218675771],
+        "type": "Point"
+      },
+      "id": 98
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ike''s Love & Sandwiches",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04105463444958, 37.32255007000235],
+        "type": "Point"
+      },
+      "id": 99
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Windows Corporation",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04064237219393, 37.32171695522658],
+        "type": "Point"
+      },
+      "id": 100
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza College Stadium & Track",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04505984463718, 37.317534318333415],
+        "type": "Point"
+      },
+      "id": 101
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza Instrument Music Building",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04558097178764, 37.321949754956776],
+        "type": "Point"
+      },
+      "id": 102
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Commons Entrance",
+        "type": "Power Spot",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.043016, 37.325131],
+        "type": "Point"
+      },
+      "id": 102
+    }
+  ]
+}
