@@ -1,6 +1,7 @@
 import type { LatLngBoundsExpression, LatLngExpression } from "leaflet";
 import { LayersControl, MapContainer, TileLayer } from "react-leaflet";
 
+import DevPois from "./DevPois";
 import Gyms from "./Gyms";
 import L14Grid from "./L14Grid";
 import L17Grid from "./L17Grid";
@@ -53,13 +54,16 @@ export default function MapView() {
         <LayersControl.Overlay name="Gyms" checked>
           <Gyms />
         </LayersControl.Overlay>
-        <LayersControl.Overlay name="Power Spots">
+        <LayersControl.Overlay name="Power Spots" checked>
           <PowerSpots />
         </LayersControl.Overlay>
-        <LayersControl.Overlay name="S2 Cells (L17)">
+        <LayersControl.Overlay name="TBD" checked>
+          <DevPois />
+        </LayersControl.Overlay>
+        <LayersControl.Overlay name="S2 Cells (L17)" checked>
           <L17Grid />
         </LayersControl.Overlay>
-        <LayersControl.Overlay name="S2 Cells (L14)">
+        <LayersControl.Overlay name="S2 Cells (L14)" checked>
           <L14Grid />
         </LayersControl.Overlay>
       </LayersControl>

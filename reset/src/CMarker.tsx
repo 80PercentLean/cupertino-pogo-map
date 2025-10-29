@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { Marker, type MarkerProps, Popup } from "react-leaflet";
+import { Marker, type MarkerProps } from "react-leaflet";
 
 type CMarkerExclusiveProps = {
   "data-testid"?: string;
@@ -23,11 +23,5 @@ export default function CMarker(props: CMarkerProps) {
     }
   }, []);
 
-  return (
-    <Marker ref={markerRef} {...props}>
-      <Popup>
-        A pretty CSS3 popup. <br /> Easily customizable.
-      </Popup>
-    </Marker>
-  );
+  return <Marker ref={markerRef} {...props} />;
 }

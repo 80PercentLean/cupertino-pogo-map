@@ -204,6 +204,22 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Kingdom Hall",
+        "type": "Gym",
+        "source": "Eyeball",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.045909, 37.315491],
+        "type": "Point"
+      },
+      "id": 16
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Cupertino Historical Museum",
         "type": "Gym",
         "source": "Eyeball",
@@ -215,7 +231,7 @@
         "coordinates": [-122.04266995394856, 37.325583870011684],
         "type": "Point"
       },
-      "id": 16
+      "id": 17
     }
   ]
 }

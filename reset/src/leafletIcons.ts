@@ -21,11 +21,12 @@ const DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 export const iconGym = L.icon({
+  iconAnchor: [25, 41],
   iconSize: [50, 50],
   iconUrl: gymIcon,
-  popupAnchor: [0, -14],
+  popupAnchor: [0, -25],
   shadowSize: [20, 20],
-  shadowAnchor: [8, 0],
+  shadowAnchor: [8, 16],
   shadowUrl: markerShadow,
 });
 
@@ -38,4 +39,11 @@ export const iconPokeStop = L.icon({
 export const iconPowerSpot = L.icon({
   iconUrl: powerSpotIcon,
   iconSize: [25, 25],
+  popupAnchor: [0, -10],
+});
+
+export const iconDev = L.divIcon({
+  className: "icon-dev",
+  html: "<div>🚧</div>",
+  iconAnchor: [10, 10],
 });

@@ -19,7 +19,6 @@ export default function PokeStops() {
       pointToLayer={({ properties }, latlng) => {
         const marker = L.marker(latlng, {
           icon: iconPokeStop,
-          riseOnHover: true,
         }).bindPopup(`PokéStop: ${properties.name}`);
 
         return marker;

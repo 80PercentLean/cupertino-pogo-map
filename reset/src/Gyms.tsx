@@ -19,7 +19,6 @@ export default function Gyms() {
       pointToLayer={({ properties }, latlng) => {
         const marker = L.marker(latlng, {
           icon: iconGym,
-          riseOnHover: true,
         }).bindPopup(`Gym: ${properties.name}`);
 
         return marker;

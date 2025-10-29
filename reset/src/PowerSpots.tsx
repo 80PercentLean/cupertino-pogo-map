@@ -19,7 +19,6 @@ export default function PowerSpots() {
       pointToLayer={({ properties }, latlng) => {
         const marker = L.marker(latlng, {
           icon: iconPowerSpot,
-          riseOnHover: true,
         }).bindPopup(`Power Spot: ${properties.name}`);
 
         return marker;

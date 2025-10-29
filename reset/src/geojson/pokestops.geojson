@@ -407,6 +407,23 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Mary Avenue Dog Park",
+        "type": "PokeStop",
+        "hidden": true,
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.050699, 37.32796],
+        "type": "Point"
+      },
+      "id": 67
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Toyokawa Cherry Blossom Grove",
         "type": "PokeStop",
         "source": "Wayfarer",
@@ -702,6 +719,23 @@
       },
       "geometry": {
         "coordinates": [-122.041927, 37.322319],
+        "type": "Point"
+      },
+      "id": 67
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook Fire Pit Lounge",
+        "type": "PokeStop",
+        "hidden": true,
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.047493, 37.32556],
         "type": "Point"
       },
       "id": 67
