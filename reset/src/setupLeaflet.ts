@@ -12,7 +12,7 @@ console.log("default icon options", L.Icon.Default.prototype.options);
 const DefaultIcon = L.icon({
   iconAnchor: [12, 41],
   iconRetinaUrl: iconRetina,
-  iconSize: [25, 541],
+  iconSize: [25, 41],
   iconUrl: icon,
   popupAnchor: [1, -34],
   shadowSize: [41, 41],
