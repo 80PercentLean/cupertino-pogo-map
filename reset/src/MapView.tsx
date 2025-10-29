@@ -1,10 +1,5 @@
 import type { LatLngBoundsExpression, LatLngExpression } from "leaflet";
-import {
-  LayerGroup,
-  LayersControl,
-  MapContainer,
-  TileLayer,
-} from "react-leaflet";
+import { LayersControl, MapContainer, TileLayer } from "react-leaflet";
 
 import L14Grid from "./L14Grid";
 import L17Grid from "./L17Grid";
