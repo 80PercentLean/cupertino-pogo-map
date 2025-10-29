@@ -1,6 +1,7 @@
 import type { LatLngBoundsExpression, LatLngExpression } from "leaflet";
 import { LayersControl, MapContainer, TileLayer } from "react-leaflet";
 
+import Gyms from "./Gyms";
 import L14Grid from "./L14Grid";
 import L17Grid from "./L17Grid";
 import LiveLocationMarker from "./LiveLocationMarker";
@@ -9,8 +10,8 @@ import { isMobile } from "./util";
 const CENTER: LatLngExpression = [37.32185397836693, -122.0448660850525];
 const IS_MOBILE = isMobile();
 const BOUNDARIES: LatLngBoundsExpression = [
-  [37.33363, -122.038076],
-  [37.310094, -122.049996],
+  [37.3328, -122.0554],
+  [37.3107, -122.0326],
 ];
 
 export default function MapView() {
@@ -44,6 +45,9 @@ export default function MapView() {
             maxZoom={20}
           />
         </LayersControl.BaseLayer>
+        <LayersControl.Overlay name="Gyms" checked>
+          <Gyms />
+        </LayersControl.Overlay>
         <LayersControl.Overlay name="S2 Cells (L17)">
           <L17Grid />
         </LayersControl.Overlay>
