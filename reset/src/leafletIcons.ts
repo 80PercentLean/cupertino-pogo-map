@@ -24,9 +24,9 @@ export const iconGym = L.icon({
   iconAnchor: [25, 41],
   iconSize: [50, 50],
   iconUrl: gymIcon,
-  popupAnchor: [0, -25],
-  shadowSize: [20, 20],
+  popupAnchor: [0, -30],
   shadowAnchor: [8, 16],
+  shadowSize: [20, 20],
   shadowUrl: markerShadow,
 });
 
@@ -37,9 +37,13 @@ export const iconPokeStop = L.icon({
 });
 
 export const iconPowerSpot = L.icon({
-  iconUrl: powerSpotIcon,
+  iconAnchor: [12, 24],
   iconSize: [25, 25],
-  popupAnchor: [0, -10],
+  iconUrl: powerSpotIcon,
+  popupAnchor: [0, -20],
+  // shadowAnchor: [3, 9],
+  // shadowSize: [10, 10],
+  // shadowUrl: markerShadow,
 });
 
 export const iconDev = L.divIcon({
