@@ -3,7 +3,7 @@ import type { LatLngExpression } from "leaflet";
 import { ErrorBoundary } from "react-error-boundary";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import LiveLocationMarker from "./LiveLocationMarker";
+import LiveLocationMarker from "../LiveLocationMarker";
 
 const CENTER: LatLngExpression = [37.32185397836693, -122.0448660850525];
 

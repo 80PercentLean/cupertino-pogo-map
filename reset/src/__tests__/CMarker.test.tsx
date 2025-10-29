@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import type { LatLngExpression } from "leaflet";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import CMarker from "./CMarker";
+import CMarker from "../CMarker";
 
 const CENTER: LatLngExpression = [37.32185397836693, -122.0448660850525];
 
