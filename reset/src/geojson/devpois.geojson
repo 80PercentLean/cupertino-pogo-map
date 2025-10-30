@@ -4,19 +4,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "MLC Fountain B",
-        "type": "?",
-        "source": "Ingress",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.047993, 37.32036], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "La Vita É Una Fontana",
         "type": "?",
         "source": "Ingress",
@@ -181,19 +168,6 @@
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.04578, 37.320197], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Golden misery",
-        "type": "?",
-        "source": "Ingress",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.045965, 37.320002], "type": "Point" },
       "id": 14
     },
     {
@@ -630,14 +604,144 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Glenbrook West Exit Sign",
+        "name": "DeAnza Baseball Field",
         "type": "?",
         "source": "Ingress",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.050089, 37.326555], "type": "Point" },
+      "geometry": { "coordinates": [-122.043269, 37.316716], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pond And Marsh Research Station",
+        "type": "?",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.042751, 37.316167], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Desert Research Station",
+        "type": "?",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.042234, 37.316075], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Waterfall Fountain and River",
+        "type": "?",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.042025, 37.316359], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "St Jude Church",
+        "type": "?",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.041255, 37.315454], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "St. Jude's Episcipal Church Bell",
+        "type": "?",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.040829, 37.314948], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bless the Children Murals",
+        "type": "?",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.040684, 37.315183], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wooden Cross",
+        "type": "?",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.040493, 37.314829], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Labyrinth",
+        "type": "?",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.040229, 37.314784], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wooden Cross",
+        "type": "?",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.039758, 37.315408], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook West Exit Sign",
+        "type": "?",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.050091, 37.326572], "type": "Point" },
       "id": 14
     },
     {
@@ -645,12 +749,129 @@
       "properties": {
         "name": "Glenbrook West Entrance Sign",
         "type": "?",
-        "source": "Ingress",
+        "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.049972, 37.326275], "type": "Point" },
+      "geometry": { "coordinates": [-122.04998, 37.326296], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Enjoy Smoke-Free Parks",
+        "type": "?",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045692, 37.325233], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Softball Scoreboard",
+        "type": "?",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045204, 37.325305], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park BBQ Spot A",
+        "type": "?",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045071, 37.325148], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park BBQ Spot B",
+        "type": "?",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044802, 37.325433], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Smoke-Free Park Sign",
+        "type": "?",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.04451, 37.325078], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Rules East Sign",
+        "type": "?",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044342, 37.325229], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Smoke-Free Memorial Park",
+        "type": "?",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044732, 37.323505], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "In memory of Virginia J. Logan",
+        "type": "?",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045297, 37.323513], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Athletic Field & Event Lawn",
+        "type": "?",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.043604, 37.325592], "type": "Point" },
       "id": 14
     }
   ]

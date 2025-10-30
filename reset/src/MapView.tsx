@@ -27,12 +27,16 @@ export default function MapView() {
       scrollWheelZoom={!IS_MOBILE}
       zoom={16}
     >
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
       <LayersControl position="topright">
-        <LayersControl.BaseLayer name="Regular" checked>
+        <LayersControl.BaseLayer name="Default" checked>
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles courtesy of <a href="https://www.openstreetmap.cat" target="_blank">Breton OpenStreetMap Team</a>'
+            url="https://tile.openstreetmap.bzh/ca/{z}/{x}/{y}.png'"
+            maxNativeZoom={18}
+            maxZoom={20}
+          />
+        </LayersControl.BaseLayer>
+        <LayersControl.BaseLayer name="Extra Info">
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

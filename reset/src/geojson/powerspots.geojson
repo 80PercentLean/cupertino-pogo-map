@@ -396,6 +396,32 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Golden misery",
+        "type": "?",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045965, 37.320002], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MLC Fountain B",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.047993, 37.32036], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "The Commons Entrance",
         "type": "Power Spot",
         "source": "Wayfarer",
