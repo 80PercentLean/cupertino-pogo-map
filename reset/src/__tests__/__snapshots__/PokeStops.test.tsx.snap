@@ -1,0 +1,572 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`loads <PokeStops> and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="leaflet-container leaflet-touch leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+    id="map"
+    style="position: relative;"
+    tabindex="0"
+  >
+    <div
+      class="leaflet-pane leaflet-map-pane"
+      style="left: 0px; top: 0px;"
+    >
+      <div
+        class="leaflet-pane leaflet-tile-pane"
+      >
+        <div
+          class="leaflet-layer "
+          style="z-index: 1;"
+        >
+          <div
+            class="leaflet-tile-container leaflet-zoom-animated"
+            style="z-index: 18; left: 0px; top: 0px;"
+          >
+            <img
+              alt=""
+              class="leaflet-tile"
+              src="https://a.tile.openstreetmap.org/16/10550/25435.png"
+              style="width: 256px; height: 256px; left: -105px; top: -16px;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="leaflet-pane leaflet-overlay-pane"
+      />
+      <div
+        class="leaflet-pane leaflet-shadow-pane"
+      />
+      <div
+        class="leaflet-pane leaflet-marker-pane"
+      >
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 148px; top: -238px; z-index: -238;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 15px; top: -248px; z-index: -248;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 6px; top: -224px; z-index: -224;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 16px; top: -197px; z-index: -197;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -34px; top: -243px; z-index: -243;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 26px; top: -173px; z-index: -173;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -5px; top: -160px; z-index: -160;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 10px; top: -150px; z-index: -150;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 8px; top: -114px; z-index: -114;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -35px; top: -97px; z-index: -97;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -65px; top: -114px; z-index: -114;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 75px; top: -93px; z-index: -93;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 75px; top: -70px; z-index: -70;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 145px; top: -76px; z-index: -76;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -84px; top: -277px; z-index: -277;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -141px; top: -161px; z-index: -161;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -112px; top: -160px; z-index: -160;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -183px; top: -135px; z-index: -135;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -155px; top: -48px; z-index: -48;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 258px; top: -117px; z-index: -117;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 247px; top: -73px; z-index: -73;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 294px; top: -145px; z-index: -145;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 303px; top: -80px; z-index: -80;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -48px; top: -50px; z-index: -50;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -58px; top: -28px; z-index: -28;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -69px; top: 2px; z-index: 2;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -43px; top: 3px; z-index: 3;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -57px; top: 35px; z-index: 35;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -120px; top: 62px; z-index: 62;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 13px; top: -2px; z-index: -2;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 149px; top: -48px; z-index: -48;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -272px; top: -358px; z-index: -358;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -38px; top: -187px; z-index: -187;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 92px; top: -263px; z-index: -263;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -59px; top: -210px; z-index: -210;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 110px; top: -243px; z-index: -243;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -68px; top: -131px; z-index: -131;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -59px; top: -245px; z-index: -245;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 43px; top: -8px; z-index: -8;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 56px; top: -75px; z-index: -75;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 117px; top: -96px; z-index: -96;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 50px; top: -251px; z-index: -251;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 23px; top: -278px; z-index: -278;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -9px; top: -259px; z-index: -259;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 28px; top: 322px; z-index: 322;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 131px; top: -134px; z-index: -134;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 138px; top: -87px; z-index: -87;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 145px; top: -134px; z-index: -134;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 35px; top: -98px; z-index: -98;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 77px; top: 58px; z-index: 58;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 35px; top: -94px; z-index: -94;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 137px; top: -28px; z-index: -28;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -122px; top: -218px; z-index: -218;"
+          tabindex="0"
+        />
+      </div>
+      <div
+        class="leaflet-pane leaflet-tooltip-pane"
+      />
+      <div
+        class="leaflet-pane leaflet-popup-pane"
+      />
+    </div>
+    <div
+      class="leaflet-control-container"
+    >
+      <div
+        class="leaflet-top leaflet-left"
+      >
+        <div
+          class="leaflet-control-zoom leaflet-bar leaflet-control"
+        >
+          <a
+            aria-disabled="false"
+            aria-label="Zoom in"
+            class="leaflet-control-zoom-in"
+            href="#"
+            role="button"
+            title="Zoom in"
+          >
+            <span
+              aria-hidden="true"
+            >
+              +
+            </span>
+          </a>
+          <a
+            aria-disabled="false"
+            aria-label="Zoom out"
+            class="leaflet-control-zoom-out"
+            href="#"
+            role="button"
+            title="Zoom out"
+          >
+            <span
+              aria-hidden="true"
+            >
+              −
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="leaflet-top leaflet-right"
+      />
+      <div
+        class="leaflet-bottom leaflet-left"
+      />
+      <div
+        class="leaflet-bottom leaflet-right"
+      >
+        <div
+          class="leaflet-control-attribution leaflet-control"
+        >
+          <a
+            href="https://leafletjs.com"
+            title="A JavaScript library for interactive maps"
+          >
+            <svg
+              aria-hidden="true"
+              class="leaflet-attribution-flag"
+              height="8"
+              viewBox="0 0 12 8"
+              width="12"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h12v4H0z"
+                fill="#4C7BE1"
+              />
+              <path
+                d="M0 4h12v3H0z"
+                fill="#FFD500"
+              />
+              <path
+                d="M0 7h12v1H0z"
+                fill="#E0BC00"
+              />
+            </svg>
+             Leaflet
+          </a>
+           
+          <span
+            aria-hidden="true"
+          >
+            |
+          </span>
+           © 
+          <a
+            href="https://www.openstreetmap.org/copyright"
+          >
+            OpenStreetMap
+          </a>
+           contributors
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,373 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`loads <Gyms> and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="leaflet-container leaflet-touch leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+    id="map"
+    style="position: relative;"
+    tabindex="0"
+  >
+    <div
+      class="leaflet-pane leaflet-map-pane"
+      style="left: 0px; top: 0px;"
+    >
+      <div
+        class="leaflet-pane leaflet-tile-pane"
+      >
+        <div
+          class="leaflet-layer "
+          style="z-index: 1;"
+        >
+          <div
+            class="leaflet-tile-container leaflet-zoom-animated"
+            style="z-index: 18; left: 0px; top: 0px;"
+          >
+            <img
+              alt=""
+              class="leaflet-tile"
+              src="https://a.tile.openstreetmap.org/16/10550/25435.png"
+              style="width: 256px; height: 256px; left: -105px; top: -16px;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="leaflet-pane leaflet-overlay-pane"
+      />
+      <div
+        class="leaflet-pane leaflet-shadow-pane"
+      >
+        <img
+          alt=""
+          class="leaflet-marker-shadow leaflet-zoom-hide"
+          src="/node_modules/leaflet/dist/images/marker-shadow.png"
+          style="margin-left: -8px; margin-top: -16px; width: 20px; height: 20px; left: 127px; top: -229px;"
+        />
+        <img
+          alt=""
+          class="leaflet-marker-shadow leaflet-zoom-hide"
+          src="/node_modules/leaflet/dist/images/marker-shadow.png"
+          style="margin-left: -8px; margin-top: -16px; width: 20px; height: 20px; left: -29px; top: -151px;"
+        />
+        <img
+          alt=""
+          class="leaflet-marker-shadow leaflet-zoom-hide"
+          src="/node_modules/leaflet/dist/images/marker-shadow.png"
+          style="margin-left: -8px; margin-top: -16px; width: 20px; height: 20px; left: -24px; top: -131px;"
+        />
+        <img
+          alt=""
+          class="leaflet-marker-shadow leaflet-zoom-hide"
+          src="/node_modules/leaflet/dist/images/marker-shadow.png"
+          style="margin-left: -8px; margin-top: -16px; width: 20px; height: 20px; left: 1px; top: -70px;"
+        />
+        <img
+          alt=""
+          class="leaflet-marker-shadow leaflet-zoom-hide"
+          src="/node_modules/leaflet/dist/images/marker-shadow.png"
+          style="margin-left: -8px; margin-top: -16px; width: 20px; height: 20px; left: -100px; top: 70px;"
+        />
+        <img
+          alt=""
+          class="leaflet-marker-shadow leaflet-zoom-hide"
+          src="/node_modules/leaflet/dist/images/marker-shadow.png"
+          style="margin-left: -8px; margin-top: -16px; width: 20px; height: 20px; left: -131px; top: 89px;"
+        />
+        <img
+          alt=""
+          class="leaflet-marker-shadow leaflet-zoom-hide"
+          src="/node_modules/leaflet/dist/images/marker-shadow.png"
+          style="margin-left: -8px; margin-top: -16px; width: 20px; height: 20px; left: -60px; top: 178px;"
+        />
+        <img
+          alt=""
+          class="leaflet-marker-shadow leaflet-zoom-hide"
+          src="/node_modules/leaflet/dist/images/marker-shadow.png"
+          style="margin-left: -8px; margin-top: -16px; width: 20px; height: 20px; left: 58px; top: 332px;"
+        />
+        <img
+          alt=""
+          class="leaflet-marker-shadow leaflet-zoom-hide"
+          src="/node_modules/leaflet/dist/images/marker-shadow.png"
+          style="margin-left: -8px; margin-top: -16px; width: 20px; height: 20px; left: -216px; top: -276px;"
+        />
+        <img
+          alt=""
+          class="leaflet-marker-shadow leaflet-zoom-hide"
+          src="/node_modules/leaflet/dist/images/marker-shadow.png"
+          style="margin-left: -8px; margin-top: -16px; width: 20px; height: 20px; left: 261px; top: -43px;"
+        />
+        <img
+          alt=""
+          class="leaflet-marker-shadow leaflet-zoom-hide"
+          src="/node_modules/leaflet/dist/images/marker-shadow.png"
+          style="margin-left: -8px; margin-top: -16px; width: 20px; height: 20px; left: 286px; top: -38px;"
+        />
+        <img
+          alt=""
+          class="leaflet-marker-shadow leaflet-zoom-hide"
+          src="/node_modules/leaflet/dist/images/marker-shadow.png"
+          style="margin-left: -8px; margin-top: -16px; width: 20px; height: 20px; left: 230px; top: 396px;"
+        />
+        <img
+          alt=""
+          class="leaflet-marker-shadow leaflet-zoom-hide"
+          src="/node_modules/leaflet/dist/images/marker-shadow.png"
+          style="margin-left: -8px; margin-top: -16px; width: 20px; height: 20px; left: -32px; top: -263px;"
+        />
+        <img
+          alt=""
+          class="leaflet-marker-shadow leaflet-zoom-hide"
+          src="/node_modules/leaflet/dist/images/marker-shadow.png"
+          style="margin-left: -8px; margin-top: -16px; width: 20px; height: 20px; left: 99px; top: -232px;"
+        />
+        <img
+          alt=""
+          class="leaflet-marker-shadow leaflet-zoom-hide"
+          src="/node_modules/leaflet/dist/images/marker-shadow.png"
+          style="margin-left: -8px; margin-top: -16px; width: 20px; height: 20px; left: -49px; top: 372px;"
+        />
+        <img
+          alt=""
+          class="leaflet-marker-shadow leaflet-zoom-hide"
+          src="/node_modules/leaflet/dist/images/marker-shadow.png"
+          style="margin-left: -8px; margin-top: -16px; width: 20px; height: 20px; left: 102px; top: -219px;"
+        />
+      </div>
+      <div
+        class="leaflet-pane leaflet-marker-pane"
+      >
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/gym-icon.png"
+          style="margin-left: -25px; margin-top: -41px; width: 50px; height: 50px; left: 127px; top: -229px; z-index: -229;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/gym-icon.png"
+          style="margin-left: -25px; margin-top: -41px; width: 50px; height: 50px; left: -29px; top: -151px; z-index: -151;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/gym-icon.png"
+          style="margin-left: -25px; margin-top: -41px; width: 50px; height: 50px; left: -24px; top: -131px; z-index: -131;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/gym-icon.png"
+          style="margin-left: -25px; margin-top: -41px; width: 50px; height: 50px; left: 1px; top: -70px; z-index: -70;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/gym-icon.png"
+          style="margin-left: -25px; margin-top: -41px; width: 50px; height: 50px; left: -100px; top: 70px; z-index: 70;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/gym-icon.png"
+          style="margin-left: -25px; margin-top: -41px; width: 50px; height: 50px; left: -131px; top: 89px; z-index: 89;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/gym-icon.png"
+          style="margin-left: -25px; margin-top: -41px; width: 50px; height: 50px; left: -60px; top: 178px; z-index: 178;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/gym-icon.png"
+          style="margin-left: -25px; margin-top: -41px; width: 50px; height: 50px; left: 58px; top: 332px; z-index: 332;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/gym-icon.png"
+          style="margin-left: -25px; margin-top: -41px; width: 50px; height: 50px; left: -216px; top: -276px; z-index: -276;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/gym-icon.png"
+          style="margin-left: -25px; margin-top: -41px; width: 50px; height: 50px; left: 261px; top: -43px; z-index: -43;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/gym-icon.png"
+          style="margin-left: -25px; margin-top: -41px; width: 50px; height: 50px; left: 286px; top: -38px; z-index: -38;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/gym-icon.png"
+          style="margin-left: -25px; margin-top: -41px; width: 50px; height: 50px; left: 230px; top: 396px; z-index: 396;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/gym-icon.png"
+          style="margin-left: -25px; margin-top: -41px; width: 50px; height: 50px; left: -32px; top: -263px; z-index: -263;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/gym-icon.png"
+          style="margin-left: -25px; margin-top: -41px; width: 50px; height: 50px; left: 99px; top: -232px; z-index: -232;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/gym-icon.png"
+          style="margin-left: -25px; margin-top: -41px; width: 50px; height: 50px; left: -49px; top: 372px; z-index: 372;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/gym-icon.png"
+          style="margin-left: -25px; margin-top: -41px; width: 50px; height: 50px; left: 102px; top: -219px; z-index: -219;"
+          tabindex="0"
+        />
+      </div>
+      <div
+        class="leaflet-pane leaflet-tooltip-pane"
+      />
+      <div
+        class="leaflet-pane leaflet-popup-pane"
+      />
+    </div>
+    <div
+      class="leaflet-control-container"
+    >
+      <div
+        class="leaflet-top leaflet-left"
+      >
+        <div
+          class="leaflet-control-zoom leaflet-bar leaflet-control"
+        >
+          <a
+            aria-disabled="false"
+            aria-label="Zoom in"
+            class="leaflet-control-zoom-in"
+            href="#"
+            role="button"
+            title="Zoom in"
+          >
+            <span
+              aria-hidden="true"
+            >
+              +
+            </span>
+          </a>
+          <a
+            aria-disabled="false"
+            aria-label="Zoom out"
+            class="leaflet-control-zoom-out"
+            href="#"
+            role="button"
+            title="Zoom out"
+          >
+            <span
+              aria-hidden="true"
+            >
+              −
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="leaflet-top leaflet-right"
+      />
+      <div
+        class="leaflet-bottom leaflet-left"
+      />
+      <div
+        class="leaflet-bottom leaflet-right"
+      >
+        <div
+          class="leaflet-control-attribution leaflet-control"
+        >
+          <a
+            href="https://leafletjs.com"
+            title="A JavaScript library for interactive maps"
+          >
+            <svg
+              aria-hidden="true"
+              class="leaflet-attribution-flag"
+              height="8"
+              viewBox="0 0 12 8"
+              width="12"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h12v4H0z"
+                fill="#4C7BE1"
+              />
+              <path
+                d="M0 4h12v3H0z"
+                fill="#FFD500"
+              />
+              <path
+                d="M0 7h12v1H0z"
+                fill="#E0BC00"
+              />
+            </svg>
+             Leaflet
+          </a>
+           
+          <span
+            aria-hidden="true"
+          >
+            |
+          </span>
+           © 
+          <a
+            href="https://www.openstreetmap.org/copyright"
+          >
+            OpenStreetMap
+          </a>
+           contributors
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

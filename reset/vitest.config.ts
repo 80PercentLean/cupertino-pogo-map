@@ -7,6 +7,10 @@ export default mergeConfig(
   viteConfig,
   defineConfig({
     test: {
+      coverage: {
+        enabled: true,
+        reporter: ["html"],
+      },
       environment: "jsdom",
       exclude: [...configDefaults.exclude, "e2e/*"],
       globals: true,

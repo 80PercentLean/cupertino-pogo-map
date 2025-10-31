@@ -1,4 +1,4 @@
-import type { LatLngBoundsExpression, LatLngExpression } from "leaflet";
+import type { LatLngBoundsExpression } from "leaflet";
 import { LayersControl, MapContainer, TileLayer } from "react-leaflet";
 
 import DevPois from "./DevPois";
@@ -8,9 +8,9 @@ import L17Grid from "./L17Grid";
 import LiveLocationMarker from "./LiveLocationMarker";
 import PokeStops from "./PokeStops";
 import PowerSpots from "./PowerSpots";
+import { CENTER } from "./constants";
 import { isMobile } from "./util";
 
-const CENTER: LatLngExpression = [37.32185397836693, -122.0448660850525];
 const IS_MOBILE = isMobile();
 const BOUNDARIES: LatLngBoundsExpression = [
   [37.3328, -122.0554],
