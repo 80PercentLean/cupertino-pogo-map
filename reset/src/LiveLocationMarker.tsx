@@ -2,9 +2,9 @@ import { type LatLngExpression } from "leaflet";
 import { useEffect, useState } from "react";
 import { Circle } from "react-leaflet";
 
-import CMarker, { type CMarkerProps } from "./CMarker";
+import CCircleMarker, { type CCircleMarkerProps } from "./CCircleMarker";
 
-export type LiveLocationMarkerProps = Omit<CMarkerProps, "position">;
+export type LiveLocationMarkerProps = Omit<CCircleMarkerProps, "center">;
 
 export default function LiveLocationMarker(props: LiveLocationMarkerProps) {
   const [location, setLocation] = useState<LatLngExpression | null>(null);
@@ -42,13 +42,22 @@ export default function LiveLocationMarker(props: LiveLocationMarkerProps) {
 
   if (location) {
     const accuracyCircle = accuracy && (
-      <Circle center={location} radius={accuracy} />
+      <Circle
+        center={location}
+        pathOptions={{ fillColor: "#5c84f0", stroke: false }}
+        radius={accuracy}
+      />
     );
 
     return (
       <>
         {accuracyCircle}
-        <CMarker {...props} position={location} />
+        <CCircleMarker
+          center={location}
+          pathOptions={{ color: "#fff", fillColor: "#5c84f0", fillOpacity: 1 }}
+          radius={10}
+          data-testid={props["data-testid"]}
+        />
       </>
     );
   }
