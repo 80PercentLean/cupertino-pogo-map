@@ -279,6 +279,7 @@
       "properties": {
         "name": "Flat Rock Fountain",
         "type": "PokeStop",
+        "hidden": true,
         "source": "Ingress",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -409,7 +410,6 @@
       "properties": {
         "name": "Mary Avenue Dog Park",
         "type": "PokeStop",
-        "hidden": true,
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",

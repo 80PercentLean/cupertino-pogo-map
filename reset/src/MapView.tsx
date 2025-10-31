@@ -58,16 +58,16 @@ export default function MapView() {
         <LayersControl.Overlay name="Gyms" checked>
           <Gyms />
         </LayersControl.Overlay>
-        <LayersControl.Overlay name="Power Spots" checked>
+        <LayersControl.Overlay name="Power Spots">
           <PowerSpots />
         </LayersControl.Overlay>
-        <LayersControl.Overlay name="TBD" checked>
+        <LayersControl.Overlay name="TBD">
           <DevPois />
         </LayersControl.Overlay>
-        <LayersControl.Overlay name="S2 Cells (L17)" checked>
+        <LayersControl.Overlay name="S2 Cells (L17)">
           <L17Grid />
         </LayersControl.Overlay>
-        <LayersControl.Overlay name="S2 Cells (L14)" checked>
+        <LayersControl.Overlay name="S2 Cells (L14)">
           <L14Grid />
         </LayersControl.Overlay>
       </LayersControl>

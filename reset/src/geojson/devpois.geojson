@@ -580,6 +580,7 @@
       "properties": {
         "name": "The Church of Jesus Christ of Latter-day Saints",
         "type": "?",
+        "hidden": true,
         "source": "Ingress",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -593,6 +594,7 @@
       "properties": {
         "name": "The Church of Jesus Christ of Latter-day Saints",
         "type": "?",
+        "hidden": true,
         "source": "Ingress",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -658,6 +660,7 @@
       "properties": {
         "name": "St Jude Church",
         "type": "?",
+        "hidden": true,
         "source": "Ingress",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -671,6 +674,7 @@
       "properties": {
         "name": "St. Jude's Episcipal Church Bell",
         "type": "?",
+        "hidden": true,
         "source": "Ingress",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -684,6 +688,7 @@
       "properties": {
         "name": "Bless the Children Murals",
         "type": "?",
+        "hidden": true,
         "source": "Ingress",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -697,6 +702,7 @@
       "properties": {
         "name": "Wooden Cross",
         "type": "?",
+        "hidden": true,
         "source": "Ingress",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -710,6 +716,7 @@
       "properties": {
         "name": "Labyrinth",
         "type": "?",
+        "hidden": true,
         "source": "Ingress",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -723,6 +730,7 @@
       "properties": {
         "name": "Wooden Cross",
         "type": "?",
+        "hidden": true,
         "source": "Ingress",
         "marker-color": "#00fcff",
         "marker-size": "medium",
