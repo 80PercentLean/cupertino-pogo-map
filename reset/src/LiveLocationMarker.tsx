@@ -16,12 +16,11 @@ export default function LiveLocationMarker(props: LiveLocationMarkerProps) {
     if ("geolocation" in navigator) {
       watchId = navigator.geolocation.watchPosition(
         (position) => {
-          console.log(
-            "GPS coordinates",
-            position.coords.latitude,
-            position.coords.longitude,
-            position.coords.accuracy,
-          );
+          console.log("Live location coordinates: ", {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+            accuracy: position.coords.accuracy,
+          });
           setLocation([position.coords.latitude, position.coords.longitude]);
           setAccuracy(position.coords.accuracy);
         },

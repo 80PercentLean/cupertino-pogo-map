@@ -6,6 +6,7 @@ import Gyms from "./Gyms";
 import L14Grid from "./L14Grid";
 import L17Grid from "./L17Grid";
 import LiveLocationMarker from "./LiveLocationMarker";
+import PlacedMarkers from "./PlacedMarkers";
 import PokeStops from "./PokeStops";
 import PowerSpots from "./PowerSpots";
 import { CENTER } from "./constants";
@@ -71,6 +72,7 @@ export default function MapView() {
           <L14Grid />
         </LayersControl.Overlay>
       </LayersControl>
+      <PlacedMarkers />
       <LiveLocationMarker data-testid="marker-live-location" />
     </MapContainer>
   );
