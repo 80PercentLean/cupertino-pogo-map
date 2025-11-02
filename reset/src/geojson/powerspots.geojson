@@ -12,7 +12,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.0455587678593, 37.326824819594876],
+        "coordinates": [-122.04520538449289, 37.326854400424146],
         "type": "Point"
       },
       "id": 51
@@ -591,48 +591,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "The Commons Entrance",
-        "type": "Power Spot",
-        "source": "Wayfarer",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.043016, 37.325131],
-        "type": "Point"
-      },
-      "id": 102
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Memorial Park BBQ Spot B",
-        "type": "Power Spot",
-        "source": "Wayfarer",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.044802, 37.325433], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Memorial Park Rules East Sign",
-        "type": "Power Spot",
-        "source": "Wayfarer",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.044342, 37.325229], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Quad Mosaic - West",
         "type": "Power Spot",
         "source": "Ingress",
@@ -680,6 +638,128 @@
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.044424, 37.319528], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Panda Express",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04108148813249, 37.32254269196093],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bunny Stop",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04460054636003, 37.3248430826669],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "NW Entrance to Memorial Park",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04579681158067, 37.32648967977929],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bleachers at Memorial Park",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04568684101106, 37.325270732147246],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bright Skeleton Shark",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0448862016201, 37.3250510421945],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Commons Entrance",
+        "type": "Power Spot",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.043016, 37.325131],
+        "type": "Point"
+      },
+      "id": 102
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park BBQ Spot B",
+        "type": "Power Spot",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044802, 37.325433], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Rules East Sign",
+        "type": "Power Spot",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044342, 37.325229], "type": "Point" },
       "id": 14
     }
   ]

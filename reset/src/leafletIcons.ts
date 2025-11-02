@@ -31,13 +31,14 @@ export const iconGym = L.icon({
 });
 
 export const iconPokeStop = L.icon({
-  iconUrl: pokeStopIcon,
+  iconAnchor: [15, 30],
   iconSize: [30, 30],
+  iconUrl: pokeStopIcon,
   popupAnchor: [0, -10],
 });
 
 export const iconPowerSpot = L.icon({
-  iconAnchor: [12, 24],
+  iconAnchor: [12, 25],
   iconSize: [25, 25],
   iconUrl: powerSpotIcon,
   popupAnchor: [0, -20],
