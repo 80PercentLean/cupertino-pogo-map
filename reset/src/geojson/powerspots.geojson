@@ -396,8 +396,21 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Bicycle Rack",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.043444, 37.321546], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Golden misery",
-        "type": "?",
+        "type": "Power Spot",
         "source": "Ingress",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -423,13 +436,156 @@
       "type": "Feature",
       "properties": {
         "name": "La Vita É Una Fontana",
-        "type": "?",
+        "type": "Power Spot",
         "source": "Ingress",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.046579, 37.320813], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dionysus",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.046189, 37.32067], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Leaning Tower of DeAnza",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044908, 37.321296], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dream Boat",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.04401, 37.321715], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza Expedition",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.04578, 37.320197], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Turtle Sculpture",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044965, 37.320279], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shelf of Skulls",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044373, 37.320485], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Richard Kent Memorial",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045352, 37.31988], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DeAnza Mosaics",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.04521, 37.320119], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Robert A. Potthast Memorial Bench",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045069, 37.319616], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lotus Fountain",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044408, 37.320273], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "L-Quad Mosaic 2",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044133, 37.320473], "type": "Point" },
       "id": 14
     },
     {
@@ -472,6 +628,58 @@
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.044342, 37.325229], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quad Mosaic - West",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.046316, 37.31897], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Muralism",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044909, 37.319158], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DeAnza College Carving",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044671, 37.319634], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza College Plaque",
+        "type": "Power Spot",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044424, 37.319528], "type": "Point" },
       "id": 14
     }
   ]

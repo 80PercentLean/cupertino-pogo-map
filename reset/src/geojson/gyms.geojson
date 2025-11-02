@@ -206,7 +206,7 @@
       "properties": {
         "name": "Kingdom Hall",
         "type": "Gym",
-        "source": "Eyeball",
+        "source": "Ingress",
         "marker-color": "#ff2600",
         "marker-size": "large",
         "marker-symbol": "circle"
