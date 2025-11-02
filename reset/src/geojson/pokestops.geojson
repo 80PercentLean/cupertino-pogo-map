@@ -317,7 +317,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "De Anza College",
+        "name": "De Anza College North Entrance Sign",
         "type": "PokeStop",
         "source": "Ingress",
         "marker-color": "#00fcff",
@@ -356,7 +356,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Baldwin Winery",
+        "name": "Baldwin Winery Plaque",
         "type": "PokeStop",
         "source": "Ingress",
         "marker-color": "#00fcff",
@@ -420,6 +420,350 @@
         "type": "Point"
       },
       "id": 67
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Multicultural Center",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.043574, 37.321237],
+        "type": "Point"
+      },
+      "id": 67
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "California History Center",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.047432, 37.320793],
+        "type": "Point"
+      },
+      "id": 67
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "“Subliminalities” Mural",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044699, 37.320121], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Casa De Reflection",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.046139, 37.320945], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lake Scenery Mural",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045826, 37.321086], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eyes Abstract",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045378, 37.320865], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Euphrat Museum of Art",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.043707, 37.321643], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bubbles Courtyard",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.04398, 37.321191], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza Military Veterans Mural",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.047737, 37.319791], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Joey Clavijo Memorial Tree",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.046944, 37.319722], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A. Robert de Hart Library",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.046227, 37.320316], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Main Quad Fountain",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045962, 37.320344], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Time Graffiti",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044985, 37.320678], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Luotto's Grotto",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044658, 37.32093], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dry Fountain",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.047596, 37.319324], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Justice Equity Peace Mural",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.046811, 37.319216], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "L-Quad Mosaic 1",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044129, 37.320083], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "S-Quad Mosaic",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.046922, 37.318958], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pe quad Map",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045635, 37.318866], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Class of Muralists",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044983, 37.319424], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kathleen Colligan Memorial Plaque",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.043984, 37.319677], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Omubaka Ambassador",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.043671, 37.319679], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza Athletic Fields",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.043775, 37.318226], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza Tennis Courts",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.043265, 37.318017], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Science Center Quad",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.046299, 37.31829], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rusty \"Emreynaldo\" Statues",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045891, 37.316621], "type": "Point" },
+      "id": 14
     },
     {
       "type": "Feature",
@@ -739,6 +1083,19 @@
         "type": "Point"
       },
       "id": 67
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Athletic Field & Event Lawn",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.043604, 37.325592], "type": "Point" },
+      "id": 14
     }
   ]
 }

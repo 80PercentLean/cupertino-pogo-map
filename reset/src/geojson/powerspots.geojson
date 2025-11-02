@@ -422,6 +422,19 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "La Vita É Una Fontana",
+        "type": "?",
+        "source": "Ingress",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.046579, 37.320813], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "The Commons Entrance",
         "type": "Power Spot",
         "source": "Wayfarer",
@@ -434,6 +447,32 @@
         "type": "Point"
       },
       "id": 102
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park BBQ Spot B",
+        "type": "Power Spot",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044802, 37.325433], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Rules East Sign",
+        "type": "Power Spot",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044342, 37.325229], "type": "Point" },
+      "id": 14
     }
   ]
 }
