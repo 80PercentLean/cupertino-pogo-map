@@ -11,6 +11,7 @@ export default function L14Grid() {
   return (
     <GeoJSON
       data={l14CellsJson}
+      interactive={false}
       style={{ fillOpacity: 0, color: "#f00", weight: 2 }}
     />
   );
