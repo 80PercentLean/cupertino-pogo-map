@@ -19,7 +19,13 @@ export default function PowerSpots() {
       pointToLayer={({ properties }, latlng) => {
         const marker = L.marker(latlng, {
           icon: iconPowerSpot,
-        }).bindPopup(`Power Spot: ${properties.name}`);
+        }).bindPopup(`<b>Power Spot</b><br />
+          ${properties.name}<br /><br />
+          Directions:
+          <ul>
+          <li><a href="https://maps.google.com/maps?q=${latlng.lat},${latlng.lng}" rel="noopener noreferrer" target="_blank">Google Maps</a></li>
+          <li><a href="https://maps.apple.com/place?coordinate=${latlng.lat},${latlng.lng}" rel="noopener noreferrer" target="_blank">Apple Maps</a></li>
+          </ul>`);
 
         return marker;
       }}

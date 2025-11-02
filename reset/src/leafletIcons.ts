@@ -34,7 +34,7 @@ export const iconPokeStop = L.icon({
   iconAnchor: [15, 30],
   iconSize: [30, 30],
   iconUrl: pokeStopIcon,
-  popupAnchor: [0, -10],
+  popupAnchor: [0, -25],
 });
 
 export const iconPowerSpot = L.icon({
