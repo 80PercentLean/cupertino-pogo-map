@@ -122,7 +122,7 @@
       "type": "Feature",
       "properties": {
         "name": "City of Cupertino Senior Center",
-        "type": "PokeStop",
+        "type": "Showcase",
         "source": "Ingress",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -532,7 +532,7 @@
       "type": "Feature",
       "properties": {
         "name": "Joey Clavijo Memorial Tree",
-        "type": "PokeStop",
+        "type": "Showcase",
         "source": "Ingress",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -1397,6 +1397,19 @@
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.04998, 37.326296], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Community Ambassador Location",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.0459, 37.320662], "type": "Point" },
       "id": 14
     }
   ]

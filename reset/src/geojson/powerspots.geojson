@@ -643,6 +643,22 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Mary Avenue Dog Park",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.05079510807992, 37.32759663346205],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Panda Express",
         "type": "Power Spot",
         "source": "Eyeball",
@@ -691,6 +707,38 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Cupertino Senior Center",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04559028148653, 37.323186851116226],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cupertino Bike Route: To Rancho San Antonio",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04529523849489, 37.323013014007365],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Bleachers at Memorial Park",
         "type": "Power Spot",
         "source": "Eyeball",
@@ -700,6 +748,22 @@
       },
       "geometry": {
         "coordinates": [-122.04568684101106, 37.325270732147246],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Picnic and BBQ pit",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04417943954469, 37.32607163522527],
         "type": "Point"
       },
       "id": 14

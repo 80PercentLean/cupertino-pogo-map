@@ -4,6 +4,7 @@ import icon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
 
+import showcaseIcon from "./assets/raw/Pok_Stop_Showcase.webp";
 import gymIcon from "./assets/raw/gym-icon.png";
 import pokeStopIcon from "./assets/raw/pokestop-icon3.png";
 import powerSpotIcon from "./assets/raw/power-spot-icon.png";
@@ -28,6 +29,13 @@ export const iconGym = L.icon({
   shadowAnchor: [8, 16],
   shadowSize: [20, 20],
   shadowUrl: markerShadow,
+});
+
+export const iconShowcase = L.icon({
+  iconAnchor: [15, 15],
+  iconSize: [30, 30],
+  iconUrl: showcaseIcon,
+  popupAnchor: [0, -25],
 });
 
 export const iconPokeStop = L.icon({

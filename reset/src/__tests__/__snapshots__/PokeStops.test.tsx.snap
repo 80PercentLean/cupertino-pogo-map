@@ -117,8 +117,8 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           alt="Marker"
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
-          src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -35px; top: -97px; z-index: -97;"
+          src="/src/assets/raw/Pok_Stop_Showcase.webp"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -35px; top: -97px; z-index: -97;"
           tabindex="0"
         />
         <img
@@ -365,8 +365,8 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           alt="Marker"
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
-          src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -97px; top: 125px; z-index: 125;"
+          src="/src/assets/raw/Pok_Stop_Showcase.webp"
+          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -97px; top: 125px; z-index: 125;"
           tabindex="0"
         />
         <img
@@ -807,6 +807,14 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
           style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -238px; top: -261px; z-index: -261;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -48px; top: 69px; z-index: 69;"
           tabindex="0"
         />
       </div>

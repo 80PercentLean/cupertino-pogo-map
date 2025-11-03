@@ -3,6 +3,7 @@ import { LayersControl, MapContainer, TileLayer } from "react-leaflet";
 
 import DevPois from "./DevPois";
 import Gyms from "./Gyms";
+import L13Grid from "./L13Grid";
 import L14Grid from "./L14Grid";
 import L17Grid from "./L17Grid";
 import LiveLocationMarker from "./LiveLocationMarker";
@@ -63,11 +64,14 @@ export default function MapView() {
         <LayersControl.Overlay name="TBD">
           <DevPois />
         </LayersControl.Overlay>
-        <LayersControl.Overlay name="S2 Cells (L17)">
+        <LayersControl.Overlay name="L17 S2 Cells">
           <L17Grid />
         </LayersControl.Overlay>
-        <LayersControl.Overlay name="S2 Cells (L14)">
+        <LayersControl.Overlay name="L14 S2 Cells">
           <L14Grid />
+        </LayersControl.Overlay>
+        <LayersControl.Overlay name="L13 S2 Cells">
+          <L13Grid />
         </LayersControl.Overlay>
       </LayersControl>
       <PlacedMarkers />

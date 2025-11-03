@@ -2,7 +2,7 @@ import L from "leaflet";
 import { GeoJSON } from "react-leaflet";
 
 import pokestops from "./geojson/pokestops.geojson?raw";
-import { iconPokeStop } from "./leafletIcons";
+import { iconPokeStop, iconShowcase } from "./leafletIcons";
 
 const pokeStopsJson = JSON.parse(pokestops);
 
@@ -17,10 +17,15 @@ export default function PokeStops() {
         return true;
       }}
       pointToLayer={({ properties }, latlng) => {
-        const marker = L.marker(latlng, {
-          icon: iconPokeStop,
-        }).bindPopup(`
-          <b>PokéStop</b><br />
+        let icon = iconPokeStop;
+        let typeTxt = "PokéStop";
+        if (properties.type === "Showcase") {
+          icon = iconShowcase;
+          typeTxt = "Showcase";
+        }
+
+        const marker = L.marker(latlng, { icon }).bindPopup(`
+          <b>${typeTxt}</b><br />
           ${properties.name}<br /><br />
           Directions:
           <ul>
