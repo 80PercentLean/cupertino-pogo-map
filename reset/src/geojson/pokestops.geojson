@@ -1279,6 +1279,102 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "De Anza College Book Store",
+        "type": "PokeStop",
+        "source": "Eyeball",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04499617218973, 37.321482590204845],
+        "type": "Point"
+      },
+      "id": 67
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Sunken Garden",
+        "type": "PokeStop",
+        "source": "Eyeball",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04660147428514, 37.321098646242284],
+        "type": "Point"
+      },
+      "id": 67
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza Bike Route",
+        "type": "PokeStop",
+        "source": "Eyeball",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04485133290292, 37.32265893963401],
+        "type": "Point"
+      },
+      "id": 67
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza College West Bulletin Board",
+        "type": "PokeStop",
+        "source": "Eyeball",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04718217253688, 37.32146339305331],
+        "type": "Point"
+      },
+      "id": 67
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza Science Center",
+        "type": "PokeStop",
+        "source": "Eyeball",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04608246684074, 37.317911835650214],
+        "type": "Point"
+      },
+      "id": 67
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pool Diving Boards",
+        "type": "PokeStop",
+        "source": "Eyeball",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.045496404171, 37.3188269376619],
+        "type": "Point"
+      },
+      "id": 67
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Memorial Park Athletic Field & Event Lawn",
         "type": "PokeStop",
         "source": "Wayfarer",
