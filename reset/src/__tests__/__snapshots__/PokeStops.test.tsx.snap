@@ -46,7 +46,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 148px; top: -238px; z-index: -238;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 148px; top: -238px; z-index: -238;"
           tabindex="0"
         />
         <img
@@ -54,7 +54,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 15px; top: -248px; z-index: -248;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 15px; top: -248px; z-index: -248;"
           tabindex="0"
         />
         <img
@@ -62,7 +62,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 6px; top: -224px; z-index: -224;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 6px; top: -224px; z-index: -224;"
           tabindex="0"
         />
         <img
@@ -70,7 +70,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 16px; top: -197px; z-index: -197;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 16px; top: -197px; z-index: -197;"
           tabindex="0"
         />
         <img
@@ -78,7 +78,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -34px; top: -243px; z-index: -243;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -34px; top: -243px; z-index: -243;"
           tabindex="0"
         />
         <img
@@ -86,7 +86,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 26px; top: -173px; z-index: -173;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 26px; top: -173px; z-index: -173;"
           tabindex="0"
         />
         <img
@@ -94,7 +94,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -5px; top: -160px; z-index: -160;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -5px; top: -160px; z-index: -160;"
           tabindex="0"
         />
         <img
@@ -102,7 +102,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 10px; top: -150px; z-index: -150;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 10px; top: -150px; z-index: -150;"
           tabindex="0"
         />
         <img
@@ -110,7 +110,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 8px; top: -114px; z-index: -114;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 8px; top: -114px; z-index: -114;"
           tabindex="0"
         />
         <img
@@ -118,7 +118,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -35px; top: -97px; z-index: -97;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -35px; top: -97px; z-index: -97;"
           tabindex="0"
         />
         <img
@@ -126,7 +126,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -65px; top: -114px; z-index: -114;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -65px; top: -114px; z-index: -114;"
           tabindex="0"
         />
         <img
@@ -134,7 +134,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 75px; top: -93px; z-index: -93;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 75px; top: -93px; z-index: -93;"
           tabindex="0"
         />
         <img
@@ -142,7 +142,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 75px; top: -70px; z-index: -70;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 75px; top: -70px; z-index: -70;"
           tabindex="0"
         />
         <img
@@ -150,7 +150,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 145px; top: -76px; z-index: -76;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 145px; top: -76px; z-index: -76;"
           tabindex="0"
         />
         <img
@@ -158,7 +158,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -84px; top: -277px; z-index: -277;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -84px; top: -277px; z-index: -277;"
           tabindex="0"
         />
         <img
@@ -166,7 +166,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -141px; top: -161px; z-index: -161;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -141px; top: -161px; z-index: -161;"
           tabindex="0"
         />
         <img
@@ -174,7 +174,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -112px; top: -160px; z-index: -160;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -112px; top: -160px; z-index: -160;"
           tabindex="0"
         />
         <img
@@ -182,7 +182,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -183px; top: -135px; z-index: -135;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -183px; top: -135px; z-index: -135;"
           tabindex="0"
         />
         <img
@@ -190,7 +190,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -155px; top: -48px; z-index: -48;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -155px; top: -48px; z-index: -48;"
           tabindex="0"
         />
         <img
@@ -198,7 +198,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 258px; top: -117px; z-index: -117;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 258px; top: -117px; z-index: -117;"
           tabindex="0"
         />
         <img
@@ -206,7 +206,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 247px; top: -73px; z-index: -73;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 247px; top: -73px; z-index: -73;"
           tabindex="0"
         />
         <img
@@ -214,7 +214,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 294px; top: -145px; z-index: -145;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 294px; top: -145px; z-index: -145;"
           tabindex="0"
         />
         <img
@@ -222,7 +222,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 303px; top: -80px; z-index: -80;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 303px; top: -80px; z-index: -80;"
           tabindex="0"
         />
         <img
@@ -230,7 +230,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -48px; top: -50px; z-index: -50;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -48px; top: -50px; z-index: -50;"
           tabindex="0"
         />
         <img
@@ -238,7 +238,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -58px; top: -28px; z-index: -28;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -58px; top: -28px; z-index: -28;"
           tabindex="0"
         />
         <img
@@ -246,7 +246,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -69px; top: 2px; z-index: 2;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -69px; top: 2px; z-index: 2;"
           tabindex="0"
         />
         <img
@@ -254,7 +254,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -43px; top: 3px; z-index: 3;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -43px; top: 3px; z-index: 3;"
           tabindex="0"
         />
         <img
@@ -262,7 +262,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -57px; top: 35px; z-index: 35;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -57px; top: 35px; z-index: 35;"
           tabindex="0"
         />
         <img
@@ -270,7 +270,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -120px; top: 62px; z-index: 62;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -120px; top: 62px; z-index: 62;"
           tabindex="0"
         />
         <img
@@ -278,7 +278,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 13px; top: -2px; z-index: -2;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 13px; top: -2px; z-index: -2;"
           tabindex="0"
         />
         <img
@@ -286,7 +286,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 149px; top: -48px; z-index: -48;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 149px; top: -48px; z-index: -48;"
           tabindex="0"
         />
         <img
@@ -294,7 +294,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -272px; top: -358px; z-index: -358;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -272px; top: -358px; z-index: -358;"
           tabindex="0"
         />
         <img
@@ -302,7 +302,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -38px; top: -187px; z-index: -187;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 60px; top: 36px; z-index: 36;"
           tabindex="0"
         />
         <img
@@ -310,7 +310,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 92px; top: -263px; z-index: -263;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -120px; top: 62px; z-index: 62;"
           tabindex="0"
         />
         <img
@@ -318,7 +318,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -59px; top: -210px; z-index: -210;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 8px; top: 101px; z-index: 101;"
           tabindex="0"
         />
         <img
@@ -326,7 +326,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 110px; top: -243px; z-index: -243;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -59px; top: 53px; z-index: 53;"
           tabindex="0"
         />
         <img
@@ -334,7 +334,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -68px; top: -131px; z-index: -131;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -45px; top: 45px; z-index: 45;"
           tabindex="0"
         />
         <img
@@ -342,7 +342,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -59px; top: -245px; z-index: -245;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -24px; top: 58px; z-index: 58;"
           tabindex="0"
         />
         <img
@@ -350,7 +350,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 43px; top: -8px; z-index: -8;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 54px; top: 12px; z-index: 12;"
           tabindex="0"
         />
         <img
@@ -358,7 +358,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 56px; top: -75px; z-index: -75;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 41px; top: 38px; z-index: 38;"
           tabindex="0"
         />
         <img
@@ -366,7 +366,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 117px; top: -96px; z-index: -96;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -134px; top: 121px; z-index: 121;"
           tabindex="0"
         />
         <img
@@ -374,7 +374,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 50px; top: -251px; z-index: -251;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -97px; top: 125px; z-index: 125;"
           tabindex="0"
         />
         <img
@@ -382,7 +382,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 23px; top: -278px; z-index: -278;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -63px; top: 90px; z-index: 90;"
           tabindex="0"
         />
         <img
@@ -390,7 +390,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -9px; top: -259px; z-index: -259;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -51px; top: 88px; z-index: 88;"
           tabindex="0"
         />
         <img
@@ -398,7 +398,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 28px; top: 322px; z-index: 322;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -6px; top: 69px; z-index: 69;"
           tabindex="0"
         />
         <img
@@ -406,7 +406,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 131px; top: -134px; z-index: -134;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 10px; top: 54px; z-index: 54;"
           tabindex="0"
         />
         <img
@@ -414,7 +414,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 138px; top: -87px; z-index: -87;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -127px; top: 148px; z-index: 148;"
           tabindex="0"
         />
         <img
@@ -422,7 +422,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 145px; top: -134px; z-index: -134;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -91px; top: 154px; z-index: 154;"
           tabindex="0"
         />
         <img
@@ -430,7 +430,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 35px; top: -98px; z-index: -98;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 34px; top: 103px; z-index: 103;"
           tabindex="0"
         />
         <img
@@ -438,7 +438,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 77px; top: 58px; z-index: 58;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -96px; top: 169px; z-index: 169;"
           tabindex="0"
         />
         <img
@@ -446,7 +446,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 35px; top: -94px; z-index: -94;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -36px; top: 175px; z-index: 175;"
           tabindex="0"
         />
         <img
@@ -454,7 +454,7 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: 137px; top: -28px; z-index: -28;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -5px; top: 142px; z-index: 142;"
           tabindex="0"
         />
         <img
@@ -462,7 +462,351 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; left: -122px; top: -218px; z-index: -218;"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 41px; top: 127px; z-index: 127;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 56px; top: 127px; z-index: 127;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 51px; top: 212px; z-index: 212;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 75px; top: 224px; z-index: 224;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -67px; top: 208px; z-index: 208;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -48px; top: 306px; z-index: 306;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 74px; top: 301px; z-index: 301;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 99px; top: 333px; z-index: 333;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 123px; top: 338px; z-index: 338;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 132px; top: 322px; z-index: 322;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -182px; top: 245px; z-index: 245;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -146px; top: 294px; z-index: 294;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 171px; top: 170px; z-index: 170;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 197px; top: 178px; z-index: 178;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 238px; top: 377px; z-index: 377;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -38px; top: -187px; z-index: -187;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 92px; top: -263px; z-index: -263;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -59px; top: -210px; z-index: -210;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 110px; top: -243px; z-index: -243;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -68px; top: -131px; z-index: -131;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -59px; top: -245px; z-index: -245;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 43px; top: -8px; z-index: -8;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 56px; top: -75px; z-index: -75;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 117px; top: -96px; z-index: -96;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 50px; top: -251px; z-index: -251;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 23px; top: -278px; z-index: -278;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -9px; top: -259px; z-index: -259;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 28px; top: 322px; z-index: 322;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 131px; top: -134px; z-index: -134;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 138px; top: -87px; z-index: -87;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 145px; top: -134px; z-index: -134;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 35px; top: -98px; z-index: -98;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 77px; top: 58px; z-index: 58;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 35px; top: -94px; z-index: -94;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 137px; top: -28px; z-index: -28;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -122px; top: -218px; z-index: -218;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -6px; top: 21px; z-index: 21;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -81px; top: 44px; z-index: 44;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 1px; top: -48px; z-index: -48;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -108px; top: 23px; z-index: 23;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -57px; top: 231px; z-index: 231;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -29px; top: 177px; z-index: 177;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 59px; top: -219px; z-index: -219;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -238px; top: -261px; z-index: -261;"
           tabindex="0"
         />
       </div>

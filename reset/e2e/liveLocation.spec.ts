@@ -19,7 +19,10 @@ test("shows change in live location", async ({ page, context }) => {
   await expect(page).toHaveScreenshot({ maxDiffPixels: 100 });
 
   // Move to end position
-  await context.setGeolocation({ longitude: -122.045456, latitude: 37.324407 });
+  await context.setGeolocation({
+    longitude: -122.04567208886148,
+    latitude: 37.32424372942416,
+  });
 
   // Screenshot end position
   await expect(page).toHaveScreenshot({ maxDiffPixels: 100 });

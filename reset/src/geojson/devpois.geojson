@@ -30,19 +30,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Memorial Park Softball Scoreboard",
-        "type": "?",
-        "source": "Wayfarer",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.045204, 37.325305], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Smoke-Free Park Sign",
         "type": "?",
         "source": "Wayfarer",

@@ -46,7 +46,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: -32px; top: -292px; z-index: -292;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -16px; top: -293px; z-index: -293;"
           tabindex="0"
         />
         <img
@@ -54,7 +54,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: 171px; top: -279px; z-index: -279;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 171px; top: -279px; z-index: -279;"
           tabindex="0"
         />
         <img
@@ -62,7 +62,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: 42px; top: -186px; z-index: -186;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 42px; top: -186px; z-index: -186;"
           tabindex="0"
         />
         <img
@@ -70,7 +70,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: 89px; top: -84px; z-index: -84;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 89px; top: -84px; z-index: -84;"
           tabindex="0"
         />
         <img
@@ -78,7 +78,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: 26px; top: -232px; z-index: -232;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 26px; top: -232px; z-index: -232;"
           tabindex="0"
         />
         <img
@@ -86,7 +86,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: 12px; top: -174px; z-index: -174;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 12px; top: -174px; z-index: -174;"
           tabindex="0"
         />
         <img
@@ -94,7 +94,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: -31px; top: -172px; z-index: -172;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -31px; top: -172px; z-index: -172;"
           tabindex="0"
         />
         <img
@@ -102,7 +102,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: -11px; top: -131px; z-index: -131;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -11px; top: -131px; z-index: -131;"
           tabindex="0"
         />
         <img
@@ -110,7 +110,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: -42px; top: -69px; z-index: -69;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -42px; top: -69px; z-index: -69;"
           tabindex="0"
         />
         <img
@@ -118,7 +118,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: 112px; top: -230px; z-index: -230;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 112px; top: -230px; z-index: -230;"
           tabindex="0"
         />
         <img
@@ -126,7 +126,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: -93px; top: -161px; z-index: -161;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -93px; top: -161px; z-index: -161;"
           tabindex="0"
         />
         <img
@@ -134,7 +134,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: -74px; top: -30px; z-index: -30;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -74px; top: -30px; z-index: -30;"
           tabindex="0"
         />
         <img
@@ -142,7 +142,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: -41px; top: 9px; z-index: 9;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -41px; top: 9px; z-index: 9;"
           tabindex="0"
         />
         <img
@@ -150,7 +150,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: -47px; top: 18px; z-index: 18;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -47px; top: 18px; z-index: 18;"
           tabindex="0"
         />
         <img
@@ -158,7 +158,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: -48px; top: 23px; z-index: 23;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -48px; top: 23px; z-index: 23;"
           tabindex="0"
         />
         <img
@@ -166,7 +166,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: -101px; top: 47px; z-index: 47;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -101px; top: 47px; z-index: 47;"
           tabindex="0"
         />
         <img
@@ -174,7 +174,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: -109px; top: 34px; z-index: 34;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -109px; top: 34px; z-index: 34;"
           tabindex="0"
         />
         <img
@@ -182,7 +182,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: -120px; top: 40px; z-index: 40;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -120px; top: 40px; z-index: 40;"
           tabindex="0"
         />
         <img
@@ -190,7 +190,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: 203px; top: -44px; z-index: -44;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 203px; top: -44px; z-index: -44;"
           tabindex="0"
         />
         <img
@@ -198,7 +198,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: 248px; top: -104px; z-index: -104;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 248px; top: -104px; z-index: -104;"
           tabindex="0"
         />
         <img
@@ -206,7 +206,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: 290px; top: -294px; z-index: -294;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 290px; top: -294px; z-index: -294;"
           tabindex="0"
         />
         <img
@@ -214,7 +214,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: 179px; top: -76px; z-index: -76;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 179px; top: -76px; z-index: -76;"
           tabindex="0"
         />
         <img
@@ -222,7 +222,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: 212px; top: -166px; z-index: -166;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 212px; top: -166px; z-index: -166;"
           tabindex="0"
         />
         <img
@@ -230,7 +230,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: 178px; top: -41px; z-index: -41;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 178px; top: -41px; z-index: -41;"
           tabindex="0"
         />
         <img
@@ -238,7 +238,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: 197px; top: 8px; z-index: 8;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 197px; top: 8px; z-index: 8;"
           tabindex="0"
         />
         <img
@@ -246,7 +246,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: -9px; top: 253px; z-index: 253;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -9px; top: 253px; z-index: 253;"
           tabindex="0"
         />
         <img
@@ -254,7 +254,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: -33px; top: -6px; z-index: -6;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -33px; top: -6px; z-index: -6;"
           tabindex="0"
         />
         <img
@@ -262,7 +262,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: -51px; top: 108px; z-index: 108;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 66px; top: 18px; z-index: 18;"
           tabindex="0"
         />
         <img
@@ -270,7 +270,7 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: -146px; top: 87px; z-index: 87;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -51px; top: 108px; z-index: 108;"
           tabindex="0"
         />
         <img
@@ -278,7 +278,223 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
-          style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; left: 86px; top: -192px; z-index: -192;"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -146px; top: 87px; z-index: 87;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -80px; top: 61px; z-index: 61;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -62px; top: 69px; z-index: 69;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -2px; top: 32px; z-index: 32;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 40px; top: 8px; z-index: 8;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -43px; top: 97px; z-index: 97;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -5px; top: 92px; z-index: 92;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 23px; top: 80px; z-index: 80;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -23px; top: 115px; z-index: 115;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -16px; top: 101px; z-index: 101;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -9px; top: 131px; z-index: 131;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 21px; top: 92px; z-index: 92;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 34px; top: 81px; z-index: 81;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -68px; top: 169px; z-index: 169;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -2px; top: 158px; z-index: 158;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 9px; top: 130px; z-index: 130;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 21px; top: 136px; z-index: 136;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 176px; top: -41px; z-index: -41;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 12px; top: -176px; z-index: -176;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -43px; top: -272px; z-index: -272;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -38px; top: -201px; z-index: -201;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -1px; top: -188px; z-index: -188;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 86px; top: -192px; z-index: -192;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 3px; top: -210px; z-index: -210;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 24px; top: -198px; z-index: -198;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -20px; top: -98px; z-index: -98;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -10px; top: -193px; z-index: -193;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -16px; top: -203px; z-index: -203;"
           tabindex="0"
         />
       </div>

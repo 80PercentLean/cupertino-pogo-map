@@ -45,7 +45,6 @@ exports[`loads <L14Grid> and matches snapshot 1`] = `
         >
           <g>
             <path
-              class="leaflet-interactive"
               d="M2 2L2 -2L-2 -2L-2 2z"
               fill="#f00"
               fill-opacity="0"
