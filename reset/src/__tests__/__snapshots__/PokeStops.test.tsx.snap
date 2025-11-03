@@ -294,14 +294,6 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
-          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -272px; top: -358px; z-index: -358;"
-          tabindex="0"
-        />
-        <img
-          alt="Marker"
-          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-          role="button"
-          src="/src/assets/raw/pokestop-icon3.png"
           style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: 60px; top: 36px; z-index: 36;"
           tabindex="0"
         />
@@ -743,6 +735,14 @@ exports[`loads <PokeStops> and matches snapshot 1`] = `
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
           style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -122px; top: -218px; z-index: -218;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -141px; top: -326px; z-index: -326;"
           tabindex="0"
         />
         <img
