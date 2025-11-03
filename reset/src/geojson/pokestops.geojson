@@ -408,22 +408,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Mary Avenue Dog Park",
-        "type": "PokeStop",
-        "source": "Wayfarer",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.050699, 37.32796],
-        "type": "Point"
-      },
-      "id": 67
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Multicultural Center",
         "type": "PokeStop",
         "source": "Wayfarer",
@@ -1272,6 +1256,23 @@
       },
       "geometry": {
         "coordinates": [-122.047493, 37.32556],
+        "type": "Point"
+      },
+      "id": 67
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Community pool",
+        "type": "PokeStop",
+        "hidden": true,
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04789564013481, 37.32741747443455],
         "type": "Point"
       },
       "id": 67

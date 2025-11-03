@@ -232,6 +232,22 @@
         "type": "Point"
       },
       "id": 17
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mary Avenue Dog Park",
+        "type": "Gym",
+        "source": "Wayfarer",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.050699, 37.32796],
+        "type": "Point"
+      },
+      "id": 67
     }
   ]
 }
