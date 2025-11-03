@@ -761,6 +761,32 @@
       },
       "geometry": { "coordinates": [-122.044342, 37.325229], "type": "Point" },
       "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "In memory of Virginia J. Logan",
+        "type": "Power Spot",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045297, 37.323513], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park BBQ Spot A",
+        "type": "Power Spot",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045071, 37.325148], "type": "Point" },
+      "id": 14
     }
   ]
 }

@@ -4,198 +4,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Home of Christ",
-        "type": "?",
-        "hidden": true,
-        "source": "Ingress",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.048776, 37.317658], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Hoc5 kids playground structure",
-        "type": "?",
-        "hidden": true,
-        "source": "Ingress",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.048, 37.316825], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "The Church of Jesus Christ of Latter-day Saints",
-        "type": "?",
-        "hidden": true,
-        "source": "Ingress",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.0412, 37.318947], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "The Church of Jesus Christ of Latter-day Saints",
-        "type": "?",
-        "hidden": true,
-        "source": "Ingress",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.040638, 37.318809], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "DeAnza Baseball Field",
-        "type": "?",
-        "source": "Ingress",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.043269, 37.316716], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Pond And Marsh Research Station",
-        "type": "?",
-        "source": "Ingress",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.042751, 37.316167], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Desert Research Station",
-        "type": "?",
-        "source": "Ingress",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.042234, 37.316075], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Waterfall Fountain and River",
-        "type": "?",
-        "source": "Ingress",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.042025, 37.316359], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "St Jude Church",
-        "type": "?",
-        "hidden": true,
-        "source": "Ingress",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.041255, 37.315454], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "St. Jude's Episcipal Church Bell",
-        "type": "?",
-        "hidden": true,
-        "source": "Ingress",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.040829, 37.314948], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Bless the Children Murals",
-        "type": "?",
-        "hidden": true,
-        "source": "Ingress",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.040684, 37.315183], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Wooden Cross",
-        "type": "?",
-        "hidden": true,
-        "source": "Ingress",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.040493, 37.314829], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Labyrinth",
-        "type": "?",
-        "hidden": true,
-        "source": "Ingress",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.040229, 37.314784], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Wooden Cross",
-        "type": "?",
-        "hidden": true,
-        "source": "Ingress",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.039758, 37.315408], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Glenbrook West Exit Sign",
         "type": "?",
         "source": "Wayfarer",
@@ -204,19 +12,6 @@
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.050091, 37.326572], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Glenbrook West Entrance Sign",
-        "type": "?",
-        "source": "Wayfarer",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.04998, 37.326296], "type": "Point" },
       "id": 14
     },
     {
@@ -248,19 +43,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Memorial Park BBQ Spot A",
-        "type": "?",
-        "source": "Wayfarer",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.045071, 37.325148], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Smoke-Free Park Sign",
         "type": "?",
         "source": "Wayfarer",
@@ -282,19 +64,6 @@
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.044732, 37.323505], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "In memory of Virginia J. Logan",
-        "type": "?",
-        "source": "Wayfarer",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.045297, 37.323513], "type": "Point" },
       "id": 14
     }
   ]

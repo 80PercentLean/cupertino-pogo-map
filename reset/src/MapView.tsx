@@ -33,7 +33,6 @@ export default function MapView() {
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles courtesy of <a href="https://www.openstreetmap.cat" target="_blank">Breton OpenStreetMap Team</a>'
             url="https://tile.openstreetmap.bzh/ca/{z}/{x}/{y}.png'"
-            maxNativeZoom={18}
             maxZoom={20}
           />
         </LayersControl.BaseLayer>
@@ -41,7 +40,7 @@ export default function MapView() {
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            maxNativeZoom={18}
+            maxNativeZoom={19}
             maxZoom={20}
           />
         </LayersControl.BaseLayer>
@@ -49,7 +48,6 @@ export default function MapView() {
           <TileLayer
             attribution="Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
             url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
-            maxNativeZoom={18}
             maxZoom={20}
           />
         </LayersControl.BaseLayer>

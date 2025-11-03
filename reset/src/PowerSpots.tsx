@@ -11,7 +11,7 @@ export default function PowerSpots() {
     <GeoJSON
       data={powerSpotsJson}
       filter={(feature) => {
-        if (feature.properties.disabled) {
+        if (feature.properties.removed) {
           return false;
         }
         return true;

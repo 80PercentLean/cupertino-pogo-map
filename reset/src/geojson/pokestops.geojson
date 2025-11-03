@@ -768,6 +768,198 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "De Anza Baseball Field",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.043269, 37.316716], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pond And Marsh Research Station",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.042751, 37.316167], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Desert Research Station",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.042234, 37.316075], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Waterfall Fountain and River",
+        "type": "PokeStop",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.042025, 37.316359], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Home of Christ",
+        "type": "PokeStop",
+        "hidden": true,
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.048776, 37.317658], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hoc5 kids playground structure",
+        "type": "PokeStop",
+        "hidden": true,
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.048, 37.316825], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Church of Jesus Christ of Latter-day Saints",
+        "type": "PokeStop",
+        "hidden": true,
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.0412, 37.318947], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Church of Jesus Christ of Latter-day Saints",
+        "type": "PokeStop",
+        "hidden": true,
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.040638, 37.318809], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wooden Cross",
+        "type": "PokeStop",
+        "hidden": true,
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.039758, 37.315408], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "St Jude Church",
+        "type": "PokeStop",
+        "removed": true,
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.041255, 37.315454], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "St. Jude's Episcipal Church Bell",
+        "type": "PokeStop",
+        "removed": true,
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.040829, 37.314948], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bless the Children Murals",
+        "type": "PokeStop",
+        "removed": true,
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.040684, 37.315183], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wooden Cross",
+        "type": "PokeStop",
+        "removed": true,
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.040493, 37.314829], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Labyrinth",
+        "type": "PokeStop",
+        "removed": true,
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.040229, 37.314784], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Toyokawa Cherry Blossom Grove",
         "type": "PokeStop",
         "source": "Wayfarer",
@@ -1095,6 +1287,19 @@
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.043604, 37.325592], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook West Entrance Sign",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.04998, 37.326296], "type": "Point" },
       "id": 14
     }
   ]

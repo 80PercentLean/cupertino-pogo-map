@@ -11,7 +11,7 @@ export default function PokeStops() {
     <GeoJSON
       data={pokeStopsJson}
       filter={(feature) => {
-        if (feature.properties.disabled) {
+        if (feature.properties.removed) {
           return false;
         }
         return true;

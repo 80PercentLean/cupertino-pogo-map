@@ -127,7 +127,7 @@
       "properties": {
         "name": "Whole Foods Cupertino Mural",
         "type": "Gym",
-        "disabled": true,
+        "removed": true,
         "source": "Ingress",
         "marker-color": "#ff2600",
         "marker-size": "large",
@@ -204,7 +204,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Kingdom Hall",
+        "name": "Kingdom Hall of Jehovah's Witnesses Sign",
         "type": "Gym",
         "source": "Ingress",
         "marker-color": "#ff2600",
