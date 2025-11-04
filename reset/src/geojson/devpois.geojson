@@ -4,32 +4,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Glenbrook West Exit Sign",
-        "type": "?",
-        "source": "Wayfarer",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.050091, 37.326572], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Enjoy Smoke-Free Parks",
-        "type": "?",
-        "source": "Wayfarer",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.045692, 37.325233], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Smoke-Free Park Sign",
         "type": "?",
         "source": "Wayfarer",
@@ -43,14 +17,14 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Smoke-Free Memorial Park",
-        "type": "?",
+        "name": "Glenbrook Apartment Homes Sign",
+        "type": "PokeStop",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.044732, 37.323505], "type": "Point" },
+      "geometry": { "coordinates": [-122.050075, 37.326539], "type": "Point" },
       "id": 14
     }
   ]

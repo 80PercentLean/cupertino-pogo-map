@@ -3,9 +3,9 @@ import { useState } from "react";
 import { Popup, useMapEvent } from "react-leaflet";
 
 import CMarker from "./CMarker";
-import { isMobile } from "./util";
+import { isMobileUa } from "./util";
 
-const IS_MOBILE = isMobile();
+const IS_MOBILE = isMobileUa();
 
 /**
  * Allow markers to be placed arbitrarily on the map by the user.

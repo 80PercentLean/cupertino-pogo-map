@@ -11,9 +11,9 @@ import PlacedMarkers from "./PlacedMarkers";
 import PokeStops from "./PokeStops";
 import PowerSpots from "./PowerSpots";
 import { CENTER } from "./constants";
-import { isMobile } from "./util";
+import { isMobileUa } from "./util";
 
-const IS_MOBILE = isMobile();
+const IS_MOBILE = isMobileUa();
 const BOUNDARIES: LatLngBoundsExpression = [
   [37.3328, -122.0554],
   [37.3107, -122.0326],

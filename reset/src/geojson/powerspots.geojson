@@ -864,6 +864,32 @@
       },
       "geometry": { "coordinates": [-122.045204, 37.325305], "type": "Point" },
       "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Smoke-Free Memorial Park",
+        "type": "Power Spots",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.044732, 37.323505], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Enjoy Smoke-Free Parks",
+        "type": "Power Spots",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045692, 37.325233], "type": "Point" },
+      "id": 14
     }
   ]
 }

@@ -21,7 +21,6 @@ export default function CCircleMarker(props: CCircleMarkerProps) {
     if (testId && markerRef.current) {
       // @ts-ignore
       markerRef.current._path.dataset.testid = testId;
-      console.log(markerRef.current);
     }
   }, []);
 

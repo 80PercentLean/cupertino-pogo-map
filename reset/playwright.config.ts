@@ -12,7 +12,8 @@ import { defineConfig, devices } from "@playwright/test";
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: "./e2e",
+  testDir: "./src/e2e",
+  testIgnore: ["__tests__/**"],
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -44,6 +45,20 @@ export default defineConfig({
       use: { ...devices["Desktop Firefox"] },
     },
 
+    {
+      name: "pixel7",
+      use: { ...devices["Pixel 7"] },
+    },
+
+    {
+      name: "iphone15",
+      use: {
+        ...devices["iPhone 15"],
+        browserName: "chromium", // TODO: remove this when Safari testing is setup
+      },
+    },
+
+    // TODO: enable this when Safari testing setup
     // {
     //   name: 'webkit',
     //   use: { ...devices['Desktop Safari'] },
