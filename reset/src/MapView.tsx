@@ -6,6 +6,7 @@ import Gyms from "./Gyms";
 import L13Grid from "./L13Grid";
 import L14Grid from "./L14Grid";
 import L17Grid from "./L17Grid";
+import LeafletDebug from "./LeafletDebug";
 import LiveLocationMarker from "./LiveLocationMarker";
 import PlacedMarkers from "./PlacedMarkers";
 import PokeStops from "./PokeStops";
@@ -29,6 +30,7 @@ export default function MapView() {
       scrollWheelZoom={!IS_MOBILE}
       zoom={16}
     >
+      <LeafletDebug />
       <LayersControl position="topright">
         <LayersControl.BaseLayer name="Default" checked>
           <TileLayer
