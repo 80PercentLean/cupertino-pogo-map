@@ -23,6 +23,11 @@ dist-ssr
 *.sln
 *.sw?
 
-# Stylelint
-.stylelintcache
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
 
+coverage

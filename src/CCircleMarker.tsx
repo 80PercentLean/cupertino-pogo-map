@@ -16,13 +16,14 @@ export default function CCircleMarker(props: CCircleMarkerProps) {
   // TODO: Not sure what the type of this ref should be
   const markerRef = useRef(null);
 
+  const testId = props["data-testid"];
+
   useEffect(() => {
-    const testId = props["data-testid"];
     if (testId && markerRef.current) {
-      // @ts-ignore
+      // @ts-expect-error Not sure how to resolve the following type error on _path
       markerRef.current._path.dataset.testid = testId;
     }
-  }, []);
+  }, [testId]);
 
   return <CircleMarker ref={markerRef} {...props} />;
 }

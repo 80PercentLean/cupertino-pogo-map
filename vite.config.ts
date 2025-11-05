@@ -1,25 +1,15 @@
-import tailwindcss from '@tailwindcss/vite'
-import react from '@vitejs/plugin-react'
-import path from 'path'
-import { defineConfig } from 'vite'
-import stylelint from 'vite-plugin-stylelint'
-
-import { BASE_PATH } from './src/constants'
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: `/${BASE_PATH}/`,
-  server: { host: '0.0.0.0' },
+  base: "/cupertino-pogo-map",
+  server: { host: "0.0.0.0" },
   plugins: [
-    react(),
-    tailwindcss(),
-    stylelint({
-      emitErrorAsWarning: true,
+    react({
+      babel: {
+        plugins: ["babel-plugin-react-compiler"],
+      },
     }),
   ],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
-  },
-})
+});

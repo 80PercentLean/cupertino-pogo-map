@@ -1,9 +1,3 @@
-import { genPath } from './util'
+import type { LatLngExpression } from "leaflet";
 
-export const BASE_PATH = 'cupertino-pogo-map'
-
-export const PATH_INFO = genPath('info', true)
-
-export const PATH_LIST = genPath('list', true)
-
-export const PATH_ROOT = genPath(true)
+export const CENTER: LatLngExpression = [37.32185397836693, -122.0448660850525];

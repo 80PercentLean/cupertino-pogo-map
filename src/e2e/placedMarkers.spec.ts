@@ -6,7 +6,7 @@ import { isMobileProject, isPixel7, longPressContextMenu } from "./util";
 test("loads map with no placed markers by default", async ({ page }) => {
   await page.goto(DEV_SERVER, { waitUntil: "networkidle" });
 
-  let markers = await page.locator('[data-testid*="placed-"]').all();
+  const markers = await page.locator('[data-testid*="placed-"]').all();
 
   expect(markers.length).toBe(0);
 });

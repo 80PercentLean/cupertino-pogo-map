@@ -14,14 +14,14 @@ export type CMarkerProps = MarkerProps & CMarkerExclusiveProps;
 export default function CMarker(props: CMarkerProps) {
   // TODO: Not sure what the type of this ref should be
   const markerRef = useRef(null);
+  const testId = props["data-testid"];
 
   useEffect(() => {
-    const testId = props["data-testid"];
     if (testId && markerRef.current) {
-      // @ts-ignore
+      // @ts-expect-error Not sure how to resolve the following type error on _icon
       markerRef.current._icon.dataset.testid = testId;
     }
-  }, []);
+  }, [testId]);
 
   return <Marker ref={markerRef} {...props} />;
 }
