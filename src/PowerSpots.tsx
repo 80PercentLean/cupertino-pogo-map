@@ -1,10 +1,11 @@
+import type { GeoJSON as GeoJSONType } from "geojson";
 import L from "leaflet";
 import { GeoJSON } from "react-leaflet";
 
 import powerSpots from "./geojson/powerspots.geojson?raw";
 import { iconPowerSpot } from "./leafletIcons";
 
-const powerSpotsJson = JSON.parse(powerSpots);
+const powerSpotsJson = JSON.parse(powerSpots) as GeoJSONType;
 
 export default function PowerSpots() {
   return (

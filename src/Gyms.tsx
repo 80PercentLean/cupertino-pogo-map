@@ -1,10 +1,11 @@
+import type { GeoJSON as GeoJSONType } from "geojson";
 import L from "leaflet";
 import { GeoJSON } from "react-leaflet";
 
 import gyms from "./geojson/gyms.geojson?raw";
 import { iconGym } from "./leafletIcons";
 
-const gymsJson = JSON.parse(gyms);
+const gymsJson = JSON.parse(gyms) as GeoJSONType;
 
 export default function Gyms() {
   return (

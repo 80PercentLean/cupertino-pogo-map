@@ -1,10 +1,11 @@
+import type { GeoJSON as GeoJSONType } from "geojson";
 import L from "leaflet";
 import { GeoJSON } from "react-leaflet";
 
 import pokestops from "./geojson/pokestops.geojson?raw";
 import { iconPokeStop, iconShowcase } from "./leafletIcons";
 
-const pokeStopsJson = JSON.parse(pokestops);
+const pokeStopsJson = JSON.parse(pokestops) as GeoJSONType;
 
 export default function PokeStops() {
   return (

@@ -1,8 +1,9 @@
+import type { GeoJSON as GeoJSONType } from "geojson";
 import { GeoJSON } from "react-leaflet";
 
 import l14Cells from "./geojson/l14.geojson?raw";
 
-const l14CellsJson = JSON.parse(l14Cells);
+const l14CellsJson = JSON.parse(l14Cells) as GeoJSONType;
 
 /**
  * Renders the Level 14 S2 cells.

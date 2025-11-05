@@ -1,10 +1,11 @@
+import type { GeoJSON as GeoJSONType } from "geojson";
 import L from "leaflet";
 import { GeoJSON } from "react-leaflet";
 
 import devpois from "./geojson/devpois.geojson?raw";
 import { iconDev } from "./leafletIcons";
 
-const devpoisJson = JSON.parse(devpois);
+const devpoisJson = JSON.parse(devpois) as GeoJSONType;
 
 export default function DevPois() {
   return (

@@ -36,9 +36,10 @@ export default function PlacedMarkers() {
                   await navigator.clipboard.writeText(clipboardTxt);
                   alert(`Copied "${clipboardTxt}" to your clipboard!`);
                 } catch (err) {
+                  // TODO: Show error message
                   console.error("Failed to copy text: ", err);
                 }
-              })().catch((err) => console.error("Failed to copy text: ", err));
+              })().catch((err) => console.error("Failed to copy text: ", err)); // TODO: Show error message
             }}
           >
             Copy coordinates:
