@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import type { LatLng, LeafletEventHandlerFnMap } from "leaflet";
 import { useState } from "react";
 import { Popup, useMapEvent } from "react-leaflet";
@@ -28,7 +29,7 @@ export default function PlacedMarkers() {
     return (
       <CMarker key={id} position={c} data-testid={id}>
         <Popup>
-          <button
+          <Button
             onClick={() => {
               (async () => {
                 try {
@@ -47,9 +48,9 @@ export default function PlacedMarkers() {
             Longitude: {c.lng}
             <br />
             Latitude {c.lat}
-          </button>
+          </Button>
           <br />
-          <button
+          <Button
             onClick={() => {
               // This is a hack to prevent a new marker from being placed after the delete button is clicked
               setTimeout(() => {
@@ -62,7 +63,7 @@ export default function PlacedMarkers() {
             data-testid="delete-placed-marker-btn"
           >
             Delete
-          </button>
+          </Button>
         </Popup>
       </CMarker>
     );
