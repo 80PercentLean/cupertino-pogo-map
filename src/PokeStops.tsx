@@ -4,6 +4,7 @@ import { GeoJSON } from "react-leaflet";
 
 import pokestops from "./geojson/pokestops.geojson?raw";
 import { iconPokeStop, iconShowcase } from "./leafletIcons";
+import type { PoiFeature } from "./types";
 
 const pokeStopsJson = JSON.parse(pokestops) as GeoJSONType;
 
@@ -12,22 +13,24 @@ export default function PokeStops() {
     <GeoJSON
       data={pokeStopsJson}
       filter={(feature) => {
-        if (feature.properties.removed) {
+        const poiFeature = feature as PoiFeature;
+        if (poiFeature.properties.removed) {
           return false;
         }
         return true;
       }}
       pointToLayer={({ properties }, latlng) => {
+        const poiProperties = properties as PoiFeature["properties"];
         let icon = iconPokeStop;
         let typeTxt = "PokéStop";
-        if (properties.type === "Showcase") {
+        if (poiProperties.type === "Showcase") {
           icon = iconShowcase;
           typeTxt = "Showcase";
         }
 
         const marker = L.marker(latlng, { icon }).bindPopup(`
           <b>${typeTxt}</b><br />
-          ${properties.name}<br /><br />
+          ${poiProperties.name}<br /><br />
           Directions:
           <ul>
           <li><a href="https://maps.google.com/maps?q=${latlng.lat},${latlng.lng}" rel="noopener noreferrer" target="_blank">Google Maps</a></li>

@@ -18,7 +18,7 @@
       "type": "Feature",
       "properties": {
         "name": "Glenbrook Apartment Homes Sign",
-        "type": "PokeStop",
+        "type": "?",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
