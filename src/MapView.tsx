@@ -6,8 +6,10 @@ import Gyms from "./Gyms";
 import L13Grid from "./L13Grid";
 import L14Grid from "./L14Grid";
 import L17Grid from "./L17Grid";
+import Labels from "./Labels";
 import LeafletDebug from "./LeafletDebug";
 import LiveLocationMarker from "./LiveLocationMarker";
+import Parking from "./Parking";
 import PlacedMarkers from "./PlacedMarkers";
 import PokeStops from "./PokeStops";
 import PowerSpots from "./PowerSpots";
@@ -63,6 +65,9 @@ export default function MapView() {
         <LayersControl.Overlay name="Power Spots">
           <PowerSpots />
         </LayersControl.Overlay>
+        <LayersControl.Overlay name="Parking" checked>
+          <Parking />
+        </LayersControl.Overlay>
         <LayersControl.Overlay name="TBD">
           <DevPois />
         </LayersControl.Overlay>
@@ -74,6 +79,9 @@ export default function MapView() {
         </LayersControl.Overlay>
         <LayersControl.Overlay name="L13 S2 Cells">
           <L13Grid />
+        </LayersControl.Overlay>
+        <LayersControl.Overlay name="Labels" checked>
+          <Labels />
         </LayersControl.Overlay>
       </LayersControl>
       <PlacedMarkers />

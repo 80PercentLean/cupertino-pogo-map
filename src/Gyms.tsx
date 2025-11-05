@@ -1,24 +1,17 @@
-import type { GeoJSON as GeoJSONType } from "geojson";
+import type { GeoJSON } from "geojson";
 import L from "leaflet";
-import { GeoJSON } from "react-leaflet";
 
+import Poi from "./Poi";
 import gyms from "./geojson/gyms.geojson?raw";
 import { iconGym } from "./leafletIcons";
 import type { PoiFeature } from "./types";
 
-const gymsJson = JSON.parse(gyms) as GeoJSONType;
+const gymsJson = JSON.parse(gyms) as GeoJSON;
 
 export default function Gyms() {
   return (
-    <GeoJSON
+    <Poi
       data={gymsJson}
-      filter={(feature) => {
-        const poiFeature = feature as PoiFeature;
-        if (poiFeature.properties.removed) {
-          return false;
-        }
-        return true;
-      }}
       pointToLayer={({ properties }, latlng) => {
         const poiProperties = properties as PoiFeature["properties"];
         const marker = L.marker(latlng, {

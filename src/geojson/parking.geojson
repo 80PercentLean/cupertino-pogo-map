@@ -1,0 +1,37 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quilan Community Center Lower Parking Lot",
+        "type": "Parking",
+        "source": "Wayfarer",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04204037785532, 37.32549449844886],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Veterans Memorial Parking Lot",
+        "type": "Parking",
+        "source": "Wayfarer",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0458209514618, 37.32440939420156],
+        "type": "Point"
+      },
+      "id": 14
+    }
+  ]
+}

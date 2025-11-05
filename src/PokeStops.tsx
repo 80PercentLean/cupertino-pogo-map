@@ -1,24 +1,17 @@
-import type { GeoJSON as GeoJSONType } from "geojson";
+import type { GeoJSON } from "geojson";
 import L from "leaflet";
-import { GeoJSON } from "react-leaflet";
 
+import Poi from "./Poi";
 import pokestops from "./geojson/pokestops.geojson?raw";
 import { iconPokeStop, iconShowcase } from "./leafletIcons";
 import type { PoiFeature } from "./types";
 
-const pokeStopsJson = JSON.parse(pokestops) as GeoJSONType;
+const pokeStopsJson = JSON.parse(pokestops) as GeoJSON;
 
 export default function PokeStops() {
   return (
-    <GeoJSON
+    <Poi
       data={pokeStopsJson}
-      filter={(feature) => {
-        const poiFeature = feature as PoiFeature;
-        if (poiFeature.properties.removed) {
-          return false;
-        }
-        return true;
-      }}
       pointToLayer={({ properties }, latlng) => {
         const poiProperties = properties as PoiFeature["properties"];
         let icon = iconPokeStop;

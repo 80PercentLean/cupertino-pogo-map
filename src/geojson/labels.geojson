@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park",
+        "type": "Label",
+        "source": "Wayfarer",
+        "marker-color": "#808080",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04359874129298, 37.325824220005856],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Veteran's Memorial",
+        "type": "Label",
+        "source": "Wayfarer",
+        "marker-color": "#808080",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04541191458705, 37.324353575660965],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quinlan Community Center",
+        "type": "Label",
+        "source": "Wayfarer",
+        "marker-color": "#808080",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04240649938585, 37.325816754878815],
+        "type": "Point"
+      },
+      "id": 14
+    }
+  ]
+}

@@ -1,24 +1,17 @@
-import type { GeoJSON as GeoJSONType } from "geojson";
+import type { GeoJSON } from "geojson";
 import L from "leaflet";
-import { GeoJSON } from "react-leaflet";
 
+import Poi from "./Poi";
 import powerSpots from "./geojson/powerspots.geojson?raw";
 import { iconPowerSpot } from "./leafletIcons";
 import type { PoiFeature } from "./types";
 
-const powerSpotsJson = JSON.parse(powerSpots) as GeoJSONType;
+const powerSpotsJson = JSON.parse(powerSpots) as GeoJSON;
 
 export default function PowerSpots() {
   return (
-    <GeoJSON
+    <Poi
       data={powerSpotsJson}
-      filter={(feature) => {
-        const poiFeature = feature as PoiFeature;
-        if (poiFeature.properties.removed) {
-          return false;
-        }
-        return true;
-      }}
       pointToLayer={({ properties }, latlng) => {
         const poiProperties = properties as PoiFeature["properties"];
         const marker = L.marker(latlng, {

@@ -31,11 +31,16 @@ export const iconGym = L.icon({
   shadowUrl: markerShadow,
 });
 
-export const iconShowcase = L.icon({
-  iconAnchor: [15, 15],
-  iconSize: [30, 30],
-  iconUrl: showcaseIcon,
-  popupAnchor: [0, -25],
+export const iconDev = L.divIcon({
+  className: "icon-dev",
+  html: "<div>🚧</div>",
+  iconAnchor: [10, 10],
+});
+
+export const iconParking = L.divIcon({
+  className: "icon-dev",
+  html: "<div>🅿️</div>",
+  iconAnchor: [10, 10],
 });
 
 export const iconPokeStop = L.icon({
@@ -55,8 +60,9 @@ export const iconPowerSpot = L.icon({
   // shadowUrl: markerShadow,
 });
 
-export const iconDev = L.divIcon({
-  className: "icon-dev",
-  html: "<div>🚧</div>",
-  iconAnchor: [10, 10],
+export const iconShowcase = L.icon({
+  iconAnchor: [15, 15],
+  iconSize: [30, 30],
+  iconUrl: showcaseIcon,
+  popupAnchor: [0, -25],
 });
