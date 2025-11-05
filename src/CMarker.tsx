@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
 import { Marker, type MarkerProps } from "react-leaflet";
 
-type CMarkerExclusiveProps = {
+interface CMarkerExclusiveProps {
   "data-testid"?: string;
-};
+}
 
 export type CMarkerProps = MarkerProps & CMarkerExclusiveProps;
 

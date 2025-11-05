@@ -29,14 +29,16 @@ export default function PlacedMarkers() {
       <CMarker key={id} position={c} data-testid={id}>
         <Popup>
           <button
-            onClick={async () => {
-              try {
-                const clipboardTxt = `${c.lng},${c.lat}`;
-                await navigator.clipboard.writeText(clipboardTxt);
-                alert(`Copied "${clipboardTxt}" to your clipboard!`);
-              } catch (err) {
-                console.error("Failed to copy text: ", err);
-              }
+            onClick={() => {
+              (async () => {
+                try {
+                  const clipboardTxt = `${c.lng},${c.lat}`;
+                  await navigator.clipboard.writeText(clipboardTxt);
+                  alert(`Copied "${clipboardTxt}" to your clipboard!`);
+                } catch (err) {
+                  console.error("Failed to copy text: ", err);
+                }
+              })().catch((err) => console.error("Failed to copy text: ", err));
             }}
           >
             Copy coordinates:

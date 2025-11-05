@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
 import { CircleMarker, type CircleMarkerProps } from "react-leaflet";
 
-type CCircleMarkerExclusiveProps = {
+interface CCircleMarkerExclusiveProps {
   "data-testid"?: string;
-};
+}
 
 export type CCircleMarkerProps = CircleMarkerProps &
   CCircleMarkerExclusiveProps;
@@ -15,7 +15,6 @@ export type CCircleMarkerProps = CircleMarkerProps &
 export default function CCircleMarker(props: CCircleMarkerProps) {
   // TODO: Not sure what the type of this ref should be
   const markerRef = useRef(null);
-
   const testId = props["data-testid"];
 
   useEffect(() => {
