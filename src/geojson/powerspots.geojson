@@ -691,6 +691,22 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Cupertino Taproom",
+        "type": "Power Spot",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.03959822654726, 37.32347693423068],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "NW Entrance to Memorial Park",
         "type": "Power Spot",
         "source": "Eyeball",
@@ -869,7 +885,7 @@
       "type": "Feature",
       "properties": {
         "name": "Smoke-Free Memorial Park",
-        "type": "Power Spots",
+        "type": "Power Spot",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -882,7 +898,7 @@
       "type": "Feature",
       "properties": {
         "name": "Enjoy Smoke-Free Parks",
-        "type": "Power Spots",
+        "type": "Power Spot",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
