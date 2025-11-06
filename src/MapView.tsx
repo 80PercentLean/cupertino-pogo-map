@@ -26,6 +26,7 @@ export default function MapView() {
   return (
     <MapContainer
       id="map"
+      attributionControl={false}
       center={CENTER}
       maxBounds={BOUNDARIES}
       minZoom={15}

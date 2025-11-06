@@ -16,7 +16,12 @@ export default function Parking() {
         const poiProperties = properties as PoiFeature["properties"];
         const marker = L.marker(latlng, { icon: iconParking }).bindPopup(
           `<b>Parking</b><br />
-          ${poiProperties.name}`,
+          ${poiProperties.name}<br /><br />
+          Directions:
+          <ul>
+          <li><a href="https://maps.google.com/maps?q=${latlng.lat},${latlng.lng}" rel="noopener noreferrer" target="_blank">Google Maps</a></li>
+          <li><a href="https://maps.apple.com/place?coordinate=${latlng.lat},${latlng.lng}" rel="noopener noreferrer" target="_blank">Apple Maps</a></li>
+          </ul>`,
         );
 
         return marker;
