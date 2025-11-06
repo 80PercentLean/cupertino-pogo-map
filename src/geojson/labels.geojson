@@ -6,7 +6,6 @@
       "properties": {
         "name": "Memorial Park",
         "type": "Label",
-        "source": "Wayfarer",
         "marker-color": "#808080",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -22,7 +21,6 @@
       "properties": {
         "name": "Veteran's Memorial",
         "type": "Label",
-        "source": "Wayfarer",
         "marker-color": "#808080",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -38,7 +36,6 @@
       "properties": {
         "name": "Quinlan Community Center",
         "type": "Label",
-        "source": "Wayfarer",
         "marker-color": "#808080",
         "marker-size": "medium",
         "marker-symbol": "circle"
