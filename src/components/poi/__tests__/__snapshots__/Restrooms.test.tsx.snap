@@ -44,7 +44,7 @@ exports[`loads <Restrooms> and matches snapshot 1`] = `
         <div
           class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
-          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 59px; top: -233px; z-index: -233;"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -37px; top: -266px; z-index: -266;"
           tabindex="0"
         >
           <div>
@@ -54,7 +54,7 @@ exports[`loads <Restrooms> and matches snapshot 1`] = `
         <div
           class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
-          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -25px; top: -147px; z-index: -147;"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 16px; top: -129px; z-index: -129;"
           tabindex="0"
         >
           <div>
@@ -64,7 +64,47 @@ exports[`loads <Restrooms> and matches snapshot 1`] = `
         <div
           class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
-          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 115px; top: -233px; z-index: -233;"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -65px; top: -7px; z-index: -7;"
+          tabindex="0"
+        >
+          <div>
+            🚹
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -55px; top: -7px; z-index: -7;"
+          tabindex="0"
+        >
+          <div>
+            🚺
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -51px; top: 13px; z-index: 13;"
+          tabindex="0"
+        >
+          <div>
+            🚺
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -46px; top: 13px; z-index: 13;"
+          tabindex="0"
+        >
+          <div>
+            🚹
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -44px; top: 58px; z-index: 58;"
           tabindex="0"
         >
           <div>
@@ -74,7 +114,7 @@ exports[`loads <Restrooms> and matches snapshot 1`] = `
         <div
           class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
-          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -1px; top: -268px; z-index: -268;"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -14px; top: 67px; z-index: 67;"
           tabindex="0"
         >
           <div>
@@ -84,7 +124,7 @@ exports[`loads <Restrooms> and matches snapshot 1`] = `
         <div
           class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
-          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -43px; top: -84px; z-index: -84;"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -47px; top: 101px; z-index: 101;"
           tabindex="0"
         >
           <div>
@@ -94,7 +134,7 @@ exports[`loads <Restrooms> and matches snapshot 1`] = `
         <div
           class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
-          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 14px; top: 243px; z-index: 243;"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -71px; top: 77px; z-index: 77;"
           tabindex="0"
         >
           <div>
@@ -104,7 +144,7 @@ exports[`loads <Restrooms> and matches snapshot 1`] = `
         <div
           class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
-          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -29px; top: 62px; z-index: 62;"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -103px; top: 93px; z-index: 93;"
           tabindex="0"
         >
           <div>
@@ -114,7 +154,7 @@ exports[`loads <Restrooms> and matches snapshot 1`] = `
         <div
           class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
-          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -150px; top: 63px; z-index: 63;"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -120px; top: 43px; z-index: 43;"
           tabindex="0"
         >
           <div>
@@ -124,7 +164,267 @@ exports[`loads <Restrooms> and matches snapshot 1`] = `
         <div
           class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
-          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -55px; top: 171px; z-index: 171;"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -132px; top: 52px; z-index: 52;"
+          tabindex="0"
+        >
+          <div>
+            🚻
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -49px; top: 139px; z-index: 139;"
+          tabindex="0"
+        >
+          <div>
+            🚹
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -49px; top: 153px; z-index: 153;"
+          tabindex="0"
+        >
+          <div>
+            🚺
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -48px; top: 146px; z-index: 146;"
+          tabindex="0"
+        >
+          <div>
+            🚻
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 20px; top: 7px; z-index: 7;"
+          tabindex="0"
+        >
+          <div>
+            🚻
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 49px; top: 3px; z-index: 3;"
+          tabindex="0"
+        >
+          <div>
+            🚹
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 60px; top: 3px; z-index: 3;"
+          tabindex="0"
+        >
+          <div>
+            🚺
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 54px; top: 39px; z-index: 39;"
+          tabindex="0"
+        >
+          <div>
+            🚻
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 0px; top: 42px; z-index: 42;"
+          tabindex="0"
+        >
+          <div>
+            🚻
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 56px; top: 84px; z-index: 84;"
+          tabindex="0"
+        >
+          <div>
+            🚺
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 56px; top: 98px; z-index: 98;"
+          tabindex="0"
+        >
+          <div>
+            🚹
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 57px; top: 91px; z-index: 91;"
+          tabindex="0"
+        >
+          <div>
+            🚻
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -124px; top: 118px; z-index: 118;"
+          tabindex="0"
+        >
+          <div>
+            🚹
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -132px; top: 118px; z-index: 118;"
+          tabindex="0"
+        >
+          <div>
+            🚺
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -115px; top: 139px; z-index: 139;"
+          tabindex="0"
+        >
+          <div>
+            🚹
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -115px; top: 153px; z-index: 153;"
+          tabindex="0"
+        >
+          <div>
+            🚺
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -117px; top: 146px; z-index: 146;"
+          tabindex="0"
+        >
+          <div>
+            🚻
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -26px; top: 164px; z-index: 164;"
+          tabindex="0"
+        >
+          <div>
+            🚹
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 15px; top: 164px; z-index: 164;"
+          tabindex="0"
+        >
+          <div>
+            🚺
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 19px; top: 176px; z-index: 176;"
+          tabindex="0"
+        >
+          <div>
+            🚻
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -6px; top: 194px; z-index: 194;"
+          tabindex="0"
+        >
+          <div>
+            🚺
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -6px; top: 202px; z-index: 202;"
+          tabindex="0"
+        >
+          <div>
+            🚹
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -70px; top: 215px; z-index: 215;"
+          tabindex="0"
+        >
+          <div>
+            🚹
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -70px; top: 225px; z-index: 225;"
+          tabindex="0"
+        >
+          <div>
+            🚺
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -39px; top: 278px; z-index: 278;"
+          tabindex="0"
+        >
+          <div>
+            🚻
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -39px; top: 281px; z-index: 281;"
+          tabindex="0"
+        >
+          <div>
+            🚻
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 64px; top: 338px; z-index: 338;"
           tabindex="0"
         >
           <div>
