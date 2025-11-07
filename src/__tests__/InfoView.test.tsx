@@ -1,4 +1,4 @@
-import InfoView from "@/InfoView";
+import InfoView from "@/components/InfoView";
 import { render, screen } from "@testing-library/react";
 
 test("loads <InfoView>", () => {

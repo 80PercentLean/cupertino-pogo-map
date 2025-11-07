@@ -1,8 +1,8 @@
 import { render } from "@testing-library/react";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import PowerSpots from "../components/poi/PowerSpots";
-import { CENTER } from "../constants";
+import { CENTER } from "../../../constants";
+import DevPois from "../DevPois";
 
 function TestComponent() {
   return (
@@ -11,12 +11,12 @@ function TestComponent() {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <PowerSpots />
+      <DevPois />
     </MapContainer>
   );
 }
 
-test("loads <PowerSpots> and matches snapshot", () => {
+test("loads <DevPois> and matches snapshot", () => {
   const { asFragment } = render(<TestComponent />);
 
   expect(asFragment()).toMatchSnapshot();

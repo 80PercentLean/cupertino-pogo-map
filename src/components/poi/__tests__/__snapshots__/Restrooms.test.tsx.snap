@@ -1,0 +1,238 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`loads <Restrooms> and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="leaflet-container leaflet-touch leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+    id="map"
+    style="position: relative;"
+    tabindex="0"
+  >
+    <div
+      class="leaflet-pane leaflet-map-pane"
+      style="left: 0px; top: 0px;"
+    >
+      <div
+        class="leaflet-pane leaflet-tile-pane"
+      >
+        <div
+          class="leaflet-layer "
+          style="z-index: 1;"
+        >
+          <div
+            class="leaflet-tile-container leaflet-zoom-animated"
+            style="z-index: 18; left: 0px; top: 0px;"
+          >
+            <img
+              alt=""
+              class="leaflet-tile"
+              src="https://a.tile.openstreetmap.org/16/10550/25435.png"
+              style="width: 256px; height: 256px; left: -105px; top: -16px;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="leaflet-pane leaflet-overlay-pane"
+      />
+      <div
+        class="leaflet-pane leaflet-shadow-pane"
+      />
+      <div
+        class="leaflet-pane leaflet-marker-pane"
+      >
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 59px; top: -233px; z-index: -233;"
+          tabindex="0"
+        >
+          <div>
+            🚻
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -25px; top: -147px; z-index: -147;"
+          tabindex="0"
+        >
+          <div>
+            🚻
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 115px; top: -233px; z-index: -233;"
+          tabindex="0"
+        >
+          <div>
+            🚻
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -1px; top: -268px; z-index: -268;"
+          tabindex="0"
+        >
+          <div>
+            🚻
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -43px; top: -84px; z-index: -84;"
+          tabindex="0"
+        >
+          <div>
+            🚻
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 14px; top: 243px; z-index: 243;"
+          tabindex="0"
+        >
+          <div>
+            🚻
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -29px; top: 62px; z-index: 62;"
+          tabindex="0"
+        >
+          <div>
+            🚻
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -150px; top: 63px; z-index: 63;"
+          tabindex="0"
+        >
+          <div>
+            🚻
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -55px; top: 171px; z-index: 171;"
+          tabindex="0"
+        >
+          <div>
+            🚻
+          </div>
+        </div>
+      </div>
+      <div
+        class="leaflet-pane leaflet-tooltip-pane"
+      />
+      <div
+        class="leaflet-pane leaflet-popup-pane"
+      />
+    </div>
+    <div
+      class="leaflet-control-container"
+    >
+      <div
+        class="leaflet-top leaflet-left"
+      >
+        <div
+          class="leaflet-control-zoom leaflet-bar leaflet-control"
+        >
+          <a
+            aria-disabled="false"
+            aria-label="Zoom in"
+            class="leaflet-control-zoom-in"
+            href="#"
+            role="button"
+            title="Zoom in"
+          >
+            <span
+              aria-hidden="true"
+            >
+              +
+            </span>
+          </a>
+          <a
+            aria-disabled="false"
+            aria-label="Zoom out"
+            class="leaflet-control-zoom-out"
+            href="#"
+            role="button"
+            title="Zoom out"
+          >
+            <span
+              aria-hidden="true"
+            >
+              −
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="leaflet-top leaflet-right"
+      />
+      <div
+        class="leaflet-bottom leaflet-left"
+      />
+      <div
+        class="leaflet-bottom leaflet-right"
+      >
+        <div
+          class="leaflet-control-attribution leaflet-control"
+        >
+          <a
+            href="https://leafletjs.com"
+            title="A JavaScript library for interactive maps"
+          >
+            <svg
+              aria-hidden="true"
+              class="leaflet-attribution-flag"
+              height="8"
+              viewBox="0 0 12 8"
+              width="12"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h12v4H0z"
+                fill="#4C7BE1"
+              />
+              <path
+                d="M0 4h12v3H0z"
+                fill="#FFD500"
+              />
+              <path
+                d="M0 7h12v1H0z"
+                fill="#E0BC00"
+              />
+            </svg>
+             Leaflet
+          </a>
+           
+          <span
+            aria-hidden="true"
+          >
+            |
+          </span>
+           © 
+          <a
+            href="https://www.openstreetmap.org/copyright"
+          >
+            OpenStreetMap
+          </a>
+           contributors
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
