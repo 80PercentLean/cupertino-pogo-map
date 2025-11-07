@@ -64,6 +64,18 @@ export const iconParking = L.divIcon({
   iconAnchor: [10, 10],
 });
 
+/** Leaflet icon for parking with restricted conditions. */
+export const iconParkingWarn = L.divIcon({
+  className: "icon-emoji",
+  html: `<div class="relative inline-block">
+  🅿️
+  <div class="absolute -top-0 -right-1 flex items-center justify-center bg-yellow-400 text-black rounded-full w-3 h-3 text-xs font-bold ring-1 ring-black">
+    !
+  </div>
+</div>`,
+  iconAnchor: [10, 10],
+});
+
 /** Leaflet icon for PokeStops. */
 export const iconPokeStop = L.icon({
   iconAnchor: [15, 30],

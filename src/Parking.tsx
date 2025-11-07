@@ -3,7 +3,7 @@ import L from "leaflet";
 
 import Poi from "./Poi";
 import parking from "./geojson/parking.geojson?raw";
-import { iconParking } from "./leafletIcons";
+import { iconParking, iconParkingWarn } from "./leafletIcons";
 import type { PoiFeature } from "./types";
 
 const parkingJson = JSON.parse(parking) as GeoJSON;
@@ -17,7 +17,17 @@ export default function Parking() {
       data={parkingJson}
       pointToLayer={({ properties }, latlng) => {
         const poiProperties = properties as PoiFeature["properties"];
-        const marker = L.marker(latlng, { icon: iconParking }).bindPopup(
+
+        let icon;
+        switch (poiProperties.type) {
+          case "Conditionally Free Parking":
+            icon = iconParkingWarn;
+            break;
+          default:
+            icon = iconParking;
+        }
+
+        const marker = L.marker(latlng, { icon }).bindPopup(
           `<b>Parking</b><br />
           ${poiProperties.name}<br /><br />
           Directions:

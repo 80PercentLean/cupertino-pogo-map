@@ -42,7 +42,7 @@ exports[`loads <Parking> and matches snapshot 1`] = `
         class="leaflet-pane leaflet-marker-pane"
       >
         <div
-          class="leaflet-marker-icon icon-dev leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
           style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 132px; top: -251px; z-index: -251;"
           tabindex="0"
@@ -52,7 +52,7 @@ exports[`loads <Parking> and matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="leaflet-marker-icon icon-dev leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
           style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 132px; top: -214px; z-index: -214;"
           tabindex="0"
@@ -62,17 +62,53 @@ exports[`loads <Parking> and matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="leaflet-marker-icon icon-dev leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
           style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -44px; top: -150px; z-index: -150;"
           tabindex="0"
         >
-          <div>
-            🅿️
+          <div
+            class="relative inline-block"
+          >
+            
+  🅿️
+  
+            <div
+              class="absolute -top-0 -right-1 flex items-center justify-center bg-yellow-400 text-black rounded-full w-3 h-3 text-xs font-bold ring-1 ring-black"
+            >
+              
+    !
+  
+            </div>
+            
+
           </div>
         </div>
         <div
-          class="leaflet-marker-icon icon-dev leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -41px; top: -117px; z-index: -117;"
+          tabindex="0"
+        >
+          <div
+            class="relative inline-block"
+          >
+            
+  🅿️
+  
+            <div
+              class="absolute -top-0 -right-1 flex items-center justify-center bg-yellow-400 text-black rounded-full w-3 h-3 text-xs font-bold ring-1 ring-black"
+            >
+              
+    !
+  
+            </div>
+            
+
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
           style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 58px; top: -207px; z-index: -207;"
           tabindex="0"
@@ -82,7 +118,7 @@ exports[`loads <Parking> and matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="leaflet-marker-icon icon-dev leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
           style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 102px; top: -196px; z-index: -196;"
           tabindex="0"
@@ -92,7 +128,7 @@ exports[`loads <Parking> and matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="leaflet-marker-icon icon-dev leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
           style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -44px; top: -184px; z-index: -184;"
           tabindex="0"
@@ -102,7 +138,7 @@ exports[`loads <Parking> and matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="leaflet-marker-icon icon-dev leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
           style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -151px; top: -138px; z-index: -138;"
           tabindex="0"
@@ -112,7 +148,7 @@ exports[`loads <Parking> and matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="leaflet-marker-icon icon-dev leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
           style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -263px; top: -354px; z-index: -354;"
           tabindex="0"
@@ -122,7 +158,7 @@ exports[`loads <Parking> and matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="leaflet-marker-icon icon-dev leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
           style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -154px; top: -1px; z-index: -1;"
           tabindex="0"
@@ -132,7 +168,7 @@ exports[`loads <Parking> and matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="leaflet-marker-icon icon-dev leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
           style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -154px; top: -1px; z-index: -1;"
           tabindex="0"
@@ -142,7 +178,7 @@ exports[`loads <Parking> and matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="leaflet-marker-icon icon-dev leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
           style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 101px; top: 10px; z-index: 10;"
           tabindex="0"
@@ -152,7 +188,7 @@ exports[`loads <Parking> and matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="leaflet-marker-icon icon-dev leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
           style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 101px; top: 89px; z-index: 89;"
           tabindex="0"
@@ -162,7 +198,7 @@ exports[`loads <Parking> and matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="leaflet-marker-icon icon-dev leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
           style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 86px; top: 198px; z-index: 198;"
           tabindex="0"
@@ -172,7 +208,7 @@ exports[`loads <Parking> and matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="leaflet-marker-icon icon-dev leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
           style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 82px; top: 175px; z-index: 175;"
           tabindex="0"
@@ -182,7 +218,7 @@ exports[`loads <Parking> and matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="leaflet-marker-icon icon-dev leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
           style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 109px; top: 309px; z-index: 309;"
           tabindex="0"
@@ -192,7 +228,7 @@ exports[`loads <Parking> and matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="leaflet-marker-icon icon-dev leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
           style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 109px; top: 309px; z-index: 309;"
           tabindex="0"
@@ -202,7 +238,7 @@ exports[`loads <Parking> and matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="leaflet-marker-icon icon-dev leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
           style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 1px; top: 339px; z-index: 339;"
           tabindex="0"
@@ -212,7 +248,7 @@ exports[`loads <Parking> and matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="leaflet-marker-icon icon-dev leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
           style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -76px; top: 257px; z-index: 257;"
           tabindex="0"

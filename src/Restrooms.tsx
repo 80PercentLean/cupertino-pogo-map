@@ -16,8 +16,9 @@ export default function Restrooms() {
     <Poi
       data={restroomsJson}
       pointToLayer={({ properties }, latlng) => {
-        let icon;
         const poiProperties = properties as PoiFeature["properties"];
+
+        let icon;
         switch (poiProperties.type) {
           case "Men's Restroom":
             icon = iconMRestroom;

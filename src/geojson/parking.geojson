@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "name": "Quinlan Community Center Upper Parking Lot",
-        "type": "Parking",
+        "type": "Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -20,7 +20,7 @@
       "type": "Feature",
       "properties": {
         "name": "Quinlan Community Center Lower Parking Lot",
-        "type": "Parking",
+        "type": "Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -35,7 +35,7 @@
       "type": "Feature",
       "properties": {
         "name": "Veterans Memorial Parking Lot",
-        "type": "Parking",
+        "type": "Conditionally Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -49,8 +49,23 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Senior Center Parking Lot",
+        "type": "Conditionally Free Parking",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0457498729229, 37.32385020129667],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Alves Drive Parking Lot",
-        "type": "Parking",
+        "type": "Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -65,7 +80,7 @@
       "type": "Feature",
       "properties": {
         "name": "Alves Drive Street Parking",
-        "type": "Parking",
+        "type": "Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -80,7 +95,7 @@
       "type": "Feature",
       "properties": {
         "name": "Softball Field Parking Lot",
-        "type": "Parking",
+        "type": "Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -95,7 +110,7 @@
       "type": "Feature",
       "properties": {
         "name": "Mary Avenue Lower Street Parking",
-        "type": "Parking",
+        "type": "Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -110,7 +125,7 @@
       "type": "Feature",
       "properties": {
         "name": "Mary Avenue Upper Street Parking",
-        "type": "Parking",
+        "type": "Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -125,7 +140,7 @@
       "type": "Feature",
       "properties": {
         "name": "Flint Parking Structure",
-        "type": "Parking",
+        "type": "Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -140,7 +155,7 @@
       "type": "Feature",
       "properties": {
         "name": "Flint Parking Structure",
-        "type": "Parking",
+        "type": "Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -155,7 +170,7 @@
       "type": "Feature",
       "properties": {
         "name": "De Anza College Parking Lot A",
-        "type": "Parking",
+        "type": "Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -170,7 +185,7 @@
       "type": "Feature",
       "properties": {
         "name": "De Anza College Parking Lot B",
-        "type": "Parking",
+        "type": "Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -185,7 +200,7 @@
       "type": "Feature",
       "properties": {
         "name": "De Anza College Parking Lot C",
-        "type": "Parking",
+        "type": "Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -200,7 +215,7 @@
       "type": "Feature",
       "properties": {
         "name": "Stelling Parking Structure",
-        "type": "Parking",
+        "type": "Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -215,7 +230,7 @@
       "type": "Feature",
       "properties": {
         "name": "De Anza Parking Lot C1",
-        "type": "Parking",
+        "type": "Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -230,7 +245,7 @@
       "type": "Feature",
       "properties": {
         "name": "De Anza Parking Lot C1",
-        "type": "Parking",
+        "type": "Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -245,7 +260,7 @@
       "type": "Feature",
       "properties": {
         "name": "De Anza Parking Lot D",
-        "type": "Parking",
+        "type": "Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -260,7 +275,7 @@
       "type": "Feature",
       "properties": {
         "name": "De Anza Parking Lot E",
-        "type": "Parking",
+        "type": "Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"

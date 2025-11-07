@@ -22,11 +22,11 @@ export default function Labels() {
   return (
     <GeoJSON
       data={labelsJson}
-      interactive={false}
       // @ts-expect-error Causes a type error because the else condition doesn't return a marker, but the code works fine
       pointToLayer={({ properties }, latlng) => {
-        let icon;
         const labelProperties = properties as LabelFeature["properties"];
+
+        let icon;
         switch (labelProperties.name) {
           case "Memorial Park":
             icon = labelMp;

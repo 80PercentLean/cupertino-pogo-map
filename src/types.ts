@@ -23,9 +23,10 @@ interface PoiProperties {
 
   /** Type of POI. */
   type:
+    | "Conditionally Free Parking"
+    | "Free Parking"
     | "Gym"
     | "Label"
-    | "Parking"
     | "PokeStop"
     | "Power Spot"
     | "All-Gender Restroom"

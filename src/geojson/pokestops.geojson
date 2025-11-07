@@ -1402,6 +1402,19 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Glenbrook Apartment Homes Sign",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.050075, 37.326539], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Community Ambassador Location",
         "type": "PokeStop",
         "source": "Wayfarer",
@@ -1410,7 +1423,7 @@
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.0459, 37.320662], "type": "Point" },
-      "id": 14
+      "id": 999
     }
   ]
 }
