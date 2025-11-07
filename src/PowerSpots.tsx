@@ -8,6 +8,9 @@ import type { PoiFeature } from "./types";
 
 const powerSpotsJson = JSON.parse(powerSpots) as GeoJSON;
 
+/**
+ * Specialized <Poi> for rendering power spots.
+ */
 export default function PowerSpots() {
   return (
     <Poi

@@ -5,6 +5,9 @@ import { GeoJSON, type GeoJSONProps } from "react-leaflet";
 
 import type { PoiFeature } from "./types";
 
+/**
+ * Generic React Leaflet <GeoJSON> specialized for rendering POIs.
+ */
 export default function Poi(
   props: GeoJSONProps &
     RefAttributes<L.GeoJSON<FeatureCollection<Geometry, PoiFeature>, Geometry>>,

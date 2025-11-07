@@ -45,6 +45,96 @@
         "type": "Point"
       },
       "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Tennis Courts",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04489693045616, 37.32641396269837],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Senior Center",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04579278826714, 37.323281768140895],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza College",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04456567764284, 37.317700656680685],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hinson Campus Center",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04548165202144, 37.32078935662378],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Media & Learning Center",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04808339476588, 37.320774425368604],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fujitsu Planetarium",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0460529625416, 37.31892186019315],
+        "type": "Point"
+      },
+      "id": 14
     }
   ]
 }

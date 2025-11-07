@@ -8,7 +8,7 @@ interface CMarkerExclusiveProps {
 export type CMarkerProps = MarkerProps & CMarkerExclusiveProps;
 
 /**
- * This is a custom Marker component extends React Leaflet's <Marker> to support custom
+ * This is a custom marker component extends React Leaflet's <Marker> to support custom
  * HTML attributes to the marker's icon element.
  */
 export default function CMarker(props: CMarkerProps) {

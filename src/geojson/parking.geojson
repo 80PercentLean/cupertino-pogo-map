@@ -4,9 +4,23 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Quinlan Community Center Upper Parking Lot",
+        "type": "Parking",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04204306006432, 37.3261377546718],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Quinlan Community Center Lower Parking Lot",
         "type": "Parking",
-        "source": "Wayfarer",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -22,13 +36,237 @@
       "properties": {
         "name": "Veterans Memorial Parking Lot",
         "type": "Parking",
-        "source": "Wayfarer",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": {
         "coordinates": [-122.0458209514618, 37.32440939420156],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alves Drive Parking Lot",
+        "type": "Parking",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04361215233804, 37.32537737752381],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alves Drive Street Parking",
+        "type": "Parking",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04268813133241, 37.32519821320473],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Softball Field Parking Lot",
+        "type": "Parking",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04581558704378, 37.32498172241592],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mary Avenue Lower Street Parking",
+        "type": "Parking",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04810619354248, 37.324200004178444],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mary Avenue Upper Street Parking",
+        "type": "Parking",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.05050811171532, 37.32789096522269],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flint Parking Structure",
+        "type": "Parking",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04816251993181, 37.32185800018273],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flint Parking Structure",
+        "type": "Parking",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04816251993181, 37.32185800018273],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza College Parking Lot A",
+        "type": "Parking",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04270958900453, 37.32167349494499],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza College Parking Lot B",
+        "type": "Parking",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0427042245865, 37.32032861938345],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza College Parking Lot C",
+        "type": "Parking",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04302072525026, 37.31846857736219],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stelling Parking Structure",
+        "type": "Parking",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04310923814776, 37.318866399852375],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza Parking Lot C1",
+        "type": "Parking",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04252585768702, 37.31657435882253],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza Parking Lot C1",
+        "type": "Parking",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04252585768702, 37.31657435882253],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza Parking Lot D",
+        "type": "Parking",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04484865069392, 37.316056000160096],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza Parking Lot E",
+        "type": "Parking",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04649418592454, 37.31745961329338],
         "type": "Point"
       },
       "id": 14

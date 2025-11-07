@@ -6,6 +6,9 @@ import CCircleMarker, { type CCircleMarkerProps } from "./CCircleMarker";
 
 export type LiveLocationMarkerProps = Omit<CCircleMarkerProps, "center">;
 
+/**
+ * <CCircleMarker> that represents the user's current location.
+ */
 export default function LiveLocationMarker(props: LiveLocationMarkerProps) {
   const [location, setLocation] = useState<LatLngExpression | null>(null);
   const [accuracy, setAccuracy] = useState<number | null>(80);

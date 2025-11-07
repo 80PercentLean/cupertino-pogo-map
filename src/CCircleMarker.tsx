@@ -9,7 +9,7 @@ export type CCircleMarkerProps = CircleMarkerProps &
   CCircleMarkerExclusiveProps;
 
 /**
- * This is a custom CircleMarker component extends React Leaflet's <CircleMarker> to support custom
+ * This is a custom circle marker component extends React Leaflet's <CircleMarker> to support custom
  * HTML attributes to the marker's icon element.
  */
 export default function CCircleMarker(props: CCircleMarkerProps) {

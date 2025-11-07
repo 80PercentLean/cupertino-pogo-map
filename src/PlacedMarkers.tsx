@@ -9,7 +9,7 @@ import { isMobileUa } from "./util";
 const IS_MOBILE = isMobileUa();
 
 /**
- * Allow markers to be placed arbitrarily on the map by the user.
+ * Handles markers be placed arbitrarily on the map by the user.
  */
 export default function PlacedMarkers() {
   const [coords, setCoords] = useState<LatLng[]>([]);

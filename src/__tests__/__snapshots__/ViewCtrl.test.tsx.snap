@@ -1,0 +1,85 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`loads <ViewCtrl> and matches snapshot 1`] = `
+<DocumentFragment>
+  <nav
+    aria-label="Main"
+    class="group/navigation-menu flex max-w-max flex-1 items-center justify-center fixed right-0 bottom-0 left-0 z-1001 m-2 min-w-full"
+    data-orientation="horizontal"
+    data-slot="navigation-menu"
+    data-viewport="true"
+    dir="ltr"
+  >
+    <div
+      style="position: relative;"
+    >
+      <ul
+        class="group flex flex-1 list-none items-center justify-center gap-1"
+        data-orientation="horizontal"
+        data-slot="navigation-menu-list"
+        dir="ltr"
+      >
+        <li
+          class="relative"
+          data-slot="navigation-menu-item"
+        >
+          <a
+            class="items-center justify-center whitespace-nowrap font-medium disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none shrink-0 [&_svg]:shrink-0 focus-visible:border-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground h-9 has-[>svg]:px-3 data-[active=true]:focus:bg-accent data-[active=true]:hover:bg-accent data-[active=true]:bg-accent/50 data-[active=true]:text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus-visible:ring-ring/50 [&_svg:not([class*='text-'])]:text-muted-foreground flex flex-col gap-1 rounded-sm p-2 text-sm transition-all outline-none focus-visible:ring-[3px] focus-visible:outline-1 [&_svg:not([class*='size-'])]:size-4"
+            data-discover="true"
+            data-radix-collection-item=""
+            data-slot="navigation-menu-link"
+            href="/cupertino-pogo-map"
+          >
+            Map
+          </a>
+        </li>
+        <li
+          class="relative"
+          data-slot="navigation-menu-item"
+        >
+          <a
+            class="items-center justify-center whitespace-nowrap font-medium disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none shrink-0 [&_svg]:shrink-0 focus-visible:border-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground h-9 has-[>svg]:px-3 data-[active=true]:focus:bg-accent data-[active=true]:hover:bg-accent data-[active=true]:bg-accent/50 data-[active=true]:text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus-visible:ring-ring/50 [&_svg:not([class*='text-'])]:text-muted-foreground flex flex-col gap-1 rounded-sm p-2 text-sm transition-all outline-none focus-visible:ring-[3px] focus-visible:outline-1 [&_svg:not([class*='size-'])]:size-4"
+            data-discover="true"
+            data-radix-collection-item=""
+            data-slot="navigation-menu-link"
+            href="/cupertino-pogo-map/list"
+          >
+            List
+          </a>
+        </li>
+        <li
+          class="relative"
+          data-slot="navigation-menu-item"
+        >
+          <a
+            class="items-center justify-center whitespace-nowrap font-medium disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none shrink-0 [&_svg]:shrink-0 focus-visible:border-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground h-9 has-[>svg]:px-3 data-[active=true]:focus:bg-accent data-[active=true]:hover:bg-accent data-[active=true]:bg-accent/50 data-[active=true]:text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus-visible:ring-ring/50 [&_svg:not([class*='text-'])]:text-muted-foreground flex flex-col gap-1 rounded-sm p-2 text-sm transition-all outline-none focus-visible:ring-[3px] focus-visible:outline-1 [&_svg:not([class*='size-'])]:size-4"
+            data-discover="true"
+            data-radix-collection-item=""
+            data-slot="navigation-menu-link"
+            href="/cupertino-pogo-map/settings"
+          >
+            Settings
+          </a>
+        </li>
+        <li
+          class="relative"
+          data-slot="navigation-menu-item"
+        >
+          <a
+            class="items-center justify-center whitespace-nowrap font-medium disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none shrink-0 [&_svg]:shrink-0 focus-visible:border-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground h-9 has-[>svg]:px-3 data-[active=true]:focus:bg-accent data-[active=true]:hover:bg-accent data-[active=true]:bg-accent/50 data-[active=true]:text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus-visible:ring-ring/50 [&_svg:not([class*='text-'])]:text-muted-foreground flex flex-col gap-1 rounded-sm p-2 text-sm transition-all outline-none focus-visible:ring-[3px] focus-visible:outline-1 [&_svg:not([class*='size-'])]:size-4"
+            data-discover="true"
+            data-radix-collection-item=""
+            data-slot="navigation-menu-link"
+            href="/cupertino-pogo-map/info"
+          >
+            Info
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="absolute top-full left-0 isolate z-50 flex justify-center"
+    />
+  </nav>
+</DocumentFragment>
+`;

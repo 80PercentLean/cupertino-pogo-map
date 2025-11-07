@@ -8,6 +8,9 @@ import type { PoiFeature } from "./types";
 
 const parkingJson = JSON.parse(parking) as GeoJSON;
 
+/**
+ * Specialized <Poi> for rendering parking.
+ */
 export default function Parking() {
   return (
     <Poi

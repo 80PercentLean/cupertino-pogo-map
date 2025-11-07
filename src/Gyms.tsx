@@ -1,13 +1,13 @@
-import type { GeoJSON } from "geojson";
 import L from "leaflet";
 
 import Poi from "./Poi";
-import gyms from "./geojson/gyms.geojson?raw";
+import { gymsJson } from "./geojson/data";
 import { iconGym } from "./leafletIcons";
 import type { PoiFeature } from "./types";
 
-const gymsJson = JSON.parse(gyms) as GeoJSON;
-
+/**
+ * Specialized <Poi> for rendering gyms.
+ */
 export default function Gyms() {
   return (
     <Poi

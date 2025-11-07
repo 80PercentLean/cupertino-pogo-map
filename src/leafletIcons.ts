@@ -1,3 +1,6 @@
+/**
+ * Code for setting up Leaflet icons.
+ */
 import L from "leaflet";
 import iconRetina from "leaflet/dist/images/marker-icon-2x.png";
 import icon from "leaflet/dist/images/marker-icon.png";
@@ -9,6 +12,7 @@ import gymIcon from "./assets/raw/gym-icon.png";
 import pokeStopIcon from "./assets/raw/pokestop-icon3.png";
 import powerSpotIcon from "./assets/raw/power-spot-icon.png";
 
+/** Default Leaflet icon. */
 const DefaultIcon = L.icon({
   iconAnchor: [12, 41],
   iconRetinaUrl: iconRetina,
@@ -21,6 +25,7 @@ const DefaultIcon = L.icon({
 });
 L.Marker.prototype.options.icon = DefaultIcon;
 
+/** Leaflet icon for gyms. */
 export const iconGym = L.icon({
   iconAnchor: [25, 41],
   iconSize: [50, 50],
@@ -31,18 +36,21 @@ export const iconGym = L.icon({
   shadowUrl: markerShadow,
 });
 
+/** Leaflet icon for dev POIs. */
 export const iconDev = L.divIcon({
   className: "icon-dev",
   html: "<div>🚧</div>",
   iconAnchor: [10, 10],
 });
 
+/** Leaflet icon for parking. */
 export const iconParking = L.divIcon({
   className: "icon-dev",
   html: "<div>🅿️</div>",
   iconAnchor: [10, 10],
 });
 
+/** Leaflet icon for PokeStops. */
 export const iconPokeStop = L.icon({
   iconAnchor: [15, 30],
   iconSize: [30, 30],
@@ -50,6 +58,7 @@ export const iconPokeStop = L.icon({
   popupAnchor: [0, -25],
 });
 
+/** Leaflet icon for power spots. */
 export const iconPowerSpot = L.icon({
   iconAnchor: [12, 25],
   iconSize: [25, 25],
@@ -60,9 +69,9 @@ export const iconPowerSpot = L.icon({
   // shadowUrl: markerShadow,
 });
 
+/** Leaflet icon for PokeStops with showcases. */
 export const iconShowcase = L.icon({
   iconAnchor: [15, 15],
   iconSize: [30, 30],
   iconUrl: showcaseIcon,
-  popupAnchor: [0, -25],
 });

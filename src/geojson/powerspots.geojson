@@ -691,6 +691,22 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Cupertino Senior Center",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04559028148653, 37.323186851116226],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Cupertino Taproom",
         "type": "Power Spot",
         "source": "Wayfarer",
@@ -707,6 +723,22 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Faria CDC",
+        "type": "Power Spot",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.03878417611125, 37.32019956978896],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "NW Entrance to Memorial Park",
         "type": "Power Spot",
         "source": "Eyeball",
@@ -716,22 +748,6 @@
       },
       "geometry": {
         "coordinates": [-122.04579681158067, 37.32648967977929],
-        "type": "Point"
-      },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Cupertino Senior Center",
-        "type": "Power Spot",
-        "source": "Eyeball",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04559028148653, 37.323186851116226],
         "type": "Point"
       },
       "id": 14

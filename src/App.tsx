@@ -4,6 +4,9 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import BaseView from "./BaseView";
 import InfoView from "./InfoView";
 
+/**
+ * Core component of the app that sets up error boundary and routing.
+ */
 export default function App() {
   return (
     <ErrorBoundary fallback={<div>Something went wrong.</div>}>

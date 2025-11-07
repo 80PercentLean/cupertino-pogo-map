@@ -8,6 +8,9 @@ import type { PoiFeature } from "./types";
 
 const pokeStopsJson = JSON.parse(pokestops) as GeoJSON;
 
+/**
+ * Specialized <Poi> for rendering PokeStops.
+ */
 export default function PokeStops() {
   return (
     <Poi

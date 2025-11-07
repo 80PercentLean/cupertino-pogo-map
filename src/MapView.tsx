@@ -22,6 +22,9 @@ const BOUNDARIES: LatLngBoundsExpression = [
   [37.3107, -122.0326],
 ];
 
+/**
+ * The Leaflet map of the app.
+ */
 export default function MapView() {
   return (
     <MapContainer

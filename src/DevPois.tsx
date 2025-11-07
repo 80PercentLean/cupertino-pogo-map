@@ -1,13 +1,13 @@
-import type { GeoJSON as GeoJSONType } from "geojson";
 import L from "leaflet";
 
 import Poi from "./Poi";
-import devpois from "./geojson/devpois.geojson?raw";
+import { devpoisJson } from "./geojson/data";
 import { iconDev } from "./leafletIcons";
 import type { PoiFeature } from "./types";
 
-const devpoisJson = JSON.parse(devpois) as GeoJSONType;
-
+/**
+ * Specialized <Poi> for rendering POIs in development like Wayfarer submissions.
+ */
 export default function DevPois() {
   return (
     <Poi
