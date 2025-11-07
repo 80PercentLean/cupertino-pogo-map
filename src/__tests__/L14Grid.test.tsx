@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import L14Grid from "../L14Grid";
+import L14Grid from "../components/s2/L14Grid";
 import { CENTER } from "../constants";
 
 function TestComponent() {

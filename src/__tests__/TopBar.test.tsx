@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 
-import TopBar from "../TopBar";
+import TopBar from "../components/TopBar";
 
 test("loads <TopBar>", () => {
   render(<TopBar />);

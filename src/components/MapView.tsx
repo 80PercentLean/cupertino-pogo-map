@@ -1,21 +1,21 @@
 import type { LatLngBoundsExpression } from "leaflet";
 import { LayersControl, MapContainer, TileLayer } from "react-leaflet";
 
-import DevPois from "./DevPois";
-import Gyms from "./Gyms";
-import L13Grid from "./L13Grid";
-import L14Grid from "./L14Grid";
-import L17Grid from "./L17Grid";
+import { CENTER } from "../constants";
+import { isMobileUa } from "../util";
 import Labels from "./Labels";
 import LeafletDebug from "./LeafletDebug";
 import LiveLocationMarker from "./LiveLocationMarker";
-import Parking from "./Parking";
 import PlacedMarkers from "./PlacedMarkers";
-import PokeStops from "./PokeStops";
-import PowerSpots from "./PowerSpots";
-import Restrooms from "./Restrooms";
-import { CENTER } from "./constants";
-import { isMobileUa } from "./util";
+import DevPois from "./poi/DevPois";
+import Gyms from "./poi/Gyms";
+import Parking from "./poi/Parking";
+import PokeStops from "./poi/PokeStops";
+import PowerSpots from "./poi/PowerSpots";
+import Restrooms from "./poi/Restrooms";
+import L13Grid from "./s2/L13Grid";
+import L14Grid from "./s2/L14Grid";
+import L17Grid from "./s2/L17Grid";
 
 const IS_MOBILE = isMobileUa();
 const BOUNDARIES: LatLngBoundsExpression = [

@@ -1,7 +1,7 @@
 import L from "leaflet";
 import { GeoJSON } from "react-leaflet";
 
-import { labelsJson } from "./geojson/data";
+import { labelsJson } from "../geojson/data";
 import {
   labelDa,
   labelFujitsu,
@@ -12,8 +12,8 @@ import {
   labelQuinlan,
   labelSenior,
   labelVeterans,
-} from "./leafletLabels";
-import type { LabelFeature } from "./types";
+} from "../leafletLabels";
+import type { LabelFeature } from "../types";
 
 /**
  * React Leaflet's <GeoJSON> specialized for rendering text on the map which we call labels.

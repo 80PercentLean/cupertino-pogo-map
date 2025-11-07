@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import CCircleMarker from "../CCircleMarker";
+import CCircleMarker from "../components/CCircleMarker";
 import { CENTER } from "../constants";
 
 function TestComponent() {

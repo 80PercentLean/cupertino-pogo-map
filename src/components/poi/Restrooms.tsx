@@ -1,12 +1,13 @@
-import type { GeoJSON } from "geojson";
+import { restroomsJson } from "@/geojson/data";
 import L from "leaflet";
 
+import {
+  iconAbRestroom,
+  iconMRestroom,
+  iconWRestroom,
+} from "../../leafletIcons";
+import type { PoiFeature } from "../../types";
 import Poi from "./Poi";
-import restrooms from "./geojson/restrooms.geojson?raw";
-import { iconAbRestroom, iconMRestroom, iconWRestroom } from "./leafletIcons";
-import type { PoiFeature } from "./types";
-
-const restroomsJson = JSON.parse(restrooms) as GeoJSON;
 
 /**
  * Specialized <Poi> for rendering restrooms.

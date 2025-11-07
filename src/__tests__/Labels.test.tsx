@@ -1,4 +1,4 @@
-import Labels from "@/Labels";
+import Labels from "@/components/Labels";
 import { render } from "@testing-library/react";
 import { MapContainer, TileLayer } from "react-leaflet";
 

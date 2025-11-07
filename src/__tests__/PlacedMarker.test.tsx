@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { userEvent } from "@testing-library/user-event";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import PlacedMarkers from "../PlacedMarkers";
+import PlacedMarkers from "../components/PlacedMarkers";
 import { CENTER } from "../constants";
 
 function TestComponent() {

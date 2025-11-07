@@ -1,4 +1,4 @@
-import LinkExt from "@/LinkExt";
+import LinkExt from "@/components/LinkExt";
 import { render, screen } from "@testing-library/react";
 
 test("loads <LinkExt> and matches snapshot", () => {

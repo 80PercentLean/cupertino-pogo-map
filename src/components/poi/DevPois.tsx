@@ -1,9 +1,9 @@
 import L from "leaflet";
 
+import { devpoisJson } from "../../geojson/data";
+import { iconDev } from "../../leafletIcons";
+import type { PoiFeature } from "../../types";
 import Poi from "./Poi";
-import { devpoisJson } from "./geojson/data";
-import { iconDev } from "./leafletIcons";
-import type { PoiFeature } from "./types";
 
 /**
  * Specialized <Poi> for rendering POIs in development like Wayfarer submissions.

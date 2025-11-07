@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import PokeStops from "../PokeStops";
+import PokeStops from "../components/poi/PokeStops";
 import { CENTER } from "../constants";
 
 function TestComponent() {

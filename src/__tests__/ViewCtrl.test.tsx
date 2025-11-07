@@ -1,4 +1,4 @@
-import ViewCtrl from "@/ViewCtrl";
+import ViewCtrl from "@/components/ViewCtrl";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router";
 

@@ -3,7 +3,7 @@ import L from "leaflet";
 import type { RefAttributes } from "react";
 import { GeoJSON, type GeoJSONProps } from "react-leaflet";
 
-import type { PoiFeature } from "./types";
+import type { PoiFeature } from "../../types";
 
 /**
  * Generic React Leaflet <GeoJSON> specialized for rendering POIs.

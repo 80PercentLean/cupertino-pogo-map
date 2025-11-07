@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { NavLink } from "react-router";
 
-import { Button } from "./components/ui/button";
+import { Button } from "./ui/button";
 
 /**
  * Buttons at the bottom of the screen that allows the user to switch between views like

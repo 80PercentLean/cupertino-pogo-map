@@ -3,8 +3,8 @@ import type { LatLng, LeafletEventHandlerFnMap } from "leaflet";
 import { useState } from "react";
 import { Popup, useMapEvent } from "react-leaflet";
 
+import { isMobileUa } from "../util";
 import CMarker from "./CMarker";
-import { isMobileUa } from "./util";
 
 const IS_MOBILE = isMobileUa();
 

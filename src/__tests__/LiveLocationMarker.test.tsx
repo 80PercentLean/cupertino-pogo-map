@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import LiveLocationMarker from "../LiveLocationMarker";
+import LiveLocationMarker from "../components/LiveLocationMarker";
 import { CENTER } from "../constants";
 
 function TestComponent() {

@@ -7,6 +7,9 @@ import l14Cells from "./l14.geojson?raw";
 import l17Cells from "./l17.geojson?raw";
 import labels from "./labels.geojson?raw";
 import restrooms from "./labels.geojson?raw";
+import parking from "./parking.geojson?raw";
+import pokestops from "./pokestops.geojson?raw";
+import powerSpots from "./powerspots.geojson?raw";
 
 export const devpoisJson = JSON.parse(devpois) as GeoJSON;
 export const gymsJson = JSON.parse(gyms) as GeoJSON;
@@ -14,4 +17,7 @@ export const l13CellsJson = JSON.parse(l13Cells) as GeoJSON;
 export const l14CellsJson = JSON.parse(l14Cells) as GeoJSON;
 export const l17CellsJson = JSON.parse(l17Cells) as GeoJSON;
 export const labelsJson = JSON.parse(labels) as GeoJSON;
+export const parkingJson = JSON.parse(parking) as GeoJSON;
+export const pokestopsJson = JSON.parse(pokestops) as GeoJSON;
+export const powerSpotsJson = JSON.parse(powerSpots) as GeoJSON;
 export const restroomsJson = JSON.parse(restrooms) as GeoJSON;

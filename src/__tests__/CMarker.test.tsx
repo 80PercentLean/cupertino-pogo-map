@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import CMarker from "../CMarker";
+import CMarker from "../components/CMarker";
 import { CENTER } from "../constants";
 
 function TestComponent() {

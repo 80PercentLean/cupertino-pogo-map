@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import Parking from "../Parking";
+import Parking from "../components/poi/Parking";
 import { CENTER } from "../constants";
 
 function TestComponent() {

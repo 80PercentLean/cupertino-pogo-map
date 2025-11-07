@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import PowerSpots from "../PowerSpots";
+import PowerSpots from "../components/poi/PowerSpots";
 import { CENTER } from "../constants";
 
 function TestComponent() {

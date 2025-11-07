@@ -1,4 +1,4 @@
-import Restrooms from "@/Restrooms";
+import Restrooms from "@/components/poi/Restrooms";
 import { render } from "@testing-library/react";
 import { MapContainer, TileLayer } from "react-leaflet";
 
