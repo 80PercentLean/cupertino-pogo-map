@@ -13,6 +13,7 @@ import Parking from "./Parking";
 import PlacedMarkers from "./PlacedMarkers";
 import PokeStops from "./PokeStops";
 import PowerSpots from "./PowerSpots";
+import Restrooms from "./Restrooms";
 import { CENTER } from "./constants";
 import { isMobileUa } from "./util";
 
@@ -71,6 +72,9 @@ export default function MapView() {
         </LayersControl.Overlay>
         <LayersControl.Overlay name="Parking" checked>
           <Parking />
+        </LayersControl.Overlay>
+        <LayersControl.Overlay name="Restrooms" checked>
+          <Restrooms />
         </LayersControl.Overlay>
         <LayersControl.Overlay name="TBD">
           <DevPois />

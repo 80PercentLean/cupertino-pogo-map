@@ -1,0 +1,590 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Tennis Courts Restrooms",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04565331339839, 37.32638516885883],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amphitheater Restrooms",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0445227622986, 37.32405176474138],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A1 Building Men's Restroom",
+        "type": "Men's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0462688803673, 37.32196465040257],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A1 Building Women's Restroom",
+        "type": "Women's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04603955149653, 37.32196465040257],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A4 Building Women's Restroom",
+        "type": "Women's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04596444964412, 37.32162336916632],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A4 Building Men's Restroom",
+        "type": "Men's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04585447907449, 37.32162336916632],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hinson Campus Center West Restrooms",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04581156373025, 37.32086187982098],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hinson Campus Center East Restrooms",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04516381025316, 37.32069976904826],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Administration Building Restrooms",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04587593674661, 37.32012597942513],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza Library Restrooms",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.046394944191, 37.32053979096923],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Learning Center West Restrooms",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04708024859431, 37.32026569440226],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "East Cottage All Gender Restroom",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04744905233386, 37.32110931137885],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Media & Learning Center Restrooms",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04770252108577, 37.320951467203265],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "S2 Building Men's Restroom",
+        "type": "Men's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04591616988182, 37.31947006212932],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "S2 Building Women's Restroom",
+        "type": "Women's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04591616988182, 37.31923435711759],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "S2 Building All-Gender Restroom",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0458920300007, 37.31935167644657],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Registration & Student Services Restrooms",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04444497823717, 37.32172575369993],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Visual & Performing Arts Center Men's Restroom",
+        "type": "Men's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0438213646412, 37.3217897439626],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Visual & Performing Arts Center Women's Restroom",
+        "type": "Women's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04357996582986, 37.3217897439626],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Multicultural Center All-Gender Restroom",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0437127351761, 37.32119036636722],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Advanced Technology Center Restrooms",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04486072063447, 37.32113064164743],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "L5 Building Women's Restroom",
+        "type": "Women's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04366043210031, 37.32040540911968],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "L5 Building Men's Restroom",
+        "type": "Men's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04366043210031, 37.32017397314883],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "L5 Building All-Gender Restroom",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04363226890565, 37.320287024910265],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Seminar Building Men's Restroom",
+        "type": "Men's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04753488302232, 37.31982628459043],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Seminar Building Women's Restroom",
+        "type": "Women's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04769045114519, 37.31982628459043],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "S6 Building Men's Restroom",
+        "type": "Men's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04734042286876, 37.31947006212932],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "S6 Building Women's Restroom",
+        "type": "Women's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04734042286876, 37.319238623278196],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "S6 Building All-Gender Restroom",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0473685860634, 37.31935167644657],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Physical Education 4 Building Men's Restroom",
+        "type": "Men's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04542934894563, 37.31905197852432],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Physical Education 5 Building Women's Restroom",
+        "type": "Women's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0445415377617, 37.31905197852432],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Physical Education 5 Building All-Gender Restroom",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04446509480478, 37.31885146821516],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Physical Education 6 Building Women's Locker Room",
+        "type": "Women's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04499483108522, 37.318540036248805],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Physical Education 6 Building Men's Locker Room",
+        "type": "Men's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04499483108522, 37.31840138461578],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SC1 Building Men's Restroom",
+        "type": "Men's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04635873436929, 37.31817527525017],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SC1 Building Women's Restroom",
+        "type": "Women's Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04635873436929, 37.31800569277956],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G Building All-Gender Restroom A",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04569220542909, 37.31710657932656],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G Building All-Gender Restroom B",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04569220542909, 37.31705751707307],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kirsch Center Restrooms",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0434954762459, 37.31608053161769],
+        "type": "Point"
+      },
+      "id": 14
+    }
+  ]
+}

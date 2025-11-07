@@ -25,6 +25,13 @@ const DefaultIcon = L.icon({
 });
 L.Marker.prototype.options.icon = DefaultIcon;
 
+/** Leaflet icon for all/binary gender restrooms. */
+export const iconAbRestroom = L.divIcon({
+  className: "icon-emoji",
+  html: "<div>🚻</div>",
+  iconAnchor: [10, 10],
+});
+
 /** Leaflet icon for gyms. */
 export const iconGym = L.icon({
   iconAnchor: [25, 41],
@@ -38,14 +45,21 @@ export const iconGym = L.icon({
 
 /** Leaflet icon for dev POIs. */
 export const iconDev = L.divIcon({
-  className: "icon-dev",
+  className: "icon-emoji",
   html: "<div>🚧</div>",
+  iconAnchor: [10, 10],
+});
+
+/** Leaflet icon for men's restrooms. */
+export const iconMRestroom = L.divIcon({
+  className: "icon-emoji",
+  html: "<div>🚹</div>",
   iconAnchor: [10, 10],
 });
 
 /** Leaflet icon for parking. */
 export const iconParking = L.divIcon({
-  className: "icon-dev",
+  className: "icon-emoji",
   html: "<div>🅿️</div>",
   iconAnchor: [10, 10],
 });
@@ -74,4 +88,11 @@ export const iconShowcase = L.icon({
   iconAnchor: [15, 15],
   iconSize: [30, 30],
   iconUrl: showcaseIcon,
+});
+
+/** Leaflet icon for women's restrooms. */
+export const iconWRestroom = L.divIcon({
+  className: "icon-emoji",
+  html: "<div>🚺</div>",
+  iconAnchor: [10, 10],
 });

@@ -7,7 +7,7 @@
         "name": "Memorial Park",
         "type": "Label",
         "marker-color": "#808080",
-        "marker-size": "medium",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -22,7 +22,7 @@
         "name": "Veteran's Memorial",
         "type": "Label",
         "marker-color": "#808080",
-        "marker-size": "medium",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -37,7 +37,7 @@
         "name": "Quinlan Community Center",
         "type": "Label",
         "marker-color": "#808080",
-        "marker-size": "medium",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -52,7 +52,7 @@
         "name": "Memorial Park Tennis Courts",
         "type": "Label",
         "marker-color": "#808080",
-        "marker-size": "medium",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -67,7 +67,7 @@
         "name": "Senior Center",
         "type": "Label",
         "marker-color": "#808080",
-        "marker-size": "medium",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -82,7 +82,7 @@
         "name": "De Anza College",
         "type": "Label",
         "marker-color": "#808080",
-        "marker-size": "medium",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -97,7 +97,7 @@
         "name": "Hinson Campus Center",
         "type": "Label",
         "marker-color": "#808080",
-        "marker-size": "medium",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -112,7 +112,7 @@
         "name": "Media & Learning Center",
         "type": "Label",
         "marker-color": "#808080",
-        "marker-size": "medium",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -127,7 +127,7 @@
         "name": "Fujitsu Planetarium",
         "type": "Label",
         "marker-color": "#808080",
-        "marker-size": "medium",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {

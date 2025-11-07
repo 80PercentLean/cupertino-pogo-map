@@ -28,6 +28,9 @@ interface PoiProperties {
     | "Parking"
     | "PokeStop"
     | "Power Spot"
+    | "All-Gender Restroom"
+    | "Men's Restroom"
+    | "Women's Restroom"
     | "Showcase"
     | "?";
 }

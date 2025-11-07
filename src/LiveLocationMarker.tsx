@@ -47,6 +47,7 @@ export default function LiveLocationMarker(props: LiveLocationMarkerProps) {
     const accuracyCircle = accuracy && (
       <Circle
         center={location}
+        interactive={false}
         pathOptions={{ fillColor: "#5c84f0", stroke: false }}
         radius={accuracy}
       />
@@ -57,6 +58,7 @@ export default function LiveLocationMarker(props: LiveLocationMarkerProps) {
         {accuracyCircle}
         <CCircleMarker
           center={location}
+          interactive={false}
           pathOptions={{ color: "#fff", fillColor: "#5c84f0", fillOpacity: 1 }}
           radius={10}
           data-testid={props["data-testid"]}

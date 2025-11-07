@@ -7,8 +7,8 @@
         "name": "Smoke-Free Park Sign",
         "type": "?",
         "source": "Wayfarer",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.04451, 37.325078], "type": "Point" },
@@ -20,8 +20,8 @@
         "name": "Glenbrook Apartment Homes Sign",
         "type": "?",
         "source": "Wayfarer",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.050075, 37.326539], "type": "Point" },
