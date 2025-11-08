@@ -462,6 +462,14 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 186px; top: 173px; z-index: 173;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
           style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -43px; top: -272px; z-index: -272;"
           tabindex="0"
         />
