@@ -4,8 +4,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Cupertino Rotary Bench",
+        "name": "Cupertino Rotary Bench (#1)",
         "type": "Gym",
+        "desc": "<p>This is gym #1 on the standard raid path.</p><p>It is the first gym used Raid Days and the walking group during Raid Hours.</p>",
         "source": "Ingress",
         "marker-color": "#ff2600",
         "marker-size": "large",
@@ -17,8 +18,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "\"Guardians Statue\", Memorial Park",
+        "name": "\"Guardians Statue\", Memorial Park (#5)",
         "type": "Gym",
+        "desc": "<p>This is gym #5 on the standard raid path.</p><p>It is the first gym used for the quick raid group during Raid Hours.</p>",
         "source": "Ingress",
         "marker-color": "#ff2600",
         "marker-size": "large",
@@ -30,8 +32,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Sister City Plaque",
+        "name": "Sister City Plaque (#6)",
         "type": "Gym",
+        "desc": "<p>This is gym #6 on the standard raid path.</p><p>It is the second gym used for the quick raid group during Raid Hours.</p>",
         "source": "Ingress",
         "marker-color": "#ff2600",
         "marker-size": "large",
@@ -43,8 +46,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Memorial Park Cupertino",
+        "name": "Memorial Park Cupertino (#7)",
         "type": "Gym",
+        "desc": "<p>This is gym #7 on the standard raid path.</p>",
         "source": "Ingress",
         "marker-color": "#ff2600",
         "marker-size": "large",
@@ -56,8 +60,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Bacchus Urn",
+        "name": "Bacchus Urn (#8)",
         "type": "Gym",
+        "desc": "<p>This is gym #8 on the standard raid path.</p>",
         "source": "Ingress",
         "marker-color": "#ff2600",
         "marker-size": "large",
@@ -69,8 +74,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Media Center Fountain - East",
+        "name": "Media Center Fountain - East (#9)",
         "type": "Gym",
+        "desc": "<p>This is gym #9 on the standard raid path.</p>",
         "source": "Ingress",
         "marker-color": "#ff2600",
         "marker-size": "large",
@@ -82,8 +88,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Fujitsu Planetarium",
+        "name": "Fujitsu Planetarium (#10)",
         "type": "Gym",
+        "desc": "<p>This is gym #10 on the standard raid path.</p>",
         "source": "Ingress",
         "marker-color": "#ff2600",
         "marker-size": "large",
@@ -178,8 +185,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Memorial Park Tennis Courts",
+        "name": "Memorial Park Tennis Courts (#4)",
         "type": "Gym",
+        "desc": "<p>This is gym #4 on the standard raid path.</p>",
         "source": "Ingress",
         "marker-color": "#ff2600",
         "marker-size": "large",
@@ -191,8 +199,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Gazebo at Cupertino Quinlan Center",
+        "name": "Gazebo at Cupertino Quinlan Center (#3)",
         "type": "Gym",
+        "desc": "<p>This is gym #3 on the standard raid path.</p>",
         "source": "Ingress",
         "marker-color": "#ff2600",
         "marker-size": "large",
@@ -220,8 +229,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Cupertino Historical Museum",
+        "name": "Cupertino Historical Museum (#2)",
         "type": "Gym",
+        "desc": "<p>This is gym #2 on the standard raid path.</p>",
         "source": "Eyeball",
         "marker-color": "#ff2600",
         "marker-size": "large",

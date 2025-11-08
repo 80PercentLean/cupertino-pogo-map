@@ -4,6 +4,7 @@ import { gymsJson } from "../../geojson/data";
 import { iconGym } from "../../leafletIcons";
 import type { PoiFeature } from "../../types";
 import Poi from "./Poi";
+import { genPopupContent } from "./helper";
 
 /**
  * Specialized <Poi> for rendering gyms.
@@ -13,20 +14,11 @@ export default function Gyms() {
     <Poi
       data={gymsJson}
       pointToLayer={({ properties }, latlng) => {
-        const poiProperties = properties as PoiFeature["properties"];
-        const marker = L.marker(latlng, {
-          icon: iconGym,
-        }).bindPopup(
-          `<b>Gym</b><br />
-          ${poiProperties.name}<br /><br />
-          Directions:
-          <ul>
-          <li><a href="https://maps.google.com/maps?q=${latlng.lat},${latlng.lng}" rel="noopener noreferrer" target="_blank">Google Maps</a></li>
-          <li><a href="https://maps.apple.com/place?coordinate=${latlng.lat},${latlng.lng}" rel="noopener noreferrer" target="_blank">Apple Maps</a></li>
-          </ul>`,
-        );
+        const { desc, name } = properties as PoiFeature["properties"];
 
-        return marker;
+        return L.marker(latlng, {
+          icon: iconGym,
+        }).bindPopup(genPopupContent(name, "Gym", latlng, desc));
       }}
     />
   );

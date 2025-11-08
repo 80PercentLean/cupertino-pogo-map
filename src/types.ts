@@ -12,14 +12,17 @@ export type LabelFeature = Feature<Geometry, LabelProperties>;
 
 /** Custom properties for a GeoJSON `Feature` representing a POI. */
 interface PoiProperties {
+  /** Description of the POI. */
+  desc?: string;
+
+  /** Name of the POI. */
+  name: string;
+
   /** Represents a POI that was removed from the in-game map. */
   removed?: boolean;
 
   /** Source the POI data came from. */
   source?: string;
-
-  /** Name of the POI. */
-  name: string;
 
   /** Type of POI. */
   type:

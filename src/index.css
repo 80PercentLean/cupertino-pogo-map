@@ -106,6 +106,18 @@ body {
   height: 40px;
 }
 
+.popup-txt-alert {
+  color: #ef4444;
+  font-weight: 500;
+  paint-order: stroke fill;
+}
+
+.popup-txt-warning {
+  color: #f59e0b;
+  font-weight: 500;
+  paint-order: stroke fill;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

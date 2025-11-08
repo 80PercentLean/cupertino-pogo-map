@@ -1418,6 +1418,7 @@
         "name": "Community Ambassador Location",
         "type": "PokeStop",
         "source": "Wayfarer",
+        "desc": "<p>This PokéStop location is controlled by the Community Ambassador so it can change locations.</p>",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"

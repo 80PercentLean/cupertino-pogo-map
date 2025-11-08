@@ -4,29 +4,15 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Quinlan Community Center Upper Parking Lot",
-        "type": "Free Parking",
+        "name": "Softball Field Parking Lot",
+        "desc": "<p><span class=\"font-bold\">Mon–Fri:</span> <span class=\"popup-txt-warning\">Free for 2 hours from 8:00am–5:00pm.</span> Outside those hours, parking is free and unrestricted during Memorial Park's open hours.</p><p><span class=\"font-bold\">Sat–Sun:</span> Parking is completely free during Memorial Park's open hours.</p>",
+        "type": "Conditionally Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04204306006432, 37.3261377546718],
-        "type": "Point"
-      },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Quinlan Community Center Lower Parking Lot",
-        "type": "Free Parking",
-        "marker-color": "#00f",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04204037785532, 37.32549449844886],
+        "coordinates": [-122.04581558704378, 37.32498172241592],
         "type": "Point"
       },
       "id": 14
@@ -36,6 +22,7 @@
       "properties": {
         "name": "Veterans Memorial Parking Lot",
         "type": "Conditionally Free Parking",
+        "desc": "<p><span class=\"font-bold\">Mon–Sat:</span> <span class=\"popup-txt-alert\">A Senior Center parking permit is required from 8:00am–5:00pm.</span> Outside those hours, parking is free and unrestricted during Memorial Park's open hours.</p><p><span class=\"font-bold\">Sun:</span> Parking is completely free during Memorial Park's open hours.</p><p>This is a great parking lot for Raid Hours if you want to quickly complete raids using the Veterans Memorial meetup spot as both gyms are reachable from here.</p>",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -51,6 +38,7 @@
       "properties": {
         "name": "Senior Center Parking Lot",
         "type": "Conditionally Free Parking",
+        "desc": "<p><span class=\"font-bold\">Mon–Sat:</span> <span class=\"popup-txt-alert\">A Senior Center parking permit is required from 8:00am–5:00pm.</span> Outside those hours, parking is free and unrestricted during Memorial Park's open hours.</p><p><span class=\"font-bold\">Sun:</span> Parking is completely free during Memorial Park's open hours.</p>",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -64,7 +52,40 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Quinlan Community Center Upper Parking Lot",
+        "type": "Free Parking",
+        "desc": "<p>Free parking during Memorial Park's open hours.</p>",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04204306006432, 37.3261377546718],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quinlan Community Center Lower Parking Lot",
+        "type": "Free Parking",
+        "desc": "<p>Free parking during Memorial Park's open hours.</p>",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04204037785532, 37.32549449844886],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Alves Drive Parking Lot",
+        "desc": "<p>Free parking during Memorial Park's open hours.</p>",
         "type": "Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
@@ -81,6 +102,7 @@
       "properties": {
         "name": "Alves Drive Street Parking",
         "type": "Free Parking",
+        "desc": "<p>Free curbside parking.</p><p>Please note that a small portion of the west end of the road does not allow parking.</p>",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -91,26 +113,13 @@
       },
       "id": 14
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Softball Field Parking Lot",
-        "type": "Free Parking",
-        "marker-color": "#00f",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04581558704378, 37.32498172241592],
-        "type": "Point"
-      },
-      "id": 14
-    },
+
     {
       "type": "Feature",
       "properties": {
         "name": "Mary Avenue Lower Street Parking",
         "type": "Free Parking",
+        "desc": "<p>Free parking spots & curbside parking.</p>",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -126,6 +135,7 @@
       "properties": {
         "name": "Mary Avenue Upper Street Parking",
         "type": "Free Parking",
+        "desc": "<p>Free parking spots & curbside parking.</p>",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
