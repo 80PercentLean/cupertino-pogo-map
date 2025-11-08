@@ -5,6 +5,9 @@ export interface CProperties {
   /** Description of the POI or label. */
   desc?: string;
 
+  /** Represents if a POI is hidden. */
+  hidden?: boolean;
+
   /** Name of the POI or label. */
   name: string;
 

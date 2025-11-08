@@ -1,13 +1,14 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import LinkExt from "./LinkExt";
+import MapCover from "./MapCover";
 
 /**
  * Displays the information view.
  */
 export default function InfoView() {
   return (
-    <div className="fixed top-0 right-0 bottom-0 left-0 z-1000 flex items-center justify-center overflow-auto bg-black/50">
+    <MapCover>
       <Card className="absolute top-0 right-0 left-0 min-h-full rounded-none md:static md:min-h-0 md:w-[500px] md:rounded-xl">
         <CardHeader>
           <CardTitle>
@@ -54,6 +55,6 @@ export default function InfoView() {
           </ul>
         </CardContent>
       </Card>
-    </div>
+    </MapCover>
   );
 }
