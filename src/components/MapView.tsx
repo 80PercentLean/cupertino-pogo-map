@@ -7,6 +7,7 @@ import Labels from "./Labels";
 import LeafletDebug from "./LeafletDebug";
 import LiveLocationMarker from "./LiveLocationMarker";
 import PlacedMarkers from "./PlacedMarkers";
+import StdRaidPath from "./StdRaidPath";
 import DevPois from "./poi/DevPois";
 import Gyms from "./poi/Gyms";
 import Parking from "./poi/Parking";
@@ -92,6 +93,7 @@ export default function MapView() {
           <Labels />
         </LayersControl.Overlay>
       </LayersControl>
+      <StdRaidPath />
       <PlacedMarkers />
       <LiveLocationMarker data-testid="marker-live-location" />
     </MapContainer>

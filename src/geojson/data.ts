@@ -1,4 +1,5 @@
-import type { GeoJSON } from "geojson";
+import type { CProperties } from "@/types";
+import type { FeatureCollection, LineString, Point } from "geojson";
 
 import devpois from "./devpois.geojson?raw";
 import gyms from "./gyms.geojson?raw";
@@ -10,14 +11,48 @@ import parking from "./parking.geojson?raw";
 import pokestops from "./pokestops.geojson?raw";
 import powerSpots from "./powerspots.geojson?raw";
 import restrooms from "./restrooms.geojson?raw";
+import stdRaidPath from "./std-raid-path.geojson?raw";
 
-export const devpoisJson = JSON.parse(devpois) as GeoJSON;
-export const gymsJson = JSON.parse(gyms) as GeoJSON;
-export const l13CellsJson = JSON.parse(l13Cells) as GeoJSON;
-export const l14CellsJson = JSON.parse(l14Cells) as GeoJSON;
-export const l17CellsJson = JSON.parse(l17Cells) as GeoJSON;
-export const labelsJson = JSON.parse(labels) as GeoJSON;
-export const parkingJson = JSON.parse(parking) as GeoJSON;
-export const pokestopsJson = JSON.parse(pokestops) as GeoJSON;
-export const powerSpotsJson = JSON.parse(powerSpots) as GeoJSON;
-export const restroomsJson = JSON.parse(restrooms) as GeoJSON;
+export const devpoisJson = JSON.parse(devpois) as FeatureCollection<
+  Point,
+  CProperties
+>;
+export const gymsJson = JSON.parse(gyms) as FeatureCollection<
+  Point,
+  CProperties
+>;
+export const l13CellsJson = JSON.parse(l13Cells) as FeatureCollection<
+  Point,
+  CProperties
+>;
+export const l14CellsJson = JSON.parse(l14Cells) as FeatureCollection<
+  Point,
+  CProperties
+>;
+export const l17CellsJson = JSON.parse(l17Cells) as FeatureCollection<
+  Point,
+  CProperties
+>;
+export const labelsJson = JSON.parse(labels) as FeatureCollection<
+  Point,
+  CProperties
+>;
+export const parkingJson = JSON.parse(parking) as FeatureCollection<
+  Point,
+  CProperties
+>;
+export const pokestopsJson = JSON.parse(pokestops) as FeatureCollection<
+  Point,
+  CProperties
+>;
+export const powerSpotsJson = JSON.parse(powerSpots) as FeatureCollection<
+  Point,
+  CProperties
+>;
+export const restroomsJson = JSON.parse(restrooms) as FeatureCollection<
+  Point,
+  CProperties
+>;
+export const stdRaidPathJson = JSON.parse(
+  stdRaidPath,
+) as FeatureCollection<LineString>;

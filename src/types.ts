@@ -1,7 +1,7 @@
 import type { Feature, Geometry } from "geojson";
 
 /** Custom properties for a GeoJSON `Feature` representing a POI or a label. */
-interface CProperties {
+export interface CProperties {
   /** Description of the POI or label. */
   desc?: string;
 
