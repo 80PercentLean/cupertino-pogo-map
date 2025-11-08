@@ -2,7 +2,7 @@ import { pokestopsJson } from "@/geojson/data";
 import L from "leaflet";
 
 import { iconPokeStop, iconShowcase } from "../../leafletIcons";
-import type { PoiFeature } from "../../types";
+import type { CFeature } from "../../types";
 import Poi from "./Poi";
 import { genPopupContent } from "./helper";
 
@@ -14,7 +14,7 @@ export default function PokeStops() {
     <Poi
       data={pokestopsJson}
       pointToLayer={({ properties }, latlng) => {
-        const { desc, name, type } = properties as PoiFeature["properties"];
+        const { desc, name, type } = properties as CFeature["properties"];
 
         let icon;
         let typeTxt;

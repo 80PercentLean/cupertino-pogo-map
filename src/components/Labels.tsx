@@ -13,7 +13,7 @@ import {
   labelSenior,
   labelVeterans,
 } from "../leafletLabels";
-import type { LabelFeature } from "../types";
+import type { CFeature } from "../types";
 
 /**
  * React Leaflet's <GeoJSON> specialized for rendering text on the map which we call labels.
@@ -24,10 +24,10 @@ export default function Labels() {
       data={labelsJson}
       // @ts-expect-error Causes a type error because the else condition doesn't return a marker, but the code works fine
       pointToLayer={({ properties }, latlng) => {
-        const labelProperties = properties as LabelFeature["properties"];
+        const { name } = properties as CFeature["properties"];
 
         let icon;
-        switch (labelProperties.name) {
+        switch (name) {
           case "Memorial Park":
             icon = labelMp;
             break;
@@ -57,10 +57,7 @@ export default function Labels() {
             break;
           default:
             // Label could not be matched with an icon
-            console.warn(
-              "Encountered a label without an icon:",
-              labelProperties.name,
-            );
+            console.warn("Encountered a label without an icon:", name);
             return;
         }
 

@@ -2,7 +2,7 @@ import { powerSpotsJson } from "@/geojson/data";
 import L from "leaflet";
 
 import { iconPowerSpot } from "../../leafletIcons";
-import type { PoiFeature } from "../../types";
+import type { CFeature } from "../../types";
 import Poi from "./Poi";
 import { genPopupContent } from "./helper";
 
@@ -14,7 +14,7 @@ export default function PowerSpots() {
     <Poi
       data={powerSpotsJson}
       pointToLayer={({ properties }, latlng) => {
-        const { desc, name } = properties as PoiFeature["properties"];
+        const { desc, name } = properties as CFeature["properties"];
 
         return L.marker(latlng, { icon: iconPowerSpot }).bindPopup(
           genPopupContent(name, "Power Spot", latlng, desc),

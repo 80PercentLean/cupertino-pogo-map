@@ -2,7 +2,7 @@ import L from "leaflet";
 
 import { gymsJson } from "../../geojson/data";
 import { iconGym } from "../../leafletIcons";
-import type { PoiFeature } from "../../types";
+import type { CFeature } from "../../types";
 import Poi from "./Poi";
 import { genPopupContent } from "./helper";
 
@@ -14,7 +14,7 @@ export default function Gyms() {
     <Poi
       data={gymsJson}
       pointToLayer={({ properties }, latlng) => {
-        const { desc, name } = properties as PoiFeature["properties"];
+        const { desc, name } = properties as CFeature["properties"];
 
         return L.marker(latlng, {
           icon: iconGym,

@@ -1,21 +1,11 @@
 import type { Feature, Geometry } from "geojson";
 
-/** Custom properties for a GeoJSON `Feature` representing a label. */
-interface LabelProperties {
-  /** Name of the label and text to be displayed on the map. */
-  name: string;
-  type: "Label";
-}
-
-/** Custom properties for a GeoJSON `Feature` representing a label. */
-export type LabelFeature = Feature<Geometry, LabelProperties>;
-
-/** Custom properties for a GeoJSON `Feature` representing a POI. */
-interface PoiProperties {
-  /** Description of the POI. */
+/** Custom properties for a GeoJSON `Feature` representing a POI or a label. */
+interface CProperties {
+  /** Description of the POI or label. */
   desc?: string;
 
-  /** Name of the POI. */
+  /** Name of the POI or label. */
   name: string;
 
   /** Represents a POI that was removed from the in-game map. */
@@ -24,20 +14,20 @@ interface PoiProperties {
   /** Source the POI data came from. */
   source?: string;
 
-  /** Type of POI. */
+  /** Type of POI or label. */
   type:
+    | "All/Binary Gender Restroom"
     | "Conditionally Free Parking"
     | "Free Parking"
     | "Gym"
     | "Label"
+    | "Men's Restroom"
     | "PokeStop"
     | "Power Spot"
-    | "All-Gender Restroom"
-    | "Men's Restroom"
-    | "Women's Restroom"
     | "Showcase"
+    | "Women's Restroom"
     | "?";
 }
 
-/** A GeoJSON `Feature` representing a POI. */
-export type PoiFeature = Feature<Geometry, PoiProperties>;
+/** A GeoJSON `Feature` representing a POI or a label. */
+export type CFeature = Feature<Geometry, CProperties>;

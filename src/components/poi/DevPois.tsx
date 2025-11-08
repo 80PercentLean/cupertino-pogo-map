@@ -2,8 +2,9 @@ import L from "leaflet";
 
 import { devpoisJson } from "../../geojson/data";
 import { iconDev } from "../../leafletIcons";
-import type { PoiFeature } from "../../types";
+import type { CFeature } from "../../types";
 import Poi from "./Poi";
+import { genPopupContent } from "./helper";
 
 /**
  * Specialized <Poi> for rendering POIs in development like Wayfarer submissions.
@@ -13,13 +14,16 @@ export default function DevPois() {
     <Poi
       data={devpoisJson}
       pointToLayer={({ properties }, latlng) => {
-        const poiProperties = properties as PoiFeature["properties"];
-        const marker = L.marker(latlng, { icon: iconDev }).bindPopup(
-          `<b>Wayfarer Submission</b><br />
-          ${poiProperties.name}`,
-        );
+        const { name } = properties as CFeature["properties"];
 
-        return marker;
+        return L.marker(latlng, { icon: iconDev }).bindPopup(
+          genPopupContent(
+            name,
+            "Wayfarer Submission",
+            latlng,
+            "<p>This POI is currently going through the Wayfarer submission process. It can potentially become an in-game structure like a PokéStop or power spot.</p>",
+          ),
+        );
       }}
     />
   );

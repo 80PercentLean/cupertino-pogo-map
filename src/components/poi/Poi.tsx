@@ -3,16 +3,16 @@ import L from "leaflet";
 import type { RefAttributes } from "react";
 import { GeoJSON, type GeoJSONProps } from "react-leaflet";
 
-import type { PoiFeature } from "../../types";
+import type { CFeature } from "../../types";
 
 /**
  * Generic React Leaflet <GeoJSON> specialized for rendering POIs.
  */
 export default function Poi(
   props: GeoJSONProps &
-    RefAttributes<L.GeoJSON<FeatureCollection<Geometry, PoiFeature>, Geometry>>,
+    RefAttributes<L.GeoJSON<FeatureCollection<Geometry, CFeature>, Geometry>>,
 ) {
-  const filterDefault = (feature: PoiFeature) => {
+  const filterDefault = (feature: CFeature) => {
     if (feature.properties.removed) {
       return false;
     }
