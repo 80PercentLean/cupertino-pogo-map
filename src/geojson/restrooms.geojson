@@ -585,6 +585,51 @@
         "type": "Point"
       },
       "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Senior Center Restrooms",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04569756984712, 37.323279635175375],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quinlan Community Center North Restrooms",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04243600368501, 37.32604923991565],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quinlan Community Center South Restrooms",
+        "type": "All/Binary Gender Restroom",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04243600368501, 37.32560133232189],
+        "type": "Point"
+      },
+      "id": 14
     }
   ]
 }

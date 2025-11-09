@@ -22,7 +22,7 @@
       "properties": {
         "name": "Veterans Memorial Parking Lot",
         "type": "Conditionally Free Parking",
-        "desc": "<p><span class=\"font-bold\">Mon–Sat:</span> <span class=\"popup-txt-alert\">A Senior Center parking permit is required from 8:00am–5:00pm.</span> Outside those hours, parking is free and unrestricted during Memorial Park's open hours.</p><p><span class=\"font-bold\">Sun:</span> Parking is completely free during Memorial Park's open hours.</p><p>This is a great parking lot for Raid Hours if you want to quickly complete raids using the Veterans Memorial meetup spot as both gyms are reachable from here.</p>",
+        "desc": "<p><span class=\"font-bold\">Mon–Sat:</span> <span class=\"popup-txt-alert\">A Senior Center parking permit is required from 8:00am–5:00pm.</span> Outside those hours, parking is free and unrestricted during Memorial Park's open hours.</p><p><span class=\"font-bold\">Sun:</span> Parking is completely free during Memorial Park's open hours.</p><p>This is a great parking lot for our quick Raid Hour group. Both gyms at the Veterans Memorial meetup spot are reachable from a parked vehicle.</p>",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -54,7 +54,7 @@
       "properties": {
         "name": "Quinlan Community Center Upper Parking Lot",
         "type": "Free Parking",
-        "desc": "<p>Free parking during Memorial Park's open hours.</p>",
+        "desc": "<p>Free parking during Memorial Park's open hours.</p><p>This is a great parking lot for Raid Days and our Raid Hour walking group as it is close to the Quinlan Community Center gazebo meetup spot.</p>",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -70,7 +70,7 @@
       "properties": {
         "name": "Quinlan Community Center Lower Parking Lot",
         "type": "Free Parking",
-        "desc": "<p>Free parking during Memorial Park's open hours.</p>",
+        "desc": "<p>Free parking during Memorial Park's open hours.</p><p>This is a great parking lot for Raid Days and our Raid Hour walking group as it is close to the Quinlan Community Center gazebo meetup spot.</p>",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -85,7 +85,7 @@
       "type": "Feature",
       "properties": {
         "name": "Alves Drive Parking Lot",
-        "desc": "<p>Free parking during Memorial Park's open hours.</p>",
+        "desc": "<p>Free parking during Memorial Park's open hours.</p><p>This is a great parking lot for Raid Days and our Raid Hour walking group as it is close to the Quinlan Community Center gazebo meetup spot.</p>",
         "type": "Free Parking",
         "marker-color": "#00f",
         "marker-size": "medium",
@@ -102,7 +102,7 @@
       "properties": {
         "name": "Alves Drive Street Parking",
         "type": "Free Parking",
-        "desc": "<p>Free curbside parking.</p><p>Please note that a small portion of the west end of the road does not allow parking.</p>",
+        "desc": "<p>Free curbside parking.</p><p>This is a great parking option for Raid Days and our Raid Hour walking group as it is close to the Quinlan Community Center gazebo meetup spot.</p><p><span class=\"popup-txt-alert\">Please note that a small portion of the west end of the road does not allow parking at any time.</span></p>",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -182,7 +182,7 @@
       "properties": {
         "name": "De Anza College Parking Lot A",
         "type": "Free Parking",
-        "desc": "<p>All parking spots designated for students are free for all to use.</p><p>For more info: <a href=\"https://deanza.edu/parking\" class=\"text-blue-500 underline\" rel=\"noopener noreferrer\" target=\"_blank\">https://deanza.edu/parking</a></p>",
+        "desc": "<p>All parking spots designated for students are free for all to use.</p><p>For more info: <a href=\"https://deanza.edu/parking\" class=\"text-blue-500 underline\" rel=\"noopener noreferrer\" target=\"_blank\">https://deanza.edu/parking</a></p><p>This is a great parking lot for non-Raid or Max Battle events like Spotlight Hour or Community Day as it is close to the meetup spot at the Hinson Campus Center outdoor dining area.</p>",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
