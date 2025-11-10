@@ -37,6 +37,7 @@ export default function PlacedMarkers() {
           </p>
           <div className="flex items-center justify-between gap-1">
             <Button
+              className="shadow-sm shadow-gray-500"
               onClick={() => {
                 (async () => {
                   try {
@@ -56,6 +57,7 @@ export default function PlacedMarkers() {
             </Button>
             <br />
             <Button
+              variant="destructive"
               onClick={() => {
                 // This is a hack to prevent a new marker from being placed after the delete button is clicked
                 setTimeout(() => {

@@ -4,9 +4,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Walking Raid Meetup Spot",
+        "name": "Quinlan Community Center Gazebo (Walking Raid)",
         "type": "Meetup Spot",
-        "desc": "<p>This is the meetup spot mainly used for Raid Days and our walking group for Raid Hours where we try to pass by as many gyms as possible to maximize the amount of raids we complete.</p>",
+        "desc": "<p>This is the meetup spot mainly used for Raid Days and our walking group for Raid Hours where we try to pass by as many gyms as possible to maximize the amount of raids we complete.</p><p>The walking raid group meets up here for Raid Hour every Wednesday at 6:00pm. The quick raid group meets up at the same time on the other side of the park at the Veterans Memorial.</p>",
         "source": "Eyeball",
         "marker-color": "#ffa500",
         "marker-size": "small",
@@ -21,9 +21,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Quick Raid Meetup Spot",
+        "name": "Veterans Memorial (Quick Raid)",
         "type": "Meetup Spot",
-        "desc": "<p>This is the meetup spot mainly used for our quick group during Raid Hours where players who only have time for two or three Raids will complete their raids together.</p>",
+        "desc": "<p>This is the meetup spot mainly used for our quick group during Raid Hours where players who only have time for two or three Raids will complete their raids together.</p><p>The quick raid group meets up here for Raid Hour every Wednesday at 6:00pm. The walking raid group meets up at the same time on the other side of the park at the Quinlan Community Center gazebo.</p>",
         "source": "Eyeball",
         "marker-color": "#ffa500",
         "marker-size": "small",
@@ -38,7 +38,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "De Anza College Meetup Spot",
+        "name": "Hinson Campus Center",
         "type": "Meetup Spot",
         "desc": "<p>This is the meetup spot mainly used for non-Raid/Max Battle events like Spotlight Hour & Community Day.</p>",
         "source": "Eyeball",

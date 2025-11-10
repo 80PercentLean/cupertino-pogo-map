@@ -50,6 +50,7 @@ export default function LiveLocationMarker(props: LiveLocationMarkerProps) {
         interactive={false}
         pathOptions={{ fillColor: "#5c84f0", stroke: false }}
         radius={accuracy}
+        // className="animate-pulse"
       />
     );
 
