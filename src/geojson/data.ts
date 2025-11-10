@@ -7,6 +7,7 @@ import l13Cells from "./l13.geojson?raw";
 import l14Cells from "./l14.geojson?raw";
 import l17Cells from "./l17.geojson?raw";
 import labels from "./labels.geojson?raw";
+import meetupSpots from "./meetup-spots.geojson?raw";
 import parking from "./parking.geojson?raw";
 import pokestops from "./pokestops.geojson?raw";
 import powerSpots from "./powerspots.geojson?raw";
@@ -34,6 +35,10 @@ export const l17CellsJson = JSON.parse(l17Cells) as FeatureCollection<
   CProperties
 >;
 export const labelsJson = JSON.parse(labels) as FeatureCollection<
+  Point,
+  CProperties
+>;
+export const meetupSpotsJson = JSON.parse(meetupSpots) as FeatureCollection<
   Point,
   CProperties
 >;

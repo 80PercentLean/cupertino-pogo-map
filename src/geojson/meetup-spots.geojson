@@ -1,0 +1,56 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Walking Raid Meetup Spot",
+        "type": "Meetup Spot",
+        "desc": "<p>This is the meetup spot mainly used for Raid Days and our walking group for Raid Hours where we try to pass by as many gyms as possible to maximize the amount of raids we complete.</p>",
+        "source": "Eyeball",
+        "marker-color": "#ffa500",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04264387488368, 37.325804],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quick Raid Meetup Spot",
+        "type": "Meetup Spot",
+        "desc": "<p>This is the meetup spot mainly used for our quick group during Raid Hours where players who only have time for two or three Raids will complete their raids together.</p>",
+        "source": "Eyeball",
+        "marker-color": "#ffa500",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04542532563212, 37.32440050021801],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza College Meetup Spot",
+        "type": "Meetup Spot",
+        "desc": "<p>This is the meetup spot mainly used for non-Raid/Max Battle events like Spotlight Hour & Community Day.</p>",
+        "source": "Eyeball",
+        "marker-color": "#ffa500",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04597383737566, 37.3207904231419],
+        "type": "Point"
+      },
+      "id": 14
+    }
+  ]
+}

@@ -10,6 +10,7 @@ import PlacedMarkers from "./PlacedMarkers";
 import StdRaidPath from "./StdRaidPath";
 import DevPois from "./poi/DevPois";
 import Gyms from "./poi/Gyms";
+import MeetupSpots from "./poi/MeetupSpots";
 import Parking from "./poi/Parking";
 import PokeStops from "./poi/PokeStops";
 import PowerSpots from "./poi/PowerSpots";
@@ -70,6 +71,9 @@ export default function MapView() {
         </LayersControl.Overlay>
         <LayersControl.Overlay name="Power Spots">
           <PowerSpots />
+        </LayersControl.Overlay>
+        <LayersControl.Overlay name="Meetup Spots" checked>
+          <MeetupSpots />
         </LayersControl.Overlay>
         <LayersControl.Overlay name="Parking" checked>
           <Parking />

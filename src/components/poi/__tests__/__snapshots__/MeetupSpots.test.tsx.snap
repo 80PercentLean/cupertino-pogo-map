@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`loads <DevPois> and matches snapshot 1`] = `
+exports[`loads <MeetupSpots> and matches snapshot 1`] = `
 <DocumentFragment>
   <div
     class="leaflet-container leaflet-touch leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
@@ -42,43 +42,33 @@ exports[`loads <DevPois> and matches snapshot 1`] = `
         class="leaflet-pane leaflet-marker-pane"
       >
         <div
-          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji icon-meetup-spot leaflet-zoom-hide leaflet-interactive"
           role="button"
-          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 17px; top: -189px; z-index: -189;"
+          style="margin-left: -15px; margin-top: -30px; width: 12px; height: 12px; left: 104px; top: -232px; z-index: -232;"
           tabindex="0"
         >
           <div>
-            🚧
+            📍
           </div>
         </div>
         <div
-          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji icon-meetup-spot leaflet-zoom-hide leaflet-interactive"
           role="button"
-          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -272px; top: -335px; z-index: -335;"
+          style="margin-left: -15px; margin-top: -30px; width: 12px; height: 12px; left: -26px; top: -150px; z-index: -150;"
           tabindex="0"
         >
           <div>
-            🚧
+            📍
           </div>
         </div>
         <div
-          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          class="leaflet-marker-icon icon-emoji icon-meetup-spot leaflet-zoom-hide leaflet-interactive"
           role="button"
-          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 118px; top: -237px; z-index: -237;"
+          style="margin-left: -15px; margin-top: -30px; width: 12px; height: 12px; left: -52px; top: 62px; z-index: 62;"
           tabindex="0"
         >
           <div>
-            🚧
-          </div>
-        </div>
-        <div
-          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
-          role="button"
-          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 117px; top: -229px; z-index: -229;"
-          tabindex="0"
-        >
-          <div>
-            🚧
+            📍
           </div>
         </div>
       </div>

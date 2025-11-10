@@ -28,6 +28,7 @@ export interface CProperties {
     | "PokeStop"
     | "Power Spot"
     | "Showcase"
+    | "Meetup Spot"
     | "Women's Restroom"
     | "?";
 }

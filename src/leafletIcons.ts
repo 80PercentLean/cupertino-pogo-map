@@ -50,6 +50,14 @@ export const iconDev = L.divIcon({
   iconAnchor: [10, 10],
 });
 
+/** Leaflet icon for meetup spot POIs. */
+export const iconMeetupSpot = L.divIcon({
+  className: "icon-emoji icon-meetup-spot",
+  html: "<div>📍</div>",
+  iconAnchor: [15, 30],
+  popupAnchor: [0, -20],
+});
+
 /** Leaflet icon for men's restrooms. */
 export const iconMRestroom = L.divIcon({
   className: "icon-emoji",
