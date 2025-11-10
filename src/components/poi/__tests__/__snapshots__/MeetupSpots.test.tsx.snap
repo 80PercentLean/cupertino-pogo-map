@@ -44,7 +44,7 @@ exports[`loads <MeetupSpots> and matches snapshot 1`] = `
         <div
           class="leaflet-marker-icon icon-emoji icon-meetup-spot leaflet-zoom-hide leaflet-interactive"
           role="button"
-          style="margin-left: -15px; margin-top: -30px; width: 12px; height: 12px; left: 104px; top: -232px; z-index: -232;"
+          style="margin-left: -15px; margin-top: -30px; width: 12px; height: 12px; left: 104px; top: -233px; z-index: -233;"
           tabindex="0"
         >
           <div>

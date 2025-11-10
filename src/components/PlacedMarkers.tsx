@@ -29,41 +29,47 @@ export default function PlacedMarkers() {
     return (
       <CMarker key={id} position={c} data-testid={id}>
         <Popup>
-          <Button
-            onClick={() => {
-              (async () => {
-                try {
-                  const clipboardTxt = `${c.lng},${c.lat}`;
-                  await navigator.clipboard.writeText(clipboardTxt);
-                  alert(`Copied "${clipboardTxt}" to your clipboard!`);
-                } catch (err) {
-                  // TODO: Show error message
-                  console.error("Failed to copy text: ", err);
-                }
-              })().catch((err) => console.error("Failed to copy text: ", err)); // TODO: Show error message
-            }}
-          >
-            Copy coordinates:
+          <p>You placed a marker at...</p>
+          <p>
+            <span className="font-bold">Longitude:</span> {c.lng}
             <br />
-            Longitude: {c.lng}
+            <span className="font-bold">Latitude:</span> {c.lat}
+          </p>
+          <div className="flex items-center justify-between gap-1">
+            <Button
+              onClick={() => {
+                (async () => {
+                  try {
+                    const clipboardTxt = `${c.lng},${c.lat}`;
+                    await navigator.clipboard.writeText(clipboardTxt);
+                    alert(`Copied "${clipboardTxt}" to your clipboard!`);
+                  } catch (err) {
+                    // TODO: Show error message
+                    console.error("Failed to copy text: ", err);
+                  }
+                })().catch((err) =>
+                  console.error("Failed to copy text: ", err),
+                ); // TODO: Show error message
+              }}
+            >
+              Copy coords
+            </Button>
             <br />
-            Latitude {c.lat}
-          </Button>
-          <br />
-          <Button
-            onClick={() => {
-              // This is a hack to prevent a new marker from being placed after the delete button is clicked
-              setTimeout(() => {
-                setCoords((s) => {
-                  console.log("Deleted placed marker: ", s[i]);
-                  return [...s.slice(0, i), ...s.slice(i + 1)];
-                });
-              }, 0);
-            }}
-            data-testid="delete-placed-marker-btn"
-          >
-            Delete
-          </Button>
+            <Button
+              onClick={() => {
+                // This is a hack to prevent a new marker from being placed after the delete button is clicked
+                setTimeout(() => {
+                  setCoords((s) => {
+                    console.log("Deleted placed marker: ", s[i]);
+                    return [...s.slice(0, i), ...s.slice(i + 1)];
+                  });
+                }, 0);
+              }}
+              data-testid="delete-placed-marker-btn"
+            >
+              Delete
+            </Button>
+          </div>
         </Popup>
       </CMarker>
     );
