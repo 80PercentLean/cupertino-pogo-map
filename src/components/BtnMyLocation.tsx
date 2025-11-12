@@ -37,7 +37,7 @@ export default function BtnMyLocation() {
       <div className="relative flex h-6 w-6 items-center justify-center">
         <div className={radiusClassName} />
         <div className={markerClassName} />
-        {isMyLocationOn && <MyLocation />}
+        {isMyLocationOn && <MyLocation setIsMyLocationOn={setIsMyLocationOn} />}
       </div>
     </Button>
   );

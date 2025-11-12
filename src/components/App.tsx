@@ -1,3 +1,4 @@
+import { Toaster } from "@/components/ui/sonner";
 import { ErrorBoundary } from "react-error-boundary";
 import { BrowserRouter, Route, Routes } from "react-router";
 
@@ -11,6 +12,7 @@ import SettingsView from "./SettingsView";
 export default function App() {
   return (
     <ErrorBoundary fallback={<div>Something went wrong.</div>}>
+      <Toaster closeButton position="top-center" richColors />
       <BrowserRouter>
         <Routes>
           <Route path="cupertino-pogo-map" element={<BaseView />}>

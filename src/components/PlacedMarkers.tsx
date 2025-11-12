@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import type { LatLng, LeafletEventHandlerFnMap } from "leaflet";
 import { useState } from "react";
 import { Popup, useMapEvent } from "react-leaflet";
+import { toast } from "sonner";
 
 import { isMobileUa } from "../util";
 import CMarker from "./CMarker";
@@ -25,6 +26,8 @@ export default function PlacedMarkers() {
   });
 
   return coords.map((c, i) => {
+    const ERR_COPY_LOG = "Failed to copy to clipboard: ";
+
     const id = `placed-lat${c.lat},lng${c.lng}`;
     return (
       <CMarker key={id} position={c} data-testid={id}>
@@ -43,14 +46,12 @@ export default function PlacedMarkers() {
                   try {
                     const clipboardTxt = `${c.lng},${c.lat}`;
                     await navigator.clipboard.writeText(clipboardTxt);
-                    alert(`Copied "${clipboardTxt}" to your clipboard!`);
+                    toast(`"${clipboardTxt}" was copied your clipboard!`);
                   } catch (err) {
-                    // TODO: Show error message
-                    console.error("Failed to copy text: ", err);
+                    toast.error("Failed to copy coordinates to the clipboard.");
+                    console.error(ERR_COPY_LOG, err);
                   }
-                })().catch((err) =>
-                  console.error("Failed to copy text: ", err),
-                ); // TODO: Show error message
+                })().catch((err) => console.error(ERR_COPY_LOG, err)); // TODO: Show error message
               }}
             >
               Copy coords

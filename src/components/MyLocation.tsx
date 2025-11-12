@@ -1,8 +1,13 @@
-import { useEffect } from "react";
+import { type Dispatch, type SetStateAction, useEffect } from "react";
+import { toast } from "sonner";
 
 import { useStore } from "./hooks/store";
 
-export default function MyLocation() {
+export interface Props {
+  setIsMyLocationOn: Dispatch<SetStateAction<boolean>>;
+}
+
+export default function MyLocation({ setIsMyLocationOn }: Props) {
   const setMyLocation = useStore((s) => s.setMyLocation);
   const setMyLocationAccuracy = useStore((s) => s.setMyLocationAccuracy);
 
@@ -24,20 +29,29 @@ export default function MyLocation() {
           console.log(`ERROR(${error.code}): ${error.message}`);
         },
       );
+
+      const MSG_ON = "My location functionality has been turned on.";
+      console.log(MSG_ON);
+      toast(MSG_ON);
     } else {
-      // TODO: Show error message
-      console.error("Geolocation API is not available.");
+      const MSG_ERR = "Geolocation API is not available.";
+      toast.error(MSG_ERR);
+      console.error(MSG_ERR);
+      setIsMyLocationOn(false);
     }
 
     return () => {
-      console.log("Turned off my location.");
+      const MSG_OFF = "My location functionality has been turned off.";
+      toast(MSG_OFF);
+      console.log(MSG_OFF);
+
       if (watchId) {
         navigator.geolocation.clearWatch(watchId);
       }
       setMyLocation(null);
       setMyLocationAccuracy(null);
     };
-  }, [setMyLocation, setMyLocationAccuracy]);
+  }, [setIsMyLocationOn, setMyLocation, setMyLocationAccuracy]);
 
   return null;
 }
