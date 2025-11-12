@@ -5,16 +5,19 @@ import { AntPath } from "leaflet-ant-path";
 import { useEffect } from "react";
 import { useMap } from "react-leaflet";
 
+import { useStore } from "./hooks/store";
+
 const LATLNGS = stdRaidPathJson.features[0].geometry.coordinates.map(
   ([lng, lat]) => [lat, lng],
 );
 
 export default function StdRaidPath() {
+  const disableAnimations = useStore((s) => s.disableAnimations);
   const map = useMap();
 
   useEffect(() => {
     let path;
-    if (import.meta.env.VITE_E2E === "true") {
+    if (disableAnimations) {
       path = L.polyline(LATLNGS as LatLngExpression[], { color: "#5a9ffc" });
     } else {
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call

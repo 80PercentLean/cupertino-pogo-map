@@ -4,6 +4,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
+import { ROOT_PATH } from "@/constants";
 import { NavLink } from "react-router";
 
 import { Button } from "./ui/button";
@@ -19,28 +20,28 @@ export default function ViewCtrl() {
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Button asChild>
-              <NavLink to="/cupertino-pogo-map">Map</NavLink>
+              <NavLink to={ROOT_PATH}>Map</NavLink>
             </Button>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Button asChild>
-              <NavLink to="/cupertino-pogo-map/list">List</NavLink>
+              <NavLink to={`${ROOT_PATH}list`}>List</NavLink>
             </Button>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Button asChild>
-              <NavLink to="/cupertino-pogo-map/settings">Settings</NavLink>
+              <NavLink to={`${ROOT_PATH}settings`}>Settings</NavLink>
             </Button>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Button asChild>
-              <NavLink to="/cupertino-pogo-map/info">Info</NavLink>
+              <NavLink to={`${ROOT_PATH}info`}>Info</NavLink>
             </Button>
           </NavigationMenuLink>
         </NavigationMenuItem>

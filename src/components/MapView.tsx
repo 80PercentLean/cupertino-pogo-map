@@ -5,7 +5,7 @@ import { CENTER } from "../constants";
 import { isMobileUa } from "../util";
 import Labels from "./Labels";
 import LeafletDebug from "./LeafletDebug";
-import LiveLocationMarker from "./LiveLocationMarker";
+import MyLocationMarker from "./MyLocationMarker";
 import PlacedMarkers from "./PlacedMarkers";
 import StdRaidPath from "./StdRaidPath";
 import DevPois from "./poi/DevPois";
@@ -99,7 +99,7 @@ export default function MapView() {
       </LayersControl>
       <StdRaidPath />
       <PlacedMarkers />
-      <LiveLocationMarker data-testid="marker-live-location" />
+      <MyLocationMarker data-testid="marker-live-location" />
     </MapContainer>
   );
 }

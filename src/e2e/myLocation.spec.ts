@@ -7,12 +7,12 @@ test.use({
   permissions: ["geolocation"],
 });
 
-test("shows live location", async ({ page }) => {
+test("shows my location", async ({ page }) => {
   await page.goto(DEV_SERVER, { waitUntil: "networkidle" });
   await expect(page).toHaveScreenshot({ maxDiffPixels: 100 });
 });
 
-test("shows change in live location", async ({ page, context }) => {
+test("shows change in my location", async ({ page, context }) => {
   await page.goto(DEV_SERVER, { waitUntil: "networkidle" });
 
   // Screenshot start position

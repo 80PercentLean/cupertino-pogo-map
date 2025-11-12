@@ -1,6 +1,6 @@
 import type { PropsWithChildren } from "react";
 
-interface Props {
+export interface Props {
   /** Sets the `class` attribute on the anchor element. */
   className?: string;
   /** Sets the `href` attribute on the anchor element. */
