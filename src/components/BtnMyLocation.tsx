@@ -9,8 +9,9 @@ import { useStore } from "./hooks/store";
  */
 export default function BtnMyLocation() {
   const [isMyLocationOn, setIsMyLocationOn] = useState(false);
-
   const disableAnimations = useStore((s) => s.disableAnimations);
+  const myLocation = useStore((s) => s.myLocation);
+  const map = useStore((s) => s.map);
 
   let radiusClassName = "absolute inset-0 rounded-full";
   let markerClassName = "rounded-full";
@@ -31,8 +32,14 @@ export default function BtnMyLocation() {
     <Button
       size="icon"
       className="fixed right-0 bottom-0 z-1001 m-2 cursor-pointer shadow-sm"
-      title="Toggle My Location"
-      onClick={() => setIsMyLocationOn((s) => !s)}
+      title="Show My Location"
+      onClick={() => {
+        if (map && isMyLocationOn && myLocation) {
+          map.flyTo(myLocation, 18);
+        } else {
+          setIsMyLocationOn(() => true);
+        }
+      }}
     >
       <div className="relative flex h-6 w-6 items-center justify-center">
         <div className={radiusClassName} />

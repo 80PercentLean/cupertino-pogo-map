@@ -15,7 +15,7 @@ import { Button } from "./ui/button";
  */
 export default function ViewCtrl() {
   return (
-    <NavigationMenu className="fixed right-0 bottom-0 left-0 z-1001 m-2 min-w-full">
+    <NavigationMenu className="fixed bottom-0 left-0 z-1001 m-2">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuLink asChild>

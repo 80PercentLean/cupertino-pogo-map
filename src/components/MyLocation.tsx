@@ -7,6 +7,10 @@ export interface Props {
   setIsMyLocationOn: Dispatch<SetStateAction<boolean>>;
 }
 
+/**
+ * This component handles the imperative code for the geolocation API.
+ * It does not render any visual UI.
+ */
 export default function MyLocation({ setIsMyLocationOn }: Props) {
   const setMyLocation = useStore((s) => s.setMyLocation);
   const setMyLocationAccuracy = useStore((s) => s.setMyLocationAccuracy);
@@ -26,7 +30,10 @@ export default function MyLocation({ setIsMyLocationOn }: Props) {
           setMyLocationAccuracy(position.coords.accuracy);
         },
         (error) => {
-          console.log(`ERROR(${error.code}): ${error.message}`);
+          const MSG_ERR = `An error occurred: ${error.code} - ${error.message}`;
+          toast.error(MSG_ERR);
+          console.error(MSG_ERR);
+          setIsMyLocationOn(false);
         },
       );
 
@@ -34,7 +41,7 @@ export default function MyLocation({ setIsMyLocationOn }: Props) {
       console.log(MSG_ON);
       toast(MSG_ON);
     } else {
-      const MSG_ERR = "Geolocation API is not available.";
+      const MSG_ERR = "An error occurred: Geolocation API is not available.";
       toast.error(MSG_ERR);
       console.error(MSG_ERR);
       setIsMyLocationOn(false);
