@@ -822,6 +822,14 @@ exports[`matches <PokeStops> default snapshot 1`] = `
           class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
           role="button"
           src="/src/assets/raw/pokestop-icon3.png"
+          style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -85px; top: -312px; z-index: -312;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/pokestop-icon3.png"
           style="margin-left: -15px; margin-top: -30px; width: 30px; height: 30px; left: -48px; top: 69px; z-index: 69;"
           tabindex="0"
         />

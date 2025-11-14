@@ -39,19 +39,6 @@
       },
       "geometry": { "coordinates": [-122.050728, 37.327475], "type": "Point" },
       "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Glenbrook Northeast Map Kiosk",
-        "type": "?",
-        "source": "Wayfarer",
-        "marker-color": "#ffff00",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.046683, 37.327167], "type": "Point" },
-      "id": 14
     }
   ]
 }

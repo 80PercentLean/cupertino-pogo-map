@@ -1415,6 +1415,19 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Glenbrook Northeast Map Kiosk",
+        "type": "PokeStop",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.046683, 37.327167], "type": "Point" },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Community Ambassador Location",
         "type": "PokeStop",
         "source": "Wayfarer",
