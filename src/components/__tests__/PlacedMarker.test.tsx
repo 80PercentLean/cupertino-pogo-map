@@ -2,8 +2,8 @@ import { render, screen } from "@testing-library/react";
 import { userEvent } from "@testing-library/user-event";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import PlacedMarkers from "../components/PlacedMarkers";
-import { CENTER } from "../constants";
+import { CENTER } from "../../constants";
+import PlacedMarkers from "../PlacedMarkers";
 
 function TestComponent() {
   return (
@@ -17,13 +17,13 @@ function TestComponent() {
   );
 }
 
-test("loads <PlacedMarkerers> which has no placed markers by default", () => {
+test("loads <PlacedMarkers> which has no placed markers by default", () => {
   render(<TestComponent />);
 
   expect(screen.queryByRole("button")).not.toBeInTheDocument();
 });
 
-test("creates a placed marker when the map is clicked", async () => {
+test("creates a placed marker when the map is clicked with <PlacedMarkers>", async () => {
   const user = userEvent.setup();
 
   const { container } = render(<TestComponent />);

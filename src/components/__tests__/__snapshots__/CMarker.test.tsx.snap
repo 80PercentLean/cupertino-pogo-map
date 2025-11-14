@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`loads <Labels> and matches snapshot 1`] = `
+exports[`matches <CMarker> default snapshot 1`] = `
 <DocumentFragment>
   <div
     class="leaflet-container leaflet-touch leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
@@ -37,100 +37,26 @@ exports[`loads <Labels> and matches snapshot 1`] = `
       />
       <div
         class="leaflet-pane leaflet-shadow-pane"
-      />
+      >
+        <img
+          alt=""
+          class="leaflet-marker-shadow leaflet-zoom-hide"
+          src="marker-shadow.png"
+          style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; left: 0px; top: 0px;"
+        />
+      </div>
       <div
         class="leaflet-pane leaflet-marker-pane"
       >
-        <div
-          class="leaflet-marker-icon label-map label-mp leaflet-zoom-hide"
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          data-testid="marker"
           role="button"
-          style="margin-left: -50px; margin-top: -7px; width: 12px; height: 12px; left: 59px; top: -233px; z-index: -233;"
+          src="marker-icon.png"
+          style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; left: 0px; top: 0px; z-index: 0;"
           tabindex="0"
-        >
-          <div>
-            Memorial Park
-          </div>
-        </div>
-        <div
-          class="leaflet-marker-icon label-map label-veterans leaflet-zoom-hide"
-          role="button"
-          style="margin-left: -30px; margin-top: -20px; width: 12px; height: 12px; left: -25px; top: -147px; z-index: -147;"
-          tabindex="0"
-        >
-          <div>
-            Veterans Memorial
-          </div>
-        </div>
-        <div
-          class="leaflet-marker-icon label-map label-quinlan leaflet-zoom-hide"
-          role="button"
-          style="margin-left: -50px; margin-top: -25px; width: 12px; height: 12px; left: 115px; top: -233px; z-index: -233;"
-          tabindex="0"
-        >
-          <div>
-            Quinlan Community Center
-          </div>
-        </div>
-        <div
-          class="leaflet-marker-icon label-map label-mp-tennis leaflet-zoom-hide"
-          role="button"
-          style="margin-left: -40px; margin-top: -10px; width: 12px; height: 12px; left: -1px; top: -268px; z-index: -268;"
-          tabindex="0"
-        >
-          <div>
-            Tennis Courts
-          </div>
-        </div>
-        <div
-          class="leaflet-marker-icon label-map label-senior leaflet-zoom-hide"
-          role="button"
-          style="margin-left: -25px; margin-top: -20px; width: 12px; height: 12px; left: -43px; top: -84px; z-index: -84;"
-          tabindex="0"
-        >
-          <div>
-            Senior Center
-          </div>
-        </div>
-        <div
-          class="leaflet-marker-icon label-map label-mp leaflet-zoom-hide"
-          role="button"
-          style="margin-left: -50px; margin-top: -7px; width: 12px; height: 12px; left: 14px; top: 243px; z-index: 243;"
-          tabindex="0"
-        >
-          <div>
-            De Anza College
-          </div>
-        </div>
-        <div
-          class="leaflet-marker-icon label-map label-hinson leaflet-zoom-hide"
-          role="button"
-          style="margin-left: -25px; margin-top: -30px; width: 12px; height: 12px; left: -29px; top: 62px; z-index: 62;"
-          tabindex="0"
-        >
-          <div>
-            Hinson Campus Center
-          </div>
-        </div>
-        <div
-          class="leaflet-marker-icon label-map label-mlc leaflet-zoom-hide"
-          role="button"
-          style="margin-left: -30px; margin-top: -40px; width: 12px; height: 12px; left: -150px; top: 63px; z-index: 63;"
-          tabindex="0"
-        >
-          <div>
-            Media & Learning Center (MLC)
-          </div>
-        </div>
-        <div
-          class="leaflet-marker-icon label-map label-fujitsu leaflet-zoom-hide"
-          role="button"
-          style="margin-left: -35px; margin-top: -20px; width: 12px; height: 12px; left: -55px; top: 171px; z-index: 171;"
-          tabindex="0"
-        >
-          <div>
-            Fujitsu Planetarium
-          </div>
-        </div>
+        />
       </div>
       <div
         class="leaflet-pane leaflet-tooltip-pane"

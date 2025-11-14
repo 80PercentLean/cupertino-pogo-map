@@ -1,5 +1,13 @@
 import type { LatLng } from "leaflet";
 
+/**
+ * Generates the content for a POI marker.
+ * @param name Name of the POI
+ * @param type Type of the POI
+ * @param latlng Coordinates for the POI
+ * @param desc Description of the POI
+ * @returns The content of the popup as a string
+ */
 export const genPopupContent = (
   name: string,
   type: string,

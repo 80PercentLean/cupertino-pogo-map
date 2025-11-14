@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`matches <BtnMyLocation> default snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground hover:bg-primary/90 size-9 fixed right-0 bottom-0 z-1001 m-2 cursor-pointer shadow-sm"
+    data-slot="button"
+    title="Show My Location"
+  >
+    <div
+      class="relative flex h-6 w-6 items-center justify-center"
+    >
+      <div
+        class="absolute inset-0 rounded-full border-2 border-dotted border-gray-400"
+      />
+      <div
+        class="rounded-full h-3 w-3 bg-gray-400"
+        data-testid="btn-my-location-icon"
+      />
+    </div>
+  </button>
+</DocumentFragment>
+`;

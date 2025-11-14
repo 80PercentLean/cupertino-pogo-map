@@ -23,6 +23,8 @@
     "noUncheckedSideEffectImports": true
   },
   "include": [
+    "__mocks__",
+    "global.d.ts",
     "playwright.config.ts",
     "vite.config.ts",
     "vitest.config.ts",

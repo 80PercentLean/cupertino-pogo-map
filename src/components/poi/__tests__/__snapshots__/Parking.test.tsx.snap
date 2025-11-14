@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`loads <Parking> and matches snapshot 1`] = `
+exports[`matches <Parking> default snapshot 1`] = `
 <DocumentFragment>
   <div
     class="leaflet-container leaflet-touch leaflet-grab leaflet-touch-drag leaflet-touch-zoom"

@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`loads <LinkExt> and matches snapshot 1`] = `
+exports[`matches <LinkExt> default snapshot 1`] = `
 <DocumentFragment>
   <a
     class="text-blue-500 underline"

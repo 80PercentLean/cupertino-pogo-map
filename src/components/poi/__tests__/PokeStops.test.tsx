@@ -16,7 +16,7 @@ function TestComponent() {
   );
 }
 
-test("loads <PokeStops> and matches snapshot", () => {
+test("matches <PokeStops> default snapshot", () => {
   const { asFragment } = render(<TestComponent />);
 
   expect(asFragment()).toMatchSnapshot();

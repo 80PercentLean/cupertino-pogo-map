@@ -16,7 +16,7 @@ function TestComponent() {
   );
 }
 
-test("loads <L17Grid> and matches snapshot", () => {
+test("matches <L17Grid> the default snapshot", () => {
   const { asFragment } = render(<TestComponent />);
 
   expect(asFragment()).toMatchSnapshot();

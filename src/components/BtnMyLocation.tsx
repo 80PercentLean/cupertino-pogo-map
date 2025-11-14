@@ -5,7 +5,7 @@ import MyLocation from "./MyLocation";
 import { useStore } from "./hooks/store";
 
 /**
- * Button that toggles My Location functionality.
+ * Button that toggles my location functionality.
  */
 export default function BtnMyLocation() {
   const [isMyLocationOn, setIsMyLocationOn] = useState(false);
@@ -43,7 +43,7 @@ export default function BtnMyLocation() {
     >
       <div className="relative flex h-6 w-6 items-center justify-center">
         <div className={radiusClassName} />
-        <div className={markerClassName} />
+        <div className={markerClassName} data-testid="btn-my-location-icon" />
         {isMyLocationOn && <MyLocation setIsMyLocationOn={setIsMyLocationOn} />}
       </div>
     </Button>

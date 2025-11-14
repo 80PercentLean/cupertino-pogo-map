@@ -1,10 +1,10 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`loads <ViewCtrl> and matches snapshot 1`] = `
+exports[`matches <ViewCtrl> default snapshot 1`] = `
 <DocumentFragment>
   <nav
     aria-label="Main"
-    class="group/navigation-menu flex max-w-max flex-1 items-center justify-center fixed right-0 bottom-0 left-0 z-1001 m-2 min-w-full"
+    class="group/navigation-menu flex max-w-max flex-1 items-center justify-center fixed bottom-0 left-0 z-1001 m-2"
     data-orientation="horizontal"
     data-slot="navigation-menu"
     data-viewport="true"
@@ -28,7 +28,7 @@ exports[`loads <ViewCtrl> and matches snapshot 1`] = `
             data-discover="true"
             data-radix-collection-item=""
             data-slot="navigation-menu-link"
-            href="/cupertino-pogo-map"
+            href="/cupertino-pogo-map/"
           >
             Map
           </a>

@@ -26,7 +26,7 @@ const BOUNDARIES: LatLngBoundsExpression = [
 ];
 
 /**
- * The Leaflet map of the app.
+ * The app's Leaflet map.
  */
 export default function MapView() {
   return (
@@ -99,7 +99,7 @@ export default function MapView() {
       </LayersControl>
       <StdRaidPath />
       <PlacedMarkers />
-      <MyLocationMarker data-testid="marker-live-location" />
+      <MyLocationMarker data-testid="marker-my-location" />
     </MapContainer>
   );
 }

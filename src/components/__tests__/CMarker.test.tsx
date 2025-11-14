@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import CMarker from "../components/CMarker";
-import { CENTER } from "../constants";
+import { CENTER } from "../../constants";
+import CMarker from "../CMarker";
 
 function TestComponent() {
   return (
@@ -16,14 +16,14 @@ function TestComponent() {
   );
 }
 
+test("matches <CMarker> default snapshot", () => {
+  const { asFragment } = render(<TestComponent />);
+
+  expect(asFragment()).toMatchSnapshot();
+});
+
 test("loads <CMarker>", () => {
   render(<TestComponent />);
 
   expect(screen.getByTestId("marker")).toBeInTheDocument();
-});
-
-test("loads <CMarker> and matches snapshot", () => {
-  const { asFragment } = render(<TestComponent />);
-
-  expect(asFragment()).toMatchSnapshot();
 });

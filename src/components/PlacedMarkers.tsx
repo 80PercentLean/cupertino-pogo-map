@@ -10,7 +10,7 @@ import CMarker from "./CMarker";
 const IS_MOBILE = isMobileUa();
 
 /**
- * Handles markers be placed arbitrarily on the map by the user.
+ * Handles markers that are arbitrarily placed by the user.
  */
 export default function PlacedMarkers() {
   const [coords, setCoords] = useState<LatLng[]>([]);

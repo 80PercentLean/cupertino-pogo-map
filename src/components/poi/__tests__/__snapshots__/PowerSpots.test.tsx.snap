@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`loads <PowerSpots> and matches snapshot 1`] = `
+exports[`matches <PowerSpots> default snapshot 1`] = `
 <DocumentFragment>
   <div
     class="leaflet-container leaflet-touch leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
@@ -567,6 +567,22 @@ exports[`loads <PowerSpots> and matches snapshot 1`] = `
           role="button"
           src="/src/assets/raw/power-spot-icon.png"
           style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -38px; top: -198px; z-index: -198;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: 117px; top: -229px; z-index: -229;"
+          tabindex="0"
+        />
+        <img
+          alt="Marker"
+          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          src="/src/assets/raw/power-spot-icon.png"
+          style="margin-left: -12px; margin-top: -25px; width: 25px; height: 25px; left: -272px; top: -335px; z-index: -335;"
           tabindex="0"
         />
       </div>

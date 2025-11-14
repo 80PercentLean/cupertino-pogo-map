@@ -7,7 +7,7 @@ import InfoView from "./InfoView";
 import SettingsView from "./SettingsView";
 
 /**
- * Core component of the app that sets up error boundary and routing.
+ * Foundational component of the app that establishes the essentials for the component tree.
  */
 export default function App() {
   return (

@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`loads <DevPois> and matches snapshot 1`] = `
+exports[`matches <DevPois> default snapshot 1`] = `
 <DocumentFragment>
   <div
     class="leaflet-container leaflet-touch leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
@@ -54,16 +54,6 @@ exports[`loads <DevPois> and matches snapshot 1`] = `
         <div
           class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
-          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -272px; top: -335px; z-index: -335;"
-          tabindex="0"
-        >
-          <div>
-            🚧
-          </div>
-        </div>
-        <div
-          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
-          role="button"
           style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 118px; top: -237px; z-index: -237;"
           tabindex="0"
         >
@@ -74,7 +64,17 @@ exports[`loads <DevPois> and matches snapshot 1`] = `
         <div
           class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
           role="button"
-          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: 117px; top: -229px; z-index: -229;"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -273px; top: -330px; z-index: -330;"
+          tabindex="0"
+        >
+          <div>
+            🚧
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
+          role="button"
+          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -85px; top: -312px; z-index: -312;"
           tabindex="0"
         >
           <div>

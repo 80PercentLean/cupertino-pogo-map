@@ -8,8 +8,7 @@ export default mergeConfig(
   defineConfig({
     test: {
       coverage: {
-        enabled: true,
-        reporter: ["html"],
+        exclude: ["__mocks__"],
       },
       environment: "jsdom",
       exclude: [...configDefaults.exclude, "src/e2e/*"],

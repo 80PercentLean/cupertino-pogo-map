@@ -1,8 +1,8 @@
+import Labels from "@/components/Labels";
 import { render } from "@testing-library/react";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import { CENTER } from "../../../constants";
-import L13Grid from "../L13Grid";
+import { CENTER } from "../../constants";
 
 function TestComponent() {
   return (
@@ -11,12 +11,12 @@ function TestComponent() {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <L13Grid />
+      <Labels />
     </MapContainer>
   );
 }
 
-test("matches <L13Grid> the default snapshot", () => {
+test("matches <Labels> default snapshot", () => {
   const { asFragment } = render(<TestComponent />);
 
   expect(asFragment()).toMatchSnapshot();

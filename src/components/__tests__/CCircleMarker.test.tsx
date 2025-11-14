@@ -1,8 +1,8 @@
-import Labels from "@/components/Labels";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import { CENTER } from "../constants";
+import { CENTER } from "../../constants";
+import CCircleMarker from "../CCircleMarker";
 
 function TestComponent() {
   return (
@@ -11,13 +11,19 @@ function TestComponent() {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Labels />
+      <CCircleMarker center={CENTER} data-testid="circle-marker" />
     </MapContainer>
   );
 }
 
-test("loads <Labels> and matches snapshot", () => {
+test("matches <CCircleMarker> default snapshot", () => {
   const { asFragment } = render(<TestComponent />);
 
   expect(asFragment()).toMatchSnapshot();
+});
+
+test("loads <CCircleMarker>", () => {
+  render(<TestComponent />);
+
+  expect(screen.getByTestId("circle-marker")).toBeInTheDocument();
 });

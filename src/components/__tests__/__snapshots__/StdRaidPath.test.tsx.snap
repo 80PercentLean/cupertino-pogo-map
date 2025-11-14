@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`loads <CMarker> and matches snapshot 1`] = `
+exports[`matches <Labels> default snapshot 1`] = `
 <DocumentFragment>
   <div
     class="leaflet-container leaflet-touch leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
@@ -34,30 +34,35 @@ exports[`loads <CMarker> and matches snapshot 1`] = `
       </div>
       <div
         class="leaflet-pane leaflet-overlay-pane"
-      />
+      >
+        <svg
+          class="leaflet-zoom-animated"
+          height="0"
+          pointer-events="none"
+          style="left: 0px; top: 0px;"
+          viewBox="0 0 0 0"
+          width="0"
+        >
+          <g>
+            <path
+              class="leaflet-interactive"
+              d="M0 0"
+              fill="none"
+              stroke="#5a9ffc"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-opacity="1"
+              stroke-width="3"
+            />
+          </g>
+        </svg>
+      </div>
       <div
         class="leaflet-pane leaflet-shadow-pane"
-      >
-        <img
-          alt=""
-          class="leaflet-marker-shadow leaflet-zoom-hide"
-          src="marker-shadow.png"
-          style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; left: 0px; top: 0px;"
-        />
-      </div>
+      />
       <div
         class="leaflet-pane leaflet-marker-pane"
-      >
-        <img
-          alt="Marker"
-          class="leaflet-marker-icon leaflet-zoom-hide leaflet-interactive"
-          data-testid="marker"
-          role="button"
-          src="marker-icon.png"
-          style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; left: 0px; top: 0px; z-index: 0;"
-          tabindex="0"
-        />
-      </div>
+      />
       <div
         class="leaflet-pane leaflet-tooltip-pane"
       />

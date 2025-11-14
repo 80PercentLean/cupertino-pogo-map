@@ -10,9 +10,7 @@ import { useStore } from "./hooks/store";
  */
 export default function SettingsView() {
   const disableAnimations = useStore((s) => s.disableAnimations);
-  // const showHiddenPois = useStore((s) => s.showHiddenPois);
   const setDisableAnimations = useStore((s) => s.setDisableAnimations);
-  // const setShowHiddenPois = useStore((s) => s.setShowHiddenPois);
 
   return (
     <UiOverlayCard title="Settings">

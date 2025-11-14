@@ -16,7 +16,7 @@ function TestComponent() {
   );
 }
 
-test("loads <Restrooms> and matches snapshot", () => {
+test("matches <Restrooms> default snapshot", () => {
   const { asFragment } = render(<TestComponent />);
 
   expect(asFragment()).toMatchSnapshot();

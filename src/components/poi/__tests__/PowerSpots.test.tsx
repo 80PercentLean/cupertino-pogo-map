@@ -16,7 +16,7 @@ function TestComponent() {
   );
 }
 
-test("loads <PowerSpots> and matches snapshot", () => {
+test("matches <PowerSpots> default snapshot", () => {
   const { asFragment } = render(<TestComponent />);
 
   expect(asFragment()).toMatchSnapshot();

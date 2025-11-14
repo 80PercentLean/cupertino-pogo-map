@@ -11,18 +11,22 @@ const LATLNGS = stdRaidPathJson.features[0].geometry.coordinates.map(
   ([lng, lat]) => [lat, lng],
 );
 
+/**
+ * Draws the standard walking path used for raids.
+ */
 export default function StdRaidPath() {
   const disableAnimations = useStore((s) => s.disableAnimations);
   const map = useMap();
 
   useEffect(() => {
+    const COLOR = "#5a9ffc";
     let path;
     if (disableAnimations) {
-      path = L.polyline(LATLNGS as LatLngExpression[], { color: "#5a9ffc" });
+      path = L.polyline(LATLNGS as LatLngExpression[], { color: COLOR });
     } else {
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
       path = new AntPath(LATLNGS, {
-        color: "#5a9ffc",
+        color: COLOR,
         dashArray: [10, 20],
         delay: 1000,
         hardwareAccelerated: true,
@@ -39,7 +43,7 @@ export default function StdRaidPath() {
     return () => {
       layerGroup.remove();
     };
-  }, [map]);
+  }, [disableAnimations, map]);
 
   return null;
 }
