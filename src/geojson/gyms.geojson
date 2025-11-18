@@ -122,6 +122,7 @@
         "type": "Gym",
         "source": "Ingress",
         "hide": true,
+        "removed": true,
         "marker-color": "#ff2600",
         "marker-size": "large",
         "marker-symbol": "circle"

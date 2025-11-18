@@ -1,6 +1,8 @@
 import type { CProperties } from "@/types";
 import type { FeatureCollection, LineString, Point } from "geojson";
 
+// import stdRaidPath from "./std-raid-path.geojson?raw";
+import stdRaidPath from "./campsite-form-path.geojson?raw";
 import devpois from "./devpois.geojson?raw";
 import gyms from "./gyms.geojson?raw";
 import l13Cells from "./l13.geojson?raw";
@@ -12,7 +14,6 @@ import parking from "./parking.geojson?raw";
 import pokestops from "./pokestops.geojson?raw";
 import powerSpots from "./powerspots.geojson?raw";
 import restrooms from "./restrooms.geojson?raw";
-import stdRaidPath from "./std-raid-path.geojson?raw";
 
 export const devpoisJson = JSON.parse(devpois) as FeatureCollection<
   Point,

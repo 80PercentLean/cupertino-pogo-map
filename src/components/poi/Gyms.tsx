@@ -1,7 +1,8 @@
 import L from "leaflet";
 
 import { gymsJson } from "../../geojson/data";
-import { iconGym } from "../../leafletIcons";
+// import { iconGym } from "../../leafletIcons";
+import { iconMeetupSpot } from "../../leafletIcons";
 import type { CFeature } from "../../types";
 import Poi from "./Poi";
 import { genPopupContent } from "./helper";
@@ -17,7 +18,7 @@ export default function Gyms() {
         const { desc, name } = properties as CFeature["properties"];
 
         return L.marker(latlng, {
-          icon: iconGym,
+          icon: iconMeetupSpot,
         }).bindPopup(genPopupContent(name, "Gym", latlng, desc));
       }}
     />

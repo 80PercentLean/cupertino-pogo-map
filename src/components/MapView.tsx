@@ -38,6 +38,7 @@ export default function MapView() {
       minZoom={15}
       scrollWheelZoom={!IS_MOBILE}
       zoom={16}
+      zoomSnap={0.25}
     >
       <LeafletDebug />
       <LayersControl position="topright">

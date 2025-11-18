@@ -3,7 +3,7 @@ import L from "leaflet";
 /** Label for Memorial Park. */
 export const labelMp = L.divIcon({
   className: "label-map label-mp",
-  html: "<div>Memorial Park</div>",
+  html: "<div>Quinlan Community Center Loop</div>",
   iconAnchor: [50, 7],
 });
 
