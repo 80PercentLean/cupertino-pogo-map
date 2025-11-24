@@ -14,7 +14,8 @@ export default function PokeStops() {
     <Poi
       data={pokestopsJson}
       pointToLayer={({ properties }, latlng) => {
-        const { desc, name, type } = properties as CFeature["properties"];
+        const { desc, name, photo, type } =
+          properties as CFeature["properties"];
 
         let icon;
         let typeTxt;
@@ -29,7 +30,7 @@ export default function PokeStops() {
         }
 
         return L.marker(latlng, { icon }).bindPopup(
-          genPopupContent(name, typeTxt, latlng, desc),
+          genPopupContent(name, typeTxt, latlng, desc, photo),
         );
       }}
     />

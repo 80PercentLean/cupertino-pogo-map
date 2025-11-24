@@ -19,5 +19,7 @@ export default function Poi(
     return true;
   };
 
-  return <GeoJSON {...props} filter={props.filter ?? filterDefault} />;
+  return (
+    <GeoJSON {...props} filter={props.filter ? filterDefault : undefined} />
+  );
 }

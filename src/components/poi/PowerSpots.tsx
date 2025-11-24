@@ -14,10 +14,10 @@ export default function PowerSpots() {
     <Poi
       data={powerSpotsJson}
       pointToLayer={({ properties }, latlng) => {
-        const { desc, name } = properties as CFeature["properties"];
+        const { desc, name, photo } = properties as CFeature["properties"];
 
         return L.marker(latlng, { icon: iconPowerSpot }).bindPopup(
-          genPopupContent(name, "Power Spot", latlng, desc),
+          genPopupContent(name, "Power Spot", latlng, desc, photo),
         );
       }}
     />

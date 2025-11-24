@@ -957,13 +957,17 @@
       "properties": {
         "name": "Mary Avenue Dog Park Dedication Plaque",
         "type": "Power Spot",
+        "photo": "a4a6271d6ce330cab1c5741b1e86f407.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
-        "marker-symbol": "circle"
+        "marker-symbol": "circle",
+        "submitter": "80PercentLean",
+        "created": "2025-11-10T08:00:00Z",
+        "updated": "2025-11-24T08:00:00Z"
       },
       "geometry": { "coordinates": [-122.050702, 37.327567], "type": "Point" },
-      "id": 14
+      "id": "a4a6271d6ce330cab1c5741b1e86f407.16"
     }
   ]
 }

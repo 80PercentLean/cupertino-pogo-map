@@ -61,16 +61,6 @@ exports[`matches <DevPois> default snapshot 1`] = `
             🚧
           </div>
         </div>
-        <div
-          class="leaflet-marker-icon icon-emoji leaflet-zoom-hide leaflet-interactive"
-          role="button"
-          style="margin-left: -10px; margin-top: -10px; width: 12px; height: 12px; left: -273px; top: -330px; z-index: -330;"
-          tabindex="0"
-        >
-          <div>
-            🚧
-          </div>
-        </div>
       </div>
       <div
         class="leaflet-pane leaflet-tooltip-pane"

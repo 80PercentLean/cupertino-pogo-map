@@ -1248,34 +1248,40 @@
       "properties": {
         "name": "Glenbrook Fire Pit Lounge",
         "type": "PokeStop",
+        "photo": "77ce44fa26da3aacbb0f0d2f8b02d8bb.16.jpg",
         "hidden": true,
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
-        "marker-symbol": "circle"
+        "marker-symbol": "circle",
+        "created": "2025-11-24T08:00:00Z",
+        "updated": "2025-11-24T08:00:00Z"
       },
       "geometry": {
-        "coordinates": [-122.047493, 37.32556],
+        "coordinates": [-122.04747, 37.325561],
         "type": "Point"
       },
-      "id": 67
+      "id": "77ce44fa26da3aacbb0f0d2f8b02d8bb.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Community pool",
         "type": "PokeStop",
+        "photo": "accb87acb12b30a184eba98d03dddc84.16.jpg",
         "hidden": true,
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
-        "marker-symbol": "circle"
+        "marker-symbol": "circle",
+        "created": "2025-11-24T08:00:00Z",
+        "updated": "2025-11-24T08:00:00Z"
       },
       "geometry": {
-        "coordinates": [-122.04789564013481, 37.32741747443455],
+        "coordinates": [-122.047943, 37.327423],
         "type": "Point"
       },
-      "id": 67
+      "id": "accb87acb12b30a184eba98d03dddc84.16"
     },
     {
       "type": "Feature",
@@ -1391,26 +1397,34 @@
       "properties": {
         "name": "Glenbrook West Entrance Sign",
         "type": "PokeStop",
+        "photo": "a201619465ec38a592a00e1043ae9917.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
-        "marker-symbol": "circle"
+        "marker-symbol": "circle",
+        "submitter": "80PercentLean",
+        "created": "2025-11-02T08:00:00Z",
+        "updated": "2025-11-24T08:00:00Z"
       },
       "geometry": { "coordinates": [-122.04998, 37.326296], "type": "Point" },
-      "id": 14
+      "id": "a201619465ec38a592a00e1043ae9917.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Glenbrook Apartment Homes Sign",
         "type": "PokeStop",
+        "photo": "f0d44b11e4cb3eab982989a9fbc93777.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
-        "marker-symbol": "circle"
+        "marker-symbol": "circle",
+        "submitter": "80PercentLean",
+        "created": "2025-11-07T08:00:00Z",
+        "updated": "2025-11-24T08:00:00Z"
       },
       "geometry": { "coordinates": [-122.050075, 37.326539], "type": "Point" },
-      "id": 14
+      "id": "f0d44b11e4cb3eab982989a9fbc93777.16"
     },
     {
       "type": "Feature",
@@ -1428,6 +1442,40 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "The Event Spot",
+        "type": "PokeStop",
+        "photo": "ded81bdd446c35dc8120ca2356c6bde5.16.jpg",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "submitter": "80PercentLean",
+        "created": "2025-11-23T08:00:00Z",
+        "updated": "2025-11-24T08:00:00Z"
+      },
+      "geometry": { "coordinates": [-122.049161, 37.326075], "type": "Point" },
+      "id": "ded81bdd446c35dc8120ca2356c6bde5.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mary Avenue Dog Park Rules Sign",
+        "type": "PokeStop",
+        "photo": "bc0fe894f87337dd99a7947bc07b7940.16.jpg",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "submitter": "80PercentLean",
+        "created": "2025-11-24T08:00:00Z",
+        "updated": "2025-11-24T08:00:00Z"
+      },
+      "geometry": { "coordinates": [-122.050728, 37.327475], "type": "Point" },
+      "id": "bc0fe894f87337dd99a7947bc07b7940.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Community Ambassador Location",
         "type": "PokeStop",
         "source": "Wayfarer",
@@ -1437,7 +1485,7 @@
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.0459, 37.320662], "type": "Point" },
-      "id": 999
+      "id": "ambassador-pokestop"
     }
   ]
 }

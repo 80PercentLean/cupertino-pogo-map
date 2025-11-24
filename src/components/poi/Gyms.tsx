@@ -14,11 +14,11 @@ export default function Gyms() {
     <Poi
       data={gymsJson}
       pointToLayer={({ properties }, latlng) => {
-        const { desc, name } = properties as CFeature["properties"];
+        const { desc, name, photo } = properties as CFeature["properties"];
 
         return L.marker(latlng, {
           icon: iconGym,
-        }).bindPopup(genPopupContent(name, "Gym", latlng, desc));
+        }).bindPopup(genPopupContent(name, "Gym", latlng, desc, photo));
       }}
     />
   );
