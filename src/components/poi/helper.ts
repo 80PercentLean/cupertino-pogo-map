@@ -40,5 +40,16 @@ export const genPopupContent = (
     </p>
   `;
 
+  if (wayfarerTools) {
+    popupContent += `
+      <hr class="mt-2" />
+      <p>
+        <span class="font-bold">Latitude:</span> ${latlng.lat}
+        <br />
+        <span class="font-bold">Longitude:</span> ${latlng.lng}
+      </p>
+    `;
+  }
+
   return popupContent;
 };
