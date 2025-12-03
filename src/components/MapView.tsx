@@ -41,13 +41,24 @@ export default function MapView() {
     >
       <LeafletDebug />
       <LayersControl position="topright">
+        {/* CartoDB.VoyagerNoLabels */}
         <LayersControl.BaseLayer name="Default" checked>
           <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles courtesy of <a href="https://www.openstreetmap.cat" target="_blank">Breton OpenStreetMap Team</a>'
-            url="https://tile.openstreetmap.bzh/ca/{z}/{x}/{y}.png'"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+            url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png"
+            subdomains="abcd"
             maxZoom={20}
           />
         </LayersControl.BaseLayer>
+        {/* OpenStreetMap.CAT */}
+        {/* <LayersControl.BaseLayer name="Default" checked>
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles courtesy of <a href="https://www.openstreetmap.cat" target="_blank">Breton OpenStreetMap Team</a>'
+            url="https://tile.openstreetmap.bzh/ca/{z}/{x}/{y}.png"
+            maxZoom={20}
+          />
+        </LayersControl.BaseLayer> */}
+        {/* OpenStreetMap.Mapnik */}
         <LayersControl.BaseLayer name="Extra Info">
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -56,6 +67,7 @@ export default function MapView() {
             maxZoom={20}
           />
         </LayersControl.BaseLayer>
+        {/* Esri.WorldImagery */}
         <LayersControl.BaseLayer name="Satellite">
           <TileLayer
             attribution="Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"

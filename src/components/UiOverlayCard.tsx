@@ -25,13 +25,7 @@ export default function UiOverlayCard({
           <CardTitle>
             <h1>{title}</h1>
           </CardTitle>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="h-6 w-6"
-            onClick={() => console.log("Closed")}
-            asChild
-          >
+          <Button variant="ghost" size="icon" className="h-6 w-6" asChild>
             <NavLink to={ROOT_PATH}>
               <CircleX className="h-4 w-4" />
             </NavLink>

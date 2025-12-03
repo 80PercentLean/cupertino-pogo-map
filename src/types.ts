@@ -2,6 +2,9 @@ import type { Feature, Geometry } from "geojson";
 
 /** Custom properties for a GeoJSON `Feature` representing a POI or a label. */
 export interface CProperties {
+  /** Represents if a POI exists but is too close to another POI, preventing it from appearing in-game. */
+  blocked?: boolean;
+
   /**
    * When the POI was converted from a PokeStop to a Gym.
    * The value is in a simplified ISO 8601 format.
@@ -38,8 +41,12 @@ export interface CProperties {
   /** Photo of the POI. */
   photo?: string;
 
-  /** Represents a POI that was removed from the in-game map. */
-  removed?: boolean;
+  /**
+   * Represents a POI that was removed from the in-game map.
+   * When the removed date is unknown, it is simply true.
+   * When the removed date is known, the value is in a simplified ISO 8601 format.
+   */
+  removed?: boolean | string;
 
   /** Source the POI data came from. */
   source?: string;

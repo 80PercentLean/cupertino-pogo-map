@@ -645,6 +645,7 @@
       "properties": {
         "name": "Mary Avenue Dog Park",
         "type": "Power Spot",
+        "blocked": true,
         "source": "Eyeball",
         "marker-color": "#ff40ff",
         "marker-size": "small",

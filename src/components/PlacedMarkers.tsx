@@ -34,9 +34,9 @@ export default function PlacedMarkers() {
         <Popup>
           <p>You placed a marker at...</p>
           <p>
-            <span className="font-bold">Longitude:</span> {c.lng}
-            <br />
             <span className="font-bold">Latitude:</span> {c.lat}
+            <br />
+            <span className="font-bold">Longitude:</span> {c.lng}
           </p>
           <div className="flex items-center justify-between gap-1">
             <Button

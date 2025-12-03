@@ -492,19 +492,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Euphrat Museum of Art",
-        "type": "PokeStop",
-        "source": "Ingress",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.043707, 37.321643], "type": "Point" },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Bubbles Courtyard",
         "type": "PokeStop",
         "source": "Ingress",

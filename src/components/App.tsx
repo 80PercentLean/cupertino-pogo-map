@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import BaseView from "./BaseView";
 import InfoView from "./InfoView";
 import SettingsView from "./SettingsView";
+import ToolsView from "./ToolsView";
 
 /**
  * Foundational component of the app that establishes the essentials for the component tree.
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="cupertino-pogo-map" element={<BaseView />}>
             <Route path="info" element={<InfoView />} />
             <Route path="settings" element={<SettingsView />} />
+            <Route path="tools" element={<ToolsView />} />
           </Route>
         </Routes>
       </BrowserRouter>

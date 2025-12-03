@@ -7,6 +7,7 @@ import {
 import { ROOT_PATH } from "@/constants";
 import { NavLink } from "react-router";
 
+import { useStore } from "./hooks/store";
 import { Button } from "./ui/button";
 
 /**
@@ -14,6 +15,8 @@ import { Button } from "./ui/button";
  * the map, list, settings, etc.
  */
 export default function ViewCtrl() {
+  const wayfarerTools = useStore((s) => s.wayfarerTools);
+
   return (
     <NavigationMenu className="fixed bottom-0 left-0 z-1001 m-2">
       <NavigationMenuList>
@@ -45,6 +48,15 @@ export default function ViewCtrl() {
             </Button>
           </NavigationMenuLink>
         </NavigationMenuItem>
+        {wayfarerTools && (
+          <NavigationMenuItem>
+            <NavigationMenuLink asChild>
+              <Button asChild>
+                <NavLink to={`${ROOT_PATH}tools`}>Tools</NavLink>
+              </Button>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+        )}
       </NavigationMenuList>
     </NavigationMenu>
   );

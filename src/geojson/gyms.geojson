@@ -140,7 +140,7 @@
       "properties": {
         "name": "Whole Foods Cupertino Mural",
         "type": "Gym",
-        "removed": true,
+        "removed": "2025-10-02T08:00:00Z",
         "source": "Ingress",
         "marker-color": "#ff2600",
         "marker-size": "large",
@@ -167,6 +167,7 @@
       "properties": {
         "name": "Lion Fountain",
         "type": "Gym",
+        "removed": "2025-11-25T08:00:00Z",
         "source": "Ingress",
         "marker-color": "#ff2600",
         "marker-size": "large",
@@ -268,6 +269,22 @@
         "type": "Point"
       },
       "id": "54434a946619407093d0c6bf41c69392.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Euphrat Museum of Art",
+        "type": "Gym",
+        "source": "Ingress",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "created": "2025-05-23T08:00:00Z",
+        "converted": "2025-11-25T08:00:00Z",
+        "updated": "2025-11-25T08:00:00Z"
+      },
+      "geometry": { "coordinates": [-122.043707, 37.321643], "type": "Point" },
+      "id": 14
     }
   ]
 }

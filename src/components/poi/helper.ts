@@ -15,6 +15,7 @@ export const genPopupContent = (
   latlng: LatLng,
   desc?: string,
   img?: string,
+  wayfarerTools?: boolean,
 ) => {
   let popupContent = `
     <h1 class="font-bold">${name}</h1>

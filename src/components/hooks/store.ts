@@ -32,6 +32,12 @@ interface StoreState {
 
   /** Set the showHiddenPois value. */
   setShowHiddenPois: (val: StoreState["showHiddenPois"]) => void;
+
+  /** Set the wayfarerTools value. */
+  setWayfarerTools: (val: StoreState["wayfarerTools"]) => void;
+
+  /** Enable Wayfarer tools when true. */
+  wayfarerTools: boolean;
 }
 
 /**
@@ -72,6 +78,11 @@ export const useStore = create<StoreState>()(
 
       setShowHiddenPois: (val: StoreState["showHiddenPois"]) =>
         set(() => ({ showHiddenPois: val })),
+
+      setWayfarerTools: (val: StoreState["wayfarerTools"]) =>
+        set(() => ({ wayfarerTools: val })),
+
+      wayfarerTools: false,
     }),
     { name: "pogoMapStore" },
   ),

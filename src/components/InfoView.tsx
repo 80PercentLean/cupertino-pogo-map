@@ -27,11 +27,19 @@ export default function InfoView() {
             <LinkExt href="https://www.openstreetmap.org/copyright">
               OpenStreetMap
             </LinkExt>{" "}
+            contributors &copy;{" "}
+            <LinkExt href="https://carto.com/attributions">CARTO</LinkExt>
+          </li>
+          {/* <li>
+            Default tile layer: &copy;{" "}
+            <LinkExt href="https://www.openstreetmap.org/copyright">
+              OpenStreetMap
+            </LinkExt>{" "}
             contributors, Tiles courtesy of{" "}
             <LinkExt href="https://www.openstreetmap.cat">
               Breton OpenStreetMap Team
             </LinkExt>
-          </li>
+          </li> */}
           <li>
             Extra info tile layer: &copy;{" "}
             <LinkExt href="https://www.openstreetmap.org/copyright">
