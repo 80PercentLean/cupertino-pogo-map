@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ROOT_PATH } from "@/constants";
 import { CircleX } from "lucide-react";
@@ -5,7 +6,6 @@ import { type PropsWithChildren, type ReactNode } from "react";
 import { NavLink } from "react-router";
 
 import MapCover from "./MapCover";
-import { Button } from "./ui/button";
 
 export interface Props {
   title?: ReactNode;
@@ -23,7 +23,7 @@ export default function UiOverlayCard({
       <Card className="absolute top-0 right-0 left-0 min-h-full rounded-none md:static md:min-h-0 md:w-[500px] md:rounded-xl">
         <CardHeader className="flex flex-row items-center justify-between">
           {title && typeof title === "string" ? (
-            <h1 className="font-bold">{title}</h1>
+            <CardTitle>{title}</CardTitle>
           ) : (
             title
           )}

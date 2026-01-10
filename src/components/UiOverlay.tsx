@@ -1,5 +1,6 @@
 import { Outlet } from "react-router";
 
+import BtnLayers from "./BtnLayers";
 import BtnMyLocation from "./BtnMyLocation";
 import ViewCtrl from "./ViewCtrl";
 
@@ -11,6 +12,7 @@ export default function UiOverlay() {
   return (
     <>
       <ViewCtrl />
+      <BtnLayers />
       <BtnMyLocation />
       <Outlet />
     </>

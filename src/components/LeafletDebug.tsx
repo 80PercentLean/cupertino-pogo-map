@@ -8,7 +8,7 @@ import { useStore } from "./hooks/store";
  */
 export default function LeafletDebug() {
   const map = useMap();
-  const setMap = useStore((s) => s.setMap);
+  // const setMap = useStore((s) => s.setMap);
 
   useMapEvents({
     contextmenu: (e) => {
@@ -22,9 +22,9 @@ export default function LeafletDebug() {
     },
   });
 
-  useEffect(() => {
-    setMap(map);
-  }, [map, setMap]);
+  // useEffect(() => {
+  //   setMap(map);
+  // }, [map, setMap]);
 
   return null;
 }

@@ -23,28 +23,36 @@ export default function ViewCtrl() {
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Button asChild>
-              <NavLink to={ROOT_PATH}>Map</NavLink>
+              <NavLink to={ROOT_PATH} title="Switch to Map View">
+                Map
+              </NavLink>
             </Button>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Button asChild>
-              <NavLink to={`${ROOT_PATH}list`}>List</NavLink>
+              <NavLink to={`${ROOT_PATH}list`} title="Open List View">
+                List
+              </NavLink>
             </Button>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Button asChild>
-              <NavLink to={`${ROOT_PATH}settings`}>Settings</NavLink>
+              <NavLink to={`${ROOT_PATH}settings`} title="Open Settings">
+                Settings
+              </NavLink>
             </Button>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Button asChild>
-              <NavLink to={`${ROOT_PATH}info`}>Info</NavLink>
+              <NavLink to={`${ROOT_PATH}info`} title="Open Info">
+                Info
+              </NavLink>
             </Button>
           </NavigationMenuLink>
         </NavigationMenuItem>

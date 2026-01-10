@@ -7,10 +7,13 @@ import icon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
 
-import showcaseIcon from "./assets/raw/Pok_Stop_Showcase.webp";
-import gymIcon from "./assets/raw/gym-icon.png";
-import pokeStopIcon from "./assets/raw/pokestop-icon3.png";
-import powerSpotIcon from "./assets/raw/power-spot-icon.png";
+import imgGym from "./assets/gym.webp";
+import imgPokeStop from "./assets/pokestop.webp";
+import imgPowerSpot from "./assets/power-spot.webp";
+import imgShowcase from "./assets/showcase.webp";
+
+/** Export images. */
+export { imgGym, imgPokeStop, imgPowerSpot };
 
 /** Default Leaflet icon. */
 const DefaultIcon = L.icon({
@@ -34,11 +37,11 @@ export const iconAbRestroom = L.divIcon({
 
 /** Leaflet icon for gyms. */
 export const iconGym = L.icon({
-  iconAnchor: [25, 41],
-  iconSize: [50, 50],
-  iconUrl: gymIcon,
+  iconAnchor: [18, 40],
+  iconSize: [37, 40],
+  iconUrl: imgGym,
   popupAnchor: [0, -30],
-  shadowAnchor: [8, 16],
+  shadowAnchor: [8, 20],
   shadowSize: [20, 20],
   shadowUrl: markerShadow,
 });
@@ -88,28 +91,25 @@ export const iconParkingWarn = L.divIcon({
 
 /** Leaflet icon for PokeStops. */
 export const iconPokeStop = L.icon({
-  iconAnchor: [15, 30],
-  iconSize: [30, 30],
-  iconUrl: pokeStopIcon,
+  iconAnchor: [7, 20],
+  iconSize: [15, 20],
+  iconUrl: imgPokeStop,
   popupAnchor: [0, -25],
 });
 
 /** Leaflet icon for power spots. */
 export const iconPowerSpot = L.icon({
-  iconAnchor: [12, 25],
-  iconSize: [25, 25],
-  iconUrl: powerSpotIcon,
+  iconAnchor: [7, 20],
+  iconSize: [15, 20],
+  iconUrl: imgPowerSpot,
   popupAnchor: [0, -20],
-  // shadowAnchor: [3, 9],
-  // shadowSize: [10, 10],
-  // shadowUrl: markerShadow,
 });
 
 /** Leaflet icon for PokeStops with showcases. */
 export const iconShowcase = L.icon({
   iconAnchor: [15, 15],
   iconSize: [30, 30],
-  iconUrl: showcaseIcon,
+  iconUrl: imgShowcase,
 });
 
 /** Leaflet icon for women's restrooms. */

@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import type { LatLng, LeafletEventHandlerFnMap } from "leaflet";
 import { useState } from "react";
-import { Popup, useMapEvent } from "react-leaflet";
-import { toast } from "sonner";
+import { Circle, Popup, useMapEvent } from "react-leaflet";
 
 import { isMobileUa } from "../util";
+import BtnCopyCoords from "./BtnCopyCoords";
 import CMarker from "./CMarker";
 import { useStore } from "./hooks/store";
 
@@ -29,58 +29,45 @@ export default function PlacedMarkers() {
   });
 
   return coords.map((c, i) => {
-    const ERR_COPY_LOG = "Failed to copy to clipboard: ";
-
     const id = `placed-lat${c.lat},lng${c.lng}`;
     return (
-      <CMarker key={id} position={c} data-testid={id}>
-        <Popup>
-          <p>You placed a marker at...</p>
-          <p>
-            <span className="font-bold">Latitude:</span> {c.lat}
-            <br />
-            <span className="font-bold">Longitude:</span> {c.lng}
-          </p>
-          <div className="flex items-center justify-between gap-1">
-            {wayfarerTools && (
+      <>
+        <Circle
+          center={c}
+          interactive={false}
+          pathOptions={{ fillColor: "red", stroke: false }}
+          radius={30}
+        />
+        <CMarker key={id} position={c} data-testid={id}>
+          <Popup>
+            <p>You placed a marker at...</p>
+            <p>
+              <span className="font-bold">Latitude:</span> {c.lat}
+              <br />
+              <span className="font-bold">Longitude:</span> {c.lng}
+            </p>
+            <div className="flex items-center justify-between gap-1">
+              {wayfarerTools && <BtnCopyCoords lat={c.lat} lng={c.lng} />}
               <Button
-                className="shadow-sm shadow-gray-500"
+                variant="destructive"
                 onClick={() => {
-                  (async () => {
-                    try {
-                      const clipboardTxt = `${c.lng},${c.lat}`;
-                      await navigator.clipboard.writeText(clipboardTxt);
-                      toast(`"${clipboardTxt}" was copied your clipboard!`);
-                    } catch (err) {
-                      toast.error(
-                        "Failed to copy coordinates to the clipboard.",
-                      );
-                      console.error(ERR_COPY_LOG, err);
-                    }
-                  })().catch((err) => console.error(ERR_COPY_LOG, err)); // TODO: Show error message
+                  // This is a hack to prevent a new marker from being placed after the delete button is clicked
+                  setTimeout(() => {
+                    setCoords((s) => {
+                      console.log("Deleted placed marker: ", s[i]);
+                      return [...s.slice(0, i), ...s.slice(i + 1)];
+                    });
+                  }, 0);
                 }}
+                className="cursor-pointer"
+                data-testid="delete-placed-marker-btn"
               >
-                Copy coords
+                Delete
               </Button>
-            )}
-            <Button
-              variant="destructive"
-              onClick={() => {
-                // This is a hack to prevent a new marker from being placed after the delete button is clicked
-                setTimeout(() => {
-                  setCoords((s) => {
-                    console.log("Deleted placed marker: ", s[i]);
-                    return [...s.slice(0, i), ...s.slice(i + 1)];
-                  });
-                }, 0);
-              }}
-              data-testid="delete-placed-marker-btn"
-            >
-              Delete
-            </Button>
-          </div>
-        </Popup>
-      </CMarker>
+            </div>
+          </Popup>
+        </CMarker>
+      </>
     );
   });
 }

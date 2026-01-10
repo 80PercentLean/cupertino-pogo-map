@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
-import DistanceCalcView from "./DistanceCalcView";
+import DistanceCalcView from "../DistanceCalcView";
+import UiOverlayCard from "../UiOverlayCard";
+import { useStore } from "../hooks/store";
 import ToolsDefaultView from "./ToolsDefaultView";
 import ToolsViewBreadcrumbs from "./ToolsViewBreadcrumbs";
-import UiOverlayCard from "./UiOverlayCard";
-import { useStore } from "./hooks/store";
 
 /**
  * Displays the Wayfarer tools view.

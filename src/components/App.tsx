@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import BaseView from "./BaseView";
 import InfoView from "./InfoView";
 import SettingsView from "./SettingsView";
-import ToolsView from "./ToolsView";
+import ToolsView from "./Tools/ToolsView";
 
 /**
  * Foundational component of the app that establishes the essentials for the component tree.

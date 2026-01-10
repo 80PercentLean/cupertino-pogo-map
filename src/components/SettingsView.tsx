@@ -27,9 +27,10 @@ export default function SettingsView() {
           <Checkbox
             id="disable-animations"
             checked={disableAnimations}
+            className="cursor-pointer"
             onCheckedChange={(s) => setDisableAnimations(s === true)}
           />
-          <FieldLabel htmlFor="disable-animations">
+          <FieldLabel htmlFor="disable-animations" className="cursor-pointer">
             Disable animations
           </FieldLabel>
         </Field>
@@ -37,10 +38,11 @@ export default function SettingsView() {
           <Checkbox
             id="wayfarer-tools"
             checked={wayfarerTools}
+            className="cursor-pointer"
             onCheckedChange={(s) => setWayfarerTools(s === true)}
           />
           <FieldContent>
-            <FieldLabel htmlFor="wayfarer-tools">
+            <FieldLabel htmlFor="wayfarer-tools" className="cursor-pointer">
               Enable Wayfarer Tools
             </FieldLabel>
             <FieldDescription>
