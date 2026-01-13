@@ -15,7 +15,7 @@ import { Button } from "./ui/button";
  * the map, list, settings, etc.
  */
 export default function ViewCtrl() {
-  const wayfarerTools = useStore((s) => s.wayfarerTools);
+  const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   return (
     <NavigationMenu className="fixed bottom-0 left-0 z-1001 m-2">
@@ -56,7 +56,7 @@ export default function ViewCtrl() {
             </Button>
           </NavigationMenuLink>
         </NavigationMenuItem>
-        {wayfarerTools && (
+        {wayfarerMode && (
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
               <Button asChild>

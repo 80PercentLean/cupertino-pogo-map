@@ -67,14 +67,14 @@ interface StoreState {
   /** Set the showHiddenPois value. */
   setShowHiddenPois: (val: StoreState["showHiddenPois"]) => void;
 
-  /** Set the wayfarerTools value. */
-  setWayfarerTools: (val: StoreState["wayfarerTools"]) => void;
+  /** Set the wayfarerMode value. */
+  setWayfarerMode: (val: StoreState["wayfarerMode"]) => void;
 
   /** Toggle a layer value. */
   toggleLayer: (layer: layerType) => void;
 
-  /** Enable Wayfarer tools when true. */
-  wayfarerTools: boolean;
+  /** Enable Wayfarer mode when true. */
+  wayfarerMode: boolean;
 }
 
 /**
@@ -157,8 +157,8 @@ export const useStore = create<StoreState>()(
       setShowHiddenPois: (val: StoreState["showHiddenPois"]) =>
         set(() => ({ showHiddenPois: val }), undefined, "setShowHiddenPois"),
 
-      setWayfarerTools: (val: StoreState["wayfarerTools"]) =>
-        set(() => ({ wayfarerTools: val }), undefined, "setWayfarerTools"),
+      setWayfarerMode: (val: StoreState["wayfarerMode"]) =>
+        set(() => ({ wayfarerMode: val }), undefined, "setWayfarerMode"),
 
       toggleLayer: (layer: keyof StoreState["layers"]) =>
         set(
@@ -172,7 +172,7 @@ export const useStore = create<StoreState>()(
           "toggleLayer",
         ),
 
-      wayfarerTools: false,
+      wayfarerMode: false,
     }),
     { name: "cpm-storage" },
     // ),

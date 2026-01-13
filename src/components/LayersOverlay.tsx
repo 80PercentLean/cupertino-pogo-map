@@ -14,11 +14,12 @@ import {
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { imgGym, imgPokeStop, imgPowerSpot } from "@/leafletIcons";
-import { CircleX } from "lucide-react";
+import { X } from "lucide-react";
 import { type Dispatch, type SetStateAction } from "react";
 
 import BtnLayer from "./BtnLayer";
 import { useStore } from "./hooks/store";
+import { Switch } from "./ui/switch";
 
 export interface Props {
   setShowOverlay: Dispatch<SetStateAction<boolean>>;
@@ -31,6 +32,8 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
   const showL13Grid = useStore((s) => s.layers.l13);
   const showL14Grid = useStore((s) => s.layers.l14);
   const showL17Grid = useStore((s) => s.layers.l17);
+  const showLabels = useStore((s) => s.layers.labels);
+  const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   return (
     <Card className="fixed top-0 right-0 z-999 m-2 w-64">
@@ -42,7 +45,7 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
           className="h-6 w-6 cursor-pointer"
           onClick={() => setShowOverlay(false)}
         >
-          <CircleX className="h-4 w-4" />
+          <X className="h-4 w-4" />
         </Button>
       </CardHeader>
       <CardContent>
@@ -50,35 +53,66 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
           <FieldGroup className="flex flex-row flex-wrap gap-4">
             <Field className="w-14">
               <BtnLayer
-                alt="Gym Icon"
-                img={imgGym}
+                imagery={<img src={imgGym} alt="Gym Layer Button Icon" />}
                 label="Gyms"
                 layerType="gyms"
               />
             </Field>
             <Field className="w-14">
               <BtnLayer
-                alt="PokeStop Icon"
-                img={imgPokeStop}
+                imagery={
+                  <img src={imgPokeStop} alt="PokéStop Layer Button Icon" />
+                }
                 label="PokéStops"
                 layerType="pokestops"
               />
             </Field>
             <Field className="w-14">
               <BtnLayer
-                alt="Power Spot Icon"
-                img={imgPowerSpot}
+                imagery={
+                  <img src={imgPowerSpot} alt="Power Spot Layer button Icon" />
+                }
                 label="Power Spots"
                 layerType="powerspots"
               />
             </Field>
             <Field className="w-14">
               <BtnLayer
-                emoji="🚶"
+                imagery={<span className="text-xl">📍</span>}
+                label="Meetup Spots"
+                layerType="meetupSpots"
+              />
+            </Field>
+            <Field className="w-14">
+              <BtnLayer
+                imagery={<span className="text-xl">🅿️</span>}
+                label="Parking"
+                layerType="parking"
+              />
+            </Field>
+            <Field className="w-14">
+              <BtnLayer
+                imagery={<span className="text-xl">🚶</span>}
                 label="Standard Raid Path"
                 layerType="raidPath"
               />
             </Field>
+            <Field className="w-14">
+              <BtnLayer
+                imagery={<span className="text-xl">🚻</span>}
+                label="Restrooms"
+                layerType="restrooms"
+              />
+            </Field>
+            {wayfarerMode && (
+              <Field className="w-14">
+                <BtnLayer
+                  imagery={<span className="text-xl">🚧</span>}
+                  label="TBD"
+                  layerType="devpois"
+                />
+              </Field>
+            )}
           </FieldGroup>
         </FieldSet>
         <FieldSeparator className="my-2" />
@@ -163,6 +197,20 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
               </RadioGroup>
             </Field>
           </FieldGroup>
+        </FieldSet>
+        <FieldSeparator className="my-2" />
+        <FieldSet>
+          <Field className="flex flex-row">
+            <Switch
+              id="labels"
+              className="!w-7 cursor-pointer"
+              checked={showLabels}
+              onCheckedChange={() => toggleLayer("labels")}
+            />
+            <Label htmlFor="labels" className="cursor-pointer">
+              Labels
+            </Label>
+          </Field>
         </FieldSet>
       </CardContent>
     </Card>

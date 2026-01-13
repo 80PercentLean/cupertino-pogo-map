@@ -135,16 +135,18 @@
       "properties": {
         "name": "Cupertino Historical Society",
         "type": "Power Spot",
-        "source": "Ingress",
+        "photo": "a973a46573844e84bfe3f06280c06603.12.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04246018792959, 37.32576616758185],
+        "coordinates": [-122.042395, 37.325809],
         "type": "Point"
       },
-      "id": 60
+      "id": "a973a46573844e84bfe3f06280c06603.12"
     },
     {
       "type": "Feature",

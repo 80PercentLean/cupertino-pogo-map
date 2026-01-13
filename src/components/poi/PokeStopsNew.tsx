@@ -8,7 +8,7 @@ import CaBlockedRange from "./CaBlockedRange";
 import { genPopupContentReact } from "./helper";
 
 export default function PokeStopsNew() {
-  const wayfarerTools = useStore((s) => s.wayfarerTools);
+  const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   return pokestopsJson.features.map(({ geometry, properties }, i) => {
     const latlng = [
@@ -40,7 +40,7 @@ export default function PokeStopsNew() {
               latlng,
               desc,
               photo,
-              wayfarerTools,
+              wayfarerMode,
             )}
           </Popup>
         </Marker>

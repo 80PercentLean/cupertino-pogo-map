@@ -40,7 +40,7 @@ export const iconGym = L.icon({
   iconAnchor: [18, 40],
   iconSize: [37, 40],
   iconUrl: imgGym,
-  popupAnchor: [0, -30],
+  popupAnchor: [0, -33],
   shadowAnchor: [8, 20],
   shadowSize: [20, 20],
   shadowUrl: markerShadow,
@@ -94,7 +94,7 @@ export const iconPokeStop = L.icon({
   iconAnchor: [7, 20],
   iconSize: [15, 20],
   iconUrl: imgPokeStop,
-  popupAnchor: [0, -25],
+  popupAnchor: [0, -13],
 });
 
 /** Leaflet icon for power spots. */
@@ -102,13 +102,13 @@ export const iconPowerSpot = L.icon({
   iconAnchor: [7, 20],
   iconSize: [15, 20],
   iconUrl: imgPowerSpot,
-  popupAnchor: [0, -20],
+  popupAnchor: [0, -13],
 });
 
 /** Leaflet icon for PokeStops with showcases. */
 export const iconShowcase = L.icon({
-  iconAnchor: [15, 15],
-  iconSize: [30, 30],
+  iconAnchor: [12, 12],
+  iconSize: [24, 25],
   iconUrl: imgShowcase,
 });
 

@@ -8,7 +8,7 @@ import CaBlockedRange from "./CaBlockedRange";
 import { genPopupContentReact } from "./helper";
 
 export default function PowerSpotsNew() {
-  const wayfarerTools = useStore((s) => s.wayfarerTools);
+  const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   return powerSpotsJson.features.map(({ geometry, properties }, i) => {
     const latlng = [
@@ -28,7 +28,7 @@ export default function PowerSpotsNew() {
               latlng,
               desc,
               photo,
-              wayfarerTools,
+              wayfarerMode,
             )}
           </Popup>
         </Marker>

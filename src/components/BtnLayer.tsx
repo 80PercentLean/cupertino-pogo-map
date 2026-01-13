@@ -1,25 +1,17 @@
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { type ReactNode } from "react";
 
 import { type layerType, useStore } from "./hooks/store";
 
 export interface Props {
-  alt?: string;
-  emoji?: string;
-  img?: string;
+  imagery: ReactNode;
   label: string;
   layerType: layerType;
 }
 
-export default function BtnLayer({ alt, emoji, img, label, layerType }: Props) {
+export default function BtnLayer({ imagery, label, layerType }: Props) {
   const toggleLayer = useStore((s) => s.toggleLayer);
-
-  let imagery;
-  if (emoji) {
-    imagery = emoji;
-  } else {
-    imagery = <img src={img} alt={alt} />;
-  }
 
   return (
     <button

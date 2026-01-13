@@ -8,29 +8,36 @@ import CaBlockedRange from "./CaBlockedRange";
 import { genPopupContentReact } from "./helper";
 
 export default function GymsNew() {
-  const wayfarerTools = useStore((s) => s.wayfarerTools);
+  const wayfarerMode = useStore((s) => s.wayfarerMode);
 
-  return gymsJson.features.map((f, i) => {
-    const latlng = [
-      f.geometry.coordinates[1],
-      f.geometry.coordinates[0],
-    ] as LatLngTuple;
-    return (
-      <>
-        <CaBlockedRange latlng={latlng} />
-        <Marker key={i} icon={iconGym} position={latlng}>
-          <Popup>
-            {genPopupContentReact(
-              f.properties.name,
-              "Gym",
-              latlng,
-              f.properties.desc,
-              f.properties.photo,
-              wayfarerTools,
-            )}
-          </Popup>
-        </Marker>
-      </>
-    );
-  });
+  const markers = [];
+
+  for (const { id, geometry, properties } of gymsJson.features) {
+    if (!properties.removed) {
+      const latlng = [
+        geometry.coordinates[1],
+        geometry.coordinates[0],
+      ] as LatLngTuple;
+
+      markers.push(
+        <>
+          <CaBlockedRange latlng={latlng} />
+          <Marker key={id} icon={iconGym} position={latlng}>
+            <Popup>
+              {genPopupContentReact(
+                properties.name,
+                "Gym",
+                latlng,
+                properties.desc,
+                properties.photo,
+                wayfarerMode,
+              )}
+            </Popup>
+          </Marker>
+        </>,
+      );
+    }
+  }
+
+  return markers;
 }

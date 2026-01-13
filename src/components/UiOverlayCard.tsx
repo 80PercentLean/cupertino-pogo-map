@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ROOT_PATH } from "@/constants";
-import { CircleX } from "lucide-react";
+import { X } from "lucide-react";
 import { type PropsWithChildren, type ReactNode } from "react";
 import { NavLink } from "react-router";
 
@@ -29,7 +29,7 @@ export default function UiOverlayCard({
           )}
           <Button variant="ghost" size="icon" className="h-6 w-6" asChild>
             <NavLink to={ROOT_PATH}>
-              <CircleX className="h-4 w-4" />
+              <X className="h-4 w-4" />
             </NavLink>
           </Button>
         </CardHeader>

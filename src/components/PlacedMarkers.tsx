@@ -14,7 +14,7 @@ const IS_MOBILE = isMobileUa();
  * Handles markers that are arbitrarily placed by the user.
  */
 export default function PlacedMarkers() {
-  const wayfarerTools = useStore((s) => s.wayfarerTools);
+  const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const [coords, setCoords] = useState<LatLng[]>([]);
 
@@ -47,7 +47,7 @@ export default function PlacedMarkers() {
               <span className="font-bold">Longitude:</span> {c.lng}
             </p>
             <div className="flex items-center justify-between gap-1">
-              {wayfarerTools && <BtnCopyCoords lat={c.lat} lng={c.lng} />}
+              {wayfarerMode && <BtnCopyCoords lat={c.lat} lng={c.lng} />}
               <Button
                 variant="destructive"
                 onClick={() => {

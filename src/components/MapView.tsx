@@ -13,12 +13,15 @@ import DevPois from "./poi/DevPois";
 import Gyms from "./poi/Gyms";
 import GymsNew from "./poi/GymsNew";
 import MeetupSpots from "./poi/MeetupSpots";
+import MeetupSpotsNew from "./poi/MeetupSpotsNew";
 import Parking from "./poi/Parking";
+import ParkingNew from "./poi/ParkingNew";
 import PokeStops from "./poi/PokeStops";
 import PokeStopsNew from "./poi/PokeStopsNew";
 import PowerSpots from "./poi/PowerSpots";
 import PowerSpotsNew from "./poi/PowerSpotsNew";
 import Restrooms from "./poi/Restrooms";
+import RestroomsNew from "./poi/RestroomsNew";
 import L13Grid from "./s2/L13Grid";
 import L14Grid from "./s2/L14Grid";
 import L17Grid from "./s2/L17Grid";
@@ -39,9 +42,12 @@ export default function MapView() {
   const showL14Grid = useStore((s) => s.layers.l14);
   const showL17Grid = useStore((s) => s.layers.l17);
   const showLabels = useStore((s) => s.layers.labels);
+  const showMeetupSpots = useStore((s) => s.layers.meetupSpots);
+  const showParking = useStore((s) => s.layers.parking);
   const showPokeStops = useStore((s) => s.layers.pokestops);
   const showPowerSpots = useStore((s) => s.layers.powerspots);
   const showRaidPath = useStore((s) => s.layers.raidPath);
+  const showRestrooms = useStore((s) => s.layers.restrooms);
 
   const mapType = useStore((s) => s.mapType);
 
@@ -103,9 +109,12 @@ export default function MapView() {
       {tileLayer}
       {showLabels && <Labels />}
       {showDevPois && <DevPois />}
+      {showRestrooms && <RestroomsNew />}
       {showPokeStops && <PokeStopsNew />}
       {showPowerSpots && <PowerSpotsNew />}
       {showGyms && <GymsNew />}
+      {showMeetupSpots && <MeetupSpotsNew />}
+      {showParking && <ParkingNew />}
       {showL17Grid && <L17Grid />}
       {showL14Grid && <L14Grid />}
       {showL13Grid && <L13Grid />}
@@ -144,25 +153,25 @@ export default function MapView() {
 
 // </LayersControl.BaseLayer>
 {
-  /* <LayersControl.Overlay name="PokéStops" checked>
+  /* <LayersControl.Overlay name="PokéStops" checked> X
           <PokeStops />
         </LayersControl.Overlay> */
 }
 {
-  /* <LayersControl.Overlay name="Gyms" checked>
+  /* <LayersControl.Overlay name="Gyms" checked> X
           <Gyms />
         </LayersControl.Overlay> */
 }
-//   <LayersControl.Overlay name="Power Spots">
+//   <LayersControl.Overlay name="Power Spots"> X
 //     <PowerSpots />
 //   </LayersControl.Overlay>
-//   <LayersControl.Overlay name="Meetup Spots" checked>
+//   <LayersControl.Overlay name="Meetup Spots" checked> X
 //     <MeetupSpots />
 //   </LayersControl.Overlay>
-//   <LayersControl.Overlay name="Parking" checked>
+//   <LayersControl.Overlay name="Parking" checked> X
 //     <Parking />
 //   </LayersControl.Overlay>
-//   <LayersControl.Overlay name="Restrooms" checked>
+//   <LayersControl.Overlay name="Restrooms" checked> X
 //     <Restrooms />
 //   </LayersControl.Overlay>
 //   <LayersControl.Overlay name="TBD">

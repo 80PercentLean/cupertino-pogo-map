@@ -17,7 +17,7 @@ export const genPopupContent = (
   latlng: LatLng,
   desc?: string,
   img?: string,
-  wayfarerTools?: boolean,
+  wayfarerMode?: boolean,
 ) => {
   let popupContent = `
     <h1 class="font-bold">${name}</h1>
@@ -42,7 +42,7 @@ export const genPopupContent = (
     </p>
   `;
 
-  if (wayfarerTools) {
+  if (wayfarerMode) {
     popupContent += `
       <hr class="mt-2" />
       <p>
@@ -62,7 +62,7 @@ export const genPopupContentReact = (
   latlng: LatLngTuple,
   desc?: string,
   img?: string,
-  wayfarerTools?: boolean,
+  wayfarerMode?: boolean,
 ) => {
   return (
     <>
@@ -73,10 +73,10 @@ export const genPopupContentReact = (
           <img src={img} alt="${name}" />
         </a>
       )}
-      {desc && <p>{desc}</p>}
+      {desc && <p className="whitespace-pre-line">{desc}</p>}
       <hr className="mt-2" />
       <p>
-        Directions:
+        Directions:{" "}
         <a
           href={`https://maps.google.com/maps?q=${latlng[0]},${latlng[1]}`}
           rel="noopener noreferrer"
@@ -93,7 +93,7 @@ export const genPopupContentReact = (
           Apple Maps
         </a>
       </p>
-      {wayfarerTools && (
+      {wayfarerMode && (
         <>
           <hr className="mt-2" />
           <p>
@@ -101,10 +101,10 @@ export const genPopupContentReact = (
             <br />
             <span className="font-bold">Longitude:</span> {latlng[1]}
           </p>
+          <hr className="my-2" />
+          <BtnCopyCoords lat={latlng[0]} lng={latlng[1]} />
         </>
       )}
-      <hr className="my-2" />
-      <BtnCopyCoords lat={latlng[0]} lng={latlng[1]} />
     </>
   );
 };

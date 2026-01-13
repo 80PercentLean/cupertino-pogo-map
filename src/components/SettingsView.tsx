@@ -17,8 +17,8 @@ import { useStore } from "./hooks/store";
 export default function SettingsView() {
   const disableAnimations = useStore((s) => s.disableAnimations);
   const setDisableAnimations = useStore((s) => s.setDisableAnimations);
-  const wayfarerTools = useStore((s) => s.wayfarerTools);
-  const setWayfarerTools = useStore((s) => s.setWayfarerTools);
+  const wayfarerMode = useStore((s) => s.wayfarerMode);
+  const setWayfarerMode = useStore((s) => s.setWayfarerMode);
 
   return (
     <UiOverlayCard title="Settings">
@@ -36,18 +36,18 @@ export default function SettingsView() {
         </Field>
         <Field orientation="horizontal">
           <Checkbox
-            id="wayfarer-tools"
-            checked={wayfarerTools}
+            id="wayfarer-mode"
+            checked={wayfarerMode}
             className="cursor-pointer"
-            onCheckedChange={(s) => setWayfarerTools(s === true)}
+            onCheckedChange={(s) => setWayfarerMode(s === true)}
           />
           <FieldContent>
-            <FieldLabel htmlFor="wayfarer-tools" className="cursor-pointer">
-              Enable Wayfarer Tools
+            <FieldLabel htmlFor="wayfarer-mode" className="cursor-pointer">
+              Enable Wayfarer Mode
             </FieldLabel>
             <FieldDescription>
-              This enables tools useful for planning & submitting Wayspots for
-              Niantic Wayfarer.
+              This mode enables special settings & tools useful for planning &
+              submitting Wayspots for Niantic Wayfarer.
             </FieldDescription>
           </FieldContent>
         </Field>

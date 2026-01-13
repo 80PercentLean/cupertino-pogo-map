@@ -20,7 +20,7 @@
       "properties": {
         "name": "\"Guardians Statue\", Memorial Park (#5)",
         "type": "Gym",
-        "desc": "<p>This is gym #5 on the standard raid path.</p><p>It is the first gym used for the quick raid group during Raid Hours.</p>",
+        "desc": "This is gym #5 on the standard raid path.\nIt is the first gym used for the quick raid group during Raid Hours.",
         "photo": "fa4517dcde244a41903380687e95d6cb.12.jpg",
         "source": "Ingress",
         "marker-color": "#ff2600",

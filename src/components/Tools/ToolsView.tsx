@@ -10,8 +10,8 @@ import ToolsViewBreadcrumbs from "./ToolsViewBreadcrumbs";
  * Displays the Wayfarer tools view.
  */
 export default function ToolsView() {
-  const wayfarerTools = useStore((s) => s.wayfarerTools);
-  const setWayfarerTools = useStore((s) => s.setWayfarerTools);
+  const wayfarerMode = useStore((s) => s.wayfarerMode);
+  const setWayfarerMode = useStore((s) => s.setWayfarerMode);
   const [nav, setNav] = useState<string | null>(null);
 
   let content;
@@ -24,8 +24,8 @@ export default function ToolsView() {
   }
 
   useEffect(() => {
-    if (!wayfarerTools) {
-      setWayfarerTools(true);
+    if (!wayfarerMode) {
+      setWayfarerMode(true);
     }
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
