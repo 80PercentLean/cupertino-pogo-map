@@ -70,52 +70,60 @@
       "properties": {
         "name": "Memorial Park Picnic Area Sign",
         "type": "Power Spot",
-        "source": "Ingress",
+        "photo": "ad00c2d425553236b3e3dfb3b5c35367.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.044318, 37.325809], "type": "Point" },
-      "id": 54
+      "id": "ad00c2d425553236b3e3dfb3b5c35367.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Aidens Gazebo at Memorial Park",
         "type": "Power Spot",
-        "source": "Ingress",
+        "photo": "83abb8e46af44228a9b285ddbc18fc68.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.0446, 37.324811], "type": "Point" },
-      "id": 56
+      "geometry": { "coordinates": [-122.044601, 37.324811], "type": "Point" },
+      "id": "83abb8e46af44228a9b285ddbc18fc68.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Memorial Park Water Fountain",
         "type": "Power Spot",
-        "source": "Ingress",
+        "photo": "4f3aea5e10b24d9fa25d0cfc29aae42d.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.045525, 37.324781], "type": "Point" },
-      "id": 56
+      "id": "4f3aea5e10b24d9fa25d0cfc29aae42d.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Toyokawa Stone Lantern",
         "type": "Power Spot",
-        "source": "Ingress",
+        "photo": "31f847990f104b1bb6ac8027ec45ba4c.11.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.0451, 37.32409], "type": "Point" },
-      "id": 57
+      "id": "31f847990f104b1bb6ac8027ec45ba4c.11"
     },
     {
       "type": "Feature",
@@ -153,26 +161,30 @@
       "properties": {
         "name": "Glenbrook Main Fountain",
         "type": "Power Spot",
-        "source": "Ingress",
+        "photo": "20fcc9a406f54509836994e74315f1ec.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.046857, 37.324589], "type": "Point" },
-      "id": 61
+      "id": "20fcc9a406f54509836994e74315f1ec.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Magda Lattin Trinom",
         "type": "Power Spot",
-        "source": "Ingress",
+        "photo": "fd2196a55a8a4728b5783dfecd34c62e.11.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.046457, 37.322353], "type": "Point" },
-      "id": 78
+      "id": "fd2196a55a8a4728b5783dfecd34c62e.11"
     },
     {
       "type": "Feature",
@@ -384,16 +396,18 @@
       "properties": {
         "name": "De Anza Instrument Music Building",
         "type": "Power Spot",
-        "source": "Eyeball",
+        "photo": "5ac385a466373981bc0c0a14d30762ef.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04558097178764, 37.321949754956776],
+        "coordinates": [-122.045581, 37.321991],
         "type": "Point"
       },
-      "id": 102
+      "id": "5ac385a466373981bc0c0a14d30762ef.16"
     },
     {
       "type": "Feature",
@@ -647,7 +661,7 @@
       "properties": {
         "name": "Mary Avenue Dog Park",
         "type": "Power Spot",
-        "blocked": true,
+        "inactive": true,
         "source": "Eyeball",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -680,16 +694,17 @@
       "properties": {
         "name": "Bunny Stop",
         "type": "Power Spot",
-        "source": "Eyeball",
+        "photo": "7721b502178030189962d6c764622c4c.16.jpg",
+        "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04460054636003, 37.3248430826669],
+        "coordinates": [-122.044599, 37.324832],
         "type": "Point"
       },
-      "id": 14
+      "id": "7721b502178030189962d6c764622c4c.16"
     },
     {
       "type": "Feature",
@@ -760,86 +775,92 @@
       "properties": {
         "name": "NW Entrance to Memorial Park",
         "type": "Power Spot",
-        "source": "Eyeball",
+        "photo": "49dd51f3fbd03847bd1bf7eb59d37638.16.jpg",
+        "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04579681158067, 37.32648967977929],
+        "coordinates": [-122.045815, 37.326541],
         "type": "Point"
       },
-      "id": 14
+      "id": "49dd51f3fbd03847bd1bf7eb59d37638.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Cupertino Bike Route: To Rancho San Antonio",
         "type": "Power Spot",
-        "source": "Eyeball",
+        "photo": "f58448e2bed1351d811fa16628d53c29.16.jpg",
+        "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04529523849489, 37.323013014007365],
+        "coordinates": [-122.045288, 37.323032],
         "type": "Point"
       },
-      "id": 14
+      "id": "f58448e2bed1351d811fa16628d53c29.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Bleachers at Memorial Park",
         "type": "Power Spot",
-        "source": "Eyeball",
+        "photo": "307b4313a9f93e70a83c0b7f03fb3e93.16.jpg",
+        "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04568684101106, 37.325270732147246],
+        "coordinates": [-122.045707, 37.325569],
         "type": "Point"
       },
-      "id": 14
+      "id": "307b4313a9f93e70a83c0b7f03fb3e93.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Picnic and BBQ pit",
         "type": "Power Spot",
-        "source": "Eyeball",
+        "photo": "901e917e9c4f3cf198d04b6bc5e32ef8.16.jpg",
+        "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04417943954469, 37.32607163522527],
+        "coordinates": [-122.044158, 37.326091],
         "type": "Point"
       },
-      "id": 14
+      "id": "901e917e9c4f3cf198d04b6bc5e32ef8.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Bright Skeleton Shark",
         "type": "Power Spot",
-        "source": "Eyeball",
+        "photo": "be4e0108d56438c89d14d6c71a83f6df.16.jpg",
+        "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.0448862016201, 37.3250510421945],
+        "coordinates": [-122.044929, 37.325054],
         "type": "Point"
       },
-      "id": 14
+      "id": "be4e0108d56438c89d14d6c71a83f6df.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "The Commons Entrance",
         "type": "Power Spot",
+        "photo": "2e41444e74343603bf7303d73dcde267.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -849,111 +870,119 @@
         "coordinates": [-122.043016, 37.325131],
         "type": "Point"
       },
-      "id": 102
+      "id": "2e41444e74343603bf7303d73dcde267.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Memorial Park BBQ Spot B",
         "type": "Power Spot",
+        "photo": "0d65c50b28de3aafae85ad96e12cf811.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.044802, 37.325433], "type": "Point" },
-      "id": 14
+      "id": "0d65c50b28de3aafae85ad96e12cf811.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Memorial Park Rules East Sign",
         "type": "Power Spot",
+        "photo": "43724c577be53244ac28e9ce54916d49.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.044342, 37.325229], "type": "Point" },
-      "id": 14
+      "id": "43724c577be53244ac28e9ce54916d49.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "In memory of Virginia J. Logan",
         "type": "Power Spot",
+        "photo": "b30f61b279c93f489023653df85f8cc7.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.045297, 37.323513], "type": "Point" },
-      "id": 14
+      "id": "b30f61b279c93f489023653df85f8cc7.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Memorial Park BBQ Spot A",
         "type": "Power Spot",
+        "photo": "cc6014b6bc9f36e59a178a8ad750e43f.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.045071, 37.325148], "type": "Point" },
-      "id": 14
+      "id": "cc6014b6bc9f36e59a178a8ad750e43f.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Memorial Park Softball Scoreboard",
         "type": "Power Spot",
+        "photo": "78cde712590f339ba828d0cebd4eae04.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.045204, 37.325305], "type": "Point" },
-      "id": 14
+      "id": "78cde712590f339ba828d0cebd4eae04.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Smoke-Free Memorial Park",
         "type": "Power Spot",
+        "photo": "ab73728e90553414907c188d0df79dde.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.044732, 37.323505], "type": "Point" },
-      "id": 14
+      "id": "ab73728e90553414907c188d0df79dde.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Enjoy Smoke-Free Parks",
         "type": "Power Spot",
+        "photo": "8ccbc9eef9fb3fb6a4b913048bcccdb7.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.045692, 37.325233], "type": "Point" },
-      "id": 14
+      "id": "8ccbc9eef9fb3fb6a4b913048bcccdb7.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Cupertino Victorian Dollhouse",
         "type": "Power Spot",
+        "photo": "fd6205448fd6308bbe897ad2956b1c65.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.042345, 37.325758], "type": "Point" },
-      "id": 14
+      "id": "fd6205448fd6308bbe897ad2956b1c65.16"
     },
     {
       "type": "Feature",
@@ -971,6 +1000,57 @@
       },
       "geometry": { "coordinates": [-122.050702, 37.327567], "type": "Point" },
       "id": "a4a6271d6ce330cab1c5741b1e86f407.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "USS Little (DD-803) Memorial Stone",
+        "type": "Power Spot",
+        "inactive": true,
+        "photo": "b6dcc86d368a38ff924c0ab8e12245e7.16.jpg",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "created": "2025-05-23T08:00:00Z",
+        "converted": "2025-11-25T08:00:00Z",
+        "updated": "2025-11-25T08:00:00Z"
+      },
+      "geometry": { "coordinates": [-122.045328, 37.324384], "type": "Point" },
+      "id": "b6dcc86d368a38ff924c0ab8e12245e7.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Women in the Military",
+        "type": "Power Spot",
+        "inactive": true,
+        "photo": "f172b95a768e304f803eb40f8125b124.16.jpg",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "created": "2025-05-23T08:00:00Z",
+        "converted": "2025-11-25T08:00:00Z",
+        "updated": "2025-11-25T08:00:00Z"
+      },
+      "geometry": { "coordinates": [-122.045293, 37.324373], "type": "Point" },
+      "id": "f172b95a768e304f803eb40f8125b124.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Beautiful Chaos",
+        "type": "PokeStop",
+        "photo": "c4a155f41af749de9aeaab9301a1bcf2.12.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.045795, 37.321792], "type": "Point" },
+      "id": "c4a155f41af749de9aeaab9301a1bcf2.12"
     }
   ]
 }

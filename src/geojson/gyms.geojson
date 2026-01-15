@@ -6,14 +6,16 @@
       "properties": {
         "name": "Cupertino Rotary Bench (#1)",
         "type": "Gym",
-        "desc": "<p>This is gym #1 on the standard raid path.</p><p>It is the first gym used Raid Days and the walking group during Raid Hours.</p>",
-        "source": "Ingress",
+        "desc": "This is gym #1 on the standard raid path.\n\nIt is the first gym used Raid Days and the walking group during Raid Hours.",
+        "photo": "52f6b7516e544435b220bd8e07f4005c.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#ff2600",
         "marker-size": "large",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.04215, 37.325751], "type": "Point" },
-      "id": 1
+      "id": "52f6b7516e544435b220bd8e07f4005c.16"
     },
     {
       "type": "Feature",
@@ -37,28 +39,32 @@
       "properties": {
         "name": "Sister City Plaque (#6)",
         "type": "Gym",
-        "desc": "<p>This is gym #6 on the standard raid path.</p><p>It is the second gym used for the quick raid group during Raid Hours.</p>",
-        "source": "Ingress",
+        "desc": "This is gym #6 on the standard raid path.\n\nIt is the second gym used for the quick raid group during Raid Hours.",
+        "photo": "c3ae8c98ca114ca2b89bc1bb07531cc4.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#ff2600",
         "marker-size": "large",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.045378, 37.324078], "type": "Point" },
-      "id": 3
+      "id": "c3ae8c98ca114ca2b89bc1bb07531cc4.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Memorial Park Cupertino (#7)",
         "type": "Gym",
-        "desc": "<p>This is gym #7 on the standard raid path.</p>",
-        "source": "Ingress",
+        "desc": "This is gym #7 on the standard raid path.",
+        "photo": "977aa0cbd8dc46b3baab7cced1d46c73.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#ff2600",
         "marker-size": "large",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.044846, 37.323048], "type": "Point" },
-      "id": 4
+      "id": "977aa0cbd8dc46b3baab7cced1d46c73.16"
     },
     {
       "type": "Feature",
@@ -194,28 +200,32 @@
       "properties": {
         "name": "Memorial Park Tennis Courts (#4)",
         "type": "Gym",
-        "desc": "<p>This is gym #4 on the standard raid path.</p>",
-        "source": "Ingress",
+        "photo": "4539697e3cb9430db1549c347e67ccdc.16.jpg",
+        "desc": "This is gym #4 on the standard raid path.",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#ff2600",
         "marker-size": "large",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.04556, 37.326333], "type": "Point" },
-      "id": 14
+      "id": "4539697e3cb9430db1549c347e67ccdc.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Gazebo at Cupertino Quinlan Center (#3)",
         "type": "Gym",
-        "desc": "<p>This is gym #3 on the standard raid path.</p>",
-        "source": "Ingress",
+        "desc": "This is gym #3 on the standard raid path.",
+        "photo": "bc14fa18aaab459598bb1bf9b287eee7.11.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#ff2600",
         "marker-size": "large",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.042751, 37.325804], "type": "Point" },
-      "id": 15
+      "geometry": { "coordinates": [-122.042752, 37.325804], "type": "Point" },
+      "id": "bc14fa18aaab459598bb1bf9b287eee7.11"
     },
     {
       "type": "Feature",
@@ -238,17 +248,18 @@
       "properties": {
         "name": "Cupertino Historical Museum (#2)",
         "type": "Gym",
-        "desc": "<p>This is gym #2 on the standard raid path.</p>",
-        "source": "Eyeball",
+        "desc": "This is gym #2 on the standard raid path.",
+        "photo": "14972c4e327e365d9231684506c2da1a.16.jpg",
+        "source": "Wayfarer",
         "marker-color": "#ff2600",
         "marker-size": "large",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04266995394856, 37.325583870011684],
+        "coordinates": [-122.042611, 37.325565],
         "type": "Point"
       },
-      "id": 17
+      "id": "14972c4e327e365d9231684506c2da1a.16"
     },
     {
       "type": "Feature",

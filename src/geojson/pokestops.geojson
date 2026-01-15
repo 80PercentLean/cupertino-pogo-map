@@ -6,169 +6,194 @@
       "properties": {
         "name": "Cupertino Community Center",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "0e298cdc9bd14410acab01a746c8bc0a.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.041694, 37.325911], "type": "Point" },
-      "id": 14
+      "id": "0e298cdc9bd14410acab01a746c8bc0a.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Watch Tower Play Castle",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "d231f048fbf44c628eaba14fbcf5a112.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.044537, 37.326086], "type": "Point" },
-      "id": 16
+      "id": "d231f048fbf44c628eaba14fbcf5a112.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Catch Statue on Pole",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "1c79672d02cd430382b6ae92e3a69d37.11.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.044732, 37.325677], "type": "Point" },
-      "id": 17
+      "id": "1c79672d02cd430382b6ae92e3a69d37.11"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Toyokawa Stone Lantern",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "5e8348aa21284b50a49e151cb3e383f3.11.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.044516, 37.325211], "type": "Point" },
-      "id": 18
+      "id": "5e8348aa21284b50a49e151cb3e383f3.11"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Softball Field at Memorial Park",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "96175419031243c7b3e964654dac8d25.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.045605, 37.325995], "type": "Point" },
-      "id": 20
+      "id": "96175419031243c7b3e964654dac8d25.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Goose Fountains",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "69cbc8a7638d459ebc99c4d67e2956c9.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.044302, 37.324793], "type": "Point" },
-      "id": 21
+      "id": "69cbc8a7638d459ebc99c4d67e2956c9.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Sister City Plaque",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "8e7b78c4c5764e48a5ffb93ca746ea5f.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.044983, 37.324571], "type": "Point" },
-      "id": 22
+      "id": "8e7b78c4c5764e48a5ffb93ca746ea5f.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Memorial Park Amphitheater",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "d0f20dc4c23645549573d405a2eb7d2f.16.jpg",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.044651, 37.324415], "type": "Point" },
-      "id": 23
+      "id": "d0f20dc4c23645549573d405a2eb7d2f.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Memorial Park Playground",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "56a1bc91673947848c37bd38ec5ffac0.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.044703, 37.323794], "type": "Point" },
-      "id": 24
+      "id": "56a1bc91673947848c37bd38ec5ffac0.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "City of Cupertino Senior Center",
         "type": "Showcase",
-        "source": "Ingress",
+        "photo": "a56a18caa8014b50b25069c8b64185b3.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.045617, 37.323506], "type": "Point" },
-      "id": 25
+      "id": "a56a18caa8014b50b25069c8b64185b3.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Heaven's Gate",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "047aa84f57f4445b82c8f776d3f64d92.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.046269, 37.323789], "type": "Point" },
-      "id": 26
+      "id": "047aa84f57f4445b82c8f776d3f64d92.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Sport Center Daisy Box",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "feca1b14e7c64da69bc692bb8bb3be72.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.043254, 37.323439], "type": "Point" },
-      "id": 27
+      "id": "feca1b14e7c64da69bc692bb8bb3be72.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Cupertino Sports Center",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "9325866b3e524f38b787dac1bfd51082.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.043253, 37.32304], "type": "Point" },
-      "id": 28
+      "id": "9325866b3e524f38b787dac1bfd51082.16"
     },
     {
       "type": "Feature",
@@ -188,13 +213,15 @@
       "properties": {
         "name": "Glenbrook Tennis Courts",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "5cae6a81015548a4b51319fe2c09d53b.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.046668, 37.326566], "type": "Point" },
-      "id": 30
+      "id": "5cae6a81015548a4b51319fe2c09d53b.16"
     },
     {
       "type": "Feature",
@@ -306,52 +333,59 @@
       "properties": {
         "name": "De Anza College North Entrance Gate",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "c7c3c42add644d57b1a8ca8fd12a9946.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.045906, 37.322705], "type": "Point" },
-      "id": 39
+      "geometry": { "coordinates": [-122.045907, 37.322705], "type": "Point" },
+      "id": "c7c3c42add644d57b1a8ca8fd12a9946.16"
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "De Anza College North Entrance Sign",
+        "name": "De Anza College Entrance Sign",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "f2eef2e8db6a40d8babf0b9dfa43ebb2.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.046111, 37.322331], "type": "Point" },
-      "id": 40
+      "id": "f2eef2e8db6a40d8babf0b9dfa43ebb2.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Sunshine Mosaic",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "56bdee89c6b94f2a96d7b3362dc6311b.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.046342, 37.321805], "type": "Point" },
-      "id": 41
+      "id": "56bdee89c6b94f2a96d7b3362dc6311b.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Beautiful Chaos Mural",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "fede761951af3ac89a00fe83210573ba.16.jpg",
+        "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.045795, 37.321792], "type": "Point" },
-      "id": 42
+      "geometry": { "coordinates": [-122.045941, 37.321808], "type": "Point" },
+      "id": "fede761951af3ac89a00fe83210573ba.16"
     },
     {
       "type": "Feature",
@@ -384,13 +418,15 @@
       "properties": {
         "name": "De Anza College Registration and Student Services (RSS)",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "63c4065fd5ca34ec91527226cbc97a64.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.044586, 37.321888], "type": "Point" },
-      "id": 45
+      "id": "63c4065fd5ca34ec91527226cbc97a64.16"
     },
     {
       "type": "Feature",
@@ -933,84 +969,91 @@
       "properties": {
         "name": "Toyokawa Cherry Blossom Grove",
         "type": "PokeStop",
+        "photo": "7d3ebe3965ce306aace69cb298c8c7fa.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.045685, 37.325038], "type": "Point" },
-      "id": 47
+      "id": "7d3ebe3965ce306aace69cb298c8c7fa.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Quinoa Playground at the Community Center",
         "type": "PokeStop",
+        "photo": "49126ef8b5fc350abb212c7e28a22475.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.042893, 37.326331], "type": "Point" },
-      "id": 48
+      "id": "49126ef8b5fc350abb212c7e28a22475.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Glenbrook East Community Pool",
         "type": "PokeStop",
+        "photo": "ec55c088d4d43b83a64c092baef3be98.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.046124, 37.32543], "type": "Point" },
-      "id": 49
+      "id": "ec55c088d4d43b83a64c092baef3be98.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Robert W. Quinlan Community Center Plaque",
         "type": "PokeStop",
+        "photo": "dd3cee3aa35232eca478b0ffe04b6486.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.042502, 37.325997], "type": "Point" },
-      "id": 50
+      "id": "dd3cee3aa35232eca478b0ffe04b6486.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Glenbrook Front Lawn Sign",
         "type": "PokeStop",
+        "photo": "d292631e9f26363396a593424f3e479f.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.046318, 37.324084], "type": "Point" },
-      "id": 51
+      "id": "d292631e9f26363396a593424f3e479f.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Glenbrook Redwood Spot",
         "type": "PokeStop",
+        "photo": "125409aa8ad03d3eb0c0a4b4cf4b6c59.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.046133, 37.326032], "type": "Point" },
-      "id": 52
+      "id": "125409aa8ad03d3eb0c0a4b4cf4b6c59.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Visual & Performing Arts Center",
         "type": "PokeStop",
+        "photo": "dc497b79cb6e3e1e8e42d75cc3941235.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -1020,13 +1063,14 @@
         "coordinates": [-122.043944, 37.32198],
         "type": "Point"
       },
-      "id": 54
+      "id": "dc497b79cb6e3e1e8e42d75cc3941235.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Basketball Courts at Cupertino Sports Center",
         "type": "PokeStop",
+        "photo": "81d7c737fc6d3381bf951ebfef3d901e.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -1036,7 +1080,7 @@
         "coordinates": [-122.043675, 37.323121],
         "type": "Point"
       },
-      "id": 55
+      "id": "81d7c737fc6d3381bf951ebfef3d901e.16"
     },
     {
       "type": "Feature",
@@ -1059,6 +1103,7 @@
       "properties": {
         "name": "In loving memory of Bhimachar Venkatesh",
         "type": "PokeStop",
+        "photo": "9513e925c1c738b49eddb7e182f67a04.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -1068,29 +1113,31 @@
         "coordinates": [-122.043792, 37.326122],
         "type": "Point"
       },
-      "id": 57
+      "id": "9513e925c1c738b49eddb7e182f67a04.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Pickleball at Memorial Park",
         "type": "PokeStop",
-        "source": "Eyeball",
+        "photo": "c28d519e7b4d37c8ae3054ec1a867972.16.jpg",
+        "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.0443779230118, 37.326594901760316],
+        "coordinates": [-122.044372, 37.326587],
         "type": "Point"
       },
-      "id": 58
+      "id": "c28d519e7b4d37c8ae3054ec1a867972.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Memorial Park Racket Sports Sign",
         "type": "PokeStop",
+        "photo": "318ffc114c0b3aaa9e38ca5c67176f85.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -1100,7 +1147,7 @@
         "coordinates": [-122.045051, 37.326272],
         "type": "Point"
       },
-      "id": 59
+      "id": "318ffc114c0b3aaa9e38ca5c67176f85.16"
     },
     {
       "type": "Feature",
@@ -1123,6 +1170,7 @@
       "properties": {
         "name": "Tennis Court 6 at Cupertino Sports Center",
         "type": "PokeStop",
+        "photo": "ffbed4f2be5d3fe6867a8e5d721d8644.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -1132,7 +1180,7 @@
         "coordinates": [-122.042062, 37.32414],
         "type": "Point"
       },
-      "id": 61
+      "id": "ffbed4f2be5d3fe6867a8e5d721d8644.16"
     },
     {
       "type": "Feature",
@@ -1155,6 +1203,7 @@
       "properties": {
         "name": "Tennis Court 7 at Cupertino Sports Center",
         "type": "PokeStop",
+        "photo": "3feb081190133735ae32ab3a18670942.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -1164,13 +1213,14 @@
         "coordinates": [-122.041764, 37.324126],
         "type": "Point"
       },
-      "id": 63
+      "id": "3feb081190133735ae32ab3a18670942.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Tennis Court 16 at Cupertino Sports Center",
         "type": "PokeStop",
+        "photo": "a2316f1f23333f8b9a7841a4dca2c451.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -1180,7 +1230,7 @@
         "coordinates": [-122.044121, 37.323517],
         "type": "Point"
       },
-      "id": 64
+      "id": "a2316f1f23333f8b9a7841a4dca2c451.16"
     },
     {
       "type": "Feature",
@@ -1203,6 +1253,7 @@
       "properties": {
         "name": "Tennis Court 15 at Cupertino Sports Center",
         "type": "PokeStop",
+        "photo": "ae86688dfd16336a9fecf2ad49aaf41b.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -1212,7 +1263,7 @@
         "coordinates": [-122.044118, 37.323457],
         "type": "Point"
       },
-      "id": 66
+      "id": "ae86688dfd16336a9fecf2ad49aaf41b.16"
     },
     {
       "type": "Feature",
@@ -1307,16 +1358,17 @@
       "properties": {
         "name": "De Anza Bike Route",
         "type": "PokeStop",
-        "source": "Eyeball",
+        "photo": "d9503dbb79bd3cac975ba3745bb01430.16.jpg",
+        "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04485133290292, 37.32265893963401],
+        "coordinates": [-122.044754, 37.322692],
         "type": "Point"
       },
-      "id": 67
+      "id": "d9503dbb79bd3cac975ba3745bb01430.16"
     },
     {
       "type": "Feature",
@@ -1371,13 +1423,14 @@
       "properties": {
         "name": "Memorial Park Athletic Field & Event Lawn",
         "type": "PokeStop",
+        "photo": "9324f41b49b83e64b91c7456334945ae.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.043604, 37.325592], "type": "Point" },
-      "id": 14
+      "id": "9324f41b49b83e64b91c7456334945ae.16"
     },
     {
       "type": "Feature",
@@ -1418,13 +1471,14 @@
       "properties": {
         "name": "Glenbrook Northeast Map Kiosk",
         "type": "PokeStop",
+        "photo": "5b2264331e813c0aa15f51c80bfad9cb.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.046683, 37.327167], "type": "Point" },
-      "id": 14
+      "id": "5b2264331e813c0aa15f51c80bfad9cb.16"
     },
     {
       "type": "Feature",

@@ -2,9 +2,6 @@ import type { Feature, Geometry } from "geojson";
 
 /** Custom properties for a GeoJSON `Feature` representing a POI or a label. */
 export interface CProperties {
-  /** Represents if a POI exists but is too close to another POI, preventing it from appearing in-game. */
-  blocked?: boolean;
-
   /**
    * When the POI was converted from a PokeStop to a Gym.
    * The value is in a simplified ISO 8601 format.
@@ -19,6 +16,12 @@ export interface CProperties {
 
   /** Description of the POI. */
   desc?: string;
+
+  /** Represents if a POI is registered in the system but is not visible in-game. */
+  inactive?: boolean;
+
+  /** Represents if a POI originated as an Ingress portal. */
+  ingress?: boolean;
 
   /** Represents if a POI is hidden. */
   hidden?: boolean;

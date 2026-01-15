@@ -101,7 +101,6 @@ export const genPopupContentReact = (
             <br />
             <span className="font-bold">Longitude:</span> {latlng[1]}
           </p>
-          <hr className="my-2" />
           <BtnCopyCoords lat={latlng[0]} lng={latlng[1]} />
         </>
       )}
