@@ -1,7 +1,4 @@
-import { useEffect } from "react";
 import { useMap, useMapEvents } from "react-leaflet";
-
-import { useStore } from "./hooks/store";
 
 /**
  * Helps to debug Leaflet map when placed inside a <MapContainer>.

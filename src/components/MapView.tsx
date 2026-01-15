@@ -1,5 +1,5 @@
 import type { LatLngBoundsExpression } from "leaflet";
-import { LayersControl, MapContainer, TileLayer } from "react-leaflet";
+import { MapContainer, TileLayer } from "react-leaflet";
 
 import { CENTER } from "../constants";
 import { isMobileUa } from "../util";
@@ -10,17 +10,11 @@ import PlacedMarkers from "./PlacedMarkers";
 import StdRaidPath from "./StdRaidPath";
 import { useStore } from "./hooks/store";
 import DevPois from "./poi/DevPois";
-import Gyms from "./poi/Gyms";
 import GymsNew from "./poi/GymsNew";
-import MeetupSpots from "./poi/MeetupSpots";
 import MeetupSpotsNew from "./poi/MeetupSpotsNew";
-import Parking from "./poi/Parking";
 import ParkingNew from "./poi/ParkingNew";
-import PokeStops from "./poi/PokeStops";
 import PokeStopsNew from "./poi/PokeStopsNew";
-import PowerSpots from "./poi/PowerSpots";
 import PowerSpotsNew from "./poi/PowerSpotsNew";
-import Restrooms from "./poi/Restrooms";
 import RestroomsNew from "./poi/RestroomsNew";
 import L13Grid from "./s2/L13Grid";
 import L14Grid from "./s2/L14Grid";
@@ -124,69 +118,3 @@ export default function MapView() {
     </MapContainer>
   );
 }
-
-{
-  /* <LayersControl position="topright">
-        {/* CartoDB.VoyagerNoLabels */
-}
-// <LayersControl.BaseLayer name="Default" checked>
-
-// </LayersControl.BaseLayer>
-{
-  /* OpenStreetMap.CAT */
-}
-{
-  /* <LayersControl.BaseLayer name="Default" checked>
-          
-        </LayersControl.BaseLayer> */
-}
-{
-  /* OpenStreetMap.Mapnik */
-}
-// <LayersControl.BaseLayer name="Extra Info">
-
-// </LayersControl.BaseLayer>
-{
-  /* Esri.WorldImagery */
-}
-// <LayersControl.BaseLayer name="Satellite">
-
-// </LayersControl.BaseLayer>
-{
-  /* <LayersControl.Overlay name="PokéStops" checked> X
-          <PokeStops />
-        </LayersControl.Overlay> */
-}
-{
-  /* <LayersControl.Overlay name="Gyms" checked> X
-          <Gyms />
-        </LayersControl.Overlay> */
-}
-//   <LayersControl.Overlay name="Power Spots"> X
-//     <PowerSpots />
-//   </LayersControl.Overlay>
-//   <LayersControl.Overlay name="Meetup Spots" checked> X
-//     <MeetupSpots />
-//   </LayersControl.Overlay>
-//   <LayersControl.Overlay name="Parking" checked> X
-//     <Parking />
-//   </LayersControl.Overlay>
-//   <LayersControl.Overlay name="Restrooms" checked> X
-//     <Restrooms />
-//   </LayersControl.Overlay>
-//   <LayersControl.Overlay name="TBD">
-//     <DevPois />
-//   </LayersControl.Overlay>
-//   <LayersControl.Overlay name="L17 S2 Cells">
-//     <L17Grid />
-//   </LayersControl.Overlay>
-//   <LayersControl.Overlay name="L14 S2 Cells">
-//     <L14Grid />
-//   </LayersControl.Overlay>
-//   <LayersControl.Overlay name="L13 S2 Cells">
-//     <L13Grid />
-//   </LayersControl.Overlay>
-//   <LayersControl.Overlay name="Labels" checked>
-//     <Labels />
-//   </LayersControl.Overlay>
-// </LayersControl> */}

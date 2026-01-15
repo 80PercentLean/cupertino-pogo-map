@@ -16,7 +16,7 @@ export default function CopyCoordsBtn({ className, coord, txt }: Props) {
       onClick={() => {
         (async () => {
           try {
-            const clipboardTxt = coord;
+            const clipboardTxt = String(coord);
             await navigator.clipboard.writeText(clipboardTxt);
             toast(`"${clipboardTxt}" was copied your clipboard!`);
           } catch (err) {
@@ -28,7 +28,7 @@ export default function CopyCoordsBtn({ className, coord, txt }: Props) {
         });
       }}
     >
-      Copy coords
+      {txt}
     </Button>
   );
 }

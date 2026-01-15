@@ -1,6 +1,6 @@
 import type { Map } from "leaflet";
 import { create } from "zustand";
-import { devtools, persist } from "zustand/middleware";
+import { devtools } from "zustand/middleware";
 
 export type layerType = keyof StoreState["layers"];
 
@@ -82,7 +82,6 @@ interface StoreState {
  */
 export const useStore = create<StoreState>()(
   devtools(
-    // persist(
     (set) => ({
       // Disable animations by default for E2E tests to allow visual tests to perform consistently
       disableAnimations: import.meta.env.VITE_E2E ? true : false,
@@ -175,7 +174,5 @@ export const useStore = create<StoreState>()(
       wayfarerMode: false,
     }),
     { name: "cpm-storage" },
-    // ),
-    // { name: "pogoMapStore" },
   ),
 );
