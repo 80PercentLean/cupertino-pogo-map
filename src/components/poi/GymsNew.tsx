@@ -1,6 +1,7 @@
 import { gymsJson } from "@/geojson/data";
 import { iconGym } from "@/leafletIcons";
 import type { LatLngTuple } from "leaflet";
+import { Fragment } from "react";
 import { Marker, Popup } from "react-leaflet";
 
 import { useStore } from "../hooks/store";
@@ -20,9 +21,9 @@ export default function GymsNew() {
       ] as LatLngTuple;
 
       markers.push(
-        <>
+        <Fragment key={id}>
           <CaBlockedRange latlng={latlng} />
-          <Marker key={id} icon={iconGym} position={latlng}>
+          <Marker icon={iconGym} position={latlng}>
             <Popup>
               {genPopupContentReact(
                 properties.name,
@@ -34,7 +35,7 @@ export default function GymsNew() {
               )}
             </Popup>
           </Marker>
-        </>,
+        </Fragment>,
       );
     }
   }

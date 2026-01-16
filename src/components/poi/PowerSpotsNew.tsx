@@ -4,7 +4,7 @@ import { type LatLngTuple } from "leaflet";
 import PowerSpotMarker from "./PowerSpotMarker";
 
 export default function PowerSpotsNew() {
-  return powerSpotsJson.features.map(({ geometry, properties }, i) => {
+  return powerSpotsJson.features.map(({ id, geometry, properties }) => {
     const latlng = [
       geometry.coordinates[1],
       geometry.coordinates[0],
@@ -13,7 +13,7 @@ export default function PowerSpotsNew() {
 
     return (
       <PowerSpotMarker
-        id={i}
+        key={id}
         desc={desc}
         inactive={inactive}
         latlng={latlng}

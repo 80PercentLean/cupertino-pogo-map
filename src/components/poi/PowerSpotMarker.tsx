@@ -9,7 +9,6 @@ import { genPopupContentReact } from "./helper";
 
 export interface Props {
   desc?: string;
-  id: number;
   inactive?: boolean;
   latlng: LatLngTuple;
   name: string;
@@ -19,7 +18,6 @@ export interface Props {
 export default function PowerSpotMarker({
   desc,
   latlng,
-  id,
   inactive,
   name,
   photo,
@@ -38,7 +36,7 @@ export default function PowerSpotMarker({
     <>
       {/* Do not show CaBlockedRange for inactive power spots */}
       {!inactive && <CaBlockedRange latlng={latlng} />}
-      <Marker key={id} icon={iconPowerSpot} position={latlng} ref={markerRef}>
+      <Marker icon={iconPowerSpot} position={latlng} ref={markerRef}>
         <Popup>
           {genPopupContentReact(
             name,

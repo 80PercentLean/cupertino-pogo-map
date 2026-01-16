@@ -473,6 +473,7 @@
         "type": "PokeStop",
         "photo": "f27231455c444fd9884669e148634f98.16.jpg",
         "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
