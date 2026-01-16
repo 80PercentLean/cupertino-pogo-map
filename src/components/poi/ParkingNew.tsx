@@ -30,11 +30,12 @@ export default function ParkingNew() {
         <Popup>
           {genPopupContentReact(
             name,
-            "Restroom",
+            type,
             latlng,
             desc,
             undefined,
             wayfarerMode,
+            true,
           )}
         </Popup>
       </Marker>

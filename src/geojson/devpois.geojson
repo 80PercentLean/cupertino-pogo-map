@@ -12,7 +12,7 @@
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.04451, 37.325078], "type": "Point" },
-      "id": 14
+      "id": 1
     },
     {
       "type": "Feature",
@@ -25,7 +25,7 @@
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.04233, 37.325889], "type": "Point" },
-      "id": 14
+      "id": 2
     }
   ]
 }

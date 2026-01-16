@@ -14,7 +14,7 @@
         "coordinates": [-122.04359874129298, 37.325824220005856],
         "type": "Point"
       },
-      "id": 14
+      "id": "label-6ccda8fa-e55a-4d80-958d-c159b5dc96b3"
     },
     {
       "type": "Feature",
@@ -29,7 +29,7 @@
         "coordinates": [-122.04541191458705, 37.324353575660965],
         "type": "Point"
       },
-      "id": 14
+      "id": "label-96e2516f-70c8-47cb-a633-17cafce1e81f"
     },
     {
       "type": "Feature",
@@ -44,7 +44,7 @@
         "coordinates": [-122.04240649938585, 37.325816754878815],
         "type": "Point"
       },
-      "id": 14
+      "id": "label-5009042d-0acb-42ff-a4f4-0369da14bbe2"
     },
     {
       "type": "Feature",
@@ -59,7 +59,7 @@
         "coordinates": [-122.04489693045616, 37.32641396269837],
         "type": "Point"
       },
-      "id": 14
+      "id": "label-95e0ff26-9e3a-4cd5-b1a1-1fdbf2778afc"
     },
     {
       "type": "Feature",
@@ -74,7 +74,7 @@
         "coordinates": [-122.04579278826714, 37.323281768140895],
         "type": "Point"
       },
-      "id": 14
+      "id": "label-4ec8b68b-6c45-45f2-afb0-488ea0cb306b"
     },
     {
       "type": "Feature",
@@ -89,7 +89,7 @@
         "coordinates": [-122.04456567764284, 37.317700656680685],
         "type": "Point"
       },
-      "id": 14
+      "id": "label-1491c64c-b10e-4dd2-84ff-af6bb41021ef"
     },
     {
       "type": "Feature",
@@ -104,7 +104,7 @@
         "coordinates": [-122.04548165202144, 37.32078935662378],
         "type": "Point"
       },
-      "id": 14
+      "id": "label-e2a0f25a-dfd6-4592-a68d-5c790ac74b2e"
     },
     {
       "type": "Feature",
@@ -119,7 +119,7 @@
         "coordinates": [-122.04808339476588, 37.320774425368604],
         "type": "Point"
       },
-      "id": 14
+      "id": "label-7fd30522-f067-420d-a368-019262bebfb5"
     },
     {
       "type": "Feature",
@@ -134,7 +134,7 @@
         "coordinates": [-122.0460529625416, 37.31892186019315],
         "type": "Point"
       },
-      "id": 14
+      "id": "label-a0951982-0c83-4b7d-826e-45c900fae98e"
     }
   ]
 }

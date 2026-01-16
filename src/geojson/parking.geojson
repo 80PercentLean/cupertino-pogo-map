@@ -5,8 +5,8 @@
       "type": "Feature",
       "properties": {
         "name": "Softball Field Parking Lot",
-        "desc": "<p><span class=\"font-bold\">Mon–Fri:</span> <span class=\"popup-txt-warning\">Free for 2 hours from 8:00am–5:00pm.</span> Outside those hours, parking is free and unrestricted during Memorial Park's open hours.</p><p><span class=\"font-bold\">Sat–Sun:</span> Parking is completely free during Memorial Park's open hours.</p>",
         "type": "Conditionally Free Parking",
+        "desc": "<p><span class=\"font-bold\">Mon–Fri:</span> <span class=\"popup-txt-warning\">Free for 2 hours from 8:00am–5:00pm.</span> Outside those hours, parking is free and unrestricted during Memorial Park's open hours.</p><p><span class=\"font-bold\">Sat–Sun:</span> Parking is completely free during Memorial Park's open hours.</p>",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -15,7 +15,7 @@
         "coordinates": [-122.04581558704378, 37.32498172241592],
         "type": "Point"
       },
-      "id": 14
+      "id": "parking-9c7ee262-93d1-4fcb-a62f-c47c1438eef6"
     },
     {
       "type": "Feature",
@@ -31,7 +31,7 @@
         "coordinates": [-122.0458209514618, 37.32440939420156],
         "type": "Point"
       },
-      "id": 14
+      "id": "parking-757595d4-24e0-4328-975a-a0c5c0779f3e"
     },
     {
       "type": "Feature",
@@ -47,7 +47,7 @@
         "coordinates": [-122.0457498729229, 37.32385020129667],
         "type": "Point"
       },
-      "id": 14
+      "id": "parking-590355e0-57b9-426b-80cb-8a1eda2c6ce7"
     },
     {
       "type": "Feature",
@@ -63,7 +63,7 @@
         "coordinates": [-122.04204306006432, 37.3261377546718],
         "type": "Point"
       },
-      "id": 14
+      "id": "parking-bb1c1e5e-3d75-46e5-92ea-a23114c2afa9"
     },
     {
       "type": "Feature",
@@ -79,14 +79,14 @@
         "coordinates": [-122.04204037785532, 37.32549449844886],
         "type": "Point"
       },
-      "id": 14
+      "id": "parking-a6914969-7857-42be-8a8a-4e3caffe0f0e"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Alves Drive Parking Lot",
-        "desc": "<p>Free parking during Memorial Park's open hours.</p><p>This is a great parking lot for Raid Days and our Raid Hour walking group as it is close to the Quinlan Community Center gazebo meetup spot.</p>",
         "type": "Free Parking",
+        "desc": "<p>Free parking during Memorial Park's open hours.</p><p>This is a great parking lot for Raid Days and our Raid Hour walking group as it is close to the Quinlan Community Center gazebo meetup spot.</p>",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -95,7 +95,7 @@
         "coordinates": [-122.04361215233804, 37.32537737752381],
         "type": "Point"
       },
-      "id": 14
+      "id": "parking-a991809c-f34e-4702-b331-ac3a3ca60e5a"
     },
     {
       "type": "Feature",
@@ -111,7 +111,7 @@
         "coordinates": [-122.04268813133241, 37.32519821320473],
         "type": "Point"
       },
-      "id": 14
+      "id": "parking-45431288-6390-4b87-9e9b-5a0b58e73442"
     },
 
     {
@@ -128,7 +128,7 @@
         "coordinates": [-122.04810619354248, 37.324200004178444],
         "type": "Point"
       },
-      "id": 14
+      "id": "parking-172c47e3-cffd-496c-87af-e773518f1cfb"
     },
     {
       "type": "Feature",
@@ -144,7 +144,7 @@
         "coordinates": [-122.05050811171532, 37.32789096522269],
         "type": "Point"
       },
-      "id": 14
+      "id": "parking-52242a21-e7a2-499c-ad20-c1fed8f91100"
     },
     {
       "type": "Feature",
@@ -159,7 +159,7 @@
         "coordinates": [-122.04816251993181, 37.32185800018273],
         "type": "Point"
       },
-      "id": 14
+      "id": "parking-c7f42f83-9e99-44be-a67b-0a549d3416fc"
     },
     {
       "type": "Feature",
@@ -175,7 +175,7 @@
         "coordinates": [-122.04816251993181, 37.32185800018273],
         "type": "Point"
       },
-      "id": 14
+      "id": "parking-49e233e5-6060-4150-bbac-6b4ef55a1f71"
     },
     {
       "type": "Feature",
@@ -191,7 +191,7 @@
         "coordinates": [-122.04270958900453, 37.32167349494499],
         "type": "Point"
       },
-      "id": 14
+      "id": "parking-d365930b-691a-45ed-b72d-a7b2f08ee640"
     },
     {
       "type": "Feature",
@@ -207,7 +207,7 @@
         "coordinates": [-122.0427042245865, 37.32032861938345],
         "type": "Point"
       },
-      "id": 14
+      "id": "parking-c7f9b52c-d64d-477a-9d69-c6e2ab82b04d"
     },
     {
       "type": "Feature",
@@ -223,7 +223,7 @@
         "coordinates": [-122.04302072525026, 37.31846857736219],
         "type": "Point"
       },
-      "id": 14
+      "id": "parking-e9849ea9-9c7e-42a1-bc5c-fe23f4f2d671"
     },
     {
       "type": "Feature",
@@ -239,7 +239,7 @@
         "coordinates": [-122.04310923814776, 37.318866399852375],
         "type": "Point"
       },
-      "id": 14
+      "id": "parking-a6dbfe92-d8be-4450-ba94-b3f7a3725476"
     },
     {
       "type": "Feature",
@@ -255,7 +255,7 @@
         "coordinates": [-122.04252585768702, 37.31657435882253],
         "type": "Point"
       },
-      "id": 14
+      "id": "parking-cb8c9034-ade3-4dc2-9cd3-5f9f8d3d2228"
     },
     {
       "type": "Feature",
@@ -271,7 +271,7 @@
         "coordinates": [-122.04252585768702, 37.31657435882253],
         "type": "Point"
       },
-      "id": 14
+      "id": "parking-55a423a2-3cc1-4b76-9bfb-90da097bc90e"
     },
     {
       "type": "Feature",
@@ -287,7 +287,7 @@
         "coordinates": [-122.04484865069392, 37.316056000160096],
         "type": "Point"
       },
-      "id": 14
+      "id": "parking-510ee814-44fc-4734-a861-ec6148fbb3f4"
     },
     {
       "type": "Feature",
@@ -303,7 +303,7 @@
         "coordinates": [-122.04649418592454, 37.31745961329338],
         "type": "Point"
       },
-      "id": 14
+      "id": "parking-0f10ab8e-f97f-4d76-b03a-7de58d388833"
     }
   ]
 }

@@ -112,6 +112,7 @@
         "name": "Memorial Park Amphitheater",
         "type": "PokeStop",
         "photo": "d0f20dc4c23645549573d405a2eb7d2f.16.jpg",
+        "source": "Wayfarer",
         "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -200,13 +201,15 @@
       "properties": {
         "name": "Cupertino Sports Center 2",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "fe6d45f0c2eb494fa2bff31a7ac29801.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.041744, 37.323142], "type": "Point" },
-      "id": 29
+      "geometry": { "coordinates": [-122.041745, 37.323142], "type": "Point" },
+      "id": "fe6d45f0c2eb494fa2bff31a7ac29801.16"
     },
     {
       "type": "Feature",
@@ -228,78 +231,90 @@
       "properties": {
         "name": "Glenbrook Monolith",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "8eff5f1212f745bcba8a914d944cb350.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.047882, 37.3246], "type": "Point" },
-      "id": 31
+      "id": "8eff5f1212f745bcba8a914d944cb350.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Glenbrook Monument",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "fe26748a8f9d45b7928fe2f5a21c56bd.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.047271, 37.324577], "type": "Point" },
-      "id": 32
+      "id": "fe26748a8f9d45b7928fe2f5a21c56bd.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Arroyo community bench",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "82f0d57b2af13949b6628820c933ec16.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.048793, 37.32415], "type": "Point" },
-      "id": 33
+      "id": "82f0d57b2af13949b6628820c933ec16.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "De Anza College",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "b8e6867c9583499595ab5fe27b873809.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.048193, 37.322666], "type": "Point" },
-      "id": 34
+      "id": "b8e6867c9583499595ab5fe27b873809.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Farming Sculpture",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "500781534af1419a91243cb4f74b2d9a.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.039338, 37.323847], "type": "Point" },
-      "id": 35
+      "id": "500781534af1419a91243cb4f74b2d9a.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "The Tree of Whole Foods",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "1a4528d877794f9da12b01b6f790b201.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.039559, 37.3231], "type": "Point" },
-      "id": 36
+      "id": "1a4528d877794f9da12b01b6f790b201.16"
     },
     {
       "type": "Feature",
@@ -307,26 +322,30 @@
         "name": "Flat Rock Fountain",
         "type": "PokeStop",
         "hidden": true,
-        "source": "Ingress",
+        "photo": "21eef5a4ba6e4bcdb9d2b8adb75d426b.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.038568, 37.324329], "type": "Point" },
-      "id": 37
+      "id": "21eef5a4ba6e4bcdb9d2b8adb75d426b.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Fantasy Cafe Mural",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "5d90bd53931d3d7886cfa0bb39f71318.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.038355, 37.323217], "type": "Point" },
-      "id": 38
+      "id": "5d90bd53931d3d7886cfa0bb39f71318.16"
     },
     {
       "type": "Feature",
@@ -392,26 +411,30 @@
       "properties": {
         "name": "Baldwin Winery Plaque",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "c93426e55d64439f81e4de82e8d8abe4.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.046096, 37.32125], "type": "Point" },
-      "id": 43
+      "id": "c93426e55d64439f81e4de82e8d8abe4.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "California History Center",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "b5efec40576346e1a281c0f5bf7a4614.12.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.047432, 37.320793], "type": "Point" },
-      "id": 44
+      "id": "b5efec40576346e1a281c0f5bf7a4614.12"
     },
     {
       "type": "Feature",
@@ -433,19 +456,22 @@
       "properties": {
         "name": "De Anza College",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "29e5b2ee2f47438b83d108c2247934b6.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.041672, 37.322671], "type": "Point" },
-      "id": 46
+      "id": "29e5b2ee2f47438b83d108c2247934b6.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Multicultural Center",
         "type": "PokeStop",
+        "photo": "f27231455c444fd9884669e148634f98.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -455,374 +481,412 @@
         "coordinates": [-122.043574, 37.321237],
         "type": "Point"
       },
-      "id": 67
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "California History Center",
-        "type": "PokeStop",
-        "source": "Wayfarer",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.047432, 37.320793],
-        "type": "Point"
-      },
-      "id": 67
+      "id": "f27231455c444fd9884669e148634f98.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "“Subliminalities” Mural",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "f27be018db1b4576b6e85e22eba8358c.12.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.044699, 37.320121], "type": "Point" },
-      "id": 14
+      "id": "f27be018db1b4576b6e85e22eba8358c.12"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Casa De Reflection",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "3f6f811a0a994614a960e15ae4cedc44.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.046139, 37.320945], "type": "Point" },
-      "id": 14
+      "id": "3f6f811a0a994614a960e15ae4cedc44.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Lake Scenery Mural",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "5121148353de393d980d1772c2c0144b.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.045826, 37.321086], "type": "Point" },
-      "id": 14
+      "id": "5121148353de393d980d1772c2c0144b.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Eyes Abstract",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "25f0c7db17014a0695f064e748555b18.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.045378, 37.320865], "type": "Point" },
-      "id": 14
+      "id": "25f0c7db17014a0695f064e748555b18.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Bubbles Courtyard",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "8e4a7baf60b34a0696ba1a44ba34d121.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.04398, 37.321191], "type": "Point" },
-      "id": 14
+      "id": "8e4a7baf60b34a0696ba1a44ba34d121.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "De Anza Military Veterans Mural",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "b1e051c452ac3c609a3b9072a3d89770.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.047737, 37.319791], "type": "Point" },
-      "id": 14
+      "id": "b1e051c452ac3c609a3b9072a3d89770.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Joey Clavijo Memorial Tree",
         "type": "Showcase",
-        "source": "Ingress",
+        "photo": "371ca7ed88c64b5887012b3205b6a1a7.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.046944, 37.319722], "type": "Point" },
-      "id": 14
+      "id": "371ca7ed88c64b5887012b3205b6a1a7.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "A. Robert de Hart Library",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "c1cab735bdd84ddebb6feac3d1eef96b.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.046227, 37.320316], "type": "Point" },
-      "id": 14
+      "id": "c1cab735bdd84ddebb6feac3d1eef96b.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Main Quad Fountain",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "1805957257e34aeab93723963bbcab02.11.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.045962, 37.320344], "type": "Point" },
-      "id": 14
+      "id": "1805957257e34aeab93723963bbcab02.11"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Time Graffiti",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "545800591d1442b98f159dc76145505a.11.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.044985, 37.320678], "type": "Point" },
-      "id": 14
+      "geometry": { "coordinates": [-122.044986, 37.320678], "type": "Point" },
+      "id": "545800591d1442b98f159dc76145505a.11"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Luotto's Grotto",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "200ea79864cb4ea8b72f42ece272fbdf.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.044658, 37.32093], "type": "Point" },
-      "id": 14
+      "id": "200ea79864cb4ea8b72f42ece272fbdf.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Dry Fountain",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "289df79460494a539bd956784566d662.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.047596, 37.319324], "type": "Point" },
-      "id": 14
+      "id": "289df79460494a539bd956784566d662.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Justice Equity Peace Mural",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "d01233bc9e804e088698e124aa691d92.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.046811, 37.319216], "type": "Point" },
-      "id": 14
+      "id": "d01233bc9e804e088698e124aa691d92.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "L-Quad Mosaic 1",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "22f8345cb8b140368f9a257004fd8812.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.044129, 37.320083], "type": "Point" },
-      "id": 14
+      "geometry": { "coordinates": [-122.04413, 37.320083], "type": "Point" },
+      "id": "22f8345cb8b140368f9a257004fd8812.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "S-Quad Mosaic",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "d340a9cf2ad2448890cb75be405e53f2.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.046922, 37.318958], "type": "Point" },
-      "id": 14
+      "id": "d340a9cf2ad2448890cb75be405e53f2.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Pe quad Map",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "63e37d2813f732ca837e5f725c6d1c79.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.045635, 37.318866], "type": "Point" },
-      "id": 14
+      "id": "63e37d2813f732ca837e5f725c6d1c79.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Class of Muralists",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "16546224ea454a90a56455092d0f9cbe.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.044983, 37.319424], "type": "Point" },
-      "id": 14
+      "id": "16546224ea454a90a56455092d0f9cbe.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Kathleen Colligan Memorial Plaque",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "bb91e00b62824b33b67b284fdb113c03.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.043984, 37.319677], "type": "Point" },
-      "id": 14
+      "geometry": { "coordinates": [-122.043985, 37.319677], "type": "Point" },
+      "id": "bb91e00b62824b33b67b284fdb113c03.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Omubaka Ambassador",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "f62447de06f84f5589b1a84d402ab5fb.11.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.043671, 37.319679], "type": "Point" },
-      "id": 14
+      "id": "f62447de06f84f5589b1a84d402ab5fb.11"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "De Anza Athletic Fields",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "a71e5bbac79e42d0b4c0dbd0a3dc6e92.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.043775, 37.318226], "type": "Point" },
-      "id": 14
+      "id": "a71e5bbac79e42d0b4c0dbd0a3dc6e92.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "De Anza Tennis Courts",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "6162ff7dae5b44549eab8a830a80b980.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.043265, 37.318017], "type": "Point" },
-      "id": 14
+      "id": "6162ff7dae5b44549eab8a830a80b980.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Science Center Quad",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "002a36da810b4251a51083d399b59619.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.046299, 37.31829], "type": "Point" },
-      "id": 14
+      "id": "002a36da810b4251a51083d399b59619.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Rusty \"Emreynaldo\" Statues",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "2752a42b387042a2bf8a4d12aff96920.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.045891, 37.316621], "type": "Point" },
-      "id": 14
+      "id": "2752a42b387042a2bf8a4d12aff96920.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "De Anza Baseball Field",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "1ef001257ea84a4cb1290ef9ffd23b80.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.043269, 37.316716], "type": "Point" },
-      "id": 14
+      "id": "1ef001257ea84a4cb1290ef9ffd23b80.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Pond And Marsh Research Station",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "164aba268331495390472c3afe0de499.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.042751, 37.316167], "type": "Point" },
-      "id": 14
+      "id": "164aba268331495390472c3afe0de499.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Desert Research Station",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "7b59cc72757e4637ac7dc3d58bc98bb2.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.042234, 37.316075], "type": "Point" },
-      "id": 14
+      "id": "7b59cc72757e4637ac7dc3d58bc98bb2.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Waterfall Fountain and River",
         "type": "PokeStop",
-        "source": "Ingress",
+        "photo": "44f84a4b74b640bca638a0b80d115674.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.042025, 37.316359], "type": "Point" },
-      "id": 14
+      "id": "44f84a4b74b640bca638a0b80d115674.16"
     },
     {
       "type": "Feature",
@@ -830,13 +894,15 @@
         "name": "Home of Christ",
         "type": "PokeStop",
         "hidden": true,
-        "source": "Ingress",
+        "photo": "435eda0671dc4fb6a34e4517affb1814.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.048776, 37.317658], "type": "Point" },
-      "id": 14
+      "id": "435eda0671dc4fb6a34e4517affb1814.16"
     },
     {
       "type": "Feature",
@@ -844,55 +910,59 @@
         "name": "Hoc5 kids playground structure",
         "type": "PokeStop",
         "hidden": true,
-        "source": "Ingress",
+        "photo": "212fe2584f2b3741a801576d616f9817.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.048, 37.316825], "type": "Point" },
-      "id": 14
+      "id": "212fe2584f2b3741a801576d616f9817.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "The Church of Jesus Christ of Latter-day Saints",
         "type": "PokeStop",
-        "hidden": true,
+        "photo": "3030882595d3444f8192e9c204dca3d9.16.jpg",
         "source": "Ingress",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.0412, 37.318947], "type": "Point" },
-      "id": 14
+      "id": "3030882595d3444f8192e9c204dca3d9.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "The Church of Jesus Christ of Latter-day Saints",
         "type": "PokeStop",
-        "hidden": true,
-        "source": "Ingress",
+        "photo": "7baefdccc1e641f4be9957c61651d6a6.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.040638, 37.318809], "type": "Point" },
-      "id": 14
+      "id": "7baefdccc1e641f4be9957c61651d6a6.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Wooden Cross",
         "type": "PokeStop",
-        "hidden": true,
-        "source": "Ingress",
+        "photo": "8217f1ef86f541b7ba69934fdf3826aa.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.039758, 37.315408], "type": "Point" },
-      "id": 14
+      "id": "8217f1ef86f541b7ba69934fdf3826aa.16"
     },
     {
       "type": "Feature",
@@ -900,13 +970,15 @@
         "name": "St Jude Church",
         "type": "PokeStop",
         "removed": true,
-        "source": "Ingress",
+        "photo": "1565064eabd245b89485f0bb975a2626.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.041255, 37.315454], "type": "Point" },
-      "id": 14
+      "id": "1565064eabd245b89485f0bb975a2626.16"
     },
     {
       "type": "Feature",
@@ -914,13 +986,15 @@
         "name": "St. Jude's Episcipal Church Bell",
         "type": "PokeStop",
         "removed": true,
-        "source": "Ingress",
+        "photo": "1515a371f31444da8d6797b891f67546.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.040829, 37.314948], "type": "Point" },
-      "id": 14
+      "id": "1515a371f31444da8d6797b891f67546.16"
     },
     {
       "type": "Feature",
@@ -928,13 +1002,15 @@
         "name": "Bless the Children Murals",
         "type": "PokeStop",
         "removed": true,
-        "source": "Ingress",
+        "photo": "db3d3c7771814b1abdfc305ddd001a04.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.040684, 37.315183], "type": "Point" },
-      "id": 14
+      "id": "db3d3c7771814b1abdfc305ddd001a04.16"
     },
     {
       "type": "Feature",
@@ -942,13 +1018,15 @@
         "name": "Wooden Cross",
         "type": "PokeStop",
         "removed": true,
-        "source": "Ingress",
+        "photo": "10ec8f606f9a491fb30084a03915fb20.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.040493, 37.314829], "type": "Point" },
-      "id": 14
+      "id": "10ec8f606f9a491fb30084a03915fb20.16"
     },
     {
       "type": "Feature",
@@ -956,13 +1034,15 @@
         "name": "Labyrinth",
         "type": "PokeStop",
         "removed": true,
-        "source": "Ingress",
+        "photo": "01f1375e1a94405b9ef91801bdd4cc64.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.040229, 37.314784], "type": "Point" },
-      "id": 14
+      "id": "01f1375e1a94405b9ef91801bdd4cc64.16"
     },
     {
       "type": "Feature",
@@ -1087,6 +1167,7 @@
       "properties": {
         "name": "Tennis Court 4 at Cupertino Sports Center",
         "type": "PokeStop",
+        "photo": "864a87da4c903ad4bef702c6ad3efbd6.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -1096,7 +1177,7 @@
         "coordinates": [-122.042349, 37.32349],
         "type": "Point"
       },
-      "id": 56
+      "id": "864a87da4c903ad4bef702c6ad3efbd6.16"
     },
     {
       "type": "Feature",
@@ -1154,6 +1235,7 @@
       "properties": {
         "name": "De Anza College Beach Gate",
         "type": "PokeStop",
+        "photo": "534d292037c9374a9394be976e3e3e2b.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -1163,7 +1245,7 @@
         "coordinates": [-122.044265, 37.316356],
         "type": "Point"
       },
-      "id": 60
+      "id": "534d292037c9374a9394be976e3e3e2b.16"
     },
     {
       "type": "Feature",
@@ -1187,6 +1269,7 @@
       "properties": {
         "name": "Tennis Machine Court at Cupertino Sports Center",
         "type": "PokeStop",
+        "photo": "6ef261efc670361bb068d8341490b273.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -1196,7 +1279,7 @@
         "coordinates": [-122.041898, 37.323326],
         "type": "Point"
       },
-      "id": 62
+      "id": "6ef261efc670361bb068d8341490b273.16"
     },
     {
       "type": "Feature",
@@ -1237,6 +1320,7 @@
       "properties": {
         "name": "De Anza Flea Market",
         "type": "PokeStop",
+        "photo": "9b558e5298223e81a6bb14eaf74c94d2.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -1246,7 +1330,7 @@
         "coordinates": [-122.043214, 37.320858],
         "type": "Point"
       },
-      "id": 65
+      "id": "9b558e5298223e81a6bb14eaf74c94d2.16"
     },
     {
       "type": "Feature",
@@ -1270,6 +1354,7 @@
       "properties": {
         "name": "De Anza College Farmers' Market",
         "type": "PokeStop",
+        "photo": "d95f47bc86f335438f3dd4fd07270c63.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
@@ -1279,7 +1364,7 @@
         "coordinates": [-122.041927, 37.322319],
         "type": "Point"
       },
-      "id": 67
+      "id": "d95f47bc86f335438f3dd4fd07270c63.16"
     },
     {
       "type": "Feature",
@@ -1326,7 +1411,8 @@
       "properties": {
         "name": "De Anza College Book Store",
         "type": "PokeStop",
-        "source": "Eyeball",
+        "photo": "f2cae1dcc56b35cba82e30238ba66999.16.jpg",
+        "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
@@ -1335,23 +1421,24 @@
         "coordinates": [-122.04499617218973, 37.321482590204845],
         "type": "Point"
       },
-      "id": 67
+      "id": "f2cae1dcc56b35cba82e30238ba66999.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "The Sunken Garden",
         "type": "PokeStop",
-        "source": "Eyeball",
+        "photo": "0d830d8580a4317690411f6320a55d6c.16.jpg",
+        "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04660147428514, 37.321098646242284],
+        "coordinates": [-122.046644, 37.321103],
         "type": "Point"
       },
-      "id": 67
+      "id": "0d830d8580a4317690411f6320a55d6c.16"
     },
     {
       "type": "Feature",
@@ -1375,48 +1462,51 @@
       "properties": {
         "name": "De Anza College West Bulletin Board",
         "type": "PokeStop",
-        "source": "Eyeball",
+        "photo": "e735d16370943809b63d0119202932bb.16.jpg",
+        "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04718217253688, 37.32146339305331],
+        "coordinates": [-122.047166, 37.321479],
         "type": "Point"
       },
-      "id": 67
+      "id": "e735d16370943809b63d0119202932bb.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "De Anza Science Center",
         "type": "PokeStop",
-        "source": "Eyeball",
+        "photo": "90eac0cdf4b03b32a4cc6b75ed7891a7.16.jpg",
+        "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04608246684074, 37.317911835650214],
+        "coordinates": [-122.046099, 37.317925],
         "type": "Point"
       },
-      "id": 67
+      "id": "90eac0cdf4b03b32a4cc6b75ed7891a7.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Pool Diving Boards",
         "type": "PokeStop",
-        "source": "Eyeball",
+        "photo": "8eb1d5e7e8e6310e81e28ab671b08a5d.16.jpg",
+        "source": "Wayfarer",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.045496404171, 37.3188269376619],
+        "coordinates": [-122.045456, 37.318843],
         "type": "Point"
       },
-      "id": 67
+      "id": "8eb1d5e7e8e6310e81e28ab671b08a5d.16"
     },
     {
       "type": "Feature",
@@ -1471,6 +1561,7 @@
       "properties": {
         "name": "Glenbrook Northeast Map Kiosk",
         "type": "PokeStop",
+        "hidden": true,
         "photo": "5b2264331e813c0aa15f51c80bfad9cb.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
@@ -1485,6 +1576,7 @@
       "properties": {
         "name": "The Event Spot",
         "type": "PokeStop",
+        "hidden": true,
         "photo": "ded81bdd446c35dc8120ca2356c6bde5.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ffff00",
@@ -1520,13 +1612,28 @@
         "name": "Community Ambassador Location",
         "type": "PokeStop",
         "source": "Wayfarer",
-        "desc": "<p>This PokéStop location is controlled by the Community Ambassador so it can change locations.</p>",
+        "photo": "pogo-ca-logo.jpg",
+        "desc": "This PokéStop location is controlled by the Community Ambassadors so it can change locations.",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.0459, 37.320662], "type": "Point" },
       "id": "ambassador-pokestop"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cupertino Bike Route to Crossroads",
+        "type": "PokeStop",
+        "photo": "316995b0e3543e2a8841ecd7658e73b7.16.jpg",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": { "coordinates": [-122.042266, 37.322761], "type": "Point" },
+      "id": "316995b0e3543e2a8841ecd7658e73b7.16"
     }
   ]
 }

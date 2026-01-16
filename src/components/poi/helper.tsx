@@ -63,7 +63,14 @@ export const genPopupContentReact = (
   desc?: string,
   img?: string,
   wayfarerMode?: boolean,
+  renderHtml?: boolean,
 ) => {
+  let description;
+  if (desc && renderHtml) {
+    description = <div dangerouslySetInnerHTML={{ __html: desc }} />;
+  } else {
+    description = <p className="whitespace-pre-line">{desc}</p>;
+  }
   return (
     <>
       <h1 className="font-bold">{name}</h1>
@@ -73,7 +80,7 @@ export const genPopupContentReact = (
           <img src={img} alt="${name}" />
         </a>
       )}
-      {desc && <p className="whitespace-pre-line">{desc}</p>}
+      {description}
       <hr className="mt-2" />
       <p>
         Directions:{" "}
