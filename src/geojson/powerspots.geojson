@@ -1207,6 +1207,25 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "American Builders Construction Group Cupertino",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.04211413860322,
+          37.3134406875395
+        ],
+        "type": "Point"
+      },
+      "id": "overture-334da9d8-c198-4d38-a727-c2be48b1fc4e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Amazing Vijay - Magician",
         "type": "Power Spot",
         "source": "Eyeball",
@@ -1336,6 +1355,25 @@
         "type": "Point"
       },
       "id": "overture-82ca4035-c0b0-43a5-a7ba-70855f7711f7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "McClellan Terrace Apartments",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.04856216907503,
+          37.31434731110917
+        ],
+        "type": "Point"
+      },
+      "id": "overture-8ec96d90-124b-49a6-b779-275ea6937cf9"
     },
     {
       "type": "Feature",

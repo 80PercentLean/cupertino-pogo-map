@@ -49,12 +49,21 @@ export default function MapView() {
   switch (mapType) {
     case "extra-info":
       // OpenStreetMap.Mapnik
+      // tileLayer = (
+      //   <TileLayer
+      //     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      //     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      //     maxNativeZoom={19}
+      //     maxZoom={20}
+      //   />
+      // );
+
+      // Esri.WorldStreetMap
       tileLayer = (
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          maxNativeZoom={19}
-          maxZoom={20}
+          attribution="Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012"
+          url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}"
+          maxZoom={19}
         />
       );
       break;
@@ -69,6 +78,15 @@ export default function MapView() {
       );
       break;
     default:
+      // OpenStreetMap.CAT
+      // tileLayer = (
+      //   <TileLayer
+      //     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles courtesy of <a href="https://www.openstreetmap.cat" target="_blank">Breton OpenStreetMap Team</a>'
+      //     url="https://tile.openstreetmap.bzh/ca/{z}/{x}/{y}.png"
+      //     maxZoom={20}
+      //   />
+      // );
+
       // CartoDB.VoyagerNoLabels
       tileLayer = (
         <TileLayer
@@ -78,15 +96,6 @@ export default function MapView() {
           maxZoom={20}
         />
       );
-
-    // OpenStreetMap.CAT
-    // tileLayer = (
-    //   <TileLayer
-    //     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles courtesy of <a href="https://www.openstreetmap.cat" target="_blank">Breton OpenStreetMap Team</a>'
-    //     url="https://tile.openstreetmap.bzh/ca/{z}/{x}/{y}.png"
-    //     maxZoom={20}
-    //   />
-    // );
   }
 
   return (
