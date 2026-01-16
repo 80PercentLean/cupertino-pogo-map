@@ -9,7 +9,7 @@ export interface Props {
  * Visualizes a 30m range around POIs in which Community Ambassador POIs are not allowed
  * to be built within.
  */
-export default function CaBlockedRange({ latlng }: Props) {
+export default function NoCaPoiZone({ latlng }: Props) {
   return (
     <Circle
       center={latlng}

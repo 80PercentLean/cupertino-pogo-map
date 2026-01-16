@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { Marker, Popup } from "react-leaflet";
 
 import { useStore } from "../hooks/store";
-import CaBlockedRange from "./CaBlockedRange";
+import NoCaPoiZone from "./NoCaPoiZone";
 import { genPopupContentReact } from "./helper";
 
 export interface Props {
@@ -23,6 +23,7 @@ export default function PowerSpotMarker({
   photo,
 }: Props) {
   const markerRef = useRef<L.Marker | null>(null);
+  const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   useEffect(() => {
@@ -34,8 +35,8 @@ export default function PowerSpotMarker({
 
   return (
     <>
-      {/* Do not show CaBlockedRange for inactive power spots */}
-      {!inactive && <CaBlockedRange latlng={latlng} />}
+      {/* Do not show NoCaPoiZone for inactive power spots */}
+      {!inactive && showNoCaPoiZones && <NoCaPoiZone latlng={latlng} />}
       <Marker icon={iconPowerSpot} position={latlng} ref={markerRef}>
         <Popup>
           {genPopupContentReact(

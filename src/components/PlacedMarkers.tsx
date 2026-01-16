@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import type { LatLng, LeafletEventHandlerFnMap } from "leaflet";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import { Circle, Popup, useMapEvent } from "react-leaflet";
 
 import { isMobileUa } from "../util";
@@ -14,6 +14,7 @@ const IS_MOBILE = isMobileUa();
  * Handles markers that are arbitrarily placed by the user.
  */
 export default function PlacedMarkers() {
+  const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const [coords, setCoords] = useState<LatLng[]>([]);
@@ -31,13 +32,15 @@ export default function PlacedMarkers() {
   return coords.map((c, i) => {
     const id = `placed-lat${c.lat},lng${c.lng}`;
     return (
-      <>
-        <Circle
-          center={c}
-          interactive={false}
-          pathOptions={{ fillColor: "red", stroke: false }}
-          radius={30}
-        />
+      <Fragment key={id}>
+        {showNoCaPoiZones && (
+          <Circle
+            center={c}
+            interactive={false}
+            pathOptions={{ fillColor: "red", stroke: false }}
+            radius={30}
+          />
+        )}
         <CMarker key={id} position={c} data-testid={id}>
           <Popup>
             <p>You placed a marker at...</p>
@@ -67,7 +70,7 @@ export default function PlacedMarkers() {
             </div>
           </Popup>
         </CMarker>
-      </>
+      </Fragment>
     );
   });
 }

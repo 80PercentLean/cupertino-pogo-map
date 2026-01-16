@@ -5,10 +5,13 @@ import { Fragment } from "react";
 import { Marker, Popup } from "react-leaflet";
 
 import { useStore } from "../hooks/store";
-import CaBlockedRange from "./CaBlockedRange";
+import NoCaPoiZone from "./NoCaPoiZone";
+import NoPowerSpotZone from "./NoPowerSpotZone";
 import { genPopupContentReact } from "./helper";
 
 export default function PokeStopsNew() {
+  const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
+  const showPowerSpotZones = useStore((s) => s.layers.noPowerSpotZones);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const markers = [];
@@ -35,7 +38,8 @@ export default function PokeStopsNew() {
 
       markers.push(
         <Fragment key={id}>
-          <CaBlockedRange latlng={latlng} />
+          {showNoCaPoiZones && <NoCaPoiZone latlng={latlng} />}
+          {showPowerSpotZones && <NoPowerSpotZone latlng={latlng} />}
           <Marker icon={icon} position={latlng}>
             <Popup>
               {genPopupContentReact(

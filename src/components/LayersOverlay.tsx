@@ -17,7 +17,6 @@ import { type Dispatch, type SetStateAction } from "react";
 
 import BtnLayer from "./BtnLayer";
 import { useStore } from "./hooks/store";
-import { Switch } from "./ui/switch";
 
 export interface Props {
   setShowOverlay: Dispatch<SetStateAction<boolean>>;
@@ -31,6 +30,9 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
   const showL14Grid = useStore((s) => s.layers.l14);
   const showL17Grid = useStore((s) => s.layers.l17);
   const showLabels = useStore((s) => s.layers.labels);
+  const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
+  const showPowerSpotZones = useStore((s) => s.layers.noPowerSpotZones);
+
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   return (
@@ -198,17 +200,51 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
         </FieldSet>
         <FieldSeparator className="my-2" />
         <FieldSet>
-          <Field className="flex flex-row">
-            <Switch
-              id="labels"
-              className="!w-7 cursor-pointer"
-              checked={showLabels}
-              onCheckedChange={() => toggleLayer("labels")}
-            />
-            <Label htmlFor="labels" className="cursor-pointer">
-              Labels
-            </Label>
-          </Field>
+          <FieldLegend>Extra info</FieldLegend>
+          <FieldGroup className="gap-2">
+            <Field className="flex flex-row">
+              <Field orientation="horizontal">
+                <Checkbox
+                  id="labels"
+                  checked={showLabels}
+                  className="cursor-pointer"
+                  onCheckedChange={() => toggleLayer("labels")}
+                />
+                <FieldLabel htmlFor="labels" className="cursor-pointer">
+                  Labels
+                </FieldLabel>
+              </Field>
+            </Field>
+            <Field className="flex flex-row">
+              <Field orientation="horizontal">
+                <Checkbox
+                  id="no-ca-poi-zones"
+                  checked={showNoCaPoiZones}
+                  className="cursor-pointer"
+                  onCheckedChange={() => toggleLayer("noCaPoiZones")}
+                />
+                <FieldLabel
+                  htmlFor="no-ca-poi-zones"
+                  className="cursor-pointer"
+                >
+                  No CA POI Build Zones
+                </FieldLabel>
+              </Field>
+            </Field>
+            <Field className="flex flex-row">
+              <Field orientation="horizontal">
+                <Checkbox
+                  id="no-ps-zones"
+                  checked={showPowerSpotZones}
+                  className="cursor-pointer"
+                  onCheckedChange={() => toggleLayer("noPowerSpotZones")}
+                />
+                <FieldLabel htmlFor="no-ps-zones" className="cursor-pointer">
+                  No Power Spot Build Zones
+                </FieldLabel>
+              </Field>
+            </Field>
+          </FieldGroup>
         </FieldSet>
       </CardContent>
     </Card>

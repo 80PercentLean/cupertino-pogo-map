@@ -24,6 +24,12 @@ interface StoreState {
 
     meetupSpots: boolean;
 
+    /** Shows zone where Community Ambassador POIs cannot be built when true. */
+    noCaPoiZones: boolean;
+
+    /** Shows zone where power spots cannot be built when true. */
+    noPowerSpotZones: boolean;
+
     parking: boolean;
 
     pokestops: boolean;
