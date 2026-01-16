@@ -4,148 +4,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Amazing Vijay - Magician",
+        "name": "Dream Boat",
         "type": "Power Spot",
-        "source": "Eyeball",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04520538449289, 37.326854400424146],
-        "type": "Point"
-      },
-      "id": "overture-3477bab6-8d7a-4ec7-8b0b-e72ba1e0ebe9"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Made by TessS Embroidery",
-        "type": "Power Spot",
-        "source": "Eyeball",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04118657648746, 37.326604272317994],
-        "type": "Point"
-      },
-      "id": "overture-ee8390e6-c0b6-4479-80e7-4161f8a937a5"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Memorial Park",
-        "type": "Power Spot",
-        "source": "Eyeball",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04397272495781, 37.32502904158278],
-        "type": "Point"
-      },
-      "id": "overture-98512240-2455-4844-a167-3846743cfe11"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Lifetime Tennis",
-        "type": "Power Spot",
-        "source": "Eyeball",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04296024928402, 37.323280576924134],
-        "type": "Point"
-      },
-      "id": "overture-c58e21e5-58c3-4b16-8f1e-34f5c9096c6c"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Memorial Park Picnic Area Sign",
-        "type": "Power Spot",
-        "photo": "ad00c2d425553236b3e3dfb3b5c35367.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.044318, 37.325809], "type": "Point" },
-      "id": "ad00c2d425553236b3e3dfb3b5c35367.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Aidens Gazebo at Memorial Park",
-        "type": "Power Spot",
-        "photo": "83abb8e46af44228a9b285ddbc18fc68.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.044601, 37.324811], "type": "Point" },
-      "id": "83abb8e46af44228a9b285ddbc18fc68.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Memorial Park Water Fountain",
-        "type": "Power Spot",
-        "photo": "4f3aea5e10b24d9fa25d0cfc29aae42d.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.045525, 37.324781], "type": "Point" },
-      "id": "4f3aea5e10b24d9fa25d0cfc29aae42d.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Toyokawa Stone Lantern",
-        "type": "Power Spot",
-        "photo": "31f847990f104b1bb6ac8027ec45ba4c.11.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.0451, 37.32409], "type": "Point" },
-      "id": "31f847990f104b1bb6ac8027ec45ba4c.11"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Sister Cities Bench",
-        "type": "Power Spot",
-        "photo": "289e551ab1b3301b8dec4fde37f2bdca.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.045767, 37.323028], "type": "Point" },
-      "id": "289e551ab1b3301b8dec4fde37f2bdca.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Cupertino Historical Society",
-        "type": "Power Spot",
-        "photo": "a973a46573844e84bfe3f06280c06603.12.jpg",
+        "photo": "09373f8c231f4e0fb8b4f0e566c200bb.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
         "marker-color": "#ff40ff",
@@ -153,10 +14,33 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.042395, 37.325809],
+        "coordinates": [
+          -122.04401,
+          37.321715
+        ],
         "type": "Point"
       },
-      "id": "a973a46573844e84bfe3f06280c06603.12"
+      "id": "09373f8c231f4e0fb8b4f0e566c200bb.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park BBQ Spot B",
+        "type": "Power Spot",
+        "photo": "0d65c50b28de3aafae85ad96e12cf811.16.jpg",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.044802,
+          37.325433
+        ],
+        "type": "Point"
+      },
+      "id": "0d65c50b28de3aafae85ad96e12cf811.16"
     },
     {
       "type": "Feature",
@@ -170,247 +54,21 @@
         "marker-size": "small",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.046857, 37.324589], "type": "Point" },
+      "geometry": {
+        "coordinates": [
+          -122.046857,
+          37.324589
+        ],
+        "type": "Point"
+      },
       "id": "20fcc9a406f54509836994e74315f1ec.16"
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Magda Lattin Trinom",
+        "name": "Sister Cities Bench",
         "type": "Power Spot",
-        "photo": "fd2196a55a8a4728b5783dfecd34c62e.11.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.046457, 37.322353], "type": "Point" },
-      "id": "fd2196a55a8a4728b5783dfecd34c62e.11"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Pagan Totem Pole",
-        "type": "Power Spot",
-        "photo": "6fd708ea77d84a2ab8e2b5d94a8c9928.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.045742, 37.3217], "type": "Point" },
-      "id": "6fd708ea77d84a2ab8e2b5d94a8c9928.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Two as One",
-        "type": "Power Spot",
-        "photo": "47c77e0e74b44eaca46574a503484946.12.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.04588, 37.321534], "type": "Point" },
-      "id": "47c77e0e74b44eaca46574a503484946.12"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Stellar Motion",
-        "type": "Power Spot",
-        "photo": "531d9c60fd7446068c0c9c154ec702e5.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.045898, 37.321455], "type": "Point" },
-      "id": "531d9c60fd7446068c0c9c154ec702e5.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Donation Tile Mosaic",
-        "type": "Power Spot",
-        "photo": "aa4b99f74b37475e88668217c67b4fb8.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.047036, 37.321038], "type": "Point" },
-      "id": "aa4b99f74b37475e88668217c67b4fb8.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "De Anza College Stone",
-        "type": "Power Spot",
-        "photo": "e89c02c00b574b2e98f6fac7f2d40e34.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.047215, 37.32127], "type": "Point" },
-      "id": "e89c02c00b574b2e98f6fac7f2d40e34.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "East Cottage",
-        "type": "Power Spot",
-        "photo": "bc9c6d92a7ab493e83f338d7a12a0458.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.04744, 37.321161], "type": "Point" },
-      "id": "bc9c6d92a7ab493e83f338d7a12a0458.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Mr. Sun Tea | Cupertino",
-        "type": "Power Spot",
-        "source": "Eyeball",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04050961121467, 37.322595764617716],
-        "type": "Point"
-      },
-      "id": "overture-ccab0f18-0fc5-47b2-8e50-51a75a6ddd35"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Whole Foods Market",
-        "type": "Power Spot",
-        "source": "Eyeball",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.03955029836303, 37.32362016695076],
-        "type": "Point"
-      },
-      "id": "overture-01ce44a5-5007-41ac-807c-e27f3a5c4218"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Nina Piano Lessons",
-        "type": "Power Spot",
-        "source": "Eyeball",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.03864090501474, 37.32686126350964],
-        "type": "Point"
-      },
-      "id": "overture-3afe6cc1-80c2-4d7d-8efa-8b2c06959d4b"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Shell",
-        "type": "Power Spot",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.0410276585766, 37.32313692451723],
-        "type": "Point"
-      },
-      "id": "overture-82ca4035-c0b0-43a5-a7ba-70855f7711f7"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Abundant Life Assembly Of God",
-        "type": "Power Spot",
-        "source": "Eyeball",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04030790913308, 37.32467218675771],
-        "type": "Point"
-      },
-      "id": "overture-d35d4628-6a2c-4ca8-95fd-0ee05951bcdc"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Ike''s Love & Sandwiches",
-        "type": "Power Spot",
-        "source": "Eyeball",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04105463444958, 37.32255007000235],
-        "type": "Point"
-      },
-      "id": "overture-1d4bd37f-86de-4e0e-aa1c-59f805460fe3"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Windows Corporation",
-        "type": "Power Spot",
-        "source": "Eyeball",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04064237219393, 37.32171695522658],
-        "type": "Point"
-      },
-      "id": "overture-3fd28cd2-5dab-45c2-943f-00aab1f650cb"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "De Anza College Stadium & Track",
-        "type": "Power Spot",
-        "source": "Eyeball",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04505984463718, 37.317534318333415],
-        "type": "Point"
-      },
-      "id": "overture-3e18bde3-4706-427b-bc6c-f466b15a3475"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "De Anza Instrument Music Building",
-        "type": "Power Spot",
-        "photo": "5ac385a466373981bc0c0a14d30762ef.16.jpg",
+        "photo": "289e551ab1b3301b8dec4fde37f2bdca.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
         "marker-color": "#ff40ff",
@@ -418,10 +76,13 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.045581, 37.321991],
+        "coordinates": [
+          -122.045767,
+          37.323028
+        ],
         "type": "Point"
       },
-      "id": "5ac385a466373981bc0c0a14d30762ef.16"
+      "id": "289e551ab1b3301b8dec4fde37f2bdca.16"
     },
     {
       "type": "Feature",
@@ -435,53 +96,241 @@
         "marker-size": "small",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.043444, 37.321546], "type": "Point" },
+      "geometry": {
+        "coordinates": [
+          -122.043444,
+          37.321546
+        ],
+        "type": "Point"
+      },
       "id": "29a0dba42c2d4cac8def7f6cf3751afb.16"
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Golden misery",
+        "name": "The Commons Entrance",
         "type": "Power Spot",
-        "photo": "b5678756c7273e839e79f4619d3f5844.16.jpg",
+        "photo": "2e41444e74343603bf7303d73dcde267.16.jpg",
         "source": "Wayfarer",
-        "ingress": true,
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.045965, 37.320002], "type": "Point" },
-      "id": "b5678756c7273e839e79f4619d3f5844.16"
+      "geometry": {
+        "coordinates": [
+          -122.043016,
+          37.325131
+        ],
+        "type": "Point"
+      },
+      "id": "2e41444e74343603bf7303d73dcde267.16"
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "MLC Fountain B",
+        "name": "Bleachers at Memorial Park",
         "type": "Power Spot",
-        "photo": "6bc7dd2ac69541b1b5a8e801fadab86a.16.jpg",
+        "photo": "307b4313a9f93e70a83c0b7f03fb3e93.16.jpg",
         "source": "Wayfarer",
-        "ingress": true,
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.047993, 37.32036], "type": "Point" },
-      "id": "6bc7dd2ac69541b1b5a8e801fadab86a.16"
+      "geometry": {
+        "coordinates": [
+          -122.045707,
+          37.325569
+        ],
+        "type": "Point"
+      },
+      "id": "307b4313a9f93e70a83c0b7f03fb3e93.16"
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "La Vita É Una Fontana",
+        "name": "Toyokawa Stone Lantern",
         "type": "Power Spot",
-        "photo": "9bc3e5e15754404da54b3d9d120db8d8.11.jpg",
+        "photo": "31f847990f104b1bb6ac8027ec45ba4c.11.jpg",
         "source": "Wayfarer",
         "ingress": true,
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.046579, 37.320813], "type": "Point" },
-      "id": "9bc3e5e15754404da54b3d9d120db8d8.11"
+      "geometry": {
+        "coordinates": [
+          -122.0451,
+          37.32409
+        ],
+        "type": "Point"
+      },
+      "id": "31f847990f104b1bb6ac8027ec45ba4c.11"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Rules East Sign",
+        "type": "Power Spot",
+        "photo": "43724c577be53244ac28e9ce54916d49.16.jpg",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.044342,
+          37.325229
+        ],
+        "type": "Point"
+      },
+      "id": "43724c577be53244ac28e9ce54916d49.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Two as One",
+        "type": "Power Spot",
+        "photo": "47c77e0e74b44eaca46574a503484946.12.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.04588,
+          37.321534
+        ],
+        "type": "Point"
+      },
+      "id": "47c77e0e74b44eaca46574a503484946.12"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "NW Entrance to Memorial Park",
+        "type": "Power Spot",
+        "photo": "49dd51f3fbd03847bd1bf7eb59d37638.16.jpg",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.045815,
+          37.326541
+        ],
+        "type": "Point"
+      },
+      "id": "49dd51f3fbd03847bd1bf7eb59d37638.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DeAnza Mosaics",
+        "type": "Power Spot",
+        "photo": "4e85e7bae0d641f5a8944aca10a21163.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.04521,
+          37.320119
+        ],
+        "type": "Point"
+      },
+      "id": "4e85e7bae0d641f5a8944aca10a21163.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Water Fountain",
+        "type": "Power Spot",
+        "photo": "4f3aea5e10b24d9fa25d0cfc29aae42d.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.045525,
+          37.324781
+        ],
+        "type": "Point"
+      },
+      "id": "4f3aea5e10b24d9fa25d0cfc29aae42d.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Muralism",
+        "type": "Power Spot",
+        "photo": "509559c22ab1403ea688836c507e1e4d.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.044909,
+          37.319158
+        ],
+        "type": "Point"
+      },
+      "id": "509559c22ab1403ea688836c507e1e4d.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ballet lady with butterfly",
+        "type": "Power Spot",
+        "inactive": true,
+        "photo": "50e752185d5e3c6cbf30912d632f715c.16.jpg",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.048742,
+          37.324161
+        ],
+        "type": "Point"
+      },
+      "id": "50e752185d5e3c6cbf30912d632f715c.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stellar Motion",
+        "type": "Power Spot",
+        "photo": "531d9c60fd7446068c0c9c154ec702e5.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.045898,
+          37.321455
+        ],
+        "type": "Point"
+      },
+      "id": "531d9c60fd7446068c0c9c154ec702e5.16"
     },
     {
       "type": "Feature",
@@ -495,68 +344,14 @@
         "marker-size": "small",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.046189, 37.32067], "type": "Point" },
+      "geometry": {
+        "coordinates": [
+          -122.046189,
+          37.32067
+        ],
+        "type": "Point"
+      },
       "id": "5333cc20d862479f8f762e663840e77f.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Leaning Tower of DeAnza",
-        "type": "Power Spot",
-        "photo": "89a9f12ca4a64c1ea910487437ff5660.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.044908, 37.321296], "type": "Point" },
-      "id": "89a9f12ca4a64c1ea910487437ff5660.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Dream Boat",
-        "type": "Power Spot",
-        "photo": "09373f8c231f4e0fb8b4f0e566c200bb.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.04401, 37.321715], "type": "Point" },
-      "id": "09373f8c231f4e0fb8b4f0e566c200bb.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "De Anza Expedition",
-        "type": "Power Spot",
-        "photo": "e168c5fe6bbe4d00af77d88a26bef382.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.04578, 37.320197], "type": "Point" },
-      "id": "e168c5fe6bbe4d00af77d88a26bef382.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Turtle Sculpture",
-        "type": "Power Spot",
-        "photo": "e6caf1f03e3b438d9efab4e86ceac208.11.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.044965, 37.320279], "type": "Point" },
-      "id": "e6caf1f03e3b438d9efab4e86ceac208.11"
     },
     {
       "type": "Feature",
@@ -570,7 +365,13 @@
         "marker-size": "small",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.044373, 37.320485], "type": "Point" },
+      "geometry": {
+        "coordinates": [
+          -122.044373,
+          37.320485
+        ],
+        "type": "Point"
+      },
       "id": "560f9f27a1444b8c8346d158317ecad0.16"
     },
     {
@@ -585,161 +386,77 @@
         "marker-size": "small",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.045352, 37.31988], "type": "Point" },
+      "geometry": {
+        "coordinates": [
+          -122.045352,
+          37.31988
+        ],
+        "type": "Point"
+      },
       "id": "5713b98e832f48188235aa3c7d9293cd.16"
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "DeAnza Mosaics",
+        "name": "De Anza Instrument Music Building",
         "type": "Power Spot",
-        "photo": "4e85e7bae0d641f5a8944aca10a21163.16.jpg",
+        "photo": "5ac385a466373981bc0c0a14d30762ef.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.04521, 37.320119], "type": "Point" },
-      "id": "4e85e7bae0d641f5a8944aca10a21163.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Robert A. Potthast Memorial Bench",
-        "type": "Power Spot",
-        "photo": "7e526d2f69924b8c9b92e2ee961c6136.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.045069, 37.319616], "type": "Point" },
-      "id": "7e526d2f69924b8c9b92e2ee961c6136.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Lotus Fountain",
-        "type": "Power Spot",
-        "photo": "9b1ff7ea938346a38cbc38d08ad9a49f.11.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.044408, 37.320273], "type": "Point" },
-      "id": "9b1ff7ea938346a38cbc38d08ad9a49f.11"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "L-Quad Mosaic 2",
-        "type": "Power Spot",
-        "photo": "f68d946a0cbd40cc8744e21fa0fe06d5.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.044133, 37.320473], "type": "Point" },
-      "id": "f68d946a0cbd40cc8744e21fa0fe06d5.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Quad Mosaic - West",
-        "type": "Power Spot",
-        "photo": "a51a102d011040e4967ef044b63e66d8.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.046316, 37.31897], "type": "Point" },
-      "id": "a51a102d011040e4967ef044b63e66d8.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Muralism",
-        "type": "Power Spot",
-        "photo": "509559c22ab1403ea688836c507e1e4d.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.044909, 37.319158], "type": "Point" },
-      "id": "509559c22ab1403ea688836c507e1e4d.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "DeAnza College Carving",
-        "type": "Power Spot",
-        "photo": "ad5bd7b034df4bd683a7e484b9494944.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.044671, 37.319634], "type": "Point" },
-      "id": "ad5bd7b034df4bd683a7e484b9494944.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "De Anza College Plaque",
-        "type": "Power Spot",
-        "photo": "c3adc001297c49458120c74dcfeb42dd.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.044424, 37.319528], "type": "Point" },
-      "id": "c3adc001297c49458120c74dcfeb42dd.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Mary Avenue Dog Park",
-        "type": "Power Spot",
-        "inactive": true,
-        "source": "Eyeball",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.05079510807992, 37.32759663346205],
+        "coordinates": [
+          -122.045581,
+          37.321991
+        ],
         "type": "Point"
       },
-      "id": "overture-65a78396-f4b9-436d-aa4b-c14463c228a7"
+      "id": "5ac385a466373981bc0c0a14d30762ef.16"
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Panda Express",
+        "name": "MLC Fountain B",
         "type": "Power Spot",
-        "source": "Eyeball",
+        "photo": "6bc7dd2ac69541b1b5a8e801fadab86a.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04108148813249, 37.32254269196093],
+        "coordinates": [
+          -122.047993,
+          37.32036
+        ],
         "type": "Point"
       },
-      "id": "overture-be3c7a1d-c6e7-46c7-ac14-c76c798eda18"
+      "id": "6bc7dd2ac69541b1b5a8e801fadab86a.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pagan Totem Pole",
+        "type": "Power Spot",
+        "photo": "6fd708ea77d84a2ab8e2b5d94a8c9928.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.045742,
+          37.3217
+        ],
+        "type": "Point"
+      },
+      "id": "6fd708ea77d84a2ab8e2b5d94a8c9928.16"
     },
     {
       "type": "Feature",
@@ -753,7 +470,10 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.044599, 37.324832],
+        "coordinates": [
+          -122.044599,
+          37.324832
+        ],
         "type": "Point"
       },
       "id": "7721b502178030189962d6c764622c4c.16"
@@ -761,117 +481,105 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Cupertino Senior Center",
+        "name": "Memorial Park Softball Scoreboard",
         "type": "Power Spot",
-        "source": "Eyeball",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04559028148653, 37.323186851116226],
-        "type": "Point"
-      },
-      "id": "overture-c5a981b7-5806-46e5-a495-1ee083d66c79"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Cupertino Taproom",
-        "type": "Power Spot",
+        "photo": "78cde712590f339ba828d0cebd4eae04.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.03959822654726, 37.32347693423068],
+        "coordinates": [
+          -122.045204,
+          37.325305
+        ],
         "type": "Point"
       },
-      "id": "overture-5ba5aebb-1091-46f2-b680-dfc4984a4f02"
+      "id": "78cde712590f339ba828d0cebd4eae04.16"
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Faria CDC",
+        "name": "Robert A. Potthast Memorial Bench",
         "type": "Power Spot",
+        "photo": "7e526d2f69924b8c9b92e2ee961c6136.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.045069,
+          37.319616
+        ],
+        "type": "Point"
+      },
+      "id": "7e526d2f69924b8c9b92e2ee961c6136.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aidens Gazebo at Memorial Park",
+        "type": "Power Spot",
+        "photo": "83abb8e46af44228a9b285ddbc18fc68.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.044601,
+          37.324811
+        ],
+        "type": "Point"
+      },
+      "id": "83abb8e46af44228a9b285ddbc18fc68.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Leaning Tower of DeAnza",
+        "type": "Power Spot",
+        "photo": "89a9f12ca4a64c1ea910487437ff5660.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.044908,
+          37.321296
+        ],
+        "type": "Point"
+      },
+      "id": "89a9f12ca4a64c1ea910487437ff5660.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Enjoy Smoke-Free Parks",
+        "type": "Power Spot",
+        "photo": "8ccbc9eef9fb3fb6a4b913048bcccdb7.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.03878417611125, 37.32019956978896],
+        "coordinates": [
+          -122.045692,
+          37.325233
+        ],
         "type": "Point"
       },
-      "id": "overture-1f642cf6-fb8c-446e-b1df-cb6e101be247"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Church of Jesus Christ of Latter Day Saints",
-        "type": "Power Spot",
-        "source": "Wayfarer",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04087361693385, 37.318898396207814],
-        "type": "Point"
-      },
-      "id": "overture-12199068-cda0-4f19-8d81-6d6f014a5d08"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "NW Entrance to Memorial Park",
-        "type": "Power Spot",
-        "photo": "49dd51f3fbd03847bd1bf7eb59d37638.16.jpg",
-        "source": "Wayfarer",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.045815, 37.326541],
-        "type": "Point"
-      },
-      "id": "49dd51f3fbd03847bd1bf7eb59d37638.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Cupertino Bike Route: To Rancho San Antonio",
-        "type": "Power Spot",
-        "photo": "f58448e2bed1351d811fa16628d53c29.16.jpg",
-        "source": "Wayfarer",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.045288, 37.323032],
-        "type": "Point"
-      },
-      "id": "f58448e2bed1351d811fa16628d53c29.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Bleachers at Memorial Park",
-        "type": "Power Spot",
-        "photo": "307b4313a9f93e70a83c0b7f03fb3e93.16.jpg",
-        "source": "Wayfarer",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.045707, 37.325569],
-        "type": "Point"
-      },
-      "id": "307b4313a9f93e70a83c0b7f03fb3e93.16"
+      "id": "8ccbc9eef9fb3fb6a4b913048bcccdb7.16"
     },
     {
       "type": "Feature",
@@ -885,7 +593,10 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.044158, 37.326091],
+        "coordinates": [
+          -122.044158,
+          37.326091
+        ],
         "type": "Point"
       },
       "id": "901e917e9c4f3cf198d04b6bc5e32ef8.16"
@@ -893,148 +604,44 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Bright Skeleton Shark",
+        "name": "Lotus Fountain",
         "type": "Power Spot",
-        "photo": "be4e0108d56438c89d14d6c71a83f6df.16.jpg",
+        "photo": "9b1ff7ea938346a38cbc38d08ad9a49f.11.jpg",
         "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.044929, 37.325054],
+        "coordinates": [
+          -122.044408,
+          37.320273
+        ],
         "type": "Point"
       },
-      "id": "be4e0108d56438c89d14d6c71a83f6df.16"
+      "id": "9b1ff7ea938346a38cbc38d08ad9a49f.11"
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "The Commons Entrance",
+        "name": "La Vita É Una Fontana",
         "type": "Power Spot",
-        "photo": "2e41444e74343603bf7303d73dcde267.16.jpg",
+        "photo": "9bc3e5e15754404da54b3d9d120db8d8.11.jpg",
         "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.043016, 37.325131],
+        "coordinates": [
+          -122.046579,
+          37.320813
+        ],
         "type": "Point"
       },
-      "id": "2e41444e74343603bf7303d73dcde267.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Memorial Park BBQ Spot B",
-        "type": "Power Spot",
-        "photo": "0d65c50b28de3aafae85ad96e12cf811.16.jpg",
-        "source": "Wayfarer",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.044802, 37.325433], "type": "Point" },
-      "id": "0d65c50b28de3aafae85ad96e12cf811.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Memorial Park Rules East Sign",
-        "type": "Power Spot",
-        "photo": "43724c577be53244ac28e9ce54916d49.16.jpg",
-        "source": "Wayfarer",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.044342, 37.325229], "type": "Point" },
-      "id": "43724c577be53244ac28e9ce54916d49.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "In memory of Virginia J. Logan",
-        "type": "Power Spot",
-        "photo": "b30f61b279c93f489023653df85f8cc7.16.jpg",
-        "source": "Wayfarer",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.045297, 37.323513], "type": "Point" },
-      "id": "b30f61b279c93f489023653df85f8cc7.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Memorial Park BBQ Spot A",
-        "type": "Power Spot",
-        "photo": "cc6014b6bc9f36e59a178a8ad750e43f.16.jpg",
-        "source": "Wayfarer",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.045071, 37.325148], "type": "Point" },
-      "id": "cc6014b6bc9f36e59a178a8ad750e43f.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Memorial Park Softball Scoreboard",
-        "type": "Power Spot",
-        "photo": "78cde712590f339ba828d0cebd4eae04.16.jpg",
-        "source": "Wayfarer",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.045204, 37.325305], "type": "Point" },
-      "id": "78cde712590f339ba828d0cebd4eae04.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Smoke-Free Memorial Park",
-        "type": "Power Spot",
-        "photo": "ab73728e90553414907c188d0df79dde.16.jpg",
-        "source": "Wayfarer",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.044732, 37.323505], "type": "Point" },
-      "id": "ab73728e90553414907c188d0df79dde.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Enjoy Smoke-Free Parks",
-        "type": "Power Spot",
-        "photo": "8ccbc9eef9fb3fb6a4b913048bcccdb7.16.jpg",
-        "source": "Wayfarer",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.045692, 37.325233], "type": "Point" },
-      "id": "8ccbc9eef9fb3fb6a4b913048bcccdb7.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Cupertino Victorian Dollhouse",
-        "type": "Power Spot",
-        "photo": "fd6205448fd6308bbe897ad2956b1c65.16.jpg",
-        "source": "Wayfarer",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": { "coordinates": [-122.042345, 37.325758], "type": "Point" },
-      "id": "fd6205448fd6308bbe897ad2956b1c65.16"
+      "id": "9bc3e5e15754404da54b3d9d120db8d8.11"
     },
     {
       "type": "Feature",
@@ -1050,8 +657,180 @@
         "created": "2025-11-10T08:00:00Z",
         "updated": "2025-11-24T08:00:00Z"
       },
-      "geometry": { "coordinates": [-122.050702, 37.327567], "type": "Point" },
+      "geometry": {
+        "coordinates": [
+          -122.050702,
+          37.327567
+        ],
+        "type": "Point"
+      },
       "id": "a4a6271d6ce330cab1c5741b1e86f407.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quad Mosaic - West",
+        "type": "Power Spot",
+        "photo": "a51a102d011040e4967ef044b63e66d8.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.046316,
+          37.31897
+        ],
+        "type": "Point"
+      },
+      "id": "a51a102d011040e4967ef044b63e66d8.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cupertino Historical Society",
+        "type": "Power Spot",
+        "photo": "a973a46573844e84bfe3f06280c06603.12.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.042395,
+          37.325809
+        ],
+        "type": "Point"
+      },
+      "id": "a973a46573844e84bfe3f06280c06603.12"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Donation Tile Mosaic",
+        "type": "Power Spot",
+        "photo": "aa4b99f74b37475e88668217c67b4fb8.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.047036,
+          37.321038
+        ],
+        "type": "Point"
+      },
+      "id": "aa4b99f74b37475e88668217c67b4fb8.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Smoke-Free Memorial Park",
+        "type": "Power Spot",
+        "photo": "ab73728e90553414907c188d0df79dde.16.jpg",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.044732,
+          37.323505
+        ],
+        "type": "Point"
+      },
+      "id": "ab73728e90553414907c188d0df79dde.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Picnic Area Sign",
+        "type": "Power Spot",
+        "photo": "ad00c2d425553236b3e3dfb3b5c35367.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.044318,
+          37.325809
+        ],
+        "type": "Point"
+      },
+      "id": "ad00c2d425553236b3e3dfb3b5c35367.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DeAnza College Carving",
+        "type": "Power Spot",
+        "photo": "ad5bd7b034df4bd683a7e484b9494944.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.044671,
+          37.319634
+        ],
+        "type": "Point"
+      },
+      "id": "ad5bd7b034df4bd683a7e484b9494944.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "In memory of Virginia J. Logan",
+        "type": "Power Spot",
+        "photo": "b30f61b279c93f489023653df85f8cc7.16.jpg",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.045297,
+          37.323513
+        ],
+        "type": "Point"
+      },
+      "id": "b30f61b279c93f489023653df85f8cc7.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Golden misery",
+        "type": "Power Spot",
+        "photo": "b5678756c7273e839e79f4619d3f5844.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.045965,
+          37.320002
+        ],
+        "type": "Point"
+      },
+      "id": "b5678756c7273e839e79f4619d3f5844.16"
     },
     {
       "type": "Feature",
@@ -1068,8 +847,180 @@
         "converted": "2025-11-25T08:00:00Z",
         "updated": "2025-11-25T08:00:00Z"
       },
-      "geometry": { "coordinates": [-122.045328, 37.324384], "type": "Point" },
+      "geometry": {
+        "coordinates": [
+          -122.045328,
+          37.324384
+        ],
+        "type": "Point"
+      },
       "id": "b6dcc86d368a38ff924c0ab8e12245e7.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "East Cottage",
+        "type": "Power Spot",
+        "photo": "bc9c6d92a7ab493e83f338d7a12a0458.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.04744,
+          37.321161
+        ],
+        "type": "Point"
+      },
+      "id": "bc9c6d92a7ab493e83f338d7a12a0458.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bright Skeleton Shark",
+        "type": "Power Spot",
+        "photo": "be4e0108d56438c89d14d6c71a83f6df.16.jpg",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.044929,
+          37.325054
+        ],
+        "type": "Point"
+      },
+      "id": "be4e0108d56438c89d14d6c71a83f6df.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza College Plaque",
+        "type": "Power Spot",
+        "photo": "c3adc001297c49458120c74dcfeb42dd.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.044424,
+          37.319528
+        ],
+        "type": "Point"
+      },
+      "id": "c3adc001297c49458120c74dcfeb42dd.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Beautiful Chaos",
+        "type": "Power Spot",
+        "photo": "c4a155f41af749de9aeaab9301a1bcf2.12.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.045795,
+          37.321792
+        ],
+        "type": "Point"
+      },
+      "id": "c4a155f41af749de9aeaab9301a1bcf2.12"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park BBQ Spot A",
+        "type": "Power Spot",
+        "photo": "cc6014b6bc9f36e59a178a8ad750e43f.16.jpg",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.045071,
+          37.325148
+        ],
+        "type": "Point"
+      },
+      "id": "cc6014b6bc9f36e59a178a8ad750e43f.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza Expedition",
+        "type": "Power Spot",
+        "photo": "e168c5fe6bbe4d00af77d88a26bef382.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.04578,
+          37.320197
+        ],
+        "type": "Point"
+      },
+      "id": "e168c5fe6bbe4d00af77d88a26bef382.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Turtle Sculpture",
+        "type": "Power Spot",
+        "photo": "e6caf1f03e3b438d9efab4e86ceac208.11.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.044965,
+          37.320279
+        ],
+        "type": "Point"
+      },
+      "id": "e6caf1f03e3b438d9efab4e86ceac208.11"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza College Stone",
+        "type": "Power Spot",
+        "photo": "e89c02c00b574b2e98f6fac7f2d40e34.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.047215,
+          37.32127
+        ],
+        "type": "Point"
+      },
+      "id": "e89c02c00b574b2e98f6fac7f2d40e34.16"
     },
     {
       "type": "Feature",
@@ -1086,38 +1037,438 @@
         "converted": "2025-11-25T08:00:00Z",
         "updated": "2025-11-25T08:00:00Z"
       },
-      "geometry": { "coordinates": [-122.045293, 37.324373], "type": "Point" },
+      "geometry": {
+        "coordinates": [
+          -122.045293,
+          37.324373
+        ],
+        "type": "Point"
+      },
       "id": "f172b95a768e304f803eb40f8125b124.16"
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Beautiful Chaos",
+        "name": "Cupertino Bike Route: To Rancho San Antonio",
         "type": "Power Spot",
-        "photo": "c4a155f41af749de9aeaab9301a1bcf2.12.jpg",
+        "photo": "f58448e2bed1351d811fa16628d53c29.16.jpg",
         "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.045795, 37.321792], "type": "Point" },
-      "id": "c4a155f41af749de9aeaab9301a1bcf2.12"
+      "geometry": {
+        "coordinates": [
+          -122.045288,
+          37.323032
+        ],
+        "type": "Point"
+      },
+      "id": "f58448e2bed1351d811fa16628d53c29.16"
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Ballet lady with butterfly",
+        "name": "L-Quad Mosaic 2",
         "type": "Power Spot",
-        "inactive": true,
-        "photo": "50e752185d5e3c6cbf30912d632f715c.16.jpg",
+        "photo": "f68d946a0cbd40cc8744e21fa0fe06d5.16.jpg",
         "source": "Wayfarer",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
-      "geometry": { "coordinates": [-122.048742, 37.324161], "type": "Point" },
-      "id": "50e752185d5e3c6cbf30912d632f715c.16"
+      "geometry": {
+        "coordinates": [
+          -122.044133,
+          37.320473
+        ],
+        "type": "Point"
+      },
+      "id": "f68d946a0cbd40cc8744e21fa0fe06d5.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Magda Lattin Trinom",
+        "type": "Power Spot",
+        "photo": "fd2196a55a8a4728b5783dfecd34c62e.11.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.046457,
+          37.322353
+        ],
+        "type": "Point"
+      },
+      "id": "fd2196a55a8a4728b5783dfecd34c62e.11"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cupertino Victorian Dollhouse",
+        "type": "Power Spot",
+        "photo": "fd6205448fd6308bbe897ad2956b1c65.16.jpg",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.042345,
+          37.325758
+        ],
+        "type": "Point"
+      },
+      "id": "fd6205448fd6308bbe897ad2956b1c65.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Whole Foods Market",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.03955029836303,
+          37.32362016695076
+        ],
+        "type": "Point"
+      },
+      "id": "overture-01ce44a5-5007-41ac-807c-e27f3a5c4218"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Church of Jesus Christ of Latter Day Saints",
+        "type": "Power Spot",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.04087361693385,
+          37.318898396207814
+        ],
+        "type": "Point"
+      },
+      "id": "overture-12199068-cda0-4f19-8d81-6d6f014a5d08"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ike''s Love & Sandwiches",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.04105463444958,
+          37.32255007000235
+        ],
+        "type": "Point"
+      },
+      "id": "overture-1d4bd37f-86de-4e0e-aa1c-59f805460fe3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Faria CDC",
+        "type": "Power Spot",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.03878417611125,
+          37.32019956978896
+        ],
+        "type": "Point"
+      },
+      "id": "overture-1f642cf6-fb8c-446e-b1df-cb6e101be247"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amazing Vijay - Magician",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.04520538449289,
+          37.326854400424146
+        ],
+        "type": "Point"
+      },
+      "id": "overture-3477bab6-8d7a-4ec7-8b0b-e72ba1e0ebe9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nina Piano Lessons",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.03864090501474,
+          37.32686126350964
+        ],
+        "type": "Point"
+      },
+      "id": "overture-3afe6cc1-80c2-4d7d-8efa-8b2c06959d4b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza College Stadium & Track",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.04505984463718,
+          37.317534318333415
+        ],
+        "type": "Point"
+      },
+      "id": "overture-3e18bde3-4706-427b-bc6c-f466b15a3475"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Windows Corporation",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.04064237219393,
+          37.32171695522658
+        ],
+        "type": "Point"
+      },
+      "id": "overture-3fd28cd2-5dab-45c2-943f-00aab1f650cb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cupertino Taproom",
+        "type": "Power Spot",
+        "source": "Wayfarer",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.03959822654726,
+          37.32347693423068
+        ],
+        "type": "Point"
+      },
+      "id": "overture-5ba5aebb-1091-46f2-b680-dfc4984a4f02"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mary Avenue Dog Park",
+        "type": "Power Spot",
+        "inactive": true,
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.05079510807992,
+          37.32759663346205
+        ],
+        "type": "Point"
+      },
+      "id": "overture-65a78396-f4b9-436d-aa4b-c14463c228a7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shell",
+        "type": "Power Spot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.0410276585766,
+          37.32313692451723
+        ],
+        "type": "Point"
+      },
+      "id": "overture-82ca4035-c0b0-43a5-a7ba-70855f7711f7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.04397272495781,
+          37.32502904158278
+        ],
+        "type": "Point"
+      },
+      "id": "overture-98512240-2455-4844-a167-3846743cfe11"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Panda Express",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.04108148813249,
+          37.32254269196093
+        ],
+        "type": "Point"
+      },
+      "id": "overture-be3c7a1d-c6e7-46c7-ac14-c76c798eda18"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lifetime Tennis",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.04296024928402,
+          37.323280576924134
+        ],
+        "type": "Point"
+      },
+      "id": "overture-c58e21e5-58c3-4b16-8f1e-34f5c9096c6c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cupertino Senior Center",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.04559028148653,
+          37.323186851116226
+        ],
+        "type": "Point"
+      },
+      "id": "overture-c5a981b7-5806-46e5-a495-1ee083d66c79"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mr. Sun Tea | Cupertino",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.04050961121467,
+          37.322595764617716
+        ],
+        "type": "Point"
+      },
+      "id": "overture-ccab0f18-0fc5-47b2-8e50-51a75a6ddd35"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Abundant Life Assembly Of God",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.04030790913308,
+          37.32467218675771
+        ],
+        "type": "Point"
+      },
+      "id": "overture-d35d4628-6a2c-4ca8-95fd-0ee05951bcdc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Made by TessS Embroidery",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.04118657648746,
+          37.326604272317994
+        ],
+        "type": "Point"
+      },
+      "id": "overture-ee8390e6-c0b6-4479-80e7-4161f8a937a5"
     }
   ]
 }
