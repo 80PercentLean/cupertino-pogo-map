@@ -45,9 +45,9 @@ export default function PokeStopMarker({
   return (
     <>
       {!removed && showNoCaPoiZones && <NoCaPoiZone latlng={latlng} />}
-      {!removed && showInteractionRadius && (
+      {/* {!removed && showInteractionRadius && (
         <InteractionRadius latlng={latlng} />
-      )}
+      )} */}
       {!removed && showPowerSpotZones && <NoPowerSpotZone latlng={latlng} />}
       <Marker ref={markerRef} icon={icon} position={latlng}>
         <Popup>

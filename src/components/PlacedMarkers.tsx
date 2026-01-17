@@ -1,12 +1,15 @@
 import { Button } from "@/components/ui/button";
 import type { LatLng, LeafletEventHandlerFnMap } from "leaflet";
 import { Fragment, useState } from "react";
-import { Circle, Popup, useMapEvent } from "react-leaflet";
+import { Popup, useMapEvent } from "react-leaflet";
 
 import { isMobileUa } from "../util";
 import BtnCopyCoords from "./BtnCopyCoords";
 import CMarker from "./CMarker";
 import { useStore } from "./hooks/store";
+import InteractionRadius from "./poi/InteractionRadius";
+import NoCaPoiZone from "./poi/NoCaPoiZone";
+import NoPowerSpotZone from "./poi/NoPowerSpotZone";
 
 const IS_MOBILE = isMobileUa();
 
@@ -14,7 +17,9 @@ const IS_MOBILE = isMobileUa();
  * Handles markers that are arbitrarily placed by the user.
  */
 export default function PlacedMarkers() {
+  const showInteractionRadius = useStore((s) => s.layers.interactionRadii);
   const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
+  const showPowerSpotZones = useStore((s) => s.layers.noPowerSpotZones);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const [coords, setCoords] = useState<LatLng[]>([]);
@@ -33,14 +38,9 @@ export default function PlacedMarkers() {
     const id = `placed-lat${c.lat},lng${c.lng}`;
     return (
       <Fragment key={id}>
-        {showNoCaPoiZones && (
-          <Circle
-            center={c}
-            interactive={false}
-            pathOptions={{ fillColor: "red", stroke: false }}
-            radius={30}
-          />
-        )}
+        {showNoCaPoiZones && <NoCaPoiZone latlng={c} />}
+        {showInteractionRadius && <InteractionRadius latlng={c} />}
+        {showPowerSpotZones && <NoPowerSpotZone latlng={c} />}
         <CMarker key={id} position={c} data-testid={id}>
           <Popup>
             <p>You placed a marker at...</p>

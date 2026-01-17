@@ -47,9 +47,9 @@ export default function PowerSpotMarker({
         <NoCaPoiZone latlng={latlng} />
       )}
       {/* Do not show interactive radius for inactive power spots */}
-      {!inactive && !removed && showInteractionRadius && (
+      {/* {!inactive && !removed && showInteractionRadius && (
         <InteractionRadius latlng={latlng} />
-      )}
+      )} */}
       <Marker ref={markerRef} icon={iconPowerSpot} position={latlng}>
         <Popup>
           {genPopupContentReact(

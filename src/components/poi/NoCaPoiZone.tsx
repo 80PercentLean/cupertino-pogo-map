@@ -1,8 +1,8 @@
-import type { LatLngTuple } from "leaflet";
+import { type LatLngExpression } from "leaflet";
 import { Circle } from "react-leaflet";
 
 export interface Props {
-  latlng: LatLngTuple;
+  latlng: LatLngExpression;
 }
 
 /**
