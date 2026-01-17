@@ -1,41 +1,53 @@
 import { restroomsJson } from "@/geojson/data";
-import L from "leaflet";
+import { type LatLngTuple } from "leaflet";
+import { Marker, Popup } from "react-leaflet";
 
 import {
   iconAbRestroom,
   iconMRestroom,
   iconWRestroom,
 } from "../../leafletIcons";
-import type { CFeature } from "../../types";
-import Poi from "./Poi";
-import { genPopupContent } from "./helper";
+import { useStore } from "../hooks/store";
+import { genPopupContentReact } from "./helper";
 
 /**
- * Specialized <Poi> for rendering restrooms.
+ * Render restrooms.
  */
 export default function Restrooms() {
-  return (
-    <Poi
-      data={restroomsJson}
-      pointToLayer={({ properties }, latlng) => {
-        const { desc, name, type } = properties as CFeature["properties"];
+  const wayfarerMode = useStore((s) => s.wayfarerMode);
 
-        let icon;
-        switch (type) {
-          case "Men's Restroom":
-            icon = iconMRestroom;
-            break;
-          case "Women's Restroom":
-            icon = iconWRestroom;
-            break;
-          default:
-            icon = iconAbRestroom;
-        }
+  return restroomsJson.features.map(({ geometry, properties }, i) => {
+    const latlng = [
+      geometry.coordinates[1],
+      geometry.coordinates[0],
+    ] as LatLngTuple;
+    const { desc, name, type } = properties;
 
-        return L.marker(latlng, { icon }).bindPopup(
-          genPopupContent(name, "Restroom", latlng, desc),
-        );
-      }}
-    />
-  );
+    let icon;
+    switch (type) {
+      case "Men's Restroom":
+        icon = iconMRestroom;
+        break;
+      case "Women's Restroom":
+        icon = iconWRestroom;
+        break;
+      default:
+        icon = iconAbRestroom;
+    }
+
+    return (
+      <Marker key={i} icon={icon} position={latlng}>
+        <Popup>
+          {genPopupContentReact(
+            name,
+            "Restroom",
+            latlng,
+            desc,
+            undefined,
+            wayfarerMode,
+          )}
+        </Popup>
+      </Marker>
+    );
+  });
 }

@@ -1,25 +1,51 @@
-import L from "leaflet";
+import { gymsJson } from "@/geojson/data";
+import type { LatLngTuple } from "leaflet";
 
-import { gymsJson } from "../../geojson/data";
-import { iconGym } from "../../leafletIcons";
-import type { CFeature } from "../../types";
-import Poi from "./Poi";
-import { genPopupContent } from "./helper";
+import { useStore } from "../hooks/store";
+import GymMarker from "./GymMarker";
 
 /**
- * Specialized <Poi> for rendering gyms.
+ * Render gyms.
  */
 export default function Gyms() {
-  return (
-    <Poi
-      data={gymsJson}
-      pointToLayer={({ properties }, latlng) => {
-        const { desc, name, photo } = properties as CFeature["properties"];
+  const showHidden = useStore((s) => s.modifiers.hidden);
+  const showRemoved = useStore((s) => s.modifiers.removed);
 
-        return L.marker(latlng, {
-          icon: iconGym,
-        }).bindPopup(genPopupContent(name, "Gym", latlng, desc, photo, true));
-      }}
-    />
-  );
+  const markers = [];
+
+  for (const { id, geometry, properties } of gymsJson.features) {
+    const { desc, hidden, name, photo, removed } = properties;
+
+    if ((!showHidden && hidden) || (!showRemoved && removed)) {
+      // Skip if hidden or removed and those modifiers are off
+      continue;
+    }
+
+    const latlng = [
+      geometry.coordinates[1],
+      geometry.coordinates[0],
+    ] as LatLngTuple;
+
+    let subtitle = "Gym";
+    if (hidden) {
+      subtitle += " (Hidden)";
+    }
+    if (removed) {
+      subtitle += " (Removed)";
+    }
+
+    markers.push(
+      <GymMarker
+        key={id}
+        desc={desc}
+        latlng={latlng}
+        removed={removed}
+        subtitle={subtitle}
+        title={name}
+        photo={photo}
+      />,
+    );
+  }
+
+  return markers;
 }

@@ -30,6 +30,7 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
   const showL14Grid = useStore((s) => s.layers.l14);
   const showL17Grid = useStore((s) => s.layers.l17);
   const showLabels = useStore((s) => s.layers.labels);
+  const showInteractionRadii = useStore((s) => s.layers.interactionRadii);
   const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
   const showPowerSpotZones = useStore((s) => s.layers.noPowerSpotZones);
 
@@ -218,16 +219,16 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
             <Field className="flex flex-row">
               <Field orientation="horizontal">
                 <Checkbox
-                  id="no-ca-poi-zones"
-                  checked={showNoCaPoiZones}
+                  id="interaction-radii"
+                  checked={showInteractionRadii}
                   className="cursor-pointer"
-                  onCheckedChange={() => toggleLayer("noCaPoiZones")}
+                  onCheckedChange={() => toggleLayer("interactionRadii")}
                 />
                 <FieldLabel
-                  htmlFor="no-ca-poi-zones"
+                  htmlFor="interaction-radii"
                   className="cursor-pointer"
                 >
-                  No CA POI Build Zones
+                  Interaction Radii (80m)
                 </FieldLabel>
               </Field>
             </Field>
@@ -240,10 +241,28 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
                   onCheckedChange={() => toggleLayer("noPowerSpotZones")}
                 />
                 <FieldLabel htmlFor="no-ps-zones" className="cursor-pointer">
-                  No Power Spot Build Zones
+                  No Power Spot Build Zones (22m)
                 </FieldLabel>
               </Field>
             </Field>
+            {wayfarerMode && (
+              <Field className="flex flex-row">
+                <Field orientation="horizontal">
+                  <Checkbox
+                    id="no-ca-poi-zones"
+                    checked={showNoCaPoiZones}
+                    className="cursor-pointer"
+                    onCheckedChange={() => toggleLayer("noCaPoiZones")}
+                  />
+                  <FieldLabel
+                    htmlFor="no-ca-poi-zones"
+                    className="cursor-pointer"
+                  >
+                    No CA POI Build Zones (30m)
+                  </FieldLabel>
+                </Field>
+              </Field>
+            )}
           </FieldGroup>
         </FieldSet>
       </CardContent>

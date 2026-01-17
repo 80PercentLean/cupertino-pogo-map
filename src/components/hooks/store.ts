@@ -1,8 +1,9 @@
-import type { Map } from "leaflet";
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 
 export type layerType = keyof StoreState["layers"];
+
+export type modifierType = keyof StoreState["modifiers"];
 
 interface StoreState {
   /** Disable all animations in the app when true. */
@@ -13,6 +14,13 @@ interface StoreState {
     devpois: boolean;
 
     gyms: boolean;
+
+    hiddenPois: boolean;
+
+    inactivePois: boolean;
+
+    /** Shows range in which POIs are interactable. */
+    interactionRadii: boolean;
 
     l13: boolean;
 
@@ -38,11 +46,19 @@ interface StoreState {
 
     raidPath: boolean;
 
+    removedPois: boolean;
+
     restrooms: boolean;
   };
 
-  /** Leaflet map instance. */
-  map: Map;
+  /** Flags that determine which modifiers are applied to map layers. */
+  modifiers: {
+    inactive: boolean;
+
+    hidden: boolean;
+
+    removed: boolean;
+  };
 
   mapType: "default" | "extra-info" | "satellite";
 
@@ -52,14 +68,8 @@ interface StoreState {
   /** Value for geolocation position accuracy. */
   myLocationAccuracy: number | null;
 
-  /** Show hidden POIs on the map. */
-  showHiddenPois: boolean;
-
   /** Set the disableAnimations value. */
   setDisableAnimations: (val: StoreState["disableAnimations"]) => void;
-
-  /** Set the map value. */
-  setMap: (val: StoreState["map"]) => void;
 
   /** Set the mapType value. */
   setMapType: (val: StoreState["mapType"]) => void;
@@ -70,14 +80,14 @@ interface StoreState {
   /** Set the myLocationAccuracy value. */
   setMyLocationAccuracy: (val: StoreState["myLocationAccuracy"]) => void;
 
-  /** Set the showHiddenPois value. */
-  setShowHiddenPois: (val: StoreState["showHiddenPois"]) => void;
-
   /** Set the wayfarerMode value. */
   setWayfarerMode: (val: StoreState["wayfarerMode"]) => void;
 
   /** Toggle a layer value. */
   toggleLayer: (layer: layerType) => void;
+
+  /** Toggle a modifier value. */
+  toggleModifier: (modifier: modifierType) => void;
 
   /** Enable Wayfarer mode when true. */
   wayfarerMode: boolean;
@@ -97,6 +107,8 @@ export const useStore = create<StoreState>()(
 
         gyms: true,
 
+        interactionRadii: false,
+
         l13: false,
 
         l14: false,
@@ -111,18 +123,23 @@ export const useStore = create<StoreState>()(
 
         pokestops: true,
 
-        powerspots: false,
+        powerspots: true,
 
         raidPath: true,
 
         restrooms: true,
       },
 
-      // Map starts as null as the Leaflet map has not been created when the app first starts
-      map: null,
-
       // Map type starts off as default
       mapType: "default",
+
+      modifiers: {
+        hidden: true,
+
+        inactive: true,
+
+        removed: false,
+      },
 
       // myLocation starts as null until my location functionality is enabled
       myLocation: null,
@@ -135,8 +152,6 @@ export const useStore = create<StoreState>()(
 
       setDisableAnimations: (val: StoreState["disableAnimations"]) =>
         set(() => ({ disableAnimations: val })),
-
-      setMap: (val: StoreState["map"]) => set(() => ({ map: val })),
 
       setMapType: (val: StoreState["mapType"]) =>
         set(() => ({ mapType: val }), undefined, "setMapType"),
@@ -159,25 +174,34 @@ export const useStore = create<StoreState>()(
           "setLocationAccuracy",
         ),
 
-      setShowHiddenPois: (val: StoreState["showHiddenPois"]) =>
-        set(() => ({ showHiddenPois: val }), undefined, "setShowHiddenPois"),
-
       setWayfarerMode: (val: StoreState["wayfarerMode"]) =>
         set(() => ({ wayfarerMode: val }), undefined, "setWayfarerMode"),
 
-      toggleLayer: (layer: keyof StoreState["layers"]) =>
+      toggleLayer: (l: keyof StoreState["layers"]) =>
         set(
           (s) => ({
             layers: {
               ...s.layers,
-              [layer]: !s.layers[layer],
+              [l]: !s.layers[l],
             },
           }),
           undefined,
           "toggleLayer",
         ),
 
-      wayfarerMode: false,
+      toggleModifier: (m: keyof StoreState["modifiers"]) =>
+        set(
+          (s) => ({
+            modifiers: {
+              ...s.modifiers,
+              [m]: !s.modifiers[m],
+            },
+          }),
+          undefined,
+          "toggleModifier",
+        ),
+
+      wayfarerMode: true,
     }),
     { name: "cpm-storage" },
   ),

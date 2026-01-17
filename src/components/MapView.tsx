@@ -1,4 +1,4 @@
-import type { LatLngBoundsExpression } from "leaflet";
+import { type LatLngBoundsExpression } from "leaflet";
 import { MapContainer, TileLayer } from "react-leaflet";
 
 import { CENTER } from "../constants";
@@ -10,12 +10,12 @@ import PlacedMarkers from "./PlacedMarkers";
 import StdRaidPath from "./StdRaidPath";
 import { useStore } from "./hooks/store";
 import DevPois from "./poi/DevPois";
-import GymsNew from "./poi/GymsNew";
-import MeetupSpotsNew from "./poi/MeetupSpotsNew";
-import ParkingNew from "./poi/ParkingNew";
-import PokeStopsNew from "./poi/PokeStopsNew";
-import PowerSpotsNew from "./poi/PowerSpotsNew";
-import RestroomsNew from "./poi/RestroomsNew";
+import Gyms from "./poi/Gyms";
+import MeetupSpots from "./poi/MeetupSpots";
+import Parking from "./poi/Parking";
+import PokeStops from "./poi/PokeStops";
+import PowerSpots from "./poi/PowerSpots";
+import Restrooms from "./poi/Restrooms";
 import L13Grid from "./s2/L13Grid";
 import L14Grid from "./s2/L14Grid";
 import L17Grid from "./s2/L17Grid";
@@ -30,6 +30,7 @@ const BOUNDARIES: LatLngBoundsExpression = [
  * The app's Leaflet map.
  */
 export default function MapView() {
+  const mapType = useStore((s) => s.mapType);
   const showDevPois = useStore((s) => s.layers.devpois);
   const showGyms = useStore((s) => s.layers.gyms);
   const showL13Grid = useStore((s) => s.layers.l13);
@@ -42,8 +43,6 @@ export default function MapView() {
   const showPowerSpots = useStore((s) => s.layers.powerspots);
   const showRaidPath = useStore((s) => s.layers.raidPath);
   const showRestrooms = useStore((s) => s.layers.restrooms);
-
-  const mapType = useStore((s) => s.mapType);
 
   let tileLayer;
   switch (mapType) {
@@ -112,12 +111,12 @@ export default function MapView() {
       {tileLayer}
       {showLabels && <Labels />}
       {showDevPois && <DevPois />}
-      {showRestrooms && <RestroomsNew />}
-      {showPokeStops && <PokeStopsNew />}
-      {showPowerSpots && <PowerSpotsNew />}
-      {showGyms && <GymsNew />}
-      {showMeetupSpots && <MeetupSpotsNew />}
-      {showParking && <ParkingNew />}
+      {showRestrooms && <Restrooms />}
+      {showPokeStops && <PokeStops />}
+      {showPowerSpots && <PowerSpots />}
+      {showGyms && <Gyms />}
+      {showMeetupSpots && <MeetupSpots />}
+      {showParking && <Parking />}
       {showL17Grid && <L17Grid />}
       {showL14Grid && <L14Grid />}
       {showL13Grid && <L13Grid />}

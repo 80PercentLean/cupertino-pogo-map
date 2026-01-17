@@ -13,7 +13,7 @@ export default function NoPowerSpotZone({ latlng }: Props) {
     <Circle
       center={latlng}
       interactive={false}
-      pathOptions={{ fillColor: "#333", stroke: false }}
+      pathOptions={{ fillColor: "#000", stroke: false }}
       radius={22}
     />
   );

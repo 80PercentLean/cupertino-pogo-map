@@ -57,8 +57,8 @@ export const genPopupContent = (
 };
 
 export const genPopupContentReact = (
-  name: string,
-  type: string,
+  title: string,
+  subtitle: string,
   latlng: LatLngTuple,
   desc?: string,
   img?: string,
@@ -73,8 +73,8 @@ export const genPopupContentReact = (
   }
   return (
     <>
-      <h1 className="font-bold">{name}</h1>
-      <p className="mt-0! italic">{type}</p>
+      <h1 className="font-bold">{title}</h1>
+      <p className="mt-0! italic">{subtitle}</p>
       {img && (
         <a href={img} rel="noopener noreferrer" target="_blank">
           <img src={img} alt="${name}" />

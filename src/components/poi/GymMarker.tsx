@@ -1,4 +1,4 @@
-import { iconPowerSpot } from "@/leafletIcons";
+import { iconGym } from "@/leafletIcons";
 import L, { type LatLngTuple } from "leaflet";
 import { useEffect, useRef } from "react";
 import { Marker, Popup } from "react-leaflet";
@@ -6,51 +6,48 @@ import { Marker, Popup } from "react-leaflet";
 import { useStore } from "../hooks/store";
 import InteractionRadius from "./InteractionRadius";
 import NoCaPoiZone from "./NoCaPoiZone";
+import NoPowerSpotZone from "./NoPowerSpotZone";
 import { genPopupContentReact } from "./helper";
 
 export interface Props {
   desc?: string;
-  inactive?: boolean;
   latlng: LatLngTuple;
-  photo?: string;
   removed?: boolean | string;
   subtitle: string;
   title: string;
+  photo?: string;
 }
 
-export default function PowerSpotMarker({
+export default function GymMarker({
   desc,
   latlng,
-  inactive,
-  photo,
   removed,
   subtitle,
   title,
+  photo,
 }: Props) {
   const showInteractionRadius = useStore((s) => s.layers.interactionRadii);
   const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
+  const showPowerSpotZones = useStore((s) => s.layers.noPowerSpotZones);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const markerRef = useRef<L.Marker | null>(null);
 
   useEffect(() => {
-    if ((inactive || removed) && markerRef.current) {
+    if (removed && markerRef.current) {
       // Add grayscale class to inactive power spots
       markerRef.current?.getElement()?.classList.add("grayscale");
     }
-  }, [inactive, removed]);
+  }, [removed]);
 
   return (
     <>
-      {/* Do not show NoCaPoiZone for inactive power spots */}
-      {!inactive && !removed && showNoCaPoiZones && (
-        <NoCaPoiZone latlng={latlng} />
-      )}
-      {/* Do not show interactive radius for inactive power spots */}
-      {!inactive && !removed && showInteractionRadius && (
+      {!removed && showNoCaPoiZones && <NoCaPoiZone latlng={latlng} />}
+      {!removed && showInteractionRadius && (
         <InteractionRadius latlng={latlng} />
       )}
-      <Marker ref={markerRef} icon={iconPowerSpot} position={latlng}>
+      {!removed && showPowerSpotZones && <NoPowerSpotZone latlng={latlng} />}
+      <Marker ref={markerRef} icon={iconGym} position={latlng}>
         <Popup>
           {genPopupContentReact(
             title,

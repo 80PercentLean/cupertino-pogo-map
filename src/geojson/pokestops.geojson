@@ -14,10 +14,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.046299,
-          37.31829
-        ],
+        "coordinates": [-122.046299, 37.31829],
         "type": "Point"
       },
       "id": "002a36da810b4251a51083d399b59619.16"
@@ -36,10 +33,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.040229,
-          37.314784
-        ],
+        "coordinates": [-122.040229, 37.314784],
         "type": "Point"
       },
       "id": "01f1375e1a94405b9ef91801bdd4cc64.16"
@@ -57,10 +51,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.046269,
-          37.323789
-        ],
+        "coordinates": [-122.046269, 37.323789],
         "type": "Point"
       },
       "id": "047aa84f57f4445b82c8f776d3f64d92.16"
@@ -77,10 +68,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.046644,
-          37.321103
-        ],
+        "coordinates": [-122.046644, 37.321103],
         "type": "Point"
       },
       "id": "0d830d8580a4317690411f6320a55d6c.16"
@@ -98,10 +86,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.041694,
-          37.325911
-        ],
+        "coordinates": [-122.041694, 37.325911],
         "type": "Point"
       },
       "id": "0e298cdc9bd14410acab01a746c8bc0a.16"
@@ -120,10 +105,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.040493,
-          37.314829
-        ],
+        "coordinates": [-122.040493, 37.314829],
         "type": "Point"
       },
       "id": "10ec8f606f9a491fb30084a03915fb20.16"
@@ -140,10 +122,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.046133,
-          37.326032
-        ],
+        "coordinates": [-122.046133, 37.326032],
         "type": "Point"
       },
       "id": "125409aa8ad03d3eb0c0a4b4cf4b6c59.16"
@@ -162,10 +141,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.040829,
-          37.314948
-        ],
+        "coordinates": [-122.040829, 37.314948],
         "type": "Point"
       },
       "id": "1515a371f31444da8d6797b891f67546.16"
@@ -184,10 +160,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.041255,
-          37.315454
-        ],
+        "coordinates": [-122.041255, 37.315454],
         "type": "Point"
       },
       "id": "1565064eabd245b89485f0bb975a2626.16"
@@ -205,10 +178,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.042751,
-          37.316167
-        ],
+        "coordinates": [-122.042751, 37.316167],
         "type": "Point"
       },
       "id": "164aba268331495390472c3afe0de499.16"
@@ -226,10 +196,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.044983,
-          37.319424
-        ],
+        "coordinates": [-122.044983, 37.319424],
         "type": "Point"
       },
       "id": "16546224ea454a90a56455092d0f9cbe.16"
@@ -247,10 +214,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.045962,
-          37.320344
-        ],
+        "coordinates": [-122.045962, 37.320344],
         "type": "Point"
       },
       "id": "1805957257e34aeab93723963bbcab02.11"
@@ -268,10 +232,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.039559,
-          37.3231
-        ],
+        "coordinates": [-122.039559, 37.3231],
         "type": "Point"
       },
       "id": "1a4528d877794f9da12b01b6f790b201.16"
@@ -289,10 +250,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.044732,
-          37.325677
-        ],
+        "coordinates": [-122.044732, 37.325677],
         "type": "Point"
       },
       "id": "1c79672d02cd430382b6ae92e3a69d37.11"
@@ -310,10 +268,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.043269,
-          37.316716
-        ],
+        "coordinates": [-122.043269, 37.316716],
         "type": "Point"
       },
       "id": "1ef001257ea84a4cb1290ef9ffd23b80.16"
@@ -331,10 +286,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.044658,
-          37.32093
-        ],
+        "coordinates": [-122.044658, 37.32093],
         "type": "Point"
       },
       "id": "200ea79864cb4ea8b72f42ece272fbdf.16"
@@ -353,10 +305,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.048,
-          37.316825
-        ],
+        "coordinates": [-122.048, 37.316825],
         "type": "Point"
       },
       "id": "212fe2584f2b3741a801576d616f9817.16"
@@ -366,7 +315,6 @@
       "properties": {
         "name": "Flat Rock Fountain",
         "type": "PokeStop",
-        "hidden": true,
         "photo": "21eef5a4ba6e4bcdb9d2b8adb75d426b.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -375,10 +323,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.038568,
-          37.324329
-        ],
+        "coordinates": [-122.038568, 37.324329],
         "type": "Point"
       },
       "id": "21eef5a4ba6e4bcdb9d2b8adb75d426b.16"
@@ -396,10 +341,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.04413,
-          37.320083
-        ],
+        "coordinates": [-122.04413, 37.320083],
         "type": "Point"
       },
       "id": "22f8345cb8b140368f9a257004fd8812.16"
@@ -417,10 +359,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.045378,
-          37.320865
-        ],
+        "coordinates": [-122.045378, 37.320865],
         "type": "Point"
       },
       "id": "25f0c7db17014a0695f064e748555b18.16"
@@ -438,10 +377,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.045891,
-          37.316621
-        ],
+        "coordinates": [-122.045891, 37.316621],
         "type": "Point"
       },
       "id": "2752a42b387042a2bf8a4d12aff96920.16"
@@ -459,10 +395,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.047596,
-          37.319324
-        ],
+        "coordinates": [-122.047596, 37.319324],
         "type": "Point"
       },
       "id": "289df79460494a539bd956784566d662.16"
@@ -480,10 +413,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.041672,
-          37.322671
-        ],
+        "coordinates": [-122.041672, 37.322671],
         "type": "Point"
       },
       "id": "29e5b2ee2f47438b83d108c2247934b6.16"
@@ -500,10 +430,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.0412,
-          37.318947
-        ],
+        "coordinates": [-122.0412, 37.318947],
         "type": "Point"
       },
       "id": "3030882595d3444f8192e9c204dca3d9.16"
@@ -520,10 +447,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.042266,
-          37.322761
-        ],
+        "coordinates": [-122.042266, 37.322761],
         "type": "Point"
       },
       "id": "316995b0e3543e2a8841ecd7658e73b7.16"
@@ -540,10 +464,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.045051,
-          37.326272
-        ],
+        "coordinates": [-122.045051, 37.326272],
         "type": "Point"
       },
       "id": "318ffc114c0b3aaa9e38ca5c67176f85.16"
@@ -561,10 +482,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.046944,
-          37.319722
-        ],
+        "coordinates": [-122.046944, 37.319722],
         "type": "Point"
       },
       "id": "371ca7ed88c64b5887012b3205b6a1a7.16"
@@ -582,10 +500,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.046139,
-          37.320945
-        ],
+        "coordinates": [-122.046139, 37.320945],
         "type": "Point"
       },
       "id": "3f6f811a0a994614a960e15ae4cedc44.16"
@@ -602,10 +517,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.041764,
-          37.324126
-        ],
+        "coordinates": [-122.041764, 37.324126],
         "type": "Point"
       },
       "id": "3feb081190133735ae32ab3a18670942.16"
@@ -624,10 +536,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.048776,
-          37.317658
-        ],
+        "coordinates": [-122.048776, 37.317658],
         "type": "Point"
       },
       "id": "435eda0671dc4fb6a34e4517affb1814.16"
@@ -645,10 +554,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.042025,
-          37.316359
-        ],
+        "coordinates": [-122.042025, 37.316359],
         "type": "Point"
       },
       "id": "44f84a4b74b640bca638a0b80d115674.16"
@@ -665,10 +571,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.042893,
-          37.326331
-        ],
+        "coordinates": [-122.042893, 37.326331],
         "type": "Point"
       },
       "id": "49126ef8b5fc350abb212c7e28a22475.16"
@@ -686,10 +589,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.039338,
-          37.323847
-        ],
+        "coordinates": [-122.039338, 37.323847],
         "type": "Point"
       },
       "id": "500781534af1419a91243cb4f74b2d9a.16"
@@ -707,10 +607,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.045826,
-          37.321086
-        ],
+        "coordinates": [-122.045826, 37.321086],
         "type": "Point"
       },
       "id": "5121148353de393d980d1772c2c0144b.16"
@@ -727,10 +624,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.044265,
-          37.316356
-        ],
+        "coordinates": [-122.044265, 37.316356],
         "type": "Point"
       },
       "id": "534d292037c9374a9394be976e3e3e2b.16"
@@ -748,10 +642,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.044986,
-          37.320678
-        ],
+        "coordinates": [-122.044986, 37.320678],
         "type": "Point"
       },
       "id": "545800591d1442b98f159dc76145505a.11"
@@ -769,10 +660,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.044703,
-          37.323794
-        ],
+        "coordinates": [-122.044703, 37.323794],
         "type": "Point"
       },
       "id": "56a1bc91673947848c37bd38ec5ffac0.16"
@@ -790,10 +678,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.046342,
-          37.321805
-        ],
+        "coordinates": [-122.046342, 37.321805],
         "type": "Point"
       },
       "id": "56bdee89c6b94f2a96d7b3362dc6311b.16"
@@ -811,10 +696,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.046683,
-          37.327167
-        ],
+        "coordinates": [-122.046683, 37.327167],
         "type": "Point"
       },
       "id": "5b2264331e813c0aa15f51c80bfad9cb.16"
@@ -832,10 +714,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.046668,
-          37.326566
-        ],
+        "coordinates": [-122.046668, 37.326566],
         "type": "Point"
       },
       "id": "5cae6a81015548a4b51319fe2c09d53b.16"
@@ -853,10 +732,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.038355,
-          37.323217
-        ],
+        "coordinates": [-122.038355, 37.323217],
         "type": "Point"
       },
       "id": "5d90bd53931d3d7886cfa0bb39f71318.16"
@@ -874,10 +750,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.044516,
-          37.325211
-        ],
+        "coordinates": [-122.044516, 37.325211],
         "type": "Point"
       },
       "id": "5e8348aa21284b50a49e151cb3e383f3.11"
@@ -895,10 +768,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.043265,
-          37.318017
-        ],
+        "coordinates": [-122.043265, 37.318017],
         "type": "Point"
       },
       "id": "6162ff7dae5b44549eab8a830a80b980.16"
@@ -916,10 +786,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.044586,
-          37.321888
-        ],
+        "coordinates": [-122.044586, 37.321888],
         "type": "Point"
       },
       "id": "63c4065fd5ca34ec91527226cbc97a64.16"
@@ -937,10 +804,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.045635,
-          37.318866
-        ],
+        "coordinates": [-122.045635, 37.318866],
         "type": "Point"
       },
       "id": "63e37d2813f732ca837e5f725c6d1c79.16"
@@ -958,10 +822,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.044302,
-          37.324793
-        ],
+        "coordinates": [-122.044302, 37.324793],
         "type": "Point"
       },
       "id": "69cbc8a7638d459ebc99c4d67e2956c9.16"
@@ -978,10 +839,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.041898,
-          37.323326
-        ],
+        "coordinates": [-122.041898, 37.323326],
         "type": "Point"
       },
       "id": "6ef261efc670361bb068d8341490b273.16"
@@ -1001,10 +859,7 @@
         "updated": "2025-11-24T08:00:00Z"
       },
       "geometry": {
-        "coordinates": [
-          -122.04747,
-          37.325561
-        ],
+        "coordinates": [-122.04747, 37.325561],
         "type": "Point"
       },
       "id": "77ce44fa26da3aacbb0f0d2f8b02d8bb.16"
@@ -1022,10 +877,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.042234,
-          37.316075
-        ],
+        "coordinates": [-122.042234, 37.316075],
         "type": "Point"
       },
       "id": "7b59cc72757e4637ac7dc3d58bc98bb2.16"
@@ -1043,10 +895,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.040638,
-          37.318809
-        ],
+        "coordinates": [-122.040638, 37.318809],
         "type": "Point"
       },
       "id": "7baefdccc1e641f4be9957c61651d6a6.16"
@@ -1063,10 +912,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.045685,
-          37.325038
-        ],
+        "coordinates": [-122.045685, 37.325038],
         "type": "Point"
       },
       "id": "7d3ebe3965ce306aace69cb298c8c7fa.16"
@@ -1083,10 +929,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.043675,
-          37.323121
-        ],
+        "coordinates": [-122.043675, 37.323121],
         "type": "Point"
       },
       "id": "81d7c737fc6d3381bf951ebfef3d901e.16"
@@ -1104,10 +947,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.039758,
-          37.315408
-        ],
+        "coordinates": [-122.039758, 37.315408],
         "type": "Point"
       },
       "id": "8217f1ef86f541b7ba69934fdf3826aa.16"
@@ -1125,10 +965,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.048793,
-          37.32415
-        ],
+        "coordinates": [-122.048793, 37.32415],
         "type": "Point"
       },
       "id": "82f0d57b2af13949b6628820c933ec16.16"
@@ -1145,10 +982,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.042349,
-          37.32349
-        ],
+        "coordinates": [-122.042349, 37.32349],
         "type": "Point"
       },
       "id": "864a87da4c903ad4bef702c6ad3efbd6.16"
@@ -1166,10 +1000,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.04398,
-          37.321191
-        ],
+        "coordinates": [-122.04398, 37.321191],
         "type": "Point"
       },
       "id": "8e4a7baf60b34a0696ba1a44ba34d121.16"
@@ -1187,10 +1018,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.044983,
-          37.324571
-        ],
+        "coordinates": [-122.044983, 37.324571],
         "type": "Point"
       },
       "id": "8e7b78c4c5764e48a5ffb93ca746ea5f.16"
@@ -1207,10 +1035,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.045456,
-          37.318843
-        ],
+        "coordinates": [-122.045456, 37.318843],
         "type": "Point"
       },
       "id": "8eb1d5e7e8e6310e81e28ab671b08a5d.16"
@@ -1220,6 +1045,7 @@
       "properties": {
         "name": "Glenbrook Monolith",
         "type": "PokeStop",
+        "hidden": true,
         "photo": "8eff5f1212f745bcba8a914d944cb350.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -1228,10 +1054,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.047882,
-          37.3246
-        ],
+        "coordinates": [-122.047882, 37.3246],
         "type": "Point"
       },
       "id": "8eff5f1212f745bcba8a914d944cb350.16"
@@ -1248,10 +1071,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.046099,
-          37.317925
-        ],
+        "coordinates": [-122.046099, 37.317925],
         "type": "Point"
       },
       "id": "90eac0cdf4b03b32a4cc6b75ed7891a7.16"
@@ -1268,10 +1088,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.043604,
-          37.325592
-        ],
+        "coordinates": [-122.043604, 37.325592],
         "type": "Point"
       },
       "id": "9324f41b49b83e64b91c7456334945ae.16"
@@ -1289,10 +1106,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.043253,
-          37.32304
-        ],
+        "coordinates": [-122.043253, 37.32304],
         "type": "Point"
       },
       "id": "9325866b3e524f38b787dac1bfd51082.16"
@@ -1309,10 +1123,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.043792,
-          37.326122
-        ],
+        "coordinates": [-122.043792, 37.326122],
         "type": "Point"
       },
       "id": "9513e925c1c738b49eddb7e182f67a04.16"
@@ -1330,10 +1141,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.045605,
-          37.325995
-        ],
+        "coordinates": [-122.045605, 37.325995],
         "type": "Point"
       },
       "id": "96175419031243c7b3e964654dac8d25.16"
@@ -1350,10 +1158,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.043214,
-          37.320858
-        ],
+        "coordinates": [-122.043214, 37.320858],
         "type": "Point"
       },
       "id": "9b558e5298223e81a6bb14eaf74c94d2.16"
@@ -1363,6 +1168,7 @@
       "properties": {
         "name": "Glenbrook West Entrance Sign",
         "type": "PokeStop",
+        "hidden": true,
         "photo": "a201619465ec38a592a00e1043ae9917.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
@@ -1373,10 +1179,7 @@
         "updated": "2025-11-24T08:00:00Z"
       },
       "geometry": {
-        "coordinates": [
-          -122.04998,
-          37.326296
-        ],
+        "coordinates": [-122.04998, 37.326296],
         "type": "Point"
       },
       "id": "a201619465ec38a592a00e1043ae9917.16"
@@ -1393,10 +1196,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.044121,
-          37.323517
-        ],
+        "coordinates": [-122.044121, 37.323517],
         "type": "Point"
       },
       "id": "a2316f1f23333f8b9a7841a4dca2c451.16"
@@ -1414,10 +1214,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.045617,
-          37.323506
-        ],
+        "coordinates": [-122.045617, 37.323506],
         "type": "Point"
       },
       "id": "a56a18caa8014b50b25069c8b64185b3.16"
@@ -1435,10 +1232,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.043775,
-          37.318226
-        ],
+        "coordinates": [-122.043775, 37.318226],
         "type": "Point"
       },
       "id": "a71e5bbac79e42d0b4c0dbd0a3dc6e92.16"
@@ -1458,10 +1252,7 @@
         "updated": "2025-11-24T08:00:00Z"
       },
       "geometry": {
-        "coordinates": [
-          -122.047943,
-          37.327423
-        ],
+        "coordinates": [-122.047943, 37.327423],
         "type": "Point"
       },
       "id": "accb87acb12b30a184eba98d03dddc84.16"
@@ -1478,10 +1269,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.044118,
-          37.323457
-        ],
+        "coordinates": [-122.044118, 37.323457],
         "type": "Point"
       },
       "id": "ae86688dfd16336a9fecf2ad49aaf41b.16"
@@ -1499,10 +1287,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.0459,
-          37.320662
-        ],
+        "coordinates": [-122.0459, 37.320662],
         "type": "Point"
       },
       "id": "ambassador-pokestop"
@@ -1520,10 +1305,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.047737,
-          37.319791
-        ],
+        "coordinates": [-122.047737, 37.319791],
         "type": "Point"
       },
       "id": "b1e051c452ac3c609a3b9072a3d89770.16"
@@ -1541,10 +1323,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.047432,
-          37.320793
-        ],
+        "coordinates": [-122.047432, 37.320793],
         "type": "Point"
       },
       "id": "b5efec40576346e1a281c0f5bf7a4614.12"
@@ -1562,10 +1341,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.048193,
-          37.322666
-        ],
+        "coordinates": [-122.048193, 37.322666],
         "type": "Point"
       },
       "id": "b8e6867c9583499595ab5fe27b873809.16"
@@ -1583,10 +1359,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.043985,
-          37.319677
-        ],
+        "coordinates": [-122.043985, 37.319677],
         "type": "Point"
       },
       "id": "bb91e00b62824b33b67b284fdb113c03.16"
@@ -1606,10 +1379,7 @@
         "updated": "2025-11-24T08:00:00Z"
       },
       "geometry": {
-        "coordinates": [
-          -122.050728,
-          37.327475
-        ],
+        "coordinates": [-122.050728, 37.327475],
         "type": "Point"
       },
       "id": "bc0fe894f87337dd99a7947bc07b7940.16"
@@ -1627,10 +1397,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.046227,
-          37.320316
-        ],
+        "coordinates": [-122.046227, 37.320316],
         "type": "Point"
       },
       "id": "c1cab735bdd84ddebb6feac3d1eef96b.16"
@@ -1647,10 +1414,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.044372,
-          37.326587
-        ],
+        "coordinates": [-122.044372, 37.326587],
         "type": "Point"
       },
       "id": "c28d519e7b4d37c8ae3054ec1a867972.16"
@@ -1668,10 +1432,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.045907,
-          37.322705
-        ],
+        "coordinates": [-122.045907, 37.322705],
         "type": "Point"
       },
       "id": "c7c3c42add644d57b1a8ca8fd12a9946.16"
@@ -1689,10 +1450,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.046096,
-          37.32125
-        ],
+        "coordinates": [-122.046096, 37.32125],
         "type": "Point"
       },
       "id": "c93426e55d64439f81e4de82e8d8abe4.16"
@@ -1710,10 +1468,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.046811,
-          37.319216
-        ],
+        "coordinates": [-122.046811, 37.319216],
         "type": "Point"
       },
       "id": "d01233bc9e804e088698e124aa691d92.16"
@@ -1731,10 +1486,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.044651,
-          37.324415
-        ],
+        "coordinates": [-122.044651, 37.324415],
         "type": "Point"
       },
       "id": "d0f20dc4c23645549573d405a2eb7d2f.16"
@@ -1752,10 +1504,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.044537,
-          37.326086
-        ],
+        "coordinates": [-122.044537, 37.326086],
         "type": "Point"
       },
       "id": "d231f048fbf44c628eaba14fbcf5a112.16"
@@ -1772,10 +1521,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.046318,
-          37.324084
-        ],
+        "coordinates": [-122.046318, 37.324084],
         "type": "Point"
       },
       "id": "d292631e9f26363396a593424f3e479f.16"
@@ -1793,10 +1539,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.046922,
-          37.318958
-        ],
+        "coordinates": [-122.046922, 37.318958],
         "type": "Point"
       },
       "id": "d340a9cf2ad2448890cb75be405e53f2.16"
@@ -1813,10 +1556,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.044754,
-          37.322692
-        ],
+        "coordinates": [-122.044754, 37.322692],
         "type": "Point"
       },
       "id": "d9503dbb79bd3cac975ba3745bb01430.16"
@@ -1833,10 +1573,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.041927,
-          37.322319
-        ],
+        "coordinates": [-122.041927, 37.322319],
         "type": "Point"
       },
       "id": "d95f47bc86f335438f3dd4fd07270c63.16"
@@ -1855,10 +1592,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.040684,
-          37.315183
-        ],
+        "coordinates": [-122.040684, 37.315183],
         "type": "Point"
       },
       "id": "db3d3c7771814b1abdfc305ddd001a04.16"
@@ -1875,10 +1609,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.043944,
-          37.32198
-        ],
+        "coordinates": [-122.043944, 37.32198],
         "type": "Point"
       },
       "id": "dc497b79cb6e3e1e8e42d75cc3941235.16"
@@ -1895,10 +1626,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.042502,
-          37.325997
-        ],
+        "coordinates": [-122.042502, 37.325997],
         "type": "Point"
       },
       "id": "dd3cee3aa35232eca478b0ffe04b6486.16"
@@ -1919,10 +1647,7 @@
         "updated": "2025-11-24T08:00:00Z"
       },
       "geometry": {
-        "coordinates": [
-          -122.049161,
-          37.326075
-        ],
+        "coordinates": [-122.049161, 37.326075],
         "type": "Point"
       },
       "id": "ded81bdd446c35dc8120ca2356c6bde5.16"
@@ -1939,10 +1664,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.047166,
-          37.321479
-        ],
+        "coordinates": [-122.047166, 37.321479],
         "type": "Point"
       },
       "id": "e735d16370943809b63d0119202932bb.16"
@@ -1959,10 +1681,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.046124,
-          37.32543
-        ],
+        "coordinates": [-122.046124, 37.32543],
         "type": "Point"
       },
       "id": "ec55c088d4d43b83a64c092baef3be98.16"
@@ -1972,6 +1691,7 @@
       "properties": {
         "name": "Glenbrook Apartment Homes Sign",
         "type": "PokeStop",
+        "hidden": true,
         "photo": "f0d44b11e4cb3eab982989a9fbc93777.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#00fcff",
@@ -1982,10 +1702,7 @@
         "updated": "2025-11-24T08:00:00Z"
       },
       "geometry": {
-        "coordinates": [
-          -122.050075,
-          37.326539
-        ],
+        "coordinates": [-122.050075, 37.326539],
         "type": "Point"
       },
       "id": "f0d44b11e4cb3eab982989a9fbc93777.16"
@@ -2003,10 +1720,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.043574,
-          37.321237
-        ],
+        "coordinates": [-122.043574, 37.321237],
         "type": "Point"
       },
       "id": "f27231455c444fd9884669e148634f98.16"
@@ -2024,10 +1738,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.044699,
-          37.320121
-        ],
+        "coordinates": [-122.044699, 37.320121],
         "type": "Point"
       },
       "id": "f27be018db1b4576b6e85e22eba8358c.12"
@@ -2044,10 +1755,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.04499617218973,
-          37.321482590204845
-        ],
+        "coordinates": [-122.04499617218973, 37.321482590204845],
         "type": "Point"
       },
       "id": "f2cae1dcc56b35cba82e30238ba66999.16"
@@ -2065,10 +1773,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.046111,
-          37.322331
-        ],
+        "coordinates": [-122.046111, 37.322331],
         "type": "Point"
       },
       "id": "f2eef2e8db6a40d8babf0b9dfa43ebb2.16"
@@ -2086,10 +1791,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.043671,
-          37.319679
-        ],
+        "coordinates": [-122.043671, 37.319679],
         "type": "Point"
       },
       "id": "f62447de06f84f5589b1a84d402ab5fb.11"
@@ -2099,6 +1801,7 @@
       "properties": {
         "name": "Glenbrook Monument",
         "type": "PokeStop",
+        "hidden": true,
         "photo": "fe26748a8f9d45b7928fe2f5a21c56bd.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -2107,10 +1810,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.047271,
-          37.324577
-        ],
+        "coordinates": [-122.047271, 37.324577],
         "type": "Point"
       },
       "id": "fe26748a8f9d45b7928fe2f5a21c56bd.16"
@@ -2128,10 +1828,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.041745,
-          37.323142
-        ],
+        "coordinates": [-122.041745, 37.323142],
         "type": "Point"
       },
       "id": "fe6d45f0c2eb494fa2bff31a7ac29801.16"
@@ -2149,10 +1846,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.043254,
-          37.323439
-        ],
+        "coordinates": [-122.043254, 37.323439],
         "type": "Point"
       },
       "id": "feca1b14e7c64da69bc692bb8bb3be72.16"
@@ -2169,10 +1863,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.045941,
-          37.321808
-        ],
+        "coordinates": [-122.045941, 37.321808],
         "type": "Point"
       },
       "id": "fede761951af3ac89a00fe83210573ba.16"
@@ -2189,10 +1880,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.042062,
-          37.32414
-        ],
+        "coordinates": [-122.042062, 37.32414],
         "type": "Point"
       },
       "id": "ffbed4f2be5d3fe6867a8e5d721d8644.16"

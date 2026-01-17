@@ -1,34 +1,47 @@
 import { parkingJson } from "@/geojson/data";
-import L from "leaflet";
+import { type LatLngTuple } from "leaflet";
+import { Marker, Popup } from "react-leaflet";
 
 import { iconParking, iconParkingWarn } from "../../leafletIcons";
-import type { CFeature } from "../../types";
-import Poi from "./Poi";
-import { genPopupContent } from "./helper";
+import { useStore } from "../hooks/store";
+import { genPopupContentReact } from "./helper";
 
 /**
- * Specialized <Poi> for rendering parking.
+ * Render parking.
  */
 export default function Parking() {
-  return (
-    <Poi
-      data={parkingJson}
-      pointToLayer={({ properties }, latlng) => {
-        const { desc, name, type } = properties as CFeature["properties"];
+  const wayfarerMode = useStore((s) => s.wayfarerMode);
 
-        let icon;
-        switch (type) {
-          case "Conditionally Free Parking":
-            icon = iconParkingWarn;
-            break;
-          default:
-            icon = iconParking;
-        }
+  return parkingJson.features.map(({ geometry, properties }, i) => {
+    const latlng = [
+      geometry.coordinates[1],
+      geometry.coordinates[0],
+    ] as LatLngTuple;
+    const { desc, name, type } = properties;
 
-        return L.marker(latlng, { icon }).bindPopup(
-          genPopupContent(name, "Parking", latlng, desc),
-        );
-      }}
-    />
-  );
+    let icon;
+    switch (type) {
+      case "Conditionally Free Parking":
+        icon = iconParkingWarn;
+        break;
+      default:
+        icon = iconParking;
+    }
+
+    return (
+      <Marker key={i} icon={icon} position={latlng}>
+        <Popup>
+          {genPopupContentReact(
+            name,
+            type,
+            latlng,
+            desc,
+            undefined,
+            wayfarerMode,
+            true,
+          )}
+        </Popup>
+      </Marker>
+    );
+  });
 }

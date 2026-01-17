@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useContext, useState } from "react";
 
+import { MapContext } from "./MapContext";
 import MyLocation from "./MyLocation";
 import { useStore } from "./hooks/store";
 
@@ -8,10 +9,10 @@ import { useStore } from "./hooks/store";
  * Button that toggles my location functionality.
  */
 export default function BtnMyLocation() {
+  const { map } = useContext(MapContext);
   const [isMyLocationOn, setIsMyLocationOn] = useState(false);
   const disableAnimations = useStore((s) => s.disableAnimations);
   const myLocation = useStore((s) => s.myLocation);
-  const map = useStore((s) => s.map);
 
   let radiusClassName = "absolute inset-0 rounded-full";
   let markerClassName = "rounded-full";

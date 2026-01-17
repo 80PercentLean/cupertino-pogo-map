@@ -1,11 +1,14 @@
+import { useContext, useEffect } from "react";
 import { useMap, useMapEvents } from "react-leaflet";
+
+import { MapContext } from "./MapContext";
 
 /**
  * Helps to debug Leaflet map when placed inside a <MapContainer>.
  */
 export default function LeafletDebug() {
+  const { setMap } = useContext(MapContext);
   const map = useMap();
-  // const setMap = useStore((s) => s.setMap);
 
   useMapEvents({
     contextmenu: (e) => {
@@ -19,9 +22,12 @@ export default function LeafletDebug() {
     },
   });
 
-  // useEffect(() => {
-  //   setMap(map);
-  // }, [map, setMap]);
+  useEffect(() => {
+    if (setMap) {
+      // Store Leaflet Map instance in context
+      setMap(map);
+    }
+  }, [map, setMap]);
 
   return null;
 }

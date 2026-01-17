@@ -5,6 +5,9 @@ import {
   FieldDescription,
   FieldGroup,
   FieldLabel,
+  FieldLegend,
+  FieldSeparator,
+  FieldSet,
 } from "@/components/ui/field";
 
 import SelectRadius from "./SelectRadius";
@@ -20,39 +23,107 @@ export default function SettingsView() {
   const wayfarerMode = useStore((s) => s.wayfarerMode);
   const setWayfarerMode = useStore((s) => s.setWayfarerMode);
 
+  const showHidden = useStore((s) => s.modifiers.hidden);
+  const showInactive = useStore((s) => s.modifiers.inactive);
+  const showRemoved = useStore((s) => s.modifiers.removed);
+  const toggleModifier = useStore((s) => s.toggleModifier);
+
   return (
     <UiOverlayCard title="Settings">
-      <FieldGroup>
-        <Field orientation="horizontal">
-          <Checkbox
-            id="disable-animations"
-            checked={disableAnimations}
-            className="cursor-pointer"
-            onCheckedChange={(s) => setDisableAnimations(s === true)}
-          />
-          <FieldLabel htmlFor="disable-animations" className="cursor-pointer">
-            Disable animations
-          </FieldLabel>
-        </Field>
-        <Field orientation="horizontal">
-          <Checkbox
-            id="wayfarer-mode"
-            checked={wayfarerMode}
-            className="cursor-pointer"
-            onCheckedChange={(s) => setWayfarerMode(s === true)}
-          />
-          <FieldContent>
-            <FieldLabel htmlFor="wayfarer-mode" className="cursor-pointer">
-              Enable Wayfarer Mode
+      <FieldSet>
+        <FieldGroup className="gap-3">
+          <Field orientation="horizontal">
+            <Checkbox
+              id="disable-animations"
+              checked={disableAnimations}
+              className="cursor-pointer"
+              onCheckedChange={(s) => setDisableAnimations(s === true)}
+            />
+            <FieldLabel htmlFor="disable-animations" className="cursor-pointer">
+              Disable animations
             </FieldLabel>
+          </Field>
+          <Field orientation="horizontal">
+            <Checkbox
+              id="wayfarer-mode"
+              checked={wayfarerMode}
+              className="cursor-pointer"
+              onCheckedChange={(s) => setWayfarerMode(s === true)}
+            />
+            <FieldContent>
+              <FieldLabel htmlFor="wayfarer-mode" className="cursor-pointer">
+                Enable Wayfarer Mode
+              </FieldLabel>
+              <FieldDescription>
+                This mode enables special settings & tools useful for planning &
+                submitting Wayspots for Niantic Wayfarer.
+              </FieldDescription>
+            </FieldContent>
+          </Field>
+          <SelectRadius />
+        </FieldGroup>
+      </FieldSet>
+      {wayfarerMode && (
+        <>
+          <FieldSeparator className="my-2" />
+          <FieldSet>
+            <FieldLegend>Wayfarer Settings</FieldLegend>
             <FieldDescription>
-              This mode enables special settings & tools useful for planning &
-              submitting Wayspots for Niantic Wayfarer.
+              Special Wayfarer settings available when Wayfarer Mode is enabled.
             </FieldDescription>
-          </FieldContent>
-        </Field>
-        <SelectRadius />
-      </FieldGroup>
+            <FieldGroup className="gap-3">
+              <Field orientation="horizontal">
+                <Checkbox
+                  id="hidden-pois"
+                  checked={showHidden}
+                  className="cursor-pointer"
+                  onCheckedChange={() => toggleModifier("hidden")}
+                />
+                <FieldLabel htmlFor="hidden-pois" className="cursor-pointer">
+                  Show hidden POIs
+                </FieldLabel>
+              </Field>
+              <Field orientation="horizontal">
+                <Checkbox
+                  id="inactive-pois"
+                  checked={showInactive}
+                  className="cursor-pointer"
+                  onCheckedChange={() => toggleModifier("inactive")}
+                />
+
+                <FieldContent>
+                  <FieldLabel
+                    htmlFor="inactive-pois"
+                    className="cursor-pointer"
+                  >
+                    Show inactive POIs
+                  </FieldLabel>
+                  <FieldDescription>
+                    Show POIs that exist in Wayfarer but cannot exist in PoGO
+                    due to certain conditions.
+                  </FieldDescription>
+                </FieldContent>
+              </Field>
+              <Field orientation="horizontal">
+                <Checkbox
+                  id="removed-pois"
+                  checked={showRemoved}
+                  className="cursor-pointer"
+                  onCheckedChange={() => toggleModifier("removed")}
+                />
+                <FieldContent>
+                  <FieldLabel htmlFor="removed-pois" className="cursor-pointer">
+                    Show removed POIs
+                  </FieldLabel>
+                  <FieldDescription>
+                    Show POIs that have been removed from PoGO or Wayfarer.
+                  </FieldDescription>
+                </FieldContent>
+              </Field>
+            </FieldGroup>
+          </FieldSet>
+        </>
+      )}
     </UiOverlayCard>
   );
 }
