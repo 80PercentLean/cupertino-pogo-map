@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
+import { useStore } from "./hooks/store";
+
 export interface Props {
   className?: string;
   lat: number;
@@ -9,14 +11,18 @@ export interface Props {
 
 const ERR_COPY_LOG = "Failed to copy to clipboard: ";
 
-export default function CopyCoordsBtn({ className, lat, lng }: Props) {
+export default function BtnCopyCoords({ className, lat, lng }: Props) {
+  const invertCoords = useStore((s) => s.invertCoords);
+
   return (
     <Button
       className={className ?? "cursor-pointer shadow-sm shadow-gray-500"}
       onClick={() => {
         (async () => {
           try {
-            const clipboardTxt = `${lat},${lng}`;
+            const clipboardTxt = invertCoords
+              ? `${lng},${lat}`
+              : `${lat},${lng}`;
             await navigator.clipboard.writeText(clipboardTxt);
             toast(`"${clipboardTxt}" was copied your clipboard!`);
           } catch (err) {

@@ -9,6 +9,9 @@ interface StoreState {
   /** Disable all animations in the app when true. */
   disableAnimations: boolean;
 
+  /** Invert coordinates when copied and pasted together when true. */
+  invertCoords: boolean;
+
   /** Flags that determine which map layers are visible. */
   layers: {
     devpois: boolean;
@@ -83,6 +86,9 @@ interface StoreState {
   /** Set the wayfarerMode value. */
   setWayfarerMode: (val: StoreState["wayfarerMode"]) => void;
 
+  /** Toggle a invertCoords value. */
+  toggleInvertCoords: () => void;
+
   /** Toggle a layer value. */
   toggleLayer: (layer: layerType) => void;
 
@@ -101,6 +107,9 @@ export const useStore = create<StoreState>()(
     (set) => ({
       // Disable animations by default for E2E tests to allow visual tests to perform consistently
       disableAnimations: import.meta.env.VITE_E2E ? true : false,
+
+      // Copied & pasted coordinates will be formatted as `lat,lng` by default
+      invertCoords: false,
 
       layers: {
         devpois: false,
@@ -176,6 +185,15 @@ export const useStore = create<StoreState>()(
 
       setWayfarerMode: (val: StoreState["wayfarerMode"]) =>
         set(() => ({ wayfarerMode: val }), undefined, "setWayfarerMode"),
+
+      toggleInvertCoords: () =>
+        set(
+          (s) => ({
+            invertCoords: !s.invertCoords,
+          }),
+          undefined,
+          "toggleInvertCoords",
+        ),
 
       toggleLayer: (l: keyof StoreState["layers"]) =>
         set(

@@ -1,5 +1,6 @@
 import type { LatLng, LatLngTuple } from "leaflet";
 
+import BtnCopy from "../BtnCopy";
 import BtnCopyCoords from "../BtnCopyCoords";
 
 /**
@@ -73,7 +74,10 @@ export const genPopupContentReact = (
   }
   return (
     <>
-      <h1 className="font-bold">{title}</h1>
+      <h1 className="font-bold">
+        {title}
+        {wayfarerMode && <BtnCopy value={title} />}
+      </h1>
       <p className="mt-0! italic">{subtitle}</p>
       {img && (
         <a href={img} rel="noopener noreferrer" target="_blank">
@@ -104,9 +108,11 @@ export const genPopupContentReact = (
         <>
           <hr className="mt-2" />
           <p>
-            <span className="font-bold">Latitude:</span> {latlng[0]}
+            <span className="font-bold">Latitude:</span> {latlng[0]}{" "}
+            <BtnCopy value={latlng[0]} />
             <br />
-            <span className="font-bold">Longitude:</span> {latlng[1]}
+            <span className="font-bold">Longitude:</span> {latlng[1]}{" "}
+            <BtnCopy value={latlng[1]} />
           </p>
           <BtnCopyCoords lat={latlng[0]} lng={latlng[1]} />
         </>

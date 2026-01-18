@@ -19,6 +19,8 @@ import { useStore } from "./hooks/store";
  */
 export default function SettingsView() {
   const disableAnimations = useStore((s) => s.disableAnimations);
+  const invertCoords = useStore((s) => s.invertCoords);
+  const toggleInvertCoords = useStore((s) => s.toggleInvertCoords);
   const setDisableAnimations = useStore((s) => s.setDisableAnimations);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
   const setWayfarerMode = useStore((s) => s.setWayfarerMode);
@@ -117,6 +119,26 @@ export default function SettingsView() {
                   </FieldLabel>
                   <FieldDescription>
                     Show POIs that have been removed from PoGO or Wayfarer.
+                  </FieldDescription>
+                </FieldContent>
+              </Field>
+              <Field orientation="horizontal">
+                <Checkbox
+                  id="invert-coords"
+                  checked={invertCoords}
+                  className="cursor-pointer"
+                  onCheckedChange={() => toggleInvertCoords()}
+                />
+                <FieldContent>
+                  <FieldLabel
+                    htmlFor="invert-coords"
+                    className="cursor-pointer"
+                  >
+                    Invert coordinates using the "Copy coords" button
+                  </FieldLabel>
+                  <FieldDescription>
+                    Current copy coords format:{" "}
+                    {invertCoords ? <code>lng,lat</code> : <code>lat,lng</code>}
                   </FieldDescription>
                 </FieldContent>
               </Field>
