@@ -57,7 +57,7 @@ export default function SettingsView() {
                 Enable Wayfarer Mode
               </FieldLabel>
               <FieldDescription>
-                This mode enables special settings & tools useful for planning &
+                This mode enables special features useful for planning &
                 submitting Wayspots for Niantic Wayfarer.
               </FieldDescription>
             </FieldContent>

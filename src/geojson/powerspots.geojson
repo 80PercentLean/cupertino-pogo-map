@@ -1278,6 +1278,22 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "De Anza College Fujitsu Planetarium",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04662024974824, 37.317666526690516],
+        "type": "Point"
+      },
+      "id": "overture-eaa72360-4551-4be8-ade1-2f132820d53d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Made by TessS Embroidery",
         "type": "Power Spot",
         "source": "Eyeball",

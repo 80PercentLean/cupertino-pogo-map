@@ -43,6 +43,7 @@ export default function MapView() {
   const showPowerSpots = useStore((s) => s.layers.powerspots);
   const showRaidPath = useStore((s) => s.layers.raidPath);
   const showRestrooms = useStore((s) => s.layers.restrooms);
+  const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   let tileLayer;
   switch (mapType) {
@@ -102,7 +103,7 @@ export default function MapView() {
       id="map"
       attributionControl={false}
       center={CENTER}
-      maxBounds={BOUNDARIES}
+      // maxBounds={BOUNDARIES}
       minZoom={15}
       scrollWheelZoom={!IS_MOBILE}
       zoom={16}

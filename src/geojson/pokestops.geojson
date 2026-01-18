@@ -424,7 +424,8 @@
         "name": "The Church of Jesus Christ of Latter-day Saints",
         "type": "PokeStop",
         "photo": "3030882595d3444f8192e9c204dca3d9.16.jpg",
-        "source": "Ingress",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle"

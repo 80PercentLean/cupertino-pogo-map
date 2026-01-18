@@ -14,10 +14,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.039936,
-          37.315089
-        ],
+        "coordinates": [-122.039936, 37.315089],
         "type": "Point"
       },
       "id": "0f11d3c0c3ac4cafbe0bd471922147a0.16"
@@ -35,10 +32,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.042611,
-          37.325565
-        ],
+        "coordinates": [-122.042611, 37.325565],
         "type": "Point"
       },
       "id": "14972c4e327e365d9231684506c2da1a.16"
@@ -59,10 +53,7 @@
         "updated": "2025-11-25T08:00:00Z"
       },
       "geometry": {
-        "coordinates": [
-          -122.043707,
-          37.321643
-        ],
+        "coordinates": [-122.043707, 37.321643],
         "type": "Point"
       },
       "id": "288a4a15a212419a8c1ba425a26d4096.12"
@@ -81,10 +72,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.04556,
-          37.326333
-        ],
+        "coordinates": [-122.04556, 37.326333],
         "type": "Point"
       },
       "id": "4539697e3cb9430db1549c347e67ccdc.16"
@@ -103,10 +91,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.04215,
-          37.325751
-        ],
+        "coordinates": [-122.04215, 37.325751],
         "type": "Point"
       },
       "id": "52f6b7516e544435b220bd8e07f4005c.16"
@@ -117,7 +102,8 @@
         "name": "Mary Avenue Dog Park",
         "type": "Gym",
         "photo": "54434a946619407093d0c6bf41c69392.16.jpg",
-        "source": "Ingress",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#ff2600",
         "marker-size": "large",
         "marker-symbol": "circle",
@@ -126,10 +112,7 @@
         "updated": "2025-11-24T08:00:00Z"
       },
       "geometry": {
-        "coordinates": [
-          -122.050699,
-          37.32796
-        ],
+        "coordinates": [-122.050699, 37.32796],
         "type": "Point"
       },
       "id": "54434a946619407093d0c6bf41c69392.16"
@@ -147,10 +130,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.043634,
-          37.316237
-        ],
+        "coordinates": [-122.043634, 37.316237],
         "type": "Point"
       },
       "id": "57ff23efaca047058c1148822f772af1.16"
@@ -169,10 +149,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.047022,
-          37.320658
-        ],
+        "coordinates": [-122.047022, 37.320658],
         "type": "Point"
       },
       "id": "66b9a7c399064f83a0544b9b66d036f5.16"
@@ -190,10 +167,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.039271,
-          37.322587
-        ],
+        "coordinates": [-122.039271, 37.322587],
         "type": "Point"
       },
       "id": "6a71a402e38646cf91c465aad8935b00.16"
@@ -212,10 +186,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.044846,
-          37.323048
-        ],
+        "coordinates": [-122.044846, 37.323048],
         "type": "Point"
       },
       "id": "977aa0cbd8dc46b3baab7cced1d46c73.16"
@@ -234,10 +205,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.042752,
-          37.325804
-        ],
+        "coordinates": [-122.042752, 37.325804],
         "type": "Point"
       },
       "id": "bc14fa18aaab459598bb1bf9b287eee7.11"
@@ -256,10 +224,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.045378,
-          37.324078
-        ],
+        "coordinates": [-122.045378, 37.324078],
         "type": "Point"
       },
       "id": "c3ae8c98ca114ca2b89bc1bb07531cc4.16"
@@ -269,9 +234,10 @@
       "properties": {
         "name": "Glenbrook Waterfall",
         "type": "Gym",
-        "photo": "d7a41aeaaafe4ba08876dd1722918ece.16.jpg",
-        "source": "Ingress",
         "hidden": true,
+        "photo": "d7a41aeaaafe4ba08876dd1722918ece.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#ff2600",
         "marker-size": "large",
         "marker-symbol": "circle",
@@ -279,10 +245,7 @@
         "updated": "2025-11-24T08:00:00Z"
       },
       "geometry": {
-        "coordinates": [
-          -122.049493,
-          37.326549
-        ],
+        "coordinates": [-122.049493, 37.326549],
         "type": "Point"
       },
       "id": "d7a41aeaaafe4ba08876dd1722918ece.16"
@@ -301,10 +264,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.047686,
-          37.320335
-        ],
+        "coordinates": [-122.047686, 37.320335],
         "type": "Point"
       },
       "id": "ece3562668594459a76db5c3c5d922ab.16"
@@ -322,10 +282,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.045909,
-          37.315491
-        ],
+        "coordinates": [-122.045909, 37.315491],
         "type": "Point"
       },
       "id": "ed4c4a8d8e6d4c5f95a0368c0e4c1264.16"
@@ -337,7 +294,8 @@
         "type": "Gym",
         "desc": "This is gym #5 on the standard raid path.\nIt is the first gym used for the quick raid group during Raid Hours.",
         "photo": "fa4517dcde244a41903380687e95d6cb.12.jpg",
-        "source": "Ingress",
+        "source": "Wayfarer",
+        "ingress": true,
         "marker-color": "#ff2600",
         "marker-size": "large",
         "marker-symbol": "circle",
@@ -345,10 +303,7 @@
         "updated": "2025-11-24T08:00:00Z"
       },
       "geometry": {
-        "coordinates": [
-          -122.045483,
-          37.324432
-        ],
+        "coordinates": [-122.045483, 37.324432],
         "type": "Point"
       },
       "id": "fa4517dcde244a41903380687e95d6cb.12"
@@ -367,10 +322,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.046158,
-          37.318808
-        ],
+        "coordinates": [-122.046158, 37.318808],
         "type": "Point"
       },
       "id": "fe6dc838bd9240eeb5ba03679b7e73db.16"
@@ -389,10 +341,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.04,
-          37.323946
-        ],
+        "coordinates": [-122.04, 37.323946],
         "type": "Point"
       },
       "id": "removed-1d25b691-94b5-4469-9436-7468373af0a7"
@@ -411,10 +360,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [
-          -122.038722,
-          37.322493
-        ],
+        "coordinates": [-122.038722, 37.322493],
         "type": "Point"
       },
       "id": "removed-5173f894-ef7c-466c-81b1-7027ffe7ac0d"

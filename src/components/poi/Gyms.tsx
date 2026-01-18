@@ -10,11 +10,12 @@ import GymMarker from "./GymMarker";
 export default function Gyms() {
   const showHidden = useStore((s) => s.modifiers.hidden);
   const showRemoved = useStore((s) => s.modifiers.removed);
+  const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const markers = [];
 
   for (const { id, geometry, properties } of gymsJson.features) {
-    const { desc, hidden, name, photo, removed } = properties;
+    const { desc, hidden, name, photo, source, removed } = properties;
 
     if ((!showHidden && hidden) || (!showRemoved && removed)) {
       // Skip if hidden or removed and those modifiers are off
@@ -32,6 +33,9 @@ export default function Gyms() {
     }
     if (removed) {
       subtitle += " (Removed)";
+    }
+    if (wayfarerMode) {
+      subtitle += ` [${source}]`;
     }
 
     markers.push(

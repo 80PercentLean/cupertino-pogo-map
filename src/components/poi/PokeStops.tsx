@@ -11,6 +11,7 @@ import PokeStopMarker from "./PokeStopMarker";
 export default function PokeStops() {
   const showHidden = useStore((s) => s.modifiers.hidden);
   const showRemoved = useStore((s) => s.modifiers.removed);
+  const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const markers = [];
 
@@ -27,7 +28,7 @@ export default function PokeStops() {
       geometry.coordinates[1],
       geometry.coordinates[0],
     ] as LatLngTuple;
-    const { desc, name, photo, removed, type } = properties;
+    const { desc, name, photo, removed, source, type } = properties;
 
     let icon;
     let subtitle;
@@ -45,6 +46,9 @@ export default function PokeStops() {
     }
     if (properties.removed) {
       subtitle += " (Removed)";
+    }
+    if (wayfarerMode) {
+      subtitle += ` [${source}]`;
     }
 
     markers.push(
