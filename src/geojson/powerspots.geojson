@@ -1118,6 +1118,22 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Tasty Pizza",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04102382063866, 37.32258961764879],
+        "type": "Point"
+      },
+      "id": "overture-41deb0fd-8a75-463b-bebc-a8e1a3c28b53"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "California History Center",
         "type": "Power Spot",
         "source": "Eyeball",
