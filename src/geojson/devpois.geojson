@@ -12,7 +12,7 @@
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.04451, 37.325078], "type": "Point" },
-      "id": 1
+      "id": 26
     },
     {
       "type": "Feature",
@@ -25,7 +25,408 @@
         "marker-symbol": "circle"
       },
       "geometry": { "coordinates": [-122.04233, 37.325889], "type": "Point" },
+      "id": 27
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Gym #1",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04397559165956, 37.325673850875354],
+        "type": "Point"
+      },
+      "id": 1
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Gym #2",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04410165548326, 37.32540403884428],
+        "type": "Point"
+      },
       "id": 2
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Gym #3",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04442217946054, 37.32553627885409],
+        "type": "Point"
+      },
+      "id": 3
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Gym #4",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04510748386384, 37.32558426912267],
+        "type": "Point"
+      },
+      "id": 4
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Gym #5",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04540789127351, 37.32574636935885],
+        "type": "Point"
+      },
+      "id": 5
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Gym #6",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04593360424043, 37.32578689436325],
+        "type": "Point"
+      },
+      "id": 6
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Gym #7",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04517588019371, 37.32480788945913],
+        "type": "Point"
+      },
+      "id": 7
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Gym #8",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04585045576097, 37.320770159295165],
+        "type": "Point"
+      },
+      "id": 8
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Gym #9",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04568147659303, 37.32051952705492],
+        "type": "Point"
+      },
+      "id": 9
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Gym #10",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04650223255159, 37.320529125751854],
+        "type": "Point"
+      },
+      "id": 10
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Gym #11",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0468294620514, 37.320411808260815],
+        "type": "Point"
+      },
+      "id": 11
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Gym #12",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04719692468646, 37.32040114302527],
+        "type": "Point"
+      },
+      "id": 12
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Gym #13",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04770252108577, 37.320611247886625],
+        "type": "Point"
+      },
+      "id": 13
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador PokeStop #1",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04631984233858, 37.32003852411642],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador PokeStop #2",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04619646072389, 37.31976335918864],
+        "type": "Point"
+      },
+      "id": 15
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador PokeStop #3",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04656660556795, 37.319814552739864],
+        "type": "Point"
+      },
+      "id": 16
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador PokeStop #4",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04666316509248, 37.31952658856068],
+        "type": "Point"
+      },
+      "id": 17
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador PokeStop #5",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04672753810884, 37.32006092121736],
+        "type": "Point"
+      },
+      "id": 18
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador PokeStop #6",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04706683754922, 37.31998733071776],
+        "type": "Point"
+      },
+      "id": 19
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador PokeStop #7",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04631179571155, 37.319497792082096],
+        "type": "Point"
+      },
+      "id": 20
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Power Spot #1",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04310387372972, 37.3257506351498],
+        "type": "Point"
+      },
+      "id": 21
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Power Spot #2",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04291611909868, 37.32541257046484],
+        "type": "Point"
+      },
+      "id": 22
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Power Spot #3",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04325810074808, 37.325498953068454],
+        "type": "Point"
+      },
+      "id": 23
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Power Spot #4",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0448862016201, 37.32601511371675],
+        "type": "Point"
+      },
+      "id": 24
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Power Spot #5",
+        "type": "Gym",
+        "source": "Campsite Proposal",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04524159431459, 37.326023645267924],
+        "type": "Point"
+      },
+      "id": 25
     }
   ]
 }

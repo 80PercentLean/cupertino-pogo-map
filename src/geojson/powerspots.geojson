@@ -1118,6 +1118,22 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "California History Center",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04469040036203, 37.31926635331639],
+        "type": "Point"
+      },
+      "id": "overture-49de7709-b8f4-4c89-a8f7-058f5194456e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Cupertino Taproom",
         "type": "Power Spot",
         "source": "Wayfarer",
@@ -1162,6 +1178,22 @@
         "type": "Point"
       },
       "id": "overture-82ca4035-c0b0-43a5-a7ba-70855f7711f7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "De Anza College Pool",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04498946666719, 37.31874588012459],
+        "type": "Point"
+      },
+      "id": "overture-8a19e86a-1fec-4949-b6b4-529ad4085edd"
     },
     {
       "type": "Feature",

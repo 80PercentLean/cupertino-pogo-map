@@ -364,6 +364,23 @@
         "type": "Point"
       },
       "id": "removed-5173f894-ef7c-466c-81b1-7027ffe7ac0d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Racket Sports Sign",
+        "type": "PokeStop",
+        "photo": "318ffc114c0b3aaa9e38ca5c67176f85.16.jpg",
+        "source": "Wayfarer",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.045051, 37.326272],
+        "type": "Point"
+      },
+      "id": "318ffc114c0b3aaa9e38ca5c67176f85.16"
     }
   ]
 }
