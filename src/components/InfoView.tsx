@@ -9,7 +9,8 @@ export default function InfoView() {
     <UiOverlayCard title="Information">
       <>
         <p>
-          The Cupertino PoGO map is an open source project run by the{" "}
+          The <strong>Cupertino PoGO map</strong> is an open source project run
+          by the{" "}
           <LinkExt
             href="https://campfire.onelink.me/eBr8?af_dp=campfire://&af_force_deeplink=true&deep_link_sub1=cj1jbHVicyZjPTk4MjZkY2U4LTZhM2ItNDQxNC05N2M1LTg1NzYzNDYzY2VmNSZpPXRydWU="
             openNewWindow
@@ -50,11 +51,9 @@ export default function InfoView() {
             </LinkExt>
           </li> */}
           <li>
-            Extra info tile layer: &copy;{" "}
-            <LinkExt href="https://www.openstreetmap.org/copyright">
-              OpenStreetMap
-            </LinkExt>{" "}
-            contributors
+            Extra info tile layer: Tiles &copy; Esri &mdash; Source: Esri,
+            DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri
+            China (Hong Kong), Esri (Thailand), TomTom, 2012
           </li>
           <li>
             Satellite tile layer: Tiles &copy; Esri &mdash; Source: Esri,

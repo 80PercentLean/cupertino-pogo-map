@@ -1150,6 +1150,22 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Home Of Christ IN Cupertino",
+        "type": "Power Spot",
+        "source": "Eyeball",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04911738634111, 37.31776038412619],
+        "type": "Point"
+      },
+      "id": "overture-50b20358-ba09-4ec2-9a89-ec4786301b5e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Cupertino Taproom",
         "type": "Power Spot",
         "source": "Wayfarer",
