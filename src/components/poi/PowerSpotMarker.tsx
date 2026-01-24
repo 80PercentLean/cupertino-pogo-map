@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { Marker, Popup } from "react-leaflet";
 
 import { useStore } from "../hooks/store";
-import InteractionRadius from "./InteractionRadius";
+// import InteractionRadius from "./InteractionRadius";
 import NoCaPoiZone from "./NoCaPoiZone";
 import { genPopupContentReact } from "./helper";
 
@@ -27,7 +27,7 @@ export default function PowerSpotMarker({
   subtitle,
   title,
 }: Props) {
-  const showInteractionRadius = useStore((s) => s.layers.interactionRadii);
+  // const showInteractionRadius = useStore((s) => s.layers.interactionRadii);
   const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 

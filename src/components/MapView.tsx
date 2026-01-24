@@ -1,4 +1,4 @@
-import { type LatLngBoundsExpression } from "leaflet";
+// import { type LatLngBoundsExpression } from "leaflet";
 import { MapContainer, TileLayer } from "react-leaflet";
 
 import { CENTER } from "../constants";
@@ -21,10 +21,10 @@ import L14Grid from "./s2/L14Grid";
 import L17Grid from "./s2/L17Grid";
 
 const IS_MOBILE = isMobileUa();
-const BOUNDARIES: LatLngBoundsExpression = [
-  [37.3328, -122.0554],
-  [37.3107, -122.0326],
-];
+// const BOUNDARIES: LatLngBoundsExpression = [
+//   [37.3328, -122.0554],
+//   [37.3107, -122.0326],
+// ];
 
 /**
  * The app's Leaflet map.
