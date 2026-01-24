@@ -1,7 +1,9 @@
-import { useEffect, useRef } from "react";
+import { Marker as LeafletMarker } from "leaflet";
+import { type Ref, useEffect, useRef } from "react";
 import { Marker, type MarkerProps } from "react-leaflet";
 
 interface CMarkerExclusiveProps {
+  ref?: Ref<LeafletMarker>;
   "data-testid"?: string;
 }
 
@@ -13,15 +15,17 @@ export type CMarkerProps = MarkerProps & CMarkerExclusiveProps;
  */
 export default function CMarker(props: CMarkerProps) {
   // TODO: Not sure what the type of this ref should be
-  const markerRef = useRef(null);
+  const { ref } = props;
   const testId = props["data-testid"];
+  const markerRef = useRef<LeafletMarker>(null);
 
   useEffect(() => {
     if (testId && markerRef.current) {
-      // @ts-expect-error Not sure how to resolve the following type error on _icon
+      // @ts-expect-error _icon property has an unresolved type error at the moment
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
       markerRef.current._icon.dataset.testid = testId;
     }
   }, [testId]);
 
-  return <Marker ref={markerRef} {...props} />;
+  return <Marker ref={ref ?? markerRef} {...props} />;
 }

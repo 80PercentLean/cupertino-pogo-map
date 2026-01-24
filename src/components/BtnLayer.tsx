@@ -50,7 +50,6 @@ export default function BtnLayer({ imagery, label, layerType }: Props) {
           outerBorderClassName,
         )}
       />
-
       <div
         className={cn(
           buttonVariants({ size: "default" }),

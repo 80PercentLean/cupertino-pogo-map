@@ -35,7 +35,7 @@ export default function PowerSpotMarker({
 
   useEffect(() => {
     if ((inactive || removed) && markerRef.current) {
-      // Add grayscale class to inactive power spots
+      // Add grayscale class to inactive or removed power spots
       markerRef.current?.getElement()?.classList.add("grayscale");
     }
   }, [inactive, removed]);

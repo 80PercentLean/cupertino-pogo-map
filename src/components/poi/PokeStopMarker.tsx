@@ -37,7 +37,7 @@ export default function PokeStopMarker({
 
   useEffect(() => {
     if (removed && markerRef.current) {
-      // Add grayscale class to inactive power spots
+      // Add grayscale class to removed PokeStops
       markerRef.current?.getElement()?.classList.add("grayscale");
     }
   }, [removed]);

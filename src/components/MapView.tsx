@@ -106,6 +106,7 @@ export default function MapView() {
       minZoom={15}
       scrollWheelZoom={!IS_MOBILE}
       zoom={16}
+      zoomControl={false}
     >
       <LeafletDebug />
       {tileLayer}

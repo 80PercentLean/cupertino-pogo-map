@@ -12,6 +12,9 @@ interface StoreState {
   /** Invert coordinates when copied and pasted together when true. */
   invertCoords: boolean;
 
+  /** Open the list view when true. */
+  isListViewOpen: boolean;
+
   /** Flags that determine which map layers are visible. */
   layers: {
     devpois: boolean;
@@ -54,6 +57,9 @@ interface StoreState {
     restrooms: boolean;
   };
 
+  /** Flags that determine which popup is open or close for each marker. */
+  markerPopups: Record<string, boolean>;
+
   /** Flags that determine which modifiers are applied to map layers. */
   modifiers: {
     inactive: boolean;
@@ -74,8 +80,14 @@ interface StoreState {
   /** Set the disableAnimations value. */
   setDisableAnimations: (val: StoreState["disableAnimations"]) => void;
 
+  /** Set the isListViewOpen value. */
+  setIsListViewOpen: (val: boolean) => void;
+
   /** Set the mapType value. */
   setMapType: (val: StoreState["mapType"]) => void;
+
+  /** Set a value for a markerPopups property */
+  setMarkerPopup: (id: string, val: boolean) => void;
 
   /** Set the myLocationAccuracy value. */
   setMyLocation: (val: StoreState["myLocation"]) => void;
@@ -111,6 +123,9 @@ export const useStore = create<StoreState>()(
       // Copied & pasted coordinates will be formatted as `lat,lng` by default
       invertCoords: false,
 
+      // Close list view by default
+      isListViewOpen: false,
+
       layers: {
         devpois: false,
 
@@ -142,6 +157,8 @@ export const useStore = create<StoreState>()(
       // Map type starts off as default
       mapType: "default",
 
+      markerPopups: {},
+
       modifiers: {
         hidden: true,
 
@@ -165,6 +182,18 @@ export const useStore = create<StoreState>()(
       setMapType: (val: StoreState["mapType"]) =>
         set(() => ({ mapType: val }), undefined, "setMapType"),
 
+      setMarkerPopup: (key: string, val: boolean) =>
+        set(
+          (s) => ({
+            markerPopups: {
+              ...s.markerPopups,
+              [key]: val,
+            },
+          }),
+          undefined,
+          "setMarkerPopup",
+        ),
+
       setMyLocation: (val: StoreState["myLocation"]) =>
         set(
           () => ({
@@ -181,6 +210,15 @@ export const useStore = create<StoreState>()(
           }),
           undefined,
           "setLocationAccuracy",
+        ),
+
+      setIsListViewOpen: (val: StoreState["isListViewOpen"]) =>
+        set(
+          () => ({
+            isListViewOpen: val,
+          }),
+          undefined,
+          "setIsListViewOpen",
         ),
 
       setWayfarerMode: (val: StoreState["wayfarerMode"]) =>

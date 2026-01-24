@@ -41,6 +41,7 @@ export default function Gyms() {
     markers.push(
       <GymMarker
         key={id}
+        id={id as string}
         desc={desc}
         latlng={latlng}
         removed={removed}

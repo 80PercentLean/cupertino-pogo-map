@@ -707,6 +707,7 @@
       "properties": {
         "name": "Glenbrook Tennis Courts",
         "type": "PokeStop",
+        "hidden": true,
         "photo": "5cae6a81015548a4b51319fe2c09d53b.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
