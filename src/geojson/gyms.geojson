@@ -4,9 +4,31 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "New Life Church",
+        "name": "\"Guardians Statue\", Memorial Park (#5)",
         "type": "Gym",
-        "photo": "0f11d3c0c3ac4cafbe0bd471922147a0.16.jpg",
+        "desc": "This is gym #5 on the standard raid path.\nIt is the first gym used for the quick raid group during Raid Hours.",
+        "photo": "fa4517dcde244a41903380687e95d6cb.12.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
+        "created": "2025-05-23T08:00:00Z",
+        "updated": "2025-11-24T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-122.045483, 37.324432],
+        "type": "Point"
+      },
+      "id": "fa4517dcde244a41903380687e95d6cb.12"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bacchus Urn (#8)",
+        "type": "Gym",
+        "desc": "This is gym #8 on the standard raid path.",
+        "photo": "66b9a7c399064f83a0544b9b66d036f5.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
         "marker-color": "#ff2600",
@@ -14,10 +36,10 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.039936, 37.315089],
+        "coordinates": [-122.047022, 37.320658],
         "type": "Point"
       },
-      "id": "0f11d3c0c3ac4cafbe0bd471922147a0.16"
+      "id": "66b9a7c399064f83a0544b9b66d036f5.16"
     },
     {
       "type": "Feature",
@@ -36,6 +58,25 @@
         "type": "Point"
       },
       "id": "14972c4e327e365d9231684506c2da1a.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cupertino Rotary Bench (#1)",
+        "type": "Gym",
+        "desc": "This is gym #1 on the standard raid path.\n\nIt is the first gym used Raid Days and the walking group during Raid Hours.",
+        "photo": "52f6b7516e544435b220bd8e07f4005c.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04215, 37.325751],
+        "type": "Point"
+      },
+      "id": "52f6b7516e544435b220bd8e07f4005c.16"
     },
     {
       "type": "Feature",
@@ -61,10 +102,10 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Memorial Park Tennis Courts (#4)",
+        "name": "Fujitsu Planetarium (#10)",
         "type": "Gym",
-        "photo": "4539697e3cb9430db1549c347e67ccdc.16.jpg",
-        "desc": "This is gym #4 on the standard raid path.",
+        "desc": "This is gym #10 on the standard raid path.",
+        "photo": "fe6dc838bd9240eeb5ba03679b7e73db.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
         "marker-color": "#ff2600",
@@ -72,124 +113,10 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04556, 37.326333],
+        "coordinates": [-122.046158, 37.318808],
         "type": "Point"
       },
-      "id": "4539697e3cb9430db1549c347e67ccdc.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Cupertino Rotary Bench (#1)",
-        "type": "Gym",
-        "desc": "This is gym #1 on the standard raid path.\n\nIt is the first gym used Raid Days and the walking group during Raid Hours.",
-        "photo": "52f6b7516e544435b220bd8e07f4005c.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04215, 37.325751],
-        "type": "Point"
-      },
-      "id": "52f6b7516e544435b220bd8e07f4005c.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Mary Avenue Dog Park",
-        "type": "Gym",
-        "photo": "54434a946619407093d0c6bf41c69392.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle",
-        "created": "2025-05-23T08:00:00Z",
-        "converted": "2025-11-02T08:00:00Z",
-        "updated": "2025-11-24T08:00:00Z"
-      },
-      "geometry": {
-        "coordinates": [-122.050699, 37.32796],
-        "type": "Point"
-      },
-      "id": "54434a946619407093d0c6bf41c69392.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Kirsch Center For Environmental Studies",
-        "type": "Gym",
-        "photo": "57ff23efaca047058c1148822f772af1.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.043634, 37.316237],
-        "type": "Point"
-      },
-      "id": "57ff23efaca047058c1148822f772af1.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Bacchus Urn (#8)",
-        "type": "Gym",
-        "desc": "This is gym #8 on the standard raid path.",
-        "photo": "66b9a7c399064f83a0544b9b66d036f5.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.047022, 37.320658],
-        "type": "Point"
-      },
-      "id": "66b9a7c399064f83a0544b9b66d036f5.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Union Church of Cupertino",
-        "type": "Gym",
-        "photo": "6a71a402e38646cf91c465aad8935b00.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.039271, 37.322587],
-        "type": "Point"
-      },
-      "id": "6a71a402e38646cf91c465aad8935b00.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Memorial Park Cupertino (#7)",
-        "type": "Gym",
-        "desc": "This is gym #7 on the standard raid path.",
-        "photo": "977aa0cbd8dc46b3baab7cced1d46c73.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.044846, 37.323048],
-        "type": "Point"
-      },
-      "id": "977aa0cbd8dc46b3baab7cced1d46c73.16"
+      "id": "fe6dc838bd9240eeb5ba03679b7e73db.16"
     },
     {
       "type": "Feature",
@@ -209,25 +136,6 @@
         "type": "Point"
       },
       "id": "bc14fa18aaab459598bb1bf9b287eee7.11"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Sister City Plaque (#6)",
-        "type": "Gym",
-        "desc": "This is gym #6 on the standard raid path.\n\nIt is the second gym used for the quick raid group during Raid Hours.",
-        "photo": "c3ae8c98ca114ca2b89bc1bb07531cc4.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.045378, 37.324078],
-        "type": "Point"
-      },
-      "id": "c3ae8c98ca114ca2b89bc1bb07531cc4.16"
     },
     {
       "type": "Feature",
@@ -253,25 +161,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Media Center Fountain - East (#9)",
-        "type": "Gym",
-        "desc": "This is gym #9 on the standard raid path.",
-        "photo": "ece3562668594459a76db5c3c5d922ab.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.047686, 37.320335],
-        "type": "Point"
-      },
-      "id": "ece3562668594459a76db5c3c5d922ab.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Kingdom Hall of Jehovah's Witnesses Sign",
         "type": "Gym",
         "photo": "ed4c4a8d8e6d4c5f95a0368c0e4c1264.16.jpg",
@@ -290,31 +179,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "\"Guardians Statue\", Memorial Park (#5)",
+        "name": "Kirsch Center For Environmental Studies",
         "type": "Gym",
-        "desc": "This is gym #5 on the standard raid path.\nIt is the first gym used for the quick raid group during Raid Hours.",
-        "photo": "fa4517dcde244a41903380687e95d6cb.12.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle",
-        "created": "2025-05-23T08:00:00Z",
-        "updated": "2025-11-24T08:00:00Z"
-      },
-      "geometry": {
-        "coordinates": [-122.045483, 37.324432],
-        "type": "Point"
-      },
-      "id": "fa4517dcde244a41903380687e95d6cb.12"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Fujitsu Planetarium (#10)",
-        "type": "Gym",
-        "desc": "This is gym #10 on the standard raid path.",
-        "photo": "fe6dc838bd9240eeb5ba03679b7e73db.16.jpg",
+        "photo": "57ff23efaca047058c1148822f772af1.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
         "marker-color": "#ff2600",
@@ -322,29 +189,10 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.046158, 37.318808],
+        "coordinates": [-122.043634, 37.316237],
         "type": "Point"
       },
-      "id": "fe6dc838bd9240eeb5ba03679b7e73db.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Whole Foods Cupertino Mural",
-        "type": "Gym",
-        "removed": "2025-10-02T08:00:00Z",
-        "photo": "removed-1d25b691-94b5-4469-9436-7468373af0a7.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04, 37.323946],
-        "type": "Point"
-      },
-      "id": "removed-1d25b691-94b5-4469-9436-7468373af0a7"
+      "id": "57ff23efaca047058c1148822f772af1.16"
     },
     {
       "type": "Feature",
@@ -364,6 +212,158 @@
         "type": "Point"
       },
       "id": "removed-5173f894-ef7c-466c-81b1-7027ffe7ac0d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mary Avenue Dog Park",
+        "type": "Gym",
+        "photo": "54434a946619407093d0c6bf41c69392.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
+        "created": "2025-05-23T08:00:00Z",
+        "converted": "2025-11-02T08:00:00Z",
+        "updated": "2025-11-24T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-122.050699, 37.32796],
+        "type": "Point"
+      },
+      "id": "54434a946619407093d0c6bf41c69392.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Media Center Fountain - East (#9)",
+        "type": "Gym",
+        "desc": "This is gym #9 on the standard raid path.",
+        "photo": "ece3562668594459a76db5c3c5d922ab.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.047686, 37.320335],
+        "type": "Point"
+      },
+      "id": "ece3562668594459a76db5c3c5d922ab.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Cupertino (#7)",
+        "type": "Gym",
+        "desc": "This is gym #7 on the standard raid path.",
+        "photo": "977aa0cbd8dc46b3baab7cced1d46c73.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.044846, 37.323048],
+        "type": "Point"
+      },
+      "id": "977aa0cbd8dc46b3baab7cced1d46c73.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Tennis Courts (#4)",
+        "type": "Gym",
+        "photo": "4539697e3cb9430db1549c347e67ccdc.16.jpg",
+        "desc": "This is gym #4 on the standard raid path.",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04556, 37.326333],
+        "type": "Point"
+      },
+      "id": "4539697e3cb9430db1549c347e67ccdc.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New Life Church",
+        "type": "Gym",
+        "photo": "0f11d3c0c3ac4cafbe0bd471922147a0.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.039936, 37.315089],
+        "type": "Point"
+      },
+      "id": "0f11d3c0c3ac4cafbe0bd471922147a0.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sister City Plaque (#6)",
+        "type": "Gym",
+        "desc": "This is gym #6 on the standard raid path.\n\nIt is the second gym used for the quick raid group during Raid Hours.",
+        "photo": "c3ae8c98ca114ca2b89bc1bb07531cc4.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.045378, 37.324078],
+        "type": "Point"
+      },
+      "id": "c3ae8c98ca114ca2b89bc1bb07531cc4.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Union Church of Cupertino",
+        "type": "Gym",
+        "photo": "6a71a402e38646cf91c465aad8935b00.16.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.039271, 37.322587],
+        "type": "Point"
+      },
+      "id": "6a71a402e38646cf91c465aad8935b00.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Whole Foods Cupertino Mural",
+        "type": "Gym",
+        "removed": "2025-10-02T08:00:00Z",
+        "photo": "removed-1d25b691-94b5-4469-9436-7468373af0a7.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04, 37.323946],
+        "type": "Point"
+      },
+      "id": "removed-1d25b691-94b5-4469-9436-7468373af0a7"
     }
   ]
 }
