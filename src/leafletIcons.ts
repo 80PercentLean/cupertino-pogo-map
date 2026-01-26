@@ -13,7 +13,13 @@ import imgPowerSpot from "./assets/power-spot.webp";
 import imgShowcase from "./assets/showcase.webp";
 
 /** Export images. */
-export { imgGym, imgPokeStop, imgPowerSpot };
+export {
+  imgGym,
+  icon as imgLeafletMarker,
+  imgPokeStop,
+  imgPowerSpot,
+  imgShowcase,
+};
 
 /** Default Leaflet icon. */
 const DefaultIcon = L.icon({

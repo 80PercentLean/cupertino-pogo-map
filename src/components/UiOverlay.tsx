@@ -1,3 +1,4 @@
+import { Activity } from "react";
 import { Outlet } from "react-router";
 
 import BtnLayers from "./BtnLayers";
@@ -15,7 +16,9 @@ export default function UiOverlay() {
 
   return (
     <>
-      {isListViewOpen && <ListView />}
+      <Activity mode={isListViewOpen ? "visible" : "hidden"}>
+        <ListView />
+      </Activity>
       <ViewCtrl />
       <BtnLayers />
       <BtnMyLocation />

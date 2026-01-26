@@ -23,7 +23,7 @@ export default function PowerSpots() {
       (!showInactive && inactive) ||
       (!showRemoved && removed)
     ) {
-      // Skip if hidden or removed and those modifiers are off
+      // Skip if hidden, inactive, or removed and those modifiers are off
       continue;
     }
 
