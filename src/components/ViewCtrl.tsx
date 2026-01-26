@@ -23,46 +23,41 @@ export default function ViewCtrl() {
 
   const { pathname } = useLocation();
 
-  let btnMapList;
-  if (isListViewOpen) {
-    btnMapList = (
-      <NavLinkViewCtrl
-        end
-        name="map"
-        to={ROOT_PATH}
-        title="Switch to Map Only View"
-        onClick={() => {
-          if (pathname === ROOT_PATH) {
-            setIsListViewOpen(false);
-          }
-        }}
-      >
-        <Map /> Map
-      </NavLinkViewCtrl>
-    );
-  } else {
-    btnMapList = (
-      <NavLinkViewCtrl
-        end
-        name="map"
-        to={ROOT_PATH}
-        title="Open List View"
-        onClick={() => {
-          if (pathname === ROOT_PATH) {
-            setIsListViewOpen(true);
-          }
-        }}
-      >
-        <List /> List
-      </NavLinkViewCtrl>
-    );
-  }
-
   return (
     <NavigationMenu className="fixed bottom-0 left-0 z-1001 m-2">
       <NavigationMenuList>
+        <NavigationMenuItem asChild>
+          <NavLinkViewCtrl
+            end
+            name="map"
+            to={ROOT_PATH}
+            title="Switch to Map Only View"
+          >
+            <Map /> Map
+          </NavLinkViewCtrl>
+        </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuLink asChild>{btnMapList}</NavigationMenuLink>
+          <NavigationMenuLink asChild>
+            <NavLinkViewCtrl
+              end
+              forceActive={isListViewOpen}
+              name="list"
+              to={ROOT_PATH}
+              title="Switch to Map Only View"
+              onClick={() => {
+                if (pathname === ROOT_PATH) {
+                  // Only toggle list view when the map is active
+                  if (isListViewOpen) {
+                    setIsListViewOpen(false);
+                  } else {
+                    setIsListViewOpen(true);
+                  }
+                }
+              }}
+            >
+              <List /> List
+            </NavLinkViewCtrl>
+          </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild>

@@ -1040,13 +1040,13 @@
       "properties": {
         "name": "American Builders Construction Group Cupertino",
         "type": "Power Spot",
-        "source": "Eyeball",
+        "source": "Campfire",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04211413860322, 37.3134406875395],
+        "coordinates": [-122.042137, 37.313431],
         "type": "Point"
       },
       "id": "overture-334da9d8-c198-4d38-a727-c2be48b1fc4e"
@@ -1056,13 +1056,13 @@
       "properties": {
         "name": "Amazing Vijay - Magician",
         "type": "Power Spot",
-        "source": "Eyeball",
+        "source": "Campfire",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04520538449289, 37.326854400424146],
+        "coordinates": [-122.045235, 37.326889],
         "type": "Point"
       },
       "id": "overture-3477bab6-8d7a-4ec7-8b0b-e72ba1e0ebe9"
@@ -1232,13 +1232,13 @@
       "properties": {
         "name": "McClellan Terrace Apartments",
         "type": "Power Spot",
-        "source": "Eyeball",
+        "source": "Campfire",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04856216907503, 37.31434731110917],
+        "coordinates": [-122.048561, 37.314331],
         "type": "Point"
       },
       "id": "overture-8ec96d90-124b-49a6-b779-275ea6937cf9"
@@ -1360,13 +1360,13 @@
       "properties": {
         "name": "Made by TessS Embroidery",
         "type": "Power Spot",
-        "source": "Eyeball",
+        "source": "Campfire",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04118657648746, 37.326604272317994],
+        "coordinates": [-122.041145, 37.326607],
         "type": "Point"
       },
       "id": "overture-ee8390e6-c0b6-4479-80e7-4161f8a937a5"

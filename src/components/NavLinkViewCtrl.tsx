@@ -18,6 +18,7 @@ const genOuterBorderClassName = (isActive: boolean) => {
 
 export interface Props {
   end?: boolean;
+  forceActive?: boolean;
   to: string;
   name: string;
   onClick?: () => void;
@@ -27,6 +28,7 @@ export interface Props {
 export default function NavLinkViewCtrl({
   children,
   end,
+  forceActive,
   name,
   onClick,
   to,
@@ -40,36 +42,47 @@ export default function NavLinkViewCtrl({
       className="relative"
       onClick={onClick}
     >
-      {({ isActive }) => (
-        <span className={`group/${name}`}>
-          {/* Inner border */}
-          {isActive && (
+      {({ isActive }) => {
+        let activeStyle;
+        if (typeof forceActive === "boolean") {
+          activeStyle = forceActive;
+        } else {
+          activeStyle = isActive;
+        }
+
+        console.log({ forceActive });
+
+        return (
+          <span className={`group/${name}`}>
+            {/* Inner border */}
+            {activeStyle && (
+              <div
+                className={cn(
+                  buttonVariants({ size: "default" }),
+                  "white absolute mb-1 h-10 w-20 border-4 bg-transparent",
+                )}
+              />
+            )}
+            {/* Outer border */}
             <div
               className={cn(
                 buttonVariants({ size: "default" }),
-                "white absolute mb-1 h-10 w-20 border-4 bg-transparent",
+                genOuterBorderClassName(activeStyle),
               )}
             />
-          )}
-          {/* Outer border */}
-          <div
-            className={cn(
-              buttonVariants({ size: "default" }),
-              genOuterBorderClassName(isActive),
-            )}
-          />
-          <Button
-            variant="ghost"
-            className={cn(
-              buttonVariants({ variant: "default" }),
-              `h-10 w-20 p-3 group-hover/${name}:text-emerald-700`,
-              isActive && "text-emerald-700",
-            )}
-          >
-            {children}
-          </Button>
-        </span>
-      )}
+            <Button
+              variant="ghost"
+              className={cn(
+                buttonVariants({ variant: "default" }),
+                `h-10 w-20 p-3 group-hover/${name}:text-emerald-700`,
+                activeStyle && "text-emerald-700",
+              )}
+            >
+              {children}
+            </Button>
+          </span>
+        );
+      }}
     </NavLink>
   );
 }
