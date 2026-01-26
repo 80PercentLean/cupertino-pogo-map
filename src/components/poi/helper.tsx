@@ -80,9 +80,11 @@ export const genPopupContentReact = (
       </h1>
       <p className="mt-0! italic">{subtitle}</p>
       {img && (
-        <a href={img} rel="noopener noreferrer" target="_blank">
-          <img src={img} alt="${name}" />
-        </a>
+        <div className="flex justify-center">
+          <a href={img} rel="noopener noreferrer" target="_blank">
+            <img src={img} alt={title ?? ""} className="h-42 object-cover" />
+          </a>
+        </div>
       )}
       {description}
       <hr className="mt-2" />

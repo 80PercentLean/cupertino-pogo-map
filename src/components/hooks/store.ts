@@ -123,8 +123,8 @@ export const useStore = create<StoreState>()(
       // Copied & pasted coordinates will be formatted as `lat,lng` by default
       invertCoords: false,
 
-      // Close list view by default
-      isListViewOpen: false,
+      // TODO:Start with opened list view on desktop and a closed one on mobile
+      isListViewOpen: true,
 
       layers: {
         devpois: false,

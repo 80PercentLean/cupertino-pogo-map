@@ -50,8 +50,6 @@ export default function NavLinkViewCtrl({
           activeStyle = isActive;
         }
 
-        console.log({ forceActive });
-
         return (
           <span className={`group/${name}`}>
             {/* Inner border */}
