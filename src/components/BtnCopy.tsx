@@ -4,15 +4,21 @@ import { toast } from "sonner";
 
 export interface Props {
   className?: string;
+  text?: string;
   value: number | string;
 }
 
 const ERR_COPY_LOG = "Failed to copy to clipboard: ";
 
-export default function BtnCopy({ className, value }: Props) {
+export default function BtnCopy({ className, text, value }: Props) {
+  let size: "icon" | "default" = "icon";
+  if (text) {
+    size = "default";
+  }
+
   return (
     <Button
-      size="icon"
+      size={size}
       className={className ?? "cursor-pointer shadow-sm shadow-gray-500"}
       onClick={() => {
         (async () => {
@@ -30,7 +36,7 @@ export default function BtnCopy({ className, value }: Props) {
         });
       }}
     >
-      <Copy />
+      <Copy /> {text}
     </Button>
   );
 }

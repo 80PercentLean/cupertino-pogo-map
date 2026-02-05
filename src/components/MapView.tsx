@@ -8,7 +8,7 @@ import LeafletDebug from "./LeafletDebug";
 import MyLocationMarker from "./MyLocationMarker";
 import PlacedMarkers from "./PlacedMarkers";
 import StdRaidPath from "./StdRaidPath";
-import { useStore } from "./hooks/store";
+import { useIsLayerOn, useStore } from "./hooks/store";
 import DevPois from "./poi/DevPois";
 import Gyms from "./poi/Gyms";
 import MeetupSpots from "./poi/MeetupSpots";
@@ -30,19 +30,19 @@ const IS_MOBILE = isMobileUa();
  * The app's Leaflet map.
  */
 export default function MapView() {
+  const isGymLayerOn = useIsLayerOn("gym");
+  const isPokestopLayerOn = useIsLayerOn("pokestop");
+  const isPowerspotLayerOn = useIsLayerOn("powerspot");
   const mapType = useStore((s) => s.mapType);
-  const showDevPois = useStore((s) => s.layers.devpois);
-  const showGyms = useStore((s) => s.layers.gyms);
-  const showL13Grid = useStore((s) => s.layers.l13);
-  const showL14Grid = useStore((s) => s.layers.l14);
-  const showL17Grid = useStore((s) => s.layers.l17);
-  const showLabels = useStore((s) => s.layers.labels);
-  const showMeetupSpots = useStore((s) => s.layers.meetupSpots);
-  const showParking = useStore((s) => s.layers.parking);
-  const showPokeStops = useStore((s) => s.layers.pokestops);
-  const showPowerSpots = useStore((s) => s.layers.powerspots);
-  const showRaidPath = useStore((s) => s.layers.raidPath);
-  const showRestrooms = useStore((s) => s.layers.restrooms);
+  // const showDevPois = useStore((s) => s.layers.devpois);
+  // const showL13Grid = useStore((s) => s.layers.l13);
+  // const showL14Grid = useStore((s) => s.layers.l14);
+  // const showL17Grid = useStore((s) => s.layers.l17);
+  // const showLabels = useStore((s) => s.layers.labels);
+  // const showMeetupSpots = useStore((s) => s.layers.meetupSpots);
+  // const showParking = useStore((s) => s.layers.parking);
+  // const showRaidPath = useStore((s) => s.layers.raidPath);
+  // const showRestrooms = useStore((s) => s.layers.restrooms);
 
   let tileLayer;
   switch (mapType) {
@@ -110,18 +110,18 @@ export default function MapView() {
     >
       <LeafletDebug />
       {tileLayer}
-      {showLabels && <Labels />}
+      {/* {showLabels && <Labels />}
       {showDevPois && <DevPois />}
-      {showRestrooms && <Restrooms />}
-      {showPokeStops && <PokeStops />}
-      {showPowerSpots && <PowerSpots />}
-      {showGyms && <Gyms />}
-      {showMeetupSpots && <MeetupSpots />}
+      {showRestrooms && <Restrooms />} */}
+      {isPowerspotLayerOn && <PowerSpots />}
+      {isPokestopLayerOn && <PokeStops />}
+      {isGymLayerOn && <Gyms />}
+      {/* {showMeetupSpots && <MeetupSpots />}
       {showParking && <Parking />}
       {showL17Grid && <L17Grid />}
       {showL14Grid && <L14Grid />}
       {showL13Grid && <L13Grid />}
-      {showRaidPath && <StdRaidPath />}
+      {showRaidPath && <StdRaidPath />} */}
       <PlacedMarkers />
       <MyLocationMarker data-testid="marker-my-location" />
     </MapContainer>

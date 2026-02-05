@@ -50,7 +50,7 @@ export const pokestopsJson = JSON.parse(pokestops) as FeatureCollection<
   Point,
   CProperties
 >;
-export const powerSpotsJson = JSON.parse(powerSpots) as FeatureCollection<
+export const powerspotsJson = JSON.parse(powerSpots) as FeatureCollection<
   Point,
   CProperties
 >;

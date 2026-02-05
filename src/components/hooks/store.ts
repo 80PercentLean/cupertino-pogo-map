@@ -1,3 +1,5 @@
+import { gymsJson, pokestopsJson, powerspotsJson } from "@/geojson/data";
+import { type CProperties } from "@/types";
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 
@@ -5,7 +7,28 @@ export type layerType = keyof StoreState["layers"];
 
 export type modifierType = keyof StoreState["modifiers"];
 
-interface StoreState {
+/** State for an individual marker. */
+export interface MarkerState {
+  /** Show the marker when true. */
+  isVisible?: boolean;
+
+  /** Show the interaction radius around the marker when true. */
+  showInteractionRadius?: boolean;
+
+  /** Show the no CA POI build zone around the marker  when true. */
+  showNoCaPoiZones?: boolean;
+
+  /** Show the no power spot build zone around the marker when true. */
+  showNoPowerSpotZones?: boolean;
+}
+
+export interface StoreState {
+  /** Controls which popup is currently open. */
+  activePopup: string | null;
+
+  // /** Clear marker type. */
+  // clearMarkerAll(id: string, type: CProperties["type"]): void;
+
   /** Disable all animations in the app when true. */
   disableAnimations: boolean;
 
@@ -15,50 +38,60 @@ interface StoreState {
   /** Open the list view when true. */
   isListViewOpen: boolean;
 
-  /** Flags that determine which map layers are visible. */
-  layers: {
-    devpois: boolean;
+  // /** Flags that determine which map layers are visible. */
+  // layers: {
+  //   devpois: boolean;
 
-    gyms: boolean;
+  //   gym: boolean;
 
-    hiddenPois: boolean;
+  //   hiddenPois: boolean;
 
-    inactivePois: boolean;
+  //   inactivePois: boolean;
 
-    /** Shows range in which POIs are interactable. */
-    interactionRadii: boolean;
+  //   /** Shows range in which POIs are interactable. */
+  //   interactionRadii: boolean;
 
-    l13: boolean;
+  //   l13: boolean;
 
-    l14: boolean;
+  //   l14: boolean;
 
-    l17: boolean;
+  //   l17: boolean;
 
-    labels: boolean;
+  //   labels: boolean;
 
-    meetupSpots: boolean;
+  //   meetupSpots: boolean;
 
-    /** Shows zone where Community Ambassador POIs cannot be built when true. */
-    noCaPoiZones: boolean;
+  //   /** Shows zone where Community Ambassador POIs cannot be built when true. */
+  //   noCaPoiZones: boolean;
 
-    /** Shows zone where power spots cannot be built when true. */
-    noPowerSpotZones: boolean;
+  //   /** Shows zone where power spots cannot be built when true. */
+  //   noPowerSpotZones: boolean;
 
-    parking: boolean;
+  //   parking: boolean;
 
-    pokestops: boolean;
+  //   pokestop: boolean;
 
-    powerspots: boolean;
+  //   powerspot: boolean;
 
-    raidPath: boolean;
+  //   raidPath: boolean;
 
-    removedPois: boolean;
+  //   removedPois: boolean;
 
-    restrooms: boolean;
-  };
+  //   restrooms: boolean;
+  // };
 
-  /** Flags that determine which popup is open or close for each marker. */
-  markerPopups: Record<string, boolean>;
+  /** State for Gym markers. */
+  markergym: Record<string, MarkerState>;
+
+  // TODO: Rename marker to layer for all these properties
+  /** State for labels. */
+  markerlabel: Record<string, MarkerState>;
+
+  /** State for PokeStop markers. */
+  markerpokestop: Record<string, MarkerState>;
+
+  /** State for Power Spot markers. */
+  markerpowerspot: Record<string, MarkerState>;
 
   /** Flags that determine which modifiers are applied to map layers. */
   modifiers: {
@@ -77,17 +110,32 @@ interface StoreState {
   /** Value for geolocation position accuracy. */
   myLocationAccuracy: number | null;
 
+  /** Set the activePopup value. */
+  setActivePopup: (val: string | null) => void;
+
   /** Set the disableAnimations value. */
   setDisableAnimations: (val: StoreState["disableAnimations"]) => void;
 
   /** Set the isListViewOpen value. */
   setIsListViewOpen: (val: boolean) => void;
 
+  /** Set all marker values for a layer. */
+  setLayer: (
+    type: CProperties["type"],
+    state: MarkerState,
+    override?: boolean,
+  ) => void;
+
   /** Set the mapType value. */
   setMapType: (val: StoreState["mapType"]) => void;
 
-  /** Set a value for a markerPopups property */
-  setMarkerPopup: (id: string, val: boolean) => void;
+  /** Set a marker property value. */
+  setMarker: (
+    type: CProperties["type"],
+    id: string,
+    state: MarkerState,
+    override?: boolean,
+  ) => void;
 
   /** Set the myLocationAccuracy value. */
   setMyLocation: (val: StoreState["myLocation"]) => void;
@@ -98,11 +146,11 @@ interface StoreState {
   /** Set the wayfarerMode value. */
   setWayfarerMode: (val: StoreState["wayfarerMode"]) => void;
 
-  /** Toggle a invertCoords value. */
+  /** Toggle invertCoords value. */
   toggleInvertCoords: () => void;
 
-  /** Toggle a layer value. */
-  toggleLayer: (layer: layerType) => void;
+  /** Toggle isListViewOpen value. */
+  toggleIsListViewOpen: () => void;
 
   /** Toggle a modifier value. */
   toggleModifier: (modifier: modifierType) => void;
@@ -116,149 +164,215 @@ interface StoreState {
  */
 export const useStore = create<StoreState>()(
   devtools(
-    (set) => ({
-      // Disable animations by default for E2E tests to allow visual tests to perform consistently
-      disableAnimations: import.meta.env.VITE_E2E ? true : false,
+    (set) => {
+      const initStoreState: StoreState = {
+        activePopup: null,
 
-      // Copied & pasted coordinates will be formatted as `lat,lng` by default
-      invertCoords: false,
+        // Disable animations by default for E2E tests to allow visual tests to perform consistently
+        disableAnimations: import.meta.env.VITE_E2E ? true : false,
 
-      // TODO:Start with opened list view on desktop and a closed one on mobile
-      isListViewOpen: true,
+        // Copied & pasted coordinates will be formatted as `lat,lng` by default
+        invertCoords: false,
 
-      layers: {
-        devpois: false,
+        // TODO:Start with opened list view on desktop and a closed one on mobile
+        isListViewOpen: true,
 
-        gyms: true,
+        // Map type starts off as default
+        mapType: "default",
 
-        interactionRadii: false,
+        // Values are initialized below
+        markergym: {},
 
-        l13: false,
+        markerlabel: {},
 
-        l14: false,
+        markerpokestop: {},
 
-        l17: false,
+        markerpowerspot: {},
 
-        labels: true,
+        modifiers: {
+          hidden: true,
 
-        meetupSpots: true,
+          inactive: true,
 
-        parking: true,
+          removed: false,
+        },
 
-        pokestops: true,
+        // myLocation starts as null until my location functionality is enabled
+        myLocation: null,
 
-        powerspots: true,
+        // myLocationAccuracy starts as null until my location functionality is enabled
+        myLocationAccuracy: null,
 
-        raidPath: true,
+        setActivePopup: (val: string | null) =>
+          set(() => ({ activePopup: val }), undefined, "setActivePopup"),
 
-        restrooms: true,
-      },
+        setDisableAnimations: (val: StoreState["disableAnimations"]) =>
+          set(() => ({ disableAnimations: val })),
 
-      // Map type starts off as default
-      mapType: "default",
+        setLayer: (
+          type: CProperties["type"],
+          state: MarkerState,
+          override?: boolean,
+        ) =>
+          set(
+            (s) => {
+              const newState: Record<string, Record<string, MarkerState>> = {
+                [`marker${type}`]: {},
+              };
 
-      markerPopups: {},
+              const ALL_IDS = Object.keys(s[`marker${type}`]);
 
-      modifiers: {
-        hidden: true,
+              if (override) {
+                ALL_IDS.forEach((id) => {
+                  // Completely override a marker's state
+                  newState[`marker${type}`][id] = state;
+                });
+              }
 
-        inactive: true,
+              // Merge new state with current state for a marker
+              ALL_IDS.forEach((id) => {
+                newState[`marker${type}`][id] = {
+                  ...s[`marker${type}`][id],
+                  ...state,
+                };
+              });
 
-        removed: false,
-      },
-
-      // myLocation starts as null until my location functionality is enabled
-      myLocation: null,
-
-      // myLocationAccuracy starts as null until my location functionality is enabled
-      myLocationAccuracy: null,
-
-      // showHiddenPois starts as false to hide the hidden POIs by default
-      showHiddenPois: false,
-
-      setDisableAnimations: (val: StoreState["disableAnimations"]) =>
-        set(() => ({ disableAnimations: val })),
-
-      setMapType: (val: StoreState["mapType"]) =>
-        set(() => ({ mapType: val }), undefined, "setMapType"),
-
-      setMarkerPopup: (key: string, val: boolean) =>
-        set(
-          (s) => ({
-            markerPopups: {
-              ...s.markerPopups,
-              [key]: val,
+              return newState;
             },
-          }),
-          undefined,
-          "setMarkerPopup",
-        ),
+            undefined,
+            "setLayer",
+          ),
 
-      setMyLocation: (val: StoreState["myLocation"]) =>
-        set(
-          () => ({
-            myLocation: val,
-          }),
-          undefined,
-          "setMyLocation",
-        ),
+        setMarker: (
+          type: CProperties["type"],
+          id: string,
+          state: MarkerState,
+          override?: boolean,
+        ) =>
+          set(
+            (s) => {
+              if (override) {
+                // Completely override a marker's state
+                return {
+                  [`marker${type}`]: {
+                    ...s[`marker${type}`],
+                    [id]: state,
+                  },
+                };
+              }
 
-      setMyLocationAccuracy: (val: StoreState["myLocationAccuracy"]) =>
-        set(
-          () => ({
-            myLocationAccuracy: val,
-          }),
-          undefined,
-          "setLocationAccuracy",
-        ),
-
-      setIsListViewOpen: (val: StoreState["isListViewOpen"]) =>
-        set(
-          () => ({
-            isListViewOpen: val,
-          }),
-          undefined,
-          "setIsListViewOpen",
-        ),
-
-      setWayfarerMode: (val: StoreState["wayfarerMode"]) =>
-        set(() => ({ wayfarerMode: val }), undefined, "setWayfarerMode"),
-
-      toggleInvertCoords: () =>
-        set(
-          (s) => ({
-            invertCoords: !s.invertCoords,
-          }),
-          undefined,
-          "toggleInvertCoords",
-        ),
-
-      toggleLayer: (l: keyof StoreState["layers"]) =>
-        set(
-          (s) => ({
-            layers: {
-              ...s.layers,
-              [l]: !s.layers[l],
+              // Merge new state with current state for a marker
+              return {
+                [`marker${type}`]: {
+                  ...s[`marker${type}`],
+                  [id]: {
+                    ...s[`marker${type}`][id],
+                    ...state,
+                  },
+                },
+              };
             },
-          }),
-          undefined,
-          "toggleLayer",
-        ),
+            undefined,
+            "setMarker",
+          ),
 
-      toggleModifier: (m: keyof StoreState["modifiers"]) =>
-        set(
-          (s) => ({
-            modifiers: {
-              ...s.modifiers,
-              [m]: !s.modifiers[m],
-            },
-          }),
-          undefined,
-          "toggleModifier",
-        ),
+        setMapType: (val: StoreState["mapType"]) =>
+          set(() => ({ mapType: val }), undefined, "setMapType"),
 
-      wayfarerMode: true,
-    }),
+        setMyLocation: (val: StoreState["myLocation"]) =>
+          set(
+            () => ({
+              myLocation: val,
+            }),
+            undefined,
+            "setMyLocation",
+          ),
+
+        setMyLocationAccuracy: (val: StoreState["myLocationAccuracy"]) =>
+          set(
+            () => ({
+              myLocationAccuracy: val,
+            }),
+            undefined,
+            "setLocationAccuracy",
+          ),
+
+        setIsListViewOpen: (val: StoreState["isListViewOpen"]) =>
+          set(
+            () => ({
+              isListViewOpen: val,
+            }),
+            undefined,
+            "setIsListViewOpen",
+          ),
+
+        setWayfarerMode: (val: StoreState["wayfarerMode"]) =>
+          set(() => ({ wayfarerMode: val }), undefined, "setWayfarerMode"),
+
+        toggleInvertCoords: () =>
+          set(
+            (s) => ({
+              invertCoords: !s.invertCoords,
+            }),
+            undefined,
+            "toggleInvertCoords",
+          ),
+
+        toggleIsListViewOpen: () => {
+          set(
+            (s) => ({ isListViewOpen: !s.isListViewOpen }),
+            undefined,
+            "toggleIsListViewOpen",
+          );
+        },
+
+        toggleModifier: (m: keyof StoreState["modifiers"]) =>
+          set(
+            (s) => ({
+              modifiers: {
+                ...s.modifiers,
+                [m]: !s.modifiers[m],
+              },
+            }),
+            undefined,
+            "toggleModifier",
+          ),
+
+        wayfarerMode: true,
+      };
+
+      // Initialize marker states for each layer
+      gymsJson.features.forEach(({ id }) => {
+        initStoreState.markergym[String(id)] = { isVisible: true };
+      });
+
+      pokestopsJson.features.forEach(({ id }) => {
+        initStoreState.markerpokestop[String(id)] = { isVisible: true };
+      });
+
+      powerspotsJson.features.forEach(({ id }) => {
+        initStoreState.markerpowerspot[String(id)] = { isVisible: false };
+      });
+
+      return initStoreState;
+    },
     { name: "cpm-storage" },
   ),
 );
+
+/**
+ * Determines if a layer is considered on or off.
+ * @param type Layer type
+ * @returns True if the layer is on, false if it is off
+ */
+export const useIsLayerOn = (type: CProperties["type"]) =>
+  useStore((s) => {
+    // If even 1 marker is visible in a layer, the layer is considered on
+    for (const { isVisible } of Object.values(s[`marker${type}`])) {
+      if (isVisible) {
+        return true;
+      }
+    }
+
+    return false;
+  });

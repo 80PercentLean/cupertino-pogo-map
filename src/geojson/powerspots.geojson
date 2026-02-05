@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "name": "Abundant Life Assembly Of God",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Eyeball",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -21,7 +21,7 @@
       "type": "Feature",
       "properties": {
         "name": "Aidens Gazebo at Memorial Park",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "83abb8e46af44228a9b285ddbc18fc68.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -39,7 +39,7 @@
       "type": "Feature",
       "properties": {
         "name": "Amazing Vijay - Magician",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Campfire",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -55,7 +55,7 @@
       "type": "Feature",
       "properties": {
         "name": "American Builders Construction Group Cupertino",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Campfire",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -71,7 +71,7 @@
       "type": "Feature",
       "properties": {
         "name": "Ballet lady with butterfly",
-        "type": "Power Spot",
+        "type": "powerspot",
         "inactive": true,
         "photo": "50e752185d5e3c6cbf30912d632f715c.16.jpg",
         "source": "Wayfarer",
@@ -89,7 +89,7 @@
       "type": "Feature",
       "properties": {
         "name": "Beautiful Chaos",
-        "type": "Power Spot",
+        "type": "powerspot",
         "inactive": true,
         "photo": "c4a155f41af749de9aeaab9301a1bcf2.12.jpg",
         "source": "Wayfarer",
@@ -108,7 +108,7 @@
       "type": "Feature",
       "properties": {
         "name": "Bicycle Rack",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "29a0dba42c2d4cac8def7f6cf3751afb.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -126,7 +126,7 @@
       "type": "Feature",
       "properties": {
         "name": "Bleachers at Memorial Park",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "307b4313a9f93e70a83c0b7f03fb3e93.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
@@ -143,7 +143,7 @@
       "type": "Feature",
       "properties": {
         "name": "Bright Skeleton Shark",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "be4e0108d56438c89d14d6c71a83f6df.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
@@ -160,7 +160,7 @@
       "type": "Feature",
       "properties": {
         "name": "Bunny Stop",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "7721b502178030189962d6c764622c4c.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
@@ -177,7 +177,7 @@
       "type": "Feature",
       "properties": {
         "name": "California History Center",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Eyeball",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -193,7 +193,7 @@
       "type": "Feature",
       "properties": {
         "name": "Church of Jesus Christ of Latter Day Saints",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -209,7 +209,7 @@
       "type": "Feature",
       "properties": {
         "name": "Cupertino Bike Route: To Rancho San Antonio",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "f58448e2bed1351d811fa16628d53c29.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
@@ -226,7 +226,7 @@
       "type": "Feature",
       "properties": {
         "name": "Cupertino Historical Society",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "a973a46573844e84bfe3f06280c06603.12.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -244,7 +244,7 @@
       "type": "Feature",
       "properties": {
         "name": "Cupertino Senior Center",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Eyeball",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -260,7 +260,7 @@
       "type": "Feature",
       "properties": {
         "name": "Cupertino Taproom",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -277,7 +277,7 @@
       "properties": {
         "name": "Cupertino Victorian Dollhouse",
         "inactive": true,
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "fd6205448fd6308bbe897ad2956b1c65.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
@@ -294,14 +294,14 @@
       "type": "Feature",
       "properties": {
         "name": "De Anza College Fujitsu Planetarium",
-        "type": "Power Spot",
-        "source": "Eyeball",
+        "type": "powerspot",
+        "source": "Campfire",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04662024974824, 37.317666526690516],
+        "coordinates": [-122.04673, 37.317699],
         "type": "Point"
       },
       "id": "overture-eaa72360-4551-4be8-ade1-2f132820d53d"
@@ -310,7 +310,7 @@
       "type": "Feature",
       "properties": {
         "name": "De Anza College Plaque",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "c3adc001297c49458120c74dcfeb42dd.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -328,7 +328,7 @@
       "type": "Feature",
       "properties": {
         "name": "De Anza College Pool",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Eyeball",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -344,7 +344,7 @@
       "type": "Feature",
       "properties": {
         "name": "De Anza College Stadium & Track",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Eyeball",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -360,7 +360,7 @@
       "type": "Feature",
       "properties": {
         "name": "De Anza College Stone",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "e89c02c00b574b2e98f6fac7f2d40e34.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -378,7 +378,7 @@
       "type": "Feature",
       "properties": {
         "name": "De Anza Expedition",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "e168c5fe6bbe4d00af77d88a26bef382.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -396,7 +396,7 @@
       "type": "Feature",
       "properties": {
         "name": "De Anza Instrument Music Building",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "5ac385a466373981bc0c0a14d30762ef.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -414,7 +414,7 @@
       "type": "Feature",
       "properties": {
         "name": "DeAnza College Carving",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "ad5bd7b034df4bd683a7e484b9494944.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -432,7 +432,7 @@
       "type": "Feature",
       "properties": {
         "name": "DeAnza Mosaics",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "4e85e7bae0d641f5a8944aca10a21163.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -450,7 +450,7 @@
       "type": "Feature",
       "properties": {
         "name": "Dionysus",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "5333cc20d862479f8f762e663840e77f.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -468,7 +468,7 @@
       "type": "Feature",
       "properties": {
         "name": "Donation Tile Mosaic",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "aa4b99f74b37475e88668217c67b4fb8.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -486,7 +486,7 @@
       "type": "Feature",
       "properties": {
         "name": "Dream Boat",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "09373f8c231f4e0fb8b4f0e566c200bb.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -504,7 +504,7 @@
       "type": "Feature",
       "properties": {
         "name": "East Cottage",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "bc9c6d92a7ab493e83f338d7a12a0458.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -522,7 +522,7 @@
       "type": "Feature",
       "properties": {
         "name": "Enjoy Smoke-Free Parks",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "8ccbc9eef9fb3fb6a4b913048bcccdb7.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
@@ -539,7 +539,7 @@
       "type": "Feature",
       "properties": {
         "name": "Faria CDC",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -555,7 +555,7 @@
       "type": "Feature",
       "properties": {
         "name": "Glenbrook Main Fountain",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "20fcc9a406f54509836994e74315f1ec.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -573,7 +573,7 @@
       "type": "Feature",
       "properties": {
         "name": "Golden misery",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "b5678756c7273e839e79f4619d3f5844.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -591,7 +591,7 @@
       "type": "Feature",
       "properties": {
         "name": "Home Of Christ IN Cupertino",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Eyeball",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -607,7 +607,7 @@
       "type": "Feature",
       "properties": {
         "name": "Ike''s Love & Sandwiches",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Eyeball",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -623,7 +623,7 @@
       "type": "Feature",
       "properties": {
         "name": "In memory of Virginia J. Logan",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "b30f61b279c93f489023653df85f8cc7.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
@@ -640,7 +640,7 @@
       "type": "Feature",
       "properties": {
         "name": "L-Quad Mosaic 2",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "f68d946a0cbd40cc8744e21fa0fe06d5.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -658,7 +658,7 @@
       "type": "Feature",
       "properties": {
         "name": "La Vita É Una Fontana",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "9bc3e5e15754404da54b3d9d120db8d8.11.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -676,7 +676,7 @@
       "type": "Feature",
       "properties": {
         "name": "Leaning Tower of DeAnza",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "89a9f12ca4a64c1ea910487437ff5660.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -694,7 +694,7 @@
       "type": "Feature",
       "properties": {
         "name": "Lifetime Tennis",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Eyeball",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -710,7 +710,7 @@
       "type": "Feature",
       "properties": {
         "name": "Lotus Fountain",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "9b1ff7ea938346a38cbc38d08ad9a49f.11.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -728,7 +728,7 @@
       "type": "Feature",
       "properties": {
         "name": "Made by TessS Embroidery",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Campfire",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -744,7 +744,7 @@
       "type": "Feature",
       "properties": {
         "name": "Magda Lattin Trinom",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "fd2196a55a8a4728b5783dfecd34c62e.11.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -762,7 +762,7 @@
       "type": "Feature",
       "properties": {
         "name": "Mary Avenue Dog Park",
-        "type": "Power Spot",
+        "type": "powerspot",
         "inactive": true,
         "source": "Eyeball",
         "marker-color": "#ff40ff",
@@ -779,7 +779,7 @@
       "type": "Feature",
       "properties": {
         "name": "Mary Avenue Dog Park Dedication Plaque",
-        "type": "Power Spot",
+        "type": "powerspot",
         "inactive": true,
         "photo": "a4a6271d6ce330cab1c5741b1e86f407.16.jpg",
         "source": "Wayfarer",
@@ -800,7 +800,7 @@
       "type": "Feature",
       "properties": {
         "name": "McClellan Terrace Apartments",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Campfire",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -816,7 +816,7 @@
       "type": "Feature",
       "properties": {
         "name": "Memorial Park",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Eyeball",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -832,7 +832,7 @@
       "type": "Feature",
       "properties": {
         "name": "Memorial Park BBQ Spot A",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "cc6014b6bc9f36e59a178a8ad750e43f.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
@@ -849,7 +849,7 @@
       "type": "Feature",
       "properties": {
         "name": "Memorial Park BBQ Spot B",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "0d65c50b28de3aafae85ad96e12cf811.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
@@ -866,7 +866,7 @@
       "type": "Feature",
       "properties": {
         "name": "Memorial Park Picnic Area Sign",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "ad00c2d425553236b3e3dfb3b5c35367.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -884,7 +884,7 @@
       "type": "Feature",
       "properties": {
         "name": "Memorial Park Rules East Sign",
-        "type": "Power Spot",
+        "type": "powerspot",
         "inactive": true,
         "photo": "43724c577be53244ac28e9ce54916d49.16.jpg",
         "source": "Wayfarer",
@@ -902,7 +902,7 @@
       "type": "Feature",
       "properties": {
         "name": "Memorial Park Softball Scoreboard",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "78cde712590f339ba828d0cebd4eae04.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
@@ -919,7 +919,7 @@
       "type": "Feature",
       "properties": {
         "name": "Memorial Park Water Fountain",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "4f3aea5e10b24d9fa25d0cfc29aae42d.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -937,7 +937,7 @@
       "type": "Feature",
       "properties": {
         "name": "MLC Fountain B",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "6bc7dd2ac69541b1b5a8e801fadab86a.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -955,7 +955,7 @@
       "type": "Feature",
       "properties": {
         "name": "Mr. Sun Tea | Cupertino",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Eyeball",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -971,7 +971,7 @@
       "type": "Feature",
       "properties": {
         "name": "Muralism",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "509559c22ab1403ea688836c507e1e4d.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -989,14 +989,14 @@
       "type": "Feature",
       "properties": {
         "name": "Nina Piano Lessons",
-        "type": "Power Spot",
-        "source": "Eyeball",
+        "type": "powerspot",
+        "source": "Campfire",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.03864090501474, 37.32686126350964],
+        "coordinates": [-122.038658, 37.326859],
         "type": "Point"
       },
       "id": "overture-3afe6cc1-80c2-4d7d-8efa-8b2c06959d4b"
@@ -1005,7 +1005,7 @@
       "type": "Feature",
       "properties": {
         "name": "NW Entrance to Memorial Park",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "49dd51f3fbd03847bd1bf7eb59d37638.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
@@ -1022,7 +1022,7 @@
       "type": "Feature",
       "properties": {
         "name": "Pagan Totem Pole",
-        "type": "Power Spot",
+        "type": "powerspot",
         "inactive": true,
         "photo": "6fd708ea77d84a2ab8e2b5d94a8c9928.16.jpg",
         "source": "Wayfarer",
@@ -1041,7 +1041,7 @@
       "type": "Feature",
       "properties": {
         "name": "Panda Express",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Eyeball",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -1057,7 +1057,7 @@
       "type": "Feature",
       "properties": {
         "name": "Picnic and BBQ pit",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "901e917e9c4f3cf198d04b6bc5e32ef8.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
@@ -1074,7 +1074,7 @@
       "type": "Feature",
       "properties": {
         "name": "Quad Mosaic - West",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "a51a102d011040e4967ef044b63e66d8.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -1092,7 +1092,7 @@
       "type": "Feature",
       "properties": {
         "name": "Richard Kent Memorial",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "5713b98e832f48188235aa3c7d9293cd.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -1110,7 +1110,7 @@
       "type": "Feature",
       "properties": {
         "name": "Robert A. Potthast Memorial Bench",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "7e526d2f69924b8c9b92e2ee961c6136.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -1128,7 +1128,7 @@
       "type": "Feature",
       "properties": {
         "name": "Shelf of Skulls",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "560f9f27a1444b8c8346d158317ecad0.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -1146,7 +1146,7 @@
       "type": "Feature",
       "properties": {
         "name": "Shell",
-        "type": "Power Spot",
+        "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -1161,7 +1161,7 @@
       "type": "Feature",
       "properties": {
         "name": "Sister Cities Bench",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "289e551ab1b3301b8dec4fde37f2bdca.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -1179,7 +1179,7 @@
       "type": "Feature",
       "properties": {
         "name": "Smoke-Free Memorial Park",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "ab73728e90553414907c188d0df79dde.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
@@ -1196,7 +1196,7 @@
       "type": "Feature",
       "properties": {
         "name": "Stellar Motion",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "531d9c60fd7446068c0c9c154ec702e5.16.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -1214,7 +1214,7 @@
       "type": "Feature",
       "properties": {
         "name": "Tasty Pizza",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Eyeball",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -1230,7 +1230,7 @@
       "type": "Feature",
       "properties": {
         "name": "The Commons Entrance",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "2e41444e74343603bf7303d73dcde267.16.jpg",
         "source": "Wayfarer",
         "marker-color": "#ff40ff",
@@ -1247,7 +1247,7 @@
       "type": "Feature",
       "properties": {
         "name": "Toyokawa Stone Lantern",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "31f847990f104b1bb6ac8027ec45ba4c.11.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -1265,7 +1265,7 @@
       "type": "Feature",
       "properties": {
         "name": "Turtle Sculpture",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "e6caf1f03e3b438d9efab4e86ceac208.11.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -1283,7 +1283,7 @@
       "type": "Feature",
       "properties": {
         "name": "Two as One",
-        "type": "Power Spot",
+        "type": "powerspot",
         "photo": "47c77e0e74b44eaca46574a503484946.12.jpg",
         "source": "Wayfarer",
         "ingress": true,
@@ -1301,7 +1301,7 @@
       "type": "Feature",
       "properties": {
         "name": "USS Little (DD-803) Memorial Stone",
-        "type": "Power Spot",
+        "type": "powerspot",
         "inactive": true,
         "photo": "b6dcc86d368a38ff924c0ab8e12245e7.16.jpg",
         "source": "Wayfarer",
@@ -1322,7 +1322,7 @@
       "type": "Feature",
       "properties": {
         "name": "Whole Foods Market",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Eyeball",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -1338,7 +1338,7 @@
       "type": "Feature",
       "properties": {
         "name": "Windows Corporation",
-        "type": "Power Spot",
+        "type": "powerspot",
         "source": "Eyeball",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -1354,7 +1354,7 @@
       "type": "Feature",
       "properties": {
         "name": "Women in the Military",
-        "type": "Power Spot",
+        "type": "powerspot",
         "inactive": true,
         "photo": "f172b95a768e304f803eb40f8125b124.16.jpg",
         "source": "Wayfarer",

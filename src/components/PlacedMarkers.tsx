@@ -17,9 +17,10 @@ const IS_MOBILE = isMobileUa();
  * Handles markers that are arbitrarily placed by the user.
  */
 export default function PlacedMarkers() {
-  const showInteractionRadius = useStore((s) => s.layers.interactionRadii);
-  const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
-  const showPowerSpotZones = useStore((s) => s.layers.noPowerSpotZones);
+  const activePopup = useStore((s) => s.activePopup);
+  // const showInteractionRadius = useStore((s) => s.layers.interactionRadii);
+  // const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
+  // const showPowerSpotZones = useStore((s) => s.layers.noPowerSpotZones);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const [coords, setCoords] = useState<LatLng[]>([]);
@@ -30,17 +31,24 @@ export default function PlacedMarkers() {
   }
 
   useMapEvent(mapEvent, (e) => {
-    console.log("Placed marker: ", e.latlng);
-    setCoords((prevValue) => [...prevValue, e.latlng]);
+    if (!activePopup) {
+      setCoords((prevValue) => [...prevValue, e.latlng]);
+
+      if (wayfarerMode) {
+        console.log("Placed marker: ", e.latlng);
+      }
+    }
   });
+
+  // TODO: Need to track activePopup here since it currently only tracks normal POIs
 
   return coords.map((c, i) => {
     const id = `placed-lat${c.lat},lng${c.lng}`;
     return (
       <Fragment key={id}>
-        {showNoCaPoiZones && <NoCaPoiZone latlng={c} />}
+        {/* {showNoCaPoiZones && <NoCaPoiZone latlng={c} />}
         {showInteractionRadius && <InteractionRadius latlng={c} />}
-        {showPowerSpotZones && <NoPowerSpotZone latlng={c} />}
+        {showPowerSpotZones && <NoPowerSpotZone latlng={c} />} */}
         <CMarker key={id} position={c} data-testid={id}>
           <Popup>
             <p>You placed a marker at...</p>

@@ -18,7 +18,7 @@ import { Button } from "./ui/button";
  */
 export default function ViewCtrl() {
   const isListViewOpen = useStore((s) => s.isListViewOpen);
-  const setIsListViewOpen = useStore((s) => s.setIsListViewOpen);
+  const toggleIsListViewOpen = useStore((s) => s.toggleIsListViewOpen);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const { pathname } = useLocation();
@@ -47,11 +47,7 @@ export default function ViewCtrl() {
               onClick={() => {
                 if (pathname === ROOT_PATH) {
                   // Only toggle list view when the map is active
-                  if (isListViewOpen) {
-                    setIsListViewOpen(false);
-                  } else {
-                    setIsListViewOpen(true);
-                  }
+                  toggleIsListViewOpen();
                 }
               }}
             >

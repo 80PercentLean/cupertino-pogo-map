@@ -2,28 +2,27 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { type ReactNode } from "react";
 
-import { type layerType, useStore } from "./hooks/store";
+import { type layerType } from "./hooks/store";
 
 export interface Props {
   imagery: ReactNode;
+  isActive: boolean;
   label: string;
   layerType: layerType;
+  onClick: () => void;
 }
 
-export default function BtnLayer({ imagery, label, layerType }: Props) {
-  const showLayer = useStore((s) => s.layers[layerType]);
-  const toggleLayer = useStore((s) => s.toggleLayer);
-
+export default function BtnLayer({ imagery, isActive, label, onClick }: Props) {
   let outerBorderClassName =
     "absolute mb-1 h-12 w-12 border-2 border-black bg-transparent  hover:bg-transparent ";
-  if (showLayer) {
+  if (isActive) {
     outerBorderClassName += "border-emerald-700";
   } else {
     outerBorderClassName += "group-hover:border-emerald-700";
   }
 
   let labelClassName = "text-xs ";
-  if (showLayer) {
+  if (isActive) {
     labelClassName += "text-emerald-700";
   } else {
     labelClassName += "group-hover:text-emerald-700";
@@ -32,10 +31,10 @@ export default function BtnLayer({ imagery, label, layerType }: Props) {
   return (
     <button
       className="group relative flex cursor-pointer flex-col items-center"
-      onClick={() => toggleLayer(layerType)}
+      onClick={() => onClick()}
     >
       {/* Inner border */}
-      {showLayer && (
+      {isActive && (
         <div
           className={cn(
             buttonVariants({ size: "default" }),

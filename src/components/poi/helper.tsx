@@ -1,7 +1,9 @@
 import type { LatLng, LatLngTuple } from "leaflet";
+import { Eye, EyeClosed } from "lucide-react";
 
 import BtnCopy from "../BtnCopy";
 import BtnCopyCoords from "../BtnCopyCoords";
+import { Button } from "../ui/button";
 
 /**
  * Generates the content for a POI marker.
@@ -64,6 +66,7 @@ export const genPopupContentReact = (
   desc?: string,
   img?: string,
   wayfarerMode?: boolean,
+  onHideClick?: () => void,
   renderHtml?: boolean,
 ) => {
   let description;
@@ -74,10 +77,7 @@ export const genPopupContentReact = (
   }
   return (
     <>
-      <h1 className="font-bold">
-        {title}
-        {wayfarerMode && <BtnCopy value={title} />}
-      </h1>
+      <h1 className="font-bold">{title}</h1>
       <p className="mt-0! italic">{subtitle}</p>
       {img && (
         <div className="flex justify-center">
@@ -108,15 +108,33 @@ export const genPopupContentReact = (
       </p>
       {wayfarerMode && (
         <>
-          <hr className="mt-2" />
-          <p>
-            <span className="font-bold">Latitude:</span> {latlng[0]}{" "}
-            <BtnCopy value={latlng[0]} />
-            <br />
-            <span className="font-bold">Longitude:</span> {latlng[1]}{" "}
-            <BtnCopy value={latlng[1]} />
-          </p>
+          <hr className="my-4" />
+          <BtnCopy
+            text={`Latitude: ${latlng[0]}`}
+            value={latlng[0]}
+            className="mb-2"
+          />
+          <BtnCopy
+            text={`Longitude: ${latlng[1]}`}
+            value={latlng[1]}
+            className="mb-2"
+          />
+          <BtnCopy text="Copy name" value={title} className="mr-2" />
           <BtnCopyCoords lat={latlng[0]} lng={latlng[1]} />
+          <div className="mt-2">
+            {onHideClick && (
+              <Button
+                variant="outline"
+                size="icon"
+                title="Hide"
+                className="group cursor-pointer rounded-full"
+                onClick={() => onHideClick()}
+              >
+                <Eye className="group-hover:hidden" />
+                <EyeClosed className="hidden group-hover:block" />
+              </Button>
+            )}
+          </div>
         </>
       )}
     </>

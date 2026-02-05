@@ -22,21 +22,30 @@ export interface Props {
 
 export default function GymMarker({
   desc,
-  latlng,
   id,
+  latlng,
   removed,
   subtitle,
   title,
   photo,
 }: Props) {
-  const isPopupOpen = useStore((s) => s.markerPopups[id]);
-  const showInteractionRadius = useStore((s) => s.layers.interactionRadii);
-  const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
-  const showPowerSpotZones = useStore((s) => s.layers.noPowerSpotZones);
+  const activePopup = useStore((s) => s.activePopup);
+  const setMarker = useStore((s) => s.setMarker);
+  // const showInteractionRadius = useStore((s) => s.layers.interactionRadii);
+  // const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
+  // const showPowerSpotZones = useStore((s) => s.layers.noPowerSpotZones);
+  const setActivePopup = useStore((s) => s.setActivePopup);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
-  const setMarkerPopup = useStore((s) => s.setMarkerPopup);
 
   const markerRef = useRef<L.Marker | null>(null);
+
+  const isPopupOpen = activePopup && activePopup === id;
+
+  const onHideClick = () => {
+    setMarker("gym", id, { isVisible: false });
+    // Hack to prevent placing marker immediately on hide
+    setTimeout(() => setActivePopup(null), 0);
+  };
 
   useEffect(() => {
     if (removed && markerRef.current) {
@@ -54,18 +63,18 @@ export default function GymMarker({
 
   return (
     <>
-      {!removed && showNoCaPoiZones && <NoCaPoiZone latlng={latlng} />}
+      {/* {!removed && showNoCaPoiZones && <NoCaPoiZone latlng={latlng} />}
       {!removed && showInteractionRadius && (
         <InteractionRadius latlng={latlng} />
       )}
-      {!removed && showPowerSpotZones && <NoPowerSpotZone latlng={latlng} />}
+      {!removed && showPowerSpotZones && <NoPowerSpotZone latlng={latlng} />} */}
       <CMarker
         ref={markerRef}
         icon={iconGym}
         position={latlng}
         eventHandlers={{
-          click: () => setMarkerPopup(id, true),
-          popupclose: () => setMarkerPopup(id, false),
+          click: () => setActivePopup(id),
+          popupclose: () => setActivePopup(null),
         }}
       >
         {isPopupOpen && (
@@ -77,6 +86,7 @@ export default function GymMarker({
               desc,
               photo,
               wayfarerMode,
+              onHideClick,
             )}
           </Popup>
         )}

@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-import { useMap, useMapEvents } from "react-leaflet";
+import { useMapEvents } from "react-leaflet";
 
 import { MapContext } from "./MapContext";
 import { useStore } from "./hooks/store";
@@ -11,9 +11,7 @@ export default function LeafletDebug() {
   const { setMap } = useContext(MapContext);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
-  const map = useMap();
-
-  useMapEvents({
+  const map = useMapEvents({
     contextmenu: (e) => {
       if (wayfarerMode) {
         console.log("[EVENT] contextmenu:", e.latlng);

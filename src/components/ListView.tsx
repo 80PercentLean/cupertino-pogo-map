@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { gymsJson, pokestopsJson, powerSpotsJson } from "@/geojson/data";
+import { gymsJson, pokestopsJson, powerspotsJson } from "@/geojson/data";
 import {
   imgGym,
   imgLeafletMarker,
@@ -7,8 +7,9 @@ import {
   imgPowerSpot,
   imgShowcase,
 } from "@/leafletIcons";
+import { type CProperties } from "@/types";
 import type { LatLngExpression } from "leaflet";
-import { Search, X } from "lucide-react";
+import { Eye, EyeClosed, Search, X } from "lucide-react";
 import { useContext, useDeferredValue, useState } from "react";
 
 import { MapContext } from "./MapContext";
@@ -19,20 +20,25 @@ import { InputGroup, InputGroupAddon, InputGroupInput } from "./ui/input-group";
 interface PoiData {
   coordinates: LatLngExpression;
   id: string;
-  name: string;
-  removed?: boolean | string;
-  type: string;
+  name: CProperties["name"];
+  removed?: CProperties["removed"];
+  subtype?: CProperties["subtype"];
+  type: CProperties["type"];
 }
 
 export default function ListView() {
   const { map } = useContext(MapContext);
+  const activePopup = useStore((s) => s.activePopup);
+  const markergym = useStore((s) => s.markergym);
+  const markerpokestop = useStore((s) => s.markerpokestop);
+  const markerpowerspot = useStore((s) => s.markerpowerspot);
+  const setActivePopup = useStore((s) => s.setActivePopup);
   const showHidden = useStore((s) => s.modifiers.hidden);
   const showInactive = useStore((s) => s.modifiers.inactive);
   const showRemoved = useStore((s) => s.modifiers.removed);
+  const setMarker = useStore((s) => s.setMarker);
   const [query, setQuery] = useState<string>("");
   const deferredQuery = useDeferredValue(query);
-
-  const setMarkerPopup = useStore((s) => s.setMarkerPopup);
 
   const pois: PoiData[] = [];
 
@@ -63,7 +69,7 @@ export default function ListView() {
   for (const {
     geometry: { coordinates },
     id,
-    properties: { hidden, name, removed, type },
+    properties: { hidden, name, removed, subtype, type },
   } of pokestopsJson.features) {
     if ((!showHidden && hidden) || (!showRemoved && removed)) {
       // Skip if hidden or removed and those modifiers are off
@@ -79,6 +85,7 @@ export default function ListView() {
         id: id as string,
         name,
         removed,
+        subtype,
         type,
       });
     }
@@ -88,7 +95,7 @@ export default function ListView() {
     geometry: { coordinates },
     id,
     properties: { hidden, inactive, name, removed, type },
-  } of powerSpotsJson.features) {
+  } of powerspotsJson.features) {
     if (
       (!showHidden && hidden) ||
       (!showInactive && inactive) ||
@@ -122,38 +129,47 @@ export default function ListView() {
 
   const results = [];
 
-  pois.forEach(({ coordinates, id, name, removed, type }) => {
+  pois.forEach(({ coordinates, id, name, removed, subtype, type }, i) => {
     let itemClassName =
-      "cursor-pointer text-sm px-4 w-full rounded-none justify-start h-12 font-normal";
+      "cursor-pointer text-sm px-4 w-full rounded-none justify-start h-12 font-normal gap-2";
+    if (i === 0) {
+      itemClassName += " mt-2";
+    }
     if (removed) {
       itemClassName += " line-through";
     }
 
     let img;
     let alt;
+    let layer;
     switch (type) {
-      case "Gym":
+      case "gym":
+        layer = markergym;
         img = imgGym;
-        alt = "Gyn Icon";
+        alt = "Gym Icon";
         break;
-      case "PokeStop":
-        img = imgPokeStop;
-        alt = "PokéStop Icon";
+      case "pokestop":
+        if (subtype === "showcase") {
+          layer = markerpokestop;
+          img = imgShowcase;
+          alt = "Showcase Icon";
+        } else {
+          layer = markerpokestop;
+          img = imgPokeStop;
+          alt = "PokéStop Icon";
+        }
         break;
-      case "Power Spot":
+      case "powerspot":
+        layer = markerpowerspot;
         img = imgPowerSpot;
         alt = "Power Spot Icon";
-        break;
-      case "Showcase":
-        img = imgShowcase;
-        alt = "Showcase Icon";
         break;
       default:
         img = imgLeafletMarker;
         alt = "Default Marker Icon";
     }
 
-    let iconClassName = "h-full w-auto object-contain";
+    const iconClassName = "h-full w-auto object-contain";
     // TODO: if hidden then make icon greyscale
 
     let nameClassName = "flex h-full items-center overflow-x-scroll";
@@ -167,12 +183,32 @@ export default function ListView() {
         variant="ghost"
         className={itemClassName}
         onClick={() => {
-          map?.flyTo(coordinates);
-          setMarkerPopup(id, true);
+          if (activePopup) {
+            setActivePopup(null);
+          }
+
+          setMarker(type, id, { isVisible: true });
+
+          // Hack to make sure the popup opens after a potential previous popup is closed
+          setTimeout(() => {
+            setActivePopup(id);
+          }, 0);
+
+          // Hack to reduce flyTo glitches breaking positions of features on the map
+          setTimeout(() => {
+            map?.flyTo(coordinates);
+          }, 1);
         }}
       >
-        <div className="relative flex h-full w-8 items-center justify-center">
+        <div className="flex h-full w-6 items-center justify-center">
           <img src={img} alt={alt} className={iconClassName} />
+        </div>
+        <div className="flex h-full w-6 items-center justify-center">
+          {layer?.[id]?.isVisible ? (
+            <Eye className="w-4" />
+          ) : (
+            <EyeClosed className="h-4 w-4" />
+          )}
         </div>
         <div className={nameClassName}>{name}</div>
       </Button>,
@@ -181,7 +217,7 @@ export default function ListView() {
 
   if (results.length === 0) {
     results.push(
-      <div className="cursor-pointer px-4 text-sm italic">
+      <div className="px-4 py-4 text-sm italic">
         No points of interest were found...
       </div>,
     );
@@ -210,7 +246,7 @@ export default function ListView() {
   );
 
   return (
-    <Card className="fixed top-0 left-0 z-999 m-2 max-h-[66vh] w-10 w-100 gap-4 pt-0">
+    <Card className="fixed top-0 left-0 z-999 m-2 max-h-[66vh] w-10 w-100 gap-0 pt-0 pb-0">
       <InputGroup className="rounded-b-none py-6">
         <InputGroupInput
           placeholder="Search for Gyms, PokéStops, etc."

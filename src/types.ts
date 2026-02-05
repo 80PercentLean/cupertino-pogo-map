@@ -58,16 +58,15 @@ export interface CProperties {
   submitter?: string;
 
   /** Type of POI or label. */
-  type:
+  type: "gym" | "label" | "pokestop" | "powerspot";
+
+  /** Subtype of a POI. */
+  subtype:
     | "All/Binary Gender Restroom"
     | "Conditionally Free Parking"
     | "Free Parking"
-    | "Gym"
-    | "Label"
     | "Men's Restroom"
-    | "PokeStop"
-    | "Power Spot"
-    | "Showcase"
+    | "showcase"
     | "Meetup Spot"
     | "Women's Restroom"
     | "?";

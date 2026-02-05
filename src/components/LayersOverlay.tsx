@@ -16,16 +16,21 @@ import { X } from "lucide-react";
 import { type Dispatch, type SetStateAction } from "react";
 
 import BtnLayer from "./BtnLayer";
-import { useStore } from "./hooks/store";
+import { useIsLayerOn, useStore } from "./hooks/store";
 
 export interface Props {
   setShowOverlay: Dispatch<SetStateAction<boolean>>;
 }
 
 export default function LayersOverlay({ setShowOverlay }: Props) {
+  const isGymLayerOn = useIsLayerOn("gym");
+  const isPokestopLayerOn = useIsLayerOn("pokestop");
+  const isPowerspotLayerOn = useIsLayerOn("powerspot");
   const mapType = useStore((s) => s.mapType);
   const setMapType = useStore((s) => s.setMapType);
+  const setLayer = useStore((s) => s.setLayer);
   const toggleLayer = useStore((s) => s.toggleLayer);
+  const setActivePopup = useStore((s) => s.setActivePopup);
   const showL13Grid = useStore((s) => s.layers.l13);
   const showL14Grid = useStore((s) => s.layers.l14);
   const showL17Grid = useStore((s) => s.layers.l17);
@@ -54,27 +59,54 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
           <FieldGroup className="flex flex-row flex-wrap gap-4">
             <Field className="w-14">
               <BtnLayer
+                isActive={isGymLayerOn}
                 imagery={<img src={imgGym} alt="Gym Layer Button Icon" />}
                 label="Gyms"
-                layerType="gyms"
+                layerType="gym"
+                onClick={() => {
+                  if (isGymLayerOn) {
+                    setLayer("gym", { isVisible: false });
+                    setActivePopup(null);
+                  } else {
+                    setLayer("gym", { isVisible: true });
+                  }
+                }}
               />
             </Field>
             <Field className="w-14">
               <BtnLayer
+                isActive={isPokestopLayerOn}
                 imagery={
                   <img src={imgPokeStop} alt="PokéStop Layer Button Icon" />
                 }
                 label="PokéStops"
-                layerType="pokestops"
+                layerType="pokestop"
+                onClick={() => {
+                  if (isPokestopLayerOn) {
+                    setLayer("pokestop", { isVisible: false });
+                    setActivePopup(null);
+                  } else {
+                    setLayer("pokestop", { isVisible: true });
+                  }
+                }}
               />
             </Field>
             <Field className="w-14">
               <BtnLayer
+                isActive={isPowerspotLayerOn}
                 imagery={
                   <img src={imgPowerSpot} alt="Power Spot Layer button Icon" />
                 }
                 label="Power Spots"
-                layerType="powerspots"
+                layerType="powerspot"
+                onClick={() => {
+                  if (isPowerspotLayerOn) {
+                    setLayer("powerspot", { isVisible: false });
+                    setActivePopup(null);
+                  } else {
+                    setLayer("powerspot", { isVisible: true });
+                  }
+                }}
               />
             </Field>
             <Field className="w-14">
