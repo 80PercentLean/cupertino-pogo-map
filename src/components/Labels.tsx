@@ -1,4 +1,4 @@
-import L from "leaflet";
+import { marker } from "leaflet";
 import { GeoJSON } from "react-leaflet";
 
 import { labelsJson } from "../geojson/data";
@@ -61,9 +61,7 @@ export default function Labels() {
             return;
         }
 
-        const marker = L.marker(latlng, { icon, interactive: false });
-
-        return marker;
+        return marker(latlng, { icon, interactive: false });
       }}
     />
   );

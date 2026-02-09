@@ -1,5 +1,5 @@
 import { stdRaidPathJson } from "@/geojson/data";
-import L, { type LatLngExpression } from "leaflet";
+import { type LatLngTuple, layerGroup, polyline } from "leaflet";
 // @ts-expect-error leaflet-ant-path doesn't have types
 import { AntPath } from "leaflet-ant-path";
 import { useEffect } from "react";
@@ -22,7 +22,7 @@ export default function StdRaidPath() {
     const COLOR = "#5a9ffc";
     let path;
     if (disableAnimations) {
-      path = L.polyline(LATLNGS as LatLngExpression[], { color: COLOR });
+      path = polyline(LATLNGS as LatLngTuple[], { color: COLOR });
     } else {
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
       path = new AntPath(LATLNGS, {
@@ -37,11 +37,11 @@ export default function StdRaidPath() {
       });
     }
 
-    const layerGroup = L.layerGroup([path]);
-    layerGroup.addTo(map);
+    const lg = layerGroup([path]);
+    lg.addTo(map);
 
     return () => {
-      layerGroup.remove();
+      lg.remove();
     };
   }, [disableAnimations, map]);
 

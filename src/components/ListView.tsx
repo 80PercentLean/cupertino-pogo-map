@@ -22,7 +22,7 @@ import {
   imgShowcase,
 } from "@/leafletIcons";
 import { type CFeatureCollection, type CProperties } from "@/types/CFeatures";
-import type { LatLngExpression } from "leaflet";
+import type { LatLngTuple } from "leaflet";
 import { Eye, EyeClosed, Search, X } from "lucide-react";
 import { useContext, useDeferredValue, useState } from "react";
 
@@ -32,7 +32,7 @@ import { Button } from "./ui/button";
 import { InputGroup, InputGroupAddon, InputGroupInput } from "./ui/input-group";
 
 interface FeatureData {
-  coordinates: LatLngExpression;
+  coordinates: LatLngTuple;
   id: string;
   name: CProperties["name"];
   removed?: CProperties["removed"];

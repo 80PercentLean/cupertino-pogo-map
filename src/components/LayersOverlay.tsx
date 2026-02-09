@@ -135,13 +135,13 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
                 label="Meetup Spots"
                 onClick={() => {
                   if (isLayerMeetupSpotOn) {
-                    setLayer("meetupspot", { isVisible: false });
+                    setLayer("meetupspot", { isVisible: false }, true);
 
                     if (activePopup.id && activePopup.type === "meetupspot") {
                       setActivePopup(null, null);
                     }
                   } else {
-                    setLayer("meetupspot", { isVisible: true });
+                    setLayer("meetupspot", { isVisible: true }, true);
                   }
                 }}
               />
@@ -153,13 +153,13 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
                 label="Parking"
                 onClick={() => {
                   if (isLayerParkingOn) {
-                    setLayer("parking", { isVisible: false });
+                    setLayer("parking", { isVisible: false }, true);
 
                     if (activePopup.id && activePopup.type === "parking") {
                       setActivePopup(null, null);
                     }
                   } else {
-                    setLayer("parking", { isVisible: true });
+                    setLayer("parking", { isVisible: true }, true);
                   }
                 }}
               />
@@ -181,13 +181,13 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
                 label="Restrooms"
                 onClick={() => {
                   if (isLayerRestroomOn) {
-                    setLayer("restroom", { isVisible: false });
+                    setLayer("restroom", { isVisible: false }, true);
 
                     if (activePopup.id && activePopup.type === "restroom") {
                       setActivePopup(null, null);
                     }
                   } else {
-                    setLayer("restroom", { isVisible: true });
+                    setLayer("restroom", { isVisible: true }, true);
                   }
                 }}
               />

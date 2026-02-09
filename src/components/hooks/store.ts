@@ -35,7 +35,7 @@ export interface StoreState {
   /** Controls which popup is currently open. */
   activePopup: {
     id: string | null;
-    type: CProperties["type"] | null;
+    type: CProperties["type"] | "placed" | null;
   };
 
   /** State for basic layers. */
@@ -146,7 +146,7 @@ export interface StoreState {
   /** Set the `activePopup` value. */
   setActivePopup: (
     id: StoreState["activePopup"]["id"] | null,
-    type: CProperties["type"] | null,
+    type: CProperties["type"] | "placed" | null,
   ) => void;
 
   /** Set the `disableAnimations` value. */
@@ -222,7 +222,7 @@ export const useStore = create<StoreState>()(
         // Copied & pasted coordinates will be formatted as `lat,lng` by default
         invertCoords: false,
 
-        // TODO:Start with opened list view on desktop and a closed one on mobile
+        // TODO: Start with opened list view on desktop and a closed one on mobile
         isListViewOpen: true,
 
         // Map type starts off as default

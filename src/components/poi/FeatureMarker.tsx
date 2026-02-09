@@ -1,5 +1,5 @@
 import type { CProperties } from "@/types/CFeatures";
-import L, { DivIcon, type LatLngTuple } from "leaflet";
+import { DivIcon, type LatLngTuple, type Marker } from "leaflet";
 import { Icon } from "leaflet";
 import { useEffect, useRef } from "react";
 import { Popup } from "react-leaflet";
@@ -47,7 +47,7 @@ export default function FeatureMarker({
   const setActivePopup = useStore((s) => s.setActivePopup);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
-  const markerRef = useRef<L.Marker | null>(null);
+  const markerRef = useRef<Marker | null>(null);
 
   const isPopupOpen = activePopup.id && activePopup.id === id;
 
