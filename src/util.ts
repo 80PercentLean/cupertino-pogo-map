@@ -18,3 +18,12 @@ export const isMobileUa = () => {
 
   return result;
 };
+
+/**
+ * Capitalize the first letter of a string.
+ * @param str Input string to capitalize
+ * @returns Capitalized version of the input string
+ */
+export const capitalize = <T extends string>(str: string): Capitalize<T> => {
+  return (str.charAt(0).toUpperCase() + str.slice(1)) as Capitalize<T>;
+};

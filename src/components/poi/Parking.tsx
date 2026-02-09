@@ -1,48 +1,31 @@
 import { parkingJson } from "@/geojson/data";
-import { type LatLngTuple } from "leaflet";
-import { Marker, Popup } from "react-leaflet";
 
 import { iconParking, iconParkingWarn } from "../../leafletIcons";
-import { useStore } from "../hooks/store";
-import { genPopupContentReact } from "./helper";
+import Features from "./Features";
 
 /**
- * Render parking.
+ * Render parking areas.
  */
 export default function Parking() {
-  const wayfarerMode = useStore((s) => s.wayfarerMode);
-
-  return parkingJson.features.map(({ geometry, properties }, i) => {
-    const latlng = [
-      geometry.coordinates[1],
-      geometry.coordinates[0],
-    ] as LatLngTuple;
-    const { desc, name, type } = properties;
-
-    let icon;
-    switch (type) {
-      case "Conditionally Free Parking":
-        icon = iconParkingWarn;
-        break;
-      default:
-        icon = iconParking;
-    }
-
-    return (
-      <Marker key={i} icon={icon} position={latlng}>
-        <Popup>
-          {genPopupContentReact(
-            name,
-            type,
-            latlng,
-            desc,
-            undefined,
-            wayfarerMode,
-            undefined,
-            true,
-          )}
-        </Popup>
-      </Marker>
-    );
-  });
+  return (
+    <Features
+      features={parkingJson.features}
+      icon={(_, subtype) => {
+        switch (subtype) {
+          case "conditionally-free":
+            return iconParkingWarn;
+          default:
+            return iconParking;
+        }
+      }}
+      renderHtml={true}
+      subtitle={(_, { subtype } = {}) => {
+        if (subtype === "conditionally-free") {
+          return "Conditionally Free Parking";
+        }
+        return "Free Parking";
+      }}
+      type="parking"
+    />
+  );
 }

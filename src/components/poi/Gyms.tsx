@@ -1,59 +1,30 @@
 import { gymsJson } from "@/geojson/data";
-import type { LatLngTuple } from "leaflet";
+import { iconGym } from "@/leafletIcons";
 
-import { useStore } from "../hooks/store";
-import GymMarker from "./GymMarker";
+import Features from "./Features";
 
 /**
  * Render gyms.
  */
 export default function Gyms() {
-  const markergym = useStore((s) => s.markergym);
-  const showHidden = useStore((s) => s.modifiers.hidden);
-  const showRemoved = useStore((s) => s.modifiers.removed);
-  const wayfarerMode = useStore((s) => s.wayfarerMode);
-
-  const markers = [];
-
-  for (const { id, geometry, properties } of gymsJson.features) {
-    const { desc, hidden, name, photo, source, removed } = properties;
-
-    if ((!showHidden && hidden) || (!showRemoved && removed)) {
-      // Skip if hidden or removed and those modifiers are off
-      continue;
-    }
-
-    if (id && markergym[id]?.isVisible) {
-      const latlng = [
-        geometry.coordinates[1],
-        geometry.coordinates[0],
-      ] as LatLngTuple;
-
-      let subtitle = "Gym";
-      if (hidden) {
-        subtitle += " (Hidden)";
-      }
-      if (removed) {
-        subtitle += " (Removed)";
-      }
-      if (wayfarerMode) {
-        subtitle += ` [${source}]`;
-      }
-
-      markers.push(
-        <GymMarker
-          key={id}
-          id={id as string}
-          desc={desc}
-          latlng={latlng}
-          removed={removed}
-          subtitle={subtitle}
-          title={name}
-          photo={photo}
-        />,
-      );
-    }
-  }
-
-  return markers;
+  return (
+    <Features
+      features={gymsJson.features}
+      icon={iconGym}
+      subtitle={(_, { hidden, removed, source, wayfarerMode } = {}) => {
+        let subtitle = "Gym";
+        if (hidden) {
+          subtitle += " (Hidden)";
+        }
+        if (removed) {
+          subtitle += " (Removed)";
+        }
+        if (wayfarerMode) {
+          subtitle += ` [${source}]`;
+        }
+        return subtitle;
+      }}
+      type="gym"
+    />
+  );
 }

@@ -1,13 +1,27 @@
 import { Card } from "@/components/ui/card";
-import { gymsJson, pokestopsJson, powerspotsJson } from "@/geojson/data";
 import {
+  devpoisJson,
+  gymsJson,
+  meetupspotsJson,
+  parkingJson,
+  pokestopsJson,
+  powerspotsJson,
+  restroomsJson,
+} from "@/geojson/data";
+import {
+  emojiAllBinaryRestroom,
+  emojiDevpoi,
+  emojiFRestroom,
+  emojiMRestroom,
+  emojiMeetupspot,
+  emojiParking,
   imgGym,
   imgLeafletMarker,
-  imgPokeStop,
-  imgPowerSpot,
+  imgPokestop,
+  imgPowerspot,
   imgShowcase,
 } from "@/leafletIcons";
-import { type CProperties } from "@/types";
+import { type CFeatureCollection, type CProperties } from "@/types/CFeatures";
 import type { LatLngExpression } from "leaflet";
 import { Eye, EyeClosed, Search, X } from "lucide-react";
 import { useContext, useDeferredValue, useState } from "react";
@@ -17,7 +31,7 @@ import { useStore } from "./hooks/store";
 import { Button } from "./ui/button";
 import { InputGroup, InputGroupAddon, InputGroupInput } from "./ui/input-group";
 
-interface PoiData {
+interface FeatureData {
   coordinates: LatLngExpression;
   id: string;
   name: CProperties["name"];
@@ -29,199 +43,223 @@ interface PoiData {
 export default function ListView() {
   const { map } = useContext(MapContext);
   const activePopup = useStore((s) => s.activePopup);
-  const markergym = useStore((s) => s.markergym);
-  const markerpokestop = useStore((s) => s.markerpokestop);
-  const markerpowerspot = useStore((s) => s.markerpowerspot);
+  const layerDevpoi = useStore((s) => s.layerDevpoi);
+  const layerGym = useStore((s) => s.layerGym);
+  const layerMeetupspot = useStore((s) => s.layerMeetupspot);
+  const layerParking = useStore((s) => s.layerParking);
+  const layerPokestop = useStore((s) => s.layerPokestop);
+  const layerPowerspot = useStore((s) => s.layerPowerspot);
+  const layerRestroom = useStore((s) => s.layerRestroom);
   const setActivePopup = useStore((s) => s.setActivePopup);
   const showHidden = useStore((s) => s.modifiers.hidden);
   const showInactive = useStore((s) => s.modifiers.inactive);
   const showRemoved = useStore((s) => s.modifiers.removed);
   const setMarker = useStore((s) => s.setMarker);
+  const wayfarerMode = useStore((s) => s.wayfarerMode);
+
   const [query, setQuery] = useState<string>("");
   const deferredQuery = useDeferredValue(query);
 
-  const pois: PoiData[] = [];
+  const buildList = (...args: CFeatureCollection["features"][]) => {
+    const featureData: FeatureData[] = [];
 
-  for (const {
-    geometry: { coordinates },
-    id,
-    properties: { hidden, name, removed, type },
-  } of gymsJson.features) {
-    if ((!showHidden && hidden) || (!showRemoved && removed)) {
-      // Skip if hidden or removed and those modifiers are off
-      continue;
-    }
-
-    if (
-      query === "" ||
-      name.toLowerCase().includes(deferredQuery.toLowerCase())
-    ) {
-      pois.push({
-        coordinates: [coordinates[1], coordinates[0]],
-        id: id as string,
-        name,
-        removed,
-        type,
-      });
-    }
-  }
-
-  for (const {
-    geometry: { coordinates },
-    id,
-    properties: { hidden, name, removed, subtype, type },
-  } of pokestopsJson.features) {
-    if ((!showHidden && hidden) || (!showRemoved && removed)) {
-      // Skip if hidden or removed and those modifiers are off
-      continue;
-    }
-
-    if (
-      query === "" ||
-      name.toLowerCase().includes(deferredQuery.toLowerCase())
-    ) {
-      pois.push({
-        coordinates: [coordinates[1], coordinates[0]],
-        id: id as string,
-        name,
-        removed,
-        subtype,
-        type,
-      });
-    }
-  }
-
-  for (const {
-    geometry: { coordinates },
-    id,
-    properties: { hidden, inactive, name, removed, type },
-  } of powerspotsJson.features) {
-    if (
-      (!showHidden && hidden) ||
-      (!showInactive && inactive) ||
-      (!showRemoved && removed)
-    ) {
-      // Skip if hidden, inactive, or removed and those modifiers are off
-      continue;
-    }
-    if (
-      query === "" ||
-      name.toLowerCase().includes(deferredQuery.toLowerCase())
-    ) {
-      pois.push({
-        coordinates: [coordinates[1], coordinates[0]],
-        id: id as string,
-        name,
-        removed,
-        type,
-      });
-    }
-  }
-
-  pois.sort((a, b) => {
-    if (a.name < b.name) {
-      return -1;
-    } else if (a.name > b.name) {
-      return 1;
-    }
-    return 0;
-  });
-
-  const results = [];
-
-  pois.forEach(({ coordinates, id, name, removed, subtype, type }, i) => {
-    let itemClassName =
-      "cursor-pointer text-sm px-4 w-full rounded-none justify-start h-12 font-normal gap-2";
-    if (i === 0) {
-      itemClassName += " mt-2";
-    }
-    if (removed) {
-      itemClassName += " line-through";
-    }
-
-    let img;
-    let alt;
-    let layer;
-    switch (type) {
-      case "gym":
-        layer = markergym;
-        img = imgGym;
-        alt = "Gym Icon";
-        break;
-      case "pokestop":
-        if (subtype === "showcase") {
-          layer = markerpokestop;
-          img = imgShowcase;
-          alt = "Showcase Icon";
-        } else {
-          layer = markerpokestop;
-          img = imgPokeStop;
-          alt = "PokéStop Icon";
-        }
-        break;
-      case "powerspot":
-        layer = markerpowerspot;
-        img = imgPowerSpot;
-        alt = "Power Spot Icon";
-        break;
-      default:
-        img = imgLeafletMarker;
-        alt = "Default Marker Icon";
-    }
-
-    const iconClassName = "h-full w-auto object-contain";
-    // TODO: if hidden then make icon greyscale
-
-    let nameClassName = "flex h-full items-center overflow-x-scroll";
-    if (removed) {
-      nameClassName += " line-through";
-    }
-
-    results.push(
-      <Button
-        key={id}
-        variant="ghost"
-        className={itemClassName}
-        onClick={() => {
-          if (activePopup) {
-            setActivePopup(null);
+    for (const currFeatures of args) {
+      if (
+        (currFeatures[0].properties.type === "gym" && layerGym) ||
+        (currFeatures[0].properties.type === "meetupspot" && layerMeetupspot) ||
+        (currFeatures[0].properties.type === "parking" && layerPokestop) ||
+        (currFeatures[0].properties.type === "pokestop" && layerPokestop) ||
+        (currFeatures[0].properties.type === "powerspot" && layerPowerspot) ||
+        (currFeatures[0].properties.type === "restroom" && layerRestroom) ||
+        (currFeatures[0].properties.type === "devpoi" && layerDevpoi)
+      ) {
+        for (const {
+          geometry: { coordinates },
+          id,
+          properties: { hidden, inactive, name, removed, subtype, type },
+        } of currFeatures) {
+          if (
+            (!showHidden && hidden) ||
+            (!showInactive && inactive) ||
+            (!showRemoved && removed) ||
+            (type === "devpoi" && !wayfarerMode)
+          ) {
+            // Skip if hidden or removed and those modifiers are off
+            continue;
           }
 
-          setMarker(type, id, { isVisible: true });
+          if (
+            query === "" ||
+            name.toLowerCase().includes(deferredQuery.toLowerCase())
+          ) {
+            featureData.push({
+              coordinates: [coordinates[1], coordinates[0]],
+              id: id as string,
+              name,
+              removed,
+              subtype,
+              type,
+            });
+          }
+        }
+      }
+    }
 
-          // Hack to make sure the popup opens after a potential previous popup is closed
-          setTimeout(() => {
-            setActivePopup(id);
-          }, 0);
+    featureData.sort((a, b) => {
+      if (a.name < b.name) {
+        return -1;
+      } else if (a.name > b.name) {
+        return 1;
+      }
+      return 0;
+    });
 
-          // Hack to reduce flyTo glitches breaking positions of features on the map
-          setTimeout(() => {
-            map?.flyTo(coordinates);
-          }, 1);
-        }}
-      >
-        <div className="flex h-full w-6 items-center justify-center">
-          <img src={img} alt={alt} className={iconClassName} />
-        </div>
-        <div className="flex h-full w-6 items-center justify-center">
-          {layer?.[id]?.isVisible ? (
-            <Eye className="w-4" />
-          ) : (
-            <EyeClosed className="h-4 w-4" />
-          )}
-        </div>
-        <div className={nameClassName}>{name}</div>
-      </Button>,
+    const list = [];
+
+    featureData.forEach(
+      ({ coordinates, id, name, removed, subtype, type }, i) => {
+        let itemClassName =
+          "cursor-pointer text-sm px-4 pr-0 w-full rounded-none justify-start h-12 font-normal gap-2";
+        if (i === 0) {
+          itemClassName += " mt-2";
+        }
+        if (removed) {
+          itemClassName += " line-through";
+        }
+
+        let layer;
+        let iconType;
+        let icon;
+        let alt;
+        switch (type) {
+          case "gym":
+            layer = layerGym;
+            iconType = "img";
+            icon = imgGym;
+            alt = "Gym Icon";
+            break;
+          case "parking":
+            layer = layerParking;
+            iconType = "emoji";
+            icon = emojiParking;
+            break;
+          case "pokestop":
+            layer = layerPokestop;
+            iconType = "img";
+            if (subtype === "showcase") {
+              icon = imgShowcase;
+              alt = "Showcase Icon";
+            } else {
+              icon = imgPokestop;
+              alt = "PokéStop Icon";
+            }
+            break;
+          case "powerspot":
+            layer = layerPowerspot;
+            iconType = "img";
+            icon = imgPowerspot;
+            alt = "Power Spot Icon";
+            break;
+          case "meetupspot":
+            layer = layerMeetupspot;
+            iconType = "emoji";
+            icon = emojiMeetupspot;
+            break;
+          case "restroom":
+            layer = layerRestroom;
+            iconType = "emoji";
+            if (subtype === "men") {
+              icon = emojiMRestroom;
+            } else if (subtype === "women") {
+              icon = emojiFRestroom;
+            } else {
+              icon = emojiAllBinaryRestroom;
+            }
+            break;
+          case "devpoi":
+            layer = layerDevpoi;
+            iconType = "emoji";
+            icon = emojiDevpoi;
+            break;
+          default:
+            iconType = "img";
+            icon = imgLeafletMarker;
+            alt = "Default Marker Icon";
+        }
+
+        const iconClassName = "h-full w-auto object-contain";
+        // TODO: if hidden then make icon greyscale
+
+        let nameClassName = "flex h-full items-center overflow-x-scroll pr-2";
+        if (removed) {
+          nameClassName += " line-through";
+        }
+
+        list.push(
+          <Button
+            key={id}
+            variant="ghost"
+            className={itemClassName}
+            onClick={() => {
+              if (activePopup.id && activePopup.id !== id) {
+                setActivePopup(null, null);
+              }
+
+              setMarker(type, id, { isVisible: true });
+
+              // Hack to make sure the popup opens after a potential previous popup is closed
+              if (activePopup.id !== id) {
+                setTimeout(() => {
+                  setActivePopup(id, type);
+                }, 0);
+              }
+
+              // Hack to reduce flyTo glitches breaking positions of features on the map
+              setTimeout(() => {
+                map?.flyTo(coordinates);
+              }, 0);
+            }}
+          >
+            <div className="flex h-full w-6 items-center justify-center">
+              {iconType === "img" ? (
+                <img src={icon} alt={alt} className={iconClassName} />
+              ) : (
+                icon
+              )}
+            </div>
+            <div className="flex h-full w-6 items-center justify-center">
+              {layer?.[id]?.isVisible ? (
+                <Eye className="w-4" />
+              ) : (
+                <EyeClosed className="h-4 w-4" />
+              )}
+            </div>
+            <div className={nameClassName}>{name}</div>
+          </Button>,
+        );
+      },
     );
-  });
 
-  if (results.length === 0) {
-    results.push(
-      <div className="px-4 py-4 text-sm italic">
-        No points of interest were found...
-      </div>,
-    );
-  }
+    if (list.length === 0) {
+      list.push(
+        <div className="px-4 py-4 text-sm italic">
+          No points of interest were found...
+        </div>,
+      );
+    }
+
+    return list;
+  };
+
+  const list = buildList(
+    gymsJson.features,
+    meetupspotsJson.features,
+    parkingJson.features,
+    pokestopsJson.features,
+    powerspotsJson.features,
+    restroomsJson.features,
+    devpoisJson.features,
+  );
 
   let btnSearchClassName;
   let btnSearchIcon;
@@ -255,7 +293,7 @@ export default function ListView() {
         />
         <InputGroupAddon align="inline-end">{btnSearch}</InputGroupAddon>
       </InputGroup>
-      <div className="h-fit overflow-x-hidden overflow-y-scroll">{results}</div>
+      <div className="h-fit overflow-x-hidden overflow-y-scroll">{list}</div>
     </Card>
   );
 }

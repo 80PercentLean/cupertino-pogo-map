@@ -1,34 +1,44 @@
-import { iconPowerSpot } from "@/leafletIcons";
-import L, { type LatLngTuple } from "leaflet";
+import type { CProperties } from "@/types/CFeatures";
+import L, { DivIcon, type LatLngTuple } from "leaflet";
+import { Icon } from "leaflet";
 import { useEffect, useRef } from "react";
 import { Popup } from "react-leaflet";
 
 import CMarker from "../CMarker";
 import { useStore } from "../hooks/store";
 // import InteractionRadius from "./InteractionRadius";
-import NoCaPoiZone from "./NoCaPoiZone";
+// import NoCaPoiZone from "./NoCaPoiZone";
 import { genPopupContentReact } from "./helper";
 
 export interface Props {
   desc?: string;
+  icon: DivIcon | Icon;
   id: string;
   inactive?: boolean;
   latlng: LatLngTuple;
   photo?: string;
   removed?: boolean | string;
-  subtitle: string;
+  renderHtml?: boolean;
+  subtitle?: string;
   title: string;
+  type: CProperties["type"];
 }
 
-export default function PowerSpotMarker({
+/**
+ * Render a marker for features such as POIs & labels.
+ */
+export default function FeatureMarker({
   desc,
   id,
   latlng,
+  icon,
   inactive,
   photo,
   removed,
+  renderHtml,
   subtitle,
   title,
+  type,
 }: Props) {
   const activePopup = useStore((s) => s.activePopup);
   const setMarker = useStore((s) => s.setMarker);
@@ -39,12 +49,12 @@ export default function PowerSpotMarker({
 
   const markerRef = useRef<L.Marker | null>(null);
 
-  const isPopupOpen = activePopup && activePopup === id;
+  const isPopupOpen = activePopup.id && activePopup.id === id;
 
   const onHideClick = () => {
-    setMarker("powerspot", id, { isVisible: false });
+    setMarker(type, id, { isVisible: false });
     // Hack to prevent placing marker immediately on hide
-    setTimeout(() => setActivePopup(null), 0);
+    setTimeout(() => setActivePopup(null, null), 0);
   };
 
   useEffect(() => {
@@ -65,19 +75,19 @@ export default function PowerSpotMarker({
     <>
       {/* Do not show NoCaPoiZone for inactive power spots */}
       {/* {!inactive && !removed && showNoCaPoiZones && (
-        <NoCaPoiZone latlng={latlng} />
-      )} */}
+          <NoCaPoiZone latlng={latlng} />
+        )} */}
       {/* Do not show interactive radius for inactive power spots */}
       {/* {!inactive && !removed && showInteractionRadius && (
-        <InteractionRadius latlng={latlng} />
-      )} */}
+          <InteractionRadius latlng={latlng} />
+        )} */}
       <CMarker
         ref={markerRef}
-        icon={iconPowerSpot}
+        icon={icon}
         position={latlng}
         eventHandlers={{
-          click: () => setActivePopup(id),
-          popupclose: () => setActivePopup(null),
+          click: () => setActivePopup(id, type),
+          popupclose: () => setActivePopup(null, null),
         }}
       >
         {isPopupOpen && (
@@ -90,6 +100,7 @@ export default function PowerSpotMarker({
               photo,
               wayfarerMode,
               onHideClick,
+              renderHtml,
             )}
           </Popup>
         )}

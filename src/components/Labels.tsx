@@ -13,7 +13,7 @@ import {
   labelSenior,
   labelVeterans,
 } from "../leafletLabels";
-import type { CFeature } from "../types";
+import type { CFeature } from "../types/CFeatures";
 
 /**
  * React Leaflet's <GeoJSON> specialized for rendering text on the map which we call labels.

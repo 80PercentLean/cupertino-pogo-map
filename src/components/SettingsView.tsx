@@ -18,11 +18,14 @@ import { useStore } from "./hooks/store";
  * Displays the settings view.
  */
 export default function SettingsView() {
+  const activePopupType = useStore((s) => s.activePopup.type);
   const disableAnimations = useStore((s) => s.disableAnimations);
   const invertCoords = useStore((s) => s.invertCoords);
   const toggleInvertCoords = useStore((s) => s.toggleInvertCoords);
   const setDisableAnimations = useStore((s) => s.setDisableAnimations);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
+  const setActivePopup = useStore((s) => s.setActivePopup);
+  const setLayer = useStore((s) => s.setLayer);
   const setWayfarerMode = useStore((s) => s.setWayfarerMode);
 
   const showHidden = useStore((s) => s.modifiers.hidden);
@@ -50,7 +53,13 @@ export default function SettingsView() {
               id="wayfarer-mode"
               checked={wayfarerMode}
               className="cursor-pointer"
-              onCheckedChange={(s) => setWayfarerMode(s === true)}
+              onCheckedChange={(s) => {
+                if (!s && activePopupType === "devpoi") {
+                  setActivePopup(null, null);
+                }
+                setLayer("devpoi", { isVisible: false }, true);
+                setWayfarerMode(s === true);
+              }}
             />
             <FieldContent>
               <FieldLabel htmlFor="wayfarer-mode" className="cursor-pointer">

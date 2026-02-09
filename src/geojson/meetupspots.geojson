@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "name": "Quinlan Community Center Gazebo (Walking Raid Group)",
-        "type": "Meetup Spot",
+        "type": "meetupspot",
         "desc": "This is the meetup spot mainly used for Raid Days and our walking group for Raid Hours where we try to pass by as many gyms as possible to maximize the amount of raids we complete.\n\nThe walking raid group meets up here for Raid Hour every Wednesday at 6:00pm. The quick raid group meets up at the same time on the other side of the park at the Veterans Memorial.",
         "marker-color": "#ffa500",
         "marker-size": "small",
@@ -21,7 +21,7 @@
       "type": "Feature",
       "properties": {
         "name": "Veterans Memorial (Quick Raid Group)",
-        "type": "Meetup Spot",
+        "type": "meetupspot",
         "desc": "This is the meetup spot mainly used for our quick group during Raid Hours where players who only have time for two or three Raids will complete their raids together.\n\nThe quick raid group meets up here for Raid Hour every Wednesday at 6:00pm. The walking raid group meets up at the same time on the other side of the park at the Quinlan Community Center gazebo.",
         "marker-color": "#ffa500",
         "marker-size": "small",
@@ -37,7 +37,7 @@
       "type": "Feature",
       "properties": {
         "name": "Hinson Campus Center",
-        "type": "Meetup Spot",
+        "type": "meetupspot",
         "desc": "This is the meetup spot mainly used for non-Raid/Max Battle events like Spotlight Hour & Community Day.",
         "marker-color": "#ffa500",
         "marker-size": "small",

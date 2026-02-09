@@ -1,4 +1,4 @@
-import type { Feature, Geometry } from "geojson";
+import type { Feature, FeatureCollection, Geometry, Point } from "geojson";
 
 /** Custom properties for a GeoJSON `Feature` representing a POI or a label. */
 export interface CProperties {
@@ -58,19 +58,29 @@ export interface CProperties {
   submitter?: string;
 
   /** Type of POI or label. */
-  type: "gym" | "label" | "pokestop" | "powerspot";
+  type:
+    | "devpoi"
+    | "gym"
+    | "label"
+    | "meetupspot"
+    | "parking"
+    | "pokestop"
+    | "powerspot"
+    | "restroom";
 
   /** Subtype of a POI. */
   subtype:
-    | "All/Binary Gender Restroom"
-    | "Conditionally Free Parking"
-    | "Free Parking"
-    | "Men's Restroom"
+    | "all-binary"
+    | "conditionally-free"
+    | "free"
+    | "men"
+    | "paid"
     | "showcase"
-    | "Meetup Spot"
-    | "Women's Restroom"
-    | "?";
+    | "women";
 }
 
 /** A GeoJSON `Feature` representing a POI or a label. */
 export type CFeature = Feature<Geometry, CProperties>;
+
+/** A GeoJSON `FeatureCollection` a collection of POIs or labels. */
+export type CFeatureCollection = FeatureCollection<Point, CProperties>;

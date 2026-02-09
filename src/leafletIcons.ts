@@ -8,18 +8,36 @@ import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
 
 import imgGym from "./assets/gym.webp";
-import imgPokeStop from "./assets/pokestop.webp";
-import imgPowerSpot from "./assets/power-spot.webp";
+import imgPokestop from "./assets/pokestop.webp";
+import imgPowerspot from "./assets/power-spot.webp";
 import imgShowcase from "./assets/showcase.webp";
 
 /** Export images. */
 export {
   imgGym,
   icon as imgLeafletMarker,
-  imgPokeStop,
-  imgPowerSpot,
+  imgPokestop,
+  imgPowerspot,
   imgShowcase,
 };
+
+/** Emoji for dev POI. */
+export const emojiDevpoi = "🚧";
+
+/** Emoji for meetup spots. */
+export const emojiMeetupspot = "📍";
+
+/** Emoji for parking areas. */
+export const emojiParking = "🅿️";
+
+/** Emoji for all-gender/binary restrooms. */
+export const emojiAllBinaryRestroom = "🚻";
+
+/** Emoji for male restrooms. */
+export const emojiMRestroom = "🚹";
+
+/** Emoji for female restrooms. */
+export const emojiFRestroom = "🚺";
 
 /** Default Leaflet icon. */
 const DefaultIcon = L.icon({
@@ -35,9 +53,9 @@ const DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 /** Leaflet icon for all/binary gender restrooms. */
-export const iconAbRestroom = L.divIcon({
+export const iconAllBinaryRestroom = L.divIcon({
   className: "icon-emoji",
-  html: "<div>🚻</div>",
+  html: `<div>${emojiAllBinaryRestroom}</div>`,
   iconAnchor: [10, 10],
 });
 
@@ -53,16 +71,16 @@ export const iconGym = L.icon({
 });
 
 /** Leaflet icon for dev POIs. */
-export const iconDev = L.divIcon({
+export const iconDevpoi = L.divIcon({
   className: "icon-emoji",
-  html: "<div>🚧</div>",
+  html: `<div>${emojiDevpoi}</div>`,
   iconAnchor: [10, 10],
 });
 
-/** Leaflet icon for meetup spot POIs. */
-export const iconMeetupSpot = L.divIcon({
+/** Leaflet icon for meetup spots. */
+export const iconMeetupspot = L.divIcon({
   className: "icon-emoji icon-meetup-spot",
-  html: "<div>📍</div>",
+  html: `<div>${emojiMeetupspot}</div>`,
   iconAnchor: [15, 30],
   popupAnchor: [0, -20],
 });
@@ -70,14 +88,14 @@ export const iconMeetupSpot = L.divIcon({
 /** Leaflet icon for men's restrooms. */
 export const iconMRestroom = L.divIcon({
   className: "icon-emoji",
-  html: "<div>🚹</div>",
+  html: `<div>${emojiMRestroom}</div>`,
   iconAnchor: [10, 10],
 });
 
 /** Leaflet icon for parking. */
 export const iconParking = L.divIcon({
   className: "icon-emoji",
-  html: "<div>🅿️</div>",
+  html: `<div>${emojiParking}</div>`,
   iconAnchor: [10, 10],
 });
 
@@ -96,18 +114,18 @@ export const iconParkingWarn = L.divIcon({
 });
 
 /** Leaflet icon for PokeStops. */
-export const iconPokeStop = L.icon({
+export const iconPokestop = L.icon({
   iconAnchor: [7, 20],
   iconSize: [15, 20],
-  iconUrl: imgPokeStop,
+  iconUrl: imgPokestop,
   popupAnchor: [0, -13],
 });
 
 /** Leaflet icon for power spots. */
-export const iconPowerSpot = L.icon({
+export const iconPowerspot = L.icon({
   iconAnchor: [7, 20],
   iconSize: [15, 20],
-  iconUrl: imgPowerSpot,
+  iconUrl: imgPowerspot,
   popupAnchor: [0, -13],
 });
 
@@ -121,6 +139,6 @@ export const iconShowcase = L.icon({
 /** Leaflet icon for women's restrooms. */
 export const iconWRestroom = L.divIcon({
   className: "icon-emoji",
-  html: "<div>🚺</div>",
+  html: `<div>${emojiFRestroom}</div>`,
   iconAnchor: [10, 10],
 });

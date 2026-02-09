@@ -5,7 +5,8 @@
       "type": "Feature",
       "properties": {
         "name": "Memorial Park Tennis Courts Restrooms",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -20,7 +21,8 @@
       "type": "Feature",
       "properties": {
         "name": "Amphitheater Restrooms",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -35,7 +37,8 @@
       "type": "Feature",
       "properties": {
         "name": "A1 Building Men's Restroom",
-        "type": "Men's Restroom",
+        "type": "restroom",
+        "subtype": "men",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -50,7 +53,8 @@
       "type": "Feature",
       "properties": {
         "name": "A1 Building Women's Restroom",
-        "type": "Women's Restroom",
+        "type": "restroom",
+        "subtype": "women",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -65,7 +69,8 @@
       "type": "Feature",
       "properties": {
         "name": "A4 Building Women's Restroom",
-        "type": "Women's Restroom",
+        "type": "restroom",
+        "subtype": "women",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -80,7 +85,8 @@
       "type": "Feature",
       "properties": {
         "name": "A4 Building Men's Restroom",
-        "type": "Men's Restroom",
+        "type": "restroom",
+        "subtype": "men",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -95,7 +101,8 @@
       "type": "Feature",
       "properties": {
         "name": "Hinson Campus Center West Restrooms",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -110,7 +117,8 @@
       "type": "Feature",
       "properties": {
         "name": "Hinson Campus Center East Restrooms",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -125,7 +133,8 @@
       "type": "Feature",
       "properties": {
         "name": "Administration Building Restrooms",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -140,7 +149,8 @@
       "type": "Feature",
       "properties": {
         "name": "De Anza Library Restrooms",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -155,7 +165,8 @@
       "type": "Feature",
       "properties": {
         "name": "Learning Center West Restrooms",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -169,8 +180,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "East Cottage All Gender Restroom",
-        "type": "All/Binary Gender Restroom",
+        "name": "East Cottage All-Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -185,7 +197,8 @@
       "type": "Feature",
       "properties": {
         "name": "Media & Learning Center Restrooms",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -200,7 +213,8 @@
       "type": "Feature",
       "properties": {
         "name": "S2 Building Men's Restroom",
-        "type": "Men's Restroom",
+        "type": "restroom",
+        "subtype": "men",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -215,7 +229,8 @@
       "type": "Feature",
       "properties": {
         "name": "S2 Building Women's Restroom",
-        "type": "Women's Restroom",
+        "type": "restroom",
+        "subtype": "women",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -230,7 +245,8 @@
       "type": "Feature",
       "properties": {
         "name": "S2 Building All-Gender Restroom",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -245,7 +261,8 @@
       "type": "Feature",
       "properties": {
         "name": "Registration & Student Services Restrooms",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -260,7 +277,8 @@
       "type": "Feature",
       "properties": {
         "name": "Visual & Performing Arts Center Men's Restroom",
-        "type": "Men's Restroom",
+        "type": "restroom",
+        "subtype": "men",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -275,7 +293,8 @@
       "type": "Feature",
       "properties": {
         "name": "Visual & Performing Arts Center Women's Restroom",
-        "type": "Women's Restroom",
+        "type": "restroom",
+        "subtype": "women",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -290,7 +309,8 @@
       "type": "Feature",
       "properties": {
         "name": "Multicultural Center All-Gender Restroom",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -305,7 +325,8 @@
       "type": "Feature",
       "properties": {
         "name": "Advanced Technology Center Restrooms",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -320,7 +341,8 @@
       "type": "Feature",
       "properties": {
         "name": "L5 Building Women's Restroom",
-        "type": "Women's Restroom",
+        "type": "restroom",
+        "subtype": "women",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -335,7 +357,8 @@
       "type": "Feature",
       "properties": {
         "name": "L5 Building Men's Restroom",
-        "type": "Men's Restroom",
+        "type": "restroom",
+        "subtype": "men",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -350,7 +373,8 @@
       "type": "Feature",
       "properties": {
         "name": "L5 Building All-Gender Restroom",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -365,7 +389,8 @@
       "type": "Feature",
       "properties": {
         "name": "Seminar Building Men's Restroom",
-        "type": "Men's Restroom",
+        "type": "restroom",
+        "subtype": "men",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -380,7 +405,8 @@
       "type": "Feature",
       "properties": {
         "name": "Seminar Building Women's Restroom",
-        "type": "Women's Restroom",
+        "type": "restroom",
+        "subtype": "women",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -395,7 +421,8 @@
       "type": "Feature",
       "properties": {
         "name": "S6 Building Men's Restroom",
-        "type": "Men's Restroom",
+        "type": "restroom",
+        "subtype": "men",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -410,7 +437,8 @@
       "type": "Feature",
       "properties": {
         "name": "S6 Building Women's Restroom",
-        "type": "Women's Restroom",
+        "type": "restroom",
+        "subtype": "women",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -425,7 +453,8 @@
       "type": "Feature",
       "properties": {
         "name": "S6 Building All-Gender Restroom",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -440,7 +469,8 @@
       "type": "Feature",
       "properties": {
         "name": "Physical Education 4 Building Men's Restroom",
-        "type": "Men's Restroom",
+        "type": "restroom",
+        "subtype": "men",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -455,7 +485,8 @@
       "type": "Feature",
       "properties": {
         "name": "Physical Education 5 Building Women's Restroom",
-        "type": "Women's Restroom",
+        "type": "restroom",
+        "subtype": "women",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -470,7 +501,8 @@
       "type": "Feature",
       "properties": {
         "name": "Physical Education 5 Building All-Gender Restroom",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -485,7 +517,8 @@
       "type": "Feature",
       "properties": {
         "name": "Physical Education 6 Building Women's Locker Room",
-        "type": "Women's Restroom",
+        "type": "restroom",
+        "subtype": "women",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -500,7 +533,8 @@
       "type": "Feature",
       "properties": {
         "name": "Physical Education 6 Building Men's Locker Room",
-        "type": "Men's Restroom",
+        "type": "restroom",
+        "subtype": "men",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -515,7 +549,8 @@
       "type": "Feature",
       "properties": {
         "name": "SC1 Building Men's Restroom",
-        "type": "Men's Restroom",
+        "type": "restroom",
+        "subtype": "men",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -530,7 +565,8 @@
       "type": "Feature",
       "properties": {
         "name": "SC1 Building Women's Restroom",
-        "type": "Women's Restroom",
+        "type": "restroom",
+        "subtype": "women",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -545,7 +581,8 @@
       "type": "Feature",
       "properties": {
         "name": "G Building All-Gender Restroom A",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -560,7 +597,8 @@
       "type": "Feature",
       "properties": {
         "name": "G Building All-Gender Restroom B",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -575,7 +613,8 @@
       "type": "Feature",
       "properties": {
         "name": "Kirsch Center Restrooms",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -590,7 +629,8 @@
       "type": "Feature",
       "properties": {
         "name": "Senior Center Restrooms",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -605,7 +645,8 @@
       "type": "Feature",
       "properties": {
         "name": "Quinlan Community Center North Restrooms",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -620,7 +661,8 @@
       "type": "Feature",
       "properties": {
         "name": "Quinlan Community Center South Restrooms",
-        "type": "All/Binary Gender Restroom",
+        "type": "restroom",
+        "subtype": "all-binary",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"

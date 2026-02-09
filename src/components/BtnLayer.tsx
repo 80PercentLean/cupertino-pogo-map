@@ -2,13 +2,10 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { type ReactNode } from "react";
 
-import { type layerType } from "./hooks/store";
-
 export interface Props {
   imagery: ReactNode;
   isActive: boolean;
   label: string;
-  layerType: layerType;
   onClick: () => void;
 }
 

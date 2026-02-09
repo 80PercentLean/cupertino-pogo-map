@@ -61,7 +61,7 @@ export const genPopupContent = (
 
 export const genPopupContentReact = (
   title: string,
-  subtitle: string,
+  subtitle: string | undefined,
   latlng: LatLngTuple,
   desc?: string,
   img?: string,
@@ -78,7 +78,7 @@ export const genPopupContentReact = (
   return (
     <>
       <h1 className="font-bold">{title}</h1>
-      <p className="mt-0! italic">{subtitle}</p>
+      {subtitle && <p className="mt-0! italic">{subtitle}</p>}
       {img && (
         <div className="flex justify-center">
           <a href={img} rel="noopener noreferrer" target="_blank">

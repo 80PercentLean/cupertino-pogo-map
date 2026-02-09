@@ -30,14 +30,21 @@ const IS_MOBILE = isMobileUa();
  * The app's Leaflet map.
  */
 export default function MapView() {
-  const isGymLayerOn = useIsLayerOn("gym");
-  const isPokestopLayerOn = useIsLayerOn("pokestop");
-  const isPowerspotLayerOn = useIsLayerOn("powerspot");
+  const isLayerDevPoisOn = useIsLayerOn("devpoi");
+  const isLayerGymOn = useIsLayerOn("gym");
+  const isLayerLabelOn = useStore((s) => s.basicLayers.label);
+  const isLayerMeetupSpotOn = useIsLayerOn("meetupspot");
+  const isLayerParkingOn = useIsLayerOn("parking");
+  const isLayerPokestopOn = useIsLayerOn("pokestop");
+  const isLayerPowerspotOn = useIsLayerOn("powerspot");
+  const isLayerRestroomOn = useIsLayerOn("restroom");
+  const isL13GridOn = useStore((s) => s.basicLayers.l13);
+  const isL14GridOn = useStore((s) => s.basicLayers.l14);
+  const isL17GridOn = useStore((s) => s.basicLayers.l17);
+  const isStdRaidPathOn = useStore((s) => s.basicLayers.stdRaidPath);
   const mapType = useStore((s) => s.mapType);
+  const wayfarerMode = useStore((s) => s.wayfarerMode);
   // const showDevPois = useStore((s) => s.layers.devpois);
-  // const showL13Grid = useStore((s) => s.layers.l13);
-  // const showL14Grid = useStore((s) => s.layers.l14);
-  // const showL17Grid = useStore((s) => s.layers.l17);
   // const showLabels = useStore((s) => s.layers.labels);
   // const showMeetupSpots = useStore((s) => s.layers.meetupSpots);
   // const showParking = useStore((s) => s.layers.parking);
@@ -110,18 +117,18 @@ export default function MapView() {
     >
       <LeafletDebug />
       {tileLayer}
-      {/* {showLabels && <Labels />}
-      {showDevPois && <DevPois />}
-      {showRestrooms && <Restrooms />} */}
-      {isPowerspotLayerOn && <PowerSpots />}
-      {isPokestopLayerOn && <PokeStops />}
-      {isGymLayerOn && <Gyms />}
-      {/* {showMeetupSpots && <MeetupSpots />}
-      {showParking && <Parking />}
-      {showL17Grid && <L17Grid />}
-      {showL14Grid && <L14Grid />}
-      {showL13Grid && <L13Grid />}
-      {showRaidPath && <StdRaidPath />} */}
+      {isLayerLabelOn && <Labels />}
+      {wayfarerMode && isLayerDevPoisOn && <DevPois />}
+      {isLayerRestroomOn && <Restrooms />}
+      {isLayerPowerspotOn && <PowerSpots />}
+      {isLayerPokestopOn && <PokeStops />}
+      {isLayerGymOn && <Gyms />}
+      {isLayerMeetupSpotOn && <MeetupSpots />}
+      {isLayerParkingOn && <Parking />}
+      {isL17GridOn && <L17Grid />}
+      {isL14GridOn && <L14Grid />}
+      {isL13GridOn && <L13Grid />}
+      {isStdRaidPathOn && <StdRaidPath />}
       <PlacedMarkers />
       <MyLocationMarker data-testid="marker-my-location" />
     </MapContainer>

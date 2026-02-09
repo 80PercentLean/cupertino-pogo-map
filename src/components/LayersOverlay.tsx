@@ -11,7 +11,15 @@ import {
 } from "@/components/ui/field";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { imgGym, imgPokeStop, imgPowerSpot } from "@/leafletIcons";
+import {
+  emojiAllBinaryRestroom,
+  emojiDevpoi,
+  emojiMeetupspot,
+  emojiParking,
+  imgGym,
+  imgPokestop,
+  imgPowerspot,
+} from "@/leafletIcons";
 import { X } from "lucide-react";
 import { type Dispatch, type SetStateAction } from "react";
 
@@ -23,22 +31,27 @@ export interface Props {
 }
 
 export default function LayersOverlay({ setShowOverlay }: Props) {
-  const isGymLayerOn = useIsLayerOn("gym");
-  const isPokestopLayerOn = useIsLayerOn("pokestop");
-  const isPowerspotLayerOn = useIsLayerOn("powerspot");
+  const activePopup = useStore((s) => s.activePopup);
+  const isLayerDevpoiOn = useIsLayerOn("devpoi");
+  const isLayerLabelOn = useStore((s) => s.basicLayers.label);
+  const isLayerGymOn = useIsLayerOn("gym");
+  const isLayerMeetupSpotOn = useIsLayerOn("meetupspot");
+  const isLayerParkingOn = useIsLayerOn("parking");
+  const isLayerPokestopOn = useIsLayerOn("pokestop");
+  const isLayerPowerspotOn = useIsLayerOn("powerspot");
+  const isL13GridOn = useStore((s) => s.basicLayers.l13);
+  const isL14GridOn = useStore((s) => s.basicLayers.l14);
+  const isL17GridOn = useStore((s) => s.basicLayers.l17);
+  const isLayerRestroomOn = useIsLayerOn("restroom");
+  const isStdRaidPathOn = useStore((s) => s.basicLayers.stdRaidPath);
   const mapType = useStore((s) => s.mapType);
   const setMapType = useStore((s) => s.setMapType);
   const setLayer = useStore((s) => s.setLayer);
-  const toggleLayer = useStore((s) => s.toggleLayer);
   const setActivePopup = useStore((s) => s.setActivePopup);
-  const showL13Grid = useStore((s) => s.layers.l13);
-  const showL14Grid = useStore((s) => s.layers.l14);
-  const showL17Grid = useStore((s) => s.layers.l17);
-  const showLabels = useStore((s) => s.layers.labels);
-  const showInteractionRadii = useStore((s) => s.layers.interactionRadii);
-  const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
-  const showPowerSpotZones = useStore((s) => s.layers.noPowerSpotZones);
-
+  const toggleBasicLayer = useStore((s) => s.toggleBasicLayer);
+  // const showInteractionRadii = useStore((s) => s.layers.interactionRadii);
+  // const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
+  // const showPowerSpotZones = useStore((s) => s.layers.noPowerSpotZones);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   return (
@@ -59,14 +72,16 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
           <FieldGroup className="flex flex-row flex-wrap gap-4">
             <Field className="w-14">
               <BtnLayer
-                isActive={isGymLayerOn}
+                isActive={isLayerGymOn}
                 imagery={<img src={imgGym} alt="Gym Layer Button Icon" />}
                 label="Gyms"
-                layerType="gym"
                 onClick={() => {
-                  if (isGymLayerOn) {
+                  if (isLayerGymOn) {
                     setLayer("gym", { isVisible: false });
-                    setActivePopup(null);
+
+                    if (activePopup.id && activePopup.type === "gym") {
+                      setActivePopup(null, null);
+                    }
                   } else {
                     setLayer("gym", { isVisible: true });
                   }
@@ -75,16 +90,18 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
             </Field>
             <Field className="w-14">
               <BtnLayer
-                isActive={isPokestopLayerOn}
+                isActive={isLayerPokestopOn}
                 imagery={
-                  <img src={imgPokeStop} alt="PokéStop Layer Button Icon" />
+                  <img src={imgPokestop} alt="PokéStop Layer Button Icon" />
                 }
                 label="PokéStops"
-                layerType="pokestop"
                 onClick={() => {
-                  if (isPokestopLayerOn) {
+                  if (isLayerPokestopOn) {
                     setLayer("pokestop", { isVisible: false });
-                    setActivePopup(null);
+
+                    if (activePopup.id && activePopup.type === "pokestop") {
+                      setActivePopup(null, null);
+                    }
                   } else {
                     setLayer("pokestop", { isVisible: true });
                   }
@@ -93,16 +110,18 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
             </Field>
             <Field className="w-14">
               <BtnLayer
-                isActive={isPowerspotLayerOn}
+                isActive={isLayerPowerspotOn}
                 imagery={
-                  <img src={imgPowerSpot} alt="Power Spot Layer button Icon" />
+                  <img src={imgPowerspot} alt="Power Spot Layer button Icon" />
                 }
                 label="Power Spots"
-                layerType="powerspot"
                 onClick={() => {
-                  if (isPowerspotLayerOn) {
+                  if (isLayerPowerspotOn) {
                     setLayer("powerspot", { isVisible: false });
-                    setActivePopup(null);
+
+                    if (activePopup.id && activePopup.type === "powerspot") {
+                      setActivePopup(null, null);
+                    }
                   } else {
                     setLayer("powerspot", { isVisible: true });
                   }
@@ -111,38 +130,85 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
             </Field>
             <Field className="w-14">
               <BtnLayer
-                imagery={<span className="text-xl">📍</span>}
+                isActive={isLayerMeetupSpotOn}
+                imagery={<span className="text-xl">{emojiMeetupspot}</span>}
                 label="Meetup Spots"
-                layerType="meetupSpots"
+                onClick={() => {
+                  if (isLayerMeetupSpotOn) {
+                    setLayer("meetupspot", { isVisible: false });
+
+                    if (activePopup.id && activePopup.type === "meetupspot") {
+                      setActivePopup(null, null);
+                    }
+                  } else {
+                    setLayer("meetupspot", { isVisible: true });
+                  }
+                }}
               />
             </Field>
             <Field className="w-14">
               <BtnLayer
-                imagery={<span className="text-xl">🅿️</span>}
+                isActive={isLayerParkingOn}
+                imagery={<span className="text-xl">{emojiParking}</span>}
                 label="Parking"
-                layerType="parking"
+                onClick={() => {
+                  if (isLayerParkingOn) {
+                    setLayer("parking", { isVisible: false });
+
+                    if (activePopup.id && activePopup.type === "parking") {
+                      setActivePopup(null, null);
+                    }
+                  } else {
+                    setLayer("parking", { isVisible: true });
+                  }
+                }}
               />
             </Field>
             <Field className="w-14">
               <BtnLayer
+                isActive={isStdRaidPathOn}
                 imagery={<span className="text-xl">🚶</span>}
                 label="Standard Raid Path"
-                layerType="raidPath"
+                onClick={() => toggleBasicLayer("stdRaidPath")}
               />
             </Field>
             <Field className="w-14">
               <BtnLayer
-                imagery={<span className="text-xl">🚻</span>}
+                isActive={isLayerRestroomOn}
+                imagery={
+                  <span className="text-xl">{emojiAllBinaryRestroom}</span>
+                }
                 label="Restrooms"
-                layerType="restrooms"
+                onClick={() => {
+                  if (isLayerRestroomOn) {
+                    setLayer("restroom", { isVisible: false });
+
+                    if (activePopup.id && activePopup.type === "restroom") {
+                      setActivePopup(null, null);
+                    }
+                  } else {
+                    setLayer("restroom", { isVisible: true });
+                  }
+                }}
               />
             </Field>
             {wayfarerMode && (
               <Field className="w-14">
                 <BtnLayer
-                  imagery={<span className="text-xl">🚧</span>}
+                  isActive={isLayerDevpoiOn}
+                  imagery={<span className="text-xl">{emojiDevpoi}</span>}
                   label="TBD"
-                  layerType="devpois"
+                  onClick={() => {
+                    if (isLayerDevpoiOn) {
+                      setLayer("devpoi", { isVisible: false });
+
+                      if (activePopup.id && activePopup.type === "devpoi") {
+                        setActivePopup(null, null);
+                      }
+                    } else {
+                      setLayer("devpoi", { isVisible: true });
+                    }
+                  }}
                 />
               </Field>
             )}
@@ -155,9 +221,9 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
             <Field orientation="horizontal">
               <Checkbox
                 id="l17-grid"
-                checked={showL17Grid}
+                checked={isL17GridOn}
                 className="cursor-pointer"
-                onCheckedChange={() => toggleLayer("l17")}
+                onCheckedChange={() => toggleBasicLayer("l17")}
               />
               <FieldLabel htmlFor="l17-grid" className="cursor-pointer">
                 L17 Grid
@@ -166,9 +232,9 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
             <Field orientation="horizontal">
               <Checkbox
                 id="l14-grid"
-                checked={showL14Grid}
+                checked={isL14GridOn}
                 className="cursor-pointer"
-                onCheckedChange={() => toggleLayer("l14")}
+                onCheckedChange={() => toggleBasicLayer("l14")}
               />
               <FieldLabel htmlFor="l14-grid" className="cursor-pointer">
                 L14 Grid
@@ -177,9 +243,9 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
             <Field orientation="horizontal">
               <Checkbox
                 id="l13-grid"
-                checked={showL13Grid}
+                checked={isL13GridOn}
                 className="cursor-pointer"
-                onCheckedChange={() => toggleLayer("l13")}
+                onCheckedChange={() => toggleBasicLayer("l13")}
               />
               <FieldLabel htmlFor="l13-grid" className="cursor-pointer">
                 L13 Grid
@@ -239,16 +305,16 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
               <Field orientation="horizontal">
                 <Checkbox
                   id="labels"
-                  checked={showLabels}
+                  checked={isLayerLabelOn}
                   className="cursor-pointer"
-                  onCheckedChange={() => toggleLayer("labels")}
+                  onCheckedChange={() => toggleBasicLayer("label")}
                 />
                 <FieldLabel htmlFor="labels" className="cursor-pointer">
                   Labels
                 </FieldLabel>
               </Field>
             </Field>
-            <Field className="flex flex-row">
+            {/* <Field className="flex flex-row">
               <Field orientation="horizontal">
                 <Checkbox
                   id="interaction-radii"
@@ -293,8 +359,8 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
                     No CA POI Build Zones (30m)
                   </FieldLabel>
                 </Field>
-              </Field>
-            )}
+              </Field> 
+            )} */}
           </FieldGroup>
         </FieldSet>
       </CardContent>

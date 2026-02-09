@@ -124,9 +124,7 @@ export default function DistanceCalcView() {
         />
         <Button>Calculate</Button>
       </FieldGroup>
+      {output}
     </form>
   );
-  {
-    output;
-  }
 }

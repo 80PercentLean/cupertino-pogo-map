@@ -7,9 +7,10 @@ import { isMobileUa } from "../util";
 import BtnCopyCoords from "./BtnCopyCoords";
 import CMarker from "./CMarker";
 import { useStore } from "./hooks/store";
-import InteractionRadius from "./poi/InteractionRadius";
-import NoCaPoiZone from "./poi/NoCaPoiZone";
-import NoPowerSpotZone from "./poi/NoPowerSpotZone";
+
+// import InteractionRadius from "./poi/InteractionRadius";
+// import NoCaPoiZone from "./poi/NoCaPoiZone";
+// import NoPowerSpotZone from "./poi/NoPowerSpotZone";
 
 const IS_MOBILE = isMobileUa();
 
@@ -31,7 +32,7 @@ export default function PlacedMarkers() {
   }
 
   useMapEvent(mapEvent, (e) => {
-    if (!activePopup) {
+    if (!activePopup.id) {
       setCoords((prevValue) => [...prevValue, e.latlng]);
 
       if (wayfarerMode) {
@@ -40,7 +41,7 @@ export default function PlacedMarkers() {
     }
   });
 
-  // TODO: Need to track activePopup here since it currently only tracks normal POIs
+  // TODO: Need to track activePopup here for placed markers since it currently only tracks features
 
   return coords.map((c, i) => {
     const id = `placed-lat${c.lat},lng${c.lng}`;

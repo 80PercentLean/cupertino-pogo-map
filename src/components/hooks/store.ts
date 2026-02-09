@@ -1,11 +1,20 @@
-import { gymsJson, pokestopsJson, powerspotsJson } from "@/geojson/data";
-import { type CProperties } from "@/types";
+import {
+  devpoisJson,
+  gymsJson,
+  meetupspotsJson,
+  parkingJson,
+  pokestopsJson,
+  powerspotsJson,
+  restroomsJson,
+} from "@/geojson/data";
+import { type CProperties } from "@/types/CFeatures";
+import { capitalize } from "@/util";
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 
-export type layerType = keyof StoreState["layers"];
+export type LayerKey = `layer${Capitalize<CProperties["type"]>}`;
 
-export type modifierType = keyof StoreState["modifiers"];
+export type ModifierType = keyof StoreState["modifiers"];
 
 /** State for an individual marker. */
 export interface MarkerState {
@@ -24,10 +33,23 @@ export interface MarkerState {
 
 export interface StoreState {
   /** Controls which popup is currently open. */
-  activePopup: string | null;
+  activePopup: {
+    id: string | null;
+    type: CProperties["type"] | null;
+  };
 
-  // /** Clear marker type. */
-  // clearMarkerAll(id: string, type: CProperties["type"]): void;
+  /** State for basic layers. */
+  basicLayers: {
+    l13: boolean;
+
+    l14: boolean;
+
+    l17: boolean;
+
+    label: boolean;
+
+    stdRaidPath: boolean;
+  };
 
   /** Disable all animations in the app when true. */
   disableAnimations: boolean;
@@ -80,18 +102,29 @@ export interface StoreState {
   //   restrooms: boolean;
   // };
 
-  /** State for Gym markers. */
-  markergym: Record<string, MarkerState>;
+  /** Advanced layer which maintains the state for development POI markers. */
+  layerDevpoi: Record<string, MarkerState>;
 
-  // TODO: Rename marker to layer for all these properties
-  /** State for labels. */
-  markerlabel: Record<string, MarkerState>;
+  /** Advanced layer which maintains the state for gym markers. */
+  layerGym: Record<string, MarkerState>;
 
-  /** State for PokeStop markers. */
-  markerpokestop: Record<string, MarkerState>;
+  /** Advanced layer which maintains the state for labels. */
+  layerLabel: Record<string, MarkerState>;
 
-  /** State for Power Spot markers. */
-  markerpowerspot: Record<string, MarkerState>;
+  /** Advanced layer which maintains the state for meetup spots. */
+  layerMeetupspot: Record<string, MarkerState>;
+
+  /** Advanced layer which maintains the state for parking area markers. */
+  layerParking: Record<string, MarkerState>;
+
+  /** Advanced layer which maintains the state for PokeStop markers. */
+  layerPokestop: Record<string, MarkerState>;
+
+  /** Advanced layer which maintains the state for power spot markers. */
+  layerPowerspot: Record<string, MarkerState>;
+
+  /** Advanced layer which maintains the state for restroom markers. */
+  layerRestroom: Record<string, MarkerState>;
 
   /** Flags that determine which modifiers are applied to map layers. */
   modifiers: {
@@ -110,23 +143,23 @@ export interface StoreState {
   /** Value for geolocation position accuracy. */
   myLocationAccuracy: number | null;
 
-  /** Set the activePopup value. */
-  setActivePopup: (val: string | null) => void;
+  /** Set the `activePopup` value. */
+  setActivePopup: (
+    id: StoreState["activePopup"]["id"] | null,
+    type: CProperties["type"] | null,
+  ) => void;
 
-  /** Set the disableAnimations value. */
+  /** Set the `disableAnimations` value. */
   setDisableAnimations: (val: StoreState["disableAnimations"]) => void;
 
-  /** Set the isListViewOpen value. */
-  setIsListViewOpen: (val: boolean) => void;
-
-  /** Set all marker values for a layer. */
+  /** Set marker values for an advanced layer. */
   setLayer: (
     type: CProperties["type"],
     state: MarkerState,
     override?: boolean,
   ) => void;
 
-  /** Set the mapType value. */
+  /** Set the `mapType` value. */
   setMapType: (val: StoreState["mapType"]) => void;
 
   /** Set a marker property value. */
@@ -137,23 +170,26 @@ export interface StoreState {
     override?: boolean,
   ) => void;
 
-  /** Set the myLocationAccuracy value. */
+  /** Set the `myLocationAccuracy` value. */
   setMyLocation: (val: StoreState["myLocation"]) => void;
 
-  /** Set the myLocationAccuracy value. */
+  /** Set the `myLocationAccuracy` value. */
   setMyLocationAccuracy: (val: StoreState["myLocationAccuracy"]) => void;
 
-  /** Set the wayfarerMode value. */
+  /** Set the `wayfarerMode` value. */
   setWayfarerMode: (val: StoreState["wayfarerMode"]) => void;
 
-  /** Toggle invertCoords value. */
+  /** Toggle a `basicLayers` property value. */
+  toggleBasicLayer: (basicLayerType: keyof StoreState["basicLayers"]) => void;
+
+  /** Toggle the `invertCoords` value. */
   toggleInvertCoords: () => void;
 
-  /** Toggle isListViewOpen value. */
+  /** Toggle the `isListViewOpen` value. */
   toggleIsListViewOpen: () => void;
 
   /** Toggle a modifier value. */
-  toggleModifier: (modifier: modifierType) => void;
+  toggleModifier: (modifier: ModifierType) => void;
 
   /** Enable Wayfarer mode when true. */
   wayfarerMode: boolean;
@@ -166,7 +202,19 @@ export const useStore = create<StoreState>()(
   devtools(
     (set) => {
       const initStoreState: StoreState = {
-        activePopup: null,
+        activePopup: { id: null, type: null },
+
+        basicLayers: {
+          l13: false,
+
+          l14: false,
+
+          l17: false,
+
+          label: true,
+
+          stdRaidPath: true,
+        },
 
         // Disable animations by default for E2E tests to allow visual tests to perform consistently
         disableAnimations: import.meta.env.VITE_E2E ? true : false,
@@ -180,14 +228,22 @@ export const useStore = create<StoreState>()(
         // Map type starts off as default
         mapType: "default",
 
-        // Values are initialized below
-        markergym: {},
+        // Advanced layer marker states will be initialized after initStoreState is initialized
+        layerDevpoi: {},
 
-        markerlabel: {},
+        layerGym: {},
 
-        markerpokestop: {},
+        layerLabel: {},
 
-        markerpowerspot: {},
+        layerMeetupspot: {},
+
+        layerParking: {},
+
+        layerPokestop: {},
+
+        layerPowerspot: {},
+
+        layerRestroom: {},
 
         modifiers: {
           hidden: true,
@@ -203,36 +259,56 @@ export const useStore = create<StoreState>()(
         // myLocationAccuracy starts as null until my location functionality is enabled
         myLocationAccuracy: null,
 
-        setActivePopup: (val: string | null) =>
-          set(() => ({ activePopup: val }), undefined, "setActivePopup"),
+        setActivePopup: (id, type) =>
+          set(
+            () => ({
+              activePopup: {
+                id,
+                type,
+              },
+            }),
+            undefined,
+            "setActivePopup",
+          ),
 
-        setDisableAnimations: (val: StoreState["disableAnimations"]) =>
-          set(() => ({ disableAnimations: val })),
+        setDisableAnimations: (val) =>
+          set(
+            () => ({ disableAnimations: val }),
+            undefined,
+            "setDisabledAnimations",
+          ),
 
-        setLayer: (
-          type: CProperties["type"],
-          state: MarkerState,
-          override?: boolean,
-        ) =>
+        setLayer: (type, state, override) =>
           set(
             (s) => {
-              const newState: Record<string, Record<string, MarkerState>> = {
-                [`marker${type}`]: {},
+              const layerKey = getLayerKeyFromType(type);
+              const newState: Partial<
+                Record<LayerKey, Record<string, MarkerState>>
+              > = {
+                [layerKey]: {},
               };
-
-              const ALL_IDS = Object.keys(s[`marker${type}`]);
+              const newLayer = newState[layerKey];
+              const allIds = Object.keys(s[layerKey]);
 
               if (override) {
-                ALL_IDS.forEach((id) => {
+                allIds.forEach((id) => {
                   // Completely override a marker's state
-                  newState[`marker${type}`][id] = state;
+                  if (!newLayer) {
+                    throw new Error("Layer could not be found.");
+                  }
+
+                  newLayer[id] = state;
                 });
               }
 
               // Merge new state with current state for a marker
-              ALL_IDS.forEach((id) => {
-                newState[`marker${type}`][id] = {
-                  ...s[`marker${type}`][id],
+              allIds.forEach((id) => {
+                if (!newLayer) {
+                  throw new Error("Layer could not be found.");
+                }
+
+                newLayer[id] = {
+                  ...s[layerKey][id],
                   ...state,
                 };
               });
@@ -243,19 +319,16 @@ export const useStore = create<StoreState>()(
             "setLayer",
           ),
 
-        setMarker: (
-          type: CProperties["type"],
-          id: string,
-          state: MarkerState,
-          override?: boolean,
-        ) =>
+        setMarker: (type, id, state, override) =>
           set(
             (s) => {
+              const layerKey = getLayerKeyFromType(type);
+
               if (override) {
                 // Completely override a marker's state
                 return {
-                  [`marker${type}`]: {
-                    ...s[`marker${type}`],
+                  [layerKey]: {
+                    ...s[layerKey],
                     [id]: state,
                   },
                 };
@@ -263,10 +336,10 @@ export const useStore = create<StoreState>()(
 
               // Merge new state with current state for a marker
               return {
-                [`marker${type}`]: {
-                  ...s[`marker${type}`],
+                [layerKey]: {
+                  ...s[layerKey],
                   [id]: {
-                    ...s[`marker${type}`][id],
+                    ...s[layerKey][id],
                     ...state,
                   },
                 },
@@ -276,10 +349,10 @@ export const useStore = create<StoreState>()(
             "setMarker",
           ),
 
-        setMapType: (val: StoreState["mapType"]) =>
+        setMapType: (val) =>
           set(() => ({ mapType: val }), undefined, "setMapType"),
 
-        setMyLocation: (val: StoreState["myLocation"]) =>
+        setMyLocation: (val) =>
           set(
             () => ({
               myLocation: val,
@@ -288,7 +361,7 @@ export const useStore = create<StoreState>()(
             "setMyLocation",
           ),
 
-        setMyLocationAccuracy: (val: StoreState["myLocationAccuracy"]) =>
+        setMyLocationAccuracy: (val) =>
           set(
             () => ({
               myLocationAccuracy: val,
@@ -297,17 +370,20 @@ export const useStore = create<StoreState>()(
             "setLocationAccuracy",
           ),
 
-        setIsListViewOpen: (val: StoreState["isListViewOpen"]) =>
+        setWayfarerMode: (val) =>
+          set(() => ({ wayfarerMode: val }), undefined, "setWayfarerMode"),
+
+        toggleBasicLayer: (basicLayerType) =>
           set(
-            () => ({
-              isListViewOpen: val,
+            (s) => ({
+              basicLayers: {
+                ...s.basicLayers,
+                [basicLayerType]: !s.basicLayers[basicLayerType],
+              },
             }),
             undefined,
-            "setIsListViewOpen",
+            "toggleBasicLayer",
           ),
-
-        setWayfarerMode: (val: StoreState["wayfarerMode"]) =>
-          set(() => ({ wayfarerMode: val }), undefined, "setWayfarerMode"),
 
         toggleInvertCoords: () =>
           set(
@@ -326,7 +402,7 @@ export const useStore = create<StoreState>()(
           );
         },
 
-        toggleModifier: (m: keyof StoreState["modifiers"]) =>
+        toggleModifier: (m) =>
           set(
             (s) => ({
               modifiers: {
@@ -341,17 +417,33 @@ export const useStore = create<StoreState>()(
         wayfarerMode: true,
       };
 
-      // Initialize marker states for each layer
+      // Initialize marker states for each advanced layer
+      devpoisJson.features.forEach(({ id }) => {
+        initStoreState.layerDevpoi[String(id)] = { isVisible: true };
+      });
+
       gymsJson.features.forEach(({ id }) => {
-        initStoreState.markergym[String(id)] = { isVisible: true };
+        initStoreState.layerGym[String(id)] = { isVisible: true };
+      });
+
+      meetupspotsJson.features.forEach(({ id }) => {
+        initStoreState.layerMeetupspot[String(id)] = { isVisible: true };
+      });
+
+      parkingJson.features.forEach(({ id }) => {
+        initStoreState.layerParking[String(id)] = { isVisible: true };
       });
 
       pokestopsJson.features.forEach(({ id }) => {
-        initStoreState.markerpokestop[String(id)] = { isVisible: true };
+        initStoreState.layerPokestop[String(id)] = { isVisible: true };
       });
 
       powerspotsJson.features.forEach(({ id }) => {
-        initStoreState.markerpowerspot[String(id)] = { isVisible: false };
+        initStoreState.layerPowerspot[String(id)] = { isVisible: false };
+      });
+
+      restroomsJson.features.forEach(({ id }) => {
+        initStoreState.layerRestroom[String(id)] = { isVisible: true };
       });
 
       return initStoreState;
@@ -361,14 +453,23 @@ export const useStore = create<StoreState>()(
 );
 
 /**
- * Determines if a layer is considered on or off.
+ * Get the layer key from the type.
+ * @param type `CFeature` `type` property
+ * @returns Layer key
+ */
+export const getLayerKeyFromType = (type: CProperties["type"]): LayerKey => {
+  return `layer${capitalize<CProperties["type"]>(type)}`;
+};
+
+/**
+ * Determines if an advanced layer is considered on or off.
  * @param type Layer type
  * @returns True if the layer is on, false if it is off
  */
 export const useIsLayerOn = (type: CProperties["type"]) =>
   useStore((s) => {
     // If even 1 marker is visible in a layer, the layer is considered on
-    for (const { isVisible } of Object.values(s[`marker${type}`])) {
+    for (const { isVisible } of Object.values(s[getLayerKeyFromType(type)])) {
       if (isVisible) {
         return true;
       }
