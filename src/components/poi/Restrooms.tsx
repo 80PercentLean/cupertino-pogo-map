@@ -24,6 +24,7 @@ export default function Restrooms() {
             return iconAllBinaryRestroom;
         }
       }}
+      isBtnOn={{ hide: true }}
       subtitle={(_, { subtype } = {}) => {
         switch (subtype) {
           case "men":

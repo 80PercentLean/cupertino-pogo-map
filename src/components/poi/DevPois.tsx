@@ -10,7 +10,8 @@ export default function DevPois() {
     <Features
       features={devpoisJson.features}
       icon={iconDevpoi}
-      subtitle={(type, { source } = {}) => {
+      isBtnOn={{ hide: true, interactionRadius: true }}
+      subtitle={(_, { source } = {}) => {
         return `POI In-Development [${source}]`;
       }}
       type="devpoi"

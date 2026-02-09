@@ -24,7 +24,7 @@ import { X } from "lucide-react";
 import { type Dispatch, type SetStateAction } from "react";
 
 import BtnLayer from "./BtnLayer";
-import { useIsLayerOn, useStore } from "./hooks/store";
+import { useIsInteractionRadiiOn, useIsLayerOn, useStore } from "./hooks/store";
 
 export interface Props {
   setShowOverlay: Dispatch<SetStateAction<boolean>>;
@@ -32,6 +32,7 @@ export interface Props {
 
 export default function LayersOverlay({ setShowOverlay }: Props) {
   const activePopup = useStore((s) => s.activePopup);
+  const isInteractionRadiiOn = useIsInteractionRadiiOn();
   const isLayerDevpoiOn = useIsLayerOn("devpoi");
   const isLayerLabelOn = useStore((s) => s.basicLayers.label);
   const isLayerGymOn = useIsLayerOn("gym");
@@ -314,13 +315,25 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
                 </FieldLabel>
               </Field>
             </Field>
-            {/* <Field className="flex flex-row">
+            <Field className="flex flex-row">
               <Field orientation="horizontal">
                 <Checkbox
                   id="interaction-radii"
-                  checked={showInteractionRadii}
+                  checked={isInteractionRadiiOn}
                   className="cursor-pointer"
-                  onCheckedChange={() => toggleLayer("interactionRadii")}
+                  onCheckedChange={() => {
+                    if (isInteractionRadiiOn) {
+                      setLayer("gym", { showInteractionRadius: false });
+                      setLayer("pokestop", { showInteractionRadius: false });
+                      setLayer("powerspot", { showInteractionRadius: false });
+                      setLayer("devpoi", { showInteractionRadius: false });
+                    } else {
+                      setLayer("gym", { showInteractionRadius: true });
+                      setLayer("pokestop", { showInteractionRadius: true });
+                      setLayer("powerspot", { showInteractionRadius: true });
+                      setLayer("devpoi", { showInteractionRadius: true });
+                    }
+                  }}
                 />
                 <FieldLabel
                   htmlFor="interaction-radii"
@@ -330,7 +343,7 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
                 </FieldLabel>
               </Field>
             </Field>
-            <Field className="flex flex-row">
+            {/* <Field className="flex flex-row">
               <Field orientation="horizontal">
                 <Checkbox
                   id="no-ps-zones"

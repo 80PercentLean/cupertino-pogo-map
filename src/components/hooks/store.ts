@@ -464,7 +464,7 @@ export const getLayerKeyFromType = (type: CProperties["type"]): LayerKey => {
 /**
  * Determines if an advanced layer is considered on or off.
  * @param type Layer type
- * @returns True if the layer is on, false if it is off
+ * @returns True if the layer is on, false otherwise
  */
 export const useIsLayerOn = (type: CProperties["type"]) =>
   useStore((s) => {
@@ -474,6 +474,22 @@ export const useIsLayerOn = (type: CProperties["type"]) =>
         return true;
       }
     }
+    return false;
+  });
 
+/**
+ * Determines is the interaction radii checkbox is considered on or off.
+ * @returns True if at least 1 interaction radius is on, false otherwise
+ */
+export const useIsInteractionRadiiOn = () =>
+  useStore((s) => {
+    // If even 1 interaction radius is on, this will return true
+    for (const { showInteractionRadius } of Object.values(
+      s[getLayerKeyFromType("gym")],
+    )) {
+      if (showInteractionRadius) {
+        return true;
+      }
+    }
     return false;
   });

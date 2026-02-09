@@ -15,7 +15,7 @@ export default function InteractionRadius({ latlng }: Props) {
       interactive={false}
       pathOptions={{
         color: "#fff",
-        fillColor: "#00f",
+        fillColor: "#1d4ed8",
         fillOpacity: 0.1,
         weight: 1,
       }}

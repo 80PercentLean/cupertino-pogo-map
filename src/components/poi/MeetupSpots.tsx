@@ -11,6 +11,7 @@ export default function MeetupSpots() {
     <Features
       features={meetupspotsJson.features}
       icon={iconMeetupspot}
+      isBtnOn={{ hide: true }}
       subtitle="Meetup Spot"
       type="meetupspot"
     />

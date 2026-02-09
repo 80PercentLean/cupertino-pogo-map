@@ -5,16 +5,26 @@ import { useEffect, useRef } from "react";
 import { Popup } from "react-leaflet";
 
 import CMarker from "../CMarker";
-import { useStore } from "../hooks/store";
-// import InteractionRadius from "./InteractionRadius";
+import { getLayerKeyFromType, useStore } from "../hooks/store";
 // import NoCaPoiZone from "./NoCaPoiZone";
-import { genPopupContentReact } from "./helper";
+import {
+  createBtnHide,
+  createBtnInteractionRadius,
+  createPopupContent,
+} from "../popupHelper";
+import InteractionRadius from "./InteractionRadius";
+
+export interface IsBtnOn {
+  hide?: boolean;
+  interactionRadius?: boolean;
+}
 
 export interface Props {
   desc?: string;
   icon: DivIcon | Icon;
   id: string;
   inactive?: boolean;
+  isBtnOn?: IsBtnOn;
   latlng: LatLngTuple;
   photo?: string;
   removed?: boolean | string;
@@ -30,6 +40,7 @@ export interface Props {
 export default function FeatureMarker({
   desc,
   id,
+  isBtnOn,
   latlng,
   icon,
   inactive,
@@ -42,7 +53,9 @@ export default function FeatureMarker({
 }: Props) {
   const activePopup = useStore((s) => s.activePopup);
   const setMarker = useStore((s) => s.setMarker);
-  // const showInteractionRadius = useStore((s) => s.layers.interactionRadii);
+  const showInteractionRadius = useStore(
+    (s) => s[getLayerKeyFromType(type)][id].showInteractionRadius,
+  );
   // const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
   const setActivePopup = useStore((s) => s.setActivePopup);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
@@ -56,6 +69,25 @@ export default function FeatureMarker({
     // Hack to prevent placing marker immediately on hide
     setTimeout(() => setActivePopup(null, null), 0);
   };
+  let btnHide;
+  if (isBtnOn?.hide) {
+    btnHide = createBtnHide(onHideClick);
+  }
+
+  const onInteractionRadiusBtnClick = () => {
+    if (showInteractionRadius) {
+      setMarker(type, id, { showInteractionRadius: false });
+    } else {
+      setMarker(type, id, { showInteractionRadius: true });
+    }
+  };
+  let btnInteractionRadius;
+  if (isBtnOn?.interactionRadius) {
+    btnInteractionRadius = createBtnInteractionRadius(
+      showInteractionRadius,
+      onInteractionRadiusBtnClick,
+    );
+  }
 
   useEffect(() => {
     if ((inactive || removed) && markerRef.current) {
@@ -78,9 +110,9 @@ export default function FeatureMarker({
           <NoCaPoiZone latlng={latlng} />
         )} */}
       {/* Do not show interactive radius for inactive power spots */}
-      {/* {!inactive && !removed && showInteractionRadius && (
-          <InteractionRadius latlng={latlng} />
-        )} */}
+      {!inactive && !removed && showInteractionRadius && (
+        <InteractionRadius latlng={latlng} />
+      )}
       <CMarker
         ref={markerRef}
         icon={icon}
@@ -92,14 +124,17 @@ export default function FeatureMarker({
       >
         {isPopupOpen && (
           <Popup>
-            {genPopupContentReact(
+            {createPopupContent(
               title,
               subtitle,
               latlng,
               desc,
               photo,
               wayfarerMode,
-              onHideClick,
+              {
+                hide: btnHide,
+                interactionRadius: btnInteractionRadius,
+              },
               renderHtml,
             )}
           </Popup>

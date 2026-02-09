@@ -11,6 +11,7 @@ export default function Gyms() {
     <Features
       features={gymsJson.features}
       icon={iconGym}
+      isBtnOn={{ hide: true, interactionRadius: true }}
       subtitle={(_, { hidden, removed, source, wayfarerMode } = {}) => {
         let subtitle = "Gym";
         if (hidden) {

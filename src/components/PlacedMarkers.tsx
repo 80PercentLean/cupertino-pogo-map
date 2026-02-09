@@ -1,9 +1,9 @@
-import { type LatLngTuple, type LeafletEventHandlerFnMap } from "leaflet";
+import { type LeafletEventHandlerFnMap } from "leaflet";
 import { useState } from "react";
 import { useMapEvent } from "react-leaflet";
 
 import { isMobileUa } from "../util";
-import PlacedMarker from "./PlacedMarker";
+import PlacedMarker, { type PlacedMarkerState } from "./PlacedMarker";
 import { useStore } from "./hooks/store";
 
 // import InteractionRadius from "./poi/InteractionRadius";
@@ -22,7 +22,9 @@ export default function PlacedMarkers() {
   // const showPowerSpotZones = useStore((s) => s.layers.noPowerSpotZones);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
-  const [coords, setCoords] = useState<LatLngTuple[]>([]);
+  const [placedMarkerStates, setPlacedMarkerStates] = useState<
+    PlacedMarkerState[]
+  >([]);
 
   let mapEvent: keyof LeafletEventHandlerFnMap = "click";
   if (IS_MOBILE) {
@@ -31,7 +33,10 @@ export default function PlacedMarkers() {
 
   useMapEvent(mapEvent, ({ latlng }) => {
     if (!activePopup.id) {
-      setCoords((prevValue) => [...prevValue, [latlng.lat, latlng.lng]]);
+      setPlacedMarkerStates((s) => [
+        ...s,
+        { position: [latlng.lat, latlng.lng], isVisible: true },
+      ]);
 
       if (wayfarerMode) {
         console.log("Placed marker: ", latlng);
@@ -39,7 +44,23 @@ export default function PlacedMarkers() {
     }
   });
 
-  return coords.map((c, i) => {
-    return <PlacedMarker i={i} position={c} setCoords={setCoords} />;
-  });
+  const placedMarkers = [];
+  for (const [i, { isVisible, position }] of placedMarkerStates.entries()) {
+    if (isVisible) {
+      const id = `placed-${i}-lat${position[0]},lng${position[1]}`;
+
+      placedMarkers.push(
+        <PlacedMarker
+          key={id}
+          id={id}
+          i={i}
+          placedMarkerState={placedMarkerStates[i]}
+          position={position}
+          setPlacedMarkerStates={setPlacedMarkerStates}
+        />,
+      );
+    }
+  }
+
+  return placedMarkers;
 }

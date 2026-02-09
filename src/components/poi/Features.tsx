@@ -3,7 +3,7 @@ import { type LatLngTuple } from "leaflet";
 import { type DivIcon, type Icon } from "leaflet";
 
 import { type StoreState, getLayerKeyFromType, useStore } from "../hooks/store";
-import FeatureMarker from "./FeatureMarker";
+import FeatureMarker, { type IsBtnOn } from "./FeatureMarker";
 
 interface GetSubtitleOptions {
   hidden?: CProperties["hidden"];
@@ -23,6 +23,7 @@ export interface Props {
         type: CProperties["type"],
         subtype?: CProperties["subtype"],
       ) => DivIcon | Icon);
+  isBtnOn?: IsBtnOn;
   renderHtml?: boolean;
   subtitle?:
     | string
@@ -33,6 +34,7 @@ export interface Props {
 export default function Features({
   features,
   icon,
+  isBtnOn,
   renderHtml,
   subtitle,
   type,
@@ -79,6 +81,7 @@ export default function Features({
         <FeatureMarker
           key={id}
           id={id as string}
+          isBtnOn={isBtnOn}
           desc={desc}
           icon={typeof icon === "function" ? icon?.(type, subtype) : icon}
           latlng={latlng}

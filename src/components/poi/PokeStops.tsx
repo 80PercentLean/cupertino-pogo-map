@@ -18,6 +18,7 @@ export default function PokeStops() {
             return iconPokestop;
         }
       }}
+      isBtnOn={{ hide: true, interactionRadius: true }}
       subtitle={(
         _,
         { hidden, removed, source, subtype, wayfarerMode } = {},

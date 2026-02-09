@@ -18,6 +18,7 @@ export default function Parking() {
             return iconParking;
         }
       }}
+      isBtnOn={{ hide: true }}
       renderHtml={true}
       subtitle={(_, { subtype } = {}) => {
         if (subtype === "conditionally-free") {

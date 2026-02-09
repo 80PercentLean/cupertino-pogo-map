@@ -1,9 +1,54 @@
-import type { LatLng, LatLngTuple } from "leaflet";
-import { Eye, EyeClosed } from "lucide-react";
+import type { LatLngTuple } from "leaflet";
+import { Circle, Eye, EyeClosed, Radius } from "lucide-react";
+import type { ReactElement } from "react";
 
-import BtnCopy from "../BtnCopy";
-import BtnCopyCoords from "../BtnCopyCoords";
-import { Button } from "../ui/button";
+import BtnCopy from "./BtnCopy";
+import BtnCopyCoords from "./BtnCopyCoords";
+import { Button } from "./ui/button";
+
+export const createBtnHide = (onHideClick: () => void) => {
+  return (
+    <Button
+      variant="outline"
+      size="icon"
+      title="Hide This"
+      className="group mr-2 cursor-pointer rounded-full"
+      onClick={() => onHideClick()}
+    >
+      <Eye className="group-hover:hidden" />
+      <EyeClosed className="hidden group-hover:block" />
+    </Button>
+  );
+};
+
+export const createBtnInteractionRadius = (
+  showInteractionRadius: boolean | undefined,
+  onInteractionRadiusBtnClick: () => void,
+) => {
+  let btnInteractionRadiusClassName =
+    "group cursor-pointer rounded-full hover:bg-blue-500";
+  if (showInteractionRadius) {
+    btnInteractionRadiusClassName += " bg-blue-500";
+  } else {
+    btnInteractionRadiusClassName += " bg-blue-300";
+  }
+
+  return (
+    <Button
+      variant="outline"
+      size="icon"
+      title="Toggle 80m Interaction Radius"
+      className={btnInteractionRadiusClassName}
+      onClick={() => onInteractionRadiusBtnClick()}
+    >
+      {showInteractionRadius ? (
+        <Radius className="text-white" />
+      ) : (
+        <Circle className="text-white" />
+      )}
+    </Button>
+  );
+};
 
 /**
  * Generates the content for a POI marker.
@@ -14,59 +59,17 @@ import { Button } from "../ui/button";
  * @param img Image of the POI
  * @returns The content of the popup as a string
  */
-export const genPopupContent = (
-  name: string,
-  type: string,
-  latlng: LatLng,
-  desc?: string,
-  img?: string,
-  wayfarerMode?: boolean,
-) => {
-  let popupContent = `
-    <h1 class="font-bold">${name}</h1>
-    <p class="italic mt-0!">${type}</p>
-  `;
-
-  if (img) {
-    popupContent += `<a href="${img}" rel="noopener noreferrer" target="_blank"><img src=${img} alt="${name}"></a>`;
-  }
-
-  if (desc) {
-    popupContent += desc;
-  }
-
-  popupContent += `
-    <hr class="mt-2" />
-    <p>
-      Directions:
-        <a href="https://maps.google.com/maps?q=${latlng.lat},${latlng.lng}" rel="noopener noreferrer" target="_blank">Google Maps</a> |
-        <a href="https://maps.apple.com/place?coordinate=${latlng.lat},${latlng.lng}" rel="noopener noreferrer" target="_blank">Apple Maps</a>
-      </ul>
-    </p>
-  `;
-
-  if (wayfarerMode) {
-    popupContent += `
-      <hr class="mt-2" />
-      <p>
-        <span class="font-bold">Latitude:</span> ${latlng.lat}
-        <br />
-        <span class="font-bold">Longitude:</span> ${latlng.lng}
-      </p>
-    `;
-  }
-
-  return popupContent;
-};
-
-export const genPopupContentReact = (
+export const createPopupContent = (
   title: string,
   subtitle: string | undefined,
   latlng: LatLngTuple,
   desc?: string,
   img?: string,
   wayfarerMode?: boolean,
-  onHideClick?: () => void,
+  btns?: {
+    hide?: ReactElement<typeof Button>;
+    interactionRadius?: ReactElement<typeof Button>;
+  },
   renderHtml?: boolean,
 ) => {
   let description;
@@ -122,18 +125,8 @@ export const genPopupContentReact = (
           <BtnCopy text="Copy name" value={title} className="mr-2" />
           <BtnCopyCoords lat={latlng[0]} lng={latlng[1]} />
           <div className="mt-2">
-            {onHideClick && (
-              <Button
-                variant="outline"
-                size="icon"
-                title="Hide"
-                className="group cursor-pointer rounded-full"
-                onClick={() => onHideClick()}
-              >
-                <Eye className="group-hover:hidden" />
-                <EyeClosed className="hidden group-hover:block" />
-              </Button>
-            )}
+            {btns?.hide}
+            {btns?.interactionRadius}
           </div>
         </>
       )}
