@@ -17,6 +17,18 @@ export interface Props {
  * Breadcrumbs for the Wayfarer tools view.
  */
 export default function ToolsViewBreadcrumbs({ nav, setNav }: Props) {
+  let latestBreadcrumb;
+  switch (nav) {
+    case "placed-marker":
+      latestBreadcrumb = "Placed Marker Tool";
+      break;
+    case "distance-calc":
+      latestBreadcrumb = "Distance Calculator Tool";
+      break;
+    default:
+      nav = null;
+  }
+
   return (
     <Breadcrumb>
       <BreadcrumbList>
@@ -24,14 +36,19 @@ export default function ToolsViewBreadcrumbs({ nav, setNav }: Props) {
           {nav === null ? (
             <BreadcrumbPage>Tools</BreadcrumbPage>
           ) : (
-            <BreadcrumbLink onClick={() => setNav(null)}>Tools</BreadcrumbLink>
+            <BreadcrumbLink
+              className="cursor-pointer"
+              onClick={() => setNav(null)}
+            >
+              Tools
+            </BreadcrumbLink>
           )}
         </BreadcrumbItem>
-        {nav === "distance-calc" && (
+        {nav && (
           <>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage>POI Distance Calculator</BreadcrumbPage>
+              <BreadcrumbPage>{latestBreadcrumb}</BreadcrumbPage>
             </BreadcrumbItem>
           </>
         )}

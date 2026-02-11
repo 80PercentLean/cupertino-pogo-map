@@ -1,12 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { type LatLngTuple, type Marker } from "leaflet";
-import { type Dispatch, type SetStateAction, useEffect, useRef } from "react";
+import { type Marker } from "leaflet";
+import { useEffect, useRef } from "react";
 import { Popup } from "react-leaflet";
 
 import BtnCopyCoords from "./BtnCopyCoords";
 import CMarker from "./CMarker";
 import { useStore } from "./hooks/store";
-import { type MarkerState } from "./hooks/store";
 import InteractionRadius from "./poi/InteractionRadius";
 import {
   createBtnHide,
@@ -14,30 +13,21 @@ import {
   createPopupContent,
 } from "./popupHelper";
 
-export interface PlacedMarkerState extends MarkerState {
-  position: LatLngTuple;
-}
-
 export interface Props {
-  id: string;
   i: number;
-  placedMarkerState: PlacedMarkerState;
-  position: LatLngTuple;
-  setPlacedMarkerStates: Dispatch<SetStateAction<PlacedMarkerState[]>>;
 }
 
 /**
  * Render a marker for placed markers.
  */
-export default function PlacedMarker({
-  id,
-  i,
-  placedMarkerState,
-  position,
-  setPlacedMarkerStates,
-}: Props) {
+export default function PlacedMarker({ i }: Props) {
   const activePopup = useStore((s) => s.activePopup);
+  const { id, isVisible, position, showInteractionRadius } = useStore(
+    (s) => s.placedMarkerStates[i],
+  );
+  const removePlacedMarkerState = useStore((s) => s.removePlacedMarkerState);
   const setActivePopup = useStore((s) => s.setActivePopup);
+  const updatePlacedMarkerState = useStore((s) => s.updatePlacedMarkerState);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const markerRef = useRef<Marker | null>(null);
@@ -45,30 +35,20 @@ export default function PlacedMarker({
   const isPopupOpen = activePopup.id && activePopup.id === id;
 
   const onHideClick = () => {
-    setPlacedMarkerStates((s) => [
-      ...s.slice(0, i),
-      {
-        ...s[i],
-        isVisible: false,
-      },
-      ...s.slice(i + 1),
-    ]);
+    updatePlacedMarkerState(i, {
+      isVisible: !isVisible,
+    });
     setTimeout(() => setActivePopup(null, null), 0);
   };
   const btnHide = createBtnHide(onHideClick);
 
   const onInteractionRadiusBtnClick = () => {
-    setPlacedMarkerStates((s) => [
-      ...s.slice(0, i),
-      {
-        ...s[i],
-        showInteractionRadius: !s[i].showInteractionRadius,
-      },
-      ...s.slice(i + 1),
-    ]);
+    updatePlacedMarkerState(i, {
+      showInteractionRadius: !showInteractionRadius,
+    });
   };
   const btnInteractionRadius = createBtnInteractionRadius(
-    placedMarkerState.showInteractionRadius,
+    showInteractionRadius,
     onInteractionRadiusBtnClick,
   );
 
@@ -82,9 +62,7 @@ export default function PlacedMarker({
   return (
     <>
       {/* {showNoCaPoiZones && <NoCaPoiZone latlng={c} />} */}
-      {placedMarkerState.showInteractionRadius && (
-        <InteractionRadius latlng={position} />
-      )}
+      {showInteractionRadius && <InteractionRadius latlng={position} />}
       {/*{showPowerSpotZones && <NoPowerSpotZone latlng={c} />} */}
       <CMarker
         ref={markerRef}
@@ -113,12 +91,10 @@ export default function PlacedMarker({
               <Button
                 variant="destructive"
                 onClick={() => {
+                  removePlacedMarkerState(i);
                   // This is a hack to prevent a new marker from being placed after the delete button is clicked
                   setTimeout(() => {
-                    setPlacedMarkerStates((s) => {
-                      console.log("Deleted placed marker: ", s[i]);
-                      return [...s.slice(0, i), ...s.slice(i + 1)];
-                    });
+                    setActivePopup(null, null);
                   }, 0);
                 }}
                 className="cursor-pointer"

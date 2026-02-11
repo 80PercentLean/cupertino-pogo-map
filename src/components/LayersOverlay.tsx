@@ -17,6 +17,7 @@ import {
   emojiMeetupspot,
   emojiParking,
   imgGym,
+  imgLeafletMarker,
   imgPokestop,
   imgPowerspot,
 } from "@/leafletIcons";
@@ -32,24 +33,37 @@ export interface Props {
 
 export default function LayersOverlay({ setShowOverlay }: Props) {
   const activePopup = useStore((s) => s.activePopup);
+  const hasPlacedMarkers = useStore((s) => s.placedMarkerStates.length > 0);
   const isInteractionRadiiOn = useIsInteractionRadiiOn();
   const isLayerDevpoiOn = useIsLayerOn("devpoi");
   const isLayerLabelOn = useStore((s) => s.basicLayers.label);
   const isLayerGymOn = useIsLayerOn("gym");
   const isLayerMeetupSpotOn = useIsLayerOn("meetupspot");
   const isLayerParkingOn = useIsLayerOn("parking");
+  const isLayerPlacedMarkerOn = useStore((s) => {
+    // If even 1 marker is visible in a layer, the layer is considered on
+    for (const { isVisible } of Object.values(s.placedMarkerStates)) {
+      if (isVisible) {
+        return true;
+      }
+    }
+    return false;
+  });
   const isLayerPokestopOn = useIsLayerOn("pokestop");
   const isLayerPowerspotOn = useIsLayerOn("powerspot");
+  const isLayerRestroomOn = useIsLayerOn("restroom");
   const isL13GridOn = useStore((s) => s.basicLayers.l13);
   const isL14GridOn = useStore((s) => s.basicLayers.l14);
   const isL17GridOn = useStore((s) => s.basicLayers.l17);
-  const isLayerRestroomOn = useIsLayerOn("restroom");
   const isStdRaidPathOn = useStore((s) => s.basicLayers.stdRaidPath);
   const mapType = useStore((s) => s.mapType);
   const setMapType = useStore((s) => s.setMapType);
   const setLayer = useStore((s) => s.setLayer);
   const setActivePopup = useStore((s) => s.setActivePopup);
   const toggleBasicLayer = useStore((s) => s.toggleBasicLayer);
+  const updateAllPlacedMarkerStates = useStore(
+    (s) => s.updateAllPlacedMarkerStates,
+  );
   // const showInteractionRadii = useStore((s) => s.layers.interactionRadii);
   // const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
   // const showPowerSpotZones = useStore((s) => s.layers.noPowerSpotZones);
@@ -113,7 +127,7 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
               <BtnLayer
                 isActive={isLayerPowerspotOn}
                 imagery={
-                  <img src={imgPowerspot} alt="Power Spot Layer button Icon" />
+                  <img src={imgPowerspot} alt="Power Spot Layer Button Icon" />
                 }
                 label="Power Spots"
                 onClick={() => {
@@ -193,6 +207,31 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
                 }}
               />
             </Field>
+            {hasPlacedMarkers && (
+              <Field className="w-14">
+                <BtnLayer
+                  isActive={isLayerPlacedMarkerOn}
+                  imagery={
+                    <img
+                      src={imgLeafletMarker}
+                      alt="Placed Marker Button Icon"
+                    />
+                  }
+                  label="Placed Markers"
+                  onClick={() => {
+                    if (isLayerPlacedMarkerOn) {
+                      updateAllPlacedMarkerStates({ isVisible: false });
+
+                      if (activePopup.id && activePopup.type === "placed") {
+                        setActivePopup(null, null);
+                      }
+                    } else {
+                      updateAllPlacedMarkerStates({ isVisible: true });
+                    }
+                  }}
+                />
+              </Field>
+            )}
             {wayfarerMode && (
               <Field className="w-14">
                 <BtnLayer
@@ -327,11 +366,17 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
                       setLayer("pokestop", { showInteractionRadius: false });
                       setLayer("powerspot", { showInteractionRadius: false });
                       setLayer("devpoi", { showInteractionRadius: false });
+                      updateAllPlacedMarkerStates({
+                        showInteractionRadius: false,
+                      });
                     } else {
                       setLayer("gym", { showInteractionRadius: true });
                       setLayer("pokestop", { showInteractionRadius: true });
                       setLayer("powerspot", { showInteractionRadius: true });
                       setLayer("devpoi", { showInteractionRadius: true });
+                      updateAllPlacedMarkerStates({
+                        showInteractionRadius: true,
+                      });
                     }
                   }}
                 />

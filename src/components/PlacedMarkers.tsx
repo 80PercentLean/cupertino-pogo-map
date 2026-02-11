@@ -1,9 +1,8 @@
 import { type LeafletEventHandlerFnMap } from "leaflet";
-import { useState } from "react";
 import { useMapEvent } from "react-leaflet";
 
 import { isMobileUa } from "../util";
-import PlacedMarker, { type PlacedMarkerState } from "./PlacedMarker";
+import PlacedMarker from "./PlacedMarker";
 import { useStore } from "./hooks/store";
 
 // import InteractionRadius from "./poi/InteractionRadius";
@@ -20,11 +19,10 @@ export default function PlacedMarkers() {
   // const showInteractionRadius = useStore((s) => s.layers.interactionRadii);
   // const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
   // const showPowerSpotZones = useStore((s) => s.layers.noPowerSpotZones);
-  const wayfarerMode = useStore((s) => s.wayfarerMode);
+  const addPlacedMarkerState = useStore((s) => s.addPlacedMarkerState);
+  const placedMarkerStates = useStore((s) => s.placedMarkerStates);
 
-  const [placedMarkerStates, setPlacedMarkerStates] = useState<
-    PlacedMarkerState[]
-  >([]);
+  const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   let mapEvent: keyof LeafletEventHandlerFnMap = "click";
   if (IS_MOBILE) {
@@ -33,10 +31,7 @@ export default function PlacedMarkers() {
 
   useMapEvent(mapEvent, ({ latlng }) => {
     if (!activePopup.id) {
-      setPlacedMarkerStates((s) => [
-        ...s,
-        { position: [latlng.lat, latlng.lng], isVisible: true },
-      ]);
+      addPlacedMarkerState([latlng.lat, latlng.lng]);
 
       if (wayfarerMode) {
         console.log("Placed marker: ", latlng);
@@ -45,20 +40,9 @@ export default function PlacedMarkers() {
   });
 
   const placedMarkers = [];
-  for (const [i, { isVisible, position }] of placedMarkerStates.entries()) {
+  for (const [i, { id, isVisible }] of placedMarkerStates.entries()) {
     if (isVisible) {
-      const id = `placed-${i}-lat${position[0]},lng${position[1]}`;
-
-      placedMarkers.push(
-        <PlacedMarker
-          key={id}
-          id={id}
-          i={i}
-          placedMarkerState={placedMarkerStates[i]}
-          position={position}
-          setPlacedMarkerStates={setPlacedMarkerStates}
-        />,
-      );
+      placedMarkers.push(<PlacedMarker key={id} i={i} />);
     }
   }
 

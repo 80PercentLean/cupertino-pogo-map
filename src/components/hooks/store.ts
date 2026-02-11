@@ -9,8 +9,12 @@ import {
 } from "@/geojson/data";
 import { type CProperties } from "@/types/CFeatures";
 import { capitalize } from "@/util";
+import type { LatLngTuple } from "leaflet";
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
+
+/** Global variable that allows placed markers to have a simple unique ID. */
+let placedMarkerCount = 0;
 
 export type LayerKey = `layer${Capitalize<CProperties["type"]>}`;
 
@@ -31,12 +35,21 @@ export interface MarkerState {
   showNoPowerSpotZones?: boolean;
 }
 
+export interface PlacedMarkerState extends MarkerState {
+  id: string;
+
+  position: LatLngTuple;
+}
+
 export interface StoreState {
   /** Controls which popup is currently open. */
   activePopup: {
     id: string | null;
     type: CProperties["type"] | "placed" | null;
   };
+
+  /** Add a placed marker state. */
+  addPlacedMarkerState: (position: LatLngTuple) => void;
 
   /** State for basic layers. */
   basicLayers: {
@@ -143,6 +156,11 @@ export interface StoreState {
   /** Value for geolocation position accuracy. */
   myLocationAccuracy: number | null;
 
+  /** State for placed markers. */
+  placedMarkerStates: PlacedMarkerState[];
+
+  removePlacedMarkerState: (i: number) => void;
+
   /** Set the `activePopup` value. */
   setActivePopup: (
     id: StoreState["activePopup"]["id"] | null,
@@ -191,9 +209,36 @@ export interface StoreState {
   /** Toggle a modifier value. */
   toggleModifier: (modifier: ModifierType) => void;
 
+  /** Update all placed marker states. */
+  updateAllPlacedMarkerStates: (
+    state: Partial<PlacedMarkerState>,
+    override?: boolean,
+  ) => void;
+
+  /** Update a placed marker state. */
+  updatePlacedMarkerState: (
+    i: number,
+    state: Partial<PlacedMarkerState>,
+    override?: boolean,
+  ) => void;
+
   /** Enable Wayfarer mode when true. */
   wayfarerMode: boolean;
 }
+
+const isLatLngTuple = (value: unknown): value is LatLngTuple => {
+  return (
+    Array.isArray(value) &&
+    (value.length === 2 || value.length === 3) &&
+    value.every((v) => typeof v === "number")
+  );
+};
+
+const isPlacedMarkerState = (
+  s: Partial<PlacedMarkerState>,
+): s is PlacedMarkerState => {
+  return typeof s.id === "number" && isLatLngTuple(s.position);
+};
 
 /**
  * React hook that gives components access to the app's Zustand store.
@@ -203,6 +248,26 @@ export const useStore = create<StoreState>()(
     (set) => {
       const initStoreState: StoreState = {
         activePopup: { id: null, type: null },
+
+        addPlacedMarkerState: (position) => {
+          const result = set(
+            (s) => ({
+              placedMarkerStates: [
+                ...s.placedMarkerStates,
+                {
+                  id: `placed-${placedMarkerCount}`,
+                  position,
+                  isVisible: true,
+                },
+              ],
+            }),
+            undefined,
+            "addPlacedMarkerState",
+          );
+          ++placedMarkerCount;
+
+          return result;
+        },
 
         basicLayers: {
           l13: false,
@@ -259,6 +324,20 @@ export const useStore = create<StoreState>()(
         // myLocationAccuracy starts as null until my location functionality is enabled
         myLocationAccuracy: null,
 
+        placedMarkerStates: [],
+
+        removePlacedMarkerState: (i) =>
+          set(
+            (s) => ({
+              placedMarkerStates: [
+                ...s.placedMarkerStates.slice(0, i),
+                ...s.placedMarkerStates.slice(i + 1),
+              ],
+            }),
+            undefined,
+            "removePlacedMarkerState",
+          ),
+
         setActivePopup: (id, type) =>
           set(
             () => ({
@@ -291,27 +370,27 @@ export const useStore = create<StoreState>()(
               const allIds = Object.keys(s[layerKey]);
 
               if (override) {
+                // Completely override a marker's state
                 allIds.forEach((id) => {
-                  // Completely override a marker's state
                   if (!newLayer) {
                     throw new Error("Layer could not be found.");
                   }
 
                   newLayer[id] = state;
                 });
+              } else {
+                // Merge new state with current state for a marker
+                allIds.forEach((id) => {
+                  if (!newLayer) {
+                    throw new Error("Layer could not be found.");
+                  }
+
+                  newLayer[id] = {
+                    ...s[layerKey][id],
+                    ...state,
+                  };
+                });
               }
-
-              // Merge new state with current state for a marker
-              allIds.forEach((id) => {
-                if (!newLayer) {
-                  throw new Error("Layer could not be found.");
-                }
-
-                newLayer[id] = {
-                  ...s[layerKey][id],
-                  ...state,
-                };
-              });
 
               return newState;
             },
@@ -324,24 +403,20 @@ export const useStore = create<StoreState>()(
             (s) => {
               const layerKey = getLayerKeyFromType(type);
 
+              let newMarkerState;
               if (override) {
-                // Completely override a marker's state
-                return {
-                  [layerKey]: {
-                    ...s[layerKey],
-                    [id]: state,
-                  },
+                newMarkerState = state;
+              } else {
+                newMarkerState = {
+                  ...s[layerKey][id],
+                  ...state,
                 };
               }
 
-              // Merge new state with current state for a marker
               return {
                 [layerKey]: {
                   ...s[layerKey],
-                  [id]: {
-                    ...s[layerKey][id],
-                    ...state,
-                  },
+                  [id]: newMarkerState,
                 },
               };
             },
@@ -414,6 +489,64 @@ export const useStore = create<StoreState>()(
             "toggleModifier",
           ),
 
+        updateAllPlacedMarkerStates: (state, override) =>
+          set(
+            (s) => ({
+              placedMarkerStates: s.placedMarkerStates.map(
+                (currPlacedMarkerState) => {
+                  let newMarkerState: PlacedMarkerState;
+                  if (override) {
+                    if (!isPlacedMarkerState(state)) {
+                      throw new Error(
+                        "You attempted to completely override a placed marker state with an invalid ID.",
+                      );
+                    }
+                    newMarkerState = state;
+                  } else {
+                    newMarkerState = {
+                      ...currPlacedMarkerState,
+                      ...state,
+                    };
+                  }
+
+                  return newMarkerState;
+                },
+              ),
+            }),
+            undefined,
+            "updateAllPlacedMarkerStates",
+          ),
+
+        updatePlacedMarkerState: (i, state, override) =>
+          set(
+            (s) => {
+              let newMarkerState: PlacedMarkerState;
+              if (override) {
+                if (!isPlacedMarkerState(state)) {
+                  throw new Error(
+                    "You attempted to completely override a placed marker state with an invalid ID.",
+                  );
+                }
+                newMarkerState = state;
+              } else {
+                newMarkerState = {
+                  ...s.placedMarkerStates[i],
+                  ...state,
+                };
+              }
+
+              return {
+                placedMarkerStates: [
+                  ...s.placedMarkerStates.slice(0, i),
+                  newMarkerState,
+                  ...s.placedMarkerStates.slice(i + 1),
+                ],
+              };
+            },
+            undefined,
+            "updatePlacedMarkerState",
+          ),
+
         wayfarerMode: true,
       };
 
@@ -483,13 +616,28 @@ export const useIsLayerOn = (type: CProperties["type"]) =>
  */
 export const useIsInteractionRadiiOn = () =>
   useStore((s) => {
-    // If even 1 interaction radius is on, this will return true
-    for (const { showInteractionRadius } of Object.values(
+    const layers = [
       s[getLayerKeyFromType("gym")],
-    )) {
+      s[getLayerKeyFromType("pokestop")],
+      s[getLayerKeyFromType("powerspot")],
+      s[getLayerKeyFromType("devpoi")],
+    ];
+
+    // If even 1 interaction radius is on in one of the above layers, this will return true
+    for (const l of layers) {
+      for (const { showInteractionRadius } of Object.values(l)) {
+        if (showInteractionRadius) {
+          return true;
+        }
+      }
+    }
+
+    // If even 1 interaction radius is on for one of the placed markers, this will return true
+    for (const { showInteractionRadius } of s.placedMarkerStates) {
       if (showInteractionRadius) {
         return true;
       }
     }
+
     return false;
   });

@@ -11,9 +11,17 @@ export interface Props {
 export default function ToolsDefaultView({ setNav }: Props) {
   return (
     <div className="flex flex-col gap-4">
-      <Button>Placed Marker Tool</Button>
-      <Button onClick={() => setNav("distance-calc")}>
-        POI Distance Calculator
+      <Button
+        className="cursor-pointer"
+        onClick={() => setNav("placed-marker")}
+      >
+        Placed Marker Tool
+      </Button>
+      <Button
+        className="cursor-pointer"
+        onClick={() => setNav("distance-calc")}
+      >
+        Distance Calculator
       </Button>
     </div>
   );
