@@ -32,8 +32,8 @@ export interface Props {
   icon: DivIcon | Icon;
   id: string;
   inactive?: boolean;
-  latlng: LatLngTuple;
   photo?: string;
+  position: LatLngTuple;
   removed?: boolean | string;
   renderHtml?: boolean;
   subtitle?: string;
@@ -48,10 +48,10 @@ export default function FeatureMarker({
   btnModifierFlags,
   desc,
   id,
-  latlng,
   icon,
   inactive,
   photo,
+  position,
   removed,
   renderHtml,
   subtitle,
@@ -150,20 +150,20 @@ export default function FeatureMarker({
   return (
     <>
       {!inactive && !removed && showNoPowerSpotZone && (
-        <NoPowerSpotZone latlng={latlng} />
+        <NoPowerSpotZone position={position} />
       )}
       {/* Do not show NoCaPoiZone for inactive power spots */}
       {!inactive && !removed && showNoCaPoiZone && (
-        <NoCaPoiZone latlng={latlng} />
+        <NoCaPoiZone position={position} />
       )}
       {/* Do not show interactive radius for inactive power spots */}
       {!inactive && !removed && showInteractionRadius && (
-        <InteractionRadius latlng={latlng} />
+        <InteractionRadius position={position} />
       )}
       <CMarker
         ref={markerRef}
         icon={icon}
-        position={latlng}
+        position={position}
         eventHandlers={{
           click: () => setActivePopup(id, type),
           popupclose: () => setActivePopup(null, null),
@@ -174,7 +174,7 @@ export default function FeatureMarker({
             {createPopupContent(
               title,
               subtitle,
-              latlng,
+              position,
               desc,
               photo,
               wayfarerMode,

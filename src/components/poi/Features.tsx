@@ -72,10 +72,10 @@ export default function Features({
     }
 
     if (id && layer[id]?.isVisible) {
-      const latlng = [
+      const position: LatLngTuple = [
         geometry.coordinates[1],
         geometry.coordinates[0],
-      ] as LatLngTuple;
+      ];
 
       markers.push(
         <FeatureMarker
@@ -85,8 +85,8 @@ export default function Features({
           desc={desc}
           icon={typeof icon === "function" ? icon?.(type, subtype) : icon}
           inactive={inactive}
-          latlng={latlng}
           photo={photo}
+          position={position}
           removed={removed}
           renderHtml={renderHtml}
           subtitle={

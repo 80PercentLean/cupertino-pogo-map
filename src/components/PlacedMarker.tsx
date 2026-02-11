@@ -93,7 +93,7 @@ export default function PlacedMarker({ i }: Props) {
           setActivePopup(null, null);
         }, 0);
       }}
-      className="ml-2 cursor-pointer rounded-full"
+      className="ml-2 cursor-pointer rounded-full hover:text-black"
       data-testid="delete-placed-marker-btn"
     >
       <Trash2 />
@@ -109,9 +109,9 @@ export default function PlacedMarker({ i }: Props) {
 
   return (
     <>
-      {showNoPowerSpotZone && <NoPowerSpotZone latlng={position} />}
-      {showNoCaPoiZone && <NoCaPoiZone latlng={position} />}
-      {showInteractionRadius && <InteractionRadius latlng={position} />}
+      {showNoPowerSpotZone && <NoPowerSpotZone position={position} />}
+      {showNoCaPoiZone && <NoCaPoiZone position={position} />}
+      {showInteractionRadius && <InteractionRadius position={position} />}
       <CMarker
         ref={markerRef}
         position={position}

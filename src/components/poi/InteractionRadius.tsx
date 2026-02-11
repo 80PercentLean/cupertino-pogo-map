@@ -2,16 +2,16 @@ import { type LatLngTuple } from "leaflet";
 import { Circle } from "react-leaflet";
 
 export interface Props {
-  latlng: LatLngTuple;
+  position: LatLngTuple;
 }
 
 /**
  * Visualizes a 80m range around POIs in which they can be interacted with.
  */
-export default function InteractionRadius({ latlng }: Props) {
+export default function InteractionRadius({ position }: Props) {
   return (
     <Circle
-      center={latlng}
+      center={position}
       interactive={false}
       pathOptions={{
         color: "#fff",

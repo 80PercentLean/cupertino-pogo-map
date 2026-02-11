@@ -35,12 +35,13 @@ export const createBtnInteractionRadius = (
   showInteractionRadius: boolean | undefined,
   onBtnInteractionRadiusClick: () => void,
 ) => {
-  let btnInteractionRadiusClassName =
-    "group cursor-pointer rounded-full hover:bg-blue-500 ml-2";
+  let btnInteractionRadiusClassName = "group cursor-pointer rounded-full ml-2";
   if (showInteractionRadius) {
-    btnInteractionRadiusClassName += " bg-blue-500 text-green-400";
+    btnInteractionRadiusClassName +=
+      " bg-blue-500 hover:bg-blue-500 text-green-400";
   } else {
-    btnInteractionRadiusClassName += " bg-blue-300  text-white";
+    btnInteractionRadiusClassName +=
+      " bg-blue-300 hover:bg-blue-300 text-white";
   }
 
   return (
@@ -61,13 +62,13 @@ export const createBtnNoPowerSpotZone = (
   onBtnNoPowerSpotZoneClick: () => void,
 ) => {
   let btnNoCaPoiZoneClassName =
-    "ml-2 cursor-pointer rounded-full text-white hover:bg-gray-400";
-  let iconBanClassName = "absolute !h-6 !w-6  group-hover:text-black";
+    "group ml-2 cursor-pointer rounded-full text-white";
+  let iconBanClassName = "absolute !h-6 !w-6 group-hover:text-black";
   if (showNoPowerSpotZone) {
-    btnNoCaPoiZoneClassName += " bg-gray-400";
+    btnNoCaPoiZoneClassName += " bg-gray-400 hover:bg-gray-400";
     iconBanClassName += " text-red-700";
   } else {
-    btnNoCaPoiZoneClassName += " bg-gray-300";
+    btnNoCaPoiZoneClassName += " bg-gray-300 hover:bg-gray-300";
     iconBanClassName += " text-white";
   }
 
@@ -91,13 +92,13 @@ export const createBtnNoCaPoiZone = (
   onBtnNoCaPoiZoneClick: () => void,
 ) => {
   let btnNoCaPoiZoneClassName =
-    "ml-2 cursor-pointer rounded-full text-white hover:bg-red-400 relative group";
-  let iconBanClassName = "absolute !h-6 !w-6  group-hover:text-black";
+    "ml-2 cursor-pointer rounded-full text-white group";
+  let iconBanClassName = "absolute !h-6 !w-6 group-hover:text-black";
   if (showNoCaPoiZone) {
-    btnNoCaPoiZoneClassName += " bg-red-400";
+    btnNoCaPoiZoneClassName += " bg-red-400 hover:bg-red-400 text-red-100";
     iconBanClassName += " text-red-700";
   } else {
-    btnNoCaPoiZoneClassName += " bg-red-300";
+    btnNoCaPoiZoneClassName += " bg-red-300 hover:bg-red-300 text-red-900";
     iconBanClassName += " text-white";
   }
 
@@ -128,7 +129,7 @@ export const createBtnNoCaPoiZone = (
 export const createPopupContent = (
   title: string,
   subtitle: string | undefined,
-  latlng: LatLngTuple,
+  position: LatLngTuple,
   desc?: string,
   img?: string,
   wayfarerMode?: boolean,
@@ -157,7 +158,7 @@ export const createPopupContent = (
       <p>
         Directions:{" "}
         <a
-          href={`https://maps.google.com/maps?q=${latlng[0]},${latlng[1]}`}
+          href={`https://maps.google.com/maps?q=${position[0]},${position[1]}`}
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -165,7 +166,7 @@ export const createPopupContent = (
         </a>{" "}
         |{" "}
         <a
-          href={`https://maps.apple.com/place?coordinate=${latlng[0]},${latlng[1]}`}
+          href={`https://maps.apple.com/place?coordinate=${position[0]},${position[1]}`}
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -176,13 +177,13 @@ export const createPopupContent = (
         <>
           <Separator className="my-4" />
           <BtnCopy
-            text={`Latitude: ${latlng[0]}`}
-            value={latlng[0]}
+            text={`Latitude: ${position[0]}`}
+            value={position[0]}
             className={`${classNameDefault} mb-2`}
           />
           <BtnCopy
-            text={`Longitude: ${latlng[1]}`}
-            value={latlng[1]}
+            text={`Longitude: ${position[1]}`}
+            value={position[1]}
             className={`${classNameDefault} mb-2`}
           />
           <BtnCopy
@@ -191,8 +192,8 @@ export const createPopupContent = (
             className={`${classNameDefault} mb-2`}
           />
           <BtnCopyCoords
-            lat={latlng[0]}
-            lng={latlng[1]}
+            lat={position[0]}
+            lng={position[1]}
             className={`${classNameDefault} mb-2 ml-2`}
           />
           {modifierBtns && Object.keys(modifierBtns).length > 0 && (
