@@ -8,10 +8,12 @@ import CMarker from "./CMarker";
 import { useStore } from "./hooks/store";
 import InteractionRadius from "./poi/InteractionRadius";
 import NoCaPoiZone from "./poi/NoCaPoiZone";
+import NoPowerSpotZone from "./poi/NoPowerSpotZone";
 import {
   createBtnHide,
   createBtnInteractionRadius,
   createBtnNoCaPoiZone,
+  createBtnNoPowerSpotZone,
   createPopupContent,
 } from "./popupHelper";
 
@@ -24,8 +26,14 @@ export interface Props {
  */
 export default function PlacedMarker({ i }: Props) {
   const activePopup = useStore((s) => s.activePopup);
-  const { id, isVisible, position, showInteractionRadius, showNoCaPoiZone } =
-    useStore((s) => s.placedMarkerStates[i]);
+  const {
+    id,
+    isVisible,
+    position,
+    showInteractionRadius,
+    showNoCaPoiZone,
+    showNoPowerSpotZone,
+  } = useStore((s) => s.placedMarkerStates[i]);
   const removePlacedMarkerState = useStore((s) => s.removePlacedMarkerState);
   const setActivePopup = useStore((s) => s.setActivePopup);
   const updatePlacedMarkerState = useStore((s) => s.updatePlacedMarkerState);
@@ -51,6 +59,16 @@ export default function PlacedMarker({ i }: Props) {
   const btnInteractionRadius = createBtnInteractionRadius(
     showInteractionRadius,
     onBtnInteractionRadiusClick,
+  );
+
+  const onBtnNoPowerSpotZoneClick = () => {
+    updatePlacedMarkerState(i, {
+      showNoPowerSpotZone: !showNoPowerSpotZone,
+    });
+  };
+  const btnNoPowerSpotZone = createBtnNoPowerSpotZone(
+    showNoPowerSpotZone,
+    onBtnNoPowerSpotZoneClick,
   );
 
   const onBtnNoCaPoiZoneClick = () => {
@@ -91,9 +109,9 @@ export default function PlacedMarker({ i }: Props) {
 
   return (
     <>
+      {showNoPowerSpotZone && <NoPowerSpotZone latlng={position} />}
       {showNoCaPoiZone && <NoCaPoiZone latlng={position} />}
       {showInteractionRadius && <InteractionRadius latlng={position} />}
-      {/*{showPowerSpotZones && <NoPowerSpotZone latlng={c} />} */}
       <CMarker
         ref={markerRef}
         position={position}
@@ -119,6 +137,7 @@ export default function PlacedMarker({ i }: Props) {
                 hide: btnHide,
                 interactionRadius: btnInteractionRadius,
                 noCaPoiZone: btnNoCaPoiZone,
+                noPowerSpotZone: btnNoPowerSpotZone,
               },
             )}
           </Popup>

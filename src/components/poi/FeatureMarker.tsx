@@ -8,26 +8,30 @@ import CMarker from "../CMarker";
 import { getLayerKeyFromType, useStore } from "../hooks/store";
 // import NoCaPoiZone from "./NoCaPoiZone";
 import {
+  type ModifierBtns,
   createBtnHide,
   createBtnInteractionRadius,
   createBtnNoCaPoiZone,
+  createBtnNoPowerSpotZone,
   createPopupContent,
 } from "../popupHelper";
 import InteractionRadius from "./InteractionRadius";
 import NoCaPoiZone from "./NoCaPoiZone";
+import NoPowerSpotZone from "./NoPowerSpotZone";
 
-export interface IsBtnOn {
+export interface BtnModifierFlags {
   hide?: boolean;
   interactionRadius?: boolean;
   noCaPoiZone?: boolean;
+  noPowerSpotZone?: boolean;
 }
 
 export interface Props {
+  btnModifierFlags?: BtnModifierFlags;
   desc?: string;
   icon: DivIcon | Icon;
   id: string;
   inactive?: boolean;
-  isBtnOn?: IsBtnOn;
   latlng: LatLngTuple;
   photo?: string;
   removed?: boolean | string;
@@ -41,9 +45,9 @@ export interface Props {
  * Render a marker for features such as POIs & labels.
  */
 export default function FeatureMarker({
+  btnModifierFlags,
   desc,
   id,
-  isBtnOn,
   latlng,
   icon,
   inactive,
@@ -56,9 +60,8 @@ export default function FeatureMarker({
 }: Props) {
   const activePopup = useStore((s) => s.activePopup);
   const setMarker = useStore((s) => s.setMarker);
-  const { showInteractionRadius, showNoCaPoiZone } = useStore(
-    (s) => s[getLayerKeyFromType(type)][id],
-  );
+  const { showInteractionRadius, showNoCaPoiZone, showNoPowerSpotZone } =
+    useStore((s) => s[getLayerKeyFromType(type)][id]);
   const setActivePopup = useStore((s) => s.setActivePopup);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
@@ -72,7 +75,7 @@ export default function FeatureMarker({
     setTimeout(() => setActivePopup(null, null), 0);
   };
   let btnHide;
-  if (isBtnOn?.hide) {
+  if (btnModifierFlags?.hide) {
     btnHide = createBtnHide(onBtnHideClick);
   }
 
@@ -84,10 +87,25 @@ export default function FeatureMarker({
     }
   };
   let btnInteractionRadius;
-  if (isBtnOn?.interactionRadius) {
+  if (btnModifierFlags?.interactionRadius) {
     btnInteractionRadius = createBtnInteractionRadius(
       showInteractionRadius,
       onBtnInteractionRadiusClick,
+    );
+  }
+
+  const onBtnNoPowerSpotZoneClick = () => {
+    if (showNoPowerSpotZone) {
+      setMarker(type, id, { showNoPowerSpotZone: false });
+    } else {
+      setMarker(type, id, { showNoPowerSpotZone: true });
+    }
+  };
+  let btnNoPowerSpotZone;
+  if (btnModifierFlags?.noPowerSpotZone) {
+    btnNoPowerSpotZone = createBtnNoPowerSpotZone(
+      showNoPowerSpotZone,
+      onBtnNoPowerSpotZoneClick,
     );
   }
 
@@ -99,11 +117,20 @@ export default function FeatureMarker({
     }
   };
   let btnNoCaPoiZone;
-  if (isBtnOn?.noCaPoiZone) {
+  if (btnModifierFlags?.noCaPoiZone) {
     btnNoCaPoiZone = createBtnNoCaPoiZone(
       showNoCaPoiZone,
       onBtnNoCaPoiZoneClick,
     );
+  }
+
+  const modifierBtns: ModifierBtns = {
+    hide: btnHide,
+  };
+  if (!inactive && !removed) {
+    modifierBtns.interactionRadius = btnInteractionRadius;
+    modifierBtns.noCaPoiZone = btnNoCaPoiZone;
+    modifierBtns.noPowerSpotZone = btnNoPowerSpotZone;
   }
 
   useEffect(() => {
@@ -122,6 +149,9 @@ export default function FeatureMarker({
 
   return (
     <>
+      {!inactive && !removed && showNoPowerSpotZone && (
+        <NoPowerSpotZone latlng={latlng} />
+      )}
       {/* Do not show NoCaPoiZone for inactive power spots */}
       {!inactive && !removed && showNoCaPoiZone && (
         <NoCaPoiZone latlng={latlng} />
@@ -148,11 +178,7 @@ export default function FeatureMarker({
               desc,
               photo,
               wayfarerMode,
-              {
-                hide: btnHide,
-                interactionRadius: btnInteractionRadius,
-                noCaPoiZone: btnNoCaPoiZone,
-              },
+              modifierBtns,
               renderHtml,
             )}
           </Popup>

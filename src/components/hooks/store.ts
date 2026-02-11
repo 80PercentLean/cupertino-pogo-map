@@ -73,48 +73,6 @@ export interface StoreState {
   /** Open the list view when true. */
   isListViewOpen: boolean;
 
-  // /** Flags that determine which map layers are visible. */
-  // layers: {
-  //   devpois: boolean;
-
-  //   gym: boolean;
-
-  //   hiddenPois: boolean;
-
-  //   inactivePois: boolean;
-
-  //   /** Shows range in which POIs are interactable. */
-  //   interactionRadii: boolean;
-
-  //   l13: boolean;
-
-  //   l14: boolean;
-
-  //   l17: boolean;
-
-  //   labels: boolean;
-
-  //   meetupSpots: boolean;
-
-  //   /** Shows zone where Community Ambassador POIs cannot be built when true. */
-  //   noCaPoiZones: boolean;
-
-  //   /** Shows zone where power spots cannot be built when true. */
-  //   noPowerSpotZones: boolean;
-
-  //   parking: boolean;
-
-  //   pokestop: boolean;
-
-  //   powerspot: boolean;
-
-  //   raidPath: boolean;
-
-  //   removedPois: boolean;
-
-  //   restrooms: boolean;
-  // };
-
   /** Advanced layer which maintains the state for development POI markers. */
   layerDevpoi: Record<string, MarkerState>;
 
@@ -595,22 +553,6 @@ export const getLayerKeyFromType = (type: CProperties["type"]): LayerKey => {
 };
 
 /**
- * Determines if an advanced layer is considered on or off.
- * @param type Layer type
- * @returns True if the layer is on, false otherwise
- */
-export const useIsLayerOn = (type: CProperties["type"]) =>
-  useStore((s) => {
-    // If even 1 marker is visible in a layer, the layer is considered on
-    for (const { isVisible } of Object.values(s[getLayerKeyFromType(type)])) {
-      if (isVisible) {
-        return true;
-      }
-    }
-    return false;
-  });
-
-/**
  * Determines is the interaction radii checkbox is considered on or off.
  * @returns True if at least 1 interaction radius is on, false otherwise
  */
@@ -642,6 +584,22 @@ export const useIsInteractionRadiiOn = () =>
     return false;
   });
 
+/**
+ * Determines if an advanced layer is considered on or off.
+ * @param type Layer type
+ * @returns True if the layer is on, false otherwise
+ */
+export const useIsLayerOn = (type: CProperties["type"]) =>
+  useStore((s) => {
+    // If even 1 marker is visible in a layer, the layer is considered on
+    for (const { isVisible } of Object.values(s[getLayerKeyFromType(type)])) {
+      if (isVisible) {
+        return true;
+      }
+    }
+    return false;
+  });
+
 export const useIsNoCaPoiZoneOn = () =>
   useStore((s) => {
     const layers = [
@@ -663,6 +621,34 @@ export const useIsNoCaPoiZoneOn = () =>
     // If even 1 interaction radius is on for one of the placed markers, this will return true
     for (const { showNoCaPoiZone } of s.placedMarkerStates) {
       if (showNoCaPoiZone) {
+        return true;
+      }
+    }
+
+    return false;
+  });
+
+export const useIsNoPowerSpotZoneOn = () =>
+  useStore((s) => {
+    const layers = [
+      s[getLayerKeyFromType("gym")],
+      s[getLayerKeyFromType("pokestop")],
+      s[getLayerKeyFromType("powerspot")],
+      s[getLayerKeyFromType("devpoi")],
+    ];
+
+    // If even 1 interaction radius is on in one of the above layers, this will return true
+    for (const l of layers) {
+      for (const { showNoPowerSpotZone } of Object.values(l)) {
+        if (showNoPowerSpotZone) {
+          return true;
+        }
+      }
+    }
+
+    // If even 1 interaction radius is on for one of the placed markers, this will return true
+    for (const { showNoPowerSpotZone } of s.placedMarkerStates) {
+      if (showNoPowerSpotZone) {
         return true;
       }
     }

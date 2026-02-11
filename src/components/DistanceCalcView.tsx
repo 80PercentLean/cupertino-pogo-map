@@ -31,7 +31,7 @@ export default function DistanceCalcView() {
   if (distance !== null) {
     output = (
       <>
-        <hr className="m-4" />
+        <FieldSeparator className="my-4" />
         <h1 className="font-bold">Calculation</h1>
         <p>{distance} meters</p>
       </>

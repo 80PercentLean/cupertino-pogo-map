@@ -8,9 +8,13 @@ import Features from "./Features";
 export default function DevPois() {
   return (
     <Features
+      btnModifierFlags={{
+        hide: true,
+        interactionRadius: true,
+        noCaPoiZone: true,
+      }}
       features={devpoisJson.features}
       icon={iconDevpoi}
-      isBtnOn={{ hide: true, interactionRadius: true, noCaPoiZone: true }}
       subtitle={(_, { source } = {}) => {
         return `POI In-Development [${source}]`;
       }}

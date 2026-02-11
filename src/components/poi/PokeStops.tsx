@@ -9,6 +9,12 @@ import Features from "./Features";
 export default function PokeStops() {
   return (
     <Features
+      btnModifierFlags={{
+        hide: true,
+        interactionRadius: true,
+        noCaPoiZone: true,
+        noPowerSpotZone: true,
+      }}
       features={pokestopsJson.features}
       icon={(_, subtype) => {
         switch (subtype) {
@@ -18,7 +24,6 @@ export default function PokeStops() {
             return iconPokestop;
         }
       }}
-      isBtnOn={{ hide: true, interactionRadius: true, noCaPoiZone: true }}
       subtitle={(
         _,
         { hidden, removed, source, subtype, wayfarerMode } = {},

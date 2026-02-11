@@ -9,9 +9,13 @@ import Features from "./Features";
 export default function PowerSpots() {
   return (
     <Features
+      btnModifierFlags={{
+        hide: true,
+        interactionRadius: true,
+        noCaPoiZone: true,
+      }}
       features={powerspotsJson.features}
       icon={iconPowerspot}
-      isBtnOn={{ hide: true, interactionRadius: true, noCaPoiZone: true }}
       subtitle={(
         _,
         { hidden, inactive, removed, source, wayfarerMode } = {},

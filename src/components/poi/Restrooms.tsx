@@ -13,6 +13,7 @@ import Features from "./Features";
 export default function Restrooms() {
   return (
     <Features
+      btnModifierFlags={{ hide: true }}
       features={restroomsJson.features}
       icon={(_, subtype) => {
         switch (subtype) {
@@ -24,7 +25,6 @@ export default function Restrooms() {
             return iconAllBinaryRestroom;
         }
       }}
-      isBtnOn={{ hide: true }}
       subtitle={(_, { subtype } = {}) => {
         switch (subtype) {
           case "men":

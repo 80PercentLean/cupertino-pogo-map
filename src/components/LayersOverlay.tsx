@@ -29,6 +29,7 @@ import {
   useIsInteractionRadiiOn,
   useIsLayerOn,
   useIsNoCaPoiZoneOn,
+  useIsNoPowerSpotZoneOn,
   useStore,
 } from "./hooks/store";
 
@@ -61,6 +62,7 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
   const isL14GridOn = useStore((s) => s.basicLayers.l14);
   const isL17GridOn = useStore((s) => s.basicLayers.l17);
   const isNoCaPoiZoneOn = useIsNoCaPoiZoneOn();
+  const isNoPowerSpotZoneOn = useIsNoPowerSpotZoneOn();
   const isStdRaidPathOn = useStore((s) => s.basicLayers.stdRaidPath);
   const mapType = useStore((s) => s.mapType);
   const setMapType = useStore((s) => s.setMapType);
@@ -394,19 +396,37 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
                 </FieldLabel>
               </Field>
             </Field>
-            {/* <Field className="flex flex-row">
+            <Field className="flex flex-row">
               <Field orientation="horizontal">
                 <Checkbox
                   id="no-ps-zones"
-                  checked={showPowerSpotZones}
+                  checked={isNoPowerSpotZoneOn}
                   className="cursor-pointer"
-                  onCheckedChange={() => toggleLayer("noPowerSpotZones")}
+                  onCheckedChange={() => {
+                    if (isNoPowerSpotZoneOn) {
+                      setLayer("gym", { showNoPowerSpotZone: false });
+                      setLayer("pokestop", { showNoPowerSpotZone: false });
+                      setLayer("powerspot", { showNoPowerSpotZone: false });
+                      setLayer("devpoi", { showNoPowerSpotZone: false });
+                      updateAllPlacedMarkerStates({
+                        showNoPowerSpotZone: false,
+                      });
+                    } else {
+                      setLayer("gym", { showNoPowerSpotZone: true });
+                      setLayer("pokestop", { showNoPowerSpotZone: true });
+                      setLayer("powerspot", { showNoPowerSpotZone: true });
+                      setLayer("devpoi", { showNoPowerSpotZone: true });
+                      updateAllPlacedMarkerStates({
+                        showNoPowerSpotZone: true,
+                      });
+                    }
+                  }}
                 />
                 <FieldLabel htmlFor="no-ps-zones" className="cursor-pointer">
                   No Power Spot Build Zones (22m)
                 </FieldLabel>
               </Field>
-            </Field>*/}
+            </Field>
             {wayfarerMode && (
               <Field className="flex flex-row">
                 <Field orientation="horizontal">

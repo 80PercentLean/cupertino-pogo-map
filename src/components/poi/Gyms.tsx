@@ -9,9 +9,14 @@ import Features from "./Features";
 export default function Gyms() {
   return (
     <Features
+      btnModifierFlags={{
+        hide: true,
+        interactionRadius: true,
+        noCaPoiZone: true,
+        noPowerSpotZone: true,
+      }}
       features={gymsJson.features}
       icon={iconGym}
-      isBtnOn={{ hide: true, interactionRadius: true, noCaPoiZone: true }}
       subtitle={(_, { hidden, removed, source, wayfarerMode } = {}) => {
         let subtitle = "Gym";
         if (hidden) {

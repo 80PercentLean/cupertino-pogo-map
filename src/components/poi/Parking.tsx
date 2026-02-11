@@ -9,6 +9,7 @@ import Features from "./Features";
 export default function Parking() {
   return (
     <Features
+      btnModifierFlags={{ hide: true }}
       features={parkingJson.features}
       icon={(_, subtype) => {
         switch (subtype) {
@@ -18,7 +19,6 @@ export default function Parking() {
             return iconParking;
         }
       }}
-      isBtnOn={{ hide: true }}
       renderHtml={true}
       subtitle={(_, { subtype } = {}) => {
         if (subtype === "conditionally-free") {

@@ -1,11 +1,20 @@
 import { Separator } from "@/components/ui/separator";
+import { imgPowerspot } from "@/leafletIcons";
 import type { LatLngTuple } from "leaflet";
-import { Circle, Construction, Eye, EyeClosed, Radius } from "lucide-react";
+import { Ban, Circle, Eye, EyeClosed, LandPlot, Radius } from "lucide-react";
 import type { ReactElement } from "react";
 
 import BtnCopy, { classNameDefault } from "./BtnCopy";
 import BtnCopyCoords from "./BtnCopyCoords";
 import { Button } from "./ui/button";
+
+export interface ModifierBtns {
+  delete?: ReactElement<typeof Button>;
+  hide?: ReactElement<typeof Button>;
+  interactionRadius?: ReactElement<typeof Button>;
+  noCaPoiZone?: ReactElement<typeof Button>;
+  noPowerSpotZone?: ReactElement<typeof Button>;
+}
 
 export const createBtnHide = (onBtnHideClick: () => void) => {
   return (
@@ -27,11 +36,11 @@ export const createBtnInteractionRadius = (
   onBtnInteractionRadiusClick: () => void,
 ) => {
   let btnInteractionRadiusClassName =
-    "group cursor-pointer rounded-full hover:bg-blue-500 ml-2 text-white";
+    "group cursor-pointer rounded-full hover:bg-blue-500 ml-2";
   if (showInteractionRadius) {
-    btnInteractionRadiusClassName += " bg-blue-500";
+    btnInteractionRadiusClassName += " bg-blue-500 text-green-400";
   } else {
-    btnInteractionRadiusClassName += " bg-blue-300";
+    btnInteractionRadiusClassName += " bg-blue-300  text-white";
   }
 
   return (
@@ -47,16 +56,49 @@ export const createBtnInteractionRadius = (
   );
 };
 
+export const createBtnNoPowerSpotZone = (
+  showNoPowerSpotZone: boolean | undefined,
+  onBtnNoPowerSpotZoneClick: () => void,
+) => {
+  let btnNoCaPoiZoneClassName =
+    "ml-2 cursor-pointer rounded-full text-white hover:bg-gray-400";
+  let iconBanClassName = "absolute !h-6 !w-6  group-hover:text-black";
+  if (showNoPowerSpotZone) {
+    btnNoCaPoiZoneClassName += " bg-gray-400";
+    iconBanClassName += " text-red-700";
+  } else {
+    btnNoCaPoiZoneClassName += " bg-gray-300";
+    iconBanClassName += " text-white";
+  }
+
+  return (
+    <Button
+      size="icon"
+      title="Toggle No Power Spot Build Zones (22m)"
+      variant="outline"
+      className={btnNoCaPoiZoneClassName}
+      onClick={() => onBtnNoPowerSpotZoneClick()}
+      data-testid="delete-placed-marker-btn"
+    >
+      <img src={imgPowerspot} alt="Power Spot Icon" className="h-4" />
+      <Ban className={iconBanClassName} />
+    </Button>
+  );
+};
+
 export const createBtnNoCaPoiZone = (
   showNoCaPoiZone: boolean | undefined,
   onBtnNoCaPoiZoneClick: () => void,
 ) => {
   let btnNoCaPoiZoneClassName =
-    "ml-2 cursor-pointer rounded-full text-white hover:bg-red-500";
+    "ml-2 cursor-pointer rounded-full text-white hover:bg-red-400 relative group";
+  let iconBanClassName = "absolute !h-6 !w-6  group-hover:text-black";
   if (showNoCaPoiZone) {
-    btnNoCaPoiZoneClassName += " bg-red-500";
+    btnNoCaPoiZoneClassName += " bg-red-400";
+    iconBanClassName += " text-red-700";
   } else {
     btnNoCaPoiZoneClassName += " bg-red-300";
+    iconBanClassName += " text-white";
   }
 
   return (
@@ -68,7 +110,8 @@ export const createBtnNoCaPoiZone = (
       onClick={() => onBtnNoCaPoiZoneClick()}
       data-testid="delete-placed-marker-btn"
     >
-      <Construction />
+      <LandPlot />
+      <Ban className={iconBanClassName} />
     </Button>
   );
 };
@@ -89,12 +132,7 @@ export const createPopupContent = (
   desc?: string,
   img?: string,
   wayfarerMode?: boolean,
-  btns?: {
-    delete?: ReactElement<typeof Button>;
-    hide?: ReactElement<typeof Button>;
-    interactionRadius?: ReactElement<typeof Button>;
-    noCaPoiZone?: ReactElement<typeof Button>;
-  },
+  modifierBtns?: ModifierBtns,
   renderHtml?: boolean,
 ) => {
   let description;
@@ -157,12 +195,13 @@ export const createPopupContent = (
             lng={latlng[1]}
             className={`${classNameDefault} mb-2 ml-2`}
           />
-          {btns && Object.keys(btns).length > 0 && (
+          {modifierBtns && Object.keys(modifierBtns).length > 0 && (
             <div className="flex">
-              {btns?.hide}
-              {btns?.interactionRadius}
-              {btns?.noCaPoiZone}
-              {btns?.delete}
+              {modifierBtns?.hide}
+              {modifierBtns?.interactionRadius}
+              {modifierBtns?.noPowerSpotZone}
+              {wayfarerMode && modifierBtns?.noCaPoiZone}
+              {modifierBtns?.delete}
             </div>
           )}
         </>

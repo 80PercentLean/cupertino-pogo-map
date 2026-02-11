@@ -9,9 +9,9 @@ import Features from "./Features";
 export default function MeetupSpots() {
   return (
     <Features
+      btnModifierFlags={{ hide: true }}
       features={meetupspotsJson.features}
       icon={iconMeetupspot}
-      isBtnOn={{ hide: true }}
       subtitle="Meetup Spot"
       type="meetupspot"
     />

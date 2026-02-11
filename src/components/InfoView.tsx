@@ -1,5 +1,6 @@
 import LinkExt from "./LinkExt";
 import UiOverlayCard from "./UiOverlayCard";
+import { Separator } from "./ui/separator";
 
 /**
  * Displays the information view.
@@ -29,7 +30,7 @@ export default function InfoView() {
             https://github.com/80PercentLean/cupertino-pogo-map
           </LinkExt>
         </p>
-        <hr className="mt-6" />
+        <Separator className="mt-6" />
         <h2 className="mt-6 font-semibold">Leaflet Attribution</h2>
         <ul className="mt-6 list-disc space-y-2 pl-4">
           <li>
