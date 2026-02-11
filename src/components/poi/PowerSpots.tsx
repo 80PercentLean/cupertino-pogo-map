@@ -11,7 +11,7 @@ export default function PowerSpots() {
     <Features
       features={powerspotsJson.features}
       icon={iconPowerspot}
-      isBtnOn={{ hide: true, interactionRadius: true }}
+      isBtnOn={{ hide: true, interactionRadius: true, noCaPoiZone: true }}
       subtitle={(
         _,
         { hidden, inactive, removed, source, wayfarerMode } = {},

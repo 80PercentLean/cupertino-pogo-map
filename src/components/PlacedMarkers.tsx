@@ -17,7 +17,7 @@ const IS_MOBILE = isMobileUa();
 export default function PlacedMarkers() {
   const activePopup = useStore((s) => s.activePopup);
   // const showInteractionRadius = useStore((s) => s.layers.interactionRadii);
-  // const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
+  // const showNoCaPoiZone = useStore((s) => s.layers.noCaPoiZones);
   // const showPowerSpotZones = useStore((s) => s.layers.noPowerSpotZones);
   const addPlacedMarkerState = useStore((s) => s.addPlacedMarkerState);
   const placedMarkerStates = useStore((s) => s.placedMarkerStates);

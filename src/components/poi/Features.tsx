@@ -84,6 +84,7 @@ export default function Features({
           isBtnOn={isBtnOn}
           desc={desc}
           icon={typeof icon === "function" ? icon?.(type, subtype) : icon}
+          inactive={inactive}
           latlng={latlng}
           photo={photo}
           removed={removed}

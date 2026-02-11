@@ -29,10 +29,10 @@ export interface MarkerState {
   showInteractionRadius?: boolean;
 
   /** Show the no CA POI build zone around the marker  when true. */
-  showNoCaPoiZones?: boolean;
+  showNoCaPoiZone?: boolean;
 
   /** Show the no power spot build zone around the marker when true. */
-  showNoPowerSpotZones?: boolean;
+  showNoPowerSpotZone?: boolean;
 }
 
 export interface PlacedMarkerState extends MarkerState {
@@ -139,7 +139,7 @@ export interface StoreState {
   /** Advanced layer which maintains the state for restroom markers. */
   layerRestroom: Record<string, MarkerState>;
 
-  /** Flags that determine which modifiers are applied to map layers. */
+  /** Flags that determine which layer modifiers are applied. */
   modifiers: {
     inactive: boolean;
 
@@ -635,6 +635,34 @@ export const useIsInteractionRadiiOn = () =>
     // If even 1 interaction radius is on for one of the placed markers, this will return true
     for (const { showInteractionRadius } of s.placedMarkerStates) {
       if (showInteractionRadius) {
+        return true;
+      }
+    }
+
+    return false;
+  });
+
+export const useIsNoCaPoiZoneOn = () =>
+  useStore((s) => {
+    const layers = [
+      s[getLayerKeyFromType("gym")],
+      s[getLayerKeyFromType("pokestop")],
+      s[getLayerKeyFromType("powerspot")],
+      s[getLayerKeyFromType("devpoi")],
+    ];
+
+    // If even 1 interaction radius is on in one of the above layers, this will return true
+    for (const l of layers) {
+      for (const { showNoCaPoiZone } of Object.values(l)) {
+        if (showNoCaPoiZone) {
+          return true;
+        }
+      }
+    }
+
+    // If even 1 interaction radius is on for one of the placed markers, this will return true
+    for (const { showNoCaPoiZone } of s.placedMarkerStates) {
+      if (showNoCaPoiZone) {
         return true;
       }
     }

@@ -25,7 +25,12 @@ import { X } from "lucide-react";
 import { type Dispatch, type SetStateAction } from "react";
 
 import BtnLayer from "./BtnLayer";
-import { useIsInteractionRadiiOn, useIsLayerOn, useStore } from "./hooks/store";
+import {
+  useIsInteractionRadiiOn,
+  useIsLayerOn,
+  useIsNoCaPoiZoneOn,
+  useStore,
+} from "./hooks/store";
 
 export interface Props {
   setShowOverlay: Dispatch<SetStateAction<boolean>>;
@@ -55,6 +60,7 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
   const isL13GridOn = useStore((s) => s.basicLayers.l13);
   const isL14GridOn = useStore((s) => s.basicLayers.l14);
   const isL17GridOn = useStore((s) => s.basicLayers.l17);
+  const isNoCaPoiZoneOn = useIsNoCaPoiZoneOn();
   const isStdRaidPathOn = useStore((s) => s.basicLayers.stdRaidPath);
   const mapType = useStore((s) => s.mapType);
   const setMapType = useStore((s) => s.setMapType);
@@ -65,7 +71,7 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
     (s) => s.updateAllPlacedMarkerStates,
   );
   // const showInteractionRadii = useStore((s) => s.layers.interactionRadii);
-  // const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
+  // const showNoCaPoiZone = useStore((s) => s.layers.noCaPoiZones);
   // const showPowerSpotZones = useStore((s) => s.layers.noPowerSpotZones);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
@@ -400,15 +406,33 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
                   No Power Spot Build Zones (22m)
                 </FieldLabel>
               </Field>
-            </Field>
+            </Field>*/}
             {wayfarerMode && (
               <Field className="flex flex-row">
                 <Field orientation="horizontal">
                   <Checkbox
                     id="no-ca-poi-zones"
-                    checked={showNoCaPoiZones}
+                    checked={isNoCaPoiZoneOn}
                     className="cursor-pointer"
-                    onCheckedChange={() => toggleLayer("noCaPoiZones")}
+                    onCheckedChange={() => {
+                      if (isNoCaPoiZoneOn) {
+                        setLayer("gym", { showNoCaPoiZone: false });
+                        setLayer("pokestop", { showNoCaPoiZone: false });
+                        setLayer("powerspot", { showNoCaPoiZone: false });
+                        setLayer("devpoi", { showNoCaPoiZone: false });
+                        updateAllPlacedMarkerStates({
+                          showNoCaPoiZone: false,
+                        });
+                      } else {
+                        setLayer("gym", { showNoCaPoiZone: true });
+                        setLayer("pokestop", { showNoCaPoiZone: true });
+                        setLayer("powerspot", { showNoCaPoiZone: true });
+                        setLayer("devpoi", { showNoCaPoiZone: true });
+                        updateAllPlacedMarkerStates({
+                          showNoCaPoiZone: true,
+                        });
+                      }
+                    }}
                   />
                   <FieldLabel
                     htmlFor="no-ca-poi-zones"
@@ -417,8 +441,8 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
                     No CA POI Build Zones (30m)
                   </FieldLabel>
                 </Field>
-              </Field> 
-            )} */}
+              </Field>
+            )}
           </FieldGroup>
         </FieldSet>
       </CardContent>

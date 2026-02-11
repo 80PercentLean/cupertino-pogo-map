@@ -1,15 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { type Marker } from "leaflet";
+import { Trash2 } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { Popup } from "react-leaflet";
 
-import BtnCopyCoords from "./BtnCopyCoords";
 import CMarker from "./CMarker";
 import { useStore } from "./hooks/store";
 import InteractionRadius from "./poi/InteractionRadius";
+import NoCaPoiZone from "./poi/NoCaPoiZone";
 import {
   createBtnHide,
   createBtnInteractionRadius,
+  createBtnNoCaPoiZone,
   createPopupContent,
 } from "./popupHelper";
 
@@ -22,9 +24,8 @@ export interface Props {
  */
 export default function PlacedMarker({ i }: Props) {
   const activePopup = useStore((s) => s.activePopup);
-  const { id, isVisible, position, showInteractionRadius } = useStore(
-    (s) => s.placedMarkerStates[i],
-  );
+  const { id, isVisible, position, showInteractionRadius, showNoCaPoiZone } =
+    useStore((s) => s.placedMarkerStates[i]);
   const removePlacedMarkerState = useStore((s) => s.removePlacedMarkerState);
   const setActivePopup = useStore((s) => s.setActivePopup);
   const updatePlacedMarkerState = useStore((s) => s.updatePlacedMarkerState);
@@ -34,22 +35,51 @@ export default function PlacedMarker({ i }: Props) {
 
   const isPopupOpen = activePopup.id && activePopup.id === id;
 
-  const onHideClick = () => {
+  const onBtnHideClick = () => {
     updatePlacedMarkerState(i, {
       isVisible: !isVisible,
     });
     setTimeout(() => setActivePopup(null, null), 0);
   };
-  const btnHide = createBtnHide(onHideClick);
+  const btnHide = createBtnHide(onBtnHideClick);
 
-  const onInteractionRadiusBtnClick = () => {
+  const onBtnInteractionRadiusClick = () => {
     updatePlacedMarkerState(i, {
       showInteractionRadius: !showInteractionRadius,
     });
   };
   const btnInteractionRadius = createBtnInteractionRadius(
     showInteractionRadius,
-    onInteractionRadiusBtnClick,
+    onBtnInteractionRadiusClick,
+  );
+
+  const onBtnNoCaPoiZoneClick = () => {
+    updatePlacedMarkerState(i, {
+      showNoCaPoiZone: !showNoCaPoiZone,
+    });
+  };
+  const btnNoCaPoiZone = createBtnNoCaPoiZone(
+    showNoCaPoiZone,
+    onBtnNoCaPoiZoneClick,
+  );
+
+  const btnDelete = (
+    <Button
+      size="icon"
+      title="Delete Marker"
+      variant="destructive"
+      onClick={() => {
+        removePlacedMarkerState(i);
+        // This is a hack to prevent a new marker from being placed after the delete button is clicked
+        setTimeout(() => {
+          setActivePopup(null, null);
+        }, 0);
+      }}
+      className="ml-2 cursor-pointer rounded-full"
+      data-testid="delete-placed-marker-btn"
+    >
+      <Trash2 />
+    </Button>
   );
 
   useEffect(() => {
@@ -61,7 +91,7 @@ export default function PlacedMarker({ i }: Props) {
 
   return (
     <>
-      {/* {showNoCaPoiZones && <NoCaPoiZone latlng={c} />} */}
+      {showNoCaPoiZone && <NoCaPoiZone latlng={position} />}
       {showInteractionRadius && <InteractionRadius latlng={position} />}
       {/*{showPowerSpotZones && <NoPowerSpotZone latlng={c} />} */}
       <CMarker
@@ -76,33 +106,21 @@ export default function PlacedMarker({ i }: Props) {
         {isPopupOpen && (
           <Popup>
             {createPopupContent(
-              "Placed Marker",
+              `Placed Marker #${i + 1}`,
               undefined,
               position,
-              `You placed a marker at ${position[0]}, ${position[1]}).`,
+              wayfarerMode
+                ? undefined
+                : `You placed a marker at (${position[0]}, ${position[1]}).`,
               undefined,
               wayfarerMode,
-              { hide: btnHide, interactionRadius: btnInteractionRadius },
+              {
+                delete: btnDelete,
+                hide: btnHide,
+                interactionRadius: btnInteractionRadius,
+                noCaPoiZone: btnNoCaPoiZone,
+              },
             )}
-            <div className="flex items-center justify-between gap-1">
-              {wayfarerMode && (
-                <BtnCopyCoords lat={position[0]} lng={position[1]} />
-              )}
-              <Button
-                variant="destructive"
-                onClick={() => {
-                  removePlacedMarkerState(i);
-                  // This is a hack to prevent a new marker from being placed after the delete button is clicked
-                  setTimeout(() => {
-                    setActivePopup(null, null);
-                  }, 0);
-                }}
-                className="cursor-pointer"
-                data-testid="delete-placed-marker-btn"
-              >
-                Delete
-              </Button>
-            </div>
           </Popup>
         )}
       </CMarker>

@@ -10,6 +10,8 @@ export interface Props {
 
 const ERR_COPY_LOG = "Failed to copy to clipboard: ";
 
+export const classNameDefault = "cursor-pointer shadow-sm shadow-gray-500";
+
 export default function BtnCopy({ className, text, value }: Props) {
   let size: "icon" | "default" = "icon";
   if (text) {
@@ -19,7 +21,7 @@ export default function BtnCopy({ className, text, value }: Props) {
   return (
     <Button
       size={size}
-      className={className ?? "cursor-pointer shadow-sm shadow-gray-500"}
+      className={className ?? classNameDefault}
       onClick={() => {
         (async () => {
           try {

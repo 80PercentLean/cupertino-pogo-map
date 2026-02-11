@@ -1,19 +1,20 @@
+import { Separator } from "@/components/ui/separator";
 import type { LatLngTuple } from "leaflet";
-import { Circle, Eye, EyeClosed, Radius } from "lucide-react";
+import { Circle, Construction, Eye, EyeClosed, Radius } from "lucide-react";
 import type { ReactElement } from "react";
 
-import BtnCopy from "./BtnCopy";
+import BtnCopy, { classNameDefault } from "./BtnCopy";
 import BtnCopyCoords from "./BtnCopyCoords";
 import { Button } from "./ui/button";
 
-export const createBtnHide = (onHideClick: () => void) => {
+export const createBtnHide = (onBtnHideClick: () => void) => {
   return (
     <Button
-      variant="outline"
       size="icon"
-      title="Hide This"
-      className="group mr-2 cursor-pointer rounded-full"
-      onClick={() => onHideClick()}
+      title="Hide Marker"
+      variant="outline"
+      className="group cursor-pointer rounded-full"
+      onClick={() => onBtnHideClick()}
     >
       <Eye className="group-hover:hidden" />
       <EyeClosed className="hidden group-hover:block" />
@@ -23,10 +24,10 @@ export const createBtnHide = (onHideClick: () => void) => {
 
 export const createBtnInteractionRadius = (
   showInteractionRadius: boolean | undefined,
-  onInteractionRadiusBtnClick: () => void,
+  onBtnInteractionRadiusClick: () => void,
 ) => {
   let btnInteractionRadiusClassName =
-    "group cursor-pointer rounded-full hover:bg-blue-500";
+    "group cursor-pointer rounded-full hover:bg-blue-500 ml-2 text-white";
   if (showInteractionRadius) {
     btnInteractionRadiusClassName += " bg-blue-500";
   } else {
@@ -35,17 +36,39 @@ export const createBtnInteractionRadius = (
 
   return (
     <Button
-      variant="outline"
       size="icon"
-      title="Toggle 80m Interaction Radius"
+      title="Toggle Interaction Radius (80m)"
+      variant="outline"
       className={btnInteractionRadiusClassName}
-      onClick={() => onInteractionRadiusBtnClick()}
+      onClick={() => onBtnInteractionRadiusClick()}
     >
-      {showInteractionRadius ? (
-        <Radius className="text-white" />
-      ) : (
-        <Circle className="text-white" />
-      )}
+      {showInteractionRadius ? <Radius /> : <Circle />}
+    </Button>
+  );
+};
+
+export const createBtnNoCaPoiZone = (
+  showNoCaPoiZone: boolean | undefined,
+  onBtnNoCaPoiZoneClick: () => void,
+) => {
+  let btnNoCaPoiZoneClassName =
+    "ml-2 cursor-pointer rounded-full text-white hover:bg-red-500";
+  if (showNoCaPoiZone) {
+    btnNoCaPoiZoneClassName += " bg-red-500";
+  } else {
+    btnNoCaPoiZoneClassName += " bg-red-300";
+  }
+
+  return (
+    <Button
+      size="icon"
+      title="Toggle No CA POI Build Zones (30m)"
+      variant="outline"
+      className={btnNoCaPoiZoneClassName}
+      onClick={() => onBtnNoCaPoiZoneClick()}
+      data-testid="delete-placed-marker-btn"
+    >
+      <Construction />
     </Button>
   );
 };
@@ -67,8 +90,10 @@ export const createPopupContent = (
   img?: string,
   wayfarerMode?: boolean,
   btns?: {
+    delete?: ReactElement<typeof Button>;
     hide?: ReactElement<typeof Button>;
     interactionRadius?: ReactElement<typeof Button>;
+    noCaPoiZone?: ReactElement<typeof Button>;
   },
   renderHtml?: boolean,
 ) => {
@@ -90,7 +115,7 @@ export const createPopupContent = (
         </div>
       )}
       {description}
-      <hr className="mt-2" />
+      <Separator className="mt-2" />
       <p>
         Directions:{" "}
         <a
@@ -111,23 +136,35 @@ export const createPopupContent = (
       </p>
       {wayfarerMode && (
         <>
-          <hr className="my-4" />
+          <Separator className="my-4" />
           <BtnCopy
             text={`Latitude: ${latlng[0]}`}
             value={latlng[0]}
-            className="mb-2"
+            className={`${classNameDefault} mb-2`}
           />
           <BtnCopy
             text={`Longitude: ${latlng[1]}`}
             value={latlng[1]}
-            className="mb-2"
+            className={`${classNameDefault} mb-2`}
           />
-          <BtnCopy text="Copy name" value={title} className="mr-2" />
-          <BtnCopyCoords lat={latlng[0]} lng={latlng[1]} />
-          <div className="mt-2">
-            {btns?.hide}
-            {btns?.interactionRadius}
-          </div>
+          <BtnCopy
+            text="Copy name"
+            value={title}
+            className={`${classNameDefault} mb-2`}
+          />
+          <BtnCopyCoords
+            lat={latlng[0]}
+            lng={latlng[1]}
+            className={`${classNameDefault} mb-2 ml-2`}
+          />
+          {btns && Object.keys(btns).length > 0 && (
+            <div className="flex">
+              {btns?.hide}
+              {btns?.interactionRadius}
+              {btns?.noCaPoiZone}
+              {btns?.delete}
+            </div>
+          )}
         </>
       )}
     </>

@@ -10,13 +10,16 @@ import { getLayerKeyFromType, useStore } from "../hooks/store";
 import {
   createBtnHide,
   createBtnInteractionRadius,
+  createBtnNoCaPoiZone,
   createPopupContent,
 } from "../popupHelper";
 import InteractionRadius from "./InteractionRadius";
+import NoCaPoiZone from "./NoCaPoiZone";
 
 export interface IsBtnOn {
   hide?: boolean;
   interactionRadius?: boolean;
+  noCaPoiZone?: boolean;
 }
 
 export interface Props {
@@ -53,10 +56,9 @@ export default function FeatureMarker({
 }: Props) {
   const activePopup = useStore((s) => s.activePopup);
   const setMarker = useStore((s) => s.setMarker);
-  const showInteractionRadius = useStore(
-    (s) => s[getLayerKeyFromType(type)][id].showInteractionRadius,
+  const { showInteractionRadius, showNoCaPoiZone } = useStore(
+    (s) => s[getLayerKeyFromType(type)][id],
   );
-  // const showNoCaPoiZones = useStore((s) => s.layers.noCaPoiZones);
   const setActivePopup = useStore((s) => s.setActivePopup);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
@@ -64,17 +66,17 @@ export default function FeatureMarker({
 
   const isPopupOpen = activePopup.id && activePopup.id === id;
 
-  const onHideClick = () => {
+  const onBtnHideClick = () => {
     setMarker(type, id, { isVisible: false });
     // Hack to prevent placing marker immediately on hide
     setTimeout(() => setActivePopup(null, null), 0);
   };
   let btnHide;
   if (isBtnOn?.hide) {
-    btnHide = createBtnHide(onHideClick);
+    btnHide = createBtnHide(onBtnHideClick);
   }
 
-  const onInteractionRadiusBtnClick = () => {
+  const onBtnInteractionRadiusClick = () => {
     if (showInteractionRadius) {
       setMarker(type, id, { showInteractionRadius: false });
     } else {
@@ -85,7 +87,22 @@ export default function FeatureMarker({
   if (isBtnOn?.interactionRadius) {
     btnInteractionRadius = createBtnInteractionRadius(
       showInteractionRadius,
-      onInteractionRadiusBtnClick,
+      onBtnInteractionRadiusClick,
+    );
+  }
+
+  const onBtnNoCaPoiZoneClick = () => {
+    if (showNoCaPoiZone) {
+      setMarker(type, id, { showNoCaPoiZone: false });
+    } else {
+      setMarker(type, id, { showNoCaPoiZone: true });
+    }
+  };
+  let btnNoCaPoiZone;
+  if (isBtnOn?.noCaPoiZone) {
+    btnNoCaPoiZone = createBtnNoCaPoiZone(
+      showNoCaPoiZone,
+      onBtnNoCaPoiZoneClick,
     );
   }
 
@@ -106,9 +123,9 @@ export default function FeatureMarker({
   return (
     <>
       {/* Do not show NoCaPoiZone for inactive power spots */}
-      {/* {!inactive && !removed && showNoCaPoiZones && (
-          <NoCaPoiZone latlng={latlng} />
-        )} */}
+      {!inactive && !removed && showNoCaPoiZone && (
+        <NoCaPoiZone latlng={latlng} />
+      )}
       {/* Do not show interactive radius for inactive power spots */}
       {!inactive && !removed && showInteractionRadius && (
         <InteractionRadius latlng={latlng} />
@@ -134,6 +151,7 @@ export default function FeatureMarker({
               {
                 hide: btnHide,
                 interactionRadius: btnInteractionRadius,
+                noCaPoiZone: btnNoCaPoiZone,
               },
               renderHtml,
             )}
