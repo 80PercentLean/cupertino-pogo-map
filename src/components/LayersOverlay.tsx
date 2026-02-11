@@ -72,9 +72,6 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
   const updateAllPlacedMarkerStates = useStore(
     (s) => s.updateAllPlacedMarkerStates,
   );
-  // const showInteractionRadii = useStore((s) => s.layers.interactionRadii);
-  // const showNoCaPoiZone = useStore((s) => s.layers.noCaPoiZones);
-  // const showPowerSpotZones = useStore((s) => s.layers.noPowerSpotZones);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   return (

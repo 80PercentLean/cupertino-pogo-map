@@ -12,6 +12,8 @@ import { latLng } from "leaflet";
 import { useState } from "react";
 import { Controller, type FieldErrors, useForm } from "react-hook-form";
 
+import { Separator } from "./ui/separator";
+
 interface FormData {
   latA: number;
   lngA: number;
@@ -31,7 +33,7 @@ export default function DistanceCalcView() {
   if (distance !== null) {
     output = (
       <>
-        <FieldSeparator className="my-4" />
+        <Separator className="my-4" />
         <h1 className="font-bold">Calculation</h1>
         <p>{distance} meters</p>
       </>
@@ -64,6 +66,7 @@ export default function DistanceCalcView() {
                 {...field}
                 id="lat-a"
                 aria-invalid={invalid}
+                step="any"
                 type="number"
               />
               {invalid && <FieldError errors={[error]} />}
@@ -81,6 +84,7 @@ export default function DistanceCalcView() {
                 {...field}
                 id="lng-a"
                 aria-invalid={invalid}
+                step="any"
                 type="number"
               />
               {invalid && <FieldError errors={[error]} />}
@@ -99,6 +103,7 @@ export default function DistanceCalcView() {
                 {...field}
                 id="lat-b"
                 aria-invalid={invalid}
+                step="any"
                 type="number"
               />
               {invalid && <FieldError errors={[error]} />}
@@ -116,6 +121,7 @@ export default function DistanceCalcView() {
                 {...field}
                 id="lng-b"
                 aria-invalid={invalid}
+                step="any"
                 type="number"
               />
               {invalid && <FieldError errors={[error]} />}

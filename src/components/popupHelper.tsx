@@ -38,7 +38,7 @@ export const createBtnInteractionRadius = (
   let btnInteractionRadiusClassName = "group cursor-pointer rounded-full ml-2";
   if (showInteractionRadius) {
     btnInteractionRadiusClassName +=
-      " bg-blue-500 hover:bg-blue-500 text-green-400";
+      " bg-blue-500 hover:bg-blue-500 text-green-400 border-green-600";
   } else {
     btnInteractionRadiusClassName +=
       " bg-blue-300 hover:bg-blue-300 text-white";
@@ -65,7 +65,7 @@ export const createBtnNoPowerSpotZone = (
     "group ml-2 cursor-pointer rounded-full text-white";
   let iconBanClassName = "absolute !h-6 !w-6 group-hover:text-black";
   if (showNoPowerSpotZone) {
-    btnNoCaPoiZoneClassName += " bg-gray-400 hover:bg-gray-400";
+    btnNoCaPoiZoneClassName += " bg-gray-400 hover:bg-gray-400 border-red-700";
     iconBanClassName += " text-red-700";
   } else {
     btnNoCaPoiZoneClassName += " bg-gray-300 hover:bg-gray-300";
@@ -95,7 +95,8 @@ export const createBtnNoCaPoiZone = (
     "ml-2 cursor-pointer rounded-full text-white group";
   let iconBanClassName = "absolute !h-6 !w-6 group-hover:text-black";
   if (showNoCaPoiZone) {
-    btnNoCaPoiZoneClassName += " bg-red-400 hover:bg-red-400 text-red-100";
+    btnNoCaPoiZoneClassName +=
+      " bg-red-400 hover:bg-red-400 text-red-100 border-red-700";
     iconBanClassName += " text-red-700";
   } else {
     btnNoCaPoiZoneClassName += " bg-red-300 hover:bg-red-300 text-red-900";
@@ -118,12 +119,15 @@ export const createBtnNoCaPoiZone = (
 };
 
 /**
- * Generates the content for a POI marker.
- * @param name Name of the POI
- * @param type Type of the POI
- * @param latlng Coordinates for the POI
- * @param desc Description of the POI in HTML
- * @param img Image of the POI
+ * Generates the content for a marker popup.
+ * @param title Title of the popup
+ * @param subtitle Subtitle of the popup
+ * @param position Latitude and longitude of the marker
+ * @param desc Description of the popup
+ * @param img Image of the popup
+ * @param wayfarerMode Flag which says if wayfarer mode is enabled or not
+ * @param modifierBtns Modifier buttons to use in the popup
+ * @param renderHtml Set description HTML directly
  * @returns The content of the popup as a string
  */
 export const createPopupContent = (

@@ -27,11 +27,13 @@ export default function SettingsView() {
   const setActivePopup = useStore((s) => s.setActivePopup);
   const setLayer = useStore((s) => s.setLayer);
   const setWayfarerMode = useStore((s) => s.setWayfarerMode);
-
   const showHidden = useStore((s) => s.modifiers.hidden);
   const showInactive = useStore((s) => s.modifiers.inactive);
   const showRemoved = useStore((s) => s.modifiers.removed);
   const toggleModifier = useStore((s) => s.toggleModifier);
+  const updateAllPlacedMarkerStates = useStore(
+    (s) => s.updateAllPlacedMarkerStates,
+  );
 
   return (
     <UiOverlayCard title="Settings">
@@ -57,7 +59,17 @@ export default function SettingsView() {
                 if (!s && activePopupType === "devpoi") {
                   setActivePopup(null, null);
                 }
-                setLayer("devpoi", { isVisible: false }, true);
+                setLayer("gym", { showNoCaPoiZone: false });
+                setLayer("pokestop", { showNoCaPoiZone: false });
+                setLayer("powerspot", { showNoCaPoiZone: false });
+                setLayer("devpoi", {
+                  isVisible: false,
+                  showNoCaPoiZone: false,
+                });
+                updateAllPlacedMarkerStates({
+                  showNoCaPoiZone: false,
+                });
+
                 setWayfarerMode(s === true);
               }}
             />

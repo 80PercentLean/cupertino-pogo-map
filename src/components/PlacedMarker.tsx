@@ -129,7 +129,7 @@ export default function PlacedMarker({ i }: Props) {
               position,
               wayfarerMode
                 ? undefined
-                : `You placed a marker at (${position[0]}, ${position[1]}).`,
+                : `<p>You placed a marker at:<ul class="list-disc px-4"><li class="mb-2">Latitude: ${position[0]}</li><li>Longitude: ${position[1]}</li></ul></p>`,
               undefined,
               wayfarerMode,
               {
@@ -139,6 +139,7 @@ export default function PlacedMarker({ i }: Props) {
                 noCaPoiZone: btnNoCaPoiZone,
                 noPowerSpotZone: btnNoPowerSpotZone,
               },
+              true,
             )}
           </Popup>
         )}

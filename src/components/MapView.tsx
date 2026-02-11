@@ -44,12 +44,6 @@ export default function MapView() {
   const isStdRaidPathOn = useStore((s) => s.basicLayers.stdRaidPath);
   const mapType = useStore((s) => s.mapType);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
-  // const showDevPois = useStore((s) => s.layers.devpois);
-  // const showLabels = useStore((s) => s.layers.labels);
-  // const showMeetupSpots = useStore((s) => s.layers.meetupSpots);
-  // const showParking = useStore((s) => s.layers.parking);
-  // const showRaidPath = useStore((s) => s.layers.raidPath);
-  // const showRestrooms = useStore((s) => s.layers.restrooms);
 
   let tileLayer;
   switch (mapType) {
