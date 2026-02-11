@@ -179,29 +179,32 @@ export const createPopupContent = (
       </p>
       {wayfarerMode && (
         <>
-          <Separator className="my-4" />
-          <BtnCopy
-            text={`Latitude: ${position[0]}`}
-            value={position[0]}
-            className={`${classNameDefault} mb-2`}
-          />
-          <BtnCopy
-            text={`Longitude: ${position[1]}`}
-            value={position[1]}
-            className={`${classNameDefault} mb-2`}
-          />
-          <BtnCopy
-            text="Copy name"
-            value={title}
-            className={`${classNameDefault} mb-2`}
-          />
-          <BtnCopyCoords
-            lat={position[0]}
-            lng={position[1]}
-            className={`${classNameDefault} mb-2 ml-2`}
-          />
+          <div className="flex gap-2">
+            <BtnCopy
+              text="Copy name"
+              value={title}
+              className={`${classNameDefault}`}
+            />
+            <BtnCopyCoords
+              lat={position[0]}
+              lng={position[1]}
+              className={`${classNameDefault}`}
+            />
+          </div>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <BtnCopy
+              text={`Latitude: ${position[0]}`}
+              value={position[0]}
+              className={`${classNameDefault}`}
+            />
+            <BtnCopy
+              text={`Longitude: ${position[1]}`}
+              value={position[1]}
+              className={`${classNameDefault}`}
+            />
+          </div>
           {modifierBtns && Object.keys(modifierBtns).length > 0 && (
-            <div className="flex">
+            <div className="mt-2 flex">
               {modifierBtns?.hide}
               {modifierBtns?.interactionRadius}
               {modifierBtns?.noPowerSpotZone}

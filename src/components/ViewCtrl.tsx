@@ -80,9 +80,13 @@ export default function ViewCtrl() {
         {wayfarerMode && (
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <Button asChild>
-                <NavLink to={`${ROOT_PATH}tools`}>Tools</NavLink>
-              </Button>
+              <NavLinkViewCtrl
+                name="tools"
+                to={`${ROOT_PATH}tools`}
+                title="Open Tools"
+              >
+                Tools
+              </NavLinkViewCtrl>
             </NavigationMenuLink>
           </NavigationMenuItem>
         )}
