@@ -96,7 +96,7 @@ export default function PlacedMarkerView() {
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit, onError)}>
-        <FieldGroup className="mb-10">
+        <FieldGroup className="mb-8">
           <FieldLegend>Manually add a placed marker</FieldLegend>
           <Controller
             name="lat"
@@ -137,8 +137,9 @@ export default function PlacedMarkerView() {
           <Button>Add Marker</Button>
         </FieldGroup>
       </form>
+      <Separator className="my-6" />
       <h1 className="mb-3 font-medium data-[variant=label]:text-sm data-[variant=legend]:text-base">
-        Current placed markers
+        Currently placed markers
       </h1>
       {placedMarkerItems.length > 0 ? (
         placedMarkerItems

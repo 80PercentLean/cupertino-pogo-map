@@ -1,6 +1,12 @@
-import { type Dispatch, type SetStateAction, useEffect } from "react";
+import {
+  type Dispatch,
+  type SetStateAction,
+  useContext,
+  useEffect,
+} from "react";
 import { toast } from "sonner";
 
+import { MapContext } from "./MapContext";
 import { useStore } from "./hooks/store";
 
 export interface Props {
@@ -12,6 +18,8 @@ export interface Props {
  * It does not render any visual UI.
  */
 export default function MyLocation({ setIsMyLocationOn }: Props) {
+  const { map } = useContext(MapContext);
+  const myLocation = useStore((s) => s.myLocation);
   const setMyLocation = useStore((s) => s.setMyLocation);
   const setMyLocationAccuracy = useStore((s) => s.setMyLocationAccuracy);
 
@@ -28,6 +36,14 @@ export default function MyLocation({ setIsMyLocationOn }: Props) {
           });
           setMyLocation([position.coords.latitude, position.coords.longitude]);
           setMyLocationAccuracy(position.coords.accuracy);
+
+          if (map && myLocation === null) {
+            // This my location functionality was started, so fly to my location
+            map.flyTo(
+              [position.coords.latitude, position.coords.longitude],
+              18,
+            );
+          }
         },
         (error) => {
           const MSG_ERR = `An error occurred: ${error.code} - ${error.message}`;
@@ -51,6 +67,8 @@ export default function MyLocation({ setIsMyLocationOn }: Props) {
       const MSG_OFF = "My location functionality has been turned off.";
       toast(MSG_OFF);
       console.log(MSG_OFF);
+      setMyLocation(null);
+      setMyLocationAccuracy(null);
 
       if (watchId) {
         navigator.geolocation.clearWatch(watchId);
@@ -58,7 +76,7 @@ export default function MyLocation({ setIsMyLocationOn }: Props) {
       setMyLocation(null);
       setMyLocationAccuracy(null);
     };
-  }, [setIsMyLocationOn, setMyLocation, setMyLocationAccuracy]);
+  }, [map, setIsMyLocationOn, setMyLocation, setMyLocationAccuracy]);
 
   return null;
 }
