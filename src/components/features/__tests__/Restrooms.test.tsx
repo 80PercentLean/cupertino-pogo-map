@@ -1,4 +1,4 @@
-import MeetupSpots from "@/components/poi/MeetupSpots";
+import Restrooms from "@/components/features/Restrooms";
 import { render } from "@testing-library/react";
 import { MapContainer, TileLayer } from "react-leaflet";
 
@@ -11,12 +11,12 @@ function TestComponent() {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <MeetupSpots />
+      <Restrooms />
     </MapContainer>
   );
 }
 
-test("matches <MeetupSpots> default snapshot", () => {
+test("matches <Restrooms> default snapshot", () => {
   const { asFragment } = render(<TestComponent />);
 
   expect(asFragment()).toMatchSnapshot();

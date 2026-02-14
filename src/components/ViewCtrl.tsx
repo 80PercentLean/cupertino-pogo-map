@@ -6,11 +6,10 @@ import {
 } from "@/components/ui/navigation-menu";
 import { ROOT_PATH } from "@/constants";
 import { List, Map } from "lucide-react";
-import { NavLink, useLocation } from "react-router";
+import { useLocation } from "react-router";
 
 import NavLinkViewCtrl from "./NavLinkViewCtrl";
 import { useStore } from "./hooks/store";
-import { Button } from "./ui/button";
 
 /**
  * Buttons at the bottom of the screen that allows the user to switch between views like
@@ -59,7 +58,7 @@ export default function ViewCtrl() {
           <NavigationMenuLink asChild>
             <NavLinkViewCtrl
               name="settings"
-              to={`${ROOT_PATH}settings`}
+              to={`${ROOT_PATH}/settings`}
               title="Open Settings"
             >
               Settings
@@ -70,7 +69,7 @@ export default function ViewCtrl() {
           <NavigationMenuLink asChild>
             <NavLinkViewCtrl
               name="info"
-              to={`${ROOT_PATH}info`}
+              to={`${ROOT_PATH}/info`}
               title="Open Information Screen"
             >
               Info
@@ -82,7 +81,7 @@ export default function ViewCtrl() {
             <NavigationMenuLink asChild>
               <NavLinkViewCtrl
                 name="tools"
-                to={`${ROOT_PATH}tools`}
+                to={`${ROOT_PATH}/tools`}
                 title="Open Tools"
               >
                 Tools

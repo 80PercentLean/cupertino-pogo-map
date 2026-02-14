@@ -5,10 +5,10 @@ import { useEffect, useRef } from "react";
 import { Popup } from "react-leaflet";
 
 import CMarker from "./CMarker";
+import InteractionRadius from "./features/InteractionRadius";
+import NoCaPoiZone from "./features/NoCaPoiZone";
+import NoPowerSpotZone from "./features/NoPowerSpotZone";
 import { useStore } from "./hooks/store";
-import InteractionRadius from "./poi/InteractionRadius";
-import NoCaPoiZone from "./poi/NoCaPoiZone";
-import NoPowerSpotZone from "./poi/NoPowerSpotZone";
 import {
   createBtnHide,
   createBtnInteractionRadius,

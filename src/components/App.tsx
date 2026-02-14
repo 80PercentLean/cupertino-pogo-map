@@ -1,4 +1,5 @@
 import { Toaster } from "@/components/ui/sonner";
+import { ROOT_PATH } from "@/constants";
 import { ErrorBoundary } from "react-error-boundary";
 import { BrowserRouter, Route, Routes } from "react-router";
 
@@ -16,7 +17,7 @@ export default function App() {
       <Toaster closeButton position="top-center" />
       <BrowserRouter>
         <Routes>
-          <Route path="cupertino-pogo-map" element={<BaseView />}>
+          <Route path={`${ROOT_PATH}/map`} element={<BaseView />}>
             <Route path="info" element={<InfoView />} />
             <Route path="settings" element={<SettingsView />} />
             <Route path="tools" element={<ToolsView />} />

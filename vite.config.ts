@@ -10,6 +10,14 @@ import { ROOT_PATH } from "./src/constants";
 export default defineConfig({
   base: ROOT_PATH,
   server: { host: "0.0.0.0" },
+  build: {
+    rollupOptions: {
+      input: {
+        landing: path.resolve(__dirname, "index.html"),
+        main: path.resolve(__dirname, "map.html"),
+      },
+    },
+  },
   plugins: [
     react({
       babel: {
