@@ -4,7 +4,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { ROOT_PATH } from "@/constants";
+import { MAP_PATH } from "@/constants";
 import { List, Map } from "lucide-react";
 import { useLocation } from "react-router";
 
@@ -29,7 +29,7 @@ export default function ViewCtrl() {
           <NavLinkViewCtrl
             end
             name="map"
-            to={ROOT_PATH}
+            to={MAP_PATH}
             title="Switch to Map Only View"
           >
             <Map /> Map
@@ -41,10 +41,10 @@ export default function ViewCtrl() {
               end
               forceActive={isListViewOpen}
               name="list"
-              to={ROOT_PATH}
+              to={MAP_PATH}
               title="Switch to Map Only View"
               onClick={() => {
-                if (pathname === ROOT_PATH) {
+                if (pathname === MAP_PATH) {
                   // Only toggle list view when the map is active
                   toggleIsListViewOpen();
                 }
@@ -58,7 +58,7 @@ export default function ViewCtrl() {
           <NavigationMenuLink asChild>
             <NavLinkViewCtrl
               name="settings"
-              to={`${ROOT_PATH}/settings`}
+              to={`${MAP_PATH}/settings`}
               title="Open Settings"
             >
               Settings
@@ -69,7 +69,7 @@ export default function ViewCtrl() {
           <NavigationMenuLink asChild>
             <NavLinkViewCtrl
               name="info"
-              to={`${ROOT_PATH}/info`}
+              to={`${MAP_PATH}/info`}
               title="Open Information Screen"
             >
               Info
@@ -81,7 +81,7 @@ export default function ViewCtrl() {
             <NavigationMenuLink asChild>
               <NavLinkViewCtrl
                 name="tools"
-                to={`${ROOT_PATH}/tools`}
+                to={`${MAP_PATH}/tools`}
                 title="Open Tools"
               >
                 Tools
