@@ -35,6 +35,7 @@ interface FeatureData {
   coordinates: LatLngTuple;
   id: string;
   name: CProperties["name"];
+  inactive?: CProperties["inactive"];
   removed?: CProperties["removed"];
   subtype?: CProperties["subtype"];
   type: CProperties["type"];
@@ -65,13 +66,14 @@ export default function ListView() {
 
     for (const currFeatures of args) {
       if (
-        (currFeatures[0].properties.type === "gym" && layerGym) ||
-        (currFeatures[0].properties.type === "meetupspot" && layerMeetupspot) ||
-        (currFeatures[0].properties.type === "parking" && layerPokestop) ||
-        (currFeatures[0].properties.type === "pokestop" && layerPokestop) ||
-        (currFeatures[0].properties.type === "powerspot" && layerPowerspot) ||
-        (currFeatures[0].properties.type === "restroom" && layerRestroom) ||
-        (currFeatures[0].properties.type === "devpoi" && layerDevpoi)
+        (currFeatures[0]?.properties?.type === "gym" && layerGym) ||
+        (currFeatures[0]?.properties?.type === "meetupspot" &&
+          layerMeetupspot) ||
+        (currFeatures[0]?.properties?.type === "parking" && layerPokestop) ||
+        (currFeatures[0]?.properties?.type === "pokestop" && layerPokestop) ||
+        (currFeatures[0]?.properties?.type === "powerspot" && layerPowerspot) ||
+        (currFeatures[0]?.properties?.type === "restroom" && layerRestroom) ||
+        (currFeatures[0]?.properties?.type === "devpoi" && layerDevpoi)
       ) {
         for (const {
           geometry: { coordinates },
@@ -96,6 +98,7 @@ export default function ListView() {
               coordinates: [coordinates[1], coordinates[0]],
               id: id as string,
               name,
+              inactive,
               removed,
               subtype,
               type,
@@ -117,7 +120,7 @@ export default function ListView() {
     const list = [];
 
     featureData.forEach(
-      ({ coordinates, id, name, removed, subtype, type }, i) => {
+      ({ coordinates, id, inactive, name, removed, subtype, type }, i) => {
         let itemClassName =
           "cursor-pointer text-sm px-4 pr-0 w-full rounded-none justify-start h-12 font-normal gap-2";
         if (i === 0) {
@@ -187,8 +190,10 @@ export default function ListView() {
             alt = "Default Marker Icon";
         }
 
-        const iconClassName = "h-full w-auto object-contain";
-        // TODO: if hidden then make icon greyscale
+        let iconClassName = "h-full w-auto object-contain";
+        if (inactive || removed) {
+          iconClassName += " grayscale";
+        }
 
         let nameClassName = "flex h-full items-center overflow-x-scroll pr-2";
         if (removed) {

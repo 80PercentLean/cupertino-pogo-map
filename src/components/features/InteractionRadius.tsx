@@ -14,7 +14,7 @@ export default function InteractionRadius({ position }: Props) {
       center={position}
       interactive={false}
       pathOptions={{
-        color: "#fff",
+        color: "#38bdf8",
         fillColor: "#1d4ed8",
         fillOpacity: 0.1,
         weight: 1,

@@ -2,12 +2,12 @@ import { render, screen } from "@testing-library/react";
 import { userEvent } from "@testing-library/user-event";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import { CENTER } from "../../constants";
+import { CENTER_CUP } from "../../constants";
 import PlacedMarkers from "../PlacedMarkers";
 
 function TestComponent() {
   return (
-    <MapContainer id="map" center={CENTER} zoom={16} zoomControl={false}>
+    <MapContainer id="map" center={CENTER_CUP} zoom={16} zoomControl={false}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

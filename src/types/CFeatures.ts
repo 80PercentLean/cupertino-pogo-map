@@ -51,11 +51,21 @@ export interface CProperties {
    */
   removed?: boolean | string;
 
-  /** Source the POI data came from. */
-  source?: string;
+  /** Source where the POI data came from. */
+  source?: "Campfire" | "Eyeball" | "Ingress" | "Wayfarer";
 
   /** User who submitted the Wayspot. */
   submitter?: string;
+
+  /** Subtype of a POI. */
+  subtype:
+    | "all-binary"
+    | "conditionally-free"
+    | "free"
+    | "men"
+    | "paid"
+    | "showcase"
+    | "women";
 
   /** Type of POI or label. */
   type:
@@ -68,15 +78,11 @@ export interface CProperties {
     | "powerspot"
     | "restroom";
 
-  /** Subtype of a POI. */
-  subtype:
-    | "all-binary"
-    | "conditionally-free"
-    | "free"
-    | "men"
-    | "paid"
-    | "showcase"
-    | "women";
+  /**
+   * When the POI was last verified to be seen in-game or on Campfire.
+   * The value is in a simplified ISO 8601 format.
+   */
+  verified?: string;
 }
 
 /** A GeoJSON `Feature` representing a POI or a label. */

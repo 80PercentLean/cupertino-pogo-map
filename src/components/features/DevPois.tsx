@@ -1,4 +1,5 @@
-import { devpoisJson } from "../../geojson/data";
+import { devpoisJson } from "@/geojson/data";
+
 import { iconDevpoi } from "../../leafletIcons";
 import Features from "./Features";
 

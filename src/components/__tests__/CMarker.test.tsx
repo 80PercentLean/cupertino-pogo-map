@@ -1,17 +1,17 @@
 import { render, screen } from "@testing-library/react";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import { CENTER } from "../../constants";
+import { CENTER_CUP } from "../../constants";
 import CMarker from "../CMarker";
 
 function TestComponent() {
   return (
-    <MapContainer id="map" center={CENTER} zoom={16}>
+    <MapContainer id="map" center={CENTER_CUP} zoom={16}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <CMarker position={CENTER} data-testid="marker" />
+      <CMarker position={CENTER_CUP} data-testid="marker" />
     </MapContainer>
   );
 }

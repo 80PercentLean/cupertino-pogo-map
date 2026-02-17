@@ -1,30 +1,65 @@
-import type { CFeatureCollection } from "@/types/CFeatures";
-import type { FeatureCollection, LineString } from "geojson";
+import {
+  centralDevpoisJson,
+  centralGymsJson,
+  centralL13CellsJson,
+  centralL14CellsJson,
+  centralL17CellsJson,
+  centralMeetupspotsJson,
+  centralParkingJson,
+  centralPokestopsJson,
+  centralPowerspotsJson,
+  centralRestroomsJson,
+} from "./central/data";
+import {
+  cupDevpoisJson,
+  cupGymsJson,
+  cupL13CellsJson,
+  cupL14CellsJson,
+  cupL17CellsJson,
+  cupLabelsJson,
+  cupMeetupspotsJson,
+  cupParkingJson,
+  cupPokestopsJson,
+  cupPowerspotsJson,
+  cupRestroomsJson,
+  cupStdRaidPathJson,
+} from "./cup/data";
 
-import devpois from "./devpois.geojson?raw";
-import gyms from "./gyms.geojson?raw";
-import l13Cells from "./l13.geojson?raw";
-import l14Cells from "./l14.geojson?raw";
-import l17Cells from "./l17.geojson?raw";
-import labels from "./labels.geojson?raw";
-import meetupspots from "./meetupspots.geojson?raw";
-import parking from "./parking.geojson?raw";
-import pokestops from "./pokestops.geojson?raw";
-import powerSpots from "./powerspots.geojson?raw";
-import restrooms from "./restrooms.geojson?raw";
-import stdRaidPath from "./std-raid-path.geojson?raw";
+const VITE_IS_CENTRAL = import.meta.env.VITE_IS_CENTRAL as string;
 
-export const devpoisJson = JSON.parse(devpois) as CFeatureCollection;
-export const gymsJson = JSON.parse(gyms) as CFeatureCollection;
-export const l13CellsJson = JSON.parse(l13Cells) as CFeatureCollection;
-export const l14CellsJson = JSON.parse(l14Cells) as CFeatureCollection;
-export const l17CellsJson = JSON.parse(l17Cells) as CFeatureCollection;
-export const labelsJson = JSON.parse(labels) as CFeatureCollection;
-export const meetupspotsJson = JSON.parse(meetupspots) as CFeatureCollection;
-export const parkingJson = JSON.parse(parking) as CFeatureCollection;
-export const pokestopsJson = JSON.parse(pokestops) as CFeatureCollection;
-export const powerspotsJson = JSON.parse(powerSpots) as CFeatureCollection;
-export const restroomsJson = JSON.parse(restrooms) as CFeatureCollection;
-export const stdRaidPathJson = JSON.parse(
-  stdRaidPath,
-) as FeatureCollection<LineString>;
+const devpoisJson =
+  VITE_IS_CENTRAL === "true" ? centralDevpoisJson : cupDevpoisJson;
+const gymsJson = VITE_IS_CENTRAL === "true" ? centralGymsJson : cupGymsJson;
+const l13CellsJson =
+  VITE_IS_CENTRAL === "true" ? centralL13CellsJson : cupL13CellsJson;
+const l14CellsJson =
+  VITE_IS_CENTRAL === "true" ? centralL14CellsJson : cupL14CellsJson;
+const l17CellsJson =
+  VITE_IS_CENTRAL === "true" ? centralL17CellsJson : cupL17CellsJson;
+const labelsJson = cupLabelsJson;
+const meetupspotsJson =
+  VITE_IS_CENTRAL === "true" ? centralMeetupspotsJson : cupMeetupspotsJson;
+const parkingJson =
+  VITE_IS_CENTRAL === "true" ? centralParkingJson : cupParkingJson;
+const pokestopsJson =
+  VITE_IS_CENTRAL === "true" ? centralPokestopsJson : cupPokestopsJson;
+const powerspotsJson =
+  VITE_IS_CENTRAL === "true" ? centralPowerspotsJson : cupPowerspotsJson;
+const restroomsJson =
+  VITE_IS_CENTRAL === "true" ? centralRestroomsJson : cupRestroomsJson;
+const stdRaidPathJson = cupStdRaidPathJson;
+
+export {
+  devpoisJson,
+  gymsJson,
+  l13CellsJson,
+  l14CellsJson,
+  l17CellsJson,
+  labelsJson,
+  meetupspotsJson,
+  parkingJson,
+  pokestopsJson,
+  powerspotsJson,
+  restroomsJson,
+  stdRaidPathJson,
+};

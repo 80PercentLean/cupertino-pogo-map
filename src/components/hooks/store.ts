@@ -271,7 +271,7 @@ export const useStore = create<StoreState>()(
         modifiers: {
           hidden: true,
 
-          inactive: true,
+          inactive: false,
 
           removed: false,
         },
@@ -518,11 +518,11 @@ export const useStore = create<StoreState>()(
       });
 
       meetupspotsJson.features.forEach(({ id }) => {
-        initStoreState.layerMeetupspot[String(id)] = { isVisible: true };
+        initStoreState.layerMeetupspot[String(id)] = { isVisible: false };
       });
 
       parkingJson.features.forEach(({ id }) => {
-        initStoreState.layerParking[String(id)] = { isVisible: true };
+        initStoreState.layerParking[String(id)] = { isVisible: false };
       });
 
       pokestopsJson.features.forEach(({ id }) => {
@@ -530,11 +530,11 @@ export const useStore = create<StoreState>()(
       });
 
       powerspotsJson.features.forEach(({ id }) => {
-        initStoreState.layerPowerspot[String(id)] = { isVisible: false };
+        initStoreState.layerPowerspot[String(id)] = { isVisible: true };
       });
 
       restroomsJson.features.forEach(({ id }) => {
-        initStoreState.layerRestroom[String(id)] = { isVisible: true };
+        initStoreState.layerRestroom[String(id)] = { isVisible: false };
       });
 
       return initStoreState;

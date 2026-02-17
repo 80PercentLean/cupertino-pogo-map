@@ -2,7 +2,7 @@ import imgDiscord from "@/assets/Discord-Symbol-Blurple.png";
 import imgPgo from "@/assets/Pokemon_GO_Logo.png";
 import imgCampfire from "@/assets/campfire.png";
 import imgMap from "@/assets/raw/pgo-map-bg.jpg";
-import { ROOT_PATH } from "@/constants";
+import { MAP_PATH } from "@/constants";
 
 export default function Landing() {
   return (
@@ -32,7 +32,7 @@ export default function Landing() {
             </div>
           </div>
         </a>
-        <a href={`${ROOT_PATH}/map`}>
+        <a href={MAP_PATH}>
           <div className="bg-foreground mt-4 flex max-w-150 rounded-xl">
             <img
               src={imgMap}

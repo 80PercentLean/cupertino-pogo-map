@@ -1,6 +1,5 @@
+import { l17CellsJson } from "@/geojson/data";
 import { GeoJSON } from "react-leaflet";
-
-import { l17CellsJson } from "../../geojson/data";
 
 /**
  * React Leaflet's <GeoJSON> specialized rendering level 17 S2 cells.

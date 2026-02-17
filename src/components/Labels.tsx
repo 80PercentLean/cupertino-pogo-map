@@ -1,7 +1,7 @@
+import { labelsJson } from "@/geojson/data";
 import { marker } from "leaflet";
 import { GeoJSON } from "react-leaflet";
 
-import { labelsJson } from "../geojson/data";
 import {
   labelDa,
   labelFujitsu,
