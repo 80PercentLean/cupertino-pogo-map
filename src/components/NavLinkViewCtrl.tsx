@@ -4,17 +4,18 @@ import { NavLink } from "react-router";
 
 import { Button, buttonVariants } from "./ui/button";
 
-const genOuterBorderClassName = (isActive: boolean) => {
-  let outerBorderClassName =
-    "absolute mb-1 h-10 w-20 border-2 border-black bg-transparent  hover:bg-transparent ";
-  if (isActive) {
-    outerBorderClassName += "border-emerald-700";
-  } else {
-    outerBorderClassName += "hover:border-emerald-700";
-  }
+// TODO: delete this probably
+// const genOuterBorderClassName = (isActive: boolean) => {
+//   let outerBorderClassName =
+//     "absolute mb-1 h-10 w-20 border-2 border-black bg-transparent  hover:bg-transparent ";
+//   if (isActive) {
+//     outerBorderClassName += "border-emerald-700";
+//   } else {
+//     outerBorderClassName += "hover:border-emerald-700";
+//   }
 
-  return outerBorderClassName;
-};
+//   return outerBorderClassName;
+// };
 
 export interface Props {
   end?: boolean;

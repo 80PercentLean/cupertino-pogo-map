@@ -2,7 +2,7 @@ import { Activity } from "react";
 import { Outlet } from "react-router";
 
 import BtnLayers from "./BtnLayers";
-import BtnMyLocation from "./BtnMyLocation";
+// import BtnMyLocation from "./BtnMyLocation";
 import ListView from "./ListView";
 import ViewCtrl from "./ViewCtrl";
 import { useStore } from "./hooks/store";
