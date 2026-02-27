@@ -127,7 +127,7 @@ export default function FeatureMarker({
   const modifierBtns: ModifierBtns = {
     hide: btnHide,
   };
-  if (!inactive && !removed) {
+  if (!removed) {
     modifierBtns.interactionRadius = btnInteractionRadius;
     modifierBtns.noCaPoiZone = btnNoCaPoiZone;
     modifierBtns.noPowerSpotZone = btnNoPowerSpotZone;
@@ -153,9 +153,7 @@ export default function FeatureMarker({
         <NoPowerSpotZone position={position} />
       )}
       {/* Do not show NoCaPoiZone for inactive power spots */}
-      {!inactive && !removed && showNoCaPoiZone && (
-        <NoCaPoiZone position={position} />
-      )}
+      {!removed && showNoCaPoiZone && <NoCaPoiZone position={position} />}
       {/* Do not show interactive radius for inactive power spots */}
       {!inactive && !removed && showInteractionRadius && (
         <InteractionRadius position={position} />
