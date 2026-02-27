@@ -124,7 +124,7 @@ export default function ListView() {
         let itemClassName =
           "cursor-pointer text-sm px-4 pr-0 w-full rounded-none justify-start h-12 font-normal gap-2";
         if (i === 0) {
-          itemClassName += " mt-2";
+          itemClassName += " md:mt-2";
         }
         if (removed) {
           itemClassName += " line-through";
@@ -289,8 +289,8 @@ export default function ListView() {
   );
 
   return (
-    <Card className="fixed top-0 left-0 z-999 m-2 max-h-[66vh] w-10 w-100 gap-0 pt-0 pb-0">
-      <InputGroup className="rounded-b-none py-6">
+    <Card className="absolute inset-0 z-999 gap-0 rounded-none pt-0 pb-15 md:fixed md:top-0 md:left-0 md:m-2 md:max-h-[66vh] md:w-100 md:rounded-xl md:pb-0">
+      <InputGroup className="rounded-none py-6 md:rounded-t-xl">
         <InputGroupInput
           placeholder="Search for Gyms, PokéStops, etc."
           value={query}

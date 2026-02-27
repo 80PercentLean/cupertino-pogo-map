@@ -9,9 +9,11 @@ import {
   FieldSeparator,
   FieldSet,
 } from "@/components/ui/field";
+import { Settings } from "lucide-react";
 
 import SelectRadius from "./SelectRadius";
 import UiOverlayCard from "./UiOverlayCard";
+import UiOverlayCardIconTitle from "./UiOverlayCardIconTitle";
 import { useStore } from "./hooks/store";
 
 /**
@@ -36,7 +38,9 @@ export default function SettingsView() {
   );
 
   return (
-    <UiOverlayCard title="Settings">
+    <UiOverlayCard
+      title={<UiOverlayCardIconTitle Icon={Settings} text="Settings" />}
+    >
       <FieldSet>
         <FieldGroup className="gap-3">
           <Field orientation="horizontal">
@@ -113,7 +117,6 @@ export default function SettingsView() {
                   className="cursor-pointer"
                   onCheckedChange={() => toggleModifier("inactive")}
                 />
-
                 <FieldContent>
                   <FieldLabel
                     htmlFor="inactive-pois"

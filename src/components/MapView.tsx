@@ -1,11 +1,10 @@
 // import { type LatLngBoundsExpression } from "leaflet";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import { CENTER_CENTRAL, CENTER_CUP } from "../constants";
-import { isMobileUa } from "../util";
+import { CENTER_CENTRAL, CENTER_CUP, IS_MOBILE } from "../constants";
 import Labels from "./Labels";
 import LeafletDebug from "./LeafletDebug";
-// import MyLocationMarker from "./MyLocationMarker";
+import MyLocationMarker from "./MyLocationMarker";
 import PlacedMarkers from "./PlacedMarkers";
 import StdRaidPath from "./StdRaidPath";
 import DevPois from "./features/DevPois";
@@ -23,7 +22,6 @@ import L17Grid from "./s2/L17Grid";
 const CENTER =
   import.meta.env.VITE_IS_CENTRAL === "true" ? CENTER_CENTRAL : CENTER_CUP;
 
-const IS_MOBILE = isMobileUa();
 // const BOUNDARIES: LatLngBoundsExpression = [
 //   [37.3328, -122.0554],
 //   [37.3107, -122.0326],
@@ -127,7 +125,7 @@ export default function MapView() {
       {isL14GridOn && <L14Grid />}
       {isL13GridOn && <L13Grid />}
       <PlacedMarkers />
-      {/* <MyLocationMarker data-testid="marker-my-location" /> */}
+      <MyLocationMarker data-testid="marker-my-location" />
     </MapContainer>
   );
 }

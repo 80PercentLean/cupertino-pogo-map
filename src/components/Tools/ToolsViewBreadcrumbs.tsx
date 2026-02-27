@@ -6,7 +6,10 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { ToolCase } from "lucide-react";
 import { type Dispatch, type SetStateAction } from "react";
+
+import UiOverlayCardIconTitle from "../UiOverlayCardIconTitle";
 
 export interface Props {
   nav: string | null;
@@ -29,18 +32,20 @@ export default function ToolsViewBreadcrumbs({ nav, setNav }: Props) {
       nav = null;
   }
 
+  const toolsTitle = <UiOverlayCardIconTitle Icon={ToolCase} text="Tools" />;
+
   return (
     <Breadcrumb>
       <BreadcrumbList>
         <BreadcrumbItem>
           {nav === null ? (
-            <BreadcrumbPage>Tools</BreadcrumbPage>
+            <BreadcrumbPage>{toolsTitle}</BreadcrumbPage>
           ) : (
             <BreadcrumbLink
               className="cursor-pointer"
               onClick={() => setNav(null)}
             >
-              Tools
+              {toolsTitle}
             </BreadcrumbLink>
           )}
         </BreadcrumbItem>

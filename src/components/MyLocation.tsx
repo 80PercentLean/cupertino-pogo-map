@@ -67,8 +67,6 @@ export default function MyLocation({ setIsMyLocationOn }: Props) {
       const MSG_OFF = "My location functionality has been turned off.";
       toast(MSG_OFF);
       console.log(MSG_OFF);
-      setMyLocation(null);
-      setMyLocationAccuracy(null);
 
       if (watchId) {
         navigator.geolocation.clearWatch(watchId);

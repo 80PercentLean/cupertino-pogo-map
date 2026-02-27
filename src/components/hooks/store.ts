@@ -1,3 +1,4 @@
+import { IS_MOBILE } from "@/constants";
 import {
   devpoisJson,
   gymsJson,
@@ -106,6 +107,7 @@ export interface StoreState {
     removed: boolean;
   };
 
+  /** State that controls which type of tile layer is active. */
   mapType: "default" | "extra-info" | "satellite";
 
   /** Coordinates for current my location. */
@@ -117,6 +119,7 @@ export interface StoreState {
   /** State for placed markers. */
   placedMarkerStates: PlacedMarkerState[];
 
+  /** Remove a placed marker state. */
   removePlacedMarkerState: (i: number) => void;
 
   /** Set the `activePopup` value. */
@@ -246,7 +249,7 @@ export const useStore = create<StoreState>()(
         invertCoords: false,
 
         // TODO: Start with opened list view on desktop and a closed one on mobile
-        isListViewOpen: true,
+        isListViewOpen: !IS_MOBILE,
 
         // Map type starts off as default
         mapType: "default",

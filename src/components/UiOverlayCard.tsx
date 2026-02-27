@@ -20,7 +20,7 @@ export default function UiOverlayCard({
 }: PropsWithChildren<Props>) {
   return (
     <MapCover>
-      <Card className="absolute top-0 right-0 left-0 min-h-full rounded-none md:static md:min-h-0 md:w-[500px] md:rounded-xl">
+      <Card className="absolute top-0 right-0 left-0 min-h-full overflow-y-scroll rounded-none pb-15 md:static md:m-auto md:min-h-0 md:w-[500px] md:rounded-xl md:pb-6">
         <CardHeader className="flex flex-row items-center justify-between">
           {title && typeof title === "string" ? (
             <CardTitle>{title}</CardTitle>

@@ -149,7 +149,7 @@ export default function FeatureMarker({
 
   return (
     <>
-      {!inactive && !removed && showNoPowerSpotZone && (
+      {type !== "powerspot" && !inactive && !removed && showNoPowerSpotZone && (
         <NoPowerSpotZone position={position} />
       )}
       {/* Do not show NoCaPoiZone for inactive power spots */}

@@ -52,28 +52,13 @@ export default function NavLinkViewCtrl({
 
         return (
           <span className={`group/${name}`}>
-            {/* Inner border */}
-            {activeStyle && (
-              <div
-                className={cn(
-                  buttonVariants({ size: "default" }),
-                  "white absolute mb-1 h-10 w-20 border-4 bg-transparent",
-                )}
-              />
-            )}
-            {/* Outer border */}
-            <div
-              className={cn(
-                buttonVariants({ size: "default" }),
-                genOuterBorderClassName(activeStyle),
-              )}
-            />
             <Button
-              variant="ghost"
               className={cn(
                 buttonVariants({ variant: "default" }),
-                `h-10 w-20 p-3 group-hover/${name}:text-emerald-700`,
-                activeStyle && "text-emerald-700",
+                "h-10 w-25 cursor-pointer shadow-sm shadow-gray-500",
+                // `h-10 w-20 p-3 group-hover/${name}:text-emerald-700`,
+                activeStyle &&
+                  "border-2 border-emerald-950 bg-emerald-500 text-black hover:bg-emerald-700",
               )}
             >
               {children}

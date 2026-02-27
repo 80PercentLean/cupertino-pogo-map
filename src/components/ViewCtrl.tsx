@@ -5,7 +5,9 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import { MAP_PATH } from "@/constants";
-import { List, Map } from "lucide-react";
+import { type DebouncedFunc, debounce } from "lodash-es";
+import { Info, List, Map, Settings, Toolbox } from "lucide-react";
+import { useEffect } from "react";
 import { useLocation } from "react-router";
 
 import NavLinkViewCtrl from "./NavLinkViewCtrl";
@@ -21,6 +23,26 @@ export default function ViewCtrl() {
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const { pathname } = useLocation();
+
+  useEffect(() => {
+    const handleResize: DebouncedFunc<() => void> = debounce(() => {
+      if (window.innerWidth >= 768) {
+        console.log("desktop mode");
+      } else {
+        console.log("mobile mode");
+      }
+    }, 500);
+    window.addEventListener("resize", () => {
+      handleResize();
+    });
+
+    return () => {
+      window.removeEventListener("resize", () => {
+        handleResize();
+      });
+      handleResize.cancel();
+    };
+  }, []);
 
   return (
     <NavigationMenu className="fixed bottom-0 left-0 z-1001 m-2">
@@ -61,7 +83,7 @@ export default function ViewCtrl() {
               to={`${MAP_PATH}/settings`}
               title="Open Settings"
             >
-              Settings
+              <Settings /> Settings
             </NavLinkViewCtrl>
           </NavigationMenuLink>
         </NavigationMenuItem>
@@ -72,7 +94,7 @@ export default function ViewCtrl() {
               to={`${MAP_PATH}/info`}
               title="Open Information Screen"
             >
-              Info
+              <Info /> Info
             </NavLinkViewCtrl>
           </NavigationMenuLink>
         </NavigationMenuItem>
@@ -84,6 +106,7 @@ export default function ViewCtrl() {
                 to={`${MAP_PATH}/tools`}
                 title="Open Tools"
               >
+                <Toolbox />
                 Tools
               </NavLinkViewCtrl>
             </NavigationMenuLink>

@@ -76,8 +76,7 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot",
-        "inactive": true
+        "type": "powerspot"
       },
       "geometry": {
         "coordinates": [
@@ -120,8 +119,7 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot",
-        "inactive": true
+        "type": "powerspot"
       },
       "geometry": {
         "coordinates": [
@@ -142,8 +140,7 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot",
-        "inactive": true
+        "type": "powerspot"
       },
       "geometry": {
         "coordinates": [
@@ -905,8 +902,7 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot",
-        "inactive": true
+        "type": "powerspot"
       },
       "geometry": {
         "coordinates": [
@@ -1102,8 +1098,7 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot",
-        "inactive": true
+        "type": "powerspot"
       },
       "geometry": {
         "coordinates": [
@@ -1300,8 +1295,7 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot",
-        "inactive": true
+        "type": "powerspot"
       },
       "geometry": {
         "coordinates": [
@@ -1366,7 +1360,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "inactive": true
       },
       "geometry": {
         "coordinates": [
@@ -1387,8 +1382,7 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot",
-        "inactive": true
+        "type": "powerspot"
       },
       "geometry": {
         "coordinates": [
@@ -1561,8 +1555,7 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot",
-        "inactive": true
+        "type": "powerspot"
       },
       "geometry": {
         "coordinates": [
@@ -1668,7 +1661,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "inactive": true
       },
       "geometry": {
         "coordinates": [
@@ -1777,8 +1771,7 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot",
-        "inactive": true
+        "type": "powerspot"
       },
       "geometry": {
         "coordinates": [
@@ -1821,7 +1814,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "inactive": true
       },
       "geometry": {
         "coordinates": [
@@ -1930,8 +1924,7 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot",
-        "inactive": true
+        "type": "powerspot"
       },
       "geometry": {
         "coordinates": [
@@ -2061,7 +2054,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "inactive": true
       },
       "geometry": {
         "coordinates": [
@@ -2126,8 +2120,7 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot",
-        "inactive": true
+        "type": "powerspot"
       },
       "geometry": {
         "coordinates": [
@@ -2191,7 +2184,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "inactive": true
       },
       "geometry": {
         "coordinates": [
@@ -2256,8 +2250,7 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot",
-        "inactive": true
+        "type": "powerspot"
       },
       "geometry": {
         "coordinates": [
@@ -2388,7 +2381,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "inactive": true
       },
       "geometry": {
         "coordinates": [
@@ -2474,7 +2468,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "inactive": true
       },
       "geometry": {
         "coordinates": [
@@ -2538,8 +2533,7 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot",
-        "inactive": true
+        "type": "powerspot"
       },
       "geometry": {
         "coordinates": [
@@ -2690,7 +2684,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "inactive": true
       },
       "geometry": {
         "coordinates": [
@@ -2711,7 +2706,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "inactive": true
       },
       "geometry": {
         "coordinates": [
@@ -2754,7 +2750,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "inactive": true
       },
       "geometry": {
         "coordinates": [
@@ -2840,7 +2837,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "inactive": true
       },
       "geometry": {
         "coordinates": [
@@ -2949,8 +2947,7 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot",
-        "inactive": true
+        "type": "powerspot"
       },
       "geometry": {
         "coordinates": [
@@ -2971,7 +2968,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "inactive": true
       },
       "geometry": {
         "coordinates": [
@@ -2992,7 +2990,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "inactive": true
       },
       "geometry": {
         "coordinates": [
@@ -3385,7 +3384,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "inactive": true
       },
       "geometry": {
         "coordinates": [
@@ -3515,7 +3515,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "inactive": true
       },
       "geometry": {
         "coordinates": [
@@ -3646,8 +3647,7 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot",
-        "inactive": true
+        "type": "powerspot"
       },
       "geometry": {
         "coordinates": [

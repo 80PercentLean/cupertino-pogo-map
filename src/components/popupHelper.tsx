@@ -214,6 +214,11 @@ export const createPopupContent = (
           )}
         </>
       )}
+      {!wayfarerMode && modifierBtns?.delete && (
+        <div className="flex-end mt-2 flex justify-end">
+          {modifierBtns?.delete}
+        </div>
+      )}
     </>
   );
 };
