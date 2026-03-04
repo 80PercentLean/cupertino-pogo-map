@@ -1,0 +1,201 @@
+{
+  "features": [
+    {
+      "properties": {
+        "name": "\"Guardians Statue\", Memorial Park",
+        "type": "gym",
+        "source": "Wayfarer",
+        "ingress": true,
+        "created": "2025-05-23T08:00:00Z",
+        "updated": "2025-11-24T08:00:00Z"
+      },
+      "id": "fa4517dcde244a41903380687e95d6cb.12"
+    },
+    {
+      "properties": {
+        "name": "Bacchus Urn",
+        "type": "gym",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "66b9a7c399064f83a0544b9b66d036f5.16"
+    },
+    {
+      "properties": {
+        "name": "Cupertino Historical Museum",
+        "type": "gym",
+        "source": "Wayfarer"
+      },
+      "id": "14972c4e327e365d9231684506c2da1a.16"
+    },
+    {
+      "properties": {
+        "name": "Cupertino Rotary Bench",
+        "type": "gym",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "52f6b7516e544435b220bd8e07f4005c.16"
+    },
+    {
+      "properties": {
+        "name": "Euphrat Museum of Art",
+        "type": "gym",
+        "source": "Wayfarer",
+        "ingress": true,
+        "created": "2025-05-23T08:00:00Z",
+        "converted": "2025-11-25T08:00:00Z",
+        "updated": "2025-11-25T08:00:00Z"
+      },
+      "id": "288a4a15a212419a8c1ba425a26d4096.12"
+    },
+    {
+      "properties": {
+        "name": "Fujitsu Planetarium",
+        "type": "gym",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "fe6dc838bd9240eeb5ba03679b7e73db.16"
+    },
+    {
+      "properties": {
+        "name": "Gazebo at Cupertino Quinlan Center",
+        "type": "gym",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "bc14fa18aaab459598bb1bf9b287eee7.11"
+    },
+    {
+      "properties": {
+        "name": "Glenbrook Waterfall",
+        "type": "gym",
+        "hidden": true,
+        "source": "Wayfarer",
+        "ingress": true,
+        "created": "2025-05-23T08:00:00Z",
+        "updated": "2025-11-24T08:00:00Z"
+      },
+      "id": "d7a41aeaaafe4ba08876dd1722918ece.16"
+    },
+    {
+      "properties": {
+        "name": "Kingdom Hall of Jehovah's Witnesses Sign",
+        "type": "gym",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "ed4c4a8d8e6d4c5f95a0368c0e4c1264.16"
+    },
+    {
+      "properties": {
+        "name": "Kirsch Center For Environmental Studies",
+        "type": "gym",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "57ff23efaca047058c1148822f772af1.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lion Fountain",
+        "type": "gym",
+        "removed": "2025-11-25T08:00:00Z",
+        "photo": "removed-5173f894-ef7c-466c-81b1-7027ffe7ac0d.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle"
+      },
+      "id": "removed-5173f894-ef7c-466c-81b1-7027ffe7ac0d"
+    },
+    {
+      "properties": {
+        "name": "Mary Avenue Dog Park",
+        "type": "gym",
+        "source": "Wayfarer",
+        "ingress": true,
+        "created": "2025-05-23T08:00:00Z",
+        "converted": "2025-11-02T08:00:00Z",
+        "updated": "2025-11-24T08:00:00Z"
+      },
+      "id": "54434a946619407093d0c6bf41c69392.16"
+    },
+    {
+      "properties": {
+        "name": "Media Center Fountain - East",
+        "type": "gym",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "ece3562668594459a76db5c3c5d922ab.16"
+    },
+    {
+      "properties": {
+        "name": "Memorial Park Cupertino",
+        "type": "gym",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "977aa0cbd8dc46b3baab7cced1d46c73.16"
+    },
+    {
+      "properties": {
+        "name": "Memorial Park Tennis Courts",
+        "type": "gym",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "4539697e3cb9430db1549c347e67ccdc.16"
+    },
+    {
+      "properties": {
+        "name": "New Life Church",
+        "type": "gym",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "0f11d3c0c3ac4cafbe0bd471922147a0.16"
+    },
+    {
+      "properties": {
+        "name": "Sister City Plaque",
+        "type": "gym",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "c3ae8c98ca114ca2b89bc1bb07531cc4.16"
+    },
+    {
+      "properties": {
+        "name": "Union Church of Cupertino",
+        "type": "gym",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "6a71a402e38646cf91c465aad8935b00.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Whole Foods Cupertino Mural",
+        "type": "gym",
+        "removed": "2025-10-02T08:00:00Z",
+        "photo": "removed-1d25b691-94b5-4469-9436-7468373af0a7.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04, 37.323946],
+        "type": "Point"
+      },
+      "id": "removed-1d25b691-94b5-4469-9436-7468373af0a7"
+    }
+  ]
+}
