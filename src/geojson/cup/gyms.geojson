@@ -12,7 +12,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
-        "hidden": true,
+        "isHidden": true,
         "ingress": true
       },
       "geometry": {
@@ -72,7 +72,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
-        "hidden": true
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.052429, 37.323145],
@@ -129,7 +129,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
-        "hidden": true,
+        "isHidden": true,
         "ingress": true,
         "created": "2025-05-23T08:00:00Z",
         "converted": "2025-11-02T08:00:00Z",
@@ -152,7 +152,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
-        "hidden": true,
+        "isHidden": true,
         "ingress": true
       },
       "geometry": {
@@ -267,7 +267,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
-        "hidden": true,
+        "isHidden": true,
         "ingress": true,
         "created": "2025-05-23T08:00:00Z",
         "updated": "2025-11-24T08:00:00Z"
@@ -308,7 +308,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
-        "hidden": true,
+        "isHidden": true,
         "ingress": true
       },
       "geometry": {
@@ -328,7 +328,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
-        "hidden": true
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.051696, 37.323229],

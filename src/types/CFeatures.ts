@@ -17,14 +17,17 @@ export interface CProperties {
   /** Description of the POI. */
   desc?: string;
 
-  /** Represents if a POI is registered in the system but is not visible in-game. */
-  inactive?: boolean;
-
   /** Represents if a POI originated as an Ingress portal. */
   ingress?: boolean;
 
-  /** Represents if a POI is hidden. */
-  hidden?: boolean;
+  /** Flag which is true when the POI was submitted by the community through Wayfarer. */
+  isCommunityContributed?: boolean;
+
+  /** Represents if a POI is registered in the system but is not visible in-game. */
+  isDisabled?: boolean;
+
+  /** Represents if a POI is isHidden. */
+  isHidden?: boolean;
 
   /**
    * When the POI was last updated for the app. The value is in a simplified ISO 8601 format.
@@ -37,6 +40,9 @@ export interface CProperties {
    * - `properties.type`
    */
   updated?: string;
+
+  /** ID for the L14 cell that the POI belongs to. */
+  l14Id?: string;
 
   /** Name of the POI or label. */
   name: string;
@@ -53,6 +59,12 @@ export interface CProperties {
 
   /** Source where the POI data came from. */
   source?: "Campfire" | "Eyeball" | "Ingress" | "Wayfarer";
+
+  /**
+   * When the POI was first submitted to Wayfarer.
+   * The value is in a simplified ISO 8601 format.
+   */
+  submitted?: string;
 
   /** User who submitted the Wayspot. */
   submitter?: string;

@@ -185,7 +185,7 @@
       "properties": {
         "name": "Hoc5 kids playground structure",
         "type": "pokestop",
-        "hidden": true,
+        "isHidden": true,
         "source": "Wayfarer",
         "ingress": true
       },
@@ -296,7 +296,7 @@
       "properties": {
         "name": "Home of Christ",
         "type": "pokestop",
-        "hidden": true,
+        "isHidden": true,
         "source": "Wayfarer",
         "ingress": true
       },
@@ -382,7 +382,7 @@
       "properties": {
         "name": "Glenbrook Northeast Map Kiosk",
         "type": "pokestop",
-        "hidden": true,
+        "isHidden": true,
         "source": "Wayfarer",
         "submitter": "80PercentLean",
         "created": "2025-11-13T08:00:00Z",
@@ -394,7 +394,7 @@
       "properties": {
         "name": "Glenbrook Tennis Courts",
         "type": "pokestop",
-        "hidden": true,
+        "isHidden": true,
         "source": "Wayfarer",
         "ingress": true
       },
@@ -469,7 +469,7 @@
       "properties": {
         "name": "Glenbrook Fire Pit Lounge",
         "type": "pokestop",
-        "hidden": true,
+        "isHidden": true,
         "source": "Wayfarer",
         "created": "2025-11-24T08:00:00Z",
         "updated": "2025-11-24T08:00:00Z"
@@ -576,7 +576,7 @@
       "properties": {
         "name": "Glenbrook Monolith",
         "type": "pokestop",
-        "hidden": true,
+        "isHidden": true,
         "source": "Wayfarer",
         "ingress": true,
         "submitter": "80PercentLean",
@@ -639,7 +639,7 @@
       "properties": {
         "name": "Glenbrook West Entrance Sign",
         "type": "pokestop",
-        "hidden": true,
+        "isHidden": true,
         "source": "Wayfarer",
         "submitter": "80PercentLean",
         "created": "2025-11-02T08:00:00Z",
@@ -682,7 +682,7 @@
       "properties": {
         "name": "Community pool",
         "type": "pokestop",
-        "hidden": true,
+        "isHidden": true,
         "source": "Wayfarer",
         "created": "2025-11-24T08:00:00Z",
         "updated": "2025-11-24T08:00:00Z"
@@ -903,7 +903,7 @@
       "properties": {
         "name": "The Event Spot",
         "type": "pokestop",
-        "hidden": true,
+        "isHidden": true,
         "source": "Wayfarer",
         "submitter": "80PercentLean",
         "created": "2025-11-23T08:00:00Z",
@@ -926,7 +926,7 @@
       "properties": {
         "name": "Glenbrook Apartment Homes Sign",
         "type": "pokestop",
-        "hidden": true,
+        "isHidden": true,
         "source": "Wayfarer",
         "submitter": "80PercentLean",
         "created": "2025-11-07T08:00:00Z",
@@ -982,7 +982,7 @@
       "properties": {
         "name": "Glenbrook Monument",
         "type": "pokestop",
-        "hidden": true,
+        "isHidden": true,
         "source": "Wayfarer",
         "ingress": true
       },

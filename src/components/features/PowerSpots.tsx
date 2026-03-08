@@ -18,14 +18,14 @@ export default function PowerSpots() {
       icon={iconPowerspot}
       subtitle={(
         _,
-        { hidden, inactive, removed, source, wayfarerMode } = {},
+        { isDisabled, isHidden, removed, source, wayfarerMode } = {},
       ) => {
         let subtitle = "Power Spot";
-        if (hidden) {
-          subtitle += " (Hidden)";
+        if (isDisabled) {
+          subtitle += " (Disabled)";
         }
-        if (inactive) {
-          subtitle += " (Inactive)";
+        if (isHidden) {
+          subtitle += " (Hidden)";
         }
         if (removed) {
           subtitle += " (Removed)";

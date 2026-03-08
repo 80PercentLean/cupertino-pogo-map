@@ -6,8 +6,8 @@ import { type StoreState, getLayerKeyFromType, useStore } from "../hooks/store";
 import FeatureMarker, { type BtnModifierFlags } from "./FeatureMarker";
 
 interface GetSubtitleOptions {
-  hidden?: CProperties["hidden"];
-  inactive?: CProperties["hidden"];
+  isDisabled?: CProperties["isHidden"];
+  isHidden?: CProperties["isHidden"];
   removed?: CProperties["removed"];
   source?: CProperties["source"];
   subtype?: CProperties["subtype"];
@@ -40,8 +40,8 @@ export default function Features({
   type,
 }: Props) {
   const layer = useStore((s) => s[getLayerKeyFromType(type)]);
-  const showHidden = useStore((s) => s.modifiers.hidden);
-  const showInactive = useStore((s) => s.modifiers.inactive);
+  const showDisabled = useStore((s) => s.modifiers.isDisabled);
+  const showHidden = useStore((s) => s.modifiers.isHidden);
   const showRemoved = useStore((s) => s.modifiers.removed);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
@@ -52,8 +52,8 @@ export default function Features({
     geometry,
     properties: {
       desc,
-      hidden,
-      inactive,
+      isDisabled,
+      isHidden,
       name,
       photo,
       removed,
@@ -63,8 +63,8 @@ export default function Features({
     },
   } of features) {
     if (
-      (!showHidden && hidden) ||
-      (!showInactive && inactive) ||
+      (!showHidden && isHidden) ||
+      (!showDisabled && isDisabled) ||
       (!showRemoved && removed)
     ) {
       // Skip if hidden or removed and those modifiers are off
@@ -84,7 +84,7 @@ export default function Features({
           id={id as string}
           desc={desc}
           icon={typeof icon === "function" ? icon?.(type, subtype) : icon}
-          inactive={inactive}
+          isDisabled={isDisabled}
           photo={photo}
           position={position}
           removed={removed}
@@ -92,7 +92,7 @@ export default function Features({
           subtitle={
             typeof subtitle === "function"
               ? subtitle?.(type, {
-                  hidden,
+                  isHidden,
                   removed,
                   source,
                   subtype,

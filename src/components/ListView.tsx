@@ -34,8 +34,8 @@ import { InputGroup, InputGroupAddon, InputGroupInput } from "./ui/input-group";
 interface FeatureData {
   coordinates: LatLngTuple;
   id: string;
+  isDisabled?: CProperties["isDisabled"];
   name: CProperties["name"];
-  inactive?: CProperties["inactive"];
   removed?: CProperties["removed"];
   subtype?: CProperties["subtype"];
   type: CProperties["type"];
@@ -52,8 +52,8 @@ export default function ListView() {
   const layerPowerspot = useStore((s) => s.layerPowerspot);
   const layerRestroom = useStore((s) => s.layerRestroom);
   const setActivePopup = useStore((s) => s.setActivePopup);
-  const showHidden = useStore((s) => s.modifiers.hidden);
-  const showInactive = useStore((s) => s.modifiers.inactive);
+  const showHidden = useStore((s) => s.modifiers.isHidden);
+  const showDisabled = useStore((s) => s.modifiers.isDisabled);
   const showRemoved = useStore((s) => s.modifiers.removed);
   const setMarker = useStore((s) => s.setMarker);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
@@ -78,11 +78,11 @@ export default function ListView() {
         for (const {
           geometry: { coordinates },
           id,
-          properties: { hidden, inactive, name, removed, subtype, type },
+          properties: { isHidden, isDisabled, name, removed, subtype, type },
         } of currFeatures) {
           if (
-            (!showHidden && hidden) ||
-            (!showInactive && inactive) ||
+            (!showHidden && isHidden) ||
+            (!showDisabled && isDisabled) ||
             (!showRemoved && removed) ||
             (type === "devpoi" && !wayfarerMode)
           ) {
@@ -98,7 +98,7 @@ export default function ListView() {
               coordinates: [coordinates[1], coordinates[0]],
               id: id as string,
               name,
-              inactive,
+              isDisabled,
               removed,
               subtype,
               type,
@@ -120,7 +120,7 @@ export default function ListView() {
     const list = [];
 
     featureData.forEach(
-      ({ coordinates, id, inactive, name, removed, subtype, type }, i) => {
+      ({ coordinates, id, isDisabled, name, removed, subtype, type }, i) => {
         let itemClassName =
           "cursor-pointer text-sm px-4 pr-0 w-full rounded-none justify-start h-12 font-normal gap-2";
         if (i === 0) {
@@ -191,7 +191,7 @@ export default function ListView() {
         }
 
         let iconClassName = "h-full w-auto object-contain";
-        if (inactive || removed) {
+        if (isDisabled || removed) {
           iconClassName += " grayscale";
         }
 

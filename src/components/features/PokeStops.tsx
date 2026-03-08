@@ -26,7 +26,7 @@ export default function PokeStops() {
       }}
       subtitle={(
         _,
-        { hidden, removed, source, subtype, wayfarerMode } = {},
+        { isHidden, removed, source, subtype, wayfarerMode } = {},
       ) => {
         let subtitle;
         switch (subtype) {
@@ -36,7 +36,7 @@ export default function PokeStops() {
           default:
             subtitle = "PokéStop";
         }
-        if (hidden) {
+        if (isHidden) {
           subtitle += " (Hidden)";
         }
         if (removed) {

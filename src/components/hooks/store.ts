@@ -100,9 +100,9 @@ export interface StoreState {
 
   /** Flags that determine which layer modifiers are applied. */
   modifiers: {
-    inactive: boolean;
+    isDisabled: boolean;
 
-    hidden: boolean;
+    isHidden: boolean;
 
     removed: boolean;
   };
@@ -272,9 +272,9 @@ export const useStore = create<StoreState>()(
         layerRestroom: {},
 
         modifiers: {
-          hidden: true,
+          isDisabled: false,
 
-          inactive: false,
+          isHidden: true,
 
           removed: false,
         },

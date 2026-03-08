@@ -31,7 +31,7 @@ export interface Props {
   desc?: string;
   icon: DivIcon | Icon;
   id: string;
-  inactive?: boolean;
+  isDisabled?: boolean;
   photo?: string;
   position: LatLngTuple;
   removed?: boolean | string;
@@ -49,7 +49,7 @@ export default function FeatureMarker({
   desc,
   id,
   icon,
-  inactive,
+  isDisabled,
   photo,
   position,
   removed,
@@ -127,18 +127,43 @@ export default function FeatureMarker({
   const modifierBtns: ModifierBtns = {
     hide: btnHide,
   };
-  if (!removed) {
+  let interactionRadius;
+  let noCaPoiZone;
+  let noPowerSpotZone;
+
+  // Do not show interactive radius for disabled power spots & removed POIs
+  if (!isDisabled && !removed) {
     modifierBtns.interactionRadius = btnInteractionRadius;
+
+    if (showInteractionRadius) {
+      interactionRadius = <InteractionRadius position={position} />;
+    }
+  }
+
+  // Do not show NoCaPoiZone for removed POIs
+  if (!removed) {
     modifierBtns.noCaPoiZone = btnNoCaPoiZone;
+
+    if (showNoCaPoiZone) {
+      noCaPoiZone = <NoCaPoiZone position={position} />;
+    }
+  }
+
+  // Do not show no power spot zone for power spots & removed POIs
+  if (type !== "powerspot" && !removed) {
     modifierBtns.noPowerSpotZone = btnNoPowerSpotZone;
+
+    if (showNoPowerSpotZone) {
+      noPowerSpotZone = <NoPowerSpotZone position={position} />;
+    }
   }
 
   useEffect(() => {
-    if ((inactive || removed) && markerRef.current) {
-      // Add grayscale class to inactive or removed power spots
+    if ((isDisabled || removed) && markerRef.current) {
+      // Add grayscale class to isDisabled or removed power spots
       markerRef.current?.getElement()?.classList.add("grayscale");
     }
-  }, [inactive, removed]);
+  }, [isDisabled, removed]);
 
   useEffect(() => {
     if (markerRef.current && isPopupOpen) {
@@ -149,15 +174,9 @@ export default function FeatureMarker({
 
   return (
     <>
-      {type !== "powerspot" && !inactive && !removed && showNoPowerSpotZone && (
-        <NoPowerSpotZone position={position} />
-      )}
-      {/* Do not show NoCaPoiZone for inactive power spots */}
-      {!removed && showNoCaPoiZone && <NoCaPoiZone position={position} />}
-      {/* Do not show interactive radius for inactive power spots */}
-      {!inactive && !removed && showInteractionRadius && (
-        <InteractionRadius position={position} />
-      )}
+      {noPowerSpotZone}
+      {noCaPoiZone}
+      {interactionRadius}
       <CMarker
         ref={markerRef}
         icon={icon}

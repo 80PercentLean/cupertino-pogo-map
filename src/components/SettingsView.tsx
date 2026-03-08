@@ -29,8 +29,8 @@ export default function SettingsView() {
   const setActivePopup = useStore((s) => s.setActivePopup);
   const setLayer = useStore((s) => s.setLayer);
   const setWayfarerMode = useStore((s) => s.setWayfarerMode);
-  const showHidden = useStore((s) => s.modifiers.hidden);
-  const showInactive = useStore((s) => s.modifiers.inactive);
+  const showDisabled = useStore((s) => s.modifiers.isDisabled);
+  const showHidden = useStore((s) => s.modifiers.isHidden);
   const showRemoved = useStore((s) => s.modifiers.removed);
   const toggleModifier = useStore((s) => s.toggleModifier);
   const updateAllPlacedMarkerStates = useStore(
@@ -104,29 +104,35 @@ export default function SettingsView() {
                   id="hidden-pois"
                   checked={showHidden}
                   className="cursor-pointer"
-                  onCheckedChange={() => toggleModifier("hidden")}
+                  onCheckedChange={() => toggleModifier("isHidden")}
                 />
-                <FieldLabel htmlFor="hidden-pois" className="cursor-pointer">
-                  Show hidden POIs
-                </FieldLabel>
+                <FieldContent>
+                  <FieldLabel htmlFor="hidden-pois" className="cursor-pointer">
+                    Show hidden POIs
+                  </FieldLabel>
+                  <FieldDescription>
+                    Show POIs that exist in-game but are hidden from this map
+                    since they are not within the community play area.
+                  </FieldDescription>
+                </FieldContent>
               </Field>
               <Field orientation="horizontal">
                 <Checkbox
-                  id="inactive-pois"
-                  checked={showInactive}
+                  id="disabled-power-spots"
+                  checked={showDisabled}
                   className="cursor-pointer"
-                  onCheckedChange={() => toggleModifier("inactive")}
+                  onCheckedChange={() => toggleModifier("isDisabled")}
                 />
                 <FieldContent>
                   <FieldLabel
-                    htmlFor="inactive-pois"
+                    htmlFor="disabled-power-spots"
                     className="cursor-pointer"
                   >
-                    Show inactive POIs
+                    Show disabled power spots
                   </FieldLabel>
                   <FieldDescription>
-                    Show POIs that exist in Wayfarer but cannot exist in PoGO
-                    due to certain conditions.
+                    Show power spots that are not in the current spawn pool or
+                    can never spawn due to certain restrictions.
                   </FieldDescription>
                 </FieldContent>
               </Field>
@@ -142,7 +148,7 @@ export default function SettingsView() {
                     Show removed POIs
                   </FieldLabel>
                   <FieldDescription>
-                    Show POIs that have been removed from PoGO or Wayfarer.
+                    Show POIs that have been removed in-game or from Wayfarer.
                   </FieldDescription>
                 </FieldContent>
               </Field>

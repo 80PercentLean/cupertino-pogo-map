@@ -124,7 +124,7 @@
       "properties": {
         "name": "Glenbrook Waterfall",
         "type": "gym",
-        "hidden": true,
+        "isHidden": true,
         "source": "Wayfarer",
         "ingress": true,
         "created": "2025-05-23T08:00:00Z",

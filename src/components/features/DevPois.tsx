@@ -13,6 +13,7 @@ export default function DevPois() {
         hide: true,
         interactionRadius: true,
         noCaPoiZone: true,
+        noPowerSpotZone: true,
       }}
       features={devpoisJson.features}
       icon={iconDevpoi}

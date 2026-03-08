@@ -17,9 +17,9 @@ export default function Gyms() {
       }}
       features={gymsJson.features}
       icon={iconGym}
-      subtitle={(_, { hidden, removed, source, wayfarerMode } = {}) => {
+      subtitle={(_, { isHidden, removed, source, wayfarerMode } = {}) => {
         let subtitle = "Gym";
-        if (hidden) {
+        if (isHidden) {
           subtitle += " (Hidden)";
         }
         if (removed) {

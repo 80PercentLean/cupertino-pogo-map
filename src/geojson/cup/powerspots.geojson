@@ -12,8 +12,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.052282, 37.322511],
@@ -32,7 +32,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "hidden": true
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053785, 37.321086],
@@ -69,7 +69,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "hidden": true
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.050471, 37.322842],
@@ -107,7 +107,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "hidden": true
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053581, 37.319955],
@@ -126,7 +126,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "hidden": true
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053096, 37.32288],
@@ -145,8 +145,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054333, 37.321898],
@@ -186,7 +186,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.04483, 37.319561],
@@ -205,8 +205,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053008, 37.319961],
@@ -225,8 +225,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.051571, 37.322427],
@@ -245,8 +245,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054181, 37.321957],
@@ -265,7 +265,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "hidden": true
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054171, 37.323279],
@@ -284,8 +284,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053652, 37.322506],
@@ -304,8 +304,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.039218, 37.317211],
@@ -324,8 +324,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053514, 37.322648],
@@ -362,8 +362,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053652, 37.322506],
@@ -401,7 +401,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "hidden": true
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054238, 37.321512],
@@ -420,7 +420,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.03829, 37.322281],
@@ -439,7 +439,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
+        "isDisabled": true,
         "ingress": true
       },
       "geometry": {
@@ -478,8 +478,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.05298, 37.31973],
@@ -498,8 +498,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.052286, 37.322441],
@@ -518,8 +518,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054249, 37.321941],
@@ -538,7 +538,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.043909, 37.321965],
@@ -596,8 +596,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054705, 37.322201],
@@ -616,7 +616,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
+        "isDisabled": true,
         "ingress": true
       },
       "geometry": {
@@ -636,8 +636,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.055061, 37.322949],
@@ -656,8 +656,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053825, 37.323505],
@@ -676,7 +676,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.04106, 37.322607],
@@ -695,7 +695,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.038683, 37.324189],
@@ -714,7 +714,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "hidden": true
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.05312, 37.321987],
@@ -733,8 +733,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.051571, 37.322427],
@@ -753,8 +753,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.052562, 37.322722],
@@ -773,7 +773,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.044673, 37.319251],
@@ -792,7 +792,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "hidden": true
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.051505, 37.322531],
@@ -811,7 +811,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.038324, 37.323121],
@@ -830,8 +830,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054247, 37.322579],
@@ -850,7 +850,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.049155, 37.317683],
@@ -887,7 +887,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.044342, 37.325229],
@@ -906,8 +906,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054225, 37.322671],
@@ -926,7 +926,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.044596, 37.319158],
@@ -945,8 +945,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053819, 37.320156],
@@ -965,8 +965,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053858, 37.321113],
@@ -985,7 +985,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.047294, 37.320819],
@@ -1004,7 +1004,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
+        "isDisabled": true,
         "ingress": true
       },
       "geometry": {
@@ -1024,8 +1024,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053804, 37.322767],
@@ -1044,8 +1044,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054806, 37.323059],
@@ -1082,8 +1082,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053048, 37.319139],
@@ -1121,7 +1121,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
+        "isDisabled": true,
         "ingress": true
       },
       "geometry": {
@@ -1141,8 +1141,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.052515, 37.323061],
@@ -1161,7 +1161,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.04106, 37.322607],
@@ -1180,7 +1180,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
+        "isDisabled": true,
         "ingress": true
       },
       "geometry": {
@@ -1200,7 +1200,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.048742, 37.324161],
@@ -1219,8 +1219,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.043426, 37.316092],
@@ -1258,7 +1258,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
+        "isDisabled": true,
         "ingress": true
       },
       "geometry": {
@@ -1278,7 +1278,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.043046, 37.323297],
@@ -1297,7 +1297,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
+        "isDisabled": true,
         "ingress": true
       },
       "geometry": {
@@ -1317,7 +1317,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
+        "isDisabled": true,
         "ingress": true
       },
       "geometry": {
@@ -1337,8 +1337,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053821, 37.32275],
@@ -1357,7 +1357,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "hidden": true
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054876, 37.322713],
@@ -1376,7 +1376,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "hidden": true
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.05117, 37.323432],
@@ -1414,8 +1414,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054965, 37.321801],
@@ -1434,7 +1434,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.042587, 37.325684],
@@ -1453,8 +1453,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053638, 37.322741],
@@ -1473,8 +1473,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.0547, 37.32326],
@@ -1493,8 +1493,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054225, 37.322671],
@@ -1513,7 +1513,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.038637, 37.324222],
@@ -1532,8 +1532,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.055325, 37.322473],
@@ -1552,8 +1552,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.051206, 37.32223],
@@ -1591,8 +1591,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.042082, 37.313399],
@@ -1611,8 +1611,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053652, 37.322506],
@@ -1631,7 +1631,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.045742, 37.3217],
@@ -1668,7 +1668,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.039543, 37.323621],
@@ -1687,8 +1687,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.051727, 37.323288],
@@ -1707,8 +1707,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.050796, 37.327614],
@@ -1745,7 +1745,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.042964, 37.323279],
@@ -1764,7 +1764,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
+        "isDisabled": true,
         "submitter": "80PercentLean",
         "created": "2025-11-02T08:00:00Z",
         "updated": "2025-11-02T08:00:00Z"
@@ -1786,7 +1786,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.039306, 37.322325],
@@ -1805,7 +1805,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.045944, 37.318962],
@@ -1824,7 +1824,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.041038, 37.322494],
@@ -1843,8 +1843,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.051673, 37.322458],
@@ -1882,7 +1882,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.041065, 37.322563],
@@ -1901,8 +1901,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053048, 37.319139],
@@ -1921,7 +1921,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
+        "isDisabled": true,
         "ingress": true
       },
       "geometry": {
@@ -1941,7 +1941,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.04303, 37.323363],
@@ -1960,7 +1960,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.04412, 37.330963],
@@ -1998,8 +1998,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.051121, 37.323346],
@@ -2036,7 +2036,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
+        "isDisabled": true,
         "submitter": "80PercentLean",
         "created": "2025-11-04T08:00:00Z",
         "updated": "2025-11-04T08:00:00Z"
@@ -2058,7 +2058,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.040319, 37.32416],
@@ -2077,7 +2077,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "hidden": true
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.05307, 37.319792],
@@ -2096,8 +2096,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053825, 37.323505],
@@ -2116,7 +2116,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.044158, 37.326091],
@@ -2171,8 +2171,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054773, 37.323442],
@@ -2191,7 +2191,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.047459, 37.325678],
@@ -2210,8 +2210,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.051795, 37.323334],
@@ -2230,8 +2230,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.051817, 37.321734],
@@ -2250,8 +2250,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053126, 37.322722],
@@ -2289,7 +2289,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.039662, 37.323497],
@@ -2327,8 +2327,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054825, 37.323078],
@@ -2347,8 +2347,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.039789, 37.314977],
@@ -2367,8 +2367,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053714, 37.320065],
@@ -2387,8 +2387,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.050702, 37.327567],
@@ -2444,7 +2444,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.048149, 37.316145],
@@ -2463,8 +2463,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054277, 37.322231],
@@ -2483,8 +2483,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.055277, 37.323079],
@@ -2503,7 +2503,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.045505, 37.324439],
@@ -2522,7 +2522,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.039621, 37.323619],
@@ -2560,7 +2560,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
+        "isDisabled": true,
         "ingress": true
       },
       "geometry": {
@@ -2580,7 +2580,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.048149, 37.316145],
@@ -2599,8 +2599,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.045211, 37.313437],
@@ -2659,8 +2659,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053061, 37.319046],
@@ -2679,7 +2679,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
+        "isDisabled": true,
         "ingress": true
       },
       "geometry": {
@@ -2699,8 +2699,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054256, 37.321839],
@@ -2737,8 +2737,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.052271, 37.32251],
@@ -2757,8 +2757,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054688, 37.32275],
@@ -2798,7 +2798,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.04556, 37.323233],
@@ -2817,8 +2817,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054257, 37.321957],
@@ -2837,7 +2837,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "hidden": true
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.048561, 37.314331],
@@ -2856,7 +2856,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
+        "isDisabled": true,
         "ingress": true
       },
       "geometry": {
@@ -2876,7 +2876,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.045328, 37.324384],
@@ -2895,7 +2895,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "hidden": true
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.042135, 37.313429],
@@ -2932,7 +2932,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
+        "isDisabled": true,
         "ingress": true
       },
       "geometry": {
@@ -2952,8 +2952,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053086, 37.322679],
@@ -2972,8 +2972,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054756, 37.323418],
@@ -2992,7 +2992,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.044929, 37.325054],
@@ -3011,8 +3011,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.052439, 37.32308],
@@ -3049,7 +3049,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
+        "isDisabled": true,
         "ingress": true
       },
       "geometry": {
@@ -3069,7 +3069,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.045795, 37.321792],
@@ -3088,7 +3088,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "hidden": true
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.051206, 37.32223],
@@ -3125,7 +3125,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "hidden": true
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054225, 37.322671],
@@ -3144,8 +3144,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.051115, 37.323352],
@@ -3164,7 +3164,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.047292, 37.320817],
@@ -3204,7 +3204,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.039971, 37.324634],
@@ -3223,7 +3223,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.041016, 37.323222],
@@ -3242,8 +3242,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.052287, 37.32264],
@@ -3280,7 +3280,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.039552, 37.323657],
@@ -3299,7 +3299,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.038309, 37.323135],
@@ -3318,8 +3318,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.05168, 37.322393],
@@ -3356,8 +3356,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.052265, 37.322528],
@@ -3376,8 +3376,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053733, 37.32273],
@@ -3396,8 +3396,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053368, 37.322679],
@@ -3416,7 +3416,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.03858, 37.324187],
@@ -3435,8 +3435,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053678, 37.320058],
@@ -3473,7 +3473,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
+        "isDisabled": true,
         "ingress": true
       },
       "geometry": {
@@ -3493,7 +3493,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.043699, 37.321704],
@@ -3512,7 +3512,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "hidden": true
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053579, 37.322737],
@@ -3531,7 +3531,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "hidden": true
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054773, 37.323442],
@@ -3550,7 +3550,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
+        "isDisabled": true,
         "ingress": true
       },
       "geometry": {
@@ -3570,7 +3570,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.048149, 37.316145],
@@ -3608,7 +3608,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.0446, 37.319223],
@@ -3627,8 +3627,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.048749, 37.315347],
@@ -3647,8 +3647,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.052427, 37.32312],
@@ -3685,7 +3685,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.045293, 37.324373],
@@ -3704,7 +3704,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.039342, 37.322472],
@@ -3741,7 +3741,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
+        "isDisabled": true,
         "ingress": true
       },
       "geometry": {
@@ -3779,7 +3779,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.044146, 37.319273],
@@ -3798,8 +3798,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053948, 37.322747],
@@ -3818,8 +3818,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.054259, 37.321496],
@@ -3856,8 +3856,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053103, 37.319101],
@@ -3895,7 +3895,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.042345, 37.325758],
@@ -3932,7 +3932,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true
+        "isDisabled": true
       },
       "geometry": {
         "coordinates": [-122.038583, 37.324252],
@@ -3951,8 +3951,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.053652, 37.322506],
@@ -3971,8 +3971,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "inactive": true,
-        "hidden": true
+        "isDisabled": true,
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.052465, 37.323085],
