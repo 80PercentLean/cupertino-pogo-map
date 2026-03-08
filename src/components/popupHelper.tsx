@@ -1,5 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import { imgPowerspot } from "@/leafletIcons";
+import { cn } from "@/lib/utils";
 import type { LatLngTuple } from "leaflet";
 import { Ban, Circle, Eye, EyeClosed, LandPlot, Radius } from "lucide-react";
 import type { ReactElement } from "react";
@@ -35,21 +36,17 @@ export const createBtnInteractionRadius = (
   showInteractionRadius: boolean | undefined,
   onBtnInteractionRadiusClick: () => void,
 ) => {
-  let btnInteractionRadiusClassName = "group cursor-pointer rounded-full ml-2";
-  if (showInteractionRadius) {
-    btnInteractionRadiusClassName +=
-      " bg-blue-500 hover:bg-blue-500 text-green-400 border-green-600";
-  } else {
-    btnInteractionRadiusClassName +=
-      " bg-blue-300 hover:bg-blue-300 text-white";
-  }
-
   return (
     <Button
       size="icon"
       title="Toggle Interaction Radius (80m)"
       variant="outline"
-      className={btnInteractionRadiusClassName}
+      className={cn(
+        "group ml-2 cursor-pointer rounded-full",
+        showInteractionRadius
+          ? "border-green-600 bg-blue-500 text-green-400 hover:bg-blue-500"
+          : "bg-blue-300 text-white hover:bg-blue-300",
+      )}
       onClick={() => onBtnInteractionRadiusClick()}
     >
       {showInteractionRadius ? <Radius /> : <Circle />}
@@ -61,28 +58,27 @@ export const createBtnNoPowerSpotZone = (
   showNoPowerSpotZone: boolean | undefined,
   onBtnNoPowerSpotZoneClick: () => void,
 ) => {
-  let btnNoCaPoiZoneClassName =
-    "group ml-2 cursor-pointer rounded-full text-white";
-  let iconBanClassName = "absolute !h-6 !w-6 group-hover:text-black";
-  if (showNoPowerSpotZone) {
-    btnNoCaPoiZoneClassName += " bg-gray-400 hover:bg-gray-400 border-red-700";
-    iconBanClassName += " text-red-700";
-  } else {
-    btnNoCaPoiZoneClassName += " bg-gray-300 hover:bg-gray-300";
-    iconBanClassName += " text-white";
-  }
-
   return (
     <Button
       size="icon"
       title="Toggle No Power Spot Build Zones (22m)"
       variant="outline"
-      className={btnNoCaPoiZoneClassName}
+      className={cn(
+        "group ml-2 cursor-pointer rounded-full text-white",
+        showNoPowerSpotZone
+          ? "border-red-700 bg-gray-400 hover:bg-gray-400"
+          : "bg-gray-300 hover:bg-gray-300",
+      )}
       onClick={() => onBtnNoPowerSpotZoneClick()}
       data-testid="delete-placed-marker-btn"
     >
       <img src={imgPowerspot} alt="Power Spot Icon" className="h-4" />
-      <Ban className={iconBanClassName} />
+      <Ban
+        className={cn(
+          "absolute !h-6 !w-6 group-hover:text-black",
+          showNoPowerSpotZone ? "text-red-700" : "text-white",
+        )}
+      />
     </Button>
   );
 };
@@ -91,29 +87,27 @@ export const createBtnNoCaPoiZone = (
   showNoCaPoiZone: boolean | undefined,
   onBtnNoCaPoiZoneClick: () => void,
 ) => {
-  let btnNoCaPoiZoneClassName =
-    "ml-2 cursor-pointer rounded-full text-white group";
-  let iconBanClassName = "absolute !h-6 !w-6 group-hover:text-black";
-  if (showNoCaPoiZone) {
-    btnNoCaPoiZoneClassName +=
-      " bg-red-400 hover:bg-red-400 text-red-100 border-red-700";
-    iconBanClassName += " text-red-700";
-  } else {
-    btnNoCaPoiZoneClassName += " bg-red-300 hover:bg-red-300 text-red-900";
-    iconBanClassName += " text-white";
-  }
-
   return (
     <Button
       size="icon"
       title="Toggle No CA POI Build Zones (30m)"
       variant="outline"
-      className={btnNoCaPoiZoneClassName}
+      className={cn(
+        "group ml-2 cursor-pointer rounded-full text-white",
+        showNoCaPoiZone
+          ? "border-red-700 bg-red-400 text-red-100 hover:bg-red-400"
+          : "bg-red-300 text-red-900 hover:bg-red-300",
+      )}
       onClick={() => onBtnNoCaPoiZoneClick()}
       data-testid="delete-placed-marker-btn"
     >
       <LandPlot />
-      <Ban className={iconBanClassName} />
+      <Ban
+        className={cn(
+          "absolute !h-6 !w-6 group-hover:text-black",
+          showNoCaPoiZone ? "text-red-700" : "text-white",
+        )}
+      />
     </Button>
   );
 };

@@ -159,9 +159,14 @@ export default function FeatureMarker({
   }
 
   useEffect(() => {
-    if ((isDisabled || removed) && markerRef.current) {
-      // Add grayscale class to isDisabled or removed power spots
-      markerRef.current?.getElement()?.classList.add("grayscale");
+    if (markerRef.current) {
+      if (removed) {
+        // Add zero brightness class to removed POIs
+        markerRef.current?.getElement()?.classList.add("brightness-0");
+      } else if (isDisabled) {
+        // Add grayscale class to disabled power spots
+        markerRef.current?.getElement()?.classList.add("grayscale");
+      }
     }
   }, [isDisabled, removed]);
 

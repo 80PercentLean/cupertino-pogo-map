@@ -14,17 +14,13 @@ export default function MyLocationMarker(props: MyLocationMarkerProps) {
   const myLocationAccuracy = useStore((s) => s.myLocationAccuracy);
 
   if (myLocation) {
-    let circleClassName = "";
-    if (!disableAnimations) {
-      circleClassName = "animate-pulse";
-    }
     const accuracyCircle = myLocationAccuracy && (
       <Circle
         center={myLocation}
         interactive={false}
         pathOptions={{ fillColor: "#5c84f0", stroke: false }}
         radius={myLocationAccuracy}
-        className={circleClassName}
+        className={!disableAnimations ? "animate-pulse" : undefined}
       />
     );
 

@@ -10,21 +10,6 @@ export interface Props {
 }
 
 export default function BtnLayer({ imagery, isActive, label, onClick }: Props) {
-  let outerBorderClassName =
-    "absolute mb-1 h-12 w-12 border-2 border-black bg-transparent  hover:bg-transparent ";
-  if (isActive) {
-    outerBorderClassName += "border-emerald-700";
-  } else {
-    outerBorderClassName += "group-hover:border-emerald-700";
-  }
-
-  let labelClassName = "text-xs ";
-  if (isActive) {
-    labelClassName += "text-emerald-700";
-  } else {
-    labelClassName += "group-hover:text-emerald-700";
-  }
-
   return (
     <button
       className="group relative flex cursor-pointer flex-col items-center"
@@ -43,7 +28,8 @@ export default function BtnLayer({ imagery, isActive, label, onClick }: Props) {
       <div
         className={cn(
           buttonVariants({ size: "default" }),
-          outerBorderClassName,
+          "absolute mb-1 h-12 w-12 border-2 border-black bg-transparent hover:bg-transparent",
+          isActive ? "border-emerald-700" : "group-hover:border-emerald-700",
         )}
       />
       <div
@@ -54,7 +40,14 @@ export default function BtnLayer({ imagery, isActive, label, onClick }: Props) {
       >
         {imagery}
       </div>
-      <span className={labelClassName}>{label}</span>
+      <span
+        className={cn(
+          "text-xs",
+          isActive ? "text-emerald-700" : "group-hover:text-emerald-700",
+        )}
+      >
+        {label}
+      </span>
     </button>
   );
 }

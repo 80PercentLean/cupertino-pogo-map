@@ -21,6 +21,7 @@ import {
   imgPokestop,
   imgPowerspot,
 } from "@/leafletIcons";
+import { cn } from "@/lib/utils";
 import { X } from "lucide-react";
 import { type Dispatch, type SetStateAction } from "react";
 
@@ -73,11 +74,6 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
     (s) => s.updateAllPlacedMarkerStates,
   );
   const wayfarerMode = useStore((s) => s.wayfarerMode);
-
-  let noPsBuildZoneFieldClassName = "flex flex-row";
-  if (!wayfarerMode) {
-    noPsBuildZoneFieldClassName += " mb-6";
-  }
 
   return (
     <Card className="absolute top-0 right-0 left-0 z-999 min-h-full rounded-none pt-0 pb-15 md:fixed md:left-auto md:m-2 md:max-h-[85vh] md:min-h-auto md:w-64 md:rounded-xl md:pb-0">
@@ -411,7 +407,7 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
                   </FieldLabel>
                 </Field>
               </Field>
-              <Field className={noPsBuildZoneFieldClassName}>
+              <Field className={cn("flex flex-row", !wayfarerMode && "mb-6")}>
                 <Field orientation="horizontal">
                   <Checkbox
                     id="no-ps-zones"

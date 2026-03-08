@@ -21,11 +21,6 @@ interface FormData {
   lng: number;
 }
 
-const itemClassName =
-  "cursor-pointer text-sm px-4 pr-0 w-full rounded-none justify-start h-12 font-normal gap-2";
-const iconClassName = "h-full w-auto object-contain";
-const nameClassName = "flex h-full items-center overflow-x-scroll pr-2";
-
 export default function PlacedMarkerView() {
   const { map } = useContext(MapContext);
   const activePopup = useStore((s) => s.activePopup);
@@ -42,7 +37,7 @@ export default function PlacedMarkerView() {
         <Separator />
         <Button
           variant="ghost"
-          className={itemClassName}
+          className="h-12 w-full cursor-pointer justify-start gap-2 rounded-none px-4 pr-0 text-sm font-normal"
           onClick={() => {
             if (activePopup.id && activePopup.id !== id) {
               setActivePopup(null, null);
@@ -69,7 +64,7 @@ export default function PlacedMarkerView() {
             <img
               src={imgLeafletMarker}
               alt="Default Marker Icon"
-              className={iconClassName}
+              className="h-full w-auto object-contain"
             />
           </div>
           <div className="flex h-full w-6 items-center justify-center">
@@ -79,7 +74,7 @@ export default function PlacedMarkerView() {
               <EyeClosed className="h-4 w-4" />
             )}
           </div>
-          <div className={nameClassName}>{`Placed Marker #${i + 1}`}</div>
+          <div className="flex h-full items-center overflow-x-scroll pr-2">{`Placed Marker #${i + 1}`}</div>
         </Button>
       </>
     ),

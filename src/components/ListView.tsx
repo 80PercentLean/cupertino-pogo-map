@@ -21,6 +21,7 @@ import {
   imgPowerspot,
   imgShowcase,
 } from "@/leafletIcons";
+import { cn } from "@/lib/utils";
 import { type CFeatureCollection, type CProperties } from "@/types/CFeatures";
 import type { LatLngTuple } from "leaflet";
 import { Eye, EyeClosed, Search, X } from "lucide-react";
@@ -52,8 +53,8 @@ export default function ListView() {
   const layerPowerspot = useStore((s) => s.layerPowerspot);
   const layerRestroom = useStore((s) => s.layerRestroom);
   const setActivePopup = useStore((s) => s.setActivePopup);
-  const showHidden = useStore((s) => s.modifiers.isHidden);
   const showDisabled = useStore((s) => s.modifiers.isDisabled);
+  const showHidden = useStore((s) => s.modifiers.isHidden);
   const showRemoved = useStore((s) => s.modifiers.removed);
   const setMarker = useStore((s) => s.setMarker);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
@@ -78,11 +79,11 @@ export default function ListView() {
         for (const {
           geometry: { coordinates },
           id,
-          properties: { isHidden, isDisabled, name, removed, subtype, type },
+          properties: { isDisabled, isHidden, name, removed, subtype, type },
         } of currFeatures) {
           if (
-            (!showHidden && isHidden) ||
             (!showDisabled && isDisabled) ||
+            (!showHidden && isHidden) ||
             (!showRemoved && removed) ||
             (type === "devpoi" && !wayfarerMode)
           ) {
@@ -121,15 +122,6 @@ export default function ListView() {
 
     featureData.forEach(
       ({ coordinates, id, isDisabled, name, removed, subtype, type }, i) => {
-        let itemClassName =
-          "cursor-pointer text-sm px-4 pr-0 w-full rounded-none justify-start h-12 font-normal gap-2";
-        if (i === 0) {
-          itemClassName += " md:mt-2";
-        }
-        if (removed) {
-          itemClassName += " line-through";
-        }
-
         let layer;
         let iconType;
         let icon;
@@ -190,21 +182,15 @@ export default function ListView() {
             alt = "Default Marker Icon";
         }
 
-        let iconClassName = "h-full w-auto object-contain";
-        if (isDisabled || removed) {
-          iconClassName += " grayscale";
-        }
-
-        let nameClassName = "flex h-full items-center overflow-x-scroll pr-2";
-        if (removed) {
-          nameClassName += " line-through";
-        }
-
         list.push(
           <Button
             key={id}
             variant="ghost"
-            className={itemClassName}
+            className={cn(
+              "h-12 w-full cursor-pointer justify-start gap-2 rounded-none px-4 pr-0 text-sm font-normal",
+              i === 0 && "md:mt-2",
+              removed && "line-through",
+            )}
             onClick={() => {
               if (activePopup.id && activePopup.id !== id) {
                 setActivePopup(null, null);
@@ -227,7 +213,15 @@ export default function ListView() {
           >
             <div className="flex h-full w-6 items-center justify-center">
               {iconType === "img" ? (
-                <img src={icon} alt={alt} className={iconClassName} />
+                <img
+                  src={icon}
+                  alt={alt}
+                  className={cn(
+                    "h-full w-auto object-contain",
+                    removed && "brightness-0",
+                    isDisabled && "grayscale",
+                  )}
+                />
               ) : (
                 icon
               )}
@@ -239,7 +233,14 @@ export default function ListView() {
                 <EyeClosed className="h-4 w-4" />
               )}
             </div>
-            <div className={nameClassName}>{name}</div>
+            <div
+              className={cn(
+                "flex h-full items-center overflow-x-scroll pr-2",
+                removed && "line-through",
+              )}
+            >
+              {name}
+            </div>
           </Button>,
         );
       },
@@ -266,22 +267,23 @@ export default function ListView() {
     devpoisJson.features,
   );
 
-  let btnSearchClassName;
   let btnSearchIcon;
   let btnSearchClickHandler;
   if (deferredQuery) {
-    btnSearchClassName = "cursor-pointer";
     btnSearchIcon = <X />;
     btnSearchClickHandler = () => setQuery("");
   } else {
-    btnSearchClassName = "hover:bg-transparent hover:text-inherit";
     btnSearchIcon = <Search />;
   }
 
   const btnSearch = (
     <Button
       variant="ghost"
-      className={btnSearchClassName}
+      className={cn(
+        deferredQuery
+          ? "cursor-pointer"
+          : "hover:bg-transparent hover:text-inherit",
+      )}
       onClick={btnSearchClickHandler}
     >
       {btnSearchIcon}

@@ -63,8 +63,8 @@ export default function Features({
     },
   } of features) {
     if (
-      (!showHidden && isHidden) ||
       (!showDisabled && isDisabled) ||
+      (!showHidden && isHidden) ||
       (!showRemoved && removed)
     ) {
       // Skip if hidden or removed and those modifiers are off
