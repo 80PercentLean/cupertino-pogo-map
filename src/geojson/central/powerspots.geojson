@@ -31,7 +31,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "04ef486c00f63d32ac881e755d8b318d.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976903, 37.341205],
@@ -122,7 +123,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "photo": "0a02291d06c832178530389cf99936b7.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.9775, 37.342514],
@@ -179,7 +181,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "0df134f5a6e839a9a8c1b27789a19a33.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974984, 37.341606],
@@ -273,7 +276,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "photo": "13af55b7fd443ab59f1561b68b78c614.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974551, 37.339787],
@@ -292,7 +296,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "15b6a55f381736489b78e25aa3ba653d.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974701, 37.339364],
@@ -368,7 +373,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "1a1c679661be37688e100fa8225ac08e.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976661, 37.341773],
@@ -406,7 +412,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "1cc912e1b0a23b378292ca2803c6d5e7.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976926, 37.34145],
@@ -425,7 +432,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "1ddc96aa9cc03bcd9d09d78af204fbf3.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976516, 37.341533],
@@ -444,7 +452,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "229088f543c43bc98ab707657339e787.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976203, 37.343039],
@@ -499,7 +508,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "photo": "259d746144e63df4bfb166707e78dcf7.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974523, 37.342865],
@@ -630,7 +640,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "31ff47052e8034e9b52b4d5743f2c5ba.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976872, 37.341772],
@@ -648,7 +659,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "photo": "32f738dc2e2e400bba6f81a3aef130fd.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976551, 37.34237],
@@ -666,7 +678,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "photo": "34378a83370241018d1ee79d241dd25f.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976295, 37.340675],
@@ -685,7 +698,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "3869613d27ac383a92c6fd56f711f859.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976316, 37.341375],
@@ -704,7 +718,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "38b4560c1bb3334d952c4857eb8852c1.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976992, 37.340902],
@@ -723,7 +738,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "38df85549710366cbcdc394bd983f186.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974405, 37.341583],
@@ -948,7 +964,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "photo": "4af53920f8ad3550873fdfc4355abeb2.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.97384, 37.339709],
@@ -1043,7 +1060,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "51481e5c49223aed9aecd19c75002ec2.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.973559, 37.34431],
@@ -1100,7 +1118,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "5541cfecc2e338d29af3391eef7547c3.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.973626, 37.340512],
@@ -1193,7 +1212,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "photo": "5c4436c8b98840578624466c6be1e8a7.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.973903, 37.340793],
@@ -1230,7 +1250,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "5d696643422531028ba43320ee8e54bc.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976683, 37.341389],
@@ -1248,7 +1269,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "photo": "62d0c318aeb336679c0472e8184db97b.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.978013, 37.341305],
@@ -1360,7 +1382,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "photo": "7095e2aef1d338c293647a9e38748baf.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.975166, 37.343256],
@@ -1396,7 +1419,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "photo": "70c2892af5ca31e2b271c4e03c2b9746.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.975369, 37.341333],
@@ -1415,7 +1439,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "73bf1a6c16ba4872866fbdd151f4c452.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976131, 37.343054],
@@ -1434,7 +1459,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "7425e94ee09b436b96d5a17ef273b332.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.977086, 37.340875],
@@ -1547,7 +1573,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "808219ce031d4232aecdaf6861088c52.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.973677, 37.340607],
@@ -1566,7 +1593,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "8214bedcb77a343dacc9a72411fd4850.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.97384, 37.339458],
@@ -1623,7 +1651,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "8453db4bd3ea3dc8ae47b92c44fb68ef.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.97448, 37.338337],
@@ -1735,7 +1764,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "8fd39662012946029a0cfb5b4e3de930.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.973646, 37.340984],
@@ -1773,7 +1803,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "93d65ab675354e7ba0c268b5c780a570.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.97654, 37.341351],
@@ -1829,7 +1860,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "photo": "9a9639493d6a459994fae74b7830dd61.11.jpg"
       },
       "geometry": {
         "coordinates": [-121.977201, 37.342185],
@@ -1847,7 +1879,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "photo": "9ab541eb79f84a27a2d363832026207b.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974873, 37.341166],
@@ -1941,7 +1974,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "photo": "a434d900f631321ea3d4996535a6b36e.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.975404, 37.340813],
@@ -1998,7 +2032,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "a7cd870b513d34008716e2f9f057fbc8.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974982, 37.341562],
@@ -2130,7 +2165,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "add438b86c814031bd874f6ae9b38a46.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.977275, 37.342239],
@@ -2185,7 +2221,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "photo": "b57dae1bea09344a95640dd2855fc52f.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976641, 37.341239],
@@ -2223,7 +2260,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "b6f500589831408c845ea502d2e25704.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.975816, 37.343019],
@@ -2335,7 +2373,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "c1120a1286b8393da913ac90a454959b.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.977485, 37.339458],
@@ -2373,7 +2412,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "c4a6136297513f5b87ad3adeb7f7c763.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974264, 37.340774],
@@ -2429,7 +2469,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "photo": "cb1cefb622b13f1ca502103c159ca69b.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974815, 37.341449],
@@ -2542,7 +2583,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "photo": "cf4d79a0983b4fae8caa4b45e654d45f.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.973269, 37.340634],
@@ -2561,7 +2603,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "cf78b6b11d6f380ca1f7cda63e8c2cd0.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.977996, 37.343383],
@@ -2580,7 +2623,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "d2b8b4698dda35fea35b255d0936c6dd.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.977149, 37.341567],
@@ -2636,7 +2680,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "d82d0033bf3736f89a9a43c2d7d2c316.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974599, 37.344453],
@@ -2750,7 +2795,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "dfb5f11fde184aec9238f80d8cf468c0.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.97727, 37.341987],
@@ -2976,7 +3022,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "powerspot"
+        "type": "powerspot",
+        "photo": "f12d35072e9634448a35fefb3376fb6c.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974259, 37.34432],
@@ -3033,7 +3080,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "f623cc41100e37e1af5b1a0e30ce11ee.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.977043, 37.341293],
@@ -3052,7 +3100,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "f631fbba4688313d911e3f8c045d80ab.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974099, 37.340592],
@@ -3128,7 +3177,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true
+        "isDisabled": true,
+        "photo": "fa16239e56d135bbad3cbfa4c147b6b8.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976129, 37.342974],

@@ -12,6 +12,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "002a36da810b4251a51083d399b59619.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -50,6 +51,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "047aa84f57f4445b82c8f776d3f64d92.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -68,7 +70,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "pokestop"
+        "type": "pokestop",
+        "photo": "0d830d8580a4317690411f6320a55d6c.16.jpg"
       },
       "geometry": {
         "coordinates": [-122.046644, 37.321103],
@@ -87,6 +90,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "0e298cdc9bd14410acab01a746c8bc0a.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -125,6 +129,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "125409aa8ad03d3eb0c0a4b4cf4b6c59.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-06-26T08:00:00Z",
         "updated": "2025-06-26T08:00:00Z"
@@ -185,6 +190,7 @@
         "marker-symbol": "circle",
         "type": "pokestop",
         "isHidden": true,
+        "photo": "164aba268331495390472c3afe0de499.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -204,6 +210,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "16546224ea454a90a56455092d0f9cbe.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -223,6 +230,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "1805957257e34aeab93723963bbcab02.11.jpg",
         "ingress": true
       },
       "geometry": {
@@ -242,6 +250,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "1a4528d877794f9da12b01b6f790b201.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -261,6 +270,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "1c79672d02cd430382b6ae92e3a69d37.11.jpg",
         "ingress": true
       },
       "geometry": {
@@ -281,6 +291,7 @@
         "marker-symbol": "circle",
         "type": "pokestop",
         "isHidden": true,
+        "photo": "1ef001257ea84a4cb1290ef9ffd23b80.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -300,6 +311,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "200ea79864cb4ea8b72f42ece272fbdf.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -319,6 +331,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "212fe2584f2b3741a801576d616f9817.16.jpg",
         "isHidden": true,
         "ingress": true
       },
@@ -339,6 +352,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "21eef5a4ba6e4bcdb9d2b8adb75d426b.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -358,6 +372,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "22f8345cb8b140368f9a257004fd8812.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -377,6 +392,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "25f0c7db17014a0695f064e748555b18.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -396,6 +412,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "2752a42b387042a2bf8a4d12aff96920.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -415,6 +432,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "289df79460494a539bd956784566d662.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -434,6 +452,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "29e5b2ee2f47438b83d108c2247934b6.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -453,6 +472,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "3030882595d3444f8192e9c204dca3d9.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -472,7 +492,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
-        "isHidden": true
+        "isHidden": true,
+        "photo": "31411bad1d724028a310963abf315f46.12.jpg"
       },
       "geometry": {
         "coordinates": [-122.053918, 37.323183],
@@ -490,7 +511,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "pokestop"
+        "type": "pokestop",
+        "photo": "316995b0e3543e2a8841ecd7658e73b7.16.jpg"
       },
       "geometry": {
         "coordinates": [-122.042266, 37.322761],
@@ -508,7 +530,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "pokestop"
+        "type": "pokestop",
+        "photo": "318ffc114c0b3aaa9e38ca5c67176f85.16.jpg"
       },
       "geometry": {
         "coordinates": [-122.045051, 37.326272],
@@ -527,6 +550,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "371ca7ed88c64b5887012b3205b6a1a7.16.jpg",
         "subtype": "showcase",
         "ingress": true
       },
@@ -547,6 +571,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "3f6f811a0a994614a960e15ae4cedc44.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -566,6 +591,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "3feb081190133735ae32ab3a18670942.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-10-05T08:00:00Z",
         "updated": "2025-10-05T08:00:00Z"
@@ -587,6 +613,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "435eda0671dc4fb6a34e4517affb1814.16.jpg",
         "isHidden": true,
         "ingress": true
       },
@@ -608,6 +635,7 @@
         "marker-symbol": "circle",
         "type": "pokestop",
         "isHidden": true,
+        "photo": "44f84a4b74b640bca638a0b80d115674.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -627,7 +655,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
-        "isHidden": true
+        "isHidden": true,
+        "photo": "467d3d281d8e4dbc9dabb12c94d1c6dd.16.jpg"
       },
       "geometry": {
         "coordinates": [-122.053272, 37.320918],
@@ -646,6 +675,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "49126ef8b5fc350abb212c7e28a22475.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-07-15T08:00:00Z",
         "updated": "2025-07-15T08:00:00Z"
@@ -667,6 +697,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "500781534af1419a91243cb4f74b2d9a.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -686,6 +717,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "5121148353de393d980d1772c2c0144b.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -706,6 +738,7 @@
         "marker-symbol": "circle",
         "type": "pokestop",
         "isHidden": true,
+        "photo": "534d292037c9374a9394be976e3e3e2b.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-10-03T08:00:00Z",
         "updated": "2025-10-03T08:00:00Z"
@@ -727,6 +760,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "545800591d1442b98f159dc76145505a.11.jpg",
         "ingress": true
       },
       "geometry": {
@@ -746,6 +780,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "56a1bc91673947848c37bd38ec5ffac0.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -765,6 +800,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "56bdee89c6b94f2a96d7b3362dc6311b.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -784,6 +820,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "5b2264331e813c0aa15f51c80bfad9cb.16.jpg",
         "isHidden": true,
         "submitter": "80PercentLean",
         "created": "2025-11-13T08:00:00Z",
@@ -806,6 +843,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "5cae6a81015548a4b51319fe2c09d53b.16.jpg",
         "isHidden": true,
         "ingress": true
       },
@@ -826,6 +864,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "5d90bd53931d3d7886cfa0bb39f71318.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -845,6 +884,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "5e8348aa21284b50a49e151cb3e383f3.11.jpg",
         "ingress": true
       },
       "geometry": {
@@ -864,6 +904,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "6162ff7dae5b44549eab8a830a80b980.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -883,6 +924,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "63c4065fd5ca34ec91527226cbc97a64.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -902,6 +944,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "63e37d2813f732ca837e5f725c6d1c79.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -921,6 +964,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "69cbc8a7638d459ebc99c4d67e2956c9.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -940,6 +984,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "6ef261efc670361bb068d8341490b273.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-10-04T08:00:00Z",
         "updated": "2025-10-04T08:00:00Z"
@@ -961,6 +1006,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "77ce44fa26da3aacbb0f0d2f8b02d8bb.16.jpg",
         "isHidden": true,
         "created": "2025-11-24T08:00:00Z",
         "updated": "2025-11-24T08:00:00Z"
@@ -983,6 +1029,7 @@
         "marker-symbol": "circle",
         "type": "pokestop",
         "isHidden": true,
+        "photo": "7b59cc72757e4637ac7dc3d58bc98bb2.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1002,6 +1049,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "7baefdccc1e641f4be9957c61651d6a6.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1021,6 +1069,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "7d3ebe3965ce306aace69cb298c8c7fa.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-07-14T08:00:00Z",
         "updated": "2025-07-14T08:00:00Z"
@@ -1042,6 +1091,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "81d7c737fc6d3381bf951ebfef3d901e.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-09-19T08:00:00Z",
         "updated": "2025-09-19T08:00:00Z"
@@ -1064,6 +1114,7 @@
         "marker-symbol": "circle",
         "type": "pokestop",
         "isHidden": true,
+        "photo": "8217f1ef86f541b7ba69934fdf3826aa.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1083,6 +1134,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "82f0d57b2af13949b6628820c933ec16.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1102,6 +1154,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "864a87da4c903ad4bef702c6ad3efbd6.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-09-24T08:00:00Z",
         "updated": "2025-09-24T08:00:00Z"
@@ -1123,6 +1176,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "8e4a7baf60b34a0696ba1a44ba34d121.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1142,6 +1196,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "8e7b78c4c5764e48a5ffb93ca746ea5f.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1160,7 +1215,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "pokestop"
+        "type": "pokestop",
+        "photo": "8eb1d5e7e8e6310e81e28ab671b08a5d.16.jpg"
       },
       "geometry": {
         "coordinates": [-122.045456, 37.318843],
@@ -1179,6 +1235,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "8eff5f1212f745bcba8a914d944cb350.16.jpg",
         "isHidden": true,
         "ingress": true,
         "submitter": "80PercentLean",
@@ -1201,7 +1258,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "pokestop"
+        "type": "pokestop",
+        "photo": "90eac0cdf4b03b32a4cc6b75ed7891a7.16.jpg"
       },
       "geometry": {
         "coordinates": [-122.046099, 37.317925],
@@ -1220,6 +1278,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "9324f41b49b83e64b91c7456334945ae.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-10-31T08:00:00Z",
         "updated": "2025-10-31T08:00:00Z"
@@ -1241,6 +1300,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "9325866b3e524f38b787dac1bfd51082.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1260,6 +1320,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "9513e925c1c738b49eddb7e182f67a04.16.jpg",
         "created": "2025-11-02T08:00:00Z",
         "updated": "2025-11-02T08:00:00Z"
       },
@@ -1280,6 +1341,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "96175419031243c7b3e964654dac8d25.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1299,6 +1361,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "9b558e5298223e81a6bb14eaf74c94d2.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-10-12T08:00:00Z",
         "updated": "2025-10-12T08:00:00Z"
@@ -1321,6 +1384,7 @@
         "marker-symbol": "circle",
         "type": "pokestop",
         "isHidden": true,
+        "photo": "a201619465ec38a592a00e1043ae9917.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-11-02T08:00:00Z",
         "updated": "2025-11-24T08:00:00Z"
@@ -1342,6 +1406,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "a2316f1f23333f8b9a7841a4dca2c451.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-10-12T08:00:00Z",
         "updated": "2025-10-12T08:00:00Z"
@@ -1363,6 +1428,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "a56a18caa8014b50b25069c8b64185b3.16.jpg",
         "subtype": "showcase",
         "ingress": true
       },
@@ -1383,6 +1449,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "a71e5bbac79e42d0b4c0dbd0a3dc6e92.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1402,7 +1469,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
-        "isHidden": true
+        "isHidden": true,
+        "photo": "aae2df0203464ecea1ce8952add416de.16.jpg"
       },
       "geometry": {
         "coordinates": [-122.054633, 37.322179],
@@ -1421,6 +1489,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "accb87acb12b30a184eba98d03dddc84.16.jpg",
         "isHidden": true,
         "created": "2025-11-24T08:00:00Z",
         "updated": "2025-11-24T08:00:00Z"
@@ -1442,6 +1511,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "ae86688dfd16336a9fecf2ad49aaf41b.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-10-14T08:00:00Z",
         "updated": "2025-10-14T08:00:00Z"
@@ -1481,6 +1551,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "b1e051c452ac3c609a3b9072a3d89770.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1500,6 +1571,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "b5efec40576346e1a281c0f5bf7a4614.12.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1519,6 +1591,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "b8e6867c9583499595ab5fe27b873809.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1538,6 +1611,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "bb91e00b62824b33b67b284fdb113c03.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1558,6 +1632,7 @@
         "marker-symbol": "circle",
         "type": "pokestop",
         "isHidden": true,
+        "photo": "bc0fe894f87337dd99a7947bc07b7940.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-11-24T08:00:00Z",
         "updated": "2025-11-24T08:00:00Z"
@@ -1579,6 +1654,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "c1cab735bdd84ddebb6feac3d1eef96b.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1597,7 +1673,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "pokestop"
+        "type": "pokestop",
+        "photo": "c28d519e7b4d37c8ae3054ec1a867972.16.jpg"
       },
       "geometry": {
         "coordinates": [-122.044372, 37.326587],
@@ -1616,7 +1693,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
-        "isHidden": true
+        "isHidden": true,
+        "photo": "c379ae89e6434432ada3fe9fd0eb1eb0.16.jpg"
       },
       "geometry": {
         "coordinates": [-122.05395, 37.321743],
@@ -1635,7 +1713,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
-        "isHidden": true
+        "isHidden": true,
+        "photo": "c4f0428a12f13f16af2e56e1545a3a60.16.jpg"
       },
       "geometry": {
         "coordinates": [-122.054826, 37.322979],
@@ -1654,6 +1733,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "c7c3c42add644d57b1a8ca8fd12a9946.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1673,6 +1753,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "c93426e55d64439f81e4de82e8d8abe4.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1692,6 +1773,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "d01233bc9e804e088698e124aa691d92.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1711,6 +1793,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "d0f20dc4c23645549573d405a2eb7d2f.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1730,6 +1813,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "d231f048fbf44c628eaba14fbcf5a112.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1749,6 +1833,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "d292631e9f26363396a593424f3e479f.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-07-18T08:00:00Z",
         "updated": "2025-07-18T08:00:00Z"
@@ -1770,6 +1855,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "d340a9cf2ad2448890cb75be405e53f2.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1788,7 +1874,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "pokestop"
+        "type": "pokestop",
+        "photo": "d9503dbb79bd3cac975ba3745bb01430.16.jpg"
       },
       "geometry": {
         "coordinates": [-122.044754, 37.322692],
@@ -1807,6 +1894,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "d95f47bc86f335438f3dd4fd07270c63.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-10-17T08:00:00Z",
         "updated": "2025-10-17T08:00:00Z"
@@ -1847,6 +1935,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "dc497b79cb6e3e1e8e42d75cc3941235.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-09-17T08:00:00Z",
         "updated": "2025-09-17T08:00:00Z"
@@ -1868,6 +1957,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "dd3cee3aa35232eca478b0ffe04b6486.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-07-18T08:00:00Z",
         "updated": "2025-07-18T08:00:00Z"
@@ -1889,6 +1979,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "ded81bdd446c35dc8120ca2356c6bde5.16.jpg",
         "isHidden": true,
         "submitter": "80PercentLean",
         "created": "2025-11-23T08:00:00Z",
@@ -1910,7 +2001,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "pokestop"
+        "type": "pokestop",
+        "photo": "e735d16370943809b63d0119202932bb.16.jpg"
       },
       "geometry": {
         "coordinates": [-122.047166, 37.321479],
@@ -1929,6 +2021,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "ec55c088d4d43b83a64c092baef3be98.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-07-15T08:00:00Z",
         "updated": "2025-07-15T08:00:00Z"
@@ -1951,6 +2044,7 @@
         "marker-symbol": "circle",
         "type": "pokestop",
         "isHidden": true,
+        "photo": "f0d44b11e4cb3eab982989a9fbc93777.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-11-07T08:00:00Z",
         "updated": "2025-11-24T08:00:00Z"
@@ -1972,6 +2066,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "f27231455c444fd9884669e148634f98.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -1991,6 +2086,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "f27be018db1b4576b6e85e22eba8358c.12.jpg",
         "ingress": true
       },
       "geometry": {
@@ -2009,7 +2105,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "pokestop"
+        "type": "pokestop",
+        "photo": "f2cae1dcc56b35cba82e30238ba66999.16.jpg"
       },
       "geometry": {
         "coordinates": [-122.045005, 37.321502],
@@ -2028,6 +2125,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "f2eef2e8db6a40d8babf0b9dfa43ebb2.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -2047,6 +2145,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "f62447de06f84f5589b1a84d402ab5fb.11.jpg",
         "ingress": true
       },
       "geometry": {
@@ -2066,6 +2165,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "fe26748a8f9d45b7928fe2f5a21c56bd.16.jpg",
         "isHidden": true,
         "ingress": true
       },
@@ -2086,6 +2186,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "fe6d45f0c2eb494fa2bff31a7ac29801.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -2105,6 +2206,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "feca1b14e7c64da69bc692bb8bb3be72.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -2123,7 +2225,8 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "pokestop"
+        "type": "pokestop",
+        "photo": "fede761951af3ac89a00fe83210573ba.16.jpg"
       },
       "geometry": {
         "coordinates": [-122.045941, 37.321808],
@@ -2142,6 +2245,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
+        "photo": "ffbed4f2be5d3fe6867a8e5d721d8644.16.jpg",
         "submitter": "80PercentLean",
         "created": "2025-10-04T08:00:00Z",
         "updated": "2025-10-04T08:00:00Z"

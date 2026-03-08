@@ -16,47 +16,47 @@ const powerspotsExtraInput = path.join(
   `${dir}/powerspots-extra.json`,
 );
 
+/* Read main JSON data */
 const dataRaw = fs.readFileSync(dataInput, "utf8");
 const dataJson = JSON.parse(dataRaw);
 
-const downloadImage = (url, dest, cb) => {
-  const file = fs.createWriteStream(dest);
-  https
-    .get(url, (response) => {
-      if (response.statusCode !== 200) {
+/* Promise-based image downloader */
+const downloadImage = (url, dest) => {
+  return new Promise((resolve, reject) => {
+    const file = fs.createWriteStream(dest);
+    https
+      .get(url, (response) => {
+        if (response.statusCode !== 200) {
+          file.close();
+          fs.unlink(dest, () => {});
+          reject(new Error(`Failed to get '${url}' (${response.statusCode})`));
+          return;
+        }
+        response.pipe(file);
+        file.on("finish", () => file.close(resolve));
+      })
+      .on("error", (err) => {
         file.close();
         fs.unlink(dest, () => {});
-        cb(new Error(`Failed to get '${url}' (${response.statusCode})`));
-        return;
-      }
-      response.pipe(file);
-      file.on("finish", () => {
-        file.close(cb);
+        reject(err);
       });
-    })
-    .on("error", (err) => {
-      file.close();
-      fs.unlink(dest, () => {});
-      cb(err);
-    });
+  });
 };
 
+/* Merge extra data JSON into existing features */
 const mergeFeaturesWithExtraData = (extraDataInput, features) => {
   try {
-    // Only runs the following block if the file was successfully read
     const extraData = fs.readFileSync(extraDataInput, "utf8");
     const extraDataJson = JSON.parse(extraData);
 
     for (const currExtraFeature of extraDataJson.features) {
-      // Merge properties of the extra feature with the existing feature, if it exists
       const i = features.findIndex((f) => f.id === currExtraFeature.id);
-
       if (i > -1) {
         const mergedProperties = {
           ...features[i].properties,
           ...currExtraFeature.properties,
         };
-        mergedProperties.name = features[i].properties.name; // Preserve original name
+        mergedProperties.name = features[i].properties.name; // preserve original name
         features[i].properties = mergedProperties;
       }
     }
@@ -67,7 +67,6 @@ const mergeFeaturesWithExtraData = (extraDataInput, features) => {
         (f.properties.type === "pokestop" &&
           f.properties.name === "Community Ambassador Location")
       ) {
-        // If feature is removed or is the Ambassador PokeStop, push it
         features.push(f);
       }
     });
@@ -75,25 +74,25 @@ const mergeFeaturesWithExtraData = (extraDataInput, features) => {
     if (err.code === "ENOENT") {
       console.log(`[Extra data]: ${extraDataInput} not found.`);
     } else {
-      throw err; // Other errors should still crash
+      throw err;
     }
   }
 };
 
-const featuresGyms = [];
-const featuresPokestops = [];
-const featuresPowerspots = [];
-
-/* Convert the data into GeoJSON features. */
-if (dataJson.result && Array.isArray(dataJson.result.data)) {
+/* Main async processing function */
+const processData = async () => {
+  const featuresGyms = [];
+  const featuresPokestops = [];
+  const featuresPowerspots = [];
+  const imagePromises = [];
   const processed = new Set();
 
-  dataJson.result.data.forEach((item) => {
-    if (Array.isArray(item.pois)) {
+  if (dataJson.result && Array.isArray(dataJson.result.data)) {
+    dataJson.result.data.forEach((item) => {
+      if (!Array.isArray(item.pois)) return;
+
       for (const poi of item.pois) {
-        if (processed.has(poi.poiId)) {
-          continue; // Skip already processed POI
-        }
+        if (processed.has(poi.poiId)) continue;
 
         if (
           typeof poi.latE6 === "number" &&
@@ -112,10 +111,7 @@ if (dataJson.result && Array.isArray(dataJson.result.data)) {
               "marker-symbol": "circle",
             },
             geometry: {
-              coordinates: [
-                poi.lngE6 / 1e6, // GeoJSON: [lng, lat]
-                poi.latE6 / 1e6,
-              ],
+              coordinates: [poi.lngE6 / 1e6, poi.latE6 / 1e6],
               type: "Point",
             },
             id: poi.poiId,
@@ -123,107 +119,109 @@ if (dataJson.result && Array.isArray(dataJson.result.data)) {
 
           if (Array.isArray(poi.gmo) && poi.gmo[0]) {
             const entity = poi.gmo[0].entity;
-            if (entity === "POKESTOP") {
-              f.properties.type = "pokestop";
-            } else if (entity === "GYM") {
-              f.properties.type = "gym";
-            } else if (entity === "POWERSPOT") {
-              f.properties.type = "powerspot";
-            }
+            if (entity === "POKESTOP") f.properties.type = "pokestop";
+            else if (entity === "GYM") f.properties.type = "gym";
+            else if (entity === "POWERSPOT") f.properties.type = "powerspot";
           }
 
           if (!f.properties.type) {
             f.properties.type = "powerspot";
-            f.properties.inactive = true;
+            f.properties.isDisabled = true;
           }
 
-          if (
-            f.properties.l14Id !== "808fb449" &&
-            f.properties.l14Id !== "808fb44d" &&
-            f.properties.l14Id !== "808fb44f" &&
-            f.properties.l14Id !== "808fb451" &&
-            f.properties.l14Id !== "808fb453"
-          ) {
-            // Set any POIs that are not within the specified L14 S2 cells to hidden
-            f.properties.hidden = true;
+          // Hide POIs outside allowed L14 S2 cells
+          const allowedL14 = [
+            // Memorial/De Anza L14 cells
+            "808fb449",
+            "808fb44d",
+            "808fb44f",
+            "808fb451",
+            "808fb453",
+            // Central L14 cells
+            "808fca65",
+            "808fca67",
+            "808fca69",
+            "808fca6f",
+          ];
+          if (!allowedL14.includes(f.properties.l14Id)) {
+            f.properties.isHidden = true;
           }
 
-          if (f.properties.type === "gym") {
-            featuresGyms.push(f);
-          } else if (f.properties.type === "pokestop") {
-            featuresPokestops.push(f);
-          } else {
-            featuresPowerspots.push(f);
+          // Handle image download
+          if (poi.mainImage) {
+            const poiImagesDir = path.join(__dirname, "poiImages");
+            if (!fs.existsSync(poiImagesDir)) fs.mkdirSync(poiImagesDir);
+
+            const imageUrl = poi.mainImage;
+            const imageName = `${poi.poiId}.jpg`;
+            const imagePath = path.join(poiImagesDir, imageName);
+
+            imagePromises.push(
+              downloadImage(imageUrl, imagePath)
+                .then(() => {
+                  f.properties.photo = imageName;
+                })
+                .catch((err) => {
+                  console.error(
+                    `Failed to download image for ${poi.poiId}:`,
+                    err.message,
+                  );
+                }),
+            );
           }
 
-          processed.add(f.id); // Keep track of processed POI IDs to avoid duplicates
-        }
+          // Assign feature to correct array
+          if (f.properties.type === "gym") featuresGyms.push(f);
+          else if (f.properties.type === "pokestop") featuresPokestops.push(f);
+          else featuresPowerspots.push(f);
 
-        if (poi.mainImage) {
-          // Create poiImages directory if it doesn't already exist
-          const poiImagesDir = path.join(__dirname, "poiImages");
-          if (!fs.existsSync(poiImagesDir)) {
-            fs.mkdirSync(poiImagesDir);
-          }
-
-          // Download the main image for the POI if it is available
-          const imageUrl = poi.mainImage;
-          const imageName = `${poi.poiId}.jpg`;
-          const imagePath = path.join(poiImagesDir, imageName);
-          downloadImage(imageUrl, imagePath, (err) => {
-            if (err) {
-              console.error(
-                `Failed to download image for ${poi.poiId}:`,
-                err.message,
-              );
-            } else {
-              console.log(`Downloaded image for ${poi.poiId}`);
-            }
-          });
+          processed.add(f.id);
         }
       }
-    }
-  });
-}
+    });
+  }
 
-/* Go through extra data JSON files if they are available and merge with features. */
-mergeFeaturesWithExtraData(gymsExtraInput, featuresGyms);
-mergeFeaturesWithExtraData(pokestopsExtraInput, featuresPokestops);
-mergeFeaturesWithExtraData(powerspotsExtraInput, featuresPowerspots);
+  // Wait for all images to finish downloading
+  await Promise.all(imagePromises);
 
-/* Sort the features by ID. */
-featuresGyms.sort((a, b) => a.id.localeCompare(b.id));
-featuresPokestops.sort((a, b) => a.id.localeCompare(b.id));
-featuresPowerspots.sort((a, b) => a.id.localeCompare(b.id));
+  // Merge extra data
+  mergeFeaturesWithExtraData(gymsExtraInput, featuresGyms);
+  mergeFeaturesWithExtraData(pokestopsExtraInput, featuresPokestops);
+  mergeFeaturesWithExtraData(powerspotsExtraInput, featuresPowerspots);
 
-/* Create GeoJSON objects for each feature type. */
-const geojsonGyms = {
-  type: "FeatureCollection",
-  features: featuresGyms,
+  // Sort features by ID
+  featuresGyms.sort((a, b) => a.id.localeCompare(b.id));
+  featuresPokestops.sort((a, b) => a.id.localeCompare(b.id));
+  featuresPowerspots.sort((a, b) => a.id.localeCompare(b.id));
+
+  // Write GeoJSON files
+  fs.writeFileSync(
+    path.join(__dirname, "gyms.geojson"),
+    JSON.stringify(
+      { type: "FeatureCollection", features: featuresGyms },
+      null,
+      2,
+    ),
+  );
+  fs.writeFileSync(
+    path.join(__dirname, "pokestops.geojson"),
+    JSON.stringify(
+      { type: "FeatureCollection", features: featuresPokestops },
+      null,
+      2,
+    ),
+  );
+  fs.writeFileSync(
+    path.join(__dirname, "powerspots.geojson"),
+    JSON.stringify(
+      { type: "FeatureCollection", features: featuresPowerspots },
+      null,
+      2,
+    ),
+  );
+
+  console.log(`[Output]: ${__dirname}`);
 };
 
-const geojsonPokestops = {
-  type: "FeatureCollection",
-  features: featuresPokestops,
-};
-
-const geojsonPowerspots = {
-  type: "FeatureCollection",
-  features: featuresPowerspots,
-};
-
-/* Create the GeoJSON files. */
-fs.writeFileSync(
-  path.join(__dirname, "gyms.geojson"),
-  JSON.stringify(geojsonGyms, null, 2),
-);
-fs.writeFileSync(
-  path.join(__dirname, "pokestops.geojson"),
-  JSON.stringify(geojsonPokestops, null, 2),
-);
-fs.writeFileSync(
-  path.join(__dirname, "powerspots.geojson"),
-  JSON.stringify(geojsonPowerspots, null, 2),
-);
-
-console.log(`[Output]: ${__dirname}`);
+/* Run the async processing */
+processData().catch(console.error);

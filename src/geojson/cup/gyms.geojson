@@ -13,6 +13,7 @@
         "marker-symbol": "circle",
         "type": "gym",
         "isHidden": true,
+        "photo": "0f11d3c0c3ac4cafbe0bd471922147a0.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -31,7 +32,9 @@
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "type": "gym"
+        "type": "gym",
+        "photo": "14972c4e327e365d9231684506c2da1a.16.jpg",
+        "desc": "This is gym #2 on the standard raid path."
       },
       "geometry": {
         "coordinates": [-122.042611, 37.325565],
@@ -50,6 +53,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
+        "photo": "288a4a15a212419a8c1ba425a26d4096.12.jpg",
         "ingress": true,
         "created": "2025-05-23T08:00:00Z",
         "converted": "2025-11-25T08:00:00Z",
@@ -72,7 +76,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
-        "isHidden": true
+        "isHidden": true,
+        "photo": "29fc00e2048346b1adf417978b6112b7.16.jpg"
       },
       "geometry": {
         "coordinates": [-122.052429, 37.323145],
@@ -91,6 +96,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
+        "photo": "4539697e3cb9430db1549c347e67ccdc.16.jpg",
+        "desc": "This is gym #4 on the standard raid path.",
         "ingress": true
       },
       "geometry": {
@@ -110,6 +117,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
+        "photo": "52f6b7516e544435b220bd8e07f4005c.16.jpg",
+        "desc": "This is gym #1 on the standard raid path.\n\nIt is the first gym used Raid Days and the walking group during Raid Hours.",
         "ingress": true
       },
       "geometry": {
@@ -130,6 +139,7 @@
         "marker-symbol": "circle",
         "type": "gym",
         "isHidden": true,
+        "photo": "54434a946619407093d0c6bf41c69392.16.jpg",
         "ingress": true,
         "created": "2025-05-23T08:00:00Z",
         "converted": "2025-11-02T08:00:00Z",
@@ -153,6 +163,7 @@
         "marker-symbol": "circle",
         "type": "gym",
         "isHidden": true,
+        "photo": "57ff23efaca047058c1148822f772af1.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -172,6 +183,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
+        "photo": "66b9a7c399064f83a0544b9b66d036f5.16.jpg",
+        "desc": "This is gym #8 on the standard raid path.",
         "ingress": true
       },
       "geometry": {
@@ -191,6 +204,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
+        "photo": "6a71a402e38646cf91c465aad8935b00.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -210,6 +224,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
+        "photo": "977aa0cbd8dc46b3baab7cced1d46c73.16.jpg",
+        "desc": "This is gym #7 on the standard raid path.",
         "ingress": true
       },
       "geometry": {
@@ -229,6 +245,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
+        "photo": "bc14fa18aaab459598bb1bf9b287eee7.11.jpg",
+        "desc": "This is gym #3 on the standard raid path.",
         "ingress": true
       },
       "geometry": {
@@ -248,6 +266,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
+        "photo": "c3ae8c98ca114ca2b89bc1bb07531cc4.16.jpg",
+        "desc": "This is gym #6 on the standard raid path.\n\nIt is the second gym used for the quick raid group during Raid Hours.",
         "ingress": true
       },
       "geometry": {
@@ -267,6 +287,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
+        "photo": "d7a41aeaaafe4ba08876dd1722918ece.16.jpg",
         "isHidden": true,
         "ingress": true,
         "created": "2025-05-23T08:00:00Z",
@@ -289,6 +310,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
+        "photo": "ece3562668594459a76db5c3c5d922ab.16.jpg",
+        "desc": "This is gym #9 on the standard raid path.",
         "ingress": true
       },
       "geometry": {
@@ -309,6 +332,7 @@
         "marker-symbol": "circle",
         "type": "gym",
         "isHidden": true,
+        "photo": "ed4c4a8d8e6d4c5f95a0368c0e4c1264.16.jpg",
         "ingress": true
       },
       "geometry": {
@@ -328,7 +352,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
-        "isHidden": true
+        "isHidden": true,
+        "photo": "ee7836ff62454ab198415d338a2168a6.16.jpg"
       },
       "geometry": {
         "coordinates": [-122.051696, 37.323229],
@@ -347,6 +372,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
+        "photo": "fa4517dcde244a41903380687e95d6cb.12.jpg",
+        "desc": "This is gym #5 on the standard raid path.\nIt is the first gym used for the quick raid group during Raid Hours.",
         "ingress": true,
         "created": "2025-05-23T08:00:00Z",
         "updated": "2025-11-24T08:00:00Z"
@@ -368,6 +395,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
+        "photo": "fe6dc838bd9240eeb5ba03679b7e73db.16.jpg",
+        "desc": "This is gym #10 on the standard raid path.",
         "ingress": true
       },
       "geometry": {
