@@ -4,54 +4,34 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "\"Guardians Statue\", Memorial Park (#5)",
-        "type": "gym",
-        "desc": "This is gym #5 on the standard raid path.\nIt is the first gym used for the quick raid group during Raid Hours.",
-        "photo": "fa4517dcde244a41903380687e95d6cb.12.jpg",
+        "name": "New Life Church",
         "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
+        "isCommunityContributed": true,
+        "l14Id": "808fb455",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
         "marker-symbol": "circle",
-        "created": "2025-05-23T08:00:00Z",
-        "updated": "2025-11-24T08:00:00Z"
+        "type": "gym",
+        "hidden": true,
+        "ingress": true
       },
       "geometry": {
-        "coordinates": [-122.045483, 37.324432],
+        "coordinates": [-122.039936, 37.315089],
         "type": "Point"
       },
-      "id": "fa4517dcde244a41903380687e95d6cb.12"
+      "id": "0f11d3c0c3ac4cafbe0bd471922147a0.16"
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Bacchus Urn (#8)",
-        "type": "gym",
-        "desc": "This is gym #8 on the standard raid path.",
-        "photo": "66b9a7c399064f83a0544b9b66d036f5.16.jpg",
+        "name": "Cupertino Historical Museum",
         "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.047022, 37.320658],
-        "type": "Point"
-      },
-      "id": "66b9a7c399064f83a0544b9b66d036f5.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Cupertino Historical Museum (#2)",
-        "type": "gym",
-        "desc": "This is gym #2 on the standard raid path.",
-        "photo": "14972c4e327e365d9231684506c2da1a.16.jpg",
-        "source": "Wayfarer",
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
+        "isCommunityContributed": true,
+        "l14Id": "808fb44d",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "gym"
       },
       "geometry": {
         "coordinates": [-122.042611, 37.325565],
@@ -62,33 +42,15 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Cupertino Rotary Bench (#1)",
-        "type": "gym",
-        "desc": "This is gym #1 on the standard raid path.\n\nIt is the first gym used Raid Days and the walking group during Raid Hours.",
-        "photo": "52f6b7516e544435b220bd8e07f4005c.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04215, 37.325751],
-        "type": "Point"
-      },
-      "id": "52f6b7516e544435b220bd8e07f4005c.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Euphrat Museum of Art",
-        "type": "gym",
-        "photo": "288a4a15a212419a8c1ba425a26d4096.12.jpg",
         "source": "Wayfarer",
-        "ingress": true,
+        "isCommunityContributed": true,
+        "l14Id": "808fb453",
         "marker-color": "#00fcff",
         "marker-size": "medium",
         "marker-symbol": "circle",
+        "type": "gym",
+        "ingress": true,
         "created": "2025-05-23T08:00:00Z",
         "converted": "2025-11-25T08:00:00Z",
         "updated": "2025-11-25T08:00:00Z"
@@ -102,128 +64,73 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Fujitsu Planetarium (#10)",
-        "type": "gym",
-        "desc": "This is gym #10 on the standard raid path.",
-        "photo": "fe6dc838bd9240eeb5ba03679b7e73db.16.jpg",
+        "name": "Monte Vista Clock Tower",
         "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.046158, 37.318808],
-        "type": "Point"
-      },
-      "id": "fe6dc838bd9240eeb5ba03679b7e73db.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Gazebo at Cupertino Quinlan Center (#3)",
-        "type": "gym",
-        "desc": "This is gym #3 on the standard raid path.",
-        "photo": "bc14fa18aaab459598bb1bf9b287eee7.11.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.042752, 37.325804],
-        "type": "Point"
-      },
-      "id": "bc14fa18aaab459598bb1bf9b287eee7.11"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Glenbrook Waterfall",
-        "type": "gym",
-        "hidden": true,
-        "photo": "d7a41aeaaafe4ba08876dd1722918ece.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
+        "isCommunityContributed": true,
+        "l14Id": "808fb445",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
         "marker-symbol": "circle",
-        "created": "2025-05-23T08:00:00Z",
-        "updated": "2025-11-24T08:00:00Z"
+        "type": "gym",
+        "hidden": true
       },
       "geometry": {
-        "coordinates": [-122.049493, 37.326549],
+        "coordinates": [-122.052429, 37.323145],
         "type": "Point"
       },
-      "id": "d7a41aeaaafe4ba08876dd1722918ece.16"
+      "id": "29fc00e2048346b1adf417978b6112b7.16"
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Kingdom Hall of Jehovah's Witnesses Sign",
-        "type": "gym",
-        "photo": "ed4c4a8d8e6d4c5f95a0368c0e4c1264.16.jpg",
+        "name": "Memorial Park Tennis Courts",
         "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
+        "isCommunityContributed": true,
+        "l14Id": "808fb449",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "gym",
+        "ingress": true
       },
       "geometry": {
-        "coordinates": [-122.045909, 37.315491],
+        "coordinates": [-122.04556, 37.326333],
         "type": "Point"
       },
-      "id": "ed4c4a8d8e6d4c5f95a0368c0e4c1264.16"
+      "id": "4539697e3cb9430db1549c347e67ccdc.16"
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Kirsch Center For Environmental Studies",
-        "type": "gym",
-        "photo": "57ff23efaca047058c1148822f772af1.16.jpg",
+        "name": "Cupertino Rotary Bench",
         "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
+        "isCommunityContributed": true,
+        "l14Id": "808fb44d",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "gym",
+        "ingress": true
       },
       "geometry": {
-        "coordinates": [-122.043634, 37.316237],
+        "coordinates": [-122.04215, 37.325751],
         "type": "Point"
       },
-      "id": "57ff23efaca047058c1148822f772af1.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Lion Fountain",
-        "type": "gym",
-        "removed": "2025-11-25T08:00:00Z",
-        "photo": "removed-5173f894-ef7c-466c-81b1-7027ffe7ac0d.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.038722, 37.322493],
-        "type": "Point"
-      },
-      "id": "removed-5173f894-ef7c-466c-81b1-7027ffe7ac0d"
+      "id": "52f6b7516e544435b220bd8e07f4005c.16"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Mary Avenue Dog Park",
-        "type": "gym",
-        "photo": "54434a946619407093d0c6bf41c69392.16.jpg",
         "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
+        "isCommunityContributed": true,
+        "l14Id": "808fb447",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
         "marker-symbol": "circle",
+        "type": "gym",
+        "hidden": true,
+        "ingress": true,
         "created": "2025-05-23T08:00:00Z",
         "converted": "2025-11-02T08:00:00Z",
         "updated": "2025-11-24T08:00:00Z"
@@ -237,34 +144,73 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Media Center Fountain - East (#9)",
-        "type": "gym",
-        "desc": "This is gym #9 on the standard raid path.",
-        "photo": "ece3562668594459a76db5c3c5d922ab.16.jpg",
+        "name": "Kirsch Center For Environmental Studies",
         "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
+        "isCommunityContributed": true,
+        "l14Id": "808fb455",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "gym",
+        "hidden": true,
+        "ingress": true
       },
       "geometry": {
-        "coordinates": [-122.047686, 37.320335],
+        "coordinates": [-122.043634, 37.316237],
         "type": "Point"
       },
-      "id": "ece3562668594459a76db5c3c5d922ab.16"
+      "id": "57ff23efaca047058c1148822f772af1.16"
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Memorial Park Cupertino (#7)",
-        "type": "gym",
-        "desc": "This is gym #7 on the standard raid path.",
-        "photo": "977aa0cbd8dc46b3baab7cced1d46c73.16.jpg",
+        "name": "Bacchus Urn",
         "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
+        "isCommunityContributed": true,
+        "l14Id": "808fb451",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "gym",
+        "ingress": true
+      },
+      "geometry": {
+        "coordinates": [-122.047022, 37.320658],
+        "type": "Point"
+      },
+      "id": "66b9a7c399064f83a0544b9b66d036f5.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Union Church of Cupertino",
+        "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fb453",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "gym",
+        "ingress": true
+      },
+      "geometry": {
+        "coordinates": [-122.039271, 37.322587],
+        "type": "Point"
+      },
+      "id": "6a71a402e38646cf91c465aad8935b00.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Cupertino",
+        "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fb44f",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "gym",
+        "ingress": true
       },
       "geometry": {
         "coordinates": [-122.044846, 37.323048],
@@ -275,55 +221,37 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Memorial Park Tennis Courts (#4)",
-        "type": "gym",
-        "photo": "4539697e3cb9430db1549c347e67ccdc.16.jpg",
-        "desc": "This is gym #4 on the standard raid path.",
+        "name": "Gazebo at Cupertino Quinlan Center",
         "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
+        "isCommunityContributed": true,
+        "l14Id": "808fb44d",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "gym",
+        "ingress": true
       },
       "geometry": {
-        "coordinates": [-122.04556, 37.326333],
+        "coordinates": [-122.042752, 37.325804],
         "type": "Point"
       },
-      "id": "4539697e3cb9430db1549c347e67ccdc.16"
+      "id": "bc14fa18aaab459598bb1bf9b287eee7.11"
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "New Life Church",
-        "type": "gym",
-        "photo": "0f11d3c0c3ac4cafbe0bd471922147a0.16.jpg",
+        "name": "Sister City Plaque",
         "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
+        "isCommunityContributed": true,
+        "l14Id": "808fb44f",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "gym",
+        "ingress": true
       },
       "geometry": {
-        "coordinates": [-122.039936, 37.315089],
-        "type": "Point"
-      },
-      "id": "0f11d3c0c3ac4cafbe0bd471922147a0.16"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Sister City Plaque (#6)",
-        "type": "gym",
-        "desc": "This is gym #6 on the standard raid path.\n\nIt is the second gym used for the quick raid group during Raid Hours.",
-        "photo": "c3ae8c98ca114ca2b89bc1bb07531cc4.16.jpg",
-        "source": "Wayfarer",
-        "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.045378, 37.324078],
+        "coordinates": [-122.045379, 37.324078],
         "type": "Point"
       },
       "id": "c3ae8c98ca114ca2b89bc1bb07531cc4.16"
@@ -331,20 +259,122 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Union Church of Cupertino",
-        "type": "gym",
-        "photo": "6a71a402e38646cf91c465aad8935b00.16.jpg",
+        "name": "Glenbrook Waterfall",
         "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fb449",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "gym",
+        "hidden": true,
         "ingress": true,
-        "marker-color": "#ff2600",
-        "marker-size": "large",
-        "marker-symbol": "circle"
+        "created": "2025-05-23T08:00:00Z",
+        "updated": "2025-11-24T08:00:00Z"
       },
       "geometry": {
-        "coordinates": [-122.039271, 37.322587],
+        "coordinates": [-122.049493, 37.326549],
         "type": "Point"
       },
-      "id": "6a71a402e38646cf91c465aad8935b00.16"
+      "id": "d7a41aeaaafe4ba08876dd1722918ece.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Media Center Fountain - East",
+        "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fb451",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "gym",
+        "ingress": true
+      },
+      "geometry": {
+        "coordinates": [-122.047686, 37.320335],
+        "type": "Point"
+      },
+      "id": "ece3562668594459a76db5c3c5d922ab.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kingdom Hall of Jehovah's Witnesses Sign",
+        "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fb457",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "gym",
+        "hidden": true,
+        "ingress": true
+      },
+      "geometry": {
+        "coordinates": [-122.045909, 37.315491],
+        "type": "Point"
+      },
+      "id": "ed4c4a8d8e6d4c5f95a0368c0e4c1264.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Paul And Eddies",
+        "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fb445",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "gym",
+        "hidden": true
+      },
+      "geometry": {
+        "coordinates": [-122.051696, 37.323229],
+        "type": "Point"
+      },
+      "id": "ee7836ff62454ab198415d338a2168a6.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "\"Guardians\" Statue, Memorial Park",
+        "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fb44f",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "gym",
+        "ingress": true,
+        "created": "2025-05-23T08:00:00Z",
+        "updated": "2025-11-24T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-122.045483, 37.324432],
+        "type": "Point"
+      },
+      "id": "fa4517dcde244a41903380687e95d6cb.12"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fujitsu Planetarium",
+        "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fb451",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "gym",
+        "ingress": true
+      },
+      "geometry": {
+        "coordinates": [-122.046158, 37.318808],
+        "type": "Point"
+      },
+      "id": "fe6dc838bd9240eeb5ba03679b7e73db.16"
     },
     {
       "type": "Feature",
@@ -364,6 +394,25 @@
         "type": "Point"
       },
       "id": "removed-1d25b691-94b5-4469-9436-7468373af0a7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lion Fountain",
+        "type": "gym",
+        "removed": "2025-11-25T08:00:00Z",
+        "photo": "removed-5173f894-ef7c-466c-81b1-7027ffe7ac0d.jpg",
+        "source": "Wayfarer",
+        "ingress": true,
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.038722, 37.322493],
+        "type": "Point"
+      },
+      "id": "removed-5173f894-ef7c-466c-81b1-7027ffe7ac0d"
     }
   ]
 }

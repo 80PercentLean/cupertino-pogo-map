@@ -1,0 +1,378 @@
+{
+  "features": [
+    {
+      "properties": {
+        "name": "Dream Boat",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "09373f8c231f4e0fb8b4f0e566c200bb.16"
+    },
+    {
+      "properties": {
+        "name": "Memorial Park BBQ Spot B",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "created": "2025-10-31T08:00:00Z",
+        "updated": "2025-10-31T08:00:00Z"
+      },
+      "id": "0d65c50b28de3aafae85ad96e12cf811.16"
+    },
+    {
+      "properties": {
+        "name": "Glenbrook Main Fountain",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "20fcc9a406f54509836994e74315f1ec.16"
+    },
+    {
+      "properties": {
+        "name": "Sister Cities Bench",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "289e551ab1b3301b8dec4fde37f2bdca.16"
+    },
+    {
+      "properties": {
+        "name": "Bicycle Rack",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "29a0dba42c2d4cac8def7f6cf3751afb.16"
+    },
+    {
+      "properties": {
+        "name": "The Commons Entrance Sign",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "created": "2025-07-16T08:00:00Z",
+        "updated": "2025-07-16T08:00:00Z"
+      },
+      "id": "2e41444e74343603bf7303d73dcde267.16"
+    },
+    {
+      "properties": {
+        "name": "Toyokawa Stone Lantern",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "31f847990f104b1bb6ac8027ec45ba4c.11"
+    },
+    {
+      "properties": {
+        "name": "Two as One",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "47c77e0e74b44eaca46574a503484946.12"
+    },
+    {
+      "properties": {
+        "name": "DeAnza Mosaics",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "4e85e7bae0d641f5a8944aca10a21163.16"
+    },
+    {
+      "properties": {
+        "name": "Memorial Park Water Fountain",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "4f3aea5e10b24d9fa25d0cfc29aae42d.16"
+    },
+    {
+      "properties": {
+        "name": "Muralism",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "509559c22ab1403ea688836c507e1e4d.16"
+    },
+    {
+      "properties": {
+        "name": "Stellar Motion",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "531d9c60fd7446068c0c9c154ec702e5.16"
+    },
+    {
+      "properties": {
+        "name": "Dionysus",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "5333cc20d862479f8f762e663840e77f.16"
+    },
+    {
+      "properties": {
+        "name": "Shelf of Skulls",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "560f9f27a1444b8c8346d158317ecad0.16"
+    },
+    {
+      "properties": {
+        "name": "Richard Kent Memorial",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "5713b98e832f48188235aa3c7d9293cd.16"
+    },
+    {
+      "properties": {
+        "name": "De Anza Instrument Music Building",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "5ac385a466373981bc0c0a14d30762ef.16"
+    },
+    {
+      "properties": {
+        "name": "MLC Fountain B",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "6bc7dd2ac69541b1b5a8e801fadab86a.16"
+    },
+    {
+      "properties": {
+        "name": "Memorial Park Softball Scoreboard",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "created": "2025-11-02T08:00:00Z",
+        "updated": "2025-11-02T08:00:00Z"
+      },
+      "id": "78cde712590f339ba828d0cebd4eae04.16"
+    },
+    {
+      "properties": {
+        "name": "Robert A. Potthast Memorial Bench",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "7e526d2f69924b8c9b92e2ee961c6136.16"
+    },
+    {
+      "properties": {
+        "name": "Aidens Gazebo at Memorial Park",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "83abb8e46af44228a9b285ddbc18fc68.16"
+    },
+    {
+      "properties": {
+        "name": "Leaning Tower of DeAnza",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "89a9f12ca4a64c1ea910487437ff5660.16"
+    },
+    {
+      "properties": {
+        "name": "Enjoy Smoke-Free Parks",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "created": "2025-11-04T08:00:00Z",
+        "updated": "2025-11-04T08:00:00Z"
+      },
+      "id": "8ccbc9eef9fb3fb6a4b913048bcccdb7.16"
+    },
+    {
+      "properties": {
+        "name": "Lotus Fountain",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "9b1ff7ea938346a38cbc38d08ad9a49f.11"
+    },
+    {
+      "properties": {
+        "name": "La Vita É Una Fontana",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "9bc3e5e15754404da54b3d9d120db8d8.11"
+    },
+    {
+      "properties": {
+        "name": "Quad Mosaic - West",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "a51a102d011040e4967ef044b63e66d8.16"
+    },
+    {
+      "properties": {
+        "name": "Cupertino Historical Society",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "a973a46573844e84bfe3f06280c06603.12"
+    },
+    {
+      "properties": {
+        "name": "Donation Tile Mosaic",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "aa4b99f74b37475e88668217c67b4fb8.16"
+    },
+    {
+      "properties": {
+        "name": "Smoke-Free Memorial Park",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "created": "2025-11-04T08:00:00Z",
+        "updated": "2025-11-04T08:00:00Z"
+      },
+      "id": "ab73728e90553414907c188d0df79dde.16"
+    },
+    {
+      "properties": {
+        "name": "Memorial Park Picnic Area Sign",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "ad00c2d425553236b3e3dfb3b5c35367.16"
+    },
+    {
+      "properties": {
+        "name": "DeAnza College Carving",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "ad5bd7b034df4bd683a7e484b9494944.16"
+    },
+    {
+      "properties": {
+        "name": "In memory of Virginia J. Logan",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "created": "2025-11-02T08:00:00Z",
+        "updated": "2025-11-02T08:00:00Z"
+      },
+      "id": "b30f61b279c93f489023653df85f8cc7.16"
+    },
+    {
+      "properties": {
+        "name": "Golden misery",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "b5678756c7273e839e79f4619d3f5844.16"
+    },
+    {
+      "properties": {
+        "name": "East Cottage",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "bc9c6d92a7ab493e83f338d7a12a0458.16"
+    },
+    {
+      "properties": {
+        "name": "De Anza College Plaque",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "c3adc001297c49458120c74dcfeb42dd.16"
+    },
+    {
+      "properties": {
+        "name": "Memorial Park BBQ Spot A",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "created": "2025-11-02T08:00:00Z",
+        "updated": "2025-11-02T08:00:00Z"
+      },
+      "id": "cc6014b6bc9f36e59a178a8ad750e43f.16"
+    },
+    {
+      "properties": {
+        "name": "De Anza Expedition",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "e168c5fe6bbe4d00af77d88a26bef382.16"
+    },
+    {
+      "properties": {
+        "name": "Turtle Sculpture",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "e6caf1f03e3b438d9efab4e86ceac208.11"
+    },
+    {
+      "properties": {
+        "name": "De Anza College Stone",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "e89c02c00b574b2e98f6fac7f2d40e34.16"
+    },
+    {
+      "properties": {
+        "name": "L-Quad Mosaic 2",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "f68d946a0cbd40cc8744e21fa0fe06d5.16"
+    },
+    {
+      "properties": {
+        "name": "Magda Lattin Trinom",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "fd2196a55a8a4728b5783dfecd34c62e.11"
+    }
+  ]
+}
