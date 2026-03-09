@@ -10,6 +10,7 @@ interface GetSubtitleOptions {
   isDisabled?: CProperties["isHidden"];
   isHidden?: CProperties["isHidden"];
   removed?: CProperties["removed"];
+  source?: CProperties["source"];
   subtype?: CProperties["subtype"];
   wayfarerMode?: StoreState["wayfarerMode"];
 }
@@ -58,6 +59,7 @@ export default function Features({
       name,
       photo,
       removed,
+      source,
       subtype,
       type,
     },
@@ -95,6 +97,7 @@ export default function Features({
                   isCommunityContributed,
                   isHidden,
                   removed,
+                  source,
                   subtype,
                   wayfarerMode,
                 })

@@ -58,7 +58,14 @@ export interface CProperties {
   removed?: boolean | string;
 
   /** Source where the POI data came from. */
-  source?: "Campfire" | "Eyeball" | "Ingress" | "Wayfarer";
+  source?:
+    | "Campfire"
+    | "Campsite Proposal <Gym>"
+    | "Campsite Proposal <PokeStop>"
+    | "Campsite Proposal <Power Spot>"
+    | "Eyeball"
+    | "Ingress"
+    | "Wayfarer";
 
   /**
    * When the POI was first submitted to Wayfarer.
