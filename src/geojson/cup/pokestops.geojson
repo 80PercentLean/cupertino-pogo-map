@@ -2035,6 +2035,26 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Half Basketball Court",
+        "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fb45b",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "pokestop",
+        "isHidden": true,
+        "photo": "ecc31a54326a37bcac4633792ba44298.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-122.05094, 37.317316],
+        "type": "Point"
+      },
+      "id": "ecc31a54326a37bcac4633792ba44298.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Glenbrook Apartment Homes Sign",
         "source": "Wayfarer",
         "isCommunityContributed": true,

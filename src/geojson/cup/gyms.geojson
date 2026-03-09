@@ -216,6 +216,26 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Travel Green electricity box",
+        "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fb45b",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "gym",
+        "isHidden": true,
+        "photo": "92680bccd49948069e406566314a0440.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-122.0503, 37.316181],
+        "type": "Point"
+      },
+      "id": "92680bccd49948069e406566314a0440.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Memorial Park Cupertino",
         "source": "Wayfarer",
         "isCommunityContributed": true,

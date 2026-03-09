@@ -4,6 +4,26 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Citibank ATM",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fb45b",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "powerspot",
+        "isDisabled": true,
+        "isHidden": true
+      },
+      "geometry": {
+        "coordinates": [-122.050096, 37.315151],
+        "type": "Point"
+      },
+      "id": "02d92b9b11b3439586749428eb313b6e.23"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Merry Merry Learning Center",
         "source": "Wayfarer",
         "isCommunityContributed": false,
@@ -2117,6 +2137,26 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "7-Eleven",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fb45b",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "powerspot",
+        "isDisabled": true,
+        "isHidden": true
+      },
+      "geometry": {
+        "coordinates": [-122.050096, 37.315151],
+        "type": "Point"
+      },
+      "id": "8f5f9a55fae84168a822f7aefa938cde.23"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "HS Tutoring",
         "source": "Wayfarer",
         "isCommunityContributed": false,
@@ -2252,6 +2292,26 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Clark's Auto Repair",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fb45b",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "powerspot",
+        "isDisabled": true,
+        "isHidden": true
+      },
+      "geometry": {
+        "coordinates": [-122.053101, 37.318902],
+        "type": "Point"
+      },
+      "id": "97afaba813874e558879780e83ee0b13.23"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "EnviroSense, Inc",
         "source": "Wayfarer",
         "isCommunityContributed": false,
@@ -2347,6 +2407,25 @@
         "type": "Point"
       },
       "id": "9bc3e5e15754404da54b3d9d120db8d8.11"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Western Union",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fb45b",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "powerspot",
+        "isHidden": true
+      },
+      "geometry": {
+        "coordinates": [-122.050079, 37.315337],
+        "type": "Point"
+      },
+      "id": "9bf8490796624ff7b940b7b1ec6ff595.23"
     },
     {
       "type": "Feature",
@@ -3762,6 +3841,25 @@
         "type": "Point"
       },
       "id": "f37643646975443bac7bbafdf36e2de3.23"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rebel Sun Lighting Grip Camera",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fb45b",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "powerspot",
+        "isHidden": true
+      },
+      "geometry": {
+        "coordinates": [-122.052915, 37.318729],
+        "type": "Point"
+      },
+      "id": "f4c9a79f3a3143d2a5ae9c0d7fa77adb.23"
     },
     {
       "type": "Feature",
