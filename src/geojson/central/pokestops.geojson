@@ -1228,7 +1228,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
-        "photo": "fd677db6a63242f98ed3684bacd5dbc2.16.jpg"
+        "photo": "fd677db6a63242f98ed3684bacd5dbc2.16.jpg",
+        "subtype": "showcase"
       },
       "geometry": {
         "coordinates": [-121.976711, 37.343026],
