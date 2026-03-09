@@ -6,10 +6,10 @@ import { type StoreState, getLayerKeyFromType, useStore } from "../hooks/store";
 import FeatureMarker, { type BtnModifierFlags } from "./FeatureMarker";
 
 interface GetSubtitleOptions {
+  isCommunityContributed?: CProperties["isCommunityContributed"];
   isDisabled?: CProperties["isHidden"];
   isHidden?: CProperties["isHidden"];
   removed?: CProperties["removed"];
-  source?: CProperties["source"];
   subtype?: CProperties["subtype"];
   wayfarerMode?: StoreState["wayfarerMode"];
 }
@@ -52,12 +52,12 @@ export default function Features({
     geometry,
     properties: {
       desc,
+      isCommunityContributed,
       isDisabled,
       isHidden,
       name,
       photo,
       removed,
-      source,
       subtype,
       type,
     },
@@ -92,9 +92,9 @@ export default function Features({
           subtitle={
             typeof subtitle === "function"
               ? subtitle?.(type, {
+                  isCommunityContributed,
                   isHidden,
                   removed,
-                  source,
                   subtype,
                   wayfarerMode,
                 })

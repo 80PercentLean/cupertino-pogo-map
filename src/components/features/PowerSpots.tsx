@@ -18,7 +18,13 @@ export default function PowerSpots() {
       icon={iconPowerspot}
       subtitle={(
         _,
-        { isDisabled, isHidden, removed, source, wayfarerMode } = {},
+        {
+          isCommunityContributed,
+          isDisabled,
+          isHidden,
+          removed,
+          wayfarerMode,
+        } = {},
       ) => {
         let subtitle = "Power Spot";
         if (isDisabled) {
@@ -31,7 +37,11 @@ export default function PowerSpots() {
           subtitle += " (Removed)";
         }
         if (wayfarerMode) {
-          subtitle += ` [${source}]`;
+          if (isCommunityContributed) {
+            subtitle += " [Community Contributed]";
+          } else {
+            subtitle += " [Overture Maps]";
+          }
         }
         return subtitle;
       }}

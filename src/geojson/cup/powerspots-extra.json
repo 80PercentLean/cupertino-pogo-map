@@ -22,6 +22,15 @@
     },
     {
       "properties": {
+        "name": "Dr. Sumita Paul, Chief Medicial Officer and SVP",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      },
+      "id": "1bee997280b145188b4bf84e0bfdab82.23"
+    },
+    {
+      "properties": {
         "name": "Glenbrook Main Fountain",
         "type": "powerspot",
         "source": "Wayfarer",
@@ -159,6 +168,46 @@
     },
     {
       "properties": {
+        "name": "BUILD 33",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      },
+      "id": "6d451b8126474f96bfa4d153ebc80857.23"
+    },
+    {
+      "properties": {
+        "name": "Pagan Totem Pole",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "ingress": true
+      },
+      "id": "6fd708ea77d84a2ab8e2b5d94a8c9928.16"
+    },
+    {
+      "properties": {
+        "name": "Nina Piano Lessons",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      },
+      "id": "7111a6ff48a94bed86b53d5db95eb105.23"
+    },
+    {
+      "properties": {
+        "name": "Mary Avenue Dog Park",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": false
+      },
+      "geometry": {
+        "coordinates": [-122.050796, 37.327614],
+        "type": "Point"
+      },
+      "id": "765aaf927ada45c1b23aef35cac7e278.23"
+    },
+    {
+      "properties": {
         "name": "Memorial Park Softball Scoreboard",
         "type": "powerspot",
         "source": "Wayfarer",
@@ -167,6 +216,15 @@
         "updated": "2025-11-02T08:00:00Z"
       },
       "id": "78cde712590f339ba828d0cebd4eae04.16"
+    },
+    {
+      "properties": {
+        "name": "STEM4Kids Summer camp",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      },
+      "id": "7920fccafd204423836d1efaa6d93a05.23"
     },
     {
       "properties": {
@@ -188,12 +246,30 @@
     },
     {
       "properties": {
+        "name": "Garden Gate Elementary School",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      },
+      "id": "8945e571547432b99f15b7832477ca2d.16"
+    },
+    {
+      "properties": {
         "name": "Leaning Tower of DeAnza",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
       },
       "id": "89a9f12ca4a64c1ea910487437ff5660.16"
+    },
+    {
+      "properties": {
+        "name": "Faria CDC",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      },
+      "id": "8a120852051145a8b146d8b67e2ff2cc.23"
     },
     {
       "properties": {
@@ -205,6 +281,15 @@
         "updated": "2025-11-04T08:00:00Z"
       },
       "id": "8ccbc9eef9fb3fb6a4b913048bcccdb7.16"
+    },
+    {
+      "properties": {
+        "name": "AccessUSA",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      },
+      "id": "94075bfb3c564c9e9d8086c3f09abd99.23"
     },
     {
       "properties": {
@@ -226,12 +311,30 @@
     },
     {
       "properties": {
+        "name": "Mary Avenue Dog Park Dedication Plaque",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": false
+      },
+      "id": "a4a6271d6ce330cab1c5741b1e86f407.16"
+    },
+    {
+      "properties": {
         "name": "Quad Mosaic - West",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
       },
       "id": "a51a102d011040e4967ef044b63e66d8.16"
+    },
+    {
+      "properties": {
+        "name": "Winrows Corporation",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      },
+      "id": "a54eaeaf58b84ee7b1d339fa4941394f.23"
     },
     {
       "properties": {
@@ -250,6 +353,15 @@
         "ingress": true
       },
       "id": "aa4b99f74b37475e88668217c67b4fb8.16"
+    },
+    {
+      "properties": {
+        "name": "Bare Feet Organic Daycare",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      },
+      "id": "ab5737c210534434b69ccffc7a9721cf.23"
     },
     {
       "properties": {
@@ -293,12 +405,30 @@
     },
     {
       "properties": {
+        "name": "McClellan Terrace Apartments",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      },
+      "id": "b535f4f52bca4c2580005a4a094d253c.23"
+    },
+    {
+      "properties": {
         "name": "Golden misery",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
       },
       "id": "b5678756c7273e839e79f4619d3f5844.16"
+    },
+    {
+      "properties": {
+        "name": "American Builders Construction Group Cupertino",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      },
+      "id": "b7d3b822863045c697d2ce502c0ad7ad.23"
     },
     {
       "properties": {
@@ -331,6 +461,15 @@
     },
     {
       "properties": {
+        "name": "Village Little Preschool Center",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      },
+      "id": "cd3d54500de1486cadde48c815477638.23"
+    },
+    {
+      "properties": {
         "name": "De Anza Expedition",
         "type": "powerspot",
         "source": "Wayfarer",
@@ -355,6 +494,15 @@
         "ingress": true
       },
       "id": "e89c02c00b574b2e98f6fac7f2d40e34.16"
+    },
+    {
+      "properties": {
+        "name": "McClellan Terrace",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      },
+      "id": "e910ee43d4a94538822da679cce942b9.23"
     },
     {
       "properties": {

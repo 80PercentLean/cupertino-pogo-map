@@ -111,7 +111,7 @@ export default function SettingsView() {
                     Show hidden POIs
                   </FieldLabel>
                   <FieldDescription>
-                    Show POIs that exist in-game but are hidden from this map
+                    Display POIs that exist in-game but are hidden from this map
                     since they are not within the community play area.
                   </FieldDescription>
                 </FieldContent>
@@ -131,8 +131,8 @@ export default function SettingsView() {
                     Show disabled power spots
                   </FieldLabel>
                   <FieldDescription>
-                    Show power spots that are not in the current spawn pool or
-                    can never spawn due to certain restrictions.
+                    Display power spots that are not in the current spawn pool
+                    or can never spawn due to certain restrictions.
                   </FieldDescription>
                 </FieldContent>
               </Field>
@@ -148,7 +148,8 @@ export default function SettingsView() {
                     Show removed POIs
                   </FieldLabel>
                   <FieldDescription>
-                    Show POIs that have been removed in-game or from Wayfarer.
+                    Display POIs that have been removed in-game or from
+                    Wayfarer.
                   </FieldDescription>
                 </FieldContent>
               </Field>

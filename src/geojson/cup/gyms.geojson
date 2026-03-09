@@ -12,7 +12,6 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
-        "isHidden": true,
         "photo": "0f11d3c0c3ac4cafbe0bd471922147a0.16.jpg",
         "ingress": true
       },
@@ -138,7 +137,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
-        "isHidden": true,
+        "isHidden": false,
         "photo": "54434a946619407093d0c6bf41c69392.16.jpg",
         "ingress": true,
         "created": "2025-05-23T08:00:00Z",
@@ -162,7 +161,6 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
-        "isHidden": true,
         "photo": "57ff23efaca047058c1148822f772af1.16.jpg",
         "ingress": true
       },
@@ -351,7 +349,6 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "gym",
-        "isHidden": true,
         "photo": "ed4c4a8d8e6d4c5f95a0368c0e4c1264.16.jpg",
         "ingress": true
       },

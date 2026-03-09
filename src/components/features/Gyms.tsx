@@ -17,7 +17,10 @@ export default function Gyms() {
       }}
       features={gymsJson.features}
       icon={iconGym}
-      subtitle={(_, { isHidden, removed, source, wayfarerMode } = {}) => {
+      subtitle={(
+        _,
+        { isCommunityContributed, isHidden, removed, wayfarerMode } = {},
+      ) => {
         let subtitle = "Gym";
         if (isHidden) {
           subtitle += " (Hidden)";
@@ -26,7 +29,11 @@ export default function Gyms() {
           subtitle += " (Removed)";
         }
         if (wayfarerMode) {
-          subtitle += ` [${source}]`;
+          if (isCommunityContributed) {
+            subtitle += " [Community Contributed]";
+          } else {
+            subtitle += " [Overture Maps]";
+          }
         }
         return subtitle;
       }}

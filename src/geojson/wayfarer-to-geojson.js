@@ -137,6 +137,8 @@ const processData = async () => {
             "808fb44f",
             "808fb451",
             "808fb453",
+            "808fb455",
+            "808fb457",
             // Central L14 cells
             "808fca65",
             "808fca67",

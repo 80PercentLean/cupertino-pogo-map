@@ -26,7 +26,13 @@ export default function PokeStops() {
       }}
       subtitle={(
         _,
-        { isHidden, removed, source, subtype, wayfarerMode } = {},
+        {
+          isCommunityContributed,
+          isHidden,
+          removed,
+          subtype,
+          wayfarerMode,
+        } = {},
       ) => {
         let subtitle;
         switch (subtype) {
@@ -43,7 +49,11 @@ export default function PokeStops() {
           subtitle += " (Removed)";
         }
         if (wayfarerMode) {
-          subtitle += ` [${source}]`;
+          if (isCommunityContributed) {
+            subtitle += " [Community Contributed]";
+          } else {
+            subtitle += " [Overture Maps]";
+          }
         }
         return subtitle;
       }}

@@ -759,6 +759,7 @@
         "name": "Mary Avenue Dog Park Rules Sign",
         "type": "pokestop",
         "source": "Wayfarer",
+        "isHidden": false,
         "submitter": "80PercentLean",
         "created": "2025-11-24T08:00:00Z",
         "updated": "2025-11-24T08:00:00Z"

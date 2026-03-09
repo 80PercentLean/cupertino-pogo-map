@@ -56,6 +56,7 @@
         "type": "gym",
         "source": "Wayfarer",
         "ingress": true,
+        "isHidden": false,
         "created": "2025-05-23T08:00:00Z",
         "converted": "2025-11-02T08:00:00Z",
         "updated": "2025-11-24T08:00:00Z"
