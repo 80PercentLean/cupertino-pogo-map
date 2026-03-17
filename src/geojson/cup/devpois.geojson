@@ -254,6 +254,22 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Pickleball Wall Thing",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04464614391328, 37.326384102420114],
+        "type": "Point"
+      },
+      "id": 41
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Ambassador Gym #1",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
