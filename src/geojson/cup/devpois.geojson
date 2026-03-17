@@ -30,6 +30,230 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Glenbrook Volleyball Court",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04682409763338, 37.32700156790236],
+        "type": "Point"
+      },
+      "id": 28
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook Central Pool B",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.047293484211, 37.32617294725671],
+        "type": "Point"
+      },
+      "id": 29
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook Creekside Shelter",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04761803150178, 37.32635957432553],
+        "type": "Point"
+      },
+      "id": 30
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook Creekside Hub",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04763814806941, 37.3254914879091],
+        "type": "Point"
+      },
+      "id": 31
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook North Map Kiosk",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04840123653413, 37.32719779075826],
+        "type": "Point"
+      },
+      "id": 32
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook Central Pool A",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04847633838655, 37.32667523962686],
+        "type": "Point"
+      },
+      "id": 33
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook Central Chess Table",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04842403531076, 37.32622200355972],
+        "type": "Point"
+      },
+      "id": 34
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook Central Map Kiosk",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04826980829242, 37.3255629401182],
+        "type": "Point"
+      },
+      "id": 35
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook Meadows",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04905167222024, 37.3253251213082],
+        "type": "Point"
+      },
+      "id": 36
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook Outdoor Gym",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0482121407986, 37.326622984313836],
+        "type": "Point"
+      },
+      "id": 37
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook Learning Zone",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04779505729677, 37.32661871857239],
+        "type": "Point"
+      },
+      "id": 37
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook West Pool",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04992473125459, 37.32719032576765],
+        "type": "Point"
+      },
+      "id": 38
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Casa De Anza Sign",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0506851375103, 37.32813837363679],
+        "type": "Point"
+      },
+      "id": 39
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mary Avenue Dog Park Rules Sign (Proposed Change)",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.05067574977876, 37.327310831953454],
+        "type": "Point"
+      },
+      "id": 40
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Ambassador Gym #1",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
