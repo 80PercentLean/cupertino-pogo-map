@@ -51,7 +51,7 @@ export interface CProperties {
   photo?: string;
 
   /**
-   * Represents a POI that was removed from the in-game map.
+   * Represents a POI that was removed from the in-game map or this map.
    * When the removed date is unknown, it is simply true.
    * When the removed date is known, the value is in a simplified ISO 8601 format.
    */

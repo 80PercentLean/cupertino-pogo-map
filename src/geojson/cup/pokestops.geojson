@@ -1521,7 +1521,7 @@
       "properties": {
         "name": "Community Ambassador Location",
         "type": "pokestop",
-        "source": "Wayfarer",
+        "source": "Campfire",
         "photo": "pogo-ca-logo.jpg",
         "desc": "This PokéStop location is controlled by the Community Ambassadors so it can change locations.",
         "marker-color": "#00fcff",
@@ -1529,7 +1529,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.0459, 37.320662],
+        "coordinates": [-122.046372, 37.321038],
         "type": "Point"
       },
       "id": "ambassador-pokestop"

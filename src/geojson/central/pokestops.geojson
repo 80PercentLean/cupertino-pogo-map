@@ -479,6 +479,25 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Hearth Community Pool",
+        "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fca65",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "pokestop",
+        "photo": "69eca7dc80c939b09d772d59385ee0f2.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-121.979149, 37.341281],
+        "type": "Point"
+      },
+      "id": "69eca7dc80c939b09d772d59385ee0f2.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Via Siena Pergola",
         "source": "Wayfarer",
         "isCommunityContributed": true,
