@@ -7,6 +7,7 @@
         "name": "Smoke-Free Park Sign",
         "type": "devpoi",
         "source": "Wayfarer",
+        "submitter": "80PercentLean",
         "marker-color": "#ffff00",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -20,6 +21,7 @@
         "name": "Cupertino Parks & Recreation Office",
         "type": "devpoi",
         "source": "Wayfarer",
+        "submitter": "80PercentLean",
         "marker-color": "#ffff00",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -30,15 +32,17 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Glenbrook Volleyball Court",
+        "name": "Glenbrook Creekside Shelter",
         "type": "devpoi",
         "source": "Wayfarer",
+        "submitted": "2025-03-17T08:00:00Z",
+        "submitter": "80PercentLean",
         "marker-color": "#ffff00",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04682409763338, 37.32700156790236],
+        "coordinates": [-122.047627, 37.32644],
         "type": "Point"
       },
       "id": 28
@@ -46,15 +50,17 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Glenbrook Central Pool B",
+        "name": "Glenbrook West Community Pool",
         "type": "devpoi",
         "source": "Wayfarer",
+        "submitted": "2025-03-17T08:00:00Z",
+        "submitter": "80PercentLean",
         "marker-color": "#ffff00",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.047293484211, 37.32617294725671],
+        "coordinates": [-122.049804, 37.327208],
         "type": "Point"
       },
       "id": 29
@@ -62,15 +68,17 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Glenbrook Creekside Shelter",
+        "name": "Glenbrook Central Map Kiosk",
         "type": "devpoi",
         "source": "Wayfarer",
+        "submitted": "2025-03-17T08:00:00Z",
+        "submitter": "80PercentLean",
         "marker-color": "#ffff00",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04761803150178, 37.32635957432553],
+        "coordinates": [-122.048326, 37.325546],
         "type": "Point"
       },
       "id": 30
@@ -78,15 +86,17 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Glenbrook Creekside Hub",
+        "name": "Glenbrook Creekside Resting Area",
         "type": "devpoi",
         "source": "Wayfarer",
+        "submitted": "2025-03-17T08:00:00Z",
+        "submitter": "80PercentLean",
         "marker-color": "#ffff00",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04763814806941, 37.3254914879091],
+        "coordinates": [-122.048171, 37.326535],
         "type": "Point"
       },
       "id": 31
@@ -94,18 +104,110 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Glenbrook North Map Kiosk",
+        "name": "Glenbrook Volleyball Court",
         "type": "devpoi",
         "source": "Wayfarer",
+        "submitted": "2025-03-17T08:00:00Z",
+        "submitter": "80PercentLean",
         "marker-color": "#ffff00",
         "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04840123653413, 37.32719779075826],
+        "coordinates": [-122.046849, 37.327004],
         "type": "Point"
       },
       "id": 32
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook Creekside Hub",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "submitted": "2025-03-17T08:00:00Z",
+        "submitter": "80PercentLean",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.047655, 37.325501],
+        "type": "Point"
+      },
+      "id": 33
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook Meadow",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "submitted": "2025-03-17T08:00:00Z",
+        "submitter": "80PercentLean",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.049054, 37.325322],
+        "type": "Point"
+      },
+      "id": 34
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook Central Community Pool B",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "submitted": "2025-03-17T08:00:00Z",
+        "submitter": "80PercentLean",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.047313, 37.32618],
+        "type": "Point"
+      },
+      "id": 35
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook North Map Kiosk",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "submitted": "2025-03-17T08:00:00Z",
+        "submitter": "80PercentLean",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04841, 37.327188],
+        "type": "Point"
+      },
+      "id": 36
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook Chess Table",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "submitted": "2025-03-17T08:00:00Z",
+        "submitter": "80PercentLean",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.048441, 37.326165],
+        "type": "Point"
+      },
+      "id": 37
     },
     {
       "type": "Feature",
@@ -121,71 +223,7 @@
         "coordinates": [-122.04847633838655, 37.32667523962686],
         "type": "Point"
       },
-      "id": 33
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Glenbrook Central Chess Table",
-        "type": "devpoi",
-        "source": "Wayfarer",
-        "marker-color": "#ffff00",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04842403531076, 37.32622200355972],
-        "type": "Point"
-      },
-      "id": 34
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Glenbrook Central Map Kiosk",
-        "type": "devpoi",
-        "source": "Wayfarer",
-        "marker-color": "#ffff00",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04826980829242, 37.3255629401182],
-        "type": "Point"
-      },
-      "id": 35
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Glenbrook Meadows",
-        "type": "devpoi",
-        "source": "Wayfarer",
-        "marker-color": "#ffff00",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04905167222024, 37.3253251213082],
-        "type": "Point"
-      },
-      "id": 36
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Glenbrook Outdoor Gym",
-        "type": "devpoi",
-        "source": "Wayfarer",
-        "marker-color": "#ffff00",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.0482121407986, 37.326622984313836],
-        "type": "Point"
-      },
-      "id": 37
+      "id": 38
     },
     {
       "type": "Feature",
@@ -201,55 +239,7 @@
         "coordinates": [-122.04779505729677, 37.32661871857239],
         "type": "Point"
       },
-      "id": 37
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Glenbrook West Pool",
-        "type": "devpoi",
-        "source": "Wayfarer",
-        "marker-color": "#ffff00",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04992473125459, 37.32719032576765],
-        "type": "Point"
-      },
-      "id": 38
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Casa De Anza Sign",
-        "type": "devpoi",
-        "source": "Wayfarer",
-        "marker-color": "#ffff00",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.0506851375103, 37.32813837363679],
-        "type": "Point"
-      },
       "id": 39
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Mary Avenue Dog Park Rules Sign (Proposed Change)",
-        "type": "devpoi",
-        "source": "Wayfarer",
-        "marker-color": "#ffff00",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.05067574977876, 37.327310831953454],
-        "type": "Point"
-      },
-      "id": 40
     },
     {
       "type": "Feature",
@@ -265,7 +255,39 @@
         "coordinates": [-122.04464614391328, 37.326384102420114],
         "type": "Point"
       },
+      "id": 40
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Casa De Anza Sign",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0506851375103, 37.32813837363679],
+        "type": "Point"
+      },
       "id": 41
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mary Avenue Dog Park Rules Sign (Proposed Change)",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.05067574977876, 37.327310831953454],
+        "type": "Point"
+      },
+      "id": 42
     },
     {
       "type": "Feature",
