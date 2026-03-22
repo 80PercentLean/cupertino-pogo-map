@@ -32,24 +32,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Glenbrook Creekside Shelter",
-        "type": "devpoi",
-        "source": "Wayfarer",
-        "submitted": "2025-03-17T08:00:00Z",
-        "submitter": "80PercentLean",
-        "marker-color": "#ffff00",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.047627, 37.32644],
-        "type": "Point"
-      },
-      "id": 28
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Glenbrook West Community Pool",
         "type": "devpoi",
         "source": "Wayfarer",
@@ -63,7 +45,7 @@
         "coordinates": [-122.049804, 37.327208],
         "type": "Point"
       },
-      "id": 29
+      "id": 28
     },
     {
       "type": "Feature",
@@ -81,25 +63,7 @@
         "coordinates": [-122.048326, 37.325546],
         "type": "Point"
       },
-      "id": 30
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Glenbrook Creekside Resting Area",
-        "type": "devpoi",
-        "source": "Wayfarer",
-        "submitted": "2025-03-17T08:00:00Z",
-        "submitter": "80PercentLean",
-        "marker-color": "#ffff00",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.048171, 37.326535],
-        "type": "Point"
-      },
-      "id": 31
+      "id": 29
     },
     {
       "type": "Feature",
@@ -117,7 +81,7 @@
         "coordinates": [-122.046849, 37.327004],
         "type": "Point"
       },
-      "id": 32
+      "id": 30
     },
     {
       "type": "Feature",
@@ -135,7 +99,7 @@
         "coordinates": [-122.047655, 37.325501],
         "type": "Point"
       },
-      "id": 33
+      "id": 31
     },
     {
       "type": "Feature",
@@ -153,7 +117,7 @@
         "coordinates": [-122.049054, 37.325322],
         "type": "Point"
       },
-      "id": 34
+      "id": 32
     },
     {
       "type": "Feature",
@@ -171,7 +135,7 @@
         "coordinates": [-122.047313, 37.32618],
         "type": "Point"
       },
-      "id": 35
+      "id": 33
     },
     {
       "type": "Feature",
@@ -189,7 +153,7 @@
         "coordinates": [-122.04841, 37.327188],
         "type": "Point"
       },
-      "id": 36
+      "id": 34
     },
     {
       "type": "Feature",
@@ -207,7 +171,7 @@
         "coordinates": [-122.048441, 37.326165],
         "type": "Point"
       },
-      "id": 37
+      "id": 35
     },
     {
       "type": "Feature",
@@ -223,7 +187,7 @@
         "coordinates": [-122.044534, 37.32639],
         "type": "Point"
       },
-      "id": 40
+      "id": 36
     },
     {
       "type": "Feature",
@@ -239,7 +203,7 @@
         "coordinates": [-122.048482, 37.326667],
         "type": "Point"
       },
-      "id": 38
+      "id": 37
     },
     {
       "type": "Feature",
@@ -255,7 +219,7 @@
         "coordinates": [-122.04779505729677, 37.32661871857239],
         "type": "Point"
       },
-      "id": 39
+      "id": 38
     },
     {
       "type": "Feature",
@@ -271,7 +235,7 @@
         "coordinates": [-122.0506851375103, 37.32813837363679],
         "type": "Point"
       },
-      "id": 41
+      "id": 39
     },
     {
       "type": "Feature",
@@ -287,7 +251,7 @@
         "coordinates": [-122.05067574977876, 37.327310831953454],
         "type": "Point"
       },
-      "id": 42
+      "id": 40
     },
     {
       "type": "Feature",

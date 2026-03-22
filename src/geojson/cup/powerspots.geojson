@@ -2012,8 +2012,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isDisabled": true,
-        "isHidden": true
+        "isHidden": true,
+        "removed": "2025-03-21T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.04412, 37.330963],

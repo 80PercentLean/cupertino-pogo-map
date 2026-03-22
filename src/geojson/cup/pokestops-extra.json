@@ -915,6 +915,28 @@
     },
     {
       "properties": {
+        "name": "Glenbrook Creekside Resting Area",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-03-17T08:00:00Z",
+        "created": "2025-03-18T08:00:00Z"
+      },
+      "id": "df0cb49081ed3c18a698dfc2d4091029.16"
+    },
+    {
+      "properties": {
+        "name": "Glenbrook Creekside Shelter",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-03-17T08:00:00Z",
+        "created": "2025-03-20T08:00:00Z"
+      },
+      "id": "e3b9e3209b5131849c85a09934934903.16"
+    },
+    {
+      "properties": {
         "name": "Glenbrook East Community Pool",
         "type": "pokestop",
         "source": "Wayfarer",

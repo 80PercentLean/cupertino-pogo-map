@@ -256,11 +256,22 @@
       "id": "83abb8e46af44228a9b285ddbc18fc68.16"
     },
     {
+      "type": "Feature",
       "properties": {
         "name": "Garden Gate Elementary School",
-        "type": "powerspot",
         "source": "Wayfarer",
-        "isHidden": true
+        "isCommunityContributed": false,
+        "l14Id": "808fb449",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "powerspot",
+        "isHidden": true,
+        "removed": "2025-03-21T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-122.04412, 37.330963],
+        "type": "Point"
       },
       "id": "8945e571547432b99f15b7832477ca2d.16"
     },

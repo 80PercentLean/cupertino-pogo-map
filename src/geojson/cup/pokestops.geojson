@@ -301,6 +301,26 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Westmont Park Villas",
+        "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fb45b",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "pokestop",
+        "isHidden": true,
+        "photo": "1f28ac6195203263b9c2ac04cadc3d16.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-122.050582, 37.315001],
+        "type": "Point"
+      },
+      "id": "1f28ac6195203263b9c2ac04cadc3d16.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Luotto's Grotto",
         "source": "Wayfarer",
         "isCommunityContributed": true,
@@ -1578,6 +1598,25 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "McClellan Pond Bench",
+        "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fb457",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "pokestop",
+        "photo": "b6bd84bb9ff33aed9c2532e9b341b1f4.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-122.049571, 37.314912],
+        "type": "Point"
+      },
+      "id": "b6bd84bb9ff33aed9c2532e9b341b1f4.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "De Anza College",
         "source": "Wayfarer",
         "isCommunityContributed": true,
@@ -1985,6 +2024,50 @@
         "type": "Point"
       },
       "id": "ded81bdd446c35dc8120ca2356c6bde5.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook Creekside Resting Area",
+        "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fb449",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "pokestop",
+        "photo": "df0cb49081ed3c18a698dfc2d4091029.16.jpg",
+        "submitter": "80PercentLean",
+        "submitted": "2025-03-17T08:00:00Z",
+        "created": "2025-03-18T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-122.048171, 37.326535],
+        "type": "Point"
+      },
+      "id": "df0cb49081ed3c18a698dfc2d4091029.16"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook Creekside Shelter",
+        "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fb449",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "type": "pokestop",
+        "photo": "e3b9e3209b5131849c85a09934934903.16.jpg",
+        "submitter": "80PercentLean",
+        "submitted": "2025-03-17T08:00:00Z",
+        "created": "2025-03-20T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-122.047627, 37.32644],
+        "type": "Point"
+      },
+      "id": "e3b9e3209b5131849c85a09934934903.16"
     },
     {
       "type": "Feature",

@@ -1,8 +1,19 @@
-# Central Park Wayfarer History
+# Central Park POI History
+
+## 3-17-2026
+
+### PokeStops Created 🆕
+
+- Hearth Community Pool (69eca7dc80c939b09d772d59385ee0f2.16.jpg)
+
+### Power Spots Removed 🗑️
+
+- Central Park (1c18cdc7fa8833c3abfcdba0d6d4b5be.16)
+- Homeridge Park (6cc36bec73af386b9b20ce73ebd289ea.16)
 
 ## 2-26-2026
 
-### Power Spots Enabled
+### Power Spots Enabled 🟢
 
 - Togo's (064d569dc6304038b9ab23ad6ce9e8c9.23)
 - BP (08afb072b12247658f96906d52d18f02.23)
@@ -20,7 +31,7 @@
 - Reading Across Boundaries: Page (cf4d79a0983b4fae8caa4b45e654d45f.16)
 - Central Park Arbor Picnic Area (faec58277a0944b0a6448460aeaa9f6c.23)
 
-### Power Spots Disabled
+### Power Spots Disabled 🚫
 
 - Taco Bell (5b661dcf54d34c658c410f2b850df826.23)
 - Arbor Center (7425e94ee09b436b96d5a17ef273b332.16)
