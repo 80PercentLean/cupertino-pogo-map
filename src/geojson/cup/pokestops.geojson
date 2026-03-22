@@ -131,8 +131,8 @@
         "type": "pokestop",
         "photo": "125409aa8ad03d3eb0c0a4b4cf4b6c59.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-06-26T08:00:00Z",
-        "updated": "2025-06-26T08:00:00Z"
+        "submitted": "2025-07-10T08:00:00Z",
+        "created": "2025-07-26T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.046133, 37.326032],
@@ -529,7 +529,10 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "type": "pokestop",
-        "photo": "318ffc114c0b3aaa9e38ca5c67176f85.16.jpg"
+        "photo": "318ffc114c0b3aaa9e38ca5c67176f85.16.jpg",
+        "submitter": "80PercentLean",
+        "submitted": "2025-09-08T08:00:00Z",
+        "created": "2025-09-30T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.045051, 37.326272],
@@ -591,8 +594,8 @@
         "type": "pokestop",
         "photo": "3feb081190133735ae32ab3a18670942.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-10-05T08:00:00Z",
-        "updated": "2025-10-05T08:00:00Z"
+        "submitted": "2025-09-01T08:00:00Z",
+        "created": "2025-10-05T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.041764, 37.324126],
@@ -674,8 +677,8 @@
         "type": "pokestop",
         "photo": "49126ef8b5fc350abb212c7e28a22475.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-07-15T08:00:00Z",
-        "updated": "2025-07-15T08:00:00Z"
+        "submitted": "2025-07-10T08:00:00Z",
+        "created": "2025-07-15T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.042893, 37.326331],
@@ -736,8 +739,8 @@
         "type": "pokestop",
         "photo": "534d292037c9374a9394be976e3e3e2b.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-10-03T08:00:00Z",
-        "updated": "2025-10-03T08:00:00Z"
+        "submitted": "2025-09-20T08:00:00Z",
+        "created": "2025-10-03T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.044265, 37.316356],
@@ -819,8 +822,8 @@
         "photo": "5b2264331e813c0aa15f51c80bfad9cb.16.jpg",
         "isHidden": true,
         "submitter": "80PercentLean",
-        "created": "2025-11-13T08:00:00Z",
-        "updated": "2025-11-13T08:00:00Z"
+        "submitted": "2025-11-11T08:00:00Z",
+        "created": "2025-11-13T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.046683, 37.327167],
@@ -982,8 +985,8 @@
         "type": "pokestop",
         "photo": "6ef261efc670361bb068d8341490b273.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-10-04T08:00:00Z",
-        "updated": "2025-10-04T08:00:00Z"
+        "submitted": "2025-09-01T08:00:00Z",
+        "created": "2025-10-04T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.041898, 37.323326],
@@ -1004,8 +1007,7 @@
         "type": "pokestop",
         "photo": "77ce44fa26da3aacbb0f0d2f8b02d8bb.16.jpg",
         "isHidden": true,
-        "created": "2025-11-24T08:00:00Z",
-        "updated": "2025-11-24T08:00:00Z"
+        "updated": "2025-09-16T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.04747, 37.325561],
@@ -1066,8 +1068,8 @@
         "type": "pokestop",
         "photo": "7d3ebe3965ce306aace69cb298c8c7fa.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-07-14T08:00:00Z",
-        "updated": "2025-07-14T08:00:00Z"
+        "submitted": "2025-07-11T08:00:00Z",
+        "created": "2025-07-14T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.045685, 37.325038],
@@ -1088,8 +1090,8 @@
         "type": "pokestop",
         "photo": "81d7c737fc6d3381bf951ebfef3d901e.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-09-19T08:00:00Z",
-        "updated": "2025-09-19T08:00:00Z"
+        "submitted": "2025-09-01T08:00:00Z",
+        "created": "2025-09-19T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.043675, 37.323121],
@@ -1150,8 +1152,8 @@
         "type": "pokestop",
         "photo": "864a87da4c903ad4bef702c6ad3efbd6.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-09-24T08:00:00Z",
-        "updated": "2025-09-24T08:00:00Z"
+        "submitted": "2025-09-01T08:00:00Z",
+        "created": "2025-09-24T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.042349, 37.32349],
@@ -1233,8 +1235,8 @@
         "isHidden": true,
         "ingress": true,
         "submitter": "80PercentLean",
-        "created": "2020-04-03T08:00:00Z",
-        "updated": "2020-04-03T08:00:00Z"
+        "submitted": "2019-12-19T08:00:00Z",
+        "created": "2020-04-03T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.047882, 37.3246],
@@ -1274,8 +1276,8 @@
         "type": "pokestop",
         "photo": "9324f41b49b83e64b91c7456334945ae.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-10-31T08:00:00Z",
-        "updated": "2025-10-31T08:00:00Z"
+        "submitted": "2025-07-10T08:00:00Z",
+        "created": "2025-10-31T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.043604, 37.325592],
@@ -1315,8 +1317,9 @@
         "marker-symbol": "circle",
         "type": "pokestop",
         "photo": "9513e925c1c738b49eddb7e182f67a04.16.jpg",
-        "created": "2025-11-02T08:00:00Z",
-        "updated": "2025-11-02T08:00:00Z"
+        "submitter": "80PercentLean",
+        "submitted": "2025-09-08T08:00:00Z",
+        "created": "2025-09-28T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.043792, 37.326122],
@@ -1357,8 +1360,8 @@
         "type": "pokestop",
         "photo": "9b558e5298223e81a6bb14eaf74c94d2.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-10-12T08:00:00Z",
-        "updated": "2025-10-12T08:00:00Z"
+        "submitted": "2025-10-06T08:00:00Z",
+        "created": "2025-10-12T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.043214, 37.320858],
@@ -1380,8 +1383,8 @@
         "isHidden": true,
         "photo": "a201619465ec38a592a00e1043ae9917.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-11-02T08:00:00Z",
-        "updated": "2025-11-24T08:00:00Z"
+        "submitted": "2025-10-29T08:00:00Z",
+        "created": "2025-11-02T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.04998, 37.326296],
@@ -1402,8 +1405,8 @@
         "type": "pokestop",
         "photo": "a2316f1f23333f8b9a7841a4dca2c451.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-10-12T08:00:00Z",
-        "updated": "2025-10-12T08:00:00Z"
+        "submitted": "2025-10-07T08:00:00Z",
+        "created": "2025-10-12T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.044121, 37.323517],
@@ -1484,9 +1487,7 @@
         "marker-symbol": "circle",
         "type": "pokestop",
         "photo": "accb87acb12b30a184eba98d03dddc84.16.jpg",
-        "isHidden": true,
-        "created": "2025-11-24T08:00:00Z",
-        "updated": "2025-11-24T08:00:00Z"
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.047943, 37.327423],
@@ -1507,8 +1508,8 @@
         "type": "pokestop",
         "photo": "ae86688dfd16336a9fecf2ad49aaf41b.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-10-14T08:00:00Z",
-        "updated": "2025-10-14T08:00:00Z"
+        "submitted": "2025-10-07T08:00:00Z",
+        "created": "2025-10-14T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.044118, 37.323457],
@@ -1521,7 +1522,7 @@
       "properties": {
         "name": "Community Ambassador Location",
         "type": "pokestop",
-        "source": "Campfire",
+        "source": "In-Game",
         "photo": "pogo-ca-logo.jpg",
         "desc": "This PokéStop location is controlled by the Community Ambassadors so it can change locations.",
         "marker-color": "#00fcff",
@@ -1529,7 +1530,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.046372, 37.321038],
+        "coordinates": [-122.0459, 37.320662],
         "type": "Point"
       },
       "id": "ambassador-pokestop"
@@ -1628,8 +1629,8 @@
         "isHidden": false,
         "photo": "bc0fe894f87337dd99a7947bc07b7940.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-11-24T08:00:00Z",
-        "updated": "2025-11-24T08:00:00Z"
+        "submitted": "2025-11-11T08:00:00Z",
+        "created": "2025-11-24T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.050728, 37.327475],
@@ -1829,8 +1830,8 @@
         "type": "pokestop",
         "photo": "d292631e9f26363396a593424f3e479f.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-07-18T08:00:00Z",
-        "updated": "2025-07-18T08:00:00Z"
+        "submitted": "2025-07-11T08:00:00Z",
+        "created": "2025-07-18T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.046318, 37.324084],
@@ -1890,8 +1891,8 @@
         "type": "pokestop",
         "photo": "d95f47bc86f335438f3dd4fd07270c63.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-10-17T08:00:00Z",
-        "updated": "2025-10-17T08:00:00Z"
+        "submitted": "2025-10-06T08:00:00Z",
+        "created": "2025-10-17T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.041927, 37.322319],
@@ -1931,8 +1932,8 @@
         "type": "pokestop",
         "photo": "dc497b79cb6e3e1e8e42d75cc3941235.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-09-17T08:00:00Z",
-        "updated": "2025-09-17T08:00:00Z"
+        "submitted": "2025-09-01T08:00:00Z",
+        "created": "2025-09-17T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.043944, 37.32198],
@@ -1953,8 +1954,8 @@
         "type": "pokestop",
         "photo": "dd3cee3aa35232eca478b0ffe04b6486.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-07-18T08:00:00Z",
-        "updated": "2025-07-18T08:00:00Z"
+        "submitted": "2025-07-12T08:00:00Z",
+        "created": "2025-07-18T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.042502, 37.325997],
@@ -1976,8 +1977,8 @@
         "photo": "ded81bdd446c35dc8120ca2356c6bde5.16.jpg",
         "isHidden": true,
         "submitter": "80PercentLean",
-        "created": "2025-11-23T08:00:00Z",
-        "updated": "2025-11-24T08:00:00Z"
+        "submitted": "2025-11-18T08:00:00Z",
+        "created": "2025-11-23T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.049161, 37.326075],
@@ -2017,8 +2018,8 @@
         "type": "pokestop",
         "photo": "ec55c088d4d43b83a64c092baef3be98.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-07-15T08:00:00Z",
-        "updated": "2025-07-15T08:00:00Z"
+        "submitted": "2025-07-10T08:00:00Z",
+        "created": "2025-07-15T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.046124, 37.32543],
@@ -2060,8 +2061,8 @@
         "isHidden": true,
         "photo": "f0d44b11e4cb3eab982989a9fbc93777.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-11-07T08:00:00Z",
-        "updated": "2025-11-24T08:00:00Z"
+        "submitted": "2025-10-29T08:00:00Z",
+        "created": "2025-11-07T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.050075, 37.326539],
@@ -2261,8 +2262,8 @@
         "type": "pokestop",
         "photo": "ffbed4f2be5d3fe6867a8e5d721d8644.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-10-04T08:00:00Z",
-        "updated": "2025-10-04T08:00:00Z"
+        "submitted": "2025-09-01T08:00:00Z",
+        "created": "2025-10-04T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.042062, 37.32414],

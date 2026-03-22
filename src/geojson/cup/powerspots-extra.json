@@ -15,8 +15,8 @@
         "type": "powerspot",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "created": "2025-10-31T08:00:00Z",
-        "updated": "2025-10-31T08:00:00Z"
+        "submitted": "2025-10-29T08:00:00Z",
+        "created": "2025-10-31T08:00:00Z"
       },
       "id": "0d65c50b28de3aafae85ad96e12cf811.16"
     },
@@ -62,8 +62,8 @@
         "type": "powerspot",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "created": "2025-07-16T08:00:00Z",
-        "updated": "2025-07-16T08:00:00Z"
+        "submitted": "2025-07-11T08:00:00Z",
+        "created": "2025-07-16T08:00:00Z"
       },
       "id": "2e41444e74343603bf7303d73dcde267.16"
     },
@@ -75,6 +75,17 @@
         "ingress": true
       },
       "id": "31f847990f104b1bb6ac8027ec45ba4c.11"
+    },
+    {
+      "properties": {
+        "name": "Memorial Park Rules East Sign",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-10-29T08:00:00Z",
+        "created": "2025-11-01T08:00:00Z"
+      },
+      "id": "43724c577be53244ac28e9ce54916d49.16"
     },
     {
       "properties": {
@@ -212,8 +223,8 @@
         "type": "powerspot",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "created": "2025-11-02T08:00:00Z",
-        "updated": "2025-11-02T08:00:00Z"
+        "submitted": "2025-10-29T08:00:00Z",
+        "created": "2025-11-02T08:00:00Z"
       },
       "id": "78cde712590f339ba828d0cebd4eae04.16"
     },
@@ -277,8 +288,8 @@
         "type": "powerspot",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "created": "2025-11-04T08:00:00Z",
-        "updated": "2025-11-04T08:00:00Z"
+        "submitted": "2025-10-29T08:00:00Z",
+        "created": "2025-11-04T08:00:00Z"
       },
       "id": "8ccbc9eef9fb3fb6a4b913048bcccdb7.16"
     },
@@ -314,7 +325,9 @@
         "name": "Mary Avenue Dog Park Dedication Plaque",
         "type": "powerspot",
         "source": "Wayfarer",
-        "isHidden": false
+        "submitter": "80PercentLean",
+        "submitted": "2025-11-08T08:00:00Z",
+        "created": "2025-11-10T08:00:00Z"
       },
       "id": "a4a6271d6ce330cab1c5741b1e86f407.16"
     },
@@ -369,8 +382,8 @@
         "type": "powerspot",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "created": "2025-11-04T08:00:00Z",
-        "updated": "2025-11-04T08:00:00Z"
+        "submitted": "2025-10-29T08:00:00Z",
+        "created": "2025-11-04T08:00:00Z"
       },
       "id": "ab73728e90553414907c188d0df79dde.16"
     },
@@ -398,8 +411,8 @@
         "type": "powerspot",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "created": "2025-11-02T08:00:00Z",
-        "updated": "2025-11-02T08:00:00Z"
+        "submitted": "2025-10-29T08:00:00Z",
+        "created": "2025-11-02T08:00:00Z"
       },
       "id": "b30f61b279c93f489023653df85f8cc7.16"
     },
@@ -454,8 +467,8 @@
         "type": "powerspot",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "created": "2025-11-02T08:00:00Z",
-        "updated": "2025-11-02T08:00:00Z"
+        "submitted": "2025-10-29T08:00:00Z",
+        "created": "2025-11-02T08:00:00Z"
       },
       "id": "cc6014b6bc9f36e59a178a8ad750e43f.16"
     },
@@ -521,6 +534,17 @@
         "ingress": true
       },
       "id": "fd2196a55a8a4728b5783dfecd34c62e.11"
+    },
+    {
+      "properties": {
+        "name": "Cupertino Victorian Dollhouse",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-11-08T08:00:00Z",
+        "created": "2025-11-10T08:00:00Z"
+      },
+      "id": "fd6205448fd6308bbe897ad2956b1c65.16"
     }
   ]
 }

@@ -188,8 +188,8 @@
         "type": "powerspot",
         "photo": "0d65c50b28de3aafae85ad96e12cf811.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-10-31T08:00:00Z",
-        "updated": "2025-10-31T08:00:00Z"
+        "submitted": "2025-10-29T08:00:00Z",
+        "created": "2025-10-31T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.044802, 37.325433],
@@ -585,8 +585,8 @@
         "type": "powerspot",
         "photo": "2e41444e74343603bf7303d73dcde267.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-07-16T08:00:00Z",
-        "updated": "2025-07-16T08:00:00Z"
+        "submitted": "2025-07-11T08:00:00Z",
+        "created": "2025-07-16T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.043016, 37.325131],
@@ -917,7 +917,10 @@
         "marker-symbol": "circle",
         "type": "powerspot",
         "isDisabled": true,
-        "photo": "43724c577be53244ac28e9ce54916d49.16.jpg"
+        "photo": "43724c577be53244ac28e9ce54916d49.16.jpg",
+        "submitter": "80PercentLean",
+        "submitted": "2025-10-29T08:00:00Z",
+        "created": "2025-11-01T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.044342, 37.325229],
@@ -1812,8 +1815,8 @@
         "isDisabled": true,
         "photo": "78cde712590f339ba828d0cebd4eae04.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-11-02T08:00:00Z",
-        "updated": "2025-11-02T08:00:00Z"
+        "submitted": "2025-10-29T08:00:00Z",
+        "created": "2025-11-02T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.045204, 37.325305],
@@ -2091,8 +2094,8 @@
         "isDisabled": true,
         "photo": "8ccbc9eef9fb3fb6a4b913048bcccdb7.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-11-04T08:00:00Z",
-        "updated": "2025-11-04T08:00:00Z"
+        "submitted": "2025-10-29T08:00:00Z",
+        "created": "2025-11-04T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.045692, 37.325233],
@@ -2503,8 +2506,11 @@
         "marker-symbol": "circle",
         "type": "powerspot",
         "isDisabled": true,
-        "isHidden": false,
-        "photo": "a4a6271d6ce330cab1c5741b1e86f407.16.jpg"
+        "isHidden": true,
+        "photo": "a4a6271d6ce330cab1c5741b1e86f407.16.jpg",
+        "submitter": "80PercentLean",
+        "submitted": "2025-11-08T08:00:00Z",
+        "created": "2025-11-10T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.050702, 37.327567],
@@ -2741,8 +2747,8 @@
         "type": "powerspot",
         "photo": "ab73728e90553414907c188d0df79dde.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-11-04T08:00:00Z",
-        "updated": "2025-11-04T08:00:00Z"
+        "submitted": "2025-10-29T08:00:00Z",
+        "created": "2025-11-04T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.044732, 37.323505],
@@ -2902,8 +2908,8 @@
         "type": "powerspot",
         "photo": "b30f61b279c93f489023653df85f8cc7.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-11-02T08:00:00Z",
-        "updated": "2025-11-02T08:00:00Z"
+        "submitted": "2025-10-29T08:00:00Z",
+        "created": "2025-11-02T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.045297, 37.323513],
@@ -3315,8 +3321,8 @@
         "type": "powerspot",
         "photo": "cc6014b6bc9f36e59a178a8ad750e43f.16.jpg",
         "submitter": "80PercentLean",
-        "created": "2025-11-02T08:00:00Z",
-        "updated": "2025-11-02T08:00:00Z"
+        "submitted": "2025-10-29T08:00:00Z",
+        "created": "2025-11-02T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.045071, 37.325148],
@@ -4054,7 +4060,10 @@
         "marker-symbol": "circle",
         "type": "powerspot",
         "isDisabled": true,
-        "photo": "fd6205448fd6308bbe897ad2956b1c65.16.jpg"
+        "photo": "fd6205448fd6308bbe897ad2956b1c65.16.jpg",
+        "submitter": "80PercentLean",
+        "submitted": "2025-11-08T08:00:00Z",
+        "created": "2025-11-10T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.042345, 37.325758],
