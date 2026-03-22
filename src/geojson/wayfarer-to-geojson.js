@@ -87,100 +87,106 @@ const processData = async () => {
   const imagePromises = [];
   const processed = new Set();
 
-  if (dataJson.result && Array.isArray(dataJson.result.data)) {
-    dataJson.result.data.forEach((item) => {
-      if (!Array.isArray(item.pois)) return;
+  if (dataJson.result) {
+    const checked = `${dataJson.result.snapshot}T08:00:00Z`;
 
-      for (const poi of item.pois) {
-        if (processed.has(poi.poiId)) continue;
+    if (Array.isArray(dataJson.result.data)) {
+      dataJson.result.data.forEach((item) => {
+        if (!Array.isArray(item.pois)) return;
 
-        if (
-          typeof poi.latE6 === "number" &&
-          typeof poi.lngE6 === "number" &&
-          typeof poi.poiId === "string"
-        ) {
-          const f = {
-            type: "Feature",
-            properties: {
-              name: poi.title,
-              source: "Wayfarer",
-              isCommunityContributed: poi.isCommunityContributed,
-              l14Id: item.metadata.s2CellId,
-              "marker-color": "#00fcff",
-              "marker-size": "medium",
-              "marker-symbol": "circle",
-            },
-            geometry: {
-              coordinates: [poi.lngE6 / 1e6, poi.latE6 / 1e6],
-              type: "Point",
-            },
-            id: poi.poiId,
-          };
+        for (const poi of item.pois) {
+          if (processed.has(poi.poiId)) continue;
 
-          if (Array.isArray(poi.gmo) && poi.gmo[0]) {
-            const entity = poi.gmo[0].entity;
-            if (entity === "POKESTOP") f.properties.type = "pokestop";
-            else if (entity === "GYM") f.properties.type = "gym";
-            else if (entity === "POWERSPOT") f.properties.type = "powerspot";
+          if (
+            typeof poi.latE6 === "number" &&
+            typeof poi.lngE6 === "number" &&
+            typeof poi.poiId === "string"
+          ) {
+            const f = {
+              type: "Feature",
+              properties: {
+                name: poi.title,
+                source: "Wayfarer",
+                isCommunityContributed: poi.isCommunityContributed,
+                l14Id: item.metadata.s2CellId,
+                "marker-color": "#00fcff",
+                "marker-size": "medium",
+                "marker-symbol": "circle",
+                checked,
+              },
+              geometry: {
+                coordinates: [poi.lngE6 / 1e6, poi.latE6 / 1e6],
+                type: "Point",
+              },
+              id: poi.poiId,
+            };
+
+            if (Array.isArray(poi.gmo) && poi.gmo[0]) {
+              const entity = poi.gmo[0].entity;
+              if (entity === "POKESTOP") f.properties.type = "pokestop";
+              else if (entity === "GYM") f.properties.type = "gym";
+              else if (entity === "POWERSPOT") f.properties.type = "powerspot";
+            }
+
+            if (!f.properties.type) {
+              f.properties.type = "powerspot";
+              f.properties.isDisabled = true;
+            }
+
+            // Hide POIs outside allowed L14 S2 cells
+            const allowedL14 = [
+              // Memorial/De Anza L14 cells
+              "808fb449",
+              "808fb44d",
+              "808fb44f",
+              "808fb451",
+              "808fb453",
+              "808fb455",
+              "808fb457",
+              // Central L14 cells
+              "808fca65",
+              "808fca67",
+              "808fca69",
+              "808fca6f",
+            ];
+            if (!allowedL14.includes(f.properties.l14Id)) {
+              f.properties.isHidden = true;
+            }
+
+            // Handle image download
+            if (poi.mainImage) {
+              const poiImagesDir = path.join(__dirname, "poiImages");
+              if (!fs.existsSync(poiImagesDir)) fs.mkdirSync(poiImagesDir);
+
+              const imageUrl = poi.mainImage;
+              const imageName = `${poi.poiId}.jpg`;
+              const imagePath = path.join(poiImagesDir, imageName);
+
+              imagePromises.push(
+                downloadImage(imageUrl, imagePath)
+                  .then(() => {
+                    f.properties.photo = imageName;
+                  })
+                  .catch((err) => {
+                    console.error(
+                      `Failed to download image for ${poi.poiId}:`,
+                      err.message,
+                    );
+                  }),
+              );
+            }
+
+            // Assign feature to correct array
+            if (f.properties.type === "gym") featuresGyms.push(f);
+            else if (f.properties.type === "pokestop")
+              featuresPokestops.push(f);
+            else featuresPowerspots.push(f);
+
+            processed.add(f.id);
           }
-
-          if (!f.properties.type) {
-            f.properties.type = "powerspot";
-            f.properties.isDisabled = true;
-          }
-
-          // Hide POIs outside allowed L14 S2 cells
-          const allowedL14 = [
-            // Memorial/De Anza L14 cells
-            "808fb449",
-            "808fb44d",
-            "808fb44f",
-            "808fb451",
-            "808fb453",
-            "808fb455",
-            "808fb457",
-            // Central L14 cells
-            "808fca65",
-            "808fca67",
-            "808fca69",
-            "808fca6f",
-          ];
-          if (!allowedL14.includes(f.properties.l14Id)) {
-            f.properties.isHidden = true;
-          }
-
-          // Handle image download
-          if (poi.mainImage) {
-            const poiImagesDir = path.join(__dirname, "poiImages");
-            if (!fs.existsSync(poiImagesDir)) fs.mkdirSync(poiImagesDir);
-
-            const imageUrl = poi.mainImage;
-            const imageName = `${poi.poiId}.jpg`;
-            const imagePath = path.join(poiImagesDir, imageName);
-
-            imagePromises.push(
-              downloadImage(imageUrl, imagePath)
-                .then(() => {
-                  f.properties.photo = imageName;
-                })
-                .catch((err) => {
-                  console.error(
-                    `Failed to download image for ${poi.poiId}:`,
-                    err.message,
-                  );
-                }),
-            );
-          }
-
-          // Assign feature to correct array
-          if (f.properties.type === "gym") featuresGyms.push(f);
-          else if (f.properties.type === "pokestop") featuresPokestops.push(f);
-          else featuresPowerspots.push(f);
-
-          processed.add(f.id);
         }
-      }
-    });
+      });
+    }
   }
 
   // Wait for all images to finish downloading
