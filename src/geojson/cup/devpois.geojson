@@ -150,7 +150,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04841, 37.327188],
+        "coordinates": [-122.0484, 37.327194],
         "type": "Point"
       },
       "id": 34
@@ -176,7 +176,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Court Order Area",
+        "name": "Lifetime Tennis Bulletin Board",
         "type": "devpoi",
         "source": "Wayfarer",
         "marker-color": "#ffff00",
@@ -184,7 +184,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.044534, 37.32639],
+        "coordinates": [-122.04465, 37.326376],
         "type": "Point"
       },
       "id": 36

@@ -19,7 +19,6 @@ export interface Props {
  */
 export default function MyLocation({ setIsMyLocationOn }: Props) {
   const { map } = useContext(MapContext);
-  const myLocation = useStore((s) => s.myLocation);
   const setMyLocation = useStore((s) => s.setMyLocation);
   const setMyLocationAccuracy = useStore((s) => s.setMyLocationAccuracy);
 
@@ -36,14 +35,6 @@ export default function MyLocation({ setIsMyLocationOn }: Props) {
           });
           setMyLocation([position.coords.latitude, position.coords.longitude]);
           setMyLocationAccuracy(position.coords.accuracy);
-
-          if (map && myLocation === null) {
-            // This my location functionality was started, so fly to my location
-            map.flyTo(
-              [position.coords.latitude, position.coords.longitude],
-              18,
-            );
-          }
         },
         (error) => {
           const MSG_ERR = `An error occurred: ${error.code} - ${error.message}`;
