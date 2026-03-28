@@ -256,6 +256,38 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Glenbrook Main Community Pool",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.047371, 37.325314],
+        "type": "Point"
+      },
+      "id": 41
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenbrook Putting Green",
+        "type": "devpoi",
+        "source": "Wayfarer",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.047991, 37.325286],
+        "type": "Point"
+      },
+      "id": 42
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Ambassador Gym #1",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
