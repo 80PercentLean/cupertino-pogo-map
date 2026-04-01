@@ -312,7 +312,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04394206404689, 37.32587221009055],
+        "coordinates": [-122.04358398914339, 37.32587221009055],
         "type": "Point"
       },
       "id": 1
@@ -328,7 +328,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04406544566154, 37.32561839551724],
+        "coordinates": [-122.04394206404689, 37.32587221009055],
         "type": "Point"
       },
       "id": 2
@@ -344,7 +344,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04442352056505, 37.325541611107674],
+        "coordinates": [-122.04406544566154, 37.32561839551724],
         "type": "Point"
       },
       "id": 3
@@ -360,7 +360,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.0450605452061, 37.325771964100994],
+        "coordinates": [-122.04442352056505, 37.325541611107674],
         "type": "Point"
       },
       "id": 4
@@ -376,7 +376,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04540789127351, 37.32574636935885],
+        "coordinates": [-122.0450605452061, 37.325771964100994],
         "type": "Point"
       },
       "id": 5
@@ -392,7 +392,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04593360424043, 37.32578689436325],
+        "coordinates": [-122.04540789127351, 37.32574636935885],
         "type": "Point"
       },
       "id": 6
@@ -408,7 +408,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04517588019371, 37.32480788945913],
+        "coordinates": [-122.04593360424043, 37.32578689436325],
         "type": "Point"
       },
       "id": 7
@@ -424,7 +424,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04585045576097, 37.320770159295165],
+        "coordinates": [-122.04517588019371, 37.32480788945913],
         "type": "Point"
       },
       "id": 8
@@ -440,7 +440,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04568147659303, 37.32051952705492],
+        "coordinates": [-122.04534888267519, 37.32379474459272],
         "type": "Point"
       },
       "id": 9
@@ -456,7 +456,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04650223255159, 37.320529125751854],
+        "coordinates": [-122.04585045576097, 37.320770159295165],
         "type": "Point"
       },
       "id": 10
@@ -472,7 +472,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.0468294620514, 37.320411808260815],
+        "coordinates": [-122.04568147659303, 37.32051952705492],
         "type": "Point"
       },
       "id": 11
@@ -488,7 +488,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04719692468646, 37.32040114302527],
+        "coordinates": [-122.04650223255159, 37.320529125751854],
         "type": "Point"
       },
       "id": 12
@@ -504,7 +504,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04736322164538, 37.3201537091359],
+        "coordinates": [-122.0468294620514, 37.320411808260815],
         "type": "Point"
       },
       "id": 13
@@ -520,10 +520,42 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04769045114519, 37.32061018136596],
+        "coordinates": [-122.04719692468646, 37.32040114302527],
         "type": "Point"
       },
       "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Gym #15",
+        "type": "devpoi",
+        "source": "Campsite Proposal <Gym>",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04736322164538, 37.3201537091359],
+        "type": "Point"
+      },
+      "id": 15
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambassador Gym #16",
+        "type": "devpoi",
+        "source": "Campsite Proposal <Gym>",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.04769045114519, 37.32061018136596],
+        "type": "Point"
+      },
+      "id": 16
     },
     {
       "type": "Feature",
@@ -539,7 +571,7 @@
         "coordinates": [-122.04631984233858, 37.32003852411642],
         "type": "Point"
       },
-      "id": 15
+      "id": 17
     },
     {
       "type": "Feature",
@@ -555,7 +587,7 @@
         "coordinates": [-122.04619646072389, 37.31976335918864],
         "type": "Point"
       },
-      "id": 16
+      "id": 18
     },
 
     {
@@ -572,7 +604,7 @@
         "coordinates": [-122.04656660556795, 37.319814552739864],
         "type": "Point"
       },
-      "id": 17
+      "id": 19
     },
     {
       "type": "Feature",
@@ -585,10 +617,10 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04666316509248, 37.31952658856068],
+        "coordinates": [-122.04672753810884, 37.32006092121736],
         "type": "Point"
       },
-      "id": 18
+      "id": 20
     },
     {
       "type": "Feature",
@@ -601,39 +633,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.04672753810884, 37.32006092121736],
-        "type": "Point"
-      },
-      "id": 19
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Ambassador PokeStop #6",
-        "type": "devpoi",
-        "source": "Campsite Proposal <PokeStop>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
         "coordinates": [-122.04706683754922, 37.31998733071776],
-        "type": "Point"
-      },
-      "id": 20
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Ambassador PokeStop #7",
-        "type": "devpoi",
-        "source": "Campsite Proposal <PokeStop>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04631179571155, 37.319497792082096],
         "type": "Point"
       },
       "id": 21
