@@ -129,6 +129,17 @@
     },
     {
       "properties": {
+        "name": "Glenbrook Central Community Pool B",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-03-17T08:00:00Z",
+        "created": "2025-03-24T08:00:00Z"
+      },
+      "id": "1652a123c428397dace3f7b9d2dc610f.16"
+    },
+    {
+      "properties": {
         "name": "Class of Muralists",
         "type": "pokestop",
         "source": "Wayfarer",
@@ -247,23 +258,23 @@
     },
     {
       "properties": {
+        "name": "Glenbrook North Map Kiosk",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-03-17T08:00:00Z",
+        "created": "2025-03-28T08:00:00Z"
+      },
+      "id": "2ca52470a705339e90a58bf11ca01a37.16"
+    },
+    {
+      "properties": {
         "name": "The Church of Jesus Christ of Latter-day Saints",
         "type": "pokestop",
         "source": "Wayfarer",
         "ingress": true
       },
       "id": "3030882595d3444f8192e9c204dca3d9.16"
-    },
-    {
-      "properties": {
-        "name": "Memorial Park Racket Sports Sign",
-        "type": "pokestop",
-        "source": "Wayfarer",
-        "submitter": "80PercentLean",
-        "submitted": "2025-09-08T08:00:00Z",
-        "created": "2025-09-30T08:00:00Z"
-      },
-      "id": "318ffc114c0b3aaa9e38ca5c67176f85.16"
     },
     {
       "properties": {
@@ -313,6 +324,17 @@
         "ingress": true
       },
       "id": "44f84a4b74b640bca638a0b80d115674.16"
+    },
+    {
+      "properties": {
+        "name": "Glenbrook West Community Pool",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-07-17T08:00:00Z",
+        "created": "2025-07-22T08:00:00Z"
+      },
+      "id": "48967e1279453816b51dafb341bbf7b2.16"
     },
     {
       "properties": {
@@ -380,6 +402,17 @@
         "ingress": true
       },
       "id": "56bdee89c6b94f2a96d7b3362dc6311b.16"
+    },
+    {
+      "properties": {
+        "name": "Glenbrook Volleyball Court",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-03-17T08:00:00Z",
+        "created": "2025-03-22T08:00:00Z"
+      },
+      "id": "5992fa805d453538a872389d289afcc5.16"
     },
     {
       "properties": {
@@ -461,12 +494,20 @@
       "properties": {
         "name": "Tennis Machine Court at Cupertino Sports Center",
         "type": "pokestop",
-        "source": "Wayfarer",
-        "submitter": "80PercentLean",
-        "submitted": "2025-09-01T08:00:00Z",
-        "created": "2025-10-04T08:00:00Z"
+        "source": "Wayfarer"
       },
       "id": "6ef261efc670361bb068d8341490b273.16"
+    },
+    {
+      "properties": {
+        "name": "Glenbrook Meadow",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-03-17T08:00:00Z",
+        "created": "2025-03-22T08:00:00Z"
+      },
+      "id": "7255704117e137b2876c85b8153b89ec.16"
     },
     {
       "properties": {
@@ -477,6 +518,17 @@
         "updated": "2025-09-16T08:00:00Z"
       },
       "id": "77ce44fa26da3aacbb0f0d2f8b02d8bb.16"
+    },
+    {
+      "properties": {
+        "name": "Glenbrook Creekside Hub",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-03-17T08:00:00Z",
+        "created": "2025-03-23T08:00:00Z"
+      },
+      "id": "78b888fea2433baea65779e4cf79543a.16"
     },
     {
       "properties": {
@@ -509,6 +561,28 @@
     },
     {
       "properties": {
+        "name": "Glenbrook Putting Green",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-03-27T08:00:00Z",
+        "created": "2025-03-29T08:00:00Z"
+      },
+      "id": "7f4220569669322c8dab384ca239443a.16"
+    },
+    {
+      "properties": {
+        "name": "Glenbrook Chess Table",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-03-17T08:00:00Z",
+        "created": "2025-03-24T08:00:00Z"
+      },
+      "id": "7f4c53e1d0613091b0e63c2f3e5fd93e.16"
+    },
+    {
+      "properties": {
         "name": "Basketball Courts at Cupertino Sports Center",
         "type": "pokestop",
         "source": "Wayfarer",
@@ -537,7 +611,6 @@
       "id": "82f0d57b2af13949b6628820c933ec16.16"
     },
     {
-      "type": "Feature",
       "properties": {
         "name": "Tennis Court 4 at Cupertino Sports Center",
         "type": "pokestop",
@@ -651,7 +724,6 @@
       "id": "a201619465ec38a592a00e1043ae9917.16"
     },
     {
-      "type": "Feature",
       "properties": {
         "name": "Tennis Court 16 at Cupertino Sports Center",
         "type": "pokestop",
@@ -661,6 +733,17 @@
         "created": "2025-10-12T08:00:00Z"
       },
       "id": "a2316f1f23333f8b9a7841a4dca2c451.16"
+    },
+    {
+      "properties": {
+        "name": "Glenbrook Main Community Pool",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-03-26T08:00:00Z",
+        "created": "2025-03-31T08:00:00Z"
+      },
+      "id": "a536c851848738e6a6fff0a79dc4983b.16"
     },
     {
       "properties": {
@@ -730,6 +813,17 @@
     },
     {
       "properties": {
+        "name": "Glenbrook Central Community Pool A",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-03-18T08:00:00Z",
+        "created": "2025-03-23T08:00:00Z"
+      },
+      "id": "b4b159c0c1393b5d8cba02f19d83e662.16"
+    },
+    {
+      "properties": {
         "name": "California History Center",
         "type": "pokestop",
         "source": "Wayfarer",
@@ -778,11 +872,14 @@
     },
     {
       "properties": {
-        "name": "Pickleball at Memorial Park",
+        "name": "Glenbrook Central Map Kiosk",
         "type": "pokestop",
-        "source": "Wayfarer"
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-03-17T08:00:00Z",
+        "created": "2025-03-23T08:00:00Z"
       },
-      "id": "c28d519e7b4d37c8ae3054ec1a867972.16"
+      "id": "c598512706c13d4b9c3d1220391e0e35.16"
     },
     {
       "properties": {

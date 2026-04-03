@@ -11,6 +11,17 @@
     },
     {
       "properties": {
+        "name": "Lifetime Tennis Bulletin Board",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-03-24T08:00:00Z",
+        "created": "2025-03-28T08:00:00Z"
+      },
+      "id": "0bd8617af5043ab7ad638c73aff5915d.16"
+    },
+    {
+      "properties": {
         "name": "Memorial Park BBQ Spot B",
         "type": "powerspot",
         "source": "Wayfarer",
