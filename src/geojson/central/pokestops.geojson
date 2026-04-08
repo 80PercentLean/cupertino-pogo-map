@@ -2,1317 +2,1317 @@
   "type": "FeatureCollection",
   "features": [
     {
-      "type": "Feature",
+      "id": "066bf67a99943bc6af2c18681d10e78b.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Central Park Backboard Tennis Court",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca69",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "066bf67a99943bc6af2c18681d10e78b.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974184, 37.344655],
         "type": "Point"
       },
-      "id": "066bf67a99943bc6af2c18681d10e78b.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "0a1024c828354ba3850d90004e51a52e.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Pure Water Stage Mural",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "0a1024c828354ba3850d90004e51a52e.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.973227, 37.338829],
         "type": "Point"
       },
-      "id": "0a1024c828354ba3850d90004e51a52e.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "0acae838a5594aebac109bf05de633bc.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "St. Justin Adoration Chapel",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "0acae838a5594aebac109bf05de633bc.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.975188, 37.339164],
         "type": "Point"
       },
-      "id": "0acae838a5594aebac109bf05de633bc.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "0ae4793790633f0ca795d121a535803e.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Central Park Picnic Area",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "0ae4793790633f0ca795d121a535803e.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.977409, 37.34069],
         "type": "Point"
       },
-      "id": "0ae4793790633f0ca795d121a535803e.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "0c7c41a22c404fbf999a8b039802d6f9.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Tony Sanchez Field",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca69",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "0c7c41a22c404fbf999a8b039802d6f9.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.973636, 37.344295],
         "type": "Point"
       },
-      "id": "0c7c41a22c404fbf999a8b039802d6f9.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "0eb27108e5304965b80cccffaba1b145.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Saratoga Creek Discover Water Bench",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "0eb27108e5304965b80cccffaba1b145.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.980403, 37.33803],
         "type": "Point"
       },
-      "id": "0eb27108e5304965b80cccffaba1b145.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "1bdcc6ff2d23468388e09603e478abfe.12",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Post Office",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "1bdcc6ff2d23468388e09603e478abfe.12.jpg"
       },
       "geometry": {
         "coordinates": [-121.978036, 37.345516],
         "type": "Point"
       },
-      "id": "1bdcc6ff2d23468388e09603e478abfe.12"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "1cdc415a64ce46f18beb536fa33741e2.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "West Tennis Courts at Central Park",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "1cdc415a64ce46f18beb536fa33741e2.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976093, 37.343484],
         "type": "Point"
       },
-      "id": "1cdc415a64ce46f18beb536fa33741e2.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "200a432d91be4f0db989c206d5ee63d9.12",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Library Statue",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "200a432d91be4f0db989c206d5ee63d9.12.jpg"
       },
       "geometry": {
         "coordinates": [-121.974002, 37.341006],
         "type": "Point"
       },
-      "id": "200a432d91be4f0db989c206d5ee63d9.12"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "2624f478611747e4800e67f2c9584843.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Bill Wilson Park Playground",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "2624f478611747e4800e67f2c9584843.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.979069, 37.339755],
         "type": "Point"
       },
-      "id": "2624f478611747e4800e67f2c9584843.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "26375f9402493cefb8dc405ecb81294d.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Kiely Plaza Sign",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "26375f9402493cefb8dc405ecb81294d.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.977859, 37.345863],
         "type": "Point"
       },
-      "id": "26375f9402493cefb8dc405ecb81294d.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "2785b79a4d3546409b7481c48d7545f9.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Jerry Scott Memorial",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "2785b79a4d3546409b7481c48d7545f9.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974733, 37.34168],
         "type": "Point"
       },
-      "id": "2785b79a4d3546409b7481c48d7545f9.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "2a07973f1fd03b76874ef0bd31ca11cd.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Glittering Archway at Central Park Library",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "2a07973f1fd03b76874ef0bd31ca11cd.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.973091, 37.33971],
         "type": "Point"
       },
-      "id": "2a07973f1fd03b76874ef0bd31ca11cd.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "356e80596630361a88d2378819d0ce73.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "1000 Kiely Pool",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "356e80596630361a88d2378819d0ce73.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.978351, 37.34456],
         "type": "Point"
       },
-      "id": "356e80596630361a88d2378819d0ce73.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "38fdddfce5823823880d3d4751a07bad.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Woodsborough Pool Central",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "38fdddfce5823823880d3d4751a07bad.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.980237, 37.342866],
         "type": "Point"
       },
-      "id": "38fdddfce5823823880d3d4751a07bad.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "3da7ff9ea8174ee288b42c5894d0596a.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "New Spring Christian Church",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "3da7ff9ea8174ee288b42c5894d0596a.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.979757, 37.338077],
         "type": "Point"
       },
-      "id": "3da7ff9ea8174ee288b42c5894d0596a.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "3dc5b115dd973cdcbcd6b64838aacdd5.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Erik's Stove",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "3dc5b115dd973cdcbcd6b64838aacdd5.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.977736, 37.339236],
         "type": "Point"
       },
-      "id": "3dc5b115dd973cdcbcd6b64838aacdd5.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "4215d73378b548c89c39f59849ac4b7a.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Central Park Playground",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "4215d73378b548c89c39f59849ac4b7a.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976804, 37.341649],
         "type": "Point"
       },
-      "id": "4215d73378b548c89c39f59849ac4b7a.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "4366b3dde1b742dfb30fa24a7e8c0f26.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Central Park Library Entrance Sign",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "4366b3dde1b742dfb30fa24a7e8c0f26.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974108, 37.339363],
         "type": "Point"
       },
-      "id": "4366b3dde1b742dfb30fa24a7e8c0f26.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "47dd4c3ef3e138e9a0892ab6b6f3a322.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Swim School",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "47dd4c3ef3e138e9a0892ab6b6f3a322.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.97364, 37.341861],
         "type": "Point"
       },
-      "id": "47dd4c3ef3e138e9a0892ab6b6f3a322.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "4fc4c54c416f3e9f87b37aa2ffd1cc9b.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Homestead Garden Pool",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "4fc4c54c416f3e9f87b37aa2ffd1cc9b.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.980681, 37.337483],
         "type": "Point"
       },
-      "id": "4fc4c54c416f3e9f87b37aa2ffd1cc9b.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "50ffa38396644142af2543ef236a6042.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Practice Backstop 2",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca69",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "50ffa38396644142af2543ef236a6042.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974952, 37.343994],
         "type": "Point"
       },
-      "id": "50ffa38396644142af2543ef236a6042.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "5ef271054b294dd794b45a34d138dd1e.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Lawn Bowling Green",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "5ef271054b294dd794b45a34d138dd1e.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.973469, 37.341377],
         "type": "Point"
       },
-      "id": "5ef271054b294dd794b45a34d138dd1e.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "5f24471a012741a5874e91c268437dab.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Bill Wilson, Jr. Park",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "5f24471a012741a5874e91c268437dab.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.977795, 37.339948],
         "type": "Point"
       },
-      "id": "5f24471a012741a5874e91c268437dab.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "6803168177823f0d907fe17121bf281e.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Casa Santa Clara Pool",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "6803168177823f0d907fe17121bf281e.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.978397, 37.338308],
         "type": "Point"
       },
-      "id": "6803168177823f0d907fe17121bf281e.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "69eca7dc80c939b09d772d59385ee0f2.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Hearth Community Pool",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "69eca7dc80c939b09d772d59385ee0f2.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.979149, 37.341281],
         "type": "Point"
       },
-      "id": "69eca7dc80c939b09d772d59385ee0f2.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "7834e8ebeacd3f8687d1ccc17e269fb3.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Via Siena Pergola",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "7834e8ebeacd3f8687d1ccc17e269fb3.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.981261, 37.3407],
         "type": "Point"
       },
-      "id": "7834e8ebeacd3f8687d1ccc17e269fb3.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "7e3e4a611a4f3d2b8ec9f91ac2e9ad02.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "1000 Kiely Basketball Court",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "7e3e4a611a4f3d2b8ec9f91ac2e9ad02.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.979152, 37.344602],
         "type": "Point"
       },
-      "id": "7e3e4a611a4f3d2b8ec9f91ac2e9ad02.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "82c1e3ec4fab4429a277c5274f3247c6.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Debbie Daly Memorial Bench",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "82c1e3ec4fab4429a277c5274f3247c6.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974863, 37.342144],
         "type": "Point"
       },
-      "id": "82c1e3ec4fab4429a277c5274f3247c6.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "841a80c4c5784b748e27c902f1bc9dd6.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "In Memory of Joseph Base",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "841a80c4c5784b748e27c902f1bc9dd6.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.975687, 37.340486],
         "type": "Point"
       },
-      "id": "841a80c4c5784b748e27c902f1bc9dd6.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "8a827acacf4345418a5e14835c67ad75.11",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Erik Clayton Kesterson Memorial",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "8a827acacf4345418a5e14835c67ad75.11.jpg"
       },
       "geometry": {
         "coordinates": [-121.976965, 37.342279],
         "type": "Point"
       },
-      "id": "8a827acacf4345418a5e14835c67ad75.11"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "8c2832c267093a969177c5f85b64a973.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Hearth Library Fireplace",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "8c2832c267093a969177c5f85b64a973.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.979638, 37.340672],
         "type": "Point"
       },
-      "id": "8c2832c267093a969177c5f85b64a973.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "8dc8d0ca46664d99953fd64436b25b76.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "St. Justin Community Garden",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "8dc8d0ca46664d99953fd64436b25b76.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974216, 37.339836],
         "type": "Point"
       },
-      "id": "8dc8d0ca46664d99953fd64436b25b76.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "9205d467ef8335a1bda6a2b27b67b0b4.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "1000 Kiely Play Structure 2",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "9205d467ef8335a1bda6a2b27b67b0b4.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.978309, 37.344134],
         "type": "Point"
       },
-      "id": "9205d467ef8335a1bda6a2b27b67b0b4.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "93f4307ec8a448f2961bf48ec8400212.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Central Park Vertical Fountain",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "93f4307ec8a448f2961bf48ec8400212.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.975067, 37.341442],
         "type": "Point"
       },
-      "id": "93f4307ec8a448f2961bf48ec8400212.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "93f8ca5a027f3c01a1da080cb9a00cc2.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Woodsborough Community Entrance Leaf-Art Curving Sign",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "93f8ca5a027f3c01a1da080cb9a00cc2.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.977836, 37.342825],
         "type": "Point"
       },
-      "id": "93f8ca5a027f3c01a1da080cb9a00cc2.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "979b11ee0fbb30a8be114453499b96ca.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Hearth Statue",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "979b11ee0fbb30a8be114453499b96ca.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.978249, 37.341073],
         "type": "Point"
       },
-      "id": "979b11ee0fbb30a8be114453499b96ca.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "9a0f8172a979425bb3be16f3dbdb0d6c.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Series Three",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "9a0f8172a979425bb3be16f3dbdb0d6c.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.97443, 37.341372],
         "type": "Point"
       },
-      "id": "9a0f8172a979425bb3be16f3dbdb0d6c.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "9a56e9d3f35f4463991fbace7ef3eeb2.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Sesquicentennial Year, 1852-2002, City Of Santa Clara Central Park Library",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "9a56e9d3f35f4463991fbace7ef3eeb2.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.973222, 37.340866],
         "type": "Point"
       },
-      "id": "9a56e9d3f35f4463991fbace7ef3eeb2.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "9b9eb961da6933e5b9890ac165abd340.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Stan's Donuts",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "9b9eb961da6933e5b9890ac165abd340.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.972902, 37.338981],
         "type": "Point"
       },
-      "id": "9b9eb961da6933e5b9890ac165abd340.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "9ed6a7336951328fa9e8fb322283df64.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Bocce Playground",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "9ed6a7336951328fa9e8fb322283df64.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.979518, 37.341421],
         "type": "Point"
       },
-      "id": "9ed6a7336951328fa9e8fb322283df64.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "9f40e441e9f43a72805a0013544247d6.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Mariposa Plaza",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "9f40e441e9f43a72805a0013544247d6.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974224, 37.339011],
         "type": "Point"
       },
-      "id": "9f40e441e9f43a72805a0013544247d6.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "a2750eba14514a39a54da3cc52986fcc.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Community Recreation Center Welcome Sign",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "a2750eba14514a39a54da3cc52986fcc.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.977471, 37.34334],
         "type": "Point"
       },
-      "id": "a2750eba14514a39a54da3cc52986fcc.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "a283524bda383150b7dbf38ae9ba616a.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Parkview Swimming Pool",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "a283524bda383150b7dbf38ae9ba616a.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.975955, 37.339384],
         "type": "Point"
       },
-      "id": "a283524bda383150b7dbf38ae9ba616a.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "aca01ccb6f654a1a86cc3e346f851017.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "International Swim Center",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "aca01ccb6f654a1a86cc3e346f851017.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.97336, 37.342241],
         "type": "Point"
       },
-      "id": "aca01ccb6f654a1a86cc3e346f851017.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "b1e37fdc59f54099840a2b0dc0f367e7.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara PAL Softball Field 2",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca69",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "b1e37fdc59f54099840a2b0dc0f367e7.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.975193, 37.342916],
         "type": "Point"
       },
-      "id": "b1e37fdc59f54099840a2b0dc0f367e7.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "b2ad23d6d46044ad8eaf3e40e93b27d1.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Caffino",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "b2ad23d6d46044ad8eaf3e40e93b27d1.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976271, 37.33822],
         "type": "Point"
       },
-      "id": "b2ad23d6d46044ad8eaf3e40e93b27d1.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "b5d48eaf287c37749e902f54e800a990.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "1000 Kiely Bocce Court",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "b5d48eaf287c37749e902f54e800a990.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.979042, 37.344036],
         "type": "Point"
       },
-      "id": "b5d48eaf287c37749e902f54e800a990.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "be650b56825b3db8935cb38faa69063a.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Ava’s Bridge",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "be650b56825b3db8935cb38faa69063a.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976447, 37.341903],
         "type": "Point"
       },
-      "id": "be650b56825b3db8935cb38faa69063a.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "c2653d298cb445b19f562085499cfad7.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Hoops without a hoop",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "c2653d298cb445b19f562085499cfad7.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.981293, 37.336671],
         "type": "Point"
       },
-      "id": "c2653d298cb445b19f562085499cfad7.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "c286af8768bc34809bf333a4589b861a.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Light of the Lord Community Church Entrance Sign",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "c286af8768bc34809bf333a4589b861a.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.970352, 37.34027],
         "type": "Point"
       },
-      "id": "c286af8768bc34809bf333a4589b861a.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "c83f3ab275fc3d54b0c5ba8ce64fb61f.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Via Siena Pool",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "c83f3ab275fc3d54b0c5ba8ce64fb61f.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.98079, 37.340644],
         "type": "Point"
       },
-      "id": "c83f3ab275fc3d54b0c5ba8ce64fb61f.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "ccdc3d298c194a409d5888757e6021a4.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "St. Justin Parish Community",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "ccdc3d298c194a409d5888757e6021a4.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974837, 37.33923],
         "type": "Point"
       },
-      "id": "ccdc3d298c194a409d5888757e6021a4.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "cceae9dffbf5314f9676084ace08a02b.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Woodsborough Pool East",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "cceae9dffbf5314f9676084ace08a02b.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.978319, 37.343064],
         "type": "Point"
       },
-      "id": "cceae9dffbf5314f9676084ace08a02b.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "cdb72bb936d443ccb0379a2b47a8e2b4.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Aurelian Season",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "cdb72bb936d443ccb0379a2b47a8e2b4.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974463, 37.338364],
         "type": "Point"
       },
-      "id": "cdb72bb936d443ccb0379a2b47a8e2b4.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "cf585973b56f4839abdbe68b8aab5ef7.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Kunjip Restaurant",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "cf585973b56f4839abdbe68b8aab5ef7.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.978767, 37.345878],
         "type": "Point"
       },
-      "id": "cf585973b56f4839abdbe68b8aab5ef7.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "d6026d04a81c4012839d7c14da65fca4.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Tennis Center",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca69",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "d6026d04a81c4012839d7c14da65fca4.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.973363, 37.344784],
         "type": "Point"
       },
-      "id": "d6026d04a81c4012839d7c14da65fca4.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "de6056e2dc1f4ee18f1370dacd5bedc3.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Woodsborough Play Structure South",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "de6056e2dc1f4ee18f1370dacd5bedc3.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.981056, 37.342277],
         "type": "Point"
       },
-      "id": "de6056e2dc1f4ee18f1370dacd5bedc3.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "e8677e1bd77d33d3b7017f4d65866639.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Central Park Sign",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "e8677e1bd77d33d3b7017f4d65866639.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.977433, 37.341755],
         "type": "Point"
       },
-      "id": "e8677e1bd77d33d3b7017f4d65866639.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "ed4a223cc5de4e17ae431af95c178ee2.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara PAL Softball T-Ball Field 2",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "ed4a223cc5de4e17ae431af95c178ee2.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.973388, 37.342948],
         "type": "Point"
       },
-      "id": "ed4a223cc5de4e17ae431af95c178ee2.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "efb769b118f63318b66e76f75b4c6c9a.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Richard M. Nixon 1970 USPS Dedication Plaque",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "efb769b118f63318b66e76f75b4c6c9a.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.978598, 37.345392],
         "type": "Point"
       },
-      "id": "efb769b118f63318b66e76f75b4c6c9a.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "f07d9fad66ce4c8bba7200f15e1595ee.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Our Lady of Guadalupe Mosaic",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "f07d9fad66ce4c8bba7200f15e1595ee.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974759, 37.339638],
         "type": "Point"
       },
-      "id": "f07d9fad66ce4c8bba7200f15e1595ee.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "f3bf740afcf7423b9e62ac67bcac9ebf.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Series 4 Strengthening",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca69",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "f3bf740afcf7423b9e62ac67bcac9ebf.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974972, 37.342586],
         "type": "Point"
       },
-      "id": "f3bf740afcf7423b9e62ac67bcac9ebf.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "f5d7c5afa93233d48dcdc1cbd4d21763.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Bench Art at Kiely",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "f5d7c5afa93233d48dcdc1cbd4d21763.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.97681, 37.338651],
         "type": "Point"
       },
-      "id": "f5d7c5afa93233d48dcdc1cbd4d21763.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "f9df38add1cc4a2f81aeafdd38769119.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Situp Station on Fitness Trail",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "f9df38add1cc4a2f81aeafdd38769119.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976553, 37.340924],
         "type": "Point"
       },
-      "id": "f9df38add1cc4a2f81aeafdd38769119.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "fd677db6a63242f98ed3684bacd5dbc2.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Community Recreation Center",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "fd677db6a63242f98ed3684bacd5dbc2.16.jpg",
         "subtype": "showcase"
       },
@@ -1320,27 +1320,27 @@
         "coordinates": [-121.976711, 37.343026],
         "type": "Point"
       },
-      "id": "fd677db6a63242f98ed3684bacd5dbc2.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "fe9f0f59aba84ca18ae83edd49f99ed2.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Kingdom Hall of Jehovah's Witnesses",
+        "type": "pokestop",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "pokestop",
         "photo": "fe9f0f59aba84ca18ae83edd49f99ed2.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.979273, 37.337748],
         "type": "Point"
       },
-      "id": "fe9f0f59aba84ca18ae83edd49f99ed2.16"
+      "type": "Feature"
     }
   ]
 }

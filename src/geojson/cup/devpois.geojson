@@ -67,8 +67,8 @@
         "name": "Ambassador Gym #1",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -83,8 +83,8 @@
         "name": "Ambassador Gym #2",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -99,8 +99,8 @@
         "name": "Ambassador Gym #3",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -115,8 +115,8 @@
         "name": "Ambassador Gym #4",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -131,8 +131,8 @@
         "name": "Ambassador Gym #5",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -147,8 +147,8 @@
         "name": "Ambassador Gym #6",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -163,8 +163,8 @@
         "name": "Ambassador Gym #7",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -179,8 +179,8 @@
         "name": "Ambassador Gym #8",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -195,8 +195,8 @@
         "name": "Ambassador Gym #9",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -211,8 +211,8 @@
         "name": "Ambassador Gym #10",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -227,8 +227,8 @@
         "name": "Ambassador Gym #11",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -243,8 +243,8 @@
         "name": "Ambassador Gym #12",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -259,8 +259,8 @@
         "name": "Ambassador Gym #13",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -275,8 +275,8 @@
         "name": "Ambassador Gym #14",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -291,8 +291,8 @@
         "name": "Ambassador Gym #15",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -307,8 +307,8 @@
         "name": "Ambassador Gym #16",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -323,8 +323,8 @@
         "name": "Ambassador PokeStop #1",
         "type": "devpoi",
         "source": "Campsite Proposal <PokeStop>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -339,8 +339,8 @@
         "name": "Ambassador PokeStop #2",
         "type": "devpoi",
         "source": "Campsite Proposal <PokeStop>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -356,8 +356,8 @@
         "name": "Ambassador PokeStop #3",
         "type": "devpoi",
         "source": "Campsite Proposal <PokeStop>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -372,8 +372,8 @@
         "name": "Ambassador PokeStop #4",
         "type": "devpoi",
         "source": "Campsite Proposal <PokeStop>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -388,8 +388,8 @@
         "name": "Ambassador PokeStop #5",
         "type": "devpoi",
         "source": "Campsite Proposal <PokeStop>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -404,8 +404,8 @@
         "name": "Ambassador Power Spot #1",
         "type": "devpoi",
         "source": "Campsite Proposal <Power Spot>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -420,8 +420,8 @@
         "name": "Ambassador Power Spot #2",
         "type": "devpoi",
         "source": "Campsite Proposal <Power Spot>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -436,8 +436,8 @@
         "name": "Ambassador Power Spot #3",
         "type": "devpoi",
         "source": "Campsite Proposal <Power Spot>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {
@@ -452,8 +452,8 @@
         "name": "Ambassador Power Spot #4",
         "type": "devpoi",
         "source": "Campsite Proposal <Power Spot>",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ffff00",
+        "marker-size": "small",
         "marker-symbol": "circle"
       },
       "geometry": {

@@ -7,8 +7,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
         "marker-symbol": "circle",
         "type": "powerspot",
         "removed": "2025-03-17T08:00:00Z"
@@ -26,8 +26,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
         "marker-symbol": "circle",
         "type": "powerspot",
         "removed": "2025-03-17T08:00:00Z"

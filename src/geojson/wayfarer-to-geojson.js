@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 /* Set input data file path. */
-const dir = "cup";
+const dir = "cupertino";
 const dataInput = path.join(__dirname, `${dir}/wayfarer.json`);
 const gymsExtraInput = path.join(__dirname, `${dir}/gyms-extra.json`);
 const pokestopsExtraInput = path.join(__dirname, `${dir}/pokestops-extra.json`);
@@ -103,22 +103,16 @@ const processData = async () => {
             typeof poi.poiId === "string"
           ) {
             const f = {
-              type: "Feature",
+              id: poi.poiId,
               properties: {
-                name: poi.title,
-                source: "Wayfarer",
-                isCommunityContributed: poi.isCommunityContributed,
-                l14Id: item.metadata.s2CellId,
-                "marker-color": "#00fcff",
-                "marker-size": "medium",
-                "marker-symbol": "circle",
                 checked,
+                name: poi.title,
               },
               geometry: {
                 coordinates: [poi.lngE6 / 1e6, poi.latE6 / 1e6],
                 type: "Point",
               },
-              id: poi.poiId,
+              type: "Feature",
             };
 
             if (Array.isArray(poi.gmo) && poi.gmo[0]) {
@@ -129,9 +123,27 @@ const processData = async () => {
             }
 
             if (!f.properties.type) {
-              f.properties.type = "powerspot";
               f.properties.isDisabled = true;
+              f.properties.type = "powerspot";
             }
+
+            if (f.properties.type === "gym") {
+              f.properties["marker-color"] = "#00fcff";
+              f.properties["marker-size"] = "medium";
+              f.properties["marker-symbol"] = "circle";
+            } else if (f.properties.type === "pokestop") {
+              f.properties["marker-color"] = "#ff2600";
+              f.properties["marker-size"] = "large";
+              f.properties["marker-symbol"] = "circle";
+            } else if (f.properties.type === "powerspot") {
+              f.properties["marker-color"] = "#ff40ff";
+              f.properties["marker-size"] = "small";
+              f.properties["marker-symbol"] = "circle";
+            }
+
+            f.properties.source = "Wayfarer";
+            f.properties.isCommunityContributed = poi.isCommunityContributed;
+            f.properties.l14Id = item.metadata.s2CellId;
 
             // Hide POIs outside allowed L14 S2 cells
             const allowedL14 = [

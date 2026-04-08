@@ -2,406 +2,406 @@
   "type": "FeatureCollection",
   "features": [
     {
-      "type": "Feature",
+      "id": "024b183a187848fe8f44e7f2d73f9f88.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara City Library",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.97373, 37.340569],
         "type": "Point"
       },
-      "id": "024b183a187848fe8f44e7f2d73f9f88.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "04ef486c00f63d32ac881e755d8b318d.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Magical Bridge playground signage",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
         "photo": "04ef486c00f63d32ac881e755d8b318d.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976903, 37.341205],
         "type": "Point"
       },
-      "id": "04ef486c00f63d32ac881e755d8b318d.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "05eaf2d0c0f74d17981d76eb472cb2b5.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Cooking Cooking",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.977777, 37.337777],
         "type": "Point"
       },
-      "id": "05eaf2d0c0f74d17981d76eb472cb2b5.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "064d569dc6304038b9ab23ad6ce9e8c9.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Togo's",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978258, 37.346183],
         "type": "Point"
       },
-      "id": "064d569dc6304038b9ab23ad6ce9e8c9.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "0845a643a8124d28afeee3bb9e791123.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Erik's DeliCafe",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.977734, 37.339199],
         "type": "Point"
       },
-      "id": "0845a643a8124d28afeee3bb9e791123.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "08afb072b12247658f96906d52d18f02.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "BP",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.976979, 37.337929],
         "type": "Point"
       },
-      "id": "08afb072b12247658f96906d52d18f02.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "0a02291d06c832178530389cf99936b7.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Veterans Memorial Name Sign",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "0a02291d06c832178530389cf99936b7.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.9775, 37.342514],
         "type": "Point"
       },
-      "id": "0a02291d06c832178530389cf99936b7.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "0a42a215247a43e1af173507a98fd17f.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Western Union",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.974179, 37.338305],
         "type": "Point"
       },
-      "id": "0a42a215247a43e1af173507a98fd17f.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "0a5e24ba57ec4191bc11886e07c809de.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Fausto Electric",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978019, 37.344429],
         "type": "Point"
       },
-      "id": "0a5e24ba57ec4191bc11886e07c809de.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "0df134f5a6e839a9a8c1b27789a19a33.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Central Park Pond",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "0df134f5a6e839a9a8c1b27789a19a33.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974984, 37.341606],
         "type": "Point"
       },
-      "id": "0df134f5a6e839a9a8c1b27789a19a33.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "0f4fb4df22ee42699ea30cae32de0cfb.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Hearth Apartments",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978926, 37.341377],
         "type": "Point"
       },
-      "id": "0f4fb4df22ee42699ea30cae32de0cfb.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "1103233ea28c43839ef8ea429d8f8bbc.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Chase Mortgage",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.977207, 37.338598],
         "type": "Point"
       },
-      "id": "1103233ea28c43839ef8ea429d8f8bbc.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "1168034ee88a4e328f9eab67460aaadd.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Blue Sky Day Spa",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.976921, 37.3376],
         "type": "Point"
       },
-      "id": "1168034ee88a4e328f9eab67460aaadd.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "12e2cdf886ba4447b4befacaab5ced7c.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Starbucks",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.974808, 37.33803],
         "type": "Point"
       },
-      "id": "12e2cdf886ba4447b4befacaab5ced7c.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "13af55b7fd443ab59f1561b68b78c614.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "St Justin’s Parish Information Board",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
         "photo": "13af55b7fd443ab59f1561b68b78c614.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974551, 37.339787],
         "type": "Point"
       },
-      "id": "13af55b7fd443ab59f1561b68b78c614.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "15b6a55f381736489b78e25aa3ba653d.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "St. Justins Stained Glass Art",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "15b6a55f381736489b78e25aa3ba653d.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974701, 37.339364],
         "type": "Point"
       },
-      "id": "15b6a55f381736489b78e25aa3ba653d.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "173a0ed108a1400c8b91fe0d2d73d8d2.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "SCCHGS",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.973571, 37.340526],
         "type": "Point"
       },
-      "id": "173a0ed108a1400c8b91fe0d2d73d8d2.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "1986a7dc23f5460cbd69565f9377d40c.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Vive la Vie Massage",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.977766, 37.339145],
         "type": "Point"
       },
-      "id": "1986a7dc23f5460cbd69565f9377d40c.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "19970dd27cf245dd81dc536df9443c50.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Greenyard Landscaping & Demolition",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978361, 37.345454],
         "type": "Point"
       },
-      "id": "19970dd27cf245dd81dc536df9443c50.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "1a1c679661be37688e100fa8225ac08e.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Central Park Picnic Area",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "1a1c679661be37688e100fa8225ac08e.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976661, 37.341773],
         "type": "Point"
       },
-      "id": "1a1c679661be37688e100fa8225ac08e.16"
+      "type": "Feature"
     },
     {
       "type": "Feature",
@@ -423,946 +423,946 @@
       "id": "1c18cdc7fa8833c3abfcdba0d6d4b5be.16"
     },
     {
-      "type": "Feature",
+      "id": "1cc912e1b0a23b378292ca2803c6d5e7.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara's Magical Bridge Playground",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "1cc912e1b0a23b378292ca2803c6d5e7.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976926, 37.34145],
         "type": "Point"
       },
-      "id": "1cc912e1b0a23b378292ca2803c6d5e7.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "1ddc96aa9cc03bcd9d09d78af204fbf3.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Chess board bench",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
         "photo": "1ddc96aa9cc03bcd9d09d78af204fbf3.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976516, 37.341533],
         "type": "Point"
       },
-      "id": "1ddc96aa9cc03bcd9d09d78af204fbf3.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "229088f543c43bc98ab707657339e787.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Central Park Playground near Senior Center",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
         "photo": "229088f543c43bc98ab707657339e787.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976203, 37.343039],
         "type": "Point"
       },
-      "id": "229088f543c43bc98ab707657339e787.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "234c4c642a434ce5a289bdb1fbe9278d.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Ewha Dang",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978108, 37.346063],
         "type": "Point"
       },
-      "id": "234c4c642a434ce5a289bdb1fbe9278d.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "235255fcad384e2ebcf5a349210e30b6.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Central Park Footbridge",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.976139, 37.342759],
         "type": "Point"
       },
-      "id": "235255fcad384e2ebcf5a349210e30b6.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "259d746144e63df4bfb166707e78dcf7.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Central Park Field Scoreboard",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca69",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
         "photo": "259d746144e63df4bfb166707e78dcf7.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974523, 37.342865],
         "type": "Point"
       },
-      "id": "259d746144e63df4bfb166707e78dcf7.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "283368601cee4056ae24085707daa83b.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Proper Hour Handyman Service",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978746, 37.341476],
         "type": "Point"
       },
-      "id": "283368601cee4056ae24085707daa83b.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "2c36bf04d4b24d94a05ead504b07c8cc.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Chase Bank",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.977344, 37.338603],
         "type": "Point"
       },
-      "id": "2c36bf04d4b24d94a05ead504b07c8cc.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "2f4aa8f8327e4e6992ac3be92d2c23a5.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Central Park Amphitheater",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.976891, 37.340801],
         "type": "Point"
       },
-      "id": "2f4aa8f8327e4e6992ac3be92d2c23a5.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "300c2aafb4824fdc8ca8d974f6628fb7.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Ewha Dang",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.979103, 37.345859],
         "type": "Point"
       },
-      "id": "300c2aafb4824fdc8ca8d974f6628fb7.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "30e505816e1c4843a40c9cee8046d1b0.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "7-Eleven",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978108, 37.346063],
         "type": "Point"
       },
-      "id": "30e505816e1c4843a40c9cee8046d1b0.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "3169001a6a0542ec8e34db30b30d72ca.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "The UPS Store 4636",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.976094, 37.338174],
         "type": "Point"
       },
-      "id": "3169001a6a0542ec8e34db30b30d72ca.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "31ff47052e8034e9b52b4d5743f2c5ba.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Kindness Corner",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "31ff47052e8034e9b52b4d5743f2c5ba.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976872, 37.341772],
         "type": "Point"
       },
-      "id": "31ff47052e8034e9b52b4d5743f2c5ba.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "32f738dc2e2e400bba6f81a3aef130fd.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Basketball Courts at Central Park",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
         "photo": "32f738dc2e2e400bba6f81a3aef130fd.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976551, 37.34237],
         "type": "Point"
       },
-      "id": "32f738dc2e2e400bba6f81a3aef130fd.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "34378a83370241018d1ee79d241dd25f.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Center Park Bridge",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
         "photo": "34378a83370241018d1ee79d241dd25f.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976295, 37.340675],
         "type": "Point"
       },
-      "id": "34378a83370241018d1ee79d241dd25f.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "3869613d27ac383a92c6fd56f711f859.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Sculpture in Magical Bridge Playground",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "3869613d27ac383a92c6fd56f711f859.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976316, 37.341375],
         "type": "Point"
       },
-      "id": "3869613d27ac383a92c6fd56f711f859.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "38b4560c1bb3334d952c4857eb8852c1.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Central Park Picnic Area",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "38b4560c1bb3334d952c4857eb8852c1.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976992, 37.340902],
         "type": "Point"
       },
-      "id": "38b4560c1bb3334d952c4857eb8852c1.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "38df85549710366cbcdc394bd983f186.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Central Park Picnic Area",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "38df85549710366cbcdc394bd983f186.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974405, 37.341583],
         "type": "Point"
       },
-      "id": "38df85549710366cbcdc394bd983f186.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "391688b4640b410082d68b7789b9cd44.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Pet Hospital",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.9778, 37.339244],
         "type": "Point"
       },
-      "id": "391688b4640b410082d68b7789b9cd44.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "3918a7a63b9346eeb04d1d750d2ceb35.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Empress Hair Design",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978312, 37.34619],
         "type": "Point"
       },
-      "id": "3918a7a63b9346eeb04d1d750d2ceb35.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "3a5947908ca34874a8ee3327431e9c0a.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Woodsborough Homes Association",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978121, 37.343364],
         "type": "Point"
       },
-      "id": "3a5947908ca34874a8ee3327431e9c0a.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "3bb0647d232744a3b866b95a89477153.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Children's World Bilingual Montessori School",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.97742, 37.33891],
         "type": "Point"
       },
-      "id": "3bb0647d232744a3b866b95a89477153.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "3e209d9fa878487080607c734956a975.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "My Hair and Face Salon",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.977734, 37.339199],
         "type": "Point"
       },
-      "id": "3e209d9fa878487080607c734956a975.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "3e6aef6ffdbc425998b50ca1e95c6ffc.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "U.S. Bank ATM",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.974829, 37.338348],
         "type": "Point"
       },
-      "id": "3e6aef6ffdbc425998b50ca1e95c6ffc.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "44176e23d285499d91fc0904f7281b48.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Orange Square",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.972773, 37.34008],
         "type": "Point"
       },
-      "id": "44176e23d285499d91fc0904f7281b48.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "4606a657770c40979fdfbd0bd8390ffc.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Sarah's Cafe",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.973733, 37.340634],
         "type": "Point"
       },
-      "id": "4606a657770c40979fdfbd0bd8390ffc.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "463bb8108a8c466e8298f56d0ad9c43f.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Central Park Playground",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.973664, 37.340672],
         "type": "Point"
       },
-      "id": "463bb8108a8c466e8298f56d0ad9c43f.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "4834ec66bbe749dbb7c24b1da9b866b5.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Lawn Bowls Club",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.973213, 37.342259],
         "type": "Point"
       },
-      "id": "4834ec66bbe749dbb7c24b1da9b866b5.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "48e46d917215476d9276efec055aa598.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Juega y Aprende Daycare",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.979414, 37.339424],
         "type": "Point"
       },
-      "id": "48e46d917215476d9276efec055aa598.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "4af53920f8ad3550873fdfc4355abeb2.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Central Park Directional Information Sign",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "4af53920f8ad3550873fdfc4355abeb2.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.97384, 37.339709],
         "type": "Point"
       },
-      "id": "4af53920f8ad3550873fdfc4355abeb2.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "4c5f3354ef52435da7c30ca0af734384.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Kumon Math and Reading Center of SANTA CLARA - CENTRAL PARK",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978969, 37.34576],
         "type": "Point"
       },
-      "id": "4c5f3354ef52435da7c30ca0af734384.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "4f7eb2c7f4b34a5aa503d7f2847a5c05.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Eve Hair Salon",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978741, 37.345853],
         "type": "Point"
       },
-      "id": "4f7eb2c7f4b34a5aa503d7f2847a5c05.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "5090e603d21f405dbe36d9f216cbbc76.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Western Union",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978096, 37.345918],
         "type": "Point"
       },
-      "id": "5090e603d21f405dbe36d9f216cbbc76.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "51023caaa85b41378344302ef8c180fd.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Citibank ATM",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978108, 37.346063],
         "type": "Point"
       },
-      "id": "51023caaa85b41378344302ef8c180fd.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "51481e5c49223aed9aecd19c75002ec2.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Central Park Field Bleachers",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca69",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "51481e5c49223aed9aecd19c75002ec2.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.973559, 37.34431],
         "type": "Point"
       },
-      "id": "51481e5c49223aed9aecd19c75002ec2.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "51cff810793e40e89f2d3ac8d79e6359.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Garlic Mediterranean Grill",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.976184, 37.338191],
         "type": "Point"
       },
-      "id": "51cff810793e40e89f2d3ac8d79e6359.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "52354ab162dc454cb06e0547b1632ba6.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Central Park Basketball Courts",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.973664, 37.340672],
         "type": "Point"
       },
-      "id": "52354ab162dc454cb06e0547b1632ba6.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "5541cfecc2e338d29af3391eef7547c3.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Turtle Island - Fragrant Mountain",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "5541cfecc2e338d29af3391eef7547c3.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.973626, 37.340512],
         "type": "Point"
       },
-      "id": "5541cfecc2e338d29af3391eef7547c3.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "55f6ec20830249bea34b8e8ae56400b9.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Shred Nations",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.976335, 37.338513],
         "type": "Point"
       },
-      "id": "55f6ec20830249bea34b8e8ae56400b9.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "572f26257a8c45139c1a4bef759074dd.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Angel Santa Clara",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.977684, 37.339286],
         "type": "Point"
       },
-      "id": "572f26257a8c45139c1a4bef759074dd.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "5a3e235007d140878c37100946f15771.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "1000 Kiely",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.97791, 37.344463],
         "type": "Point"
       },
-      "id": "5a3e235007d140878c37100946f15771.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "5b661dcf54d34c658c410f2b850df826.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Taco Bell",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.97254, 37.339366],
         "type": "Point"
       },
-      "id": "5b661dcf54d34c658c410f2b850df826.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "5c4436c8b98840578624466c6be1e8a7.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Orchard - Reading Across Boundaries",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
         "photo": "5c4436c8b98840578624466c6be1e8a7.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.973903, 37.340793],
         "type": "Point"
       },
-      "id": "5c4436c8b98840578624466c6be1e8a7.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "5cd365fc7fec4599b9c9f93771e98c9d.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "GameStop",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.975959, 37.338145],
         "type": "Point"
       },
-      "id": "5cd365fc7fec4599b9c9f93771e98c9d.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "5d696643422531028ba43320ee8e54bc.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Swing and Sway Zone",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "5d696643422531028ba43320ee8e54bc.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976683, 37.341389],
         "type": "Point"
       },
-      "id": "5d696643422531028ba43320ee8e54bc.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "62d0c318aeb336679c0472e8184db97b.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Hearth Neighborhood Gathering Area",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
         "photo": "62d0c318aeb336679c0472e8184db97b.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.978013, 37.341305],
         "type": "Point"
       },
-      "id": "62d0c318aeb336679c0472e8184db97b.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "6ab5d8087c824db29b1e4596f3c21265.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Realcom Associates",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.977796, 37.339255],
         "type": "Point"
       },
-      "id": "6ab5d8087c824db29b1e4596f3c21265.23"
+      "type": "Feature"
     },
     {
       "type": "Feature",
@@ -1384,2011 +1384,2011 @@
       "id": "6cc36bec73af386b9b20ce73ebd289ea.16"
     },
     {
-      "type": "Feature",
+      "id": "6d05f43979064facab7ad829e2eaee13.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Kent T Hiura, DDS",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.971818, 37.34033],
         "type": "Point"
       },
-      "id": "6d05f43979064facab7ad829e2eaee13.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "6e47a48481cc4de3b43c3fc7b0347971.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Sally Beauty",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.974461, 37.338219],
         "type": "Point"
       },
-      "id": "6e47a48481cc4de3b43c3fc7b0347971.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "6f2edc70552f45beb0b70990312ff054.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Central Park Rock & Wood Playground",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.977087, 37.341772],
         "type": "Point"
       },
-      "id": "6f2edc70552f45beb0b70990312ff054.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "7095e2aef1d338c293647a9e38748baf.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Central Park Bleachers",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca69",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
         "photo": "7095e2aef1d338c293647a9e38748baf.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.975166, 37.343256],
         "type": "Point"
       },
-      "id": "7095e2aef1d338c293647a9e38748baf.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "70ad22a07b014430873369a337da1a97.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "HouseMaidHero",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978325, 37.345517],
         "type": "Point"
       },
-      "id": "70ad22a07b014430873369a337da1a97.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "70c2892af5ca31e2b271c4e03c2b9746.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Sequoia Gigantea",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
         "photo": "70c2892af5ca31e2b271c4e03c2b9746.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.975369, 37.341333],
         "type": "Point"
       },
-      "id": "70c2892af5ca31e2b271c4e03c2b9746.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "73bf1a6c16ba4872866fbdd151f4c452.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Stone Toad",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "73bf1a6c16ba4872866fbdd151f4c452.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976131, 37.343054],
         "type": "Point"
       },
-      "id": "73bf1a6c16ba4872866fbdd151f4c452.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "7425e94ee09b436b96d5a17ef273b332.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Arbor Center",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "7425e94ee09b436b96d5a17ef273b332.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.977086, 37.340875],
         "type": "Point"
       },
-      "id": "7425e94ee09b436b96d5a17ef273b332.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "77d1b99015d2444cb15c2df9c8cffb14.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Lisa Pro Nails",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.97908, 37.346054],
         "type": "Point"
       },
-      "id": "77d1b99015d2444cb15c2df9c8cffb14.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "79c5162ce915412c82baad9fdff48080.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "CVS Pharmacy",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.974175, 37.33824],
         "type": "Point"
       },
-      "id": "79c5162ce915412c82baad9fdff48080.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "7a5f0ec5a1974b0fb59b427eb3b20b11.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Ganesha Indian Cuisine Sweets & Catering",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.979055, 37.345812],
         "type": "Point"
       },
-      "id": "7a5f0ec5a1974b0fb59b427eb3b20b11.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "7d4f86ed387f44f1879473b3db0734dd.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Beauty Nails",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.973249, 37.338737],
         "type": "Point"
       },
-      "id": "7d4f86ed387f44f1879473b3db0734dd.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "7f6bc9394c8a426aafd1e8b0d9fe2f72.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Jehovah's Witnesses",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.979495, 37.337366],
         "type": "Point"
       },
-      "id": "7f6bc9394c8a426aafd1e8b0d9fe2f72.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "808219ce031d4232aecdaf6861088c52.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Passage",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "808219ce031d4232aecdaf6861088c52.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.973677, 37.340607],
         "type": "Point"
       },
-      "id": "808219ce031d4232aecdaf6861088c52.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "8214bedcb77a343dacc9a72411fd4850.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Central Park Library Entrance Sign - II",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
         "photo": "8214bedcb77a343dacc9a72411fd4850.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.97384, 37.339458],
         "type": "Point"
       },
-      "id": "8214bedcb77a343dacc9a72411fd4850.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "8316f05e72c64dd889cc93402a0b6a4e.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Ronald A. Nakano DDS",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.976069, 37.337962],
         "type": "Point"
       },
-      "id": "8316f05e72c64dd889cc93402a0b6a4e.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "83b4472c71cf44bdbb771ecdca5bdd3c.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Montage Dance Productions",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978741, 37.345853],
         "type": "Point"
       },
-      "id": "83b4472c71cf44bdbb771ecdca5bdd3c.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "8453db4bd3ea3dc8ae47b92c44fb68ef.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Butterfly season themed seating",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "8453db4bd3ea3dc8ae47b92c44fb68ef.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.97448, 37.338337],
         "type": "Point"
       },
-      "id": "8453db4bd3ea3dc8ae47b92c44fb68ef.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "865e50d9819e4cd1a32675f70eeb6ac8.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Caffino",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.976175, 37.338162],
         "type": "Point"
       },
-      "id": "865e50d9819e4cd1a32675f70eeb6ac8.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "86e89c24b908416e801c9a7334be7e71.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Arusuvai Indian Restaurant",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.972768, 37.339672],
         "type": "Point"
       },
-      "id": "86e89c24b908416e801c9a7334be7e71.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "872ba5801ec04ac2a1c6b06c4b8dcc6e.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Best Brains Learning Center - Santa Clara",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.976856, 37.337642],
         "type": "Point"
       },
-      "id": "872ba5801ec04ac2a1c6b06c4b8dcc6e.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "8a405312ce3b4dd6aa984b6e8a20d1db.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Armadillo Willy's BBQ",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.97277, 37.338884],
         "type": "Point"
       },
-      "id": "8a405312ce3b4dd6aa984b6e8a20d1db.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "8a758853c9e54279a4f5129716f7328d.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Anytime Fitness - Santa Clara, CA",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.974429, 37.338077],
         "type": "Point"
       },
-      "id": "8a758853c9e54279a4f5129716f7328d.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "8fd39662012946029a0cfb5b4e3de930.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Challenge",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "8fd39662012946029a0cfb5b4e3de930.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.973646, 37.340984],
         "type": "Point"
       },
-      "id": "8fd39662012946029a0cfb5b4e3de930.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "90967d68e2ca49e99b3d11abcb92c22c.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Kunjip",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978769, 37.345788],
         "type": "Point"
       },
-      "id": "90967d68e2ca49e99b3d11abcb92c22c.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "93d65ab675354e7ba0c268b5c780a570.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Wooden Amphitheater",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "93d65ab675354e7ba0c268b5c780a570.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.97654, 37.341351],
         "type": "Point"
       },
-      "id": "93d65ab675354e7ba0c268b5c780a570.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "97d58300384f42789a1ec71ce8856618.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Best Brains",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.976932, 37.337615],
         "type": "Point"
       },
-      "id": "97d58300384f42789a1ec71ce8856618.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "982d74de8a1443efbbe1814293594d8b.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Roberta Jones Junior Theatre",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.976586, 37.342863],
         "type": "Point"
       },
-      "id": "982d74de8a1443efbbe1814293594d8b.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "9a9639493d6a459994fae74b7830dd61.11",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Veterans Memorial",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "9a9639493d6a459994fae74b7830dd61.11.jpg"
       },
       "geometry": {
         "coordinates": [-121.977201, 37.342185],
         "type": "Point"
       },
-      "id": "9a9639493d6a459994fae74b7830dd61.11"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "9ab541eb79f84a27a2d363832026207b.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Edmond D Pickett Jr. Memorial",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
         "photo": "9ab541eb79f84a27a2d363832026207b.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974873, 37.341166],
         "type": "Point"
       },
-      "id": "9ab541eb79f84a27a2d363832026207b.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "9b0b68457530460483aa02ef2f9971a2.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "US Bank",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.974666, 37.338041],
         "type": "Point"
       },
-      "id": "9b0b68457530460483aa02ef2f9971a2.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "a03a4d2db02240b59e115e12d21f497a.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Redbox",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978262, 37.346207],
         "type": "Point"
       },
-      "id": "a03a4d2db02240b59e115e12d21f497a.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "a32337519c814c79a21f7d0bd927ee87.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Safeway",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.975134, 37.337892],
         "type": "Point"
       },
-      "id": "a32337519c814c79a21f7d0bd927ee87.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "a3a25358d7eb4bd7b494f1c32976ca94.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Water Spring",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.973187, 37.338735],
         "type": "Point"
       },
-      "id": "a3a25358d7eb4bd7b494f1c32976ca94.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "a434d900f631321ea3d4996535a6b36e.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Central Park Picnic Area",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
         "photo": "a434d900f631321ea3d4996535a6b36e.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.975404, 37.340813],
         "type": "Point"
       },
-      "id": "a434d900f631321ea3d4996535a6b36e.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "a6389be825b248aa948ac14ad9db41f8.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Caffino Drive-Thru Espresso.",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.976399, 37.338236],
         "type": "Point"
       },
-      "id": "a6389be825b248aa948ac14ad9db41f8.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "a68bf6580f2349cabd8ca23ae2653260.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Mr T’s Barber Shop",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978648, 37.3458],
         "type": "Point"
       },
-      "id": "a68bf6580f2349cabd8ca23ae2653260.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "a7cd870b513d34008716e2f9f057fbc8.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Central Park Pond Bio-Filtration",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "a7cd870b513d34008716e2f9f057fbc8.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974982, 37.341562],
         "type": "Point"
       },
-      "id": "a7cd870b513d34008716e2f9f057fbc8.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "a7ef7132581f48ce83739b824bcc0831.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Wells Fargo",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.975646, 37.337642],
         "type": "Point"
       },
-      "id": "a7ef7132581f48ce83739b824bcc0831.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "a90f1319689a4dbe92e17495a2abeb82.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "TOGO'S Sandwiches",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978258, 37.346183],
         "type": "Point"
       },
-      "id": "a90f1319689a4dbe92e17495a2abeb82.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "aa4ca2addade47fe89fdae10a40269be.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Ross Dress for Less",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.973755, 37.338401],
         "type": "Point"
       },
-      "id": "aa4ca2addade47fe89fdae10a40269be.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "aa76bc8794fd4ea6b616083aefcb91b7.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Beauty & The Beast",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.976595, 37.337651],
         "type": "Point"
       },
-      "id": "aa76bc8794fd4ea6b616083aefcb91b7.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "ad1bb90f3acd4f76a118ae5e62226a34.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "S&B Housecleaning",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.977992, 37.344446],
         "type": "Point"
       },
-      "id": "ad1bb90f3acd4f76a118ae5e62226a34.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "adc7be19730d44b291f8f3711b438761.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Veterans Memorial",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.977116, 37.342295],
         "type": "Point"
       },
-      "id": "adc7be19730d44b291f8f3711b438761.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "add438b86c814031bd874f6ae9b38a46.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "City of Santa Clara Flag Poles",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
         "photo": "add438b86c814031bd874f6ae9b38a46.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.977275, 37.342239],
         "type": "Point"
       },
-      "id": "add438b86c814031bd874f6ae9b38a46.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "b0b9a3f2f29f42d692a34ceb0f710581.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "ampm",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.977037, 37.337905],
         "type": "Point"
       },
-      "id": "b0b9a3f2f29f42d692a34ceb0f710581.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "b3df68e1cdb342628bbd44e9d56c8f52.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Lifetime Activities - Santa Clara",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca69",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca69"
       },
       "geometry": {
         "coordinates": [-121.973793, 37.344854],
         "type": "Point"
       },
-      "id": "b3df68e1cdb342628bbd44e9d56c8f52.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "b57dae1bea09344a95640dd2855fc52f.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Avery’s Library",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "b57dae1bea09344a95640dd2855fc52f.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976641, 37.341239],
         "type": "Point"
       },
-      "id": "b57dae1bea09344a95640dd2855fc52f.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "b5d8c6adddfd41e2a9b3fac07fac2d93.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Ipar Golf",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978331, 37.346211],
         "type": "Point"
       },
-      "id": "b5d8c6adddfd41e2a9b3fac07fac2d93.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "b6f500589831408c845ea502d2e25704.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Sequoia Gigantea",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "b6f500589831408c845ea502d2e25704.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.975816, 37.343019],
         "type": "Point"
       },
-      "id": "b6f500589831408c845ea502d2e25704.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "b74959c462e7483484971b8177abe61b.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "123 Home Care",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.977223, 37.339284],
         "type": "Point"
       },
-      "id": "b74959c462e7483484971b8177abe61b.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "b85bb2d9c58c46deb4d6e8990dc5fdca.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Bay Area Pizza",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.978965, 37.337657],
         "type": "Point"
       },
-      "id": "b85bb2d9c58c46deb4d6e8990dc5fdca.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "b8a557dd19164136a3de51a42a64b99a.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Boba Pup",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.979152, 37.345939],
         "type": "Point"
       },
-      "id": "b8a557dd19164136a3de51a42a64b99a.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "bf34edc0d35a4556bd68722de3982569.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Clearway Restoration",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.976817, 37.337229],
         "type": "Point"
       },
-      "id": "bf34edc0d35a4556bd68722de3982569.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "c0358e7604294a6d88c28cc17ac6f2ff.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Boba Pup",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978254, 37.346118],
         "type": "Point"
       },
-      "id": "c0358e7604294a6d88c28cc17ac6f2ff.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "c1120a1286b8393da913ac90a454959b.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Kiely Center Sign",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
         "photo": "c1120a1286b8393da913ac90a454959b.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.977485, 37.339458],
         "type": "Point"
       },
-      "id": "c1120a1286b8393da913ac90a454959b.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "c43d2c1f2f784b599b1a7c35641445a1.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "St Justin Catholic Church",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.974842, 37.339263],
         "type": "Point"
       },
-      "id": "c43d2c1f2f784b599b1a7c35641445a1.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "c4a6136297513f5b87ad3adeb7f7c763.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Central Park Library Ceiling Artwork",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "c4a6136297513f5b87ad3adeb7f7c763.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974264, 37.340774],
         "type": "Point"
       },
-      "id": "c4a6136297513f5b87ad3adeb7f7c763.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "c6ef238a4c9f4baf9728234ee9342fb6.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Sumiya",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.972908, 37.338847],
         "type": "Point"
       },
-      "id": "c6ef238a4c9f4baf9728234ee9342fb6.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "ca156924b0314474b7370eaf09db5e26.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Tobang",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.977997, 37.345772],
         "type": "Point"
       },
-      "id": "ca156924b0314474b7370eaf09db5e26.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "cb1cefb622b13f1ca502103c159ca69b.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Edmund D Pickett Jr. Memorial",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
         "photo": "cb1cefb622b13f1ca502103c159ca69b.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974815, 37.341449],
         "type": "Point"
       },
-      "id": "cb1cefb622b13f1ca502103c159ca69b.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "ccf3a48f0d484db08796149b79666adc.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Central Park Pavilion",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.973664, 37.340672],
         "type": "Point"
       },
-      "id": "ccf3a48f0d484db08796149b79666adc.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "cd171a5f10dc421396b6f6f6f6634f21.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Light of the Lord Community Church",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.970071, 37.340226],
         "type": "Point"
       },
-      "id": "cd171a5f10dc421396b6f6f6f6634f21.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "cd9cc927177b4304b7a87af0c23126ac.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "KeyMe Locksmiths",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978159, 37.346056],
         "type": "Point"
       },
-      "id": "cd9cc927177b4304b7a87af0c23126ac.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "ce022903e6ef4c3b9fc920a760c8e53d.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Redbox",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.975152, 37.337955],
         "type": "Point"
       },
-      "id": "ce022903e6ef4c3b9fc920a760c8e53d.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "cec97c14772b43d28688740da6ed7777.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Screenmobile",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.970565, 37.342896],
         "type": "Point"
       },
-      "id": "cec97c14772b43d28688740da6ed7777.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "cf4d79a0983b4fae8caa4b45e654d45f.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Reading Across Boundaries: Page",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
         "photo": "cf4d79a0983b4fae8caa4b45e654d45f.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.973269, 37.340634],
         "type": "Point"
       },
-      "id": "cf4d79a0983b4fae8caa4b45e654d45f.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "cf78b6b11d6f380ca1f7cda63e8c2cd0.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Woodsborough Map",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "cf78b6b11d6f380ca1f7cda63e8c2cd0.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.977996, 37.343383],
         "type": "Point"
       },
-      "id": "cf78b6b11d6f380ca1f7cda63e8c2cd0.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "d2b8b4698dda35fea35b255d0936c6dd.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Central Park Outdoor Gym",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "d2b8b4698dda35fea35b255d0936c6dd.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.977149, 37.341567],
         "type": "Point"
       },
-      "id": "d2b8b4698dda35fea35b255d0936c6dd.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "d58b402148b340e69a42680e71656854.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Tennis Center",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca69",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca69"
       },
       "geometry": {
         "coordinates": [-121.97297, 37.34502],
         "type": "Point"
       },
-      "id": "d58b402148b340e69a42680e71656854.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "d60c10e75e6e4f0da0fbc6a6a082827d.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Lisa Pro Nails",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978108, 37.346063],
         "type": "Point"
       },
-      "id": "d60c10e75e6e4f0da0fbc6a6a082827d.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "d82d0033bf3736f89a9a43c2d7d2c316.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Lifetime Activities Center",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca69",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "d82d0033bf3736f89a9a43c2d7d2c316.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974599, 37.344453],
         "type": "Point"
       },
-      "id": "d82d0033bf3736f89a9a43c2d7d2c316.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "d9f0a5c2a7784a8aa00a4bb9c9e41b9c.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "MinuteClinic",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.97407, 37.338169],
         "type": "Point"
       },
-      "id": "d9f0a5c2a7784a8aa00a4bb9c9e41b9c.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "da399cad0c584507b076a8866e738cd6.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Community Recreation Center",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.976597, 37.34287],
         "type": "Point"
       },
-      "id": "da399cad0c584507b076a8866e738cd6.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "da8a6168bb434c80b23434bdee5d6aff.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Farmers Insurance - Vanessa Ooi",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.97692, 37.337784],
         "type": "Point"
       },
-      "id": "da8a6168bb434c80b23434bdee5d6aff.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "de2501a502ef4ca487b125fbfa818727.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Sera Lee Anne DDS",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.971802, 37.340327],
         "type": "Point"
       },
-      "id": "de2501a502ef4ca487b125fbfa818727.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "df580e9ca0084db9917da18ea950d18b.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "ABC Tax and Accounting",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.976947, 37.337629],
         "type": "Point"
       },
-      "id": "df580e9ca0084db9917da18ea950d18b.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "dfb5f11fde184aec9238f80d8cf468c0.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Freedom Tree Central Park",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "dfb5f11fde184aec9238f80d8cf468c0.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.97727, 37.341987],
         "type": "Point"
       },
-      "id": "dfb5f11fde184aec9238f80d8cf468c0.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "e00fc669a8fc4edd8c8437084043b36e.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Taichi Pot Shabu Shabu",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.973066, 37.338694],
         "type": "Point"
       },
-      "id": "e00fc669a8fc4edd8c8437084043b36e.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "e0230f47d8b54312b50d8863c5b6ab95.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "La Palma Apartments",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot"
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.971336, 37.340641],
         "type": "Point"
       },
-      "id": "e0230f47d8b54312b50d8863c5b6ab95.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "e32498c5784646c696a811121c965c14.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Anytime Fitness",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.974457, 37.338154],
         "type": "Point"
       },
-      "id": "e32498c5784646c696a811121c965c14.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "e3e9f4a1238c4e47afdadab7c2439967.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Pet Hospital",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.977811, 37.339292],
         "type": "Point"
       },
-      "id": "e3e9f4a1238c4e47afdadab7c2439967.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "e63e131437df4d35bca914697362a27e.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "San Jose Art Academy",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.979869, 37.338117],
         "type": "Point"
       },
-      "id": "e63e131437df4d35bca914697362a27e.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "e8800401214a489196146c87f202b808.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Stan's Donut Shop",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.972898, 37.338937],
         "type": "Point"
       },
-      "id": "e8800401214a489196146c87f202b808.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "e8b4a7e88da94ad08f43324e2c50db88.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Kumon Math and Reading Center",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978598, 37.345864],
         "type": "Point"
       },
-      "id": "e8b4a7e88da94ad08f43324e2c50db88.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "ea5f1ee2757b49ea9911dbab329397c6.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "KeyMe",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.975086, 37.337879],
         "type": "Point"
       },
-      "id": "ea5f1ee2757b49ea9911dbab329397c6.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "eb869eefe48449749d9cf13115f38b36.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "ARCO",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.977093, 37.337932],
         "type": "Point"
       },
-      "id": "eb869eefe48449749d9cf13115f38b36.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "ed127d736b7848aca54d862d0dbefd73.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Mariposa Hair Stylists",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.973295, 37.338718],
         "type": "Point"
       },
-      "id": "ed127d736b7848aca54d862d0dbefd73.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "ee7aa3f36f6b486bacf7203e1219821b.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Popeyes Louisiana Kitchen",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.976244, 37.338124],
         "type": "Point"
       },
-      "id": "ee7aa3f36f6b486bacf7203e1219821b.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "f12d35072e9634448a35fefb3376fb6c.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Central Park Field Flagpole",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca69",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
         "photo": "f12d35072e9634448a35fefb3376fb6c.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974259, 37.34432],
         "type": "Point"
       },
-      "id": "f12d35072e9634448a35fefb3376fb6c.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "f45e6b18efc94b699336289b9c45f9f7.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "KeyMe Locksmiths",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.975, 37.3379],
         "type": "Point"
       },
-      "id": "f45e6b18efc94b699336289b9c45f9f7.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "f54dfa8a31e04c5aa1a48275179f9696.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "LibertyX Bitcoin ATM",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca67"
       },
       "geometry": {
         "coordinates": [-121.974065, 37.338188],
         "type": "Point"
       },
-      "id": "f54dfa8a31e04c5aa1a48275179f9696.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "f623cc41100e37e1af5b1a0e30ce11ee.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Central Park Picnic Area",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "f623cc41100e37e1af5b1a0e30ce11ee.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.977043, 37.341293],
         "type": "Point"
       },
-      "id": "f623cc41100e37e1af5b1a0e30ce11ee.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "f631fbba4688313d911e3f8c045d80ab.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Praise The Children and They Will Grow Steps",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "f631fbba4688313d911e3f8c045d80ab.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.974099, 37.340592],
         "type": "Point"
       },
-      "id": "f631fbba4688313d911e3f8c045d80ab.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "f69430e97caa4d46b578377e9d5150b1.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Korean Spring BBQ",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca6f"
       },
       "geometry": {
         "coordinates": [-121.978626, 37.345767],
         "type": "Point"
       },
-      "id": "f69430e97caa4d46b578377e9d5150b1.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "f84de11fe5aa4bc7a4209a1a02912c35.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Koala-T Day Care",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca69",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca69"
       },
       "geometry": {
         "coordinates": [-121.97125, 37.347015],
         "type": "Point"
       },
-      "id": "f84de11fe5aa4bc7a4209a1a02912c35.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "f952b3e1f1544f629365885014c50bfe.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Liberty Tax Service",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.97692, 37.337784],
         "type": "Point"
       },
-      "id": "f952b3e1f1544f629365885014c50bfe.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "fa16239e56d135bbad3cbfa4c147b6b8.16",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Santa Clara Community Center Garden",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true,
         "photo": "fa16239e56d135bbad3cbfa4c147b6b8.16.jpg"
       },
       "geometry": {
         "coordinates": [-121.976129, 37.342974],
         "type": "Point"
       },
-      "id": "fa16239e56d135bbad3cbfa4c147b6b8.16"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "faec58277a0944b0a6448460aeaa9f6c.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Central Park Arbor Picnic Area",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.976891, 37.340801],
         "type": "Point"
       },
-      "id": "faec58277a0944b0a6448460aeaa9f6c.23"
+      "type": "Feature"
     },
     {
-      "type": "Feature",
+      "id": "fda51e0e4f3d4f87bc182ac4f0e1a491.23",
       "properties": {
+        "checked": "2026-04-07T08:00:00Z",
         "name": "Chase ATM",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
-        "marker-symbol": "circle",
-        "checked": "2026-04-07T08:00:00Z",
-        "type": "powerspot",
-        "isDisabled": true
+        "l14Id": "808fca65"
       },
       "geometry": {
         "coordinates": [-121.977244, 37.338655],
         "type": "Point"
       },
-      "id": "fda51e0e4f3d4f87bc182ac4f0e1a491.23"
+      "type": "Feature"
     }
   ]
 }
