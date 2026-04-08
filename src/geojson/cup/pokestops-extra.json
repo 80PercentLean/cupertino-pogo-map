@@ -39,6 +39,17 @@
     },
     {
       "properties": {
+        "name": "In Memory Of John Minnick",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-03-28T08:00:00Z",
+        "created": "2025-04-02T08:00:00Z"
+      },
+      "id": "08992d08e51f3cb3ab32b8855276edea.16"
+    },
+    {
+      "properties": {
         "name": "Cupertino Community Center",
         "type": "pokestop",
         "source": "Wayfarer",

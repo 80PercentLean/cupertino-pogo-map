@@ -64,22 +64,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "In Memory Of John Minnick",
-        "type": "devpoi",
-        "source": "Wayfarer",
-        "marker-color": "#ffff00",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.046492, 37.319507],
-        "type": "Point"
-      },
-      "id": 43
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Ambassador Gym #1",
         "type": "devpoi",
         "source": "Campsite Proposal <Gym>",
