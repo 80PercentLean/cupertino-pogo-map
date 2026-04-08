@@ -1,5 +1,37 @@
 # Central Park POI History
 
+## 4-7-2026
+
+### Power Spots Enabled 🟢
+
+- Magical Bridge playground signage (04ef486c00f63d32ac881e755d8b318d)
+- Starbucks (12e2cdf886ba4447b4befacaab5ced7c.23)
+- Chess board bench (1ddc96aa9cc03bcd9d09d78af204fbf3.16)
+- Central Park Playground near Senior Center (229088f543c43bc98ab707657339e787.16)
+- 1000 Kiely (5a3e235007d140878c37100946f15771.23)
+- Taco Bell (5b661dcf54d34c658c410f2b850df826.23)
+- Santa Clara Central Park Library Entrance Sign - II (8214bedcb77a343dacc9a72411fd4850.16)
+- Ross Dress for Less (aa4ca2addade47fe89fdae10a40269be.23)
+- City of Santa Clara Flag Poles (add438b86c814031bd874f6ae9b38a46.16)
+- Boba Pup (b8a557dd19164136a3de51a42a64b99a.23)
+- Kiely Center Sign (c1120a1286b8393da913ac90a454959b.16)
+- ABC Tax and Accounting (df580e9ca0084db9917da18ea950d18b.23)
+
+### Power Spots Disabled 🚫
+
+- Cooking Cooking (05eaf2d0c0f74d17981d76eb472cb2b5.23)
+- BP (08afb072b12247658f96906d52d18f02.23)
+- Veterans Memorial Name Sign (0a02291d06c832178530389cf99936b7.16)
+- Central Park Footbridge (235255fcad384e2ebcf5a349210e30b6.23)
+- Ewha Dang (300c2aafb4824fdc8ca8d974f6628fb7.23)
+- Santa Clara Central Park Directional Information Sign (4af53920f8ad3550873fdfc4355abeb2.16)
+- Arusuvai Indian Restaurant (86e89c24b908416e801c9a7334be7e71.23)
+- Anytime Fitness - Santa Clara, CA (8a758853c9e54279a4f5129716f7328d.23)
+- Santa Clara Veterans Memorial (9a9639493d6a459994fae74b7830dd61.11)
+- S&B Housecleaning (ad1bb90f3acd4f76a118ae5e62226a34.23)
+- Avery’s Library (b57dae1bea09344a95640dd2855fc52f.16)
+- Central Park Arbor Picnic Area (faec58277a0944b0a6448460aeaa9f6c.23)
+
 ## 3-17-2026
 
 ### PokeStops Created 🆕
