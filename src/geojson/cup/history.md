@@ -1,5 +1,55 @@
 # Memorial Park/De Anza College POI History
 
+## 4-7-26
+
+### PokeStops Created 🆕
+
+- In Memory Of John Minnick (08992d08e51f3cb3ab32b8855276edea.16)
+
+### Power Spots Enabled 🟢
+
+- Lifetime Tennis Bulletin Board (0bd8617af5043ab7ad638c73aff5915d.16)
+- Jet Visa & Photo (0cd2cdc9647a44bd9f1e32538127ff2b.23)
+- Sister Cities Bench (289e551ab1b3301b8dec4fde37f2bdca.16)
+- Toyokawa Stone Lantern (31f847990f104b1bb6ac8027ec45ba4c.11)
+- Panda Express (372e2f8b50d54ee7b98509f2f5aae5ce)
+- Steven S Wong (39a4f2b7cc724b49ba1d9da3cea8897c.23)
+- California History Center (3c19000eec33403e915af9b29348ec88.23)
+- Memorial Park Water Fountain (4f3aea5e10b24d9fa25d0cfc29aae42d.16)
+- Richard Kent Memorial (5713b98e832f48188235aa3c7d9293cd.16)
+- Aidens Gazebo at Memorial Park (83abb8e46af44228a9b285ddbc18fc68.16)
+- Picnic and BBQ pit (901e917e9c4f3cf198d04b6bc5e32ef8.16)
+- Donation Tile Mosaic (aa4b99f74b37475e88668217c67b4fb8.16)
+- Golden misery (b5678756c7273e839e79f4619d3f5844.16)
+- Bright Skeleton Shark (be4e0108d56438c89d14d6c71a83f6df.16)
+- Evgo Electric Charging Station (d17612f095564a7485da8b27e375ecd3.23)
+- 7-Eleven - Closed (d2ab3089e4434979b1e95c02c333cb62.23)
+- Turtle Sculpture (e6caf1f03e3b438d9efab4e86ceac208.11)
+
+### Power Spots Disabled 🚫
+
+- De Anza College Stadium & Track (05855a9f0064410c8795031ee5a50f9a.23)
+- Western Union (07b8553e673b4aae807ddd37e08b402d.23)
+- Memorial Park BBQ Spot B (0d65c50b28de3aafae85ad96e12cf811.16)
+- Petty Officer Matthew Axelson Post Office Sign (18fd1704346e3825b2b21a5f1f95aece)
+- Nails 2000 (37868fa28ae949f69666c7178c595b6e)
+- Cupertino Marketplace (3d1706fa8b384933973c6ec87cfb800f.23)
+- DeAnza Mosaics (4e85e7bae0d641f5a8944aca10a21163.16)
+- Wow Cool® Alternative Comics (5a5022c705c54e0a8c5543be59889aaf.23)
+- MLC Fountain B (6bc7dd2ac69541b1b5a8e801fadab86a.16)
+- Bunny Stop (7721b502178030189962d6c764622c4c.16)
+- Robert A. Potthast Memorial Bench (7e526d2f69924b8c9b92e2ee961c6136.16)
+- Smoke-Free Memorial Park (ab73728e90553414907c188d0df79dde.16)
+- Memorial Park Picnic Area Sign (ad00c2d425553236b3e3dfb3b5c35367.16)
+- In memory of Virginia J. Logan (b30f61b279c93f489023653df85f8cc7.16)
+- Cupertino Taproom (bf74792176134e9595e2019c38bc9ac1.23)
+- Memorial Park BBQ Spot A (cc6014b6bc9f36e59a178a8ad750e43f.16)
+- Panda Express (d4bb990592aa4bdcad990c5e49e45c07.23)
+- De Anza College Stone (e89c02c00b574b2e98f6fac7f2d40e34.16)
+- Cupertino Bike Route: To Rancho San Antonio (f58448e2bed1351d811fa16628d53c29.16)
+- Western Union (fc40564d2e274a87af8074f6a1ebf9e9.23)
+- Home Of Christ IN Cupertino (fd7bd22db5a04fef8794dc783dccb711.23)
+
 ## 4-1-26
 
 ### Gyms Created 🆕
