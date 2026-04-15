@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 /* Set input data file path. */
-const dir = "cupertino";
+const dir = "cup";
 const dataInput = path.join(__dirname, `${dir}/wayfarer.json`);
 const gymsExtraInput = path.join(__dirname, `${dir}/gyms-extra.json`);
 const pokestopsExtraInput = path.join(__dirname, `${dir}/pokestops-extra.json`);

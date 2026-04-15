@@ -116,6 +116,9 @@ export interface StoreState {
   /** Value for geolocation position accuracy. */
   myLocationAccuracy: number | null;
 
+  /** Type of range for my location. */
+  myLocationRangeType: "location-accuracy" | "poi" | "wild-spawn";
+
   /** State for placed markers. */
   placedMarkerStates: PlacedMarkerState[];
 
@@ -154,6 +157,9 @@ export interface StoreState {
 
   /** Set the `myLocationAccuracy` value. */
   setMyLocationAccuracy: (val: StoreState["myLocationAccuracy"]) => void;
+
+  /** Set the `myLocationRangeType` value. */
+  setMyLocationRangeType: (val: StoreState["myLocationRangeType"]) => void;
 
   /** Set the `wayfarerMode` value. */
   setWayfarerMode: (val: StoreState["wayfarerMode"]) => void;
@@ -285,6 +291,8 @@ export const useStore = create<StoreState>()(
         // myLocationAccuracy starts as null until my location functionality is enabled
         myLocationAccuracy: null,
 
+        myLocationRangeType: "poi",
+
         placedMarkerStates: [],
 
         removePlacedMarkerState: (i) =>
@@ -404,6 +412,15 @@ export const useStore = create<StoreState>()(
             }),
             undefined,
             "setLocationAccuracy",
+          ),
+
+        setMyLocationRangeType: (val) =>
+          set(
+            () => ({
+              myLocationRangeType: val,
+            }),
+            undefined,
+            "setMyLocationRangeType",
           ),
 
         setWayfarerMode: (val) =>

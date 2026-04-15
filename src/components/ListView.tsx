@@ -226,7 +226,7 @@ export default function ListView() {
                 icon
               )}
             </div>
-            <div className="flex h-full w-6 items-center justify-center">
+            <div className="flex h-full items-center justify-center">
               {layer?.[id]?.isVisible ? (
                 <Eye className="w-4" />
               ) : (
@@ -235,7 +235,7 @@ export default function ListView() {
             </div>
             <div
               className={cn(
-                "flex h-full items-center overflow-x-scroll pr-2",
+                "flex grow items-center overflow-x-auto pr-2",
                 removed && "line-through",
               )}
             >

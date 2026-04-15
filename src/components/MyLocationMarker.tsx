@@ -12,6 +12,20 @@ export default function MyLocationMarker(props: MyLocationMarkerProps) {
   const disableAnimations = useStore((s) => s.disableAnimations);
   const myLocation = useStore((s) => s.myLocation);
   const myLocationAccuracy = useStore((s) => s.myLocationAccuracy);
+  const myLocationRangeType = useStore((s) => s.myLocationRangeType);
+
+  let rangeSize: number;
+
+  switch (myLocationRangeType) {
+    case "location-accuracy":
+      rangeSize = myLocationAccuracy ?? 0;
+      break;
+    case "wild-spawn":
+      rangeSize = 50;
+      break;
+    default:
+      rangeSize = 80;
+  }
 
   if (myLocation) {
     const accuracyCircle = myLocationAccuracy && (
@@ -19,7 +33,7 @@ export default function MyLocationMarker(props: MyLocationMarkerProps) {
         center={myLocation}
         interactive={false}
         pathOptions={{ fillColor: "#5c84f0", stroke: false }}
-        radius={myLocationAccuracy}
+        radius={rangeSize}
         className={!disableAnimations ? "animate-pulse" : undefined}
       />
     );

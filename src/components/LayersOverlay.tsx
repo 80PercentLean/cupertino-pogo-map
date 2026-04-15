@@ -76,7 +76,7 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   return (
-    <Card className="absolute top-0 right-0 left-0 z-999 min-h-full rounded-none pt-0 pb-15 md:fixed md:left-auto md:m-2 md:max-h-[85vh] md:min-h-auto md:w-64 md:rounded-xl md:pb-0">
+    <Card className="absolute top-0 right-0 left-0 z-999 min-h-full rounded-none pt-0 pb-15 md:fixed md:left-auto md:m-2 md:max-h-[85vh] md:min-h-auto md:w-67 md:rounded-xl md:pb-0">
       <div className="flex flex-col gap-6 overflow-y-scroll">
         <CardHeader className="flex flex-row items-center justify-between pt-6">
           <CardTitle>Points of interest</CardTitle>
