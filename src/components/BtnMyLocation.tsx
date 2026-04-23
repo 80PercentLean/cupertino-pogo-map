@@ -32,7 +32,7 @@ export default function BtnMyLocation() {
   return (
     <Button
       size="icon"
-      className="fixed right-0 bottom-0 z-1001 m-2 h-10 w-10 cursor-pointer shadow-sm shadow-gray-500"
+      className="fixed right-0 bottom-22 z-998 m-2 h-10 w-10 cursor-pointer shadow-sm shadow-gray-500 md:bottom-0"
       title="Show My Location"
       onClick={() => {
         if (map && isMyLocationOn && myLocation) {

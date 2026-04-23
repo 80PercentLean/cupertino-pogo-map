@@ -49,6 +49,9 @@ export interface StoreState {
     type: CProperties["type"] | "placed" | null;
   };
 
+  /** Determines which main view is currently active. */
+  activeMainView: "info" | "settings" | "tools" | null;
+
   /** Add a placed marker state. */
   addPlacedMarkerState: (position: LatLngTuple) => void;
 
@@ -125,6 +128,9 @@ export interface StoreState {
   /** Remove a placed marker state. */
   removePlacedMarkerState: (i: number) => void;
 
+  /** Set the `activeMainView` value. */
+  setActiveMainView: (val: StoreState["activeMainView"]) => void;
+
   /** Set the `activePopup` value. */
   setActivePopup: (
     id: StoreState["activePopup"]["id"] | null,
@@ -133,6 +139,9 @@ export interface StoreState {
 
   /** Set the `disableAnimations` value. */
   setDisableAnimations: (val: StoreState["disableAnimations"]) => void;
+
+  /** Set the `isListViewOpen` value. */
+  setIsListViewOpen: (val: StoreState["isListViewOpen"]) => void;
 
   /** Set marker values for an advanced layer. */
   setLayer: (
@@ -215,6 +224,8 @@ export const useStore = create<StoreState>()(
     (set) => {
       const initStoreState: StoreState = {
         activePopup: { id: null, type: null },
+
+        activeMainView: null,
 
         addPlacedMarkerState: (position) => {
           const result = set(
@@ -307,6 +318,9 @@ export const useStore = create<StoreState>()(
             "removePlacedMarkerState",
           ),
 
+        setActiveMainView: (val) =>
+          set(() => ({ activeMainView: val }), undefined, "setActiveMainView"),
+
         setActivePopup: (id, type) =>
           set(
             () => ({
@@ -325,6 +339,9 @@ export const useStore = create<StoreState>()(
             undefined,
             "setDisabledAnimations",
           ),
+
+        setIsListViewOpen: (val) =>
+          set(() => ({ isListViewOpen: val }), undefined, "setIsListViewOpen"),
 
         setLayer: (type, state, override) =>
           set(

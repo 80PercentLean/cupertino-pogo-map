@@ -1,0 +1,113 @@
+import { cn } from "@/lib/utils";
+import { Info, List, Map, Settings, Toolbox } from "lucide-react";
+
+import { useStore } from "./hooks/store";
+import { Button } from "./ui/button";
+
+const BTN_BASE_CLASSNAME =
+  "h-14 w-20 cursor-pointer flex-col bg-black text-xs text-gray-300 transition-colors duration-500";
+const BTN_ACTIVE_CLASSNAME = "bg-emerald-700 font-bold text-white";
+
+/**
+ * These view controls appears when the browser window is in mobile mode.
+ */
+export default function ViewCtrlMobile() {
+  const activeMainView = useStore((state) => state.activeMainView);
+  const isListViewOpen = useStore((state) => state.isListViewOpen);
+  const setActiveMainView = useStore((state) => state.setActiveMainView);
+  const setIsListViewOpen = useStore((state) => state.setIsListViewOpen);
+  const toggleIsListViewOpen = useStore((state) => state.toggleIsListViewOpen);
+  const wayfarerMode = useStore((s) => s.wayfarerMode);
+
+  return (
+    <>
+      <div className="fixed top-0 left-0 z-998 m-2">
+        {wayfarerMode && (
+          <Button
+            className="shadow-sm shadow-gray-500"
+            onClick={() => setActiveMainView("tools")}
+          >
+            <Toolbox />
+            Tools
+          </Button>
+        )}
+      </div>
+      <div className="fixed right-0 bottom-0 left-0 z-1002 flex h-20 items-center justify-evenly bg-black">
+        <Button
+          className={cn(
+            BTN_BASE_CLASSNAME,
+            activeMainView === null && !isListViewOpen && BTN_ACTIVE_CLASSNAME,
+          )}
+          onClick={() => {
+            if (isListViewOpen) {
+              setIsListViewOpen(false);
+            }
+
+            if (activeMainView) {
+              setActiveMainView(null);
+            }
+          }}
+        >
+          <Map className="!h-6 !w-6" />
+          Map View
+        </Button>
+        <Button
+          className={cn(
+            BTN_BASE_CLASSNAME,
+            isListViewOpen && BTN_ACTIVE_CLASSNAME,
+          )}
+          onClick={() => {
+            toggleIsListViewOpen();
+
+            if (activeMainView) {
+              setActiveMainView(null);
+            }
+          }}
+        >
+          <List className="!h-6 !w-6" />
+          List View
+        </Button>
+        <Button
+          className={cn(
+            BTN_BASE_CLASSNAME,
+            activeMainView === "settings" && BTN_ACTIVE_CLASSNAME,
+          )}
+          onClick={() => {
+            if (activeMainView === "settings") {
+              setActiveMainView(null);
+            } else {
+              setActiveMainView("settings");
+            }
+
+            if (isListViewOpen) {
+              setIsListViewOpen(false);
+            }
+          }}
+        >
+          <Settings className="!h-6 !w-6" />
+          Settings
+        </Button>
+        <Button
+          className={cn(
+            BTN_BASE_CLASSNAME,
+            activeMainView === "info" && BTN_ACTIVE_CLASSNAME,
+          )}
+          onClick={() => {
+            if (activeMainView === "info") {
+              setActiveMainView(null);
+            } else {
+              setActiveMainView("info");
+            }
+
+            if (isListViewOpen) {
+              setIsListViewOpen(false);
+            }
+          }}
+        >
+          <Info className="!h-6 !w-6" />
+          Info
+        </Button>
+      </div>
+    </>
+  );
+}

@@ -1,0 +1,79 @@
+import { cn } from "@/lib/utils";
+import { Info, List, Settings, Toolbox } from "lucide-react";
+
+import { useStore } from "./hooks/store";
+import { Button } from "./ui/button";
+
+const BTN_BASE_CLASSNAME =
+  "h-10 w-32 flex-1 cursor-pointer shadow-sm shadow-gray-500";
+const BTN_ACTIVE_CLASSNAME = "bg-emerald-700 text-white hover:bg-emerald-600";
+
+/**
+ * These view controls appear when the browser window is in desktop mode.
+ */
+export default function ViewCtrlDesktop() {
+  const activeMainView = useStore((state) => state.activeMainView);
+  const isListViewOpen = useStore((state) => state.isListViewOpen);
+  const setActiveMainView = useStore((state) => state.setActiveMainView);
+  const setIsListViewOpen = useStore((state) => state.setIsListViewOpen);
+  const toggleIsListViewOpen = useStore((state) => state.toggleIsListViewOpen);
+  const wayfarerMode = useStore((s) => s.wayfarerMode);
+
+  return (
+    <div className="fixed bottom-0 left-0 z-1001 m-2 flex gap-2">
+      <Button
+        className={cn(
+          BTN_BASE_CLASSNAME,
+          isListViewOpen && BTN_ACTIVE_CLASSNAME,
+        )}
+        onClick={() => {
+          toggleIsListViewOpen();
+
+          if (activeMainView) {
+            setActiveMainView(null);
+          }
+        }}
+      >
+        <List /> List View
+      </Button>
+      <Button
+        className="h-10 w-32 flex-1 cursor-pointer shadow-sm shadow-gray-500"
+        onClick={() => {
+          if (activeMainView === "settings") {
+            setActiveMainView(null);
+          } else {
+            setActiveMainView("settings");
+          }
+
+          if (isListViewOpen) {
+            setIsListViewOpen(false);
+          }
+        }}
+      >
+        <Settings /> Settings
+      </Button>
+      <Button
+        className="h-10 w-32 flex-1 cursor-pointer shadow-sm shadow-gray-500"
+        onClick={() => {
+          if (activeMainView === "info") {
+            setActiveMainView(null);
+          } else {
+            setActiveMainView("info");
+          }
+
+          if (isListViewOpen) {
+            setIsListViewOpen(false);
+          }
+        }}
+      >
+        <Info /> Info
+      </Button>
+      {wayfarerMode && (
+        <Button className="h-10 w-32 flex-1 cursor-pointer shadow-sm shadow-gray-500">
+          <Toolbox />
+          Tools
+        </Button>
+      )}
+    </div>
+  );
+}

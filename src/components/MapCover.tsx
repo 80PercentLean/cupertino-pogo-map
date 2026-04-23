@@ -5,7 +5,7 @@ import { type PropsWithChildren } from "react";
  */
 export default function MapCover({ children }: PropsWithChildren) {
   return (
-    <div className="fixed inset-0 z-1000 flex overflow-auto bg-black/50">
+    <div className="fixed inset-0 z-1001 flex overflow-auto bg-black/50">
       {children}
     </div>
   );

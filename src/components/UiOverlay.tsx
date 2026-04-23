@@ -1,10 +1,10 @@
 import { Activity } from "react";
-import { Outlet } from "react-router";
 
 import BtnLayers from "./BtnLayers";
 import BtnMyLocation from "./BtnMyLocation";
 import ListView from "./ListView";
-import ViewCtrl from "./ViewCtrl";
+import ViewCtrlDesktop from "./ViewCtrlDesktop";
+import ViewCtrlMobile from "./ViewCtrlMobile";
 import { useStore } from "./hooks/store";
 
 /**
@@ -14,15 +14,23 @@ import { useStore } from "./hooks/store";
 export default function UiOverlay() {
   const isListViewOpen = useStore((s) => s.isListViewOpen);
 
+  const mediaQuery = window.matchMedia("(min-width: 768px)");
+
+  let viewCtrl;
+  if (mediaQuery.matches) {
+    viewCtrl = <ViewCtrlDesktop />;
+  } else {
+    viewCtrl = <ViewCtrlMobile />;
+  }
+
   return (
     <>
       <Activity mode={isListViewOpen ? "visible" : "hidden"}>
         <ListView />
       </Activity>
-      <ViewCtrl />
       <BtnLayers />
       <BtnMyLocation />
-      <Outlet />
+      {viewCtrl}
     </>
   );
 }
