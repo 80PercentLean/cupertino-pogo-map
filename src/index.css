@@ -3,6 +3,11 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html,
+body {
+  overflow: hidden;
+}
+
 body {
   font-family:
     Inter, Roboto, ui-sans-serif, system-ui, "Apple Color Emoji",

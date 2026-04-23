@@ -90,7 +90,7 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
       </CardHeader>
       <CardContent className="overflow-y-auto py-6">
         <FieldSet>
-          <FieldGroup className="flex flex-row flex-wrap md:gap-4">
+          <FieldGroup className="flex flex-row flex-wrap justify-center md:gap-4">
             <Field className="w-14">
               <BtnLayer
                 isActive={isLayerGymOn}
