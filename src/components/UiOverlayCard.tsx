@@ -38,26 +38,28 @@ export default function UiOverlayCard({
   return (
     <MapCover>
       {createPortal(
-        <Card className="absolute top-0 right-0 left-0 z-1001 mb-20 h-full gap-0 rounded-none pb-15 md:static md:m-auto md:h-auto md:w-[500px] md:rounded-xl md:pb-6">
-          <CardHeader className="border-gray flex flex-row items-center justify-between border-b shadow-sm">
-            {title && typeof title === "string" ? (
-              <CardTitle>{title}</CardTitle>
-            ) : (
-              title
-            )}
-            <Button
-              variant="ghost"
-              size="icon"
-              className="h-6 w-6"
-              onClick={() => setActiveMainView(null)}
-            >
-              <X className="h-4 w-4" />
-            </Button>
-          </CardHeader>
-          <CardContent className="overflow-y-auto pt-6 pb-10">
-            {children}
-          </CardContent>
-        </Card>,
+        <div className="fixed inset-0 z-1001 flex h-screen items-center justify-center">
+          <Card className="absolute top-0 right-0 left-0 mb-20 h-full gap-0 rounded-none pb-15 md:static md:top-auto md:right-auto md:bottom-auto md:left-auto md:m-auto md:h-auto md:w-125 md:rounded-xl md:pb-6">
+            <CardHeader className="border-gray flex flex-row items-center justify-between border-b shadow-sm">
+              {title && typeof title === "string" ? (
+                <CardTitle>{title}</CardTitle>
+              ) : (
+                title
+              )}
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-6 w-6 cursor-pointer"
+                onClick={() => setActiveMainView(null)}
+              >
+                <X className="h-4 w-4" />
+              </Button>
+            </CardHeader>
+            <CardContent className="overflow-y-auto pt-6 pb-10 md:pb-6">
+              {children}
+            </CardContent>
+          </Card>
+        </div>,
         document.body,
       )}
     </MapCover>

@@ -26,50 +26,36 @@ export default function ViewCtrlDesktop() {
           BTN_BASE_CLASSNAME,
           isListViewOpen && BTN_ACTIVE_CLASSNAME,
         )}
-        onClick={() => {
-          toggleIsListViewOpen();
-
-          if (activeMainView) {
-            setActiveMainView(null);
-          }
-        }}
+        onClick={() => toggleIsListViewOpen()}
       >
         <List /> List View
       </Button>
       <Button
-        className="h-10 w-32 flex-1 cursor-pointer shadow-sm shadow-gray-500"
-        onClick={() => {
-          if (activeMainView === "settings") {
-            setActiveMainView(null);
-          } else {
-            setActiveMainView("settings");
-          }
-
-          if (isListViewOpen) {
-            setIsListViewOpen(false);
-          }
-        }}
+        className={cn(
+          BTN_BASE_CLASSNAME,
+          activeMainView === "settings" && BTN_ACTIVE_CLASSNAME,
+        )}
+        onClick={() => setActiveMainView("settings")}
       >
         <Settings /> Settings
       </Button>
       <Button
-        className="h-10 w-32 flex-1 cursor-pointer shadow-sm shadow-gray-500"
-        onClick={() => {
-          if (activeMainView === "info") {
-            setActiveMainView(null);
-          } else {
-            setActiveMainView("info");
-          }
-
-          if (isListViewOpen) {
-            setIsListViewOpen(false);
-          }
-        }}
+        className={cn(
+          BTN_BASE_CLASSNAME,
+          activeMainView === "info" && BTN_ACTIVE_CLASSNAME,
+        )}
+        onClick={() => setActiveMainView("info")}
       >
         <Info /> Info
       </Button>
       {wayfarerMode && (
-        <Button className="h-10 w-32 flex-1 cursor-pointer shadow-sm shadow-gray-500">
+        <Button
+          className={cn(
+            BTN_BASE_CLASSNAME,
+            activeMainView === "tools" && BTN_ACTIVE_CLASSNAME,
+          )}
+          onClick={() => setActiveMainView("tools")}
+        >
           <Toolbox />
           Tools
         </Button>

@@ -291,7 +291,7 @@ export default function ListView() {
   );
 
   return (
-    <Card className="absolute inset-0 z-999 gap-0 rounded-none pt-0 pb-20 md:fixed md:top-0 md:left-0 md:m-2 md:max-h-[66vh] md:w-100 md:rounded-xl md:pb-0 md:pb-15">
+    <Card className="absolute inset-0 z-999 gap-0 rounded-none pt-0 pb-20 md:fixed md:top-0 md:left-0 md:m-2 md:max-h-[66vh] md:w-100 md:rounded-xl md:pb-0">
       <InputGroup className="rounded-none py-6 md:rounded-t-xl">
         <InputGroupInput
           placeholder="Search for Gyms, PokéStops, etc."
