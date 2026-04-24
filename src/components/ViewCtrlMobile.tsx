@@ -13,8 +13,10 @@ const BTN_ACTIVE_CLASSNAME = "bg-emerald-700 font-bold text-white";
  */
 export default function ViewCtrlMobile() {
   const activeMainView = useStore((state) => state.activeMainView);
+  const isLayersOverlayOpen = useStore((s) => s.isLayersOverlayOpen);
   const isListViewOpen = useStore((state) => state.isListViewOpen);
   const setActiveMainView = useStore((state) => state.setActiveMainView);
+  const setIsLayersOverlayOpen = useStore((s) => s.setIsLayersOverlayOpen);
   const setIsListViewOpen = useStore((state) => state.setIsListViewOpen);
   const toggleIsListViewOpen = useStore((state) => state.toggleIsListViewOpen);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
@@ -36,7 +38,10 @@ export default function ViewCtrlMobile() {
         <Button
           className={cn(
             BTN_BASE_CLASSNAME,
-            activeMainView === null && !isListViewOpen && BTN_ACTIVE_CLASSNAME,
+            activeMainView === null &&
+              !isLayersOverlayOpen &&
+              !isListViewOpen &&
+              BTN_ACTIVE_CLASSNAME,
           )}
           onClick={() => {
             if (isListViewOpen) {
@@ -45,6 +50,10 @@ export default function ViewCtrlMobile() {
 
             if (activeMainView) {
               setActiveMainView(null);
+            }
+
+            if (isLayersOverlayOpen) {
+              setIsLayersOverlayOpen(false);
             }
           }}
         >
@@ -61,6 +70,10 @@ export default function ViewCtrlMobile() {
 
             if (activeMainView) {
               setActiveMainView(null);
+            }
+
+            if (isLayersOverlayOpen) {
+              setIsLayersOverlayOpen(false);
             }
           }}
         >
@@ -82,6 +95,10 @@ export default function ViewCtrlMobile() {
             if (isListViewOpen) {
               setIsListViewOpen(false);
             }
+
+            if (isLayersOverlayOpen) {
+              setIsLayersOverlayOpen(false);
+            }
           }}
         >
           <Settings className="!h-6 !w-6" />
@@ -101,6 +118,10 @@ export default function ViewCtrlMobile() {
 
             if (isListViewOpen) {
               setIsListViewOpen(false);
+            }
+
+            if (isLayersOverlayOpen) {
+              setIsLayersOverlayOpen(false);
             }
           }}
         >

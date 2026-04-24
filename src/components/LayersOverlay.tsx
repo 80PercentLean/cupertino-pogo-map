@@ -23,7 +23,6 @@ import {
 } from "@/leafletIcons";
 import { cn } from "@/lib/utils";
 import { X } from "lucide-react";
-import { type Dispatch, type SetStateAction } from "react";
 
 import BtnLayer from "./BtnLayer";
 import {
@@ -34,11 +33,7 @@ import {
   useStore,
 } from "./hooks/store";
 
-export interface Props {
-  setShowOverlay: Dispatch<SetStateAction<boolean>>;
-}
-
-export default function LayersOverlay({ setShowOverlay }: Props) {
+export default function LayersOverlay() {
   const activePopup = useStore((s) => s.activePopup);
   const hasPlacedMarkers = useStore((s) => s.placedMarkerStates.length > 0);
   const isInteractionRadiiOn = useIsInteractionRadiiOn();
@@ -69,6 +64,7 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
   const setMapType = useStore((s) => s.setMapType);
   const setLayer = useStore((s) => s.setLayer);
   const setActivePopup = useStore((s) => s.setActivePopup);
+  const setIsLayersOverlayOpen = useStore((s) => s.setIsLayersOverlayOpen);
   const toggleBasicLayer = useStore((s) => s.toggleBasicLayer);
   const updateAllPlacedMarkerStates = useStore(
     (s) => s.updateAllPlacedMarkerStates,
@@ -83,7 +79,7 @@ export default function LayersOverlay({ setShowOverlay }: Props) {
           variant="ghost"
           size="icon"
           className="h-6 w-6 cursor-pointer"
-          onClick={() => setShowOverlay(false)}
+          onClick={() => setIsLayersOverlayOpen(false)}
         >
           <X className="h-4 w-4" />
         </Button>

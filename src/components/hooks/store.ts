@@ -74,6 +74,9 @@ export interface StoreState {
   /** Invert coordinates when copied and pasted together when true. */
   invertCoords: boolean;
 
+  /** Open the layers overlay when true. */
+  isLayersOverlayOpen: boolean;
+
   /** Open the list view when true. */
   isListViewOpen: boolean;
 
@@ -139,6 +142,9 @@ export interface StoreState {
 
   /** Set the `disableAnimations` value. */
   setDisableAnimations: (val: StoreState["disableAnimations"]) => void;
+
+  /** Set the `isLayersOverlayOpen` value. */
+  setIsLayersOverlayOpen: (val: StoreState["isLayersOverlayOpen"]) => void;
 
   /** Set the `isListViewOpen` value. */
   setIsListViewOpen: (val: StoreState["isListViewOpen"]) => void;
@@ -265,6 +271,9 @@ export const useStore = create<StoreState>()(
         // Copied & pasted coordinates will be formatted as `lat,lng` by default
         invertCoords: false,
 
+        // Layers overlay starts off closed
+        isLayersOverlayOpen: false,
+
         // TODO: Start with opened list view on desktop and a closed one on mobile
         isListViewOpen: !IS_MOBILE,
 
@@ -338,6 +347,13 @@ export const useStore = create<StoreState>()(
             () => ({ disableAnimations: val }),
             undefined,
             "setDisabledAnimations",
+          ),
+
+        setIsLayersOverlayOpen: (val) =>
+          set(
+            () => ({ isLayersOverlayOpen: val }),
+            undefined,
+            "setIsLayersOverlayOpen",
           ),
 
         setIsListViewOpen: (val) =>
