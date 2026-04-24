@@ -15,7 +15,6 @@ export default function ViewCtrlDesktop() {
   const activeMainView = useStore((state) => state.activeMainView);
   const isListViewOpen = useStore((state) => state.isListViewOpen);
   const setActiveMainView = useStore((state) => state.setActiveMainView);
-  const setIsListViewOpen = useStore((state) => state.setIsListViewOpen);
   const toggleIsListViewOpen = useStore((state) => state.toggleIsListViewOpen);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
