@@ -14,7 +14,7 @@ import { useStore } from "./hooks/store";
  */
 export default function BaseView() {
   const [map, setMap] = useState<Map | null>(null);
-  const activeMainView = useStore((state) => state.activeMainView);
+  const activeMainView = useStore((s) => s.activeMainView);
 
   return (
     <MapContext value={{ map, setMap }}>

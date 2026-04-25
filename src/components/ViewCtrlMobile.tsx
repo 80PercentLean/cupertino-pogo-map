@@ -12,13 +12,13 @@ const BTN_ACTIVE_CLASSNAME = "bg-emerald-700 font-bold text-white";
  * These view controls appears when the browser window is in mobile mode.
  */
 export default function ViewCtrlMobile() {
-  const activeMainView = useStore((state) => state.activeMainView);
+  const activeMainView = useStore((s) => s.activeMainView);
   const isLayersOverlayOpen = useStore((s) => s.isLayersOverlayOpen);
-  const isListViewOpen = useStore((state) => state.isListViewOpen);
-  const setActiveMainView = useStore((state) => state.setActiveMainView);
+  const isListViewOpen = useStore((s) => s.isListViewOpen);
+  const setActiveMainView = useStore((s) => s.setActiveMainView);
   const setIsLayersOverlayOpen = useStore((s) => s.setIsLayersOverlayOpen);
-  const setIsListViewOpen = useStore((state) => state.setIsListViewOpen);
-  const toggleIsListViewOpen = useStore((state) => state.toggleIsListViewOpen);
+  const setIsListViewOpen = useStore((s) => s.setIsListViewOpen);
+  const toggleIsListViewOpen = useStore((s) => s.toggleIsListViewOpen);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   return (

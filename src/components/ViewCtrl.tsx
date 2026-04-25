@@ -1,118 +1,65 @@
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-} from "@/components/ui/navigation-menu";
-import { MAP_PATH } from "@/constants";
-import { type DebouncedFunc, debounce } from "lodash-es";
-import { Info, List, Map, Settings, Toolbox } from "lucide-react";
-import { useEffect } from "react";
-import { useLocation } from "react-router";
+import { getDesktopMediaQuery } from "@/util";
+import { useEffect, useState } from "react";
 
-import NavLinkViewCtrl from "./NavLinkViewCtrl";
+import ViewCtrlDesktop from "./ViewCtrlDesktop";
+import ViewCtrlMobile from "./ViewCtrlMobile";
 import { useStore } from "./hooks/store";
+
+const MEDIA_QUERY = getDesktopMediaQuery();
 
 /**
  * Buttons at the bottom of the screen that allows the user to switch between views like
  * the map, list, settings, etc.
  */
 export default function ViewCtrl() {
+  const activeMainView = useStore((s) => s.activeMainView);
+  const isLayersOverlayOpen = useStore((s) => s.isLayersOverlayOpen);
   const isListViewOpen = useStore((s) => s.isListViewOpen);
-  const toggleIsListViewOpen = useStore((s) => s.toggleIsListViewOpen);
-  const wayfarerMode = useStore((s) => s.wayfarerMode);
+  const setIsLayersOverlayOpen = useStore((s) => s.setIsLayersOverlayOpen);
+  const setIsListViewOpen = useStore((s) => s.setIsListViewOpen);
 
-  const { pathname } = useLocation();
+  const [isDesktop, setIsDesktop] = useState<boolean>(MEDIA_QUERY.matches);
 
   useEffect(() => {
-    const handleResize: DebouncedFunc<() => void> = debounce(() => {
-      if (window.innerWidth >= 768) {
-        console.log("desktop mode");
-      } else {
-        console.log("mobile mode");
+    const handleChange = (e: MediaQueryListEvent) => {
+      if (e.matches === false && isDesktop) {
+        // Just switched from desktop to mobile, so close conflicting views the mobile layout
+        if (activeMainView) {
+          if (isLayersOverlayOpen) {
+            setIsLayersOverlayOpen(false);
+          }
+
+          if (isListViewOpen) {
+            setIsListViewOpen(false);
+          }
+        } else if (isListViewOpen && isLayersOverlayOpen) {
+          setIsLayersOverlayOpen(false);
+        }
       }
-    }, 500);
-    window.addEventListener("resize", () => {
-      handleResize();
-    });
+
+      setIsDesktop(e.matches);
+    };
+
+    MEDIA_QUERY.addEventListener("change", handleChange);
 
     return () => {
-      window.removeEventListener("resize", () => {
-        handleResize();
-      });
-      handleResize.cancel();
+      MEDIA_QUERY.removeEventListener("change", handleChange);
     };
-  }, []);
+  }, [
+    activeMainView,
+    isDesktop,
+    isLayersOverlayOpen,
+    isListViewOpen,
+    setIsLayersOverlayOpen,
+    setIsListViewOpen,
+  ]);
 
-  return (
-    <NavigationMenu className="fixed bottom-0 left-0 z-1001 m-2">
-      <NavigationMenuList>
-        <NavigationMenuItem asChild>
-          <NavLinkViewCtrl
-            end
-            name="map"
-            to={MAP_PATH}
-            title="Switch to Map Only View"
-          >
-            <Map /> Map
-          </NavLinkViewCtrl>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuLink asChild>
-            <NavLinkViewCtrl
-              end
-              forceActive={isListViewOpen}
-              name="list"
-              to={MAP_PATH}
-              title="Switch to Map Only View"
-              onClick={() => {
-                if (pathname === MAP_PATH) {
-                  // Only toggle list view when the map is active
-                  toggleIsListViewOpen();
-                }
-              }}
-            >
-              <List /> List
-            </NavLinkViewCtrl>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuLink asChild>
-            <NavLinkViewCtrl
-              name="settings"
-              to={`${MAP_PATH}/settings`}
-              title="Open Settings"
-            >
-              <Settings /> Settings
-            </NavLinkViewCtrl>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuLink asChild>
-            <NavLinkViewCtrl
-              name="info"
-              to={`${MAP_PATH}/info`}
-              title="Open Information Screen"
-            >
-              <Info /> Info
-            </NavLinkViewCtrl>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-        {wayfarerMode && (
-          <NavigationMenuItem>
-            <NavigationMenuLink asChild>
-              <NavLinkViewCtrl
-                name="tools"
-                to={`${MAP_PATH}/tools`}
-                title="Open Tools"
-              >
-                <Toolbox />
-                Tools
-              </NavLinkViewCtrl>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-        )}
-      </NavigationMenuList>
-    </NavigationMenu>
-  );
+  let viewCtrl;
+  if (isDesktop) {
+    viewCtrl = <ViewCtrlDesktop />;
+  } else {
+    viewCtrl = <ViewCtrlMobile />;
+  }
+
+  return viewCtrl;
 }

@@ -12,10 +12,10 @@ const BTN_ACTIVE_CLASSNAME = "bg-emerald-700 text-white hover:bg-emerald-600";
  * These view controls appear when the browser window is in desktop mode.
  */
 export default function ViewCtrlDesktop() {
-  const activeMainView = useStore((state) => state.activeMainView);
-  const isListViewOpen = useStore((state) => state.isListViewOpen);
-  const setActiveMainView = useStore((state) => state.setActiveMainView);
-  const toggleIsListViewOpen = useStore((state) => state.toggleIsListViewOpen);
+  const activeMainView = useStore((s) => s.activeMainView);
+  const isListViewOpen = useStore((s) => s.isListViewOpen);
+  const setActiveMainView = useStore((s) => s.setActiveMainView);
+  const toggleIsListViewOpen = useStore((s) => s.toggleIsListViewOpen);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   return (

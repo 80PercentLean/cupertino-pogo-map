@@ -1,15 +1,9 @@
 import { type LeafletEventHandlerFnMap } from "leaflet";
 import { useMapEvent } from "react-leaflet";
 
-import { isMobileUa } from "../util";
+import { IS_MOBILE } from "../constants";
 import PlacedMarker from "./PlacedMarker";
 import { useStore } from "./hooks/store";
-
-// import InteractionRadius from "./poi/InteractionRadius";
-// import NoCaPoiZone from "./poi/NoCaPoiZone";
-// import NoPowerSpotZone from "./poi/NoPowerSpotZone";
-
-const IS_MOBILE = isMobileUa();
 
 /**
  * Handles markers that are arbitrarily placed by the user.

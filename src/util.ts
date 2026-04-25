@@ -20,6 +20,14 @@ export const isMobileUa = () => {
 };
 
 /**
+ * Run a media query that checks if the screen width is considered desktop or mobile.
+ * @returns MediaQueryList where its matches property is true if the screen width is considered desktop, false if it is considered mobile
+ */
+export const getDesktopMediaQuery = () => {
+  return window.matchMedia("(min-width: 768px)");
+};
+
+/**
  * Capitalize the first letter of a string.
  * @param str Input string to capitalize
  * @returns Capitalized version of the input string

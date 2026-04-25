@@ -21,7 +21,6 @@ import {
   imgPokestop,
   imgPowerspot,
 } from "@/leafletIcons";
-import { cn } from "@/lib/utils";
 import { X } from "lucide-react";
 
 import BtnLayer from "./BtnLayer";
@@ -72,7 +71,7 @@ export default function LayersOverlay() {
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   return (
-    <Card className="absolute top-0 right-0 left-0 z-999 mb-20 h-full gap-0 rounded-none pb-15 md:fixed md:left-auto md:m-2 md:max-h-[85vh] md:min-h-auto md:w-67 md:rounded-xl md:pb-0">
+    <Card className="absolute top-0 right-0 left-0 z-999 mb-20 h-full gap-0 rounded-none pb-20 md:fixed md:left-auto md:m-2 md:max-h-[85vh] md:min-h-auto md:w-67 md:rounded-xl md:pb-0">
       <CardHeader className="border-gray flex flex-row items-center justify-between border-b shadow-sm">
         <CardTitle>Points of interest</CardTitle>
         <Button
@@ -264,7 +263,7 @@ export default function LayersOverlay() {
               <RadioGroup
                 value={mapType}
                 onValueChange={(val: typeof mapType) => setMapType(val)}
-                className="mb-4 flex flex-col gap-2"
+                className="flex flex-col gap-2"
               >
                 <div className="flex items-center gap-3">
                   <RadioGroupItem
@@ -390,7 +389,7 @@ export default function LayersOverlay() {
                 </FieldLabel>
               </Field>
             </Field>
-            <Field className={cn("flex flex-row", !wayfarerMode && "mb-6")}>
+            <Field className="flex flex-row">
               <Field orientation="horizontal">
                 <Checkbox
                   id="no-ps-zones"
@@ -422,7 +421,7 @@ export default function LayersOverlay() {
               </Field>
             </Field>
             {wayfarerMode && (
-              <Field className="flex flex-row pb-6">
+              <Field className="flex flex-row">
                 <Field orientation="horizontal">
                   <Checkbox
                     id="no-ca-poi-zones"

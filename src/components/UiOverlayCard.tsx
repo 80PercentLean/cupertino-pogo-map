@@ -18,8 +18,8 @@ export default function UiOverlayCard({
   children,
   title,
 }: PropsWithChildren<Props>) {
-  const activeMainView = useStore((state) => state.activeMainView);
-  const setActiveMainView = useStore((state) => state.setActiveMainView);
+  const activeMainView = useStore((s) => s.activeMainView);
+  const setActiveMainView = useStore((s) => s.setActiveMainView);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -38,8 +38,8 @@ export default function UiOverlayCard({
   return (
     <MapCover>
       {createPortal(
-        <div className="fixed inset-0 z-1001 flex h-screen items-center justify-center">
-          <Card className="absolute top-0 right-0 left-0 mb-20 h-full gap-0 rounded-none pb-15 md:static md:top-auto md:right-auto md:bottom-auto md:left-auto md:m-auto md:h-auto md:w-125 md:rounded-xl md:pb-6">
+        <div className="fixed inset-0 z-1001 flex h-full items-center justify-center">
+          <Card className="absolute top-0 right-0 left-0 mb-20 h-full gap-0 rounded-none pb-15 md:static md:top-auto md:right-auto md:bottom-auto md:left-auto md:m-auto md:h-auto md:max-h-full md:w-125 md:rounded-xl md:pb-0">
             <CardHeader className="border-gray flex flex-row items-center justify-between border-b shadow-sm">
               {title && typeof title === "string" ? (
                 <CardTitle>{title}</CardTitle>

@@ -23,6 +23,7 @@ import {
 } from "@/leafletIcons";
 import { cn } from "@/lib/utils";
 import { type CFeatureCollection, type CProperties } from "@/types/CFeatures";
+import { getDesktopMediaQuery } from "@/util";
 import type { LatLngTuple } from "leaflet";
 import { Eye, EyeClosed, Search, X } from "lucide-react";
 import { useContext, useDeferredValue, useState } from "react";
@@ -53,6 +54,7 @@ export default function ListView() {
   const layerPowerspot = useStore((s) => s.layerPowerspot);
   const layerRestroom = useStore((s) => s.layerRestroom);
   const setActivePopup = useStore((s) => s.setActivePopup);
+  const setIsListViewOpen = useStore((s) => s.setIsListViewOpen);
   const showDisabled = useStore((s) => s.modifiers.isDisabled);
   const showHidden = useStore((s) => s.modifiers.isHidden);
   const showRemoved = useStore((s) => s.modifiers.removed);
@@ -192,6 +194,12 @@ export default function ListView() {
               removed && "line-through",
             )}
             onClick={() => {
+              const mediaQuery = getDesktopMediaQuery();
+              if (!mediaQuery.matches) {
+                // Close the list view when a POI in it is tapped on mobile
+                setIsListViewOpen(false);
+              }
+
               if (activePopup.id && activePopup.id !== id) {
                 setActivePopup(null, null);
               }
