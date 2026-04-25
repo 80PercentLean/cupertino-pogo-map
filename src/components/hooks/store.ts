@@ -1,4 +1,4 @@
-import { IS_MOBILE } from "@/constants";
+import { IS_MOBILE } from "@/constantsDom";
 import {
   devpoisJson,
   gymsJson,

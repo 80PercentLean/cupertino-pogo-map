@@ -1,7 +1,7 @@
 import { type LeafletEventHandlerFnMap } from "leaflet";
 import { useMapEvent } from "react-leaflet";
 
-import { IS_MOBILE } from "../constants";
+import { IS_MOBILE } from "../constantsDom";
 import PlacedMarker from "./PlacedMarker";
 import { useStore } from "./hooks/store";
 

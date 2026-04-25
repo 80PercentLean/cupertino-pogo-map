@@ -1,7 +1,8 @@
 // import { type LatLngBoundsExpression } from "leaflet";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import { CENTER_CENTRAL, CENTER_CUP, IS_MOBILE } from "../constants";
+import { CENTER_CENTRAL, CENTER_CUP } from "../constants";
+import { IS_MOBILE } from "../constantsDom";
 import Labels from "./Labels";
 import LeafletDebug from "./LeafletDebug";
 import MyLocationMarker from "./MyLocationMarker";
