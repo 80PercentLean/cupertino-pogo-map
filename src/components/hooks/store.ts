@@ -74,6 +74,9 @@ export interface StoreState {
   /** Invert coordinates when copied and pasted together when true. */
   invertCoords: boolean;
 
+  /** Initial error message to display when the app first loads. */
+  initErrMsg: string | null;
+
   /** Open the layers overlay when true. */
   isLayersOverlayOpen: boolean;
 
@@ -267,6 +270,9 @@ export const useStore = create<StoreState>()(
 
         // Disable animations by default for E2E tests to allow visual tests to perform consistently
         disableAnimations: import.meta.env.VITE_E2E ? true : false,
+
+        // No initial error message will appear by default
+        initErrMsg: null,
 
         // Copied & pasted coordinates will be formatted as `lat,lng` by default
         invertCoords: false,
@@ -558,37 +564,91 @@ export const useStore = create<StoreState>()(
             "updatePlacedMarkerState",
           ),
 
-        wayfarerMode: true,
+        wayfarerMode: false,
       };
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const idParam = urlParams.get("id");
 
       // Initialize marker states for each advanced layer
       devpoisJson.features.forEach(({ id }) => {
-        initStoreState.layerDevpoi[String(id)] = { isVisible: true };
+        if (
+          id &&
+          idParam &&
+          String(id) === idParam &&
+          !initStoreState.activePopup.id
+        ) {
+          initStoreState.activePopup.id = String(id);
+          initStoreState.activePopup.type = "devpoi";
+          initStoreState.layerDevpoi[String(id)] = { isVisible: true };
+        } else {
+          initStoreState.layerDevpoi[String(id)] = { isVisible: true };
+        }
       });
 
       gymsJson.features.forEach(({ id }) => {
-        initStoreState.layerGym[String(id)] = { isVisible: true };
+        if (idParam && id === idParam && !initStoreState.activePopup.id) {
+          initStoreState.activePopup.id = id;
+          initStoreState.activePopup.type = "gym";
+          initStoreState.layerGym[String(id)] = { isVisible: true };
+        } else {
+          initStoreState.layerGym[String(id)] = { isVisible: true };
+        }
       });
 
       meetupspotsJson.features.forEach(({ id }) => {
-        initStoreState.layerMeetupspot[String(id)] = { isVisible: false };
+        if (idParam && id === idParam && !initStoreState.activePopup.id) {
+          initStoreState.activePopup.id = id;
+          initStoreState.activePopup.type = "meetupspot";
+          initStoreState.layerMeetupspot[String(id)] = { isVisible: true };
+        } else {
+          initStoreState.layerMeetupspot[String(id)] = { isVisible: true };
+        }
       });
 
       parkingJson.features.forEach(({ id }) => {
-        initStoreState.layerParking[String(id)] = { isVisible: false };
+        if (idParam && id === idParam && !initStoreState.activePopup.id) {
+          initStoreState.activePopup.id = id;
+          initStoreState.activePopup.type = "parking";
+          initStoreState.layerParking[String(id)] = { isVisible: true };
+        } else {
+          initStoreState.layerParking[String(id)] = { isVisible: true };
+        }
       });
 
       pokestopsJson.features.forEach(({ id }) => {
-        initStoreState.layerPokestop[String(id)] = { isVisible: true };
+        if (idParam && id === idParam && !initStoreState.activePopup.id) {
+          initStoreState.activePopup.id = id;
+          initStoreState.activePopup.type = "pokestop";
+          initStoreState.layerPokestop[String(id)] = { isVisible: true };
+        } else {
+          initStoreState.layerPokestop[String(id)] = { isVisible: true };
+        }
       });
 
       powerspotsJson.features.forEach(({ id }) => {
-        initStoreState.layerPowerspot[String(id)] = { isVisible: true };
+        if (idParam && id === idParam && !initStoreState.activePopup.id) {
+          initStoreState.activePopup.id = id;
+          initStoreState.activePopup.type = "powerspot";
+          initStoreState.layerPowerspot[String(id)] = { isVisible: true };
+        } else {
+          initStoreState.layerPowerspot[String(id)] = { isVisible: true };
+        }
       });
 
       restroomsJson.features.forEach(({ id }) => {
-        initStoreState.layerRestroom[String(id)] = { isVisible: false };
+        if (idParam && id === idParam && !initStoreState.activePopup.id) {
+          initStoreState.activePopup.id = id;
+          initStoreState.activePopup.type = "restroom";
+          initStoreState.layerRestroom[String(id)] = { isVisible: true };
+        } else {
+          initStoreState.layerRestroom[String(id)] = { isVisible: true };
+        }
       });
+
+      if (idParam && !initStoreState.activePopup.id) {
+        initStoreState.initErrMsg = "The shared POI was not found.";
+      }
 
       return initStoreState;
     },

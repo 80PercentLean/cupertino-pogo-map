@@ -3,11 +3,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-html,
-body {
-  overflow: hidden;
-}
-
 body {
   font-family:
     Inter, Roboto, ui-sans-serif, system-ui, "Apple Color Emoji",
@@ -17,6 +12,11 @@ body {
   font-style: normal;
   font-weight: 400;
   margin: 0;
+}
+
+html#map,
+html#map > body {
+  overflow: hidden;
 }
 
 #map {

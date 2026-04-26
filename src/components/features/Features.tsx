@@ -83,7 +83,7 @@ export default function Features({
         <FeatureMarker
           btnModifierFlags={btnModifierFlags}
           key={id}
-          id={id as string}
+          id={id}
           desc={desc}
           icon={typeof icon === "function" ? icon?.(type, subtype) : icon}
           isDisabled={isDisabled}

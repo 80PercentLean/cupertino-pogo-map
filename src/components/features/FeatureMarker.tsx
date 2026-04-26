@@ -3,6 +3,7 @@ import { DivIcon, type LatLngTuple, type Marker } from "leaflet";
 import { Icon } from "leaflet";
 import { useEffect, useRef } from "react";
 import { Popup } from "react-leaflet";
+import { useNavigate } from "react-router";
 
 import CMarker from "../CMarker";
 import { getLayerKeyFromType, useStore } from "../hooks/store";
@@ -30,7 +31,7 @@ export interface Props {
   btnModifierFlags?: BtnModifierFlags;
   desc?: string;
   icon: DivIcon | Icon;
-  id: string;
+  id: string | number;
   isDisabled?: boolean;
   photo?: string;
   position: LatLngTuple;
@@ -67,10 +68,12 @@ export default function FeatureMarker({
 
   const markerRef = useRef<Marker | null>(null);
 
-  const isPopupOpen = activePopup.id && activePopup.id === id;
+  const navigate = useNavigate();
+
+  const isPopupOpen = activePopup.id && activePopup.id === String(id);
 
   const onBtnHideClick = () => {
-    setMarker(type, id, { isVisible: false });
+    setMarker(type, String(id), { isVisible: false });
     // Hack to prevent placing marker immediately on hide
     setTimeout(() => setActivePopup(null, null), 0);
   };
@@ -81,9 +84,9 @@ export default function FeatureMarker({
 
   const onBtnInteractionRadiusClick = () => {
     if (showInteractionRadius) {
-      setMarker(type, id, { showInteractionRadius: false });
+      setMarker(type, String(id), { showInteractionRadius: false });
     } else {
-      setMarker(type, id, { showInteractionRadius: true });
+      setMarker(type, String(id), { showInteractionRadius: true });
     }
   };
   let btnInteractionRadius;
@@ -96,9 +99,9 @@ export default function FeatureMarker({
 
   const onBtnNoPowerSpotZoneClick = () => {
     if (showNoPowerSpotZone) {
-      setMarker(type, id, { showNoPowerSpotZone: false });
+      setMarker(type, String(id), { showNoPowerSpotZone: false });
     } else {
-      setMarker(type, id, { showNoPowerSpotZone: true });
+      setMarker(type, String(id), { showNoPowerSpotZone: true });
     }
   };
   let btnNoPowerSpotZone;
@@ -111,9 +114,9 @@ export default function FeatureMarker({
 
   const onBtnNoCaPoiZoneClick = () => {
     if (showNoCaPoiZone) {
-      setMarker(type, id, { showNoCaPoiZone: false });
+      setMarker(type, String(id), { showNoCaPoiZone: false });
     } else {
-      setMarker(type, id, { showNoCaPoiZone: true });
+      setMarker(type, String(id), { showNoCaPoiZone: true });
     }
   };
   let btnNoCaPoiZone;
@@ -187,7 +190,10 @@ export default function FeatureMarker({
         icon={icon}
         position={position}
         eventHandlers={{
-          click: () => setActivePopup(id, type),
+          click: () => {
+            setActivePopup(String(id), type);
+            void navigate(`?id=${id}`);
+          },
           popupclose: () => setActivePopup(null, null),
         }}
       >
