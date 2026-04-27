@@ -8,6 +8,7 @@ import CMarker from "./CMarker";
 import InteractionRadius from "./features/InteractionRadius";
 import NoCaPoiZone from "./features/NoCaPoiZone";
 import NoPowerSpotZone from "./features/NoPowerSpotZone";
+import { useCloseActivePopup } from "./hooks";
 import { useStore } from "./hooks/store";
 import {
   createBtnHide,
@@ -41,13 +42,15 @@ export default function PlacedMarker({ i }: Props) {
 
   const markerRef = useRef<Marker | null>(null);
 
+  const closeActivePopup = useCloseActivePopup();
+
   const isPopupOpen = activePopup.id && activePopup.id === id;
 
   const onBtnHideClick = () => {
     updatePlacedMarkerState(i, {
       isVisible: !isVisible,
     });
-    setTimeout(() => setActivePopup(null, null), 0);
+    setTimeout(() => closeActivePopup(), 0);
   };
   const btnHide = createBtnHide(onBtnHideClick);
 
@@ -90,7 +93,7 @@ export default function PlacedMarker({ i }: Props) {
         removePlacedMarkerState(i);
         // This is a hack to prevent a new marker from being placed after the delete button is clicked
         setTimeout(() => {
-          setActivePopup(null, null);
+          closeActivePopup();
         }, 0);
       }}
       className="ml-auto cursor-pointer rounded-full hover:text-black"
@@ -118,7 +121,7 @@ export default function PlacedMarker({ i }: Props) {
         data-testid={id}
         eventHandlers={{
           click: () => setActivePopup(id, "placed"),
-          popupclose: () => setActivePopup(null, null),
+          popupclose: () => closeActivePopup(),
         }}
       >
         {isPopupOpen && (

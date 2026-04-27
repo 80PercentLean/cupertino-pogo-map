@@ -242,7 +242,8 @@
         "photo": "1652a123c428397dace3f7b9d2dc610f.16.jpg",
         "submitter": "80PercentLean",
         "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-24T08:00:00Z"
+        "created": "2025-03-24T08:00:00Z",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.047313, 37.32618],
@@ -560,7 +561,8 @@
         "photo": "2ca52470a705339e90a58bf11ca01a37.16.jpg",
         "submitter": "80PercentLean",
         "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-28T08:00:00Z"
+        "created": "2025-03-28T08:00:00Z",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.0484, 37.327194],
@@ -950,7 +952,8 @@
         "photo": "5992fa805d453538a872389d289afcc5.16.jpg",
         "submitter": "80PercentLean",
         "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-22T08:00:00Z"
+        "created": "2025-03-22T08:00:00Z",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.046849, 37.327004],
@@ -1165,7 +1168,8 @@
         "photo": "7255704117e137b2876c85b8153b89ec.16.jpg",
         "submitter": "80PercentLean",
         "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-22T08:00:00Z"
+        "created": "2025-03-22T08:00:00Z",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.049054, 37.325322],
@@ -1210,7 +1214,8 @@
         "photo": "78b888fea2433baea65779e4cf79543a.16.jpg",
         "submitter": "80PercentLean",
         "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-23T08:00:00Z"
+        "created": "2025-03-23T08:00:00Z",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.047655, 37.325501],
@@ -1298,7 +1303,8 @@
         "photo": "7f4220569669322c8dab384ca239443a.16.jpg",
         "submitter": "80PercentLean",
         "submitted": "2025-03-27T08:00:00Z",
-        "created": "2025-03-29T08:00:00Z"
+        "created": "2025-03-29T08:00:00Z",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.047991, 37.325286],
@@ -1321,7 +1327,8 @@
         "photo": "7f4c53e1d0613091b0e63c2f3e5fd93e.16.jpg",
         "submitter": "80PercentLean",
         "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-24T08:00:00Z"
+        "created": "2025-03-24T08:00:00Z",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.048441, 37.326165],
@@ -1697,7 +1704,8 @@
         "photo": "a536c851848738e6a6fff0a79dc4983b.16.jpg",
         "submitter": "80PercentLean",
         "submitted": "2025-03-26T08:00:00Z",
-        "created": "2025-03-31T08:00:00Z"
+        "created": "2025-03-31T08:00:00Z",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.047371, 37.325314],
@@ -1867,7 +1875,8 @@
         "photo": "b4b159c0c1393b5d8cba02f19d83e662.16.jpg",
         "submitter": "80PercentLean",
         "submitted": "2025-03-18T08:00:00Z",
-        "created": "2025-03-23T08:00:00Z"
+        "created": "2025-03-23T08:00:00Z",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.048482, 37.326667],
@@ -1908,7 +1917,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fb457",
-        "photo": "b6bd84bb9ff33aed9c2532e9b341b1f4.16.jpg"
+        "photo": "b6bd84bb9ff33aed9c2532e9b341b1f4.16.jpg",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.049571, 37.314912],
@@ -2080,7 +2090,8 @@
         "photo": "c598512706c13d4b9c3d1220391e0e35.16.jpg",
         "submitter": "80PercentLean",
         "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-23T08:00:00Z"
+        "created": "2025-03-23T08:00:00Z",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.048326, 37.325546],
@@ -2384,7 +2395,8 @@
         "photo": "df0cb49081ed3c18a698dfc2d4091029.16.jpg",
         "submitter": "80PercentLean",
         "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-18T08:00:00Z"
+        "created": "2025-03-18T08:00:00Z",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.048171, 37.326535],
@@ -2407,7 +2419,8 @@
         "photo": "e3b9e3209b5131849c85a09934934903.16.jpg",
         "submitter": "80PercentLean",
         "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-20T08:00:00Z"
+        "created": "2025-03-20T08:00:00Z",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.047627, 37.32644],

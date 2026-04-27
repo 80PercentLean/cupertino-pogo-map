@@ -274,7 +274,7 @@ export const useStore = create<StoreState>()(
         // No initial error message will appear by default
         initErrMsg: null,
 
-        // Copied & pasted coordinates will be formatted as `lat,lng` by default
+        // Copied & pasted coordinates will be formatted as `lat,lng`
         invertCoords: false,
 
         // Layers overlay starts off closed
@@ -304,9 +304,11 @@ export const useStore = create<StoreState>()(
         layerRestroom: {},
 
         modifiers: {
+          // Hide disabled power spots
           isDisabled: false,
 
-          isHidden: true,
+          // Hide hidden POIs
+          isHidden: false,
 
           removed: false,
         },
@@ -581,6 +583,7 @@ export const useStore = create<StoreState>()(
           initStoreState.activePopup.id = String(id);
           initStoreState.activePopup.type = "devpoi";
           initStoreState.layerDevpoi[String(id)] = { isVisible: true };
+          initStoreState.wayfarerMode = true;
         } else {
           initStoreState.layerDevpoi[String(id)] = { isVisible: true };
         }

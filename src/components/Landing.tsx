@@ -24,11 +24,11 @@ export default function Landing() {
               className="w-29 rounded-l-xl object-cover"
             />
             <div className="self-center p-4">
-              <h1 className="font-medium">Campfire Group</h1>
+              <h1 className="font-medium">Join the Niantic Campfire Group</h1>
               <p className="mt-2 text-gray-500">
-                Join our Campfire to find meetups, check-in to get in-game
-                rewards, participate in contests, and chat with fellow group
-                members.
+                Find meetups, check-in to get free in-game rewards, win prizes
+                from contests, and chat with fellow members in our Campfire
+                group.
               </p>
             </div>
           </div>

@@ -29,6 +29,7 @@ import { Eye, EyeClosed, Search, X } from "lucide-react";
 import { useContext, useDeferredValue, useState } from "react";
 
 import { MapContext } from "./MapContext";
+import { useCloseActivePopup } from "./hooks";
 import { useStore } from "./hooks/store";
 import { Button } from "./ui/button";
 import { InputGroup, InputGroupAddon, InputGroupInput } from "./ui/input-group";
@@ -63,6 +64,8 @@ export default function ListView() {
 
   const [query, setQuery] = useState<string>("");
   const deferredQuery = useDeferredValue(query);
+
+  const closeActivePopup = useCloseActivePopup();
 
   const buildList = (...args: CFeatureCollection["features"][]) => {
     const featureData: FeatureData[] = [];
@@ -201,7 +204,7 @@ export default function ListView() {
               }
 
               if (activePopup.id && activePopup.id !== id) {
-                setActivePopup(null, null);
+                closeActivePopup();
               }
 
               setMarker(type, id, { isVisible: true });

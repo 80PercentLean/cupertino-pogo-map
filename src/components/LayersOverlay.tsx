@@ -24,6 +24,7 @@ import {
 import { X } from "lucide-react";
 
 import BtnLayer from "./BtnLayer";
+import { useCloseActivePopup } from "./hooks";
 import {
   useIsInteractionRadiiOn,
   useIsLayerOn,
@@ -62,13 +63,14 @@ export default function LayersOverlay() {
   const mapType = useStore((s) => s.mapType);
   const setMapType = useStore((s) => s.setMapType);
   const setLayer = useStore((s) => s.setLayer);
-  const setActivePopup = useStore((s) => s.setActivePopup);
   const setIsLayersOverlayOpen = useStore((s) => s.setIsLayersOverlayOpen);
   const toggleBasicLayer = useStore((s) => s.toggleBasicLayer);
   const updateAllPlacedMarkerStates = useStore(
     (s) => s.updateAllPlacedMarkerStates,
   );
   const wayfarerMode = useStore((s) => s.wayfarerMode);
+
+  const closeActivePopup = useCloseActivePopup();
 
   return (
     <Card className="absolute top-0 right-0 left-0 z-999 mb-20 h-full gap-0 rounded-none pb-20 md:fixed md:left-auto md:m-2 md:max-h-[85vh] md:min-h-auto md:w-67 md:rounded-xl md:pb-0">
@@ -96,7 +98,7 @@ export default function LayersOverlay() {
                     setLayer("gym", { isVisible: false });
 
                     if (activePopup.id && activePopup.type === "gym") {
-                      setActivePopup(null, null);
+                      closeActivePopup();
                     }
                   } else {
                     setLayer("gym", { isVisible: true });
@@ -116,7 +118,7 @@ export default function LayersOverlay() {
                     setLayer("pokestop", { isVisible: false });
 
                     if (activePopup.id && activePopup.type === "pokestop") {
-                      setActivePopup(null, null);
+                      closeActivePopup();
                     }
                   } else {
                     setLayer("pokestop", { isVisible: true });
@@ -136,7 +138,7 @@ export default function LayersOverlay() {
                     setLayer("powerspot", { isVisible: false });
 
                     if (activePopup.id && activePopup.type === "powerspot") {
-                      setActivePopup(null, null);
+                      closeActivePopup();
                     }
                   } else {
                     setLayer("powerspot", { isVisible: true });
@@ -154,7 +156,7 @@ export default function LayersOverlay() {
                     setLayer("meetupspot", { isVisible: false }, true);
 
                     if (activePopup.id && activePopup.type === "meetupspot") {
-                      setActivePopup(null, null);
+                      closeActivePopup();
                     }
                   } else {
                     setLayer("meetupspot", { isVisible: true }, true);
@@ -172,7 +174,7 @@ export default function LayersOverlay() {
                     setLayer("parking", { isVisible: false }, true);
 
                     if (activePopup.id && activePopup.type === "parking") {
-                      setActivePopup(null, null);
+                      closeActivePopup();
                     }
                   } else {
                     setLayer("parking", { isVisible: true }, true);
@@ -200,7 +202,7 @@ export default function LayersOverlay() {
                     setLayer("restroom", { isVisible: false }, true);
 
                     if (activePopup.id && activePopup.type === "restroom") {
-                      setActivePopup(null, null);
+                      closeActivePopup();
                     }
                   } else {
                     setLayer("restroom", { isVisible: true }, true);
@@ -224,7 +226,7 @@ export default function LayersOverlay() {
                       updateAllPlacedMarkerStates({ isVisible: false });
 
                       if (activePopup.id && activePopup.type === "placed") {
-                        setActivePopup(null, null);
+                        closeActivePopup();
                       }
                     } else {
                       updateAllPlacedMarkerStates({ isVisible: true });
@@ -244,7 +246,7 @@ export default function LayersOverlay() {
                       setLayer("devpoi", { isVisible: false });
 
                       if (activePopup.id && activePopup.type === "devpoi") {
-                        setActivePopup(null, null);
+                        closeActivePopup();
                       }
                     } else {
                       setLayer("devpoi", { isVisible: true });

@@ -20,6 +20,7 @@ import { Settings } from "lucide-react";
 
 import UiOverlayCard from "./UiOverlayCard";
 import UiOverlayCardIconTitle from "./UiOverlayCardIconTitle";
+import { useCloseActivePopup } from "./hooks";
 import { useStore } from "./hooks/store";
 
 /**
@@ -33,7 +34,6 @@ export default function SettingsView() {
   const toggleInvertCoords = useStore((s) => s.toggleInvertCoords);
   const setDisableAnimations = useStore((s) => s.setDisableAnimations);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
-  const setActivePopup = useStore((s) => s.setActivePopup);
   const setLayer = useStore((s) => s.setLayer);
   const setMyLocationRangeType = useStore((s) => s.setMyLocationRangeType);
   const setWayfarerMode = useStore((s) => s.setWayfarerMode);
@@ -44,6 +44,8 @@ export default function SettingsView() {
   const updateAllPlacedMarkerStates = useStore(
     (s) => s.updateAllPlacedMarkerStates,
   );
+
+  const closeActivePopup = useCloseActivePopup();
 
   return (
     <UiOverlayCard
@@ -78,7 +80,7 @@ export default function SettingsView() {
               className="cursor-pointer"
               onCheckedChange={(s) => {
                 if (!s && activePopupType === "devpoi") {
-                  setActivePopup(null, null);
+                  closeActivePopup();
                 }
                 setLayer("gym", { showNoCaPoiZone: false });
                 setLayer("pokestop", { showNoCaPoiZone: false });

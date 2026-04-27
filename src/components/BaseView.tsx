@@ -1,5 +1,6 @@
 import { type Map } from "leaflet";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router";
 
 import InfoView from "./InfoView";
 import { MapContext } from "./MapContext";
@@ -15,6 +16,13 @@ import { useStore } from "./hooks/store";
 export default function BaseView() {
   const [map, setMap] = useState<Map | null>(null);
   const activeMainView = useStore((s) => s.activeMainView);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    // TODO: Fly to POI when query string navigation occurs
+    console.log("location", location);
+  }, [location]);
 
   return (
     <MapContext value={{ map, setMap }}>

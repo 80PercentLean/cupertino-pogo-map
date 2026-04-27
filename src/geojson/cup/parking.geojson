@@ -141,6 +141,23 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Mary Avenue Middle Street Parking",
+        "type": "parking",
+        "subtype": "free",
+        "desc": "<p>Free parking spots & curbside parking.</p>",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-122.0499622821808, 37.32585301406035],
+        "type": "Point"
+      },
+      "id": "parking-c7f42f83-9e99-44be-a67b-0a549d3416fc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Mary Avenue Upper Street Parking",
         "type": "parking",
         "subtype": "free",
@@ -154,22 +171,6 @@
         "type": "Point"
       },
       "id": "parking-52242a21-e7a2-499c-ad20-c1fed8f91100"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Flint Parking Structure",
-        "type": "parking",
-        "subtype": "free",
-        "marker-color": "#00f",
-        "marker-size": "medium",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04816251993181, 37.32185800018273],
-        "type": "Point"
-      },
-      "id": "parking-c7f42f83-9e99-44be-a67b-0a549d3416fc"
     },
     {
       "type": "Feature",

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
-import DistanceCalcView from "../DistanceCalcView";
-import PlacedMarkerView from "../PlacedMarkerView";
 import UiOverlayCard from "../UiOverlayCard";
 import { useStore } from "../hooks/store";
+import DistanceCalcView from "./DistanceCalcView";
+import PlacedMarkerView from "./PlacedMarkerView";
 import ToolsDefaultView from "./ToolsDefaultView";
 import ToolsViewBreadcrumbs from "./ToolsViewBreadcrumbs";
 

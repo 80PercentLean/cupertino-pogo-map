@@ -2,19 +2,20 @@ import { Eye, EyeClosed } from "lucide-react";
 import { useContext } from "react";
 import { Controller, type FieldErrors, useForm } from "react-hook-form";
 
-import { imgLeafletMarker } from "../leafletIcons";
-import { MapContext } from "./MapContext";
-import { useStore } from "./hooks/store";
-import { Button } from "./ui/button";
+import { imgLeafletMarker } from "../../leafletIcons";
+import { MapContext } from "../MapContext";
+import { useCloseActivePopup } from "../hooks";
+import { useStore } from "../hooks/store";
+import { Button } from "../ui/button";
 import {
   Field,
   FieldError,
   FieldGroup,
   FieldLabel,
   FieldLegend,
-} from "./ui/field";
-import { Input } from "./ui/input";
-import { Separator } from "./ui/separator";
+} from "../ui/field";
+import { Input } from "../ui/input";
+import { Separator } from "../ui/separator";
 
 interface FormData {
   lat: number;
@@ -29,6 +30,7 @@ export default function PlacedMarkerView() {
   const setActivePopup = useStore((s) => s.setActivePopup);
   const updatePlacedMarkerState = useStore((s) => s.updatePlacedMarkerState);
 
+  const closeActivePopup = useCloseActivePopup();
   const { control, handleSubmit } = useForm<FormData>();
 
   const placedMarkerItems = placedMarkerStates.map(
@@ -40,7 +42,7 @@ export default function PlacedMarkerView() {
           className="h-12 w-full cursor-pointer justify-start gap-2 rounded-none px-4 pr-0 text-sm font-normal"
           onClick={() => {
             if (activePopup.id && activePopup.id !== id) {
-              setActivePopup(null, null);
+              closeActivePopup();
             }
 
             updatePlacedMarkerState(i, {
@@ -74,7 +76,7 @@ export default function PlacedMarkerView() {
               <EyeClosed className="h-4 w-4" />
             )}
           </div>
-          <div className="flex h-full items-center overflow-x-scroll pr-2">{`Placed Marker #${i + 1}`}</div>
+          <div className="flex grow items-center overflow-x-auto pr-2">{`Placed Marker #${i + 1}`}</div>
         </Button>
       </>
     ),
@@ -90,7 +92,7 @@ export default function PlacedMarkerView() {
 
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit, onError)}>
+      <form onSubmit={(e) => void handleSubmit(onSubmit, onError)(e)}>
         <FieldGroup className="mb-8">
           <FieldLegend>Manually add a placed marker</FieldLegend>
           <Controller

@@ -6,6 +6,7 @@ import { Popup } from "react-leaflet";
 import { useNavigate } from "react-router";
 
 import CMarker from "../CMarker";
+import { useCloseActivePopup } from "../hooks";
 import { getLayerKeyFromType, useStore } from "../hooks/store";
 // import NoCaPoiZone from "./NoCaPoiZone";
 import {
@@ -69,6 +70,7 @@ export default function FeatureMarker({
   const markerRef = useRef<Marker | null>(null);
 
   const navigate = useNavigate();
+  const closeActivePopup = useCloseActivePopup();
 
   const isPopupOpen = activePopup.id && activePopup.id === String(id);
 
@@ -194,7 +196,7 @@ export default function FeatureMarker({
             setActivePopup(String(id), type);
             void navigate(`?id=${id}`);
           },
-          popupclose: () => setActivePopup(null, null),
+          popupclose: () => closeActivePopup(),
         }}
       >
         {isPopupOpen && (

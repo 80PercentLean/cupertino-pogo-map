@@ -12,7 +12,7 @@ import { latLng } from "leaflet";
 import { useState } from "react";
 import { Controller, type FieldErrors, useForm } from "react-hook-form";
 
-import { Separator } from "./ui/separator";
+import { Separator } from "../ui/separator";
 
 interface FormData {
   latA: number;

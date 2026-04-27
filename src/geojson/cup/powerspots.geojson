@@ -2134,8 +2134,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fb449",
-        "marker-color": "#00fcff",
-        "marker-size": "medium",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
         "marker-symbol": "circle",
         "type": "powerspot",
         "isHidden": true,
@@ -2346,7 +2346,8 @@
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fb451"
+        "l14Id": "808fb451",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-122.048149, 37.316145],

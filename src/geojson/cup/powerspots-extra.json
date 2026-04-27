@@ -317,6 +317,15 @@
     },
     {
       "properties": {
+        "name": "Henna Bash",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      },
+      "id": "902a64f8f1894d8c9f3960920c9f607e.23"
+    },
+    {
+      "properties": {
         "name": "AccessUSA",
         "type": "powerspot",
         "source": "Wayfarer",

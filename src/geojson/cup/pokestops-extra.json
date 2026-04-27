@@ -145,7 +145,8 @@
         "source": "Wayfarer",
         "submitter": "80PercentLean",
         "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-24T08:00:00Z"
+        "created": "2025-03-24T08:00:00Z",
+        "isHidden": true
       },
       "id": "1652a123c428397dace3f7b9d2dc610f.16"
     },
@@ -274,7 +275,8 @@
         "source": "Wayfarer",
         "submitter": "80PercentLean",
         "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-28T08:00:00Z"
+        "created": "2025-03-28T08:00:00Z",
+        "isHidden": true
       },
       "id": "2ca52470a705339e90a58bf11ca01a37.16"
     },
@@ -421,7 +423,8 @@
         "source": "Wayfarer",
         "submitter": "80PercentLean",
         "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-22T08:00:00Z"
+        "created": "2025-03-22T08:00:00Z",
+        "isHidden": true
       },
       "id": "5992fa805d453538a872389d289afcc5.16"
     },
@@ -516,7 +519,8 @@
         "source": "Wayfarer",
         "submitter": "80PercentLean",
         "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-22T08:00:00Z"
+        "created": "2025-03-22T08:00:00Z",
+        "isHidden": true
       },
       "id": "7255704117e137b2876c85b8153b89ec.16"
     },
@@ -537,7 +541,8 @@
         "source": "Wayfarer",
         "submitter": "80PercentLean",
         "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-23T08:00:00Z"
+        "created": "2025-03-23T08:00:00Z",
+        "isHidden": true
       },
       "id": "78b888fea2433baea65779e4cf79543a.16"
     },
@@ -577,7 +582,8 @@
         "source": "Wayfarer",
         "submitter": "80PercentLean",
         "submitted": "2025-03-27T08:00:00Z",
-        "created": "2025-03-29T08:00:00Z"
+        "created": "2025-03-29T08:00:00Z",
+        "isHidden": true
       },
       "id": "7f4220569669322c8dab384ca239443a.16"
     },
@@ -588,7 +594,8 @@
         "source": "Wayfarer",
         "submitter": "80PercentLean",
         "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-24T08:00:00Z"
+        "created": "2025-03-24T08:00:00Z",
+        "isHidden": true
       },
       "id": "7f4c53e1d0613091b0e63c2f3e5fd93e.16"
     },
@@ -752,7 +759,8 @@
         "source": "Wayfarer",
         "submitter": "80PercentLean",
         "submitted": "2025-03-26T08:00:00Z",
-        "created": "2025-03-31T08:00:00Z"
+        "created": "2025-03-31T08:00:00Z",
+        "isHidden": true
       },
       "id": "a536c851848738e6a6fff0a79dc4983b.16"
     },
@@ -829,7 +837,8 @@
         "source": "Wayfarer",
         "submitter": "80PercentLean",
         "submitted": "2025-03-18T08:00:00Z",
-        "created": "2025-03-23T08:00:00Z"
+        "created": "2025-03-23T08:00:00Z",
+        "isHidden": true
       },
       "id": "b4b159c0c1393b5d8cba02f19d83e662.16"
     },
@@ -841,6 +850,16 @@
         "ingress": true
       },
       "id": "b5efec40576346e1a281c0f5bf7a4614.12"
+    },
+    {
+      "id": "b6bd84bb9ff33aed9c2532e9b341b1f4.16",
+      "properties": {
+        "name": "McClellan Pond Bench",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      },
+      "type": "Feature"
     },
     {
       "properties": {
@@ -888,7 +907,8 @@
         "source": "Wayfarer",
         "submitter": "80PercentLean",
         "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-23T08:00:00Z"
+        "created": "2025-03-23T08:00:00Z",
+        "isHidden": true
       },
       "id": "c598512706c13d4b9c3d1220391e0e35.16"
     },
@@ -1028,7 +1048,8 @@
         "source": "Wayfarer",
         "submitter": "80PercentLean",
         "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-18T08:00:00Z"
+        "created": "2025-03-18T08:00:00Z",
+        "isHidden": true
       },
       "id": "df0cb49081ed3c18a698dfc2d4091029.16"
     },
@@ -1039,7 +1060,8 @@
         "source": "Wayfarer",
         "submitter": "80PercentLean",
         "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-20T08:00:00Z"
+        "created": "2025-03-20T08:00:00Z",
+        "isHidden": true
       },
       "id": "e3b9e3209b5131849c85a09934934903.16"
     },
