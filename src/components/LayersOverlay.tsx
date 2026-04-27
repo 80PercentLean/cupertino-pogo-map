@@ -24,7 +24,7 @@ import {
 import { X } from "lucide-react";
 
 import BtnLayer from "./BtnLayer";
-import { useCloseActivePopup } from "./hooks";
+import { useCloseActivePopup, useFindPoiById } from "./hooks";
 import {
   useIsInteractionRadiiOn,
   useIsLayerOn,
@@ -71,6 +71,7 @@ export default function LayersOverlay() {
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const closeActivePopup = useCloseActivePopup();
+  const findPoiById = useFindPoiById();
 
   return (
     <Card className="absolute top-0 right-0 left-0 z-999 mb-20 h-full gap-0 rounded-none pb-20 md:fixed md:left-auto md:m-2 md:max-h-[85vh] md:min-h-auto md:w-67 md:rounded-xl md:pb-0">
@@ -95,11 +96,14 @@ export default function LayersOverlay() {
                 label="Gyms"
                 onClick={() => {
                   if (isLayerGymOn) {
-                    setLayer("gym", { isVisible: false });
-
-                    if (activePopup.id && activePopup.type === "gym") {
-                      closeActivePopup();
+                    if (activePopup) {
+                      const poi = findPoiById(activePopup);
+                      if (poi?.type === "gym") {
+                        closeActivePopup();
+                      }
                     }
+
+                    setLayer("gym", { isVisible: false });
                   } else {
                     setLayer("gym", { isVisible: true });
                   }
@@ -115,11 +119,14 @@ export default function LayersOverlay() {
                 label="PokéStops"
                 onClick={() => {
                   if (isLayerPokestopOn) {
-                    setLayer("pokestop", { isVisible: false });
-
-                    if (activePopup.id && activePopup.type === "pokestop") {
-                      closeActivePopup();
+                    if (activePopup) {
+                      const poi = findPoiById(activePopup);
+                      if (poi?.type === "pokestop") {
+                        closeActivePopup();
+                      }
                     }
+
+                    setLayer("pokestop", { isVisible: false });
                   } else {
                     setLayer("pokestop", { isVisible: true });
                   }
@@ -135,11 +142,14 @@ export default function LayersOverlay() {
                 label="Power Spots"
                 onClick={() => {
                   if (isLayerPowerspotOn) {
-                    setLayer("powerspot", { isVisible: false });
-
-                    if (activePopup.id && activePopup.type === "powerspot") {
-                      closeActivePopup();
+                    if (activePopup) {
+                      const poi = findPoiById(activePopup);
+                      if (poi?.type === "powerspot") {
+                        closeActivePopup();
+                      }
                     }
+
+                    setLayer("powerspot", { isVisible: false });
                   } else {
                     setLayer("powerspot", { isVisible: true });
                   }
@@ -153,11 +163,14 @@ export default function LayersOverlay() {
                 label="Meetup Spots"
                 onClick={() => {
                   if (isLayerMeetupSpotOn) {
-                    setLayer("meetupspot", { isVisible: false }, true);
-
-                    if (activePopup.id && activePopup.type === "meetupspot") {
-                      closeActivePopup();
+                    if (activePopup) {
+                      const poi = findPoiById(activePopup);
+                      if (poi?.type === "meetupspot") {
+                        closeActivePopup();
+                      }
                     }
+
+                    setLayer("meetupspot", { isVisible: false }, true);
                   } else {
                     setLayer("meetupspot", { isVisible: true }, true);
                   }
@@ -171,11 +184,14 @@ export default function LayersOverlay() {
                 label="Parking"
                 onClick={() => {
                   if (isLayerParkingOn) {
-                    setLayer("parking", { isVisible: false }, true);
-
-                    if (activePopup.id && activePopup.type === "parking") {
-                      closeActivePopup();
+                    if (activePopup) {
+                      const poi = findPoiById(activePopup);
+                      if (poi?.type === "parking") {
+                        closeActivePopup();
+                      }
                     }
+
+                    setLayer("parking", { isVisible: false }, true);
                   } else {
                     setLayer("parking", { isVisible: true }, true);
                   }
@@ -199,11 +215,14 @@ export default function LayersOverlay() {
                 label="Restrooms"
                 onClick={() => {
                   if (isLayerRestroomOn) {
-                    setLayer("restroom", { isVisible: false }, true);
-
-                    if (activePopup.id && activePopup.type === "restroom") {
-                      closeActivePopup();
+                    if (activePopup) {
+                      const poi = findPoiById(activePopup);
+                      if (poi?.type === "restroom") {
+                        closeActivePopup();
+                      }
                     }
+
+                    setLayer("restroom", { isVisible: false }, true);
                   } else {
                     setLayer("restroom", { isVisible: true }, true);
                   }
@@ -223,11 +242,14 @@ export default function LayersOverlay() {
                   label="Placed Markers"
                   onClick={() => {
                     if (isLayerPlacedMarkerOn) {
-                      updateAllPlacedMarkerStates({ isVisible: false });
-
-                      if (activePopup.id && activePopup.type === "placed") {
-                        closeActivePopup();
+                      if (activePopup) {
+                        const poi = findPoiById(activePopup);
+                        if (poi?.type === "placed") {
+                          closeActivePopup();
+                        }
                       }
+
+                      updateAllPlacedMarkerStates({ isVisible: false });
                     } else {
                       updateAllPlacedMarkerStates({ isVisible: true });
                     }
@@ -243,11 +265,14 @@ export default function LayersOverlay() {
                   label="TBD"
                   onClick={() => {
                     if (isLayerDevpoiOn) {
-                      setLayer("devpoi", { isVisible: false });
-
-                      if (activePopup.id && activePopup.type === "devpoi") {
-                        closeActivePopup();
+                      if (activePopup) {
+                        const poi = findPoiById(activePopup);
+                        if (poi?.type === "devpoi") {
+                          closeActivePopup();
+                        }
                       }
+
+                      setLayer("devpoi", { isVisible: false });
                     } else {
                       setLayer("devpoi", { isVisible: true });
                     }

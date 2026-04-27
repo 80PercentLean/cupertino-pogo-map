@@ -52,7 +52,7 @@ export default function DistanceCalcView() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit, onError)}>
+    <form onSubmit={(e) => void handleSubmit(onSubmit, onError)(e)}>
       <FieldGroup>
         <FieldLegend>Calculate meters between two coordinates</FieldLegend>
         <Controller

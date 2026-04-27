@@ -72,12 +72,12 @@ export default function FeatureMarker({
   const navigate = useNavigate();
   const closeActivePopup = useCloseActivePopup();
 
-  const isPopupOpen = activePopup.id && activePopup.id === String(id);
+  const isPopupOpen = activePopup && activePopup === String(id);
 
   const onBtnHideClick = () => {
     setMarker(type, String(id), { isVisible: false });
     // Hack to prevent placing marker immediately on hide
-    setTimeout(() => setActivePopup(null, null), 0);
+    setTimeout(() => setActivePopup(null), 0);
   };
   let btnHide;
   if (btnModifierFlags?.hide) {
@@ -193,7 +193,7 @@ export default function FeatureMarker({
         position={position}
         eventHandlers={{
           click: () => {
-            setActivePopup(String(id), type);
+            setActivePopup(String(id));
             void navigate(`?id=${id}`);
           },
           popupclose: () => closeActivePopup(),

@@ -1,4 +1,4 @@
-import type { Feature, FeatureCollection, Geometry, Point } from "geojson";
+import type { Feature, FeatureCollection, Point } from "geojson";
 
 /** Custom properties for a GeoJSON `Feature` representing a POI or a label. */
 export interface CProperties {
@@ -111,7 +111,7 @@ export interface CProperties {
 }
 
 /** A GeoJSON `Feature` representing a POI or a label. */
-export type CFeature = Feature<Geometry, CProperties>;
+export type CFeature = Feature<Point, CProperties>;
 
 /** A GeoJSON `FeatureCollection` a collection of POIs or labels. */
 export type CFeatureCollection = FeatureCollection<Point, CProperties>;

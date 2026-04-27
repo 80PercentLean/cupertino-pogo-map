@@ -203,16 +203,16 @@ export default function ListView() {
                 setIsListViewOpen(false);
               }
 
-              if (activePopup.id && activePopup.id !== id) {
+              if (activePopup && activePopup !== id) {
                 closeActivePopup();
               }
 
               setMarker(type, id, { isVisible: true });
 
               // Hack to make sure the popup opens after a potential previous popup is closed
-              if (activePopup.id !== id) {
+              if (activePopup !== id) {
                 setTimeout(() => {
-                  setActivePopup(id, type);
+                  setActivePopup(id);
                 }, 0);
               }
 

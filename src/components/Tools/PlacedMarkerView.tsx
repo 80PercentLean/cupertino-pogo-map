@@ -41,7 +41,7 @@ export default function PlacedMarkerView() {
           variant="ghost"
           className="h-12 w-full cursor-pointer justify-start gap-2 rounded-none px-4 pr-0 text-sm font-normal"
           onClick={() => {
-            if (activePopup.id && activePopup.id !== id) {
+            if (activePopup && activePopup !== id) {
               closeActivePopup();
             }
 
@@ -50,9 +50,9 @@ export default function PlacedMarkerView() {
             });
 
             // Hack to make sure the popup opens after a potential previous popup is closed
-            if (activePopup.id !== id) {
+            if (activePopup !== id) {
               setTimeout(() => {
-                setActivePopup(id, "placed");
+                setActivePopup(id);
               }, 0);
             }
 

@@ -44,7 +44,7 @@ export default function PlacedMarker({ i }: Props) {
 
   const closeActivePopup = useCloseActivePopup();
 
-  const isPopupOpen = activePopup.id && activePopup.id === id;
+  const isPopupOpen = activePopup && activePopup === id;
 
   const onBtnHideClick = () => {
     updatePlacedMarkerState(i, {
@@ -120,7 +120,7 @@ export default function PlacedMarker({ i }: Props) {
         position={position}
         data-testid={id}
         eventHandlers={{
-          click: () => setActivePopup(id, "placed"),
+          click: () => setActivePopup(id),
           popupclose: () => closeActivePopup(),
         }}
       >

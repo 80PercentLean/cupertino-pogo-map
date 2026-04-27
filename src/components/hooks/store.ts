@@ -44,10 +44,7 @@ export interface PlacedMarkerState extends MarkerState {
 
 export interface StoreState {
   /** Controls which popup is currently open. */
-  activePopup: {
-    id: string | null;
-    type: CProperties["type"] | "placed" | null;
-  };
+  activePopup: string | null;
 
   /** Determines which main view is currently active. */
   activeMainView: "info" | "settings" | "tools" | null;
@@ -138,10 +135,7 @@ export interface StoreState {
   setActiveMainView: (val: StoreState["activeMainView"]) => void;
 
   /** Set the `activePopup` value. */
-  setActivePopup: (
-    id: StoreState["activePopup"]["id"] | null,
-    type: CProperties["type"] | "placed" | null,
-  ) => void;
+  setActivePopup: (val: StoreState["activePopup"] | null) => void;
 
   /** Set the `disableAnimations` value. */
   setDisableAnimations: (val: StoreState["disableAnimations"]) => void;
@@ -232,7 +226,7 @@ export const useStore = create<StoreState>()(
   devtools(
     (set) => {
       const initStoreState: StoreState = {
-        activePopup: { id: null, type: null },
+        activePopup: null,
 
         activeMainView: null,
 
@@ -338,17 +332,8 @@ export const useStore = create<StoreState>()(
         setActiveMainView: (val) =>
           set(() => ({ activeMainView: val }), undefined, "setActiveMainView"),
 
-        setActivePopup: (id, type) =>
-          set(
-            () => ({
-              activePopup: {
-                id,
-                type,
-              },
-            }),
-            undefined,
-            "setActivePopup",
-          ),
+        setActivePopup: (val) =>
+          set(() => ({ activePopup: val }), undefined, "setActivePopup"),
 
         setDisableAnimations: (val) =>
           set(
@@ -578,10 +563,9 @@ export const useStore = create<StoreState>()(
           id &&
           idParam &&
           String(id) === idParam &&
-          !initStoreState.activePopup.id
+          !initStoreState.activePopup
         ) {
-          initStoreState.activePopup.id = String(id);
-          initStoreState.activePopup.type = "devpoi";
+          initStoreState.activePopup = String(id);
           initStoreState.layerDevpoi[String(id)] = { isVisible: true };
           initStoreState.wayfarerMode = true;
         } else {
@@ -590,9 +574,13 @@ export const useStore = create<StoreState>()(
       });
 
       gymsJson.features.forEach(({ id }) => {
-        if (idParam && id === idParam && !initStoreState.activePopup.id) {
-          initStoreState.activePopup.id = id;
-          initStoreState.activePopup.type = "gym";
+        if (
+          id &&
+          idParam &&
+          String(id) === idParam &&
+          !initStoreState.activePopup
+        ) {
+          initStoreState.activePopup = String(id);
           initStoreState.layerGym[String(id)] = { isVisible: true };
         } else {
           initStoreState.layerGym[String(id)] = { isVisible: true };
@@ -600,9 +588,13 @@ export const useStore = create<StoreState>()(
       });
 
       meetupspotsJson.features.forEach(({ id }) => {
-        if (idParam && id === idParam && !initStoreState.activePopup.id) {
-          initStoreState.activePopup.id = id;
-          initStoreState.activePopup.type = "meetupspot";
+        if (
+          id &&
+          idParam &&
+          String(id) === idParam &&
+          !initStoreState.activePopup
+        ) {
+          initStoreState.activePopup = String(id);
           initStoreState.layerMeetupspot[String(id)] = { isVisible: true };
         } else {
           initStoreState.layerMeetupspot[String(id)] = { isVisible: true };
@@ -610,9 +602,13 @@ export const useStore = create<StoreState>()(
       });
 
       parkingJson.features.forEach(({ id }) => {
-        if (idParam && id === idParam && !initStoreState.activePopup.id) {
-          initStoreState.activePopup.id = id;
-          initStoreState.activePopup.type = "parking";
+        if (
+          id &&
+          idParam &&
+          String(id) === idParam &&
+          !initStoreState.activePopup
+        ) {
+          initStoreState.activePopup = String(id);
           initStoreState.layerParking[String(id)] = { isVisible: true };
         } else {
           initStoreState.layerParking[String(id)] = { isVisible: true };
@@ -620,9 +616,13 @@ export const useStore = create<StoreState>()(
       });
 
       pokestopsJson.features.forEach(({ id }) => {
-        if (idParam && id === idParam && !initStoreState.activePopup.id) {
-          initStoreState.activePopup.id = id;
-          initStoreState.activePopup.type = "pokestop";
+        if (
+          id &&
+          idParam &&
+          String(id) === idParam &&
+          !initStoreState.activePopup
+        ) {
+          initStoreState.activePopup = String(id);
           initStoreState.layerPokestop[String(id)] = { isVisible: true };
         } else {
           initStoreState.layerPokestop[String(id)] = { isVisible: true };
@@ -630,9 +630,13 @@ export const useStore = create<StoreState>()(
       });
 
       powerspotsJson.features.forEach(({ id }) => {
-        if (idParam && id === idParam && !initStoreState.activePopup.id) {
-          initStoreState.activePopup.id = id;
-          initStoreState.activePopup.type = "powerspot";
+        if (
+          id &&
+          idParam &&
+          String(id) === idParam &&
+          !initStoreState.activePopup
+        ) {
+          initStoreState.activePopup = String(id);
           initStoreState.layerPowerspot[String(id)] = { isVisible: true };
         } else {
           initStoreState.layerPowerspot[String(id)] = { isVisible: true };
@@ -640,16 +644,20 @@ export const useStore = create<StoreState>()(
       });
 
       restroomsJson.features.forEach(({ id }) => {
-        if (idParam && id === idParam && !initStoreState.activePopup.id) {
-          initStoreState.activePopup.id = id;
-          initStoreState.activePopup.type = "restroom";
+        if (
+          id &&
+          idParam &&
+          String(id) === idParam &&
+          !initStoreState.activePopup
+        ) {
+          initStoreState.activePopup = String(id);
           initStoreState.layerRestroom[String(id)] = { isVisible: true };
         } else {
           initStoreState.layerRestroom[String(id)] = { isVisible: true };
         }
       });
 
-      if (idParam && !initStoreState.activePopup.id) {
+      if (idParam && !initStoreState.activePopup) {
         initStoreState.initErrMsg = "The shared POI was not found.";
       }
 

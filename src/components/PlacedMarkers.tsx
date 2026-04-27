@@ -19,7 +19,7 @@ export default function PlacedMarkers() {
   }
 
   useMapEvent(mapEvent, ({ latlng }) => {
-    if (!activePopup.id) {
+    if (!activePopup) {
       addPlacedMarkerState([latlng.lat, latlng.lng]);
     }
   });

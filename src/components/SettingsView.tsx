@@ -20,14 +20,14 @@ import { Settings } from "lucide-react";
 
 import UiOverlayCard from "./UiOverlayCard";
 import UiOverlayCardIconTitle from "./UiOverlayCardIconTitle";
-import { useCloseActivePopup } from "./hooks";
+import { useCloseActivePopup, useFindPoiById } from "./hooks";
 import { useStore } from "./hooks/store";
 
 /**
  * Displays the settings view.
  */
 export default function SettingsView() {
-  const activePopupType = useStore((s) => s.activePopup.type);
+  const activePopup = useStore((s) => s.activePopup);
   const disableAnimations = useStore((s) => s.disableAnimations);
   const invertCoords = useStore((s) => s.invertCoords);
   const myLocationRangeType = useStore((s) => s.myLocationRangeType);
@@ -46,6 +46,7 @@ export default function SettingsView() {
   );
 
   const closeActivePopup = useCloseActivePopup();
+  const findPoiById = useFindPoiById();
 
   return (
     <UiOverlayCard
@@ -79,9 +80,13 @@ export default function SettingsView() {
               checked={wayfarerMode}
               className="cursor-pointer"
               onCheckedChange={(s) => {
-                if (!s && activePopupType === "devpoi") {
-                  closeActivePopup();
+                if (!s && activePopup) {
+                  const poi = findPoiById(activePopup);
+                  if (poi?.type === "devpoi") {
+                    closeActivePopup();
+                  }
                 }
+
                 setLayer("gym", { showNoCaPoiZone: false });
                 setLayer("pokestop", { showNoCaPoiZone: false });
                 setLayer("powerspot", { showNoCaPoiZone: false });
