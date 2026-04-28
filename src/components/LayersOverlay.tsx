@@ -25,7 +25,11 @@ import { X } from "lucide-react";
 import { useSearchParams } from "react-router";
 
 import BtnLayer from "./BtnLayer";
-import { useFindPoiById } from "./hooks";
+import {
+  useFindPoiById,
+  useRemoveIdQueryParam,
+  useToggleS2Cells,
+} from "./hooks";
 import {
   useIsInteractionRadiiOn,
   useIsLayerOn,
@@ -55,9 +59,6 @@ export default function LayersOverlay() {
   const isLayerPokestopOn = useIsLayerOn("pokestop");
   const isLayerPowerspotOn = useIsLayerOn("powerspot");
   const isLayerRestroomOn = useIsLayerOn("restroom");
-  const isL13GridOn = useStore((s) => s.basicLayers.l13);
-  const isL14GridOn = useStore((s) => s.basicLayers.l14);
-  const isL17GridOn = useStore((s) => s.basicLayers.l17);
   const isNoCaPoiZoneOn = useIsNoCaPoiZoneOn();
   const isNoPowerSpotZoneOn = useIsNoPowerSpotZoneOn();
   const isStdRaidPathOn = useStore((s) => s.basicLayers.stdRaidPath);
@@ -71,8 +72,10 @@ export default function LayersOverlay() {
   );
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
-  const [, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const findPoiById = useFindPoiById();
+  const removeIdQueryParam = useRemoveIdQueryParam();
+  const toggleS2Cells = useToggleS2Cells();
 
   return (
     <Card className="absolute top-0 right-0 left-0 z-999 mb-20 h-full gap-0 rounded-none pb-20 md:fixed md:left-auto md:m-2 md:max-h-[85vh] md:min-h-auto md:w-67 md:rounded-xl md:pb-0">
@@ -100,7 +103,7 @@ export default function LayersOverlay() {
                     if (activePopup) {
                       const poi = findPoiById(activePopup);
                       if (poi?.type === "gym") {
-                        setSearchParams({}, { replace: true });
+                        removeIdQueryParam();
                       }
                     }
 
@@ -123,7 +126,7 @@ export default function LayersOverlay() {
                     if (activePopup) {
                       const poi = findPoiById(activePopup);
                       if (poi?.type === "pokestop") {
-                        setSearchParams({}, { replace: true });
+                        removeIdQueryParam();
                       }
                     }
 
@@ -146,7 +149,7 @@ export default function LayersOverlay() {
                     if (activePopup) {
                       const poi = findPoiById(activePopup);
                       if (poi?.type === "powerspot") {
-                        setSearchParams({}, { replace: true });
+                        removeIdQueryParam();
                       }
                     }
 
@@ -167,7 +170,7 @@ export default function LayersOverlay() {
                     if (activePopup) {
                       const poi = findPoiById(activePopup);
                       if (poi?.type === "meetupspot") {
-                        setSearchParams({}, { replace: true });
+                        removeIdQueryParam();
                       }
                     }
 
@@ -188,7 +191,7 @@ export default function LayersOverlay() {
                     if (activePopup) {
                       const poi = findPoiById(activePopup);
                       if (poi?.type === "parking") {
-                        setSearchParams({}, { replace: true });
+                        removeIdQueryParam();
                       }
                     }
 
@@ -219,7 +222,7 @@ export default function LayersOverlay() {
                     if (activePopup) {
                       const poi = findPoiById(activePopup);
                       if (poi?.type === "restroom") {
-                        setSearchParams({}, { replace: true });
+                        removeIdQueryParam();
                       }
                     }
 
@@ -246,7 +249,7 @@ export default function LayersOverlay() {
                       if (activePopup) {
                         const poi = findPoiById(activePopup);
                         if (poi?.type === "placed") {
-                          setSearchParams({}, { replace: true });
+                          removeIdQueryParam();
                         }
                       }
 
@@ -269,7 +272,7 @@ export default function LayersOverlay() {
                       if (activePopup) {
                         const poi = findPoiById(activePopup);
                         if (poi?.type === "devpoi") {
-                          setSearchParams({}, { replace: true });
+                          removeIdQueryParam();
                         }
                       }
 
@@ -334,9 +337,9 @@ export default function LayersOverlay() {
             <Field orientation="horizontal">
               <Checkbox
                 id="l17-grid"
-                checked={isL17GridOn}
+                checked={searchParams.get("l17") === "on"}
                 className="cursor-pointer"
-                onCheckedChange={() => toggleBasicLayer("l17")}
+                onCheckedChange={() => toggleS2Cells("l17")}
               />
               <FieldLabel htmlFor="l17-grid" className="cursor-pointer">
                 L17 Grid
@@ -345,9 +348,9 @@ export default function LayersOverlay() {
             <Field orientation="horizontal">
               <Checkbox
                 id="l14-grid"
-                checked={isL14GridOn}
+                checked={searchParams.get("l14") === "on"}
                 className="cursor-pointer"
-                onCheckedChange={() => toggleBasicLayer("l14")}
+                onCheckedChange={() => toggleS2Cells("l14")}
               />
               <FieldLabel htmlFor="l14-grid" className="cursor-pointer">
                 L14 Grid
@@ -356,9 +359,9 @@ export default function LayersOverlay() {
             <Field orientation="horizontal">
               <Checkbox
                 id="l13-grid"
-                checked={isL13GridOn}
+                checked={searchParams.get("l13") === "on"}
                 className="cursor-pointer"
-                onCheckedChange={() => toggleBasicLayer("l13")}
+                onCheckedChange={() => toggleS2Cells("l13")}
               />
               <FieldLabel htmlFor="l13-grid" className="cursor-pointer">
                 L13 Grid

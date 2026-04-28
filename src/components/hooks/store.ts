@@ -1,3 +1,4 @@
+import { CENTER_CENTRAL, CENTER_CUP } from "@/constants";
 import { IS_MOBILE } from "@/constantsDom";
 import {
   devpoisJson,
@@ -10,7 +11,7 @@ import {
 } from "@/geojson/data";
 import { type CProperties } from "@/types/CFeatures";
 import { capitalize } from "@/util";
-import type { LatLngTuple } from "leaflet";
+import { type LatLngTuple } from "leaflet";
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 
@@ -54,12 +55,6 @@ export interface StoreState {
 
   /** State for basic layers. */
   basicLayers: {
-    l13: boolean;
-
-    l14: boolean;
-
-    l17: boolean;
-
     label: boolean;
 
     stdRaidPath: boolean;
@@ -112,6 +107,8 @@ export interface StoreState {
 
     removed: boolean;
   };
+
+  mapStart: LatLngTuple;
 
   /** State that controls which type of tile layer is active. */
   mapType: "default" | "extra-info" | "satellite";
@@ -251,12 +248,6 @@ export const useStore = create<StoreState>()(
         },
 
         basicLayers: {
-          l13: false,
-
-          l14: false,
-
-          l17: false,
-
           label: true,
 
           stdRaidPath: true,
@@ -296,6 +287,11 @@ export const useStore = create<StoreState>()(
         layerPowerspot: {},
 
         layerRestroom: {},
+
+        mapStart:
+          import.meta.env.VITE_IS_CENTRAL === "true"
+            ? CENTER_CENTRAL
+            : CENTER_CUP,
 
         modifiers: {
           // Hide disabled power spots
@@ -558,7 +554,7 @@ export const useStore = create<StoreState>()(
       const idParam = urlParams.get("id");
 
       // Initialize marker states for each advanced layer
-      devpoisJson.features.forEach(({ id }) => {
+      devpoisJson.features.forEach(({ id, geometry }) => {
         if (
           id &&
           idParam &&
@@ -567,13 +563,17 @@ export const useStore = create<StoreState>()(
         ) {
           initStoreState.activePopup = String(id);
           initStoreState.layerDevpoi[String(id)] = { isVisible: true };
+          initStoreState.mapStart = [
+            geometry.coordinates[1],
+            geometry.coordinates[0],
+          ];
           initStoreState.wayfarerMode = true;
         } else {
           initStoreState.layerDevpoi[String(id)] = { isVisible: true };
         }
       });
 
-      gymsJson.features.forEach(({ id }) => {
+      gymsJson.features.forEach(({ id, geometry }) => {
         if (
           id &&
           idParam &&
@@ -582,12 +582,16 @@ export const useStore = create<StoreState>()(
         ) {
           initStoreState.activePopup = String(id);
           initStoreState.layerGym[String(id)] = { isVisible: true };
+          initStoreState.mapStart = [
+            geometry.coordinates[1],
+            geometry.coordinates[0],
+          ];
         } else {
           initStoreState.layerGym[String(id)] = { isVisible: true };
         }
       });
 
-      meetupspotsJson.features.forEach(({ id }) => {
+      meetupspotsJson.features.forEach(({ id, geometry }) => {
         if (
           id &&
           idParam &&
@@ -596,12 +600,16 @@ export const useStore = create<StoreState>()(
         ) {
           initStoreState.activePopup = String(id);
           initStoreState.layerMeetupspot[String(id)] = { isVisible: true };
+          initStoreState.mapStart = [
+            geometry.coordinates[1],
+            geometry.coordinates[0],
+          ];
         } else {
           initStoreState.layerMeetupspot[String(id)] = { isVisible: true };
         }
       });
 
-      parkingJson.features.forEach(({ id }) => {
+      parkingJson.features.forEach(({ id, geometry }) => {
         if (
           id &&
           idParam &&
@@ -610,12 +618,16 @@ export const useStore = create<StoreState>()(
         ) {
           initStoreState.activePopup = String(id);
           initStoreState.layerParking[String(id)] = { isVisible: true };
+          initStoreState.mapStart = [
+            geometry.coordinates[1],
+            geometry.coordinates[0],
+          ];
         } else {
           initStoreState.layerParking[String(id)] = { isVisible: true };
         }
       });
 
-      pokestopsJson.features.forEach(({ id }) => {
+      pokestopsJson.features.forEach(({ id, geometry }) => {
         if (
           id &&
           idParam &&
@@ -624,12 +636,16 @@ export const useStore = create<StoreState>()(
         ) {
           initStoreState.activePopup = String(id);
           initStoreState.layerPokestop[String(id)] = { isVisible: true };
+          initStoreState.mapStart = [
+            geometry.coordinates[1],
+            geometry.coordinates[0],
+          ];
         } else {
           initStoreState.layerPokestop[String(id)] = { isVisible: true };
         }
       });
 
-      powerspotsJson.features.forEach(({ id }) => {
+      powerspotsJson.features.forEach(({ id, geometry }) => {
         if (
           id &&
           idParam &&
@@ -638,12 +654,16 @@ export const useStore = create<StoreState>()(
         ) {
           initStoreState.activePopup = String(id);
           initStoreState.layerPowerspot[String(id)] = { isVisible: true };
+          initStoreState.mapStart = [
+            geometry.coordinates[1],
+            geometry.coordinates[0],
+          ];
         } else {
           initStoreState.layerPowerspot[String(id)] = { isVisible: true };
         }
       });
 
-      restroomsJson.features.forEach(({ id }) => {
+      restroomsJson.features.forEach(({ id, geometry }) => {
         if (
           id &&
           idParam &&
@@ -652,6 +672,10 @@ export const useStore = create<StoreState>()(
         ) {
           initStoreState.activePopup = String(id);
           initStoreState.layerRestroom[String(id)] = { isVisible: true };
+          initStoreState.mapStart = [
+            geometry.coordinates[1],
+            geometry.coordinates[0],
+          ];
         } else {
           initStoreState.layerRestroom[String(id)] = { isVisible: true };
         }

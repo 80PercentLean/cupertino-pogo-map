@@ -3,12 +3,12 @@ import { type Marker } from "leaflet";
 import { Trash2 } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { Popup } from "react-leaflet";
-import { useSearchParams } from "react-router";
 
 import CMarker from "./CMarker";
 import InteractionRadius from "./features/InteractionRadius";
 import NoCaPoiZone from "./features/NoCaPoiZone";
 import NoPowerSpotZone from "./features/NoPowerSpotZone";
+import { useRemoveIdQueryParam, useSetIdQueryParam } from "./hooks";
 import { useStore } from "./hooks/store";
 import {
   createBtnHide,
@@ -41,7 +41,8 @@ export default function PlacedMarker({ i }: Props) {
 
   const markerRef = useRef<Marker | null>(null);
 
-  const [, setSearchParams] = useSearchParams();
+  const removeIdQueryParam = useRemoveIdQueryParam();
+  const setIdQueryParam = useSetIdQueryParam();
 
   const isPopupOpen = activePopup && activePopup === id;
 
@@ -49,7 +50,7 @@ export default function PlacedMarker({ i }: Props) {
     updatePlacedMarkerState(i, {
       isVisible: !isVisible,
     });
-    setSearchParams({}, { replace: true });
+    removeIdQueryParam();
   };
   const btnHide = createBtnHide(onBtnHideClick);
 
@@ -90,7 +91,7 @@ export default function PlacedMarker({ i }: Props) {
       variant="destructive"
       onClick={() => {
         removePlacedMarkerState(i);
-        setSearchParams({}, { replace: true });
+        removeIdQueryParam();
       }}
       className="ml-auto cursor-pointer rounded-full hover:text-black"
       data-testid="delete-placed-marker-btn"
@@ -116,8 +117,8 @@ export default function PlacedMarker({ i }: Props) {
         position={position}
         data-testid={id}
         eventHandlers={{
-          click: () => setSearchParams({ id: String(id) }, { replace: true }),
-          popupclose: () => setSearchParams({}, { replace: true }),
+          click: () => setIdQueryParam(id),
+          popupclose: () => removeIdQueryParam(),
         }}
       >
         {isPopupOpen && (

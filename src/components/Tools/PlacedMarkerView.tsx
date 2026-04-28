@@ -5,6 +5,7 @@ import { useSearchParams } from "react-router";
 
 import { imgLeafletMarker } from "../../leafletIcons";
 import { MapContext } from "../MapContext";
+import { useRemoveIdQueryParam, useSetIdQueryParam } from "../hooks";
 import { useStore } from "../hooks/store";
 import { Button } from "../ui/button";
 import {
@@ -29,7 +30,8 @@ export default function PlacedMarkerView() {
   const placedMarkerStates = useStore((s) => s.placedMarkerStates);
   const updatePlacedMarkerState = useStore((s) => s.updatePlacedMarkerState);
 
-  const [, setSearchParams] = useSearchParams();
+  const removeIdQueryParam = useRemoveIdQueryParam();
+  const setIdQueryParam = useSetIdQueryParam();
   const { control, handleSubmit } = useForm<FormData>();
 
   const placedMarkerItems = placedMarkerStates.map(
@@ -41,7 +43,7 @@ export default function PlacedMarkerView() {
           className="h-12 w-full cursor-pointer justify-start gap-2 rounded-none px-4 pr-0 text-sm font-normal"
           onClick={() => {
             if (activePopup && activePopup !== id) {
-              setSearchParams({}, { replace: true });
+              removeIdQueryParam();
             }
 
             updatePlacedMarkerState(i, {
@@ -50,7 +52,7 @@ export default function PlacedMarkerView() {
 
             // Hack to make sure the popup opens after a potential previous popup is closed
             if (activePopup !== id) {
-              setSearchParams({ id: String(id) }, { replace: true });
+              setIdQueryParam(id);
             }
 
             // Hack to reduce flyTo glitches breaking positions of features on the map

@@ -17,11 +17,10 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Settings } from "lucide-react";
-import { useSearchParams } from "react-router";
 
 import UiOverlayCard from "./UiOverlayCard";
 import UiOverlayCardIconTitle from "./UiOverlayCardIconTitle";
-import { useFindPoiById } from "./hooks";
+import { useFindPoiById, useRemoveIdQueryParam } from "./hooks";
 import { useStore } from "./hooks/store";
 
 /**
@@ -46,7 +45,7 @@ export default function SettingsView() {
     (s) => s.updateAllPlacedMarkerStates,
   );
 
-  const [, setSearchParams] = useSearchParams();
+  const removeIdQueryParam = useRemoveIdQueryParam();
 
   const findPoiById = useFindPoiById();
 
@@ -85,7 +84,7 @@ export default function SettingsView() {
                 if (!s && activePopup) {
                   const poi = findPoiById(activePopup);
                   if (poi?.type === "devpoi") {
-                    setSearchParams({}, { replace: true });
+                    removeIdQueryParam();
                   }
                 }
 

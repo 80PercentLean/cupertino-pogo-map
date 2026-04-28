@@ -8,6 +8,7 @@ import {
   restroomsJson,
 } from "@/geojson/data";
 import type { CFeature, CProperties } from "@/types/CFeatures";
+import { useSearchParams } from "react-router";
 
 import { type MarkerState, type PlacedMarkerState, useStore } from "./store";
 
@@ -189,4 +190,62 @@ export const useFindPoiById = () => {
 
     return null;
   };
+};
+
+/**
+ * Remove the "id" query parameter from the URL.
+ * @returns Function that removes the "id" query parameter from the URL
+ */
+export const useRemoveIdQueryParam = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  return () => {
+    if (searchParams.get("id")) {
+      setSearchParams(
+        (s) => {
+          s.delete("id");
+          return s;
+        },
+        { replace: true },
+      );
+    }
+  };
+};
+
+/**
+ * Set the given ID as the "id" query parameter for the URL.
+ * @returns Function that sets the given ID as the "id" query parameter for the URL
+ */
+export const useSetIdQueryParam = () => {
+  const [, setSearchParams] = useSearchParams();
+
+  return (id: string | number | null) => {
+    if (typeof id === "string" || typeof id === "number") {
+      setSearchParams((s) => {
+        s.set("id", String(id));
+        return s;
+      });
+    }
+  };
+};
+
+/**
+ * Toggle the S2 cell layer of the given level on or off by adding or removing the corresponding query parameter.
+ * @returns Function that toggles the S2 cell layer of the given level on or off by adding or removing the corresponding query parameter
+ */
+export const useToggleS2Cells = () => {
+  const [, setSearchParams] = useSearchParams();
+
+  return (lvl: "l13" | "l14" | "l17") =>
+    setSearchParams(
+      (s) => {
+        if (s.get(lvl) === "on") {
+          s.delete(lvl);
+        } else {
+          s.set(lvl, "on");
+        }
+        return s;
+      },
+      { replace: true },
+    );
 };

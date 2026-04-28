@@ -27,9 +27,9 @@ import { getDesktopMediaQuery } from "@/util";
 import type { LatLngTuple } from "leaflet";
 import { Eye, EyeClosed, Search, X } from "lucide-react";
 import { useContext, useDeferredValue, useState } from "react";
-import { useSearchParams } from "react-router";
 
 import { MapContext } from "./MapContext";
+import { useRemoveIdQueryParam, useSetIdQueryParam } from "./hooks";
 import { useStore } from "./hooks/store";
 import { Button } from "./ui/button";
 import { InputGroup, InputGroupAddon, InputGroupInput } from "./ui/input-group";
@@ -67,7 +67,7 @@ export default function ListView() {
   const deferredQuery = useDeferredValue(query);
   const setActivePopup = useStore((s) => s.setActivePopup);
 
-  const [, setSearchParams] = useSearchParams();
+  const setIdQueryParam = useSetIdQueryParam();
 
   const buildList = (...args: CFeatureCollection["features"][]) => {
     const featureData: FeatureData[] = [];
@@ -214,15 +214,14 @@ export default function ListView() {
 
               if (activePopup !== id) {
                 setTimeout(() => {
-                  console.log("delay", DELAY);
-                  setSearchParams({ id }, { replace: true });
+                  setIdQueryParam(id);
                 }, DELAY);
               }
 
               // Hack to reduce flyTo glitches breaking positions of features on the map
               setTimeout(() => {
-                map?.flyTo(coordinates);
-              }, DELAY + 100);
+                map?.flyTo(coordinates, 18);
+              }, DELAY - 500);
             }}
           >
             <div className="flex h-full w-6 items-center justify-center">

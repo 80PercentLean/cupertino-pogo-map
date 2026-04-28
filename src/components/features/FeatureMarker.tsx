@@ -3,9 +3,9 @@ import { DivIcon, type LatLngTuple, type Marker } from "leaflet";
 import { Icon } from "leaflet";
 import { useEffect, useRef } from "react";
 import { Popup } from "react-leaflet";
-import { useSearchParams } from "react-router";
 
 import CMarker from "../CMarker";
+import { useRemoveIdQueryParam, useSetIdQueryParam } from "../hooks";
 import { getLayerKeyFromType, useStore } from "../hooks/store";
 // import NoCaPoiZone from "./NoCaPoiZone";
 import {
@@ -67,13 +67,14 @@ export default function FeatureMarker({
 
   const markerRef = useRef<Marker | null>(null);
 
-  const [, setSearchParams] = useSearchParams();
+  const removeIdQueryParam = useRemoveIdQueryParam();
+  const setIdQueryParam = useSetIdQueryParam();
 
   const isPopupOpen = activePopup && activePopup === String(id);
 
   const onBtnHideClick = () => {
     setMarker(type, String(id), { isVisible: false });
-    setSearchParams({}, { replace: true });
+    removeIdQueryParam();
   };
   let btnHide;
   if (btnModifierFlags?.hide) {
@@ -188,11 +189,8 @@ export default function FeatureMarker({
         icon={icon}
         position={position}
         eventHandlers={{
-          click: () => setSearchParams({ id: String(id) }, { replace: true }),
-          popupclose: () => {
-            console.log("popup close fired");
-            setSearchParams({}, { replace: true });
-          },
+          click: () => setIdQueryParam(id),
+          popupclose: () => removeIdQueryParam(),
         }}
       >
         {isPopupOpen && (
