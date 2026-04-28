@@ -29,7 +29,7 @@ import { Eye, EyeClosed, Search, X } from "lucide-react";
 import { useContext, useDeferredValue, useState } from "react";
 
 import { MapContext } from "./MapContext";
-import { useRemoveIdQueryParam, useSetIdQueryParam } from "./hooks";
+import { useSetIdQueryParam } from "./hooks";
 import { useStore } from "./hooks/store";
 import { Button } from "./ui/button";
 import { InputGroup, InputGroupAddon, InputGroupInput } from "./ui/input-group";

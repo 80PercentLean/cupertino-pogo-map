@@ -1,7 +1,6 @@
 import { Eye, EyeClosed } from "lucide-react";
 import { useContext } from "react";
 import { Controller, type FieldErrors, useForm } from "react-hook-form";
-import { useSearchParams } from "react-router";
 
 import { imgLeafletMarker } from "../../leafletIcons";
 import { MapContext } from "../MapContext";
