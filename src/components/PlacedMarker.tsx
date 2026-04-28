@@ -3,12 +3,12 @@ import { type Marker } from "leaflet";
 import { Trash2 } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { Popup } from "react-leaflet";
+import { useSearchParams } from "react-router";
 
 import CMarker from "./CMarker";
 import InteractionRadius from "./features/InteractionRadius";
 import NoCaPoiZone from "./features/NoCaPoiZone";
 import NoPowerSpotZone from "./features/NoPowerSpotZone";
-import { useCloseActivePopup } from "./hooks";
 import { useStore } from "./hooks/store";
 import {
   createBtnHide,
@@ -36,13 +36,12 @@ export default function PlacedMarker({ i }: Props) {
     showNoPowerSpotZone,
   } = useStore((s) => s.placedMarkerStates[i]);
   const removePlacedMarkerState = useStore((s) => s.removePlacedMarkerState);
-  const setActivePopup = useStore((s) => s.setActivePopup);
   const updatePlacedMarkerState = useStore((s) => s.updatePlacedMarkerState);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const markerRef = useRef<Marker | null>(null);
 
-  const closeActivePopup = useCloseActivePopup();
+  const [, setSearchParams] = useSearchParams();
 
   const isPopupOpen = activePopup && activePopup === id;
 
@@ -50,7 +49,7 @@ export default function PlacedMarker({ i }: Props) {
     updatePlacedMarkerState(i, {
       isVisible: !isVisible,
     });
-    setTimeout(() => closeActivePopup(), 0);
+    setSearchParams({}, { replace: true });
   };
   const btnHide = createBtnHide(onBtnHideClick);
 
@@ -91,10 +90,7 @@ export default function PlacedMarker({ i }: Props) {
       variant="destructive"
       onClick={() => {
         removePlacedMarkerState(i);
-        // This is a hack to prevent a new marker from being placed after the delete button is clicked
-        setTimeout(() => {
-          closeActivePopup();
-        }, 0);
+        setSearchParams({}, { replace: true });
       }}
       className="ml-auto cursor-pointer rounded-full hover:text-black"
       data-testid="delete-placed-marker-btn"
@@ -120,8 +116,8 @@ export default function PlacedMarker({ i }: Props) {
         position={position}
         data-testid={id}
         eventHandlers={{
-          click: () => setActivePopup(id),
-          popupclose: () => closeActivePopup(),
+          click: () => setSearchParams({ id: String(id) }, { replace: true }),
+          popupclose: () => setSearchParams({}, { replace: true }),
         }}
       >
         {isPopupOpen && (

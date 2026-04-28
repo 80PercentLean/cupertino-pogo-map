@@ -27,9 +27,9 @@ import { getDesktopMediaQuery } from "@/util";
 import type { LatLngTuple } from "leaflet";
 import { Eye, EyeClosed, Search, X } from "lucide-react";
 import { useContext, useDeferredValue, useState } from "react";
+import { useSearchParams } from "react-router";
 
 import { MapContext } from "./MapContext";
-import { useCloseActivePopup } from "./hooks";
 import { useStore } from "./hooks/store";
 import { Button } from "./ui/button";
 import { InputGroup, InputGroupAddon, InputGroupInput } from "./ui/input-group";
@@ -44,6 +44,8 @@ interface FeatureData {
   type: CProperties["type"];
 }
 
+const DELAY = 1500;
+
 export default function ListView() {
   const { map } = useContext(MapContext);
   const activePopup = useStore((s) => s.activePopup);
@@ -54,7 +56,6 @@ export default function ListView() {
   const layerPokestop = useStore((s) => s.layerPokestop);
   const layerPowerspot = useStore((s) => s.layerPowerspot);
   const layerRestroom = useStore((s) => s.layerRestroom);
-  const setActivePopup = useStore((s) => s.setActivePopup);
   const setIsListViewOpen = useStore((s) => s.setIsListViewOpen);
   const showDisabled = useStore((s) => s.modifiers.isDisabled);
   const showHidden = useStore((s) => s.modifiers.isHidden);
@@ -64,8 +65,9 @@ export default function ListView() {
 
   const [query, setQuery] = useState<string>("");
   const deferredQuery = useDeferredValue(query);
+  const setActivePopup = useStore((s) => s.setActivePopup);
 
-  const closeActivePopup = useCloseActivePopup();
+  const [, setSearchParams] = useSearchParams();
 
   const buildList = (...args: CFeatureCollection["features"][]) => {
     const featureData: FeatureData[] = [];
@@ -203,23 +205,24 @@ export default function ListView() {
                 setIsListViewOpen(false);
               }
 
-              if (activePopup && activePopup !== id) {
-                closeActivePopup();
-              }
-
               setMarker(type, id, { isVisible: true });
 
-              // Hack to make sure the popup opens after a potential previous popup is closed
+              // The following conditions/setTimeout is a hack to get popups working
+              if (activePopup && activePopup !== id) {
+                setActivePopup(null);
+              }
+
               if (activePopup !== id) {
                 setTimeout(() => {
-                  setActivePopup(id);
-                }, 0);
+                  console.log("delay", DELAY);
+                  setSearchParams({ id }, { replace: true });
+                }, DELAY);
               }
 
               // Hack to reduce flyTo glitches breaking positions of features on the map
               setTimeout(() => {
                 map?.flyTo(coordinates);
-              }, 0);
+              }, DELAY + 100);
             }}
           >
             <div className="flex h-full w-6 items-center justify-center">

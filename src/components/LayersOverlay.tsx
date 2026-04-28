@@ -22,9 +22,10 @@ import {
   imgPowerspot,
 } from "@/leafletIcons";
 import { X } from "lucide-react";
+import { useSearchParams } from "react-router";
 
 import BtnLayer from "./BtnLayer";
-import { useCloseActivePopup, useFindPoiById } from "./hooks";
+import { useFindPoiById } from "./hooks";
 import {
   useIsInteractionRadiiOn,
   useIsLayerOn,
@@ -70,7 +71,7 @@ export default function LayersOverlay() {
   );
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
-  const closeActivePopup = useCloseActivePopup();
+  const [, setSearchParams] = useSearchParams();
   const findPoiById = useFindPoiById();
 
   return (
@@ -99,7 +100,7 @@ export default function LayersOverlay() {
                     if (activePopup) {
                       const poi = findPoiById(activePopup);
                       if (poi?.type === "gym") {
-                        closeActivePopup();
+                        setSearchParams({}, { replace: true });
                       }
                     }
 
@@ -122,7 +123,7 @@ export default function LayersOverlay() {
                     if (activePopup) {
                       const poi = findPoiById(activePopup);
                       if (poi?.type === "pokestop") {
-                        closeActivePopup();
+                        setSearchParams({}, { replace: true });
                       }
                     }
 
@@ -145,7 +146,7 @@ export default function LayersOverlay() {
                     if (activePopup) {
                       const poi = findPoiById(activePopup);
                       if (poi?.type === "powerspot") {
-                        closeActivePopup();
+                        setSearchParams({}, { replace: true });
                       }
                     }
 
@@ -166,7 +167,7 @@ export default function LayersOverlay() {
                     if (activePopup) {
                       const poi = findPoiById(activePopup);
                       if (poi?.type === "meetupspot") {
-                        closeActivePopup();
+                        setSearchParams({}, { replace: true });
                       }
                     }
 
@@ -187,7 +188,7 @@ export default function LayersOverlay() {
                     if (activePopup) {
                       const poi = findPoiById(activePopup);
                       if (poi?.type === "parking") {
-                        closeActivePopup();
+                        setSearchParams({}, { replace: true });
                       }
                     }
 
@@ -218,7 +219,7 @@ export default function LayersOverlay() {
                     if (activePopup) {
                       const poi = findPoiById(activePopup);
                       if (poi?.type === "restroom") {
-                        closeActivePopup();
+                        setSearchParams({}, { replace: true });
                       }
                     }
 
@@ -245,7 +246,7 @@ export default function LayersOverlay() {
                       if (activePopup) {
                         const poi = findPoiById(activePopup);
                         if (poi?.type === "placed") {
-                          closeActivePopup();
+                          setSearchParams({}, { replace: true });
                         }
                       }
 
@@ -268,7 +269,7 @@ export default function LayersOverlay() {
                       if (activePopup) {
                         const poi = findPoiById(activePopup);
                         if (poi?.type === "devpoi") {
-                          closeActivePopup();
+                          setSearchParams({}, { replace: true });
                         }
                       }
 

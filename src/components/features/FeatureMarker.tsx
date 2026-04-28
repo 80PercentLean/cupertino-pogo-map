@@ -3,10 +3,9 @@ import { DivIcon, type LatLngTuple, type Marker } from "leaflet";
 import { Icon } from "leaflet";
 import { useEffect, useRef } from "react";
 import { Popup } from "react-leaflet";
-import { useNavigate } from "react-router";
+import { useSearchParams } from "react-router";
 
 import CMarker from "../CMarker";
-import { useCloseActivePopup } from "../hooks";
 import { getLayerKeyFromType, useStore } from "../hooks/store";
 // import NoCaPoiZone from "./NoCaPoiZone";
 import {
@@ -64,20 +63,17 @@ export default function FeatureMarker({
   const setMarker = useStore((s) => s.setMarker);
   const { showInteractionRadius, showNoCaPoiZone, showNoPowerSpotZone } =
     useStore((s) => s[getLayerKeyFromType(type)][id]);
-  const setActivePopup = useStore((s) => s.setActivePopup);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const markerRef = useRef<Marker | null>(null);
 
-  const navigate = useNavigate();
-  const closeActivePopup = useCloseActivePopup();
+  const [, setSearchParams] = useSearchParams();
 
   const isPopupOpen = activePopup && activePopup === String(id);
 
   const onBtnHideClick = () => {
     setMarker(type, String(id), { isVisible: false });
-    // Hack to prevent placing marker immediately on hide
-    setTimeout(() => setActivePopup(null), 0);
+    setSearchParams({}, { replace: true });
   };
   let btnHide;
   if (btnModifierFlags?.hide) {
@@ -192,11 +188,11 @@ export default function FeatureMarker({
         icon={icon}
         position={position}
         eventHandlers={{
-          click: () => {
-            setActivePopup(String(id));
-            void navigate(`?id=${id}`);
+          click: () => setSearchParams({ id: String(id) }, { replace: true }),
+          popupclose: () => {
+            console.log("popup close fired");
+            setSearchParams({}, { replace: true });
           },
-          popupclose: () => closeActivePopup(),
         }}
       >
         {isPopupOpen && (

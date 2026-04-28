@@ -1,10 +1,10 @@
 import { Eye, EyeClosed } from "lucide-react";
 import { useContext } from "react";
 import { Controller, type FieldErrors, useForm } from "react-hook-form";
+import { useSearchParams } from "react-router";
 
 import { imgLeafletMarker } from "../../leafletIcons";
 import { MapContext } from "../MapContext";
-import { useCloseActivePopup } from "../hooks";
 import { useStore } from "../hooks/store";
 import { Button } from "../ui/button";
 import {
@@ -27,10 +27,9 @@ export default function PlacedMarkerView() {
   const activePopup = useStore((s) => s.activePopup);
   const addPlacedMarkerState = useStore((s) => s.addPlacedMarkerState);
   const placedMarkerStates = useStore((s) => s.placedMarkerStates);
-  const setActivePopup = useStore((s) => s.setActivePopup);
   const updatePlacedMarkerState = useStore((s) => s.updatePlacedMarkerState);
 
-  const closeActivePopup = useCloseActivePopup();
+  const [, setSearchParams] = useSearchParams();
   const { control, handleSubmit } = useForm<FormData>();
 
   const placedMarkerItems = placedMarkerStates.map(
@@ -42,7 +41,7 @@ export default function PlacedMarkerView() {
           className="h-12 w-full cursor-pointer justify-start gap-2 rounded-none px-4 pr-0 text-sm font-normal"
           onClick={() => {
             if (activePopup && activePopup !== id) {
-              closeActivePopup();
+              setSearchParams({}, { replace: true });
             }
 
             updatePlacedMarkerState(i, {
@@ -51,9 +50,7 @@ export default function PlacedMarkerView() {
 
             // Hack to make sure the popup opens after a potential previous popup is closed
             if (activePopup !== id) {
-              setTimeout(() => {
-                setActivePopup(id);
-              }, 0);
+              setSearchParams({ id: String(id) }, { replace: true });
             }
 
             // Hack to reduce flyTo glitches breaking positions of features on the map

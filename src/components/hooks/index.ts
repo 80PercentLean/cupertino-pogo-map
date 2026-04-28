@@ -8,7 +8,6 @@ import {
   restroomsJson,
 } from "@/geojson/data";
 import type { CFeature, CProperties } from "@/types/CFeatures";
-import { useLocation, useNavigate } from "react-router";
 
 import { type MarkerState, type PlacedMarkerState, useStore } from "./store";
 
@@ -29,23 +28,6 @@ interface PoiData {
     properties?: CProperties;
   };
 }
-
-/**
- * React hook that returns a function that closes the active popup.
- * @param shouldNav Optional boolean to determine whether to navigate to the base path after closing the popup. Defaults to true.
- * @returns Function that closes the active popup
- */
-export const useCloseActivePopup = () => {
-  const setActivePopup = useStore((s) => s.setActivePopup);
-
-  const navigate = useNavigate();
-  const { pathname } = useLocation();
-
-  return () => {
-    setActivePopup(null);
-    void navigate(pathname);
-  };
-};
 
 /**
  * React hook that returna a function that retrieves POI data by its ID.

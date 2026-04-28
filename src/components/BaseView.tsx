@@ -1,6 +1,6 @@
 import { type Map } from "leaflet";
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router";
+import { useSearchParams } from "react-router";
 
 import InfoView from "./InfoView";
 import { MapContext } from "./MapContext";
@@ -16,13 +16,19 @@ import { useStore } from "./hooks/store";
 export default function BaseView() {
   const [map, setMap] = useState<Map | null>(null);
   const activeMainView = useStore((s) => s.activeMainView);
+  const activePopup = useStore((s) => s.activePopup);
+  const setActivePopup = useStore((s) => s.setActivePopup);
 
-  const location = useLocation();
+  const [searchParams] = useSearchParams();
 
   useEffect(() => {
-    // TODO: Fly to POI when query string navigation occurs
-    console.log("location", location);
-  }, [location]);
+    const id = searchParams.get("id");
+    if (id && id !== activePopup) {
+      setActivePopup(id);
+    } else if (!id && activePopup) {
+      setActivePopup(null);
+    }
+  }, [activePopup, searchParams, setActivePopup]);
 
   return (
     <MapContext value={{ map, setMap }}>
