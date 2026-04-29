@@ -1,3 +1,22 @@
+import { toast } from "sonner";
+
+/**
+ * Capitalize the first letter of a string.
+ * @param str Input string to capitalize
+ * @returns Capitalized version of the input string
+ */
+export const capitalize = <T extends string>(str: string): Capitalize<T> => {
+  return (str.charAt(0).toUpperCase() + str.slice(1)) as Capitalize<T>;
+};
+
+/**
+ * Run a media query that checks if the screen width is considered desktop or mobile.
+ * @returns MediaQueryList where its matches property is true if the screen width is considered desktop, false if it is considered mobile
+ */
+export const getDesktopMediaQuery = () => {
+  return window.matchMedia("(min-width: 768px)");
+};
+
 /**
  * Checks if the user is a mobile user agent or not.
  * Original code taken from: https://stackoverflow.com/questions/77506413/detecting-if-the-user-is-on-desktop-or-mobile-in-the-browser
@@ -19,19 +38,19 @@ export const isMobileUa = () => {
   return result;
 };
 
-/**
- * Run a media query that checks if the screen width is considered desktop or mobile.
- * @returns MediaQueryList where its matches property is true if the screen width is considered desktop, false if it is considered mobile
- */
-export const getDesktopMediaQuery = () => {
-  return window.matchMedia("(min-width: 768px)");
-};
+export const ERR_COPY_LOG = "Failed to copy to clipboard: ";
 
 /**
- * Capitalize the first letter of a string.
- * @param str Input string to capitalize
- * @returns Capitalized version of the input string
+ * Copy text to clipboard.
+ * @param value Value to copy to clipboard
  */
-export const capitalize = <T extends string>(str: string): Capitalize<T> => {
-  return (str.charAt(0).toUpperCase() + str.slice(1)) as Capitalize<T>;
+export const copyToClipboard = async (value: string) => {
+  try {
+    const clipboardTxt = typeof value !== "string" ? String(value) : value;
+    await navigator.clipboard.writeText(clipboardTxt);
+    toast(`"${clipboardTxt}" was copied your clipboard!`);
+  } catch (err) {
+    toast.error("Failed to copy coordinates to the clipboard.");
+    console.error(ERR_COPY_LOG, err);
+  }
 };

@@ -1,6 +1,7 @@
 import { type Map } from "leaflet";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router";
+import { toast } from "sonner";
 
 import InfoView from "./InfoView";
 import { MapContext } from "./MapContext";
@@ -8,6 +9,7 @@ import MapView from "./MapView";
 import SettingsView from "./SettingsView";
 import ToolsView from "./Tools/ToolsView";
 import UiOverlay from "./UiOverlay";
+import { useRemoveIdQueryParam } from "./hooks";
 import { useStore } from "./hooks/store";
 
 /**
@@ -21,8 +23,22 @@ export default function BaseView() {
 
   const [searchParams] = useSearchParams();
 
+  const initErrMsg = useStore((s) => s.initErrMsg);
+
+  const removeIdQueryParam = useRemoveIdQueryParam();
+
   useEffect(() => {
+    if (initErrMsg) {
+      // Remove id query param since the shared POI was not found
+      removeIdQueryParam();
+      toast.error(initErrMsg);
+    }
+  }, []);
+
+  useEffect(() => {
+    // Activate & deactivate popups based on the presence of the id query param
     const id = searchParams.get("id");
+
     if (id && id !== activePopup) {
       setActivePopup(id);
     } else if (!id && activePopup) {

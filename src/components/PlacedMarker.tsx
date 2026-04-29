@@ -93,7 +93,7 @@ export default function PlacedMarker({ i }: Props) {
         removePlacedMarkerState(i);
         removeIdQueryParam();
       }}
-      className="ml-auto cursor-pointer rounded-full hover:text-black"
+      className="cursor-pointer rounded-full hover:text-black"
       data-testid="delete-placed-marker-btn"
     >
       <Trash2 />
@@ -129,9 +129,10 @@ export default function PlacedMarker({ i }: Props) {
               position,
               wayfarerMode
                 ? undefined
-                : `<p>You placed a marker at:<ul class="list-disc px-4"><li class="mb-2">Latitude: ${position[0]}</li><li>Longitude: ${position[1]}</li></ul></p>`,
+                : `<p>You placed a marker at:<ul class="list-disc px-4"><li class="mb-2">Latitude: <span class="font-mono">${position[0]}</span></li><li>Longitude: <span class="font-mono">${position[1]}</span></li></ul></p>`,
               undefined,
               wayfarerMode,
+              undefined,
               {
                 delete: btnDelete,
                 hide: btnHide,

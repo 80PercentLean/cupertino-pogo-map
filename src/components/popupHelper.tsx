@@ -1,8 +1,18 @@
-import { Separator } from "@/components/ui/separator";
+import { IS_MOBILE } from "@/constantsDom";
 import { imgPowerspot } from "@/leafletIcons";
 import { cn } from "@/lib/utils";
+import { ERR_COPY_LOG, copyToClipboard } from "@/util";
 import type { LatLngTuple } from "leaflet";
-import { Ban, Circle, Eye, EyeClosed, LandPlot, Radius } from "lucide-react";
+import {
+  Ban,
+  Circle,
+  Eye,
+  EyeClosed,
+  LandPlot,
+  Navigation2,
+  Radius,
+  Share,
+} from "lucide-react";
 import type { ReactElement } from "react";
 
 import BtnCopy, { classNameDefault } from "./BtnCopy";
@@ -42,7 +52,7 @@ export const createBtnInteractionRadius = (
       title="Toggle Interaction Radius (80m)"
       variant="outline"
       className={cn(
-        "group ml-2 cursor-pointer rounded-full",
+        "group cursor-pointer rounded-full",
         showInteractionRadius
           ? "border-green-600 bg-blue-500 text-green-400 hover:bg-blue-500"
           : "bg-blue-300 text-white hover:bg-blue-300",
@@ -64,7 +74,7 @@ export const createBtnNoPowerSpotZone = (
       title="Toggle No Power Spot Build Zones (22m)"
       variant="outline"
       className={cn(
-        "group ml-2 cursor-pointer rounded-full text-white",
+        "group cursor-pointer rounded-full text-white",
         showNoPowerSpotZone
           ? "border-red-700 bg-gray-400 hover:bg-gray-400"
           : "bg-gray-300 hover:bg-gray-300",
@@ -93,7 +103,7 @@ export const createBtnNoCaPoiZone = (
       title="Toggle No CA POI Build Zones (30m)"
       variant="outline"
       className={cn(
-        "group ml-2 cursor-pointer rounded-full text-white",
+        "group cursor-pointer rounded-full text-white",
         showNoCaPoiZone
           ? "border-red-700 bg-red-400 text-red-100 hover:bg-red-400"
           : "bg-red-300 text-red-900 hover:bg-red-300",
@@ -120,6 +130,7 @@ export const createBtnNoCaPoiZone = (
  * @param desc Description of the popup
  * @param img Image of the popup
  * @param wayfarerMode Flag which says if wayfarer mode is enabled or not
+ * @param id The ID of the popup's POI
  * @param modifierBtns Modifier buttons to use in the popup
  * @param renderHtml Set description HTML directly
  * @returns The content of the popup as a string
@@ -131,6 +142,7 @@ export const createPopupContent = (
   desc?: string,
   img?: string,
   wayfarerMode?: boolean,
+  id?: string | number,
   modifierBtns?: ModifierBtns,
   renderHtml?: boolean,
 ) => {
@@ -143,34 +155,18 @@ export const createPopupContent = (
   return (
     <>
       <h1 className="font-bold">{title}</h1>
-      {subtitle && <p className="mt-0! italic">{subtitle}</p>}
+      {subtitle && <p className="my-0! italic">{subtitle}</p>}
+      {wayfarerMode && (
+        <p className="my-0! font-mono text-xs text-gray-500">{id}</p>
+      )}
       {img && (
-        <div className="flex justify-center">
+        <div className="mt-4 flex justify-center">
           <a href={img} rel="noopener noreferrer" target="_blank">
             <img src={img} alt={title ?? ""} className="h-42 object-cover" />
           </a>
         </div>
       )}
       {description}
-      <Separator className="mt-2" />
-      <p>
-        Directions:{" "}
-        <a
-          href={`https://maps.google.com/maps?q=${position[0]},${position[1]}`}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Google Maps
-        </a>{" "}
-        |{" "}
-        <a
-          href={`https://maps.apple.com/place?coordinate=${position[0]},${position[1]}`}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Apple Maps
-        </a>
-      </p>
       {wayfarerMode && (
         <>
           <div className="flex gap-2">
@@ -197,22 +193,68 @@ export const createPopupContent = (
               className={`${classNameDefault}`}
             />
           </div>
-          {modifierBtns && Object.keys(modifierBtns).length > 0 && (
-            <div className="mt-2 flex">
+        </>
+      )}
+      <div className="mt-2 flex gap-2">
+        {wayfarerMode &&
+          modifierBtns &&
+          Object.keys(modifierBtns).length > 0 && (
+            <>
               {modifierBtns?.hide}
               {modifierBtns?.interactionRadius}
               {modifierBtns?.noPowerSpotZone}
               {wayfarerMode && modifierBtns?.noCaPoiZone}
-              {modifierBtns?.delete}
-            </div>
+            </>
           )}
-        </>
-      )}
-      {!wayfarerMode && modifierBtns?.delete && (
-        <div className="flex-end mt-2 flex justify-end">
+        <div className="ml-auto flex gap-2">
+          <Button
+            asChild
+            size="icon"
+            title="Directions"
+            className="cursor-pointer rounded-full text-white! hover:text-emerald-500!"
+            data-testid="delete-placed-marker-btn"
+          >
+            <a
+              href={`https://maps.google.com/maps?q=${position[0]},${position[1]}`}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Navigation2 />
+            </a>
+          </Button>
+          <Button
+            size="icon"
+            title="Share"
+            className="cursor-pointer rounded-full text-white! hover:text-emerald-500!"
+            data-testid="delete-placed-marker-btn"
+            onClick={() => {
+              if (IS_MOBILE) {
+                void (async () => {
+                  try {
+                    await navigator.share({
+                      title: "Cupertino PoGO Map",
+                      text: "Check out this map of Cupertino PoGO's Campsite!",
+                      url: window.location.href,
+                    });
+                  } catch (err) {
+                    console.error("Web share API failed", err);
+                    copyToClipboard(window.location.href).catch((err) => {
+                      console.error(ERR_COPY_LOG, err);
+                    });
+                  }
+                })();
+              } else {
+                copyToClipboard(window.location.href).catch((err) => {
+                  console.error(ERR_COPY_LOG, err);
+                });
+              }
+            }}
+          >
+            <Share />
+          </Button>
           {modifierBtns?.delete}
         </div>
-      )}
+      </div>
     </>
   );
 };
