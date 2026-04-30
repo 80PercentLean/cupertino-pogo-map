@@ -15,9 +15,6 @@ import { type LatLngTuple } from "leaflet";
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 
-/** Global variable that allows placed markers to have a simple unique ID. */
-let placedMarkerCount = 0;
-
 export type LayerKey = `layer${Capitalize<CProperties["type"]>}`;
 
 export type ModifierType = keyof StoreState["modifiers"];
@@ -236,7 +233,7 @@ export const useStore = create<StoreState>()(
               placedMarkerStates: [
                 ...s.placedMarkerStates,
                 {
-                  id: `placed-${placedMarkerCount}`,
+                  id: `placed-${s.placedMarkerStates.length}`,
                   position,
                   isVisible: true,
                 },
@@ -245,7 +242,6 @@ export const useStore = create<StoreState>()(
             undefined,
             "addPlacedMarkerState",
           );
-          ++placedMarkerCount;
 
           return result;
         },
