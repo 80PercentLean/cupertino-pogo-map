@@ -98,9 +98,30 @@ export default function ListView() {
             continue;
           }
 
+          const querySet = new Set(deferredQuery.toLowerCase().split(" "));
+          const matchGym = querySet.has("gym") || querySet.has("gyms");
+          const matchPokeStop =
+            querySet.has("pokestops") || querySet.has("pokestops");
+          const matchPowerSpot =
+            querySet.has("powerspot") || querySet.has("powerspots");
+          const matchMeetupSpot =
+            querySet.has("meetupspot") || querySet.has("meetupspots");
+          const matchParking = querySet.has("parking");
+          const matchRestroom =
+            querySet.has("restroom") || querySet.has("restrooms");
+          const matchDevPoi = querySet.has("devpoi");
+
           if (
             query === "" ||
-            name.toLowerCase().includes(deferredQuery.toLowerCase())
+            name.toLowerCase().includes(deferredQuery.toLowerCase()) ||
+            deferredQuery === id ||
+            (matchGym && type === "gym") ||
+            (matchPokeStop && type === "pokestop") ||
+            (matchPowerSpot && type === "powerspot") ||
+            (matchMeetupSpot && type === "meetupspot") ||
+            (matchParking && type === "parking") ||
+            (matchRestroom && type === "restroom") ||
+            (matchDevPoi && type === "devpoi")
           ) {
             featureData.push({
               coordinates: [coordinates[1], coordinates[0]],
