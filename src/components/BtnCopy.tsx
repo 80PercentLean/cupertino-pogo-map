@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ERR_COPY_LOG, copyToClipboard } from "@/util";
+import { copyToClipboard } from "@/util";
 import { Copy } from "lucide-react";
 
 export interface Props {
@@ -22,7 +22,7 @@ export default function BtnCopy({ className, text, value }: Props) {
       className={className ?? classNameDefault}
       onClick={() => {
         copyToClipboard(String(value)).catch((err) => {
-          console.error(ERR_COPY_LOG, err);
+          console.error(err);
         });
       }}
     >

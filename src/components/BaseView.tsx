@@ -32,16 +32,18 @@ export default function BaseView() {
       // Remove id query param since the shared POI was not found
       removeIdQueryParam();
       toast.error(initErrMsg);
+      console.error(initErrMsg);
     }
   }, []);
 
   useEffect(() => {
     // Activate & deactivate popups based on the presence of the id query param
     const id = searchParams.get("id");
+    const latlng = searchParams.get("latlng");
 
     if (id && id !== activePopup) {
       setActivePopup(id);
-    } else if (!id && activePopup) {
+    } else if (!latlng && !id && activePopup) {
       setActivePopup(null);
     }
   }, [activePopup, searchParams, setActivePopup]);

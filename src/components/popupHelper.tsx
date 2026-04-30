@@ -1,7 +1,7 @@
 import { IS_MOBILE } from "@/constantsDom";
 import { imgPowerspot } from "@/leafletIcons";
 import { cn } from "@/lib/utils";
-import { ERR_COPY_LOG, copyToClipboard } from "@/util";
+import { copyToClipboard } from "@/util";
 import type { LatLngTuple } from "leaflet";
 import {
   Ban,
@@ -80,7 +80,6 @@ export const createBtnNoPowerSpotZone = (
           : "bg-gray-300 hover:bg-gray-300",
       )}
       onClick={() => onBtnNoPowerSpotZoneClick()}
-      data-testid="delete-placed-marker-btn"
     >
       <img src={imgPowerspot} alt="Power Spot Icon" className="h-4" />
       <Ban
@@ -109,7 +108,6 @@ export const createBtnNoCaPoiZone = (
           : "bg-red-300 text-red-900 hover:bg-red-300",
       )}
       onClick={() => onBtnNoCaPoiZoneClick()}
-      data-testid="delete-placed-marker-btn"
     >
       <LandPlot />
       <Ban
@@ -131,6 +129,7 @@ export const createBtnNoCaPoiZone = (
  * @param img Image of the popup
  * @param wayfarerMode Flag which says if wayfarer mode is enabled or not
  * @param id The ID of the popup's POI
+ * @param shareUrl The URL to share, otherwise it will default to the current page URL
  * @param modifierBtns Modifier buttons to use in the popup
  * @param renderHtml Set description HTML directly
  * @returns The content of the popup as a string
@@ -143,6 +142,7 @@ export const createPopupContent = (
   img?: string,
   wayfarerMode?: boolean,
   id?: string | number,
+  shareUrl?: string,
   modifierBtns?: ModifierBtns,
   renderHtml?: boolean,
 ) => {
@@ -156,7 +156,7 @@ export const createPopupContent = (
     <>
       <h1 className="font-bold">{title}</h1>
       {subtitle && <p className="my-0! italic">{subtitle}</p>}
-      {wayfarerMode && (
+      {wayfarerMode && id && (
         <p className="my-0! font-mono text-xs text-gray-500">{id}</p>
       )}
       {img && (
@@ -210,9 +210,8 @@ export const createPopupContent = (
           <Button
             asChild
             size="icon"
-            title="Directions"
-            className="cursor-pointer rounded-full text-white! hover:text-emerald-500!"
-            data-testid="delete-placed-marker-btn"
+            title="Directions via Google Maps"
+            className="flex cursor-pointer flex-col gap-1 rounded-sm text-white! hover:text-emerald-500!"
           >
             <a
               href={`https://maps.google.com/maps?q=${position[0]},${position[1]}`}
@@ -220,37 +219,47 @@ export const createPopupContent = (
               target="_blank"
             >
               <Navigation2 />
+              <span className="text-[8px] uppercase">Nav</span>
             </a>
           </Button>
           <Button
             size="icon"
             title="Share"
-            className="cursor-pointer rounded-full text-white! hover:text-emerald-500!"
-            data-testid="delete-placed-marker-btn"
+            className="flex cursor-pointer flex-col gap-1 rounded-sm text-white! hover:text-emerald-500!"
             onClick={() => {
+              const url = shareUrl ?? window.location.href;
               if (IS_MOBILE) {
                 void (async () => {
                   try {
                     await navigator.share({
                       title: "Cupertino PoGO Map",
-                      text: "Check out this map of Cupertino PoGO's Campsite!",
-                      url: window.location.href,
+                      text: "Check out the Cupertino PoGO map!",
+                      url: url,
                     });
                   } catch (err) {
+                    if (
+                      err instanceof DOMException &&
+                      err.name === "AbortError"
+                    ) {
+                      // User canceled the share, so no error actually occurred
+                      return;
+                    }
+
                     console.error("Web share API failed", err);
-                    copyToClipboard(window.location.href).catch((err) => {
-                      console.error(ERR_COPY_LOG, err);
+                    copyToClipboard(url).catch((err) => {
+                      console.error(err);
                     });
                   }
                 })();
               } else {
-                copyToClipboard(window.location.href).catch((err) => {
-                  console.error(ERR_COPY_LOG, err);
+                copyToClipboard(url).catch((err) => {
+                  console.error(err);
                 });
               }
             }}
           >
             <Share />
+            <span className="text-[8px] uppercase">Share</span>
           </Button>
           {modifierBtns?.delete}
         </div>

@@ -202,6 +202,9 @@ export interface StoreState {
   wayfarerMode: boolean;
 }
 
+const SHARED_LOCATION_ERR_MSG =
+  "An error occurred while trying to load the shared location.";
+
 const isLatLngTuple = (value: unknown): value is LatLngTuple => {
   return (
     Array.isArray(value) &&
@@ -680,6 +683,29 @@ export const useStore = create<StoreState>()(
           initStoreState.layerRestroom[String(id)] = { isVisible: true };
         }
       });
+
+      const latlngTuple = urlParams.get("latlng")?.split(",");
+      if (latlngTuple) {
+        if (Array.isArray(latlngTuple) && latlngTuple.length === 2) {
+          const lat = Number(latlngTuple[0]);
+          const lng = Number(latlngTuple[1]);
+
+          if (!isNaN(lat) && !isNaN(lng)) {
+            initStoreState.placedMarkerStates.push({
+              id: "placed-0",
+              position: [lat, lng],
+              isVisible: true,
+            });
+            initStoreState.mapStart = [lat, lng];
+            initStoreState.activePopup =
+              initStoreState.placedMarkerStates[0].id;
+          } else {
+            initStoreState.initErrMsg = SHARED_LOCATION_ERR_MSG;
+          }
+        } else {
+          initStoreState.initErrMsg = SHARED_LOCATION_ERR_MSG;
+        }
+      }
 
       if (idParam && !initStoreState.activePopup) {
         initStoreState.initErrMsg = "The shared POI was not found.";

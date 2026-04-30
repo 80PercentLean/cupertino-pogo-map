@@ -38,8 +38,6 @@ export const isMobileUa = () => {
   return result;
 };
 
-export const ERR_COPY_LOG = "Failed to copy to clipboard: ";
-
 /**
  * Copy text to clipboard.
  * @param value Value to copy to clipboard
@@ -50,7 +48,7 @@ export const copyToClipboard = async (value: string) => {
     await navigator.clipboard.writeText(clipboardTxt);
     toast(`"${clipboardTxt}" was copied your clipboard!`);
   } catch (err) {
-    toast.error("Failed to copy coordinates to the clipboard.");
-    console.error(ERR_COPY_LOG, err);
+    toast.error(`Failed to copy to clipboard: ${value}`);
+    console.error(err);
   }
 };

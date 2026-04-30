@@ -193,7 +193,7 @@ export const useFindPoiById = () => {
 };
 
 /**
- * Remove the "id" query parameter from the URL.
+ * Remove the "id" query parameter from the URL. Also clears the "latlng" query parameter.
  * @returns Function that removes the "id" query parameter from the URL
  */
 export const useRemoveIdQueryParam = () => {
@@ -204,6 +204,7 @@ export const useRemoveIdQueryParam = () => {
       setSearchParams(
         (s) => {
           s.delete("id");
+          s.delete("latlng");
           return s;
         },
         { replace: true },
@@ -213,7 +214,7 @@ export const useRemoveIdQueryParam = () => {
 };
 
 /**
- * Set the given ID as the "id" query parameter for the URL.
+ * Set the given ID as the "id" query parameter for the URL. Also clears the "latlng" query parameter.
  * @returns Function that sets the given ID as the "id" query parameter for the URL
  */
 export const useSetIdQueryParam = () => {
@@ -223,6 +224,7 @@ export const useSetIdQueryParam = () => {
     if (typeof id === "string" || typeof id === "number") {
       setSearchParams((s) => {
         s.set("id", String(id));
+        s.delete("latlng");
         return s;
       });
     }

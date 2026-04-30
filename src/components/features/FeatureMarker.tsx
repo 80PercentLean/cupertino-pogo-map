@@ -203,6 +203,7 @@ export default function FeatureMarker({
               photo,
               wayfarerMode,
               id,
+              undefined,
               modifierBtns,
               renderHtml,
             )}

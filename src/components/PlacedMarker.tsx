@@ -3,12 +3,13 @@ import { type Marker } from "leaflet";
 import { Trash2 } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { Popup } from "react-leaflet";
+import { useSearchParams } from "react-router";
 
 import CMarker from "./CMarker";
 import InteractionRadius from "./features/InteractionRadius";
 import NoCaPoiZone from "./features/NoCaPoiZone";
 import NoPowerSpotZone from "./features/NoPowerSpotZone";
-import { useRemoveIdQueryParam, useSetIdQueryParam } from "./hooks";
+import { useRemoveIdQueryParam } from "./hooks";
 import { useStore } from "./hooks/store";
 import {
   createBtnHide,
@@ -41,8 +42,8 @@ export default function PlacedMarker({ i }: Props) {
 
   const markerRef = useRef<Marker | null>(null);
 
+  const [, setSearchParams] = useSearchParams();
   const removeIdQueryParam = useRemoveIdQueryParam();
-  const setIdQueryParam = useSetIdQueryParam();
 
   const isPopupOpen = activePopup && activePopup === id;
 
@@ -93,10 +94,11 @@ export default function PlacedMarker({ i }: Props) {
         removePlacedMarkerState(i);
         removeIdQueryParam();
       }}
-      className="cursor-pointer rounded-full hover:text-black"
+      className="flex cursor-pointer flex-col gap-1 rounded-sm hover:text-black"
       data-testid="delete-placed-marker-btn"
     >
       <Trash2 />
+      <span className="text-[8px] uppercase">Del</span>
     </Button>
   );
 
@@ -106,6 +108,10 @@ export default function PlacedMarker({ i }: Props) {
       setTimeout(() => markerRef.current?.openPopup(), 0);
     }
   }, [isPopupOpen]);
+
+  const shareUrl = new URL(window.location.href);
+  shareUrl.search = "";
+  shareUrl.searchParams.set("latlng", position.toString());
 
   return (
     <>
@@ -117,8 +123,26 @@ export default function PlacedMarker({ i }: Props) {
         position={position}
         data-testid={id}
         eventHandlers={{
-          click: () => setIdQueryParam(id),
-          popupclose: () => removeIdQueryParam(),
+          click: () => {
+            setSearchParams(
+              (s) => {
+                s.set("id", id);
+                s.set("latlng", position.toString());
+                return s;
+              },
+              { replace: true },
+            );
+          },
+          popupclose: () => {
+            setSearchParams(
+              (s) => {
+                s.delete("id");
+                s.delete("latlng");
+                return s;
+              },
+              { replace: true },
+            );
+          },
         }}
       >
         {isPopupOpen && (
@@ -133,6 +157,7 @@ export default function PlacedMarker({ i }: Props) {
               undefined,
               wayfarerMode,
               undefined,
+              shareUrl.toString(),
               {
                 delete: btnDelete,
                 hide: btnHide,
