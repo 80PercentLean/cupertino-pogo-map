@@ -31,6 +31,7 @@ export interface Props {
   btnModifierFlags?: BtnModifierFlags;
   desc?: string;
   icon: DivIcon | Icon;
+  iconHighlighted?: DivIcon;
   id: string | number;
   isDisabled?: boolean;
   photo?: string;
@@ -50,6 +51,7 @@ export default function FeatureMarker({
   desc,
   id,
   icon,
+  iconHighlighted,
   isDisabled,
   photo,
   position,
@@ -61,8 +63,12 @@ export default function FeatureMarker({
 }: Props) {
   const activePopup = useStore((s) => s.activePopup);
   const setMarker = useStore((s) => s.setMarker);
-  const { showInteractionRadius, showNoCaPoiZone, showNoPowerSpotZone } =
-    useStore((s) => s[getLayerKeyFromType(type)][id]);
+  const {
+    isHighlighted,
+    showInteractionRadius,
+    showNoCaPoiZone,
+    showNoPowerSpotZone,
+  } = useStore((s) => s[getLayerKeyFromType(type)][id]);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const markerRef = useRef<Marker | null>(null);
@@ -186,12 +192,13 @@ export default function FeatureMarker({
       {interactionRadius}
       <CMarker
         ref={markerRef}
-        icon={icon}
+        icon={iconHighlighted && isHighlighted ? iconHighlighted : icon}
         position={position}
         eventHandlers={{
           click: () => setIdQueryParam(id),
           popupclose: () => removeIdQueryParam(),
         }}
+        zIndexOffset={isHighlighted ? 10000 : 0}
       >
         {isPopupOpen && (
           <Popup>

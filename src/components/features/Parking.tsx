@@ -1,6 +1,11 @@
 import { parkingJson } from "@/geojson/data";
 
-import { iconParking, iconParkingWarn } from "../../leafletIcons";
+import {
+  iconParking,
+  iconParkingHighlighted,
+  iconParkingWarn,
+  iconParkingWarnHighlighted,
+} from "../../leafletIcons";
 import Features from "./Features";
 
 /**
@@ -17,6 +22,14 @@ export default function Parking() {
             return iconParkingWarn;
           default:
             return iconParking;
+        }
+      }}
+      iconHighlighted={(_, subtype) => {
+        switch (subtype) {
+          case "conditionally-free":
+            return iconParkingWarnHighlighted;
+          default:
+            return iconParkingHighlighted;
         }
       }}
       renderHtml={true}

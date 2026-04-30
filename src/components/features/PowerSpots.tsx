@@ -1,5 +1,5 @@
 import { powerspotsJson } from "@/geojson/data";
-import { iconPowerspot } from "@/leafletIcons";
+import { iconPowerspot, iconPowerspotHighlighted } from "@/leafletIcons";
 
 import Features from "./Features";
 
@@ -16,6 +16,7 @@ export default function PowerSpots() {
       }}
       features={powerspotsJson.features}
       icon={iconPowerspot}
+      iconHighlighted={iconPowerspotHighlighted}
       subtitle={(
         _,
         {

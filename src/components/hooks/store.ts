@@ -24,6 +24,9 @@ export type ModifierType = keyof StoreState["modifiers"];
 
 /** State for an individual marker. */
 export interface MarkerState {
+  /** Highlight the marker when true. */
+  isHighlighted?: boolean;
+
   /** Show the marker when true. */
   isVisible?: boolean;
 
@@ -550,32 +553,13 @@ export const useStore = create<StoreState>()(
             "updatePlacedMarkerState",
           ),
 
-        wayfarerMode: false,
+        wayfarerMode: true,
       };
 
       const urlParams = new URLSearchParams(window.location.search);
       const idParam = urlParams.get("id");
 
       // Initialize marker states for each advanced layer
-      devpoisJson.features.forEach(({ id, geometry }) => {
-        if (
-          id &&
-          idParam &&
-          String(id) === idParam &&
-          !initStoreState.activePopup
-        ) {
-          initStoreState.activePopup = String(id);
-          initStoreState.layerDevpoi[String(id)] = { isVisible: true };
-          initStoreState.mapStart = [
-            geometry.coordinates[1],
-            geometry.coordinates[0],
-          ];
-          initStoreState.wayfarerMode = true;
-        } else {
-          initStoreState.layerDevpoi[String(id)] = { isVisible: true };
-        }
-      });
-
       gymsJson.features.forEach(({ id, geometry }) => {
         if (
           id &&
@@ -591,42 +575,6 @@ export const useStore = create<StoreState>()(
           ];
         } else {
           initStoreState.layerGym[String(id)] = { isVisible: true };
-        }
-      });
-
-      meetupspotsJson.features.forEach(({ id, geometry }) => {
-        if (
-          id &&
-          idParam &&
-          String(id) === idParam &&
-          !initStoreState.activePopup
-        ) {
-          initStoreState.activePopup = String(id);
-          initStoreState.layerMeetupspot[String(id)] = { isVisible: true };
-          initStoreState.mapStart = [
-            geometry.coordinates[1],
-            geometry.coordinates[0],
-          ];
-        } else {
-          initStoreState.layerMeetupspot[String(id)] = { isVisible: true };
-        }
-      });
-
-      parkingJson.features.forEach(({ id, geometry }) => {
-        if (
-          id &&
-          idParam &&
-          String(id) === idParam &&
-          !initStoreState.activePopup
-        ) {
-          initStoreState.activePopup = String(id);
-          initStoreState.layerParking[String(id)] = { isVisible: true };
-          initStoreState.mapStart = [
-            geometry.coordinates[1],
-            geometry.coordinates[0],
-          ];
-        } else {
-          initStoreState.layerParking[String(id)] = { isVisible: true };
         }
       });
 
@@ -666,6 +614,42 @@ export const useStore = create<StoreState>()(
         }
       });
 
+      parkingJson.features.forEach(({ id, geometry }) => {
+        if (
+          id &&
+          idParam &&
+          String(id) === idParam &&
+          !initStoreState.activePopup
+        ) {
+          initStoreState.activePopup = String(id);
+          initStoreState.layerParking[String(id)] = { isVisible: true };
+          initStoreState.mapStart = [
+            geometry.coordinates[1],
+            geometry.coordinates[0],
+          ];
+        } else {
+          initStoreState.layerParking[String(id)] = { isVisible: true };
+        }
+      });
+
+      meetupspotsJson.features.forEach(({ id, geometry }) => {
+        if (
+          id &&
+          idParam &&
+          String(id) === idParam &&
+          !initStoreState.activePopup
+        ) {
+          initStoreState.activePopup = String(id);
+          initStoreState.layerMeetupspot[String(id)] = { isVisible: true };
+          initStoreState.mapStart = [
+            geometry.coordinates[1],
+            geometry.coordinates[0],
+          ];
+        } else {
+          initStoreState.layerMeetupspot[String(id)] = { isVisible: true };
+        }
+      });
+
       restroomsJson.features.forEach(({ id, geometry }) => {
         if (
           id &&
@@ -681,6 +665,25 @@ export const useStore = create<StoreState>()(
           ];
         } else {
           initStoreState.layerRestroom[String(id)] = { isVisible: true };
+        }
+      });
+
+      devpoisJson.features.forEach(({ id, geometry }) => {
+        if (
+          id &&
+          idParam &&
+          String(id) === idParam &&
+          !initStoreState.activePopup
+        ) {
+          initStoreState.activePopup = String(id);
+          initStoreState.layerDevpoi[String(id)] = { isVisible: true };
+          initStoreState.mapStart = [
+            geometry.coordinates[1],
+            geometry.coordinates[0],
+          ];
+          initStoreState.wayfarerMode = true;
+        } else {
+          initStoreState.layerDevpoi[String(id)] = { isVisible: true };
         }
       });
 

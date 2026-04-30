@@ -1,6 +1,6 @@
 import { devpoisJson } from "@/geojson/data";
 
-import { iconDevpoi } from "../../leafletIcons";
+import { iconDevpoi, iconDevpoiHighlighted } from "../../leafletIcons";
 import Features from "./Features";
 
 /**
@@ -17,6 +17,7 @@ export default function DevPois() {
       }}
       features={devpoisJson.features}
       icon={iconDevpoi}
+      iconHighlighted={iconDevpoiHighlighted}
       subtitle={(_, { source } = {}) => {
         return `POI In-Development [${source}]`;
       }}

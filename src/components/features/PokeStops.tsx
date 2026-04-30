@@ -1,5 +1,10 @@
 import { pokestopsJson } from "@/geojson/data";
-import { iconPokestop, iconShowcase } from "@/leafletIcons";
+import {
+  iconPokestop,
+  iconPokestopHighlighted,
+  iconShowcase,
+  iconShowcaseHighlighted,
+} from "@/leafletIcons";
 
 import Features from "./Features";
 
@@ -22,6 +27,14 @@ export default function PokeStops() {
             return iconShowcase;
           default:
             return iconPokestop;
+        }
+      }}
+      iconHighlighted={(_, subtype) => {
+        switch (subtype) {
+          case "showcase":
+            return iconShowcaseHighlighted;
+          default:
+            return iconPokestopHighlighted;
         }
       }}
       subtitle={(

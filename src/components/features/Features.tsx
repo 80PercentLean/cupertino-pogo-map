@@ -25,6 +25,12 @@ export interface Props {
         type: CProperties["type"],
         subtype?: CProperties["subtype"],
       ) => DivIcon | Icon);
+  iconHighlighted?:
+    | DivIcon
+    | ((
+        type: CProperties["type"],
+        subtype?: CProperties["subtype"],
+      ) => DivIcon);
   renderHtml?: boolean;
   subtitle?:
     | string
@@ -36,6 +42,7 @@ export default function Features({
   btnModifierFlags,
   features,
   icon,
+  iconHighlighted,
   renderHtml,
   subtitle,
   type,
@@ -86,6 +93,11 @@ export default function Features({
           id={id}
           desc={desc}
           icon={typeof icon === "function" ? icon?.(type, subtype) : icon}
+          iconHighlighted={
+            typeof iconHighlighted === "function"
+              ? iconHighlighted?.(type, subtype)
+              : iconHighlighted
+          }
           isDisabled={isDisabled}
           photo={photo}
           position={position}

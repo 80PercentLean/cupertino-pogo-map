@@ -1,6 +1,6 @@
 import { meetupspotsJson } from "@/geojson/data";
 
-import { iconMeetupspot } from "../../leafletIcons";
+import { iconMeetupspot, iconMeetupspotHighlighted } from "../../leafletIcons";
 import Features from "./Features";
 
 /**
@@ -12,6 +12,7 @@ export default function MeetupSpots() {
       btnModifierFlags={{ hide: true }}
       features={meetupspotsJson.features}
       icon={iconMeetupspot}
+      iconHighlighted={iconMeetupspotHighlighted}
       subtitle="Meetup Spot"
       type="meetupspot"
     />

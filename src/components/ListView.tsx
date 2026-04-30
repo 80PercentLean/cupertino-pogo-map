@@ -11,10 +11,10 @@ import {
 import {
   emojiAllBinaryRestroom,
   emojiDevpoi,
-  emojiFRestroom,
   emojiMRestroom,
   emojiMeetupspot,
   emojiParking,
+  emojiWRestroom,
   imgGym,
   imgLeafletMarker,
   imgPokestop,
@@ -173,7 +173,7 @@ export default function ListView() {
             if (subtype === "men") {
               icon = emojiMRestroom;
             } else if (subtype === "women") {
-              icon = emojiFRestroom;
+              icon = emojiWRestroom;
             } else {
               icon = emojiAllBinaryRestroom;
             }
@@ -222,6 +222,12 @@ export default function ListView() {
               setTimeout(() => {
                 map?.flyTo(coordinates, 18);
               }, DELAY - 500);
+            }}
+            onMouseEnter={() => {
+              setMarker(type, id, { isHighlighted: true });
+            }}
+            onMouseLeave={() => {
+              setMarker(type, id, { isHighlighted: false });
             }}
           >
             <div className="flex h-full w-6 items-center justify-center">

@@ -1,4 +1,5 @@
 import { gymsJson } from "@/geojson/data";
+import { iconGymHighlighted } from "@/leafletIcons";
 import { iconGym } from "@/leafletIcons";
 
 import Features from "./Features";
@@ -17,6 +18,7 @@ export default function Gyms() {
       }}
       features={gymsJson.features}
       icon={iconGym}
+      iconHighlighted={iconGymHighlighted}
       subtitle={(
         _,
         { isCommunityContributed, isHidden, removed, wayfarerMode } = {},

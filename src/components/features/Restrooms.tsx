@@ -2,8 +2,11 @@ import { restroomsJson } from "@/geojson/data";
 
 import {
   iconAllBinaryRestroom,
+  iconAllBinaryRestroomHighlighted,
   iconMRestroom,
+  iconMRestroomHighlighted,
   iconWRestroom,
+  iconWRestroomHighlighted,
 } from "../../leafletIcons";
 import Features from "./Features";
 
@@ -23,6 +26,16 @@ export default function Restrooms() {
             return iconWRestroom;
           default:
             return iconAllBinaryRestroom;
+        }
+      }}
+      iconHighlighted={(_, subtype) => {
+        switch (subtype) {
+          case "men":
+            return iconMRestroomHighlighted;
+          case "women":
+            return iconWRestroomHighlighted;
+          default:
+            return iconAllBinaryRestroomHighlighted;
         }
       }}
       subtitle={(_, { subtype } = {}) => {
