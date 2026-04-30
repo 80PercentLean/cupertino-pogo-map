@@ -113,9 +113,6 @@ export interface StoreState {
 
   mapStart: LatLngTuple;
 
-  /** State that controls which type of tile layer is active. */
-  mapType: "default" | "extra-info" | "satellite";
-
   /** Coordinates for current my location. */
   myLocation: [number, number] | null;
 
@@ -152,9 +149,6 @@ export interface StoreState {
     state: MarkerState,
     override?: boolean,
   ) => void;
-
-  /** Set the `mapType` value. */
-  setMapType: (val: StoreState["mapType"]) => void;
 
   /** Set a marker property value. */
   setMarker: (
@@ -273,9 +267,6 @@ export const useStore = create<StoreState>()(
 
         // TODO: Start with opened list view on desktop and a closed one on mobile
         isListViewOpen: !IS_MOBILE,
-
-        // Map type starts off as default
-        mapType: "default",
 
         // Advanced layer marker states will be initialized after initStoreState is initialized
         layerDevpoi: {},
@@ -420,9 +411,6 @@ export const useStore = create<StoreState>()(
             undefined,
             "setMarker",
           ),
-
-        setMapType: (val) =>
-          set(() => ({ mapType: val }), undefined, "setMapType"),
 
         setMyLocation: (val) =>
           set(

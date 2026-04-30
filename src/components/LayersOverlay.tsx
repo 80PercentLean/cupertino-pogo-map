@@ -28,6 +28,7 @@ import BtnLayer from "./BtnLayer";
 import {
   useFindPoiById,
   useRemoveIdQueryParam,
+  useSetTilesQueryParam,
   useToggleS2Cells,
 } from "./hooks";
 import {
@@ -62,8 +63,6 @@ export default function LayersOverlay() {
   const isNoCaPoiZoneOn = useIsNoCaPoiZoneOn();
   const isNoPowerSpotZoneOn = useIsNoPowerSpotZoneOn();
   const isStdRaidPathOn = useStore((s) => s.basicLayers.stdRaidPath);
-  const mapType = useStore((s) => s.mapType);
-  const setMapType = useStore((s) => s.setMapType);
   const setLayer = useStore((s) => s.setLayer);
   const setIsLayersOverlayOpen = useStore((s) => s.setIsLayersOverlayOpen);
   const toggleBasicLayer = useStore((s) => s.toggleBasicLayer);
@@ -75,6 +74,7 @@ export default function LayersOverlay() {
   const [searchParams] = useSearchParams();
   const findPoiById = useFindPoiById();
   const removeIdQueryParam = useRemoveIdQueryParam();
+  const setTilesQueryParam = useSetTilesQueryParam();
   const toggleS2Cells = useToggleS2Cells();
 
   return (
@@ -292,8 +292,10 @@ export default function LayersOverlay() {
           <FieldGroup>
             <Field>
               <RadioGroup
-                value={mapType}
-                onValueChange={(val: typeof mapType) => setMapType(val)}
+                value={searchParams.get("type") ?? "default"}
+                onValueChange={(val: "default" | "extra-info" | "satellite") =>
+                  setTilesQueryParam(val)
+                }
                 className="flex flex-col gap-2"
               >
                 <div className="flex items-center gap-3">

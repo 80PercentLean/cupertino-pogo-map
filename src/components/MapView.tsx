@@ -39,13 +39,12 @@ export default function MapView() {
   const isLayerRestroomOn = useIsLayerOn("restroom");
   const isStdRaidPathOn = useStore((s) => s.basicLayers.stdRaidPath);
   const mapStart = useStore((s) => s.mapStart);
-  const mapType = useStore((s) => s.mapType);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const [searchParams] = useSearchParams();
 
   let tileLayer;
-  switch (mapType) {
+  switch (searchParams.get("type")) {
     case "extra-info":
       // OpenStreetMap.Mapnik
       // tileLayer = (

@@ -231,6 +231,34 @@ export const useSetIdQueryParam = () => {
   };
 };
 
+export const useSetTilesQueryParam = () => {
+  const [, setSearchParams] = useSearchParams();
+
+  return (type: "default" | "extra-info" | "satellite") => {
+    switch (type) {
+      case "extra-info":
+        setSearchParams((s) => {
+          s.set("type", "extra-info");
+          return s;
+        });
+        break;
+
+      case "satellite":
+        setSearchParams((s) => {
+          s.set("type", "satellite");
+          return s;
+        });
+        break;
+
+      case "default":
+        setSearchParams((s) => {
+          s.delete("type");
+          return s;
+        });
+    }
+  };
+};
+
 /**
  * Toggle the S2 cell layer of the given level on or off by adding or removing the corresponding query parameter.
  * @returns Function that toggles the S2 cell layer of the given level on or off by adding or removing the corresponding query parameter
