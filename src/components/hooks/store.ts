@@ -128,6 +128,9 @@ export interface StoreState {
   /** Remove a placed marker state. */
   removePlacedMarkerState: (i: number) => void;
 
+  /** Reset the settings back to default values. */
+  resetSettings: () => void;
+
   /** Set the `activeMainView` value. */
   setActiveMainView: (val: StoreState["activeMainView"]) => void;
 
@@ -202,6 +205,16 @@ export interface StoreState {
 const SHARED_LOCATION_ERR_MSG =
   "An error occurred while trying to load the shared location.";
 
+const DEFAULT_SETTINGS = {
+  disableAnimations: false,
+  invertCoords: false,
+  isHidden: false,
+  isDisabled: false,
+  myLocationRangeType: "poi" as const,
+  removed: false,
+  wayfarerMode: false,
+};
+
 const isLatLngTuple = (value: unknown): value is LatLngTuple => {
   return (
     Array.isArray(value) &&
@@ -222,6 +235,25 @@ const isPlacedMarkerState = (
 export const useStore = create<StoreState>()(
   devtools(
     (set) => {
+      let disableAnimations = DEFAULT_SETTINGS.disableAnimations;
+      if (import.meta.env.VITE_E2E) {
+        disableAnimations = true;
+      } else if (localStorage.getItem("disableAnimations") === "true") {
+        disableAnimations = true;
+      }
+
+      let myLocationRangeType: StoreState["myLocationRangeType"] =
+        DEFAULT_SETTINGS.myLocationRangeType;
+      const savedMyLocationRangeType = localStorage.getItem(
+        "myLocationRangeType",
+      );
+      if (
+        savedMyLocationRangeType === "location-accuracy" ||
+        savedMyLocationRangeType === "wild-spawn"
+      ) {
+        myLocationRangeType = savedMyLocationRangeType;
+      }
+
       const initStoreState: StoreState = {
         activePopup: null,
 
@@ -254,13 +286,15 @@ export const useStore = create<StoreState>()(
         },
 
         // Disable animations by default for E2E tests to allow visual tests to perform consistently
-        disableAnimations: import.meta.env.VITE_E2E ? true : false,
+        disableAnimations,
 
         // No initial error message will appear by default
         initErrMsg: null,
 
         // Copied & pasted coordinates will be formatted as `lat,lng`
-        invertCoords: false,
+        invertCoords:
+          localStorage.getItem("invertCoords") === "true" ||
+          DEFAULT_SETTINGS.invertCoords,
 
         // Layers overlay starts off closed
         isLayersOverlayOpen: false,
@@ -292,12 +326,18 @@ export const useStore = create<StoreState>()(
 
         modifiers: {
           // Hide disabled power spots
-          isDisabled: false,
+          isDisabled:
+            localStorage.getItem("isDisabled") === "true" ||
+            DEFAULT_SETTINGS.isDisabled,
 
           // Hide hidden POIs
-          isHidden: false,
+          isHidden:
+            localStorage.getItem("isHidden") === "true" ||
+            DEFAULT_SETTINGS.isHidden,
 
-          removed: false,
+          removed:
+            localStorage.getItem("removed") === "true" ||
+            DEFAULT_SETTINGS.removed,
         },
 
         // myLocation starts as null until my location functionality is enabled
@@ -306,7 +346,7 @@ export const useStore = create<StoreState>()(
         // myLocationAccuracy starts as null until my location functionality is enabled
         myLocationAccuracy: null,
 
-        myLocationRangeType: "poi",
+        myLocationRangeType,
 
         placedMarkerStates: [],
 
@@ -320,6 +360,15 @@ export const useStore = create<StoreState>()(
             }),
             undefined,
             "removePlacedMarkerState",
+          ),
+
+        resetSettings: () =>
+          set(
+            () => ({
+              ...DEFAULT_SETTINGS,
+            }),
+            undefined,
+            "resetSettings",
           ),
 
         setActiveMainView: (val) =>
@@ -541,7 +590,9 @@ export const useStore = create<StoreState>()(
             "updatePlacedMarkerState",
           ),
 
-        wayfarerMode: true,
+        wayfarerMode:
+          localStorage.getItem("wayfarerMode") === "true" ||
+          DEFAULT_SETTINGS.wayfarerMode,
       };
 
       const urlParams = new URLSearchParams(window.location.search);

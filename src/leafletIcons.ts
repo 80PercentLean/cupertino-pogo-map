@@ -31,7 +31,7 @@ const createIconEmojiHighlightedHtml = (emoji: string) => `
         height: 34px;
         transform: translate(-50%, -50%);
         background: rgba(255, 255, 255, 0.75);
-        border: 1px solid #fff;
+        border: 2px solid #fff;
         border-radius: 9999px;
         pointer-events: none;
       "></div>
@@ -126,7 +126,7 @@ export const iconGymHighlighted = divIcon({
         height: 46px;
         transform: translate(-50%, -55%);
         background: rgba(255, 255, 255, 0.75);
-        border: 1px solid #fff;
+        border: 2px solid #fff;
         border-radius: 9999px;
         pointer-events: none;
       "></div>
@@ -183,7 +183,7 @@ export const iconMeetupspotHighlighted = divIcon({
         height: 50px;
         transform: translate(-50%, -58%);
         background: rgba(255, 255, 255, 0.75);
-        border: 1px solid #fff;
+        border: 2px solid #fff;
         border-radius: 9999px;
         pointer-events: none;
       "></div>
@@ -261,7 +261,7 @@ export const iconParkingWarnHighlighted = divIcon({
         height: 36px;
         transform: translate(-50%, -50%);
         background: rgba(255, 255, 255, 0.75);
-        border: 1px solid #fff;
+        border: 2px solid #fff;
         border-radius: 9999px;
         pointer-events: none;
       "></div>
@@ -328,7 +328,7 @@ export const iconPokestopHighlighted = divIcon({
         height: 24px;
         transform: translate(-50%, -55%);
         background: rgba(255, 255, 255, 0.75);
-        border: 1px solid #fff;
+        border: 2px solid #fff;
         border-radius: 9999px;
         pointer-events: none;
       "></div>
@@ -373,7 +373,7 @@ export const iconPowerspotHighlighted = divIcon({
         height: 24px;
         transform: translate(-50%, -55%);
         background: rgba(255, 255, 255, 0.75);
-        border: 1px solid #fff;
+        border: 2px solid #fff;
         border-radius: 9999px;
         pointer-events: none;
       "></div>
@@ -416,7 +416,7 @@ export const iconShowcaseHighlighted = divIcon({
         height: 34px;
         transform: translate(-50%, -50%);
         background: rgba(255, 255, 255, 0.75);
-        border: 1px solid #fff;
+        border: 2px solid #fff;
         border-radius: 9999px;
         pointer-events: none;
       "></div>

@@ -101,7 +101,7 @@ export default function ListView() {
           const querySet = new Set(deferredQuery.toLowerCase().split(" "));
           const matchGym = querySet.has("gym") || querySet.has("gyms");
           const matchPokeStop =
-            querySet.has("pokestops") || querySet.has("pokestops");
+            querySet.has("pokestop") || querySet.has("pokestops");
           const matchPowerSpot =
             querySet.has("powerspot") || querySet.has("powerspots");
           const matchMeetupSpot =
@@ -114,14 +114,14 @@ export default function ListView() {
           if (
             query === "" ||
             name.toLowerCase().includes(deferredQuery.toLowerCase()) ||
-            deferredQuery === id ||
             (matchGym && type === "gym") ||
             (matchPokeStop && type === "pokestop") ||
             (matchPowerSpot && type === "powerspot") ||
             (matchMeetupSpot && type === "meetupspot") ||
             (matchParking && type === "parking") ||
             (matchRestroom && type === "restroom") ||
-            (matchDevPoi && type === "devpoi")
+            (matchDevPoi && type === "devpoi") ||
+            deferredQuery === id
           ) {
             featureData.push({
               coordinates: [coordinates[1], coordinates[0]],

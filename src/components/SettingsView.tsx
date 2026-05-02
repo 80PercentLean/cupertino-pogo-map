@@ -22,6 +22,19 @@ import UiOverlayCard from "./UiOverlayCard";
 import UiOverlayCardIconTitle from "./UiOverlayCardIconTitle";
 import { useFindPoiById, useRemoveIdQueryParam } from "./hooks";
 import { useStore } from "./hooks/store";
+import { Button } from "./ui/button";
+
+/**
+ * Persist settings in local storage.
+ * @param name Name of the local storage key
+ * @param val Value to be stored as a string in local storage
+ */
+const persistSettings = (
+  name: string,
+  val: boolean | "location-accuracy" | "poi" | "wild-spawn",
+) => {
+  localStorage.setItem(name, JSON.stringify(val));
+};
 
 /**
  * Displays the settings view.
@@ -31,19 +44,20 @@ export default function SettingsView() {
   const disableAnimations = useStore((s) => s.disableAnimations);
   const invertCoords = useStore((s) => s.invertCoords);
   const myLocationRangeType = useStore((s) => s.myLocationRangeType);
-  const toggleInvertCoords = useStore((s) => s.toggleInvertCoords);
+  const resetSettings = useStore((s) => s.resetSettings);
   const setDisableAnimations = useStore((s) => s.setDisableAnimations);
-  const wayfarerMode = useStore((s) => s.wayfarerMode);
   const setLayer = useStore((s) => s.setLayer);
   const setMyLocationRangeType = useStore((s) => s.setMyLocationRangeType);
   const setWayfarerMode = useStore((s) => s.setWayfarerMode);
   const showDisabled = useStore((s) => s.modifiers.isDisabled);
   const showHidden = useStore((s) => s.modifiers.isHidden);
   const showRemoved = useStore((s) => s.modifiers.removed);
+  const toggleInvertCoords = useStore((s) => s.toggleInvertCoords);
   const toggleModifier = useStore((s) => s.toggleModifier);
   const updateAllPlacedMarkerStates = useStore(
     (s) => s.updateAllPlacedMarkerStates,
   );
+  const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const removeIdQueryParam = useRemoveIdQueryParam();
 
@@ -63,7 +77,11 @@ export default function SettingsView() {
               id="disable-animations"
               checked={disableAnimations}
               className="cursor-pointer"
-              onCheckedChange={(s) => setDisableAnimations(s === true)}
+              onCheckedChange={(s) => {
+                const newVal = s === true;
+                setDisableAnimations(newVal);
+                persistSettings("disableAnimations", newVal);
+              }}
             />
           </Field>
           <Field orientation="horizontal">
@@ -99,7 +117,9 @@ export default function SettingsView() {
                   showNoCaPoiZone: false,
                 });
 
-                setWayfarerMode(s === true);
+                const newVal = s === true;
+                setWayfarerMode(newVal);
+                persistSettings("wayfarerMode", newVal);
               }}
             />
           </Field>
@@ -112,9 +132,10 @@ export default function SettingsView() {
             </FieldContent>
             <Select
               value={myLocationRangeType}
-              onValueChange={(val: typeof myLocationRangeType) =>
-                setMyLocationRangeType(val)
-              }
+              onValueChange={(val: typeof myLocationRangeType) => {
+                setMyLocationRangeType(val);
+                persistSettings("myLocationRangeType", val);
+              }}
             >
               <SelectTrigger>
                 <SelectValue placeholder="My Location Range Type" />
@@ -155,7 +176,10 @@ export default function SettingsView() {
                   id="hidden-pois"
                   checked={showHidden}
                   className="cursor-pointer"
-                  onCheckedChange={() => toggleModifier("isHidden")}
+                  onCheckedChange={() => {
+                    toggleModifier("isHidden");
+                    persistSettings("isHidden", !showHidden);
+                  }}
                 />
               </Field>
               <Field orientation="horizontal">
@@ -175,7 +199,10 @@ export default function SettingsView() {
                   id="disabled-power-spots"
                   checked={showDisabled}
                   className="cursor-pointer"
-                  onCheckedChange={() => toggleModifier("isDisabled")}
+                  onCheckedChange={() => {
+                    toggleModifier("isDisabled");
+                    persistSettings("isDisabled", !showDisabled);
+                  }}
                 />
               </Field>
               <Field orientation="horizontal">
@@ -192,7 +219,10 @@ export default function SettingsView() {
                   id="removed-pois"
                   checked={showRemoved}
                   className="cursor-pointer"
-                  onCheckedChange={() => toggleModifier("removed")}
+                  onCheckedChange={() => {
+                    toggleModifier("removed");
+                    persistSettings("removed", !showRemoved);
+                  }}
                 />
               </Field>
               <Field orientation="horizontal">
@@ -212,13 +242,27 @@ export default function SettingsView() {
                   id="invert-coords"
                   checked={invertCoords}
                   className="cursor-pointer"
-                  onCheckedChange={() => toggleInvertCoords()}
+                  onCheckedChange={() => {
+                    toggleInvertCoords();
+                    persistSettings("invertCoords", !invertCoords);
+                  }}
                 />
               </Field>
             </FieldGroup>
           </FieldSet>
         </>
       )}
+      <FieldSeparator className="my-2" />
+      <Field>
+        <Button
+          onClick={() => {
+            localStorage.clear();
+            resetSettings();
+          }}
+        >
+          Reset To Default Settings
+        </Button>
+      </Field>
     </UiOverlayCard>
   );
 }
