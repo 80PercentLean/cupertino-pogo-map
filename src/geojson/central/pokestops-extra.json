@@ -1,13 +1,13 @@
 {
   "features": [
     {
+      "id": "fd677db6a63242f98ed3684bacd5dbc2.16",
       "properties": {
         "name": "Santa Clara Community Recreation Center",
         "type": "pokestop",
         "subtype": "showcase",
         "source": "Wayfarer"
-      },
-      "id": "fd677db6a63242f98ed3684bacd5dbc2.16"
+      }
     }
   ]
 }

@@ -2,6 +2,7 @@
   "features": [
     {
       "type": "Feature",
+      "id": "1c18cdc7fa8833c3abfcdba0d6d4b5be.16",
       "properties": {
         "name": "Central Park",
         "source": "Wayfarer",
@@ -16,11 +17,11 @@
       "geometry": {
         "coordinates": [-121.97448, 37.34064],
         "type": "Point"
-      },
-      "id": "1c18cdc7fa8833c3abfcdba0d6d4b5be.16"
+      }
     },
     {
       "type": "Feature",
+      "id": "6cc36bec73af386b9b20ce73ebd289ea.16",
       "properties": {
         "name": "Homeridge Park",
         "source": "Wayfarer",
@@ -35,8 +36,7 @@
       "geometry": {
         "coordinates": [-121.981283, 37.336585],
         "type": "Point"
-      },
-      "id": "6cc36bec73af386b9b20ce73ebd289ea.16"
+      }
     }
   ]
 }

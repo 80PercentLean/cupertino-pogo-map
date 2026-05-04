@@ -1,15 +1,16 @@
 {
   "features": [
     {
+      "id": "09373f8c231f4e0fb8b4f0e566c200bb.16",
       "properties": {
         "name": "Dream Boat",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "09373f8c231f4e0fb8b4f0e566c200bb.16"
+      }
     },
     {
+      "id": "0bd8617af5043ab7ad638c73aff5915d.16",
       "properties": {
         "name": "Lifetime Tennis Bulletin Board",
         "type": "powerspot",
@@ -17,10 +18,10 @@
         "submitter": "80PercentLean",
         "submitted": "2025-03-24T08:00:00Z",
         "created": "2025-03-28T08:00:00Z"
-      },
-      "id": "0bd8617af5043ab7ad638c73aff5915d.16"
+      }
     },
     {
+      "id": "0d65c50b28de3aafae85ad96e12cf811.16",
       "properties": {
         "name": "Memorial Park BBQ Spot B",
         "type": "powerspot",
@@ -28,46 +29,46 @@
         "submitter": "80PercentLean",
         "submitted": "2025-10-29T08:00:00Z",
         "created": "2025-10-31T08:00:00Z"
-      },
-      "id": "0d65c50b28de3aafae85ad96e12cf811.16"
+      }
     },
     {
+      "id": "1bee997280b145188b4bf84e0bfdab82.23",
       "properties": {
         "name": "Dr. Sumita Paul, Chief Medicial Officer and SVP",
         "type": "powerspot",
         "source": "Wayfarer",
         "isHidden": true
-      },
-      "id": "1bee997280b145188b4bf84e0bfdab82.23"
+      }
     },
     {
+      "id": "20fcc9a406f54509836994e74315f1ec.16",
       "properties": {
         "name": "Glenbrook Main Fountain",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "20fcc9a406f54509836994e74315f1ec.16"
+      }
     },
     {
+      "id": "289e551ab1b3301b8dec4fde37f2bdca.16",
       "properties": {
         "name": "Sister Cities Bench",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "289e551ab1b3301b8dec4fde37f2bdca.16"
+      }
     },
     {
+      "id": "29a0dba42c2d4cac8def7f6cf3751afb.16",
       "properties": {
         "name": "Bicycle Rack",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "29a0dba42c2d4cac8def7f6cf3751afb.16"
+      }
     },
     {
+      "id": "2e41444e74343603bf7303d73dcde267.16",
       "properties": {
         "name": "The Commons Entrance Sign",
         "type": "powerspot",
@@ -75,19 +76,19 @@
         "submitter": "80PercentLean",
         "submitted": "2025-07-11T08:00:00Z",
         "created": "2025-07-16T08:00:00Z"
-      },
-      "id": "2e41444e74343603bf7303d73dcde267.16"
+      }
     },
     {
+      "id": "31f847990f104b1bb6ac8027ec45ba4c.11",
       "properties": {
         "name": "Toyokawa Stone Lantern",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "31f847990f104b1bb6ac8027ec45ba4c.11"
+      }
     },
     {
+      "id": "43724c577be53244ac28e9ce54916d49.16",
       "properties": {
         "name": "Memorial Park Rules East Sign",
         "type": "powerspot",
@@ -95,127 +96,127 @@
         "submitter": "80PercentLean",
         "submitted": "2025-10-29T08:00:00Z",
         "created": "2025-11-01T08:00:00Z"
-      },
-      "id": "43724c577be53244ac28e9ce54916d49.16"
+      }
     },
     {
+      "id": "47c77e0e74b44eaca46574a503484946.12",
       "properties": {
         "name": "Two as One",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "47c77e0e74b44eaca46574a503484946.12"
+      }
     },
     {
+      "id": "4e85e7bae0d641f5a8944aca10a21163.16",
       "properties": {
         "name": "DeAnza Mosaics",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "4e85e7bae0d641f5a8944aca10a21163.16"
+      }
     },
     {
+      "id": "4f3aea5e10b24d9fa25d0cfc29aae42d.16",
       "properties": {
         "name": "Memorial Park Water Fountain",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "4f3aea5e10b24d9fa25d0cfc29aae42d.16"
+      }
     },
     {
+      "id": "509559c22ab1403ea688836c507e1e4d.16",
       "properties": {
         "name": "Muralism",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "509559c22ab1403ea688836c507e1e4d.16"
+      }
     },
     {
+      "id": "531d9c60fd7446068c0c9c154ec702e5.16",
       "properties": {
         "name": "Stellar Motion",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "531d9c60fd7446068c0c9c154ec702e5.16"
+      }
     },
     {
+      "id": "5333cc20d862479f8f762e663840e77f.16",
       "properties": {
         "name": "Dionysus",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "5333cc20d862479f8f762e663840e77f.16"
+      }
     },
     {
+      "id": "560f9f27a1444b8c8346d158317ecad0.16",
       "properties": {
         "name": "Shelf of Skulls",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "560f9f27a1444b8c8346d158317ecad0.16"
+      }
     },
     {
+      "id": "5713b98e832f48188235aa3c7d9293cd.16",
       "properties": {
         "name": "Richard Kent Memorial",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "5713b98e832f48188235aa3c7d9293cd.16"
+      }
     },
     {
+      "id": "5ac385a466373981bc0c0a14d30762ef.16",
       "properties": {
         "name": "De Anza Instrument Music Building",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "5ac385a466373981bc0c0a14d30762ef.16"
+      }
     },
     {
+      "id": "6bc7dd2ac69541b1b5a8e801fadab86a.16",
       "properties": {
         "name": "MLC Fountain B",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "6bc7dd2ac69541b1b5a8e801fadab86a.16"
+      }
     },
     {
+      "id": "6d451b8126474f96bfa4d153ebc80857.23",
       "properties": {
         "name": "BUILD 33",
         "type": "powerspot",
         "source": "Wayfarer",
         "isHidden": true
-      },
-      "id": "6d451b8126474f96bfa4d153ebc80857.23"
+      }
     },
     {
+      "id": "6fd708ea77d84a2ab8e2b5d94a8c9928.16",
       "properties": {
         "name": "Pagan Totem Pole",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "6fd708ea77d84a2ab8e2b5d94a8c9928.16"
+      }
     },
     {
+      "id": "7111a6ff48a94bed86b53d5db95eb105.23",
       "properties": {
         "name": "Nina Piano Lessons",
         "type": "powerspot",
         "source": "Wayfarer",
         "isHidden": true
-      },
-      "id": "7111a6ff48a94bed86b53d5db95eb105.23"
+      }
     },
     {
+      "id": "765aaf927ada45c1b23aef35cac7e278.23",
       "properties": {
         "name": "Mary Avenue Dog Park",
         "type": "powerspot",
@@ -225,10 +226,10 @@
       "geometry": {
         "coordinates": [-122.050796, 37.327614],
         "type": "Point"
-      },
-      "id": "765aaf927ada45c1b23aef35cac7e278.23"
+      }
     },
     {
+      "id": "78cde712590f339ba828d0cebd4eae04.16",
       "properties": {
         "name": "Memorial Park Softball Scoreboard",
         "type": "powerspot",
@@ -236,38 +237,38 @@
         "submitter": "80PercentLean",
         "submitted": "2025-10-29T08:00:00Z",
         "created": "2025-11-02T08:00:00Z"
-      },
-      "id": "78cde712590f339ba828d0cebd4eae04.16"
+      }
     },
     {
+      "id": "7920fccafd204423836d1efaa6d93a05.23",
       "properties": {
         "name": "STEM4Kids Summer camp",
         "type": "powerspot",
         "source": "Wayfarer",
         "isHidden": true
-      },
-      "id": "7920fccafd204423836d1efaa6d93a05.23"
+      }
     },
     {
+      "id": "7e526d2f69924b8c9b92e2ee961c6136.16",
       "properties": {
         "name": "Robert A. Potthast Memorial Bench",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "7e526d2f69924b8c9b92e2ee961c6136.16"
+      }
     },
     {
+      "id": "83abb8e46af44228a9b285ddbc18fc68.16",
       "properties": {
         "name": "Aidens Gazebo at Memorial Park",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "83abb8e46af44228a9b285ddbc18fc68.16"
+      }
     },
     {
       "type": "Feature",
+      "id": "8945e571547432b99f15b7832477ca2d.16",
       "properties": {
         "name": "Garden Gate Elementary School",
         "source": "Wayfarer",
@@ -283,28 +284,28 @@
       "geometry": {
         "coordinates": [-122.04412, 37.330963],
         "type": "Point"
-      },
-      "id": "8945e571547432b99f15b7832477ca2d.16"
+      }
     },
     {
+      "id": "89a9f12ca4a64c1ea910487437ff5660.16",
       "properties": {
         "name": "Leaning Tower of DeAnza",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "89a9f12ca4a64c1ea910487437ff5660.16"
+      }
     },
     {
+      "id": "8a120852051145a8b146d8b67e2ff2cc.23",
       "properties": {
         "name": "Faria CDC",
         "type": "powerspot",
         "source": "Wayfarer",
         "isHidden": true
-      },
-      "id": "8a120852051145a8b146d8b67e2ff2cc.23"
+      }
     },
     {
+      "id": "8ccbc9eef9fb3fb6a4b913048bcccdb7.16",
       "properties": {
         "name": "Enjoy Smoke-Free Parks",
         "type": "powerspot",
@@ -312,46 +313,46 @@
         "submitter": "80PercentLean",
         "submitted": "2025-10-29T08:00:00Z",
         "created": "2025-11-04T08:00:00Z"
-      },
-      "id": "8ccbc9eef9fb3fb6a4b913048bcccdb7.16"
+      }
     },
     {
+      "id": "902a64f8f1894d8c9f3960920c9f607e.23",
       "properties": {
         "name": "Henna Bash",
         "type": "powerspot",
         "source": "Wayfarer",
         "isHidden": true
-      },
-      "id": "902a64f8f1894d8c9f3960920c9f607e.23"
+      }
     },
     {
+      "id": "94075bfb3c564c9e9d8086c3f09abd99.23",
       "properties": {
         "name": "AccessUSA",
         "type": "powerspot",
         "source": "Wayfarer",
         "isHidden": true
-      },
-      "id": "94075bfb3c564c9e9d8086c3f09abd99.23"
+      }
     },
     {
+      "id": "9b1ff7ea938346a38cbc38d08ad9a49f.11",
       "properties": {
         "name": "Lotus Fountain",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "9b1ff7ea938346a38cbc38d08ad9a49f.11"
+      }
     },
     {
+      "id": "9bc3e5e15754404da54b3d9d120db8d8.11",
       "properties": {
         "name": "La Vita É Una Fontana",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "9bc3e5e15754404da54b3d9d120db8d8.11"
+      }
     },
     {
+      "id": "a4a6271d6ce330cab1c5741b1e86f407.16",
       "properties": {
         "name": "Mary Avenue Dog Park Dedication Plaque",
         "type": "powerspot",
@@ -359,55 +360,55 @@
         "submitter": "80PercentLean",
         "submitted": "2025-11-08T08:00:00Z",
         "created": "2025-11-10T08:00:00Z"
-      },
-      "id": "a4a6271d6ce330cab1c5741b1e86f407.16"
+      }
     },
     {
+      "id": "a51a102d011040e4967ef044b63e66d8.16",
       "properties": {
         "name": "Quad Mosaic - West",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "a51a102d011040e4967ef044b63e66d8.16"
+      }
     },
     {
+      "id": "a54eaeaf58b84ee7b1d339fa4941394f.23",
       "properties": {
         "name": "Winrows Corporation",
         "type": "powerspot",
         "source": "Wayfarer",
         "isHidden": true
-      },
-      "id": "a54eaeaf58b84ee7b1d339fa4941394f.23"
+      }
     },
     {
+      "id": "a973a46573844e84bfe3f06280c06603.12",
       "properties": {
         "name": "Cupertino Historical Society",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "a973a46573844e84bfe3f06280c06603.12"
+      }
     },
     {
+      "id": "aa4b99f74b37475e88668217c67b4fb8.16",
       "properties": {
         "name": "Donation Tile Mosaic",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "aa4b99f74b37475e88668217c67b4fb8.16"
+      }
     },
     {
+      "id": "ab5737c210534434b69ccffc7a9721cf.23",
       "properties": {
         "name": "Bare Feet Organic Daycare",
         "type": "powerspot",
         "source": "Wayfarer",
         "isHidden": true
-      },
-      "id": "ab5737c210534434b69ccffc7a9721cf.23"
+      }
     },
     {
+      "id": "ab73728e90553414907c188d0df79dde.16",
       "properties": {
         "name": "Smoke-Free Memorial Park",
         "type": "powerspot",
@@ -415,28 +416,28 @@
         "submitter": "80PercentLean",
         "submitted": "2025-10-29T08:00:00Z",
         "created": "2025-11-04T08:00:00Z"
-      },
-      "id": "ab73728e90553414907c188d0df79dde.16"
+      }
     },
     {
+      "id": "ad00c2d425553236b3e3dfb3b5c35367.16",
       "properties": {
         "name": "Memorial Park Picnic Area Sign",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "ad00c2d425553236b3e3dfb3b5c35367.16"
+      }
     },
     {
+      "id": "ad5bd7b034df4bd683a7e484b9494944.16",
       "properties": {
         "name": "DeAnza College Carving",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "ad5bd7b034df4bd683a7e484b9494944.16"
+      }
     },
     {
+      "id": "b30f61b279c93f489023653df85f8cc7.16",
       "properties": {
         "name": "In memory of Virginia J. Logan",
         "type": "powerspot",
@@ -444,55 +445,55 @@
         "submitter": "80PercentLean",
         "submitted": "2025-10-29T08:00:00Z",
         "created": "2025-11-02T08:00:00Z"
-      },
-      "id": "b30f61b279c93f489023653df85f8cc7.16"
+      }
     },
     {
+      "id": "b535f4f52bca4c2580005a4a094d253c.23",
       "properties": {
         "name": "McClellan Terrace Apartments",
         "type": "powerspot",
         "source": "Wayfarer",
         "isHidden": true
-      },
-      "id": "b535f4f52bca4c2580005a4a094d253c.23"
+      }
     },
     {
+      "id": "b5678756c7273e839e79f4619d3f5844.16",
       "properties": {
         "name": "Golden misery",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "b5678756c7273e839e79f4619d3f5844.16"
+      }
     },
     {
+      "id": "b7d3b822863045c697d2ce502c0ad7ad.23",
       "properties": {
         "name": "American Builders Construction Group Cupertino",
         "type": "powerspot",
         "source": "Wayfarer",
         "isHidden": true
-      },
-      "id": "b7d3b822863045c697d2ce502c0ad7ad.23"
+      }
     },
     {
+      "id": "bc9c6d92a7ab493e83f338d7a12a0458.16",
       "properties": {
         "name": "East Cottage",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "bc9c6d92a7ab493e83f338d7a12a0458.16"
+      }
     },
     {
+      "id": "c3adc001297c49458120c74dcfeb42dd.16",
       "properties": {
         "name": "De Anza College Plaque",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "c3adc001297c49458120c74dcfeb42dd.16"
+      }
     },
     {
+      "id": "cc6014b6bc9f36e59a178a8ad750e43f.16",
       "properties": {
         "name": "Memorial Park BBQ Spot A",
         "type": "powerspot",
@@ -500,73 +501,73 @@
         "submitter": "80PercentLean",
         "submitted": "2025-10-29T08:00:00Z",
         "created": "2025-11-02T08:00:00Z"
-      },
-      "id": "cc6014b6bc9f36e59a178a8ad750e43f.16"
+      }
     },
     {
+      "id": "cd3d54500de1486cadde48c815477638.23",
       "properties": {
         "name": "Village Little Preschool Center",
         "type": "powerspot",
         "source": "Wayfarer",
         "isHidden": true
-      },
-      "id": "cd3d54500de1486cadde48c815477638.23"
+      }
     },
     {
+      "id": "e168c5fe6bbe4d00af77d88a26bef382.16",
       "properties": {
         "name": "De Anza Expedition",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "e168c5fe6bbe4d00af77d88a26bef382.16"
+      }
     },
     {
+      "id": "e6caf1f03e3b438d9efab4e86ceac208.11",
       "properties": {
         "name": "Turtle Sculpture",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "e6caf1f03e3b438d9efab4e86ceac208.11"
+      }
     },
     {
+      "id": "e89c02c00b574b2e98f6fac7f2d40e34.16",
       "properties": {
         "name": "De Anza College Stone",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "e89c02c00b574b2e98f6fac7f2d40e34.16"
+      }
     },
     {
+      "id": "e910ee43d4a94538822da679cce942b9.23",
       "properties": {
         "name": "McClellan Terrace",
         "type": "powerspot",
         "source": "Wayfarer",
         "isHidden": true
-      },
-      "id": "e910ee43d4a94538822da679cce942b9.23"
+      }
     },
     {
+      "id": "f68d946a0cbd40cc8744e21fa0fe06d5.16",
       "properties": {
         "name": "L-Quad Mosaic 2",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "f68d946a0cbd40cc8744e21fa0fe06d5.16"
+      }
     },
     {
+      "id": "fd2196a55a8a4728b5783dfecd34c62e.11",
       "properties": {
         "name": "Magda Lattin Trinom",
         "type": "powerspot",
         "source": "Wayfarer",
         "ingress": true
-      },
-      "id": "fd2196a55a8a4728b5783dfecd34c62e.11"
+      }
     },
     {
+      "id": "fd6205448fd6308bbe897ad2956b1c65.16",
       "properties": {
         "name": "Cupertino Victorian Dollhouse",
         "type": "powerspot",
@@ -574,8 +575,7 @@
         "submitter": "80PercentLean",
         "submitted": "2025-11-08T08:00:00Z",
         "created": "2025-11-10T08:00:00Z"
-      },
-      "id": "fd6205448fd6308bbe897ad2956b1c65.16"
+      }
     }
   ]
 }
