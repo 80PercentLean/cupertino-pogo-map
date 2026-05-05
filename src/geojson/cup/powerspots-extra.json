@@ -1,6 +1,26 @@
 {
   "features": [
     {
+      "id": "07b8553e673b4aae807ddd37e08b402d.23",
+      "properties": {
+        "checked": "2026-04-07T08:00:00Z",
+        "name": "Western Union",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fb445",
+        "removed": "2025-04-28T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-122.050471, 37.322842],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
       "id": "09373f8c231f4e0fb8b4f0e566c200bb.16",
       "properties": {
         "name": "Dream Boat",

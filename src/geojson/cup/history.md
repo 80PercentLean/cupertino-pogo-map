@@ -1,5 +1,55 @@
 # Memorial Park/De Anza College POI History
 
+## 5-5-26
+
+### PokeStops Created 🆕
+
+- Love how its Grown Mural (5466f476bed838ba881cf4dfb9bde829.16)
+
+### Power Spots Created 🆕
+
+- Little Free Library (6e13a7944f793e65aef5d60dd16ae1ed.16)
+
+### Power Spots Removed 🗑️
+
+- Western Union (07b8553e673b4aae807ddd37e08b402d.23)
+
+### Power Spots Enabled 🟢
+
+- De Anza College Stadium & Track (05855a9f0064410c8795031ee5a50f9a.23)
+- Petty Officer Matthew Axelson Post Office Sign (18fd1704346e3825b2b21a5f1f95aece.16)
+- MIXT (1e42ce08b9d34eaaa345bc9614813ca5.23)
+- Nails 2000 ("37868fa28ae949f69666c7178c595b6e.23)
+- Cupertino Marketplace (3d1706fa8b384933973c6ec87cfb800f.23)
+- Dionysus (5333cc20d862479f8f762e663840e77f.16)
+- Wow Cool® Alternative Comics (5a5022c705c54e0a8c5543be59889aaf.23)
+- MLC Fountain B (6bc7dd2ac69541b1b5a8e801fadab86a.16)
+- Bunny Stop (7721b502178030189962d6c764622c4c.16)
+- Memorial Park Softball Scoreboard (78cde712590f339ba828d0cebd4eae04.16)
+- Whole Foods (a93d954fcaa2478285f406155cc2e989.23)
+- Smoke-Free Memorial Park (ab73728e90553414907c188d0df79dde.16)
+- Memorial Park Picnic Area Sign (ad00c2d425553236b3e3dfb3b5c35367.16)
+- DeAnza College Carving (ad5bd7b034df4bd683a7e484b9494944.16)
+- In memory of Virginia J. Logan (b30f61b279c93f489023653df85f8cc7.16)
+- De Anza College Bookstore (e90df635338a46c0a747366e66e159f5.23)
+- Cupertino Bike Route: To Rancho San Antonio (f58448e2bed1351d811fa16628d53c29.16)
+- Home Of Christ IN Cupertino (fd7bd22db5a04fef8794dc783dccb711.23)
+
+### Power Spots Disabled 🚫
+
+- Sister Cities Bench (289e551ab1b3301b8dec4fde37f2bdca.16)
+- California History Center (3c19000eec33403e915af9b29348ec88.23)
+- Richard Kent Memorial (5713b98e832f48188235aa3c7d9293cd.16)
+- Aidens Gazebo at Memorial Park (83abb8e46af44228a9b285ddbc18fc68.16)
+- Picnic and BBQ pit (901e917e9c4f3cf198d04b6bc5e32ef8.16)
+- La Vita É Una Fontana (9bc3e5e15754404da54b3d9d120db8d8.11)
+- Memorial Park (baaf219aafc744bdaed3bd74aeec80d8.23)
+- Bright Skeleton Shark (be4e0108d56438c89d14d6c71a83f6df.16)
+- Evgo Electric Charging Station (d17612f095564a7485da8b27e375ecd3.23)
+- 7-Eleven - Closed (d2ab3089e4434979b1e95c02c333cb62.23)
+- Thai Bangkok Cuisine (e31a973184d94e2d8d64691a8e42e049.23)
+- Magda Lattin Trinom (fd2196a55a8a4728b5783dfecd34c62e.11)
+
 ## 4-7-26
 
 ### PokeStops Created 🆕
