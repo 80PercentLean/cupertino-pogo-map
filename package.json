@@ -2,6 +2,7 @@
   "name": "cupertino-pogo-map",
   "private": true,
   "version": "0.0.2",
+  "author": "80PercentLean",
   "type": "module",
   "scripts": {
     "build": "tsc -b && vite build",

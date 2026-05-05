@@ -298,7 +298,6 @@
         "marker-size": "small",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "isHidden": true,
         "removed": "2025-03-21T08:00:00Z"
       },
       "geometry": {

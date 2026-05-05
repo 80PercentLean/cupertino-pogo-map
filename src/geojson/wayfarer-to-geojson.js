@@ -127,14 +127,13 @@ const processData = async () => {
               f.properties.type = "powerspot";
             }
 
-            // TODO: swap marker styles for gym & pokestops
             if (f.properties.type === "gym") {
-              f.properties["marker-color"] = "#00fcff";
-              f.properties["marker-size"] = "medium";
-              f.properties["marker-symbol"] = "circle";
-            } else if (f.properties.type === "pokestop") {
               f.properties["marker-color"] = "#ff2600";
               f.properties["marker-size"] = "large";
+              f.properties["marker-symbol"] = "circle";
+            } else if (f.properties.type === "pokestop") {
+              f.properties["marker-color"] = "#00fcff";
+              f.properties["marker-size"] = "medium";
               f.properties["marker-symbol"] = "circle";
             } else if (f.properties.type === "powerspot") {
               f.properties["marker-color"] = "#ff40ff";
