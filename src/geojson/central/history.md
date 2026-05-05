@@ -1,5 +1,26 @@
 # Central Park POI History
 
+## 5-5-2026
+
+### Power Spots Enabled 🟢
+
+- Cooking Cooking (05eaf2d0c0f74d17981d76eb472cb2b5.23)
+- Swing and Sway Zone (5d696643422531028ba43320ee8e54bc.16)
+- Arbor Center (7425e94ee09b436b96d5a17ef273b332.16)
+- Woodsborough Map (cf78b6b11d6f380ca1f7cda63e8c2cd0.16)
+
+### Power Spots Disabled 🚫
+
+- Magical Bridge playground signage (04ef486c00f63d32ac881e755d8b318d.16)
+- Chess board bench (1ddc96aa9cc03bcd9d09d78af204fbf3.16)
+- Woodsborough Homes Association (3a5947908ca34874a8ee3327431e9c0a.23)
+
+## 5-4-2026
+
+### PokeStops Created 🆕
+
+- Fountains a la valencia (f2c50c3a68b337dab647cdfef7778548.16)
+
 ## 4-7-2026
 
 ### Power Spots Enabled 🟢
