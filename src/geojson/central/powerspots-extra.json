@@ -20,6 +20,25 @@
       }
     },
     {
+      "id": "5cd365fc7fec4599b9c9f93771e98c9d.23",
+      "properties": {
+        "name": "GameStop",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca65",
+        "removed": "2026-05-05T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-121.975959, 37.338145],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
       "type": "Feature",
       "id": "6cc36bec73af386b9b20ce73ebd289ea.16",
       "properties": {

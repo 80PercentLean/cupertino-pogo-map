@@ -15,6 +15,10 @@
 - Chess board bench (1ddc96aa9cc03bcd9d09d78af204fbf3.16)
 - Woodsborough Homes Association (3a5947908ca34874a8ee3327431e9c0a.23)
 
+### Power Spots Removed 🗑️
+
+- GameStop (5cd365fc7fec4599b9c9f93771e98c9d.23)
+
 ## 5-4-2026
 
 ### PokeStops Created 🆕
