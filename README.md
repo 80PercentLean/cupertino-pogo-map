@@ -1,73 +1,74 @@
-# React + TypeScript + Vite
+# Cupertino PoGO Map
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Cupertino PoGO Map** is an interactive map of the [Pokémon GO Community Campsites](https://pokemongo.com/find-your-community#community-campsites) for the [Cupertino PoGO](https://tinyurl.com/CupertinoPogo) and [Wild Goose](https://campfire.onelink.me/eBr8?af_dp=campfire://&af_force_deeplink=true&deep_link_sub1=cj1jbHVicyZjPWE4M2FmMzljLTRiNTgtNGM2NC1iZjViLTYwMTM4Yzc2MzNjNyZpPXRydWU=) groups.
 
-Currently, two official plugins are available:
+Some notable features are:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- View and search locations for Gyms, PokéStops, Power Spots, parking spots, restrooms, and more.
+- Support for use on both desktop and mobile devices.
+- Get navigation instructions through Google Maps and shareable links for specific locations.
+- Visualize Google S2 cells which can provide valuable insights for Niantic Wayfinders.
+- Completely open source!
 
-## React Compiler
+## Quick Start
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This is project React frontend that requires [Node.js](https://nodejs.org/en) (20.19+, 22.12+) to run.
 
-## Expanding the ESLint configuration
+After cloning the repository or downloading and extracting the ZIP file, install dependencies with:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+```shell
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Start the development server with:
 
-```js
-// eslint.config.js
-import reactDom from "eslint-plugin-react-dom";
-import reactX from "eslint-plugin-react-x";
-
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+```shell
+npm run dev
 ```
+
+Finally, load the web app at:
+
+[`http://localhost:5173/cupertino-pogo-map`](http://localhost:5173/cupertino-pogo-map)
+
+## Loading Wild Goose's Campsite
+
+By default, the app will load Cupertino PoGO's Campsite. To load Wild Goose's Campsite, you need to set an environment variable.
+
+Rename `.env.example` to `.env` and set `VITE_IS_CENTRAL=true`.
+
+## Other Resources
+
+Here is more documentation that may be helpful for you:
+
+- [Use With Niantic Wayfarer: Tips For Wayfinders](./docs/wayfarer-tips.md)
+- [Contributing](./docs/contributing.md)
+- [Memorial Park/De Anza College POI History](./docs/mpda.md)
+- [Central Park POI History](./docs/central.md)
+- [Motivation](./docs/motivation.md)
+
+## Technology Overview
+
+This open source project is built with the following:
+
+- [TypeScript](https://www.typescriptlang.org): Main language used for its type safety
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript): Language used for some scripts & configuration files
+- [React](https://react.dev): Library for user interfaces
+- [Leaflet](https://leafletjs.com): Libraries for interactive maps
+- [React Leaflet](https://react-leaflet.js.org): Library for bindings between React & Leaflet
+- [GeoJSON](https://geojson.org): Standardized format for encoding geographic data structures
+- [Zustand](https://zustand.docs.pmnd.rs): State management solution
+- [React Router](https://reactrouter.com): Routing library for React
+- [React Hook Form](https://react-hook-form.com): Form library for React
+- [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API): Adds support for usage of device latitude/longitude coordinates. Used for live location feature that allows the user to see their own real-time location on the map when they gives permission.
+- [Local Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage): Allows for saving of user settings that persist across browser sessions.
+- [shadcn/ui](https://ui.shadcn.com): Set of accessible React components
+- [Tailwind CSS](https://tailwindcss.com): Utility-first CSS framework
+- [Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries) / [window.matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia): Used to implement responsive design and conditionally execute code based off screen size and device
+- [Node.js](https://nodejs.org): JavaScript runtime environment used for the development environment & GeoJSON generation script
+- [Vite](https://vite.dev): Frontend build tool
+- [Vitest](https://vitest.dev): Framework for unit testing
+- [Playwright](https://playwright.dev): Framework for end-to-end testing
+
+## License
+
+Cupertino PoGO Map is open source software licensed as [MIT](./LICENSE).

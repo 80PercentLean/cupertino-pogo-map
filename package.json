@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.2",
   "author": "80PercentLean",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "build": "tsc -b && vite build",
