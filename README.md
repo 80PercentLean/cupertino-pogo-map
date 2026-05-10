@@ -42,8 +42,8 @@ Here is more documentation that may be helpful for you:
 
 - [Use With Niantic Wayfarer: Tips For Wayfinders](./docs/wayfarer-tips.md)
 - [Contributing](./docs/contributing.md)
-- [Memorial Park/De Anza College POI History](./docs/mpda.md)
-- [Central Park POI History](./docs/central.md)
+- [Memorial Park/De Anza College POI History](./docs/history-mpda.md)
+- [Central Park POI History](./docs/history-central.md)
 - [Motivation](./docs/motivation.md)
 
 ## Technology Overview
