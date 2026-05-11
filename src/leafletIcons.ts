@@ -236,7 +236,7 @@ export const iconParkingWarn = divIcon({
   html: `
   <div class="relative inline-block">
     ${emojiParking}
-    <div class="absolute -top-0 -right-1 flex items-center justify-center bg-yellow-400 text-black rounded-full w-3 h-3 text-xs font-bold ring-1 ring-black">
+    <div class="absolute top-0 right-1 flex items-center justify-center bg-yellow-400 text-black rounded-full w-3 h-3 text-xs font-bold ring-1 ring-black">
       !
     </div>
   </div>

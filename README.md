@@ -12,7 +12,7 @@ Some notable features are:
 
 ## Quick Start
 
-This is project React frontend that requires [Node.js](https://nodejs.org/en) (20.19+, 22.12+) to run.
+This project is a React frontend that requires [Node.js](https://nodejs.org/en) (20.19+, 22.12+) to run.
 
 After cloning the repository or downloading and extracting the ZIP file, install dependencies with:
 
