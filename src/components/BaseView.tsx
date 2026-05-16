@@ -6,6 +6,7 @@ import { toast } from "sonner";
 import InfoView from "./InfoView";
 import { MapContext } from "./MapContext";
 import MapView from "./MapView";
+import MeetupsView from "./MeetupsView";
 import SettingsView from "./SettingsView";
 import ToolsView from "./Tools/ToolsView";
 import UiOverlay from "./UiOverlay";
@@ -52,8 +53,9 @@ export default function BaseView() {
     <MapContext value={{ map, setMap }}>
       <MapView />
       <UiOverlay />
-      {activeMainView === "info" && <InfoView />}
+      {activeMainView === "meetups" && <MeetupsView />}
       {activeMainView === "settings" && <SettingsView />}
+      {activeMainView === "info" && <InfoView />}
       {activeMainView === "tools" && <ToolsView />}
     </MapContext>
   );

@@ -1,5 +1,12 @@
 import { cn } from "@/lib/utils";
-import { Info, List, Map, Settings, Toolbox } from "lucide-react";
+import {
+  FlameKindling,
+  Info,
+  List,
+  Map,
+  Settings,
+  Toolbox,
+} from "lucide-react";
 
 import { useStore } from "./hooks/store";
 import { Button } from "./ui/button";
@@ -79,6 +86,30 @@ export default function ViewCtrlMobile() {
         >
           <List className="!h-6 !w-6" />
           List View
+        </Button>
+        <Button
+          className={cn(
+            BTN_BASE_CLASSNAME,
+            activeMainView === "meetups" && BTN_ACTIVE_CLASSNAME,
+          )}
+          onClick={() => {
+            if (activeMainView === "meetups") {
+              setActiveMainView(null);
+            } else {
+              setActiveMainView("meetups");
+            }
+
+            if (isListViewOpen) {
+              setIsListViewOpen(false);
+            }
+
+            if (isLayersOverlayOpen) {
+              setIsLayersOverlayOpen(false);
+            }
+          }}
+        >
+          <FlameKindling className="!h-6 !w-6" />
+          Meetups
         </Button>
         <Button
           className={cn(

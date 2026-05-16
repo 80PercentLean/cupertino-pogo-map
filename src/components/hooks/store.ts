@@ -51,7 +51,7 @@ export interface StoreState {
   activePopup: string | null;
 
   /** Determines which main view is currently active. */
-  activeMainView: "info" | "settings" | "tools" | null;
+  activeMainView: "info" | "meetups" | "settings" | "tools" | null;
 
   /** Add a placed marker state. */
   addPlacedMarkerState: (position: LatLngTuple) => void;

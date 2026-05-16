@@ -1,4 +1,5 @@
 import js from "@eslint/js";
+import pluginQuery from "@tanstack/eslint-plugin-query";
 import eslintConfigPrettier from "eslint-config-prettier/flat";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
@@ -7,6 +8,7 @@ import globals from "globals";
 import tseslint from "typescript-eslint";
 
 export default defineConfig([
+  ...pluginQuery.configs["flat/recommended-strict"],
   globalIgnores(["coverage", "dist"]),
   {
     files: ["**/*.{ts,tsx}"],
@@ -18,6 +20,7 @@ export default defineConfig([
       reactRefresh.configs.vite,
       eslintConfigPrettier,
     ],
+    ignores: ["src/components/ui/**"],
     languageOptions: {
       parserOptions: {
         project: ["./tsconfig.node.json", "./tsconfig.app.json"],

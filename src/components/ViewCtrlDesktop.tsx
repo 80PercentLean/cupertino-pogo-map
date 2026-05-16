@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Info, List, Settings, Toolbox } from "lucide-react";
+import { Info, List, PartyPopper, Settings, Toolbox } from "lucide-react";
 
 import { useStore } from "./hooks/store";
 import { Button } from "./ui/button";
@@ -28,6 +28,15 @@ export default function ViewCtrlDesktop() {
         onClick={() => toggleIsListViewOpen()}
       >
         <List /> List View
+      </Button>
+      <Button
+        className={cn(
+          BTN_BASE_CLASSNAME,
+          activeMainView === "meetups" && BTN_ACTIVE_CLASSNAME,
+        )}
+        onClick={() => setActiveMainView("meetups")}
+      >
+        <PartyPopper /> Meetups
       </Button>
       <Button
         className={cn(
