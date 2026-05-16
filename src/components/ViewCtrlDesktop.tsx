@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Info, List, PartyPopper, Settings, Toolbox } from "lucide-react";
+import { FlameKindling, Info, List, Settings, Toolbox } from "lucide-react";
 
 import { useStore } from "./hooks/store";
 import { Button } from "./ui/button";
@@ -32,11 +32,14 @@ export default function ViewCtrlDesktop() {
       <Button
         className={cn(
           BTN_BASE_CLASSNAME,
+          "relative",
           activeMainView === "meetups" && BTN_ACTIVE_CLASSNAME,
         )}
         onClick={() => setActiveMainView("meetups")}
       >
-        <PartyPopper /> Meetups
+        <FlameKindling /> Meetups
+        {/* TODO: Add new icon when meetups are starting soon */}
+        {/* <span className="ring-background absolute top-1 right-1 h-3 w-3 rounded-full bg-red-500 ring-2" /> */}
       </Button>
       <Button
         className={cn(
