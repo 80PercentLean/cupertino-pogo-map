@@ -143,7 +143,7 @@ export default function MeetupsView() {
       },
     );
 
-    if (meetups) {
+    if (meetups && meetups.length > 0) {
       content = meetups;
     } else {
       content = (
@@ -188,9 +188,9 @@ export default function MeetupsView() {
           <Gift />
           <AlertTitle>Get free stuff for checking into meetups!</AlertTitle>
           <AlertDescription className="text-purple-200">
-            Checking into our meetups on Campfire can earn you free rewards like
-            Premium Battle Passes and special Pokémon encounters with
-            limited-time backgrounds.
+            Checking into our meetups on the official Niantic Campfire app can
+            earn you free rewards like Premium Battle Passes and special Pokémon
+            encounters with limited-time backgrounds.
           </AlertDescription>
         </Alert>
         {content}

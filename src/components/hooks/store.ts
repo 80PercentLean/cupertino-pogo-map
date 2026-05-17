@@ -597,6 +597,20 @@ export const useStore = create<StoreState>()(
 
       const urlParams = new URLSearchParams(window.location.search);
       const idParam = urlParams.get("id");
+      const startParams = urlParams.get("start")?.split(",");
+
+      if (Array.isArray(startParams)) {
+        for (const p of startParams)
+          if (p === "meetups") {
+            initStoreState.activeMainView = "meetups";
+          } else if (p === "settings") {
+            initStoreState.activeMainView = "settings";
+          } else if (p === "info") {
+            initStoreState.activeMainView = "info";
+          } else if (p === "tools") {
+            initStoreState.activeMainView = "tools";
+          }
+      }
 
       // Initialize marker states for each advanced layer
       gymsJson.features.forEach(({ id, geometry }) => {
