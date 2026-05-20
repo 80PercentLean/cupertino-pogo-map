@@ -42,6 +42,7 @@ jobs:
           VITE_API: ${{ vars.VITE_API }}
           VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
           VITE_IS_CENTRAL: ${{ vars.VITE_IS_CENTRAL }}
+          VITE_ROOT_PATH: ${{ vars.VITE_ROOT_PATH }}
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
