@@ -1,6 +1,7 @@
 import imgDiscord from "@/assets/Discord-Symbol-Blurple.png";
 import imgPgo from "@/assets/Pokemon_GO_Logo.png";
 import imgCampfire from "@/assets/campfire.png";
+import imgProfessor from "@/assets/raw/gotcg.jpg";
 import imgMap from "@/assets/raw/pgo-map-bg.jpg";
 import imgRaid from "@/assets/raw/raids_loading.png";
 import { MAP_PATH } from "@/constants";
@@ -13,7 +14,7 @@ export default function Landing() {
       </h1>
       <p className="text-primary w-full max-w-150 text-center">
         <strong>Cupertino PoGO</strong> is an official Pokémon GO Ambassador
-        community based in{" "}
+        group based in{" "}
         <a href={MAP_PATH} className="underline">
           Memorial Park & De Anza College in Cupertino,&nbsp;California
         </a>
@@ -32,7 +33,7 @@ export default function Landing() {
               className="aspect-video w-29 rounded-l-xl object-cover"
             />
             <div className="self-center p-4">
-              <h1 className="font-medium">Map & Free Parking</h1>
+              <h1 className="font-medium">Map & Free&nbsp;Parking</h1>
               <p className="mt-2 text-gray-500">
                 Get driving & walking directions and find parking, restrooms,
                 Gyms, PokéStops, Power Spots, and more.
@@ -48,7 +49,7 @@ export default function Landing() {
               className="aspect-video w-29 rounded-l-xl object-cover"
             />
             <div className="self-center p-4">
-              <h1 className="font-medium">Meetups Schedule</h1>
+              <h1 className="font-medium">Meetups&nbsp;Schedule</h1>
               <p className="mt-2 text-gray-500">
                 View all upcoming meetups and find their start time as well as
                 their Campfire meetup links.
@@ -66,10 +67,10 @@ export default function Landing() {
             <img
               src={imgDiscord}
               alt="Discord Logo"
-              className="w-29 rounded-l-xl bg-[#1f1f1f] object-contain p-2"
+              className="w-29 rounded-l-xl bg-[#1f1f1f] object-contain p-3"
             />
             <div className="self-center p-4">
-              <h1 className="font-medium">Join Our Regional Hub On Discord</h1>
+              <h1 className="font-medium">Join Our Discord&nbsp;Server</h1>
               <p className="mt-2 text-gray-500">
                 Join the Wild Goose × Cupertino PoGO Discord. Chat, coordinate
                 Raids & Max Battles, and trade with fellow Trainers in the
@@ -91,11 +92,34 @@ export default function Landing() {
               className="aspect-video w-29 rounded-l-xl object-cover"
             />
             <div className="self-center p-4">
-              <h1 className="font-medium">Join Our Niantic Campfire Group</h1>
+              <h1 className="font-medium">
+                Join Our Niantic Campfire&nbsp;Group
+              </h1>
               <p className="mt-2 text-gray-500">
                 Find meetups, check-in to get free in-game rewards, win prizes
                 from contests, and chat with fellow members in our Campfire
                 group.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://bit.ly/cupertinopogoguide"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="flex flex-1"
+        >
+          <div className="bg-foreground flex w-full max-w-150 rounded-xl">
+            <img
+              src={imgProfessor}
+              alt="Pokémon GO Logo"
+              className="aspect-video w-29 rounded-l-xl bg-[#1f1f1f] object-cover"
+            />
+            <div className="self-center p-4">
+              <h1 className="font-medium">Cupertino PoGO Guide</h1>
+              <p className="mt-2 text-gray-500">
+                Learn more about the community and get pro tips that will
+                improve Pokémon GO experience by reading this guide!
               </p>
             </div>
           </div>
@@ -116,7 +140,7 @@ export default function Landing() {
               }}
             />
             <div className="self-center p-4">
-              <h1 className="font-medium">Download & Play Pokémon GO</h1>
+              <h1 className="font-medium">Download & Play Pokémon&nbsp;GO</h1>
               <p className="mt-2 text-gray-500">
                 New to the game? Visit the official website and download the
                 game from the App Store, Google Play, or Galaxy Store.
