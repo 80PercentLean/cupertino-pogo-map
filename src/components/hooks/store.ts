@@ -236,7 +236,7 @@ export const useStore = create<StoreState>()(
   devtools(
     (set) => {
       let disableAnimations = DEFAULT_SETTINGS.disableAnimations;
-      if (import.meta.env.VITE_E2E) {
+      if (import.meta.env.VITE_E2E === "true") {
         disableAnimations = true;
       } else if (localStorage.getItem("disableAnimations") === "true") {
         disableAnimations = true;
