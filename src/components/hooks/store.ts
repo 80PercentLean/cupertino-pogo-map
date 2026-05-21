@@ -742,9 +742,16 @@ export const useStore = create<StoreState>()(
 
       const latlngTuple = urlParams.get("latlng")?.split(",");
       if (latlngTuple) {
+        // Placed marker was shared, so start with a new placed-0 marker
         if (Array.isArray(latlngTuple) && latlngTuple.length === 2) {
           const lat = Number(latlngTuple[0]);
           const lng = Number(latlngTuple[1]);
+
+          const url = new URL(window.location.href);
+          if (url.searchParams.get("id") !== "placed-0") {
+            url.searchParams.set("id", "placed-0");
+            window.history.replaceState({}, "", url);
+          }
 
           if (!isNaN(lat) && !isNaN(lng)) {
             initStoreState.placedMarkerStates.push({
