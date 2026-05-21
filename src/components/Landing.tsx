@@ -6,23 +6,31 @@ import imgMap from "@/assets/raw/pgo-map-bg.jpg";
 import imgRaid from "@/assets/raw/raids_loading.png";
 import { MAP_PATH } from "@/constants";
 
+const IS_CENTRAL = import.meta.env.VITE_IS_CENTRAL === "true";
+
+const GROUP_NAME = IS_CENTRAL ? "Wild\u00A0Goose" : "Cupertino PoGO\u00A0Group";
+
+const LOCATION = IS_CENTRAL
+  ? "Central Park in Santa Clara,\u00A0California"
+  : "Memorial Park & De Anza College in Cupertino,\u00A0California";
+
 export default function Landing() {
   return (
     <div className="container mx-auto flex min-h-screen flex-col items-center gap-4 p-4">
-      <h1 className="text-foreground text-2xl font-bold tracking-wide">
-        Cupertino PoGO Group
+      <h1 className="text-foreground text-2xl font-bold tracking-wide uppercase">
+        {GROUP_NAME}
       </h1>
       <p className="text-primary w-full max-w-150 text-center">
-        <strong>Cupertino PoGO</strong> is an official Pokémon GO Ambassador
-        group based in{" "}
+        <strong>{GROUP_NAME}</strong> is an official Pokémon GO Ambassador group
+        based in{" "}
         <a href={MAP_PATH} className="underline">
-          Memorial Park & De Anza College in Cupertino,&nbsp;California
+          {LOCATION}
         </a>
         .
       </p>
       <p className="text-primary mb-4 w-full max-w-150 text-center">
-        Join us for meetups, free in-game rewards, and official Pokémon
-        merchandise&nbsp;giveaways!
+        Join our meetups and complete Raids together while earning free in-game
+        rewards and official Pokémon merchandise through&nbsp;giveaways!
       </p>
       <div className="grid grid-rows-5 gap-4">
         <a href={MAP_PATH} className="flex flex-1">
@@ -33,7 +41,7 @@ export default function Landing() {
               className="aspect-video w-29 rounded-l-xl object-cover"
             />
             <div className="self-center p-4">
-              <h1 className="font-medium">Map & Free&nbsp;Parking</h1>
+              <h1 className="font-medium">Community Map & Free&nbsp;Parking</h1>
               <p className="mt-2 text-gray-500">
                 Get driving & walking directions and find parking, restrooms,
                 Gyms, PokéStops, Power Spots, and more.
@@ -51,8 +59,8 @@ export default function Landing() {
             <div className="self-center p-4">
               <h1 className="font-medium">Meetups&nbsp;Schedule</h1>
               <p className="mt-2 text-gray-500">
-                View all upcoming meetups and find their start time as well as
-                their Campfire meetup links.
+                View all upcoming meetups in {LOCATION}. Find our Campfire
+                meetup links where you can check-in for free in-game rewards.
               </p>
             </div>
           </div>
@@ -103,27 +111,29 @@ export default function Landing() {
             </div>
           </div>
         </a>
-        <a
-          href="https://bit.ly/cupertinopogoguide"
-          rel="noopener noreferrer"
-          target="_blank"
-          className="flex flex-1"
-        >
-          <div className="bg-foreground flex w-full max-w-150 rounded-xl">
-            <img
-              src={imgProfessor}
-              alt="Pokémon GO Logo"
-              className="aspect-video w-29 rounded-l-xl bg-[#1f1f1f] object-cover"
-            />
-            <div className="self-center p-4">
-              <h1 className="font-medium">Cupertino PoGO Guide</h1>
-              <p className="mt-2 text-gray-500">
-                Learn more about the community and get pro tips that will
-                improve Pokémon GO experience by reading this guide!
-              </p>
+        {!IS_CENTRAL && (
+          <a
+            href="https://bit.ly/cupertinopogoguide"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="flex flex-1"
+          >
+            <div className="bg-foreground flex w-full max-w-150 rounded-xl">
+              <img
+                src={imgProfessor}
+                alt="Pokémon GO Logo"
+                className="aspect-video w-29 rounded-l-xl bg-[#1f1f1f] object-cover"
+              />
+              <div className="self-center p-4">
+                <h1 className="font-medium">Cupertino PoGO Guide</h1>
+                <p className="mt-2 text-gray-500">
+                  Learn more about the community and get pro tips that will
+                  improve Pokémon GO experience by reading this guide!
+                </p>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+        )}
         <a
           href="https://pokemongo.com"
           rel="noopener noreferrer"

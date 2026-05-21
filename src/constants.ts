@@ -9,3 +9,9 @@ export const CENTER_CENTRAL: LatLngTuple = [
 export const ROOT_PATH = (import.meta.env.VITE_ROOT_PATH as string) ?? "";
 
 export const MAP_PATH = ROOT_PATH ? `${ROOT_PATH}/map` : "map";
+
+export const CUP_POGO_CAMPFIRE =
+  "https://campfire.onelink.me/eBr8?af_dp=campfire://&af_force_deeplink=true&deep_link_sub1=cj1jbHVicyZjPTk4MjZkY2U4LTZhM2ItNDQxNC05N2M1LTg1NzYzNDYzY2VmNSZpPXRydWU=";
+
+export const WG_CAMPFIRE =
+  "https://campfire.onelink.me/eBr8?af_dp=campfire://&af_force_deeplink=true&deep_link_sub1=cj1jbHVicyZjPWE4M2FmMzljLTRiNTgtNGM2NC1iZjViLTYwMTM4Yzc2MzNjNyZpPXRydWU=";

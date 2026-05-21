@@ -1,9 +1,16 @@
+import { CUP_POGO_CAMPFIRE, WG_CAMPFIRE } from "@/constants";
 import { Info } from "lucide-react";
 
 import LinkExt from "./LinkExt";
 import UiOverlayCard from "./UiOverlayCard";
 import UiOverlayCardIconTitle from "./UiOverlayCardIconTitle";
 import { Separator } from "./ui/separator";
+
+const IS_CENTRAL = import.meta.env.VITE_IS_CENTRAL === "true";
+
+const GROUP_NAME = IS_CENTRAL ? "Wild\u00A0Goose" : "Cupertino PoGO\u00A0Group";
+
+const CAMPFIRE_LINK = IS_CENTRAL ? WG_CAMPFIRE : CUP_POGO_CAMPFIRE;
 
 /**
  * Displays the information view.
@@ -14,13 +21,9 @@ export default function InfoView() {
       title={<UiOverlayCardIconTitle Icon={Info} text="Information" />}
     >
       <p>
-        The <strong>Cupertino PoGO map</strong> is an open source project run by
-        the{" "}
-        <LinkExt
-          href="https://campfire.onelink.me/eBr8?af_dp=campfire://&af_force_deeplink=true&deep_link_sub1=cj1jbHVicyZjPTk4MjZkY2U4LTZhM2ItNDQxNC05N2M1LTg1NzYzNDYzY2VmNSZpPXRydWU="
-          openNewWindow
-        >
-          Cupertino PoGO Group
+        This map app is an open source project run by the{" "}
+        <LinkExt href={CAMPFIRE_LINK} openNewWindow>
+          {GROUP_NAME}
         </LinkExt>
         .
       </p>
