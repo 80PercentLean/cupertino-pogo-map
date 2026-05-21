@@ -6,6 +6,8 @@ import imgMap from "@/assets/raw/pgo-map-bg.jpg";
 import imgRaid from "@/assets/raw/raids_loading.png";
 import { MAP_PATH } from "@/constants";
 
+import FooterTxt from "./FooterTxt";
+
 const IS_CENTRAL = import.meta.env.VITE_IS_CENTRAL === "true";
 
 const GROUP_NAME = IS_CENTRAL ? "Wild\u00A0Goose" : "Cupertino PoGO\u00A0Group";
@@ -17,10 +19,10 @@ const LOCATION = IS_CENTRAL
 export default function Landing() {
   return (
     <div className="container mx-auto flex min-h-screen flex-col items-center gap-4 p-4">
-      <h1 className="text-foreground text-2xl font-bold tracking-wide uppercase">
+      <h1 className="text-primary text-2xl font-bold tracking-wide uppercase">
         {GROUP_NAME}
       </h1>
-      <p className="text-primary w-full max-w-150 text-center">
+      <p className="text-secondary-foreground w-full max-w-150 text-center">
         <strong>{GROUP_NAME}</strong> is an official Pokémon GO Ambassador group
         based in{" "}
         <a href={MAP_PATH} className="underline">
@@ -28,7 +30,7 @@ export default function Landing() {
         </a>
         .
       </p>
-      <p className="text-primary mb-4 w-full max-w-150 text-center">
+      <p className="text-secondary-foreground mb-4 w-full max-w-150 text-center">
         Join our meetups and complete Raids together while earning free in-game
         rewards and official Pokémon merchandise through&nbsp;giveaways!
       </p>
@@ -159,6 +161,9 @@ export default function Landing() {
           </div>
         </a>
       </div>
+      <footer className="text-muted-foreground mt-8 text-center text-sm">
+        <FooterTxt />
+      </footer>
     </div>
   );
 }

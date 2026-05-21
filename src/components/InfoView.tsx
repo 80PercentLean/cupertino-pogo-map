@@ -1,6 +1,7 @@
 import { CUP_POGO_CAMPFIRE, WG_CAMPFIRE } from "@/constants";
 import { Info } from "lucide-react";
 
+import FooterTxt from "./FooterTxt";
 import LinkExt from "./LinkExt";
 import UiOverlayCard from "./UiOverlayCard";
 import UiOverlayCardIconTitle from "./UiOverlayCardIconTitle";
@@ -20,7 +21,8 @@ export default function InfoView() {
     <UiOverlayCard
       title={<UiOverlayCardIconTitle Icon={Info} text="Information" />}
     >
-      <p>
+      <h2 className="font-semibold">About This Project</h2>
+      <p className="mt-6">
         This map app is an open source project run by the{" "}
         <LinkExt href={CAMPFIRE_LINK} openNewWindow>
           {GROUP_NAME}
@@ -37,8 +39,8 @@ export default function InfoView() {
           https://github.com/80PercentLean/cupertino-pogo-map
         </LinkExt>
       </p>
-      <Separator className="mt-6" />
-      <h2 className="mt-6 font-semibold">Leaflet Attribution</h2>
+      <Separator className="my-6" />
+      <h2 className="font-semibold">Leaflet Attribution</h2>
       <ul className="mt-6 list-disc space-y-2 pl-4">
         <li>
           Default tile layer: &copy;{" "}
@@ -59,6 +61,10 @@ export default function InfoView() {
           the GIS User Community
         </li>
       </ul>
+      <Separator className="my-6" />
+      <footer className="text-muted-foreground flex flex-col gap-2 text-sm">
+        <FooterTxt />
+      </footer>
     </UiOverlayCard>
   );
 }
