@@ -34,7 +34,9 @@ export default function Landing() {
         Join our meetups and complete Raids together while earning free in-game
         rewards and official Pokémon merchandise through&nbsp;giveaways!
       </p>
-      <div className="grid grid-rows-5 gap-4">
+      <div
+        className={`grid gap-4 ${IS_CENTRAL ? "grid-rows-5" : "grid-rows-6"}`}
+      >
         <a href={MAP_PATH} className="flex flex-1">
           <div className="bg-foreground flex w-full max-w-150 rounded-xl">
             <img
@@ -61,7 +63,7 @@ export default function Landing() {
             <div className="self-center p-4">
               <h1 className="font-medium">Meetups&nbsp;Schedule</h1>
               <p className="mt-2 text-gray-500">
-                View all upcoming meetups in {LOCATION}. Find our Campfire
+                View all upcoming meetups at {LOCATION}. Find our Campfire
                 meetup links where you can check-in for free in-game rewards.
               </p>
             </div>
@@ -161,7 +163,7 @@ export default function Landing() {
           </div>
         </a>
       </div>
-      <footer className="text-muted-foreground mt-8 text-center text-sm">
+      <footer className="text-muted-foreground mt-8 flex flex-col gap-2 text-center text-sm">
         <FooterTxt />
       </footer>
     </div>
