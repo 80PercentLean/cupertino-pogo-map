@@ -1,9 +1,4 @@
-import {
-  type Dispatch,
-  type SetStateAction,
-  useContext,
-  useEffect,
-} from "react";
+import { type Dispatch, type SetStateAction, use, useEffect } from "react";
 import { toast } from "sonner";
 
 import { MapContext } from "./MapContext";
@@ -18,7 +13,7 @@ export interface Props {
  * It does not render any visual UI.
  */
 export default function MyLocation({ setIsMyLocationOn }: Props) {
-  const { map } = useContext(MapContext);
+  const { map } = use(MapContext);
   const setMyLocation = useStore((s) => s.setMyLocation);
   const setMyLocationAccuracy = useStore((s) => s.setMyLocationAccuracy);
 

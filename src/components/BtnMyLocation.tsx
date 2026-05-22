@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { useContext, useState } from "react";
+import { use, useState } from "react";
 
 import { MapContext } from "./MapContext";
 import MyLocation from "./MyLocation";
@@ -9,7 +9,7 @@ import { useStore } from "./hooks/store";
  * Button that toggles my location functionality.
  */
 export default function BtnMyLocation() {
-  const { map } = useContext(MapContext);
+  const { map } = use(MapContext);
   const [isMyLocationOn, setIsMyLocationOn] = useState(false);
   const disableAnimations = useStore((s) => s.disableAnimations);
   const myLocation = useStore((s) => s.myLocation);

@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { use, useEffect } from "react";
 import { useMapEvents } from "react-leaflet";
 
 import { MapContext } from "./MapContext";
@@ -8,7 +8,7 @@ import { useStore } from "./hooks/store";
  * Helps to debug Leaflet map when placed inside a <MapContainer>.
  */
 export default function LeafletDebug() {
-  const { setMap } = useContext(MapContext);
+  const { setMap } = use(MapContext);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const map = useMapEvents({

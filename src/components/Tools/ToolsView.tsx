@@ -31,7 +31,7 @@ export default function ToolsView() {
     if (!wayfarerMode) {
       setWayfarerMode(true);
     }
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps, react-x/exhaustive-deps
 
   return (
     <UiOverlayCard title={<ToolsViewBreadcrumbs nav={nav} setNav={setNav} />}>

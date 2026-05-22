@@ -20,7 +20,7 @@ export default function CCircleMarker(props: CCircleMarkerProps) {
   useEffect(() => {
     if (testId && markerRef.current) {
       // @ts-expect-error Not sure how to resolve the following type error on _path
-      markerRef.current._path.dataset.testid = testId;
+      markerRef.current._path.dataset.testid = testId; // @eslint-ignore
     }
   }, [testId]);
 

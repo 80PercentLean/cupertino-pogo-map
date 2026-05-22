@@ -1,5 +1,5 @@
 import { Eye, EyeClosed } from "lucide-react";
-import { useContext } from "react";
+import { Fragment, use } from "react";
 import { Controller, type FieldErrors, useForm } from "react-hook-form";
 
 import { imgLeafletMarker } from "../../leafletIcons";
@@ -23,7 +23,7 @@ interface FormData {
 }
 
 export default function PlacedMarkerView() {
-  const { map } = useContext(MapContext);
+  const { map } = use(MapContext);
   const activePopup = useStore((s) => s.activePopup);
   const addPlacedMarkerState = useStore((s) => s.addPlacedMarkerState);
   const placedMarkerStates = useStore((s) => s.placedMarkerStates);
@@ -35,7 +35,7 @@ export default function PlacedMarkerView() {
 
   const placedMarkerItems = placedMarkerStates.map(
     ({ id, isVisible, position }, i) => (
-      <>
+      <Fragment key="id">
         <Separator />
         <Button
           variant="ghost"
@@ -76,7 +76,7 @@ export default function PlacedMarkerView() {
           </div>
           <div className="flex grow items-center overflow-x-auto pr-2">{`Placed Marker #${i + 1}`}</div>
         </Button>
-      </>
+      </Fragment>
     ),
   );
 

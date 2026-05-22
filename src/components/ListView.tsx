@@ -26,7 +26,7 @@ import { type CFeatureCollection, type CProperties } from "@/types/CFeatures";
 import { getDesktopMediaQuery } from "@/util";
 import type { LatLngTuple } from "leaflet";
 import { Eye, EyeClosed, Search, X } from "lucide-react";
-import { useContext, useDeferredValue, useState } from "react";
+import { use, useDeferredValue, useState } from "react";
 
 import { MapContext } from "./MapContext";
 import { useSetIdQueryParam } from "./hooks";
@@ -47,7 +47,7 @@ interface FeatureData {
 const DELAY = 1500;
 
 export default function ListView() {
-  const { map } = useContext(MapContext);
+  const { map } = use(MapContext);
   const activePopup = useStore((s) => s.activePopup);
   const layerDevpoi = useStore((s) => s.layerDevpoi);
   const layerGym = useStore((s) => s.layerGym);

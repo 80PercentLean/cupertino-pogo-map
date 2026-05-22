@@ -35,7 +35,7 @@ export default function BaseView() {
       toast.error(initErrMsg);
       console.error(initErrMsg);
     }
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps, react-x/exhaustive-deps
 
   useEffect(() => {
     // Activate & deactivate popups based on the presence of the id query param
