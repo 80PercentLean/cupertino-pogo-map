@@ -1,9 +1,9 @@
 import imgDiscord from "@/assets/Discord-Symbol-Blurple.png";
 import imgPgo from "@/assets/Pokemon_GO_Logo.png";
 import imgCampfire from "@/assets/campfire.png";
-import imgProfessor from "@/assets/raw/gotcg.jpg";
+import imgProfessor from "@/assets/gotcg.jpg";
+import imgRaid from "@/assets/raids-loading.jpg";
 import imgMap from "@/assets/raw/pgo-map-bg.jpg";
-import imgRaid from "@/assets/raw/raids_loading.png";
 import { GROUP_NAME, IS_CENTRAL, MAP_PATH } from "@/constants";
 
 import FooterTxt from "./FooterTxt";
