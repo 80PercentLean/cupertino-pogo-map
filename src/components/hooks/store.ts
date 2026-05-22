@@ -299,7 +299,6 @@ export const useStore = create<StoreState>()(
         // Layers overlay starts off closed
         isLayersOverlayOpen: false,
 
-        // TODO: Start with opened list view on desktop and a closed one on mobile
         isListViewOpen: !IS_MOBILE,
 
         // Advanced layer marker states will be initialized after initStoreState is initialized

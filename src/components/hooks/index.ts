@@ -31,7 +31,7 @@ interface PoiData {
 }
 
 /**
- * React hook that returna a function that retrieves POI data by its ID.
+ * React hook that returns a function that retrieves POI data by its ID.
  * @returns Function that returns POI data if ID was matched, null otherwise
  */
 export const useFindPoiById = () => {
@@ -163,8 +163,6 @@ export const useFindPoiById = () => {
           type: "placed",
           data: { markerState: s },
         };
-
-        // TODO: find placed marker
 
         return result;
       }

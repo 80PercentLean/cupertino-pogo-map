@@ -69,6 +69,7 @@ export default function ListView() {
 
   const setIdQueryParam = useSetIdQueryParam();
 
+  // TODO: add placed markers
   const buildList = (...args: CFeatureCollection["features"][]) => {
     const featureData: FeatureData[] = [];
 
@@ -288,7 +289,7 @@ export default function ListView() {
 
     if (list.length === 0) {
       list.push(
-        <div className="px-4 py-4 text-sm italic">
+        <div key="not-found" className="px-4 py-4 text-sm italic">
           No points of interest were found...
         </div>,
       );

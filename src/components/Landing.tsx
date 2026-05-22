@@ -61,7 +61,7 @@ export default function Landing() {
               <p className="mt-2 text-gray-500">
                 View all upcoming meetups at {LOCATION}. Find our Campfire
                 meetup links where you can check-in for free
-                in-game&nbsp;rewards.
+                in-game&nbsp;rewards!
               </p>
             </div>
           </div>
