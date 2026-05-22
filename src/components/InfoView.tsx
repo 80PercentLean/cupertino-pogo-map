@@ -1,4 +1,9 @@
-import { CUP_POGO_CAMPFIRE, WG_CAMPFIRE } from "@/constants";
+import {
+  CUP_POGO_CAMPFIRE,
+  GROUP_NAME,
+  IS_CENTRAL,
+  WG_CAMPFIRE,
+} from "@/constants";
 import { Info } from "lucide-react";
 
 import FooterTxt from "./FooterTxt";
@@ -6,10 +11,6 @@ import LinkExt from "./LinkExt";
 import UiOverlayCard from "./UiOverlayCard";
 import UiOverlayCardIconTitle from "./UiOverlayCardIconTitle";
 import { Separator } from "./ui/separator";
-
-const IS_CENTRAL = import.meta.env.VITE_IS_CENTRAL === "true";
-
-const GROUP_NAME = IS_CENTRAL ? "Wild\u00A0Goose" : "Cupertino PoGO\u00A0Group";
 
 const CAMPFIRE_LINK = IS_CENTRAL ? WG_CAMPFIRE : CUP_POGO_CAMPFIRE;
 

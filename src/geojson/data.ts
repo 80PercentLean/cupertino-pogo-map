@@ -1,3 +1,5 @@
+import { IS_CENTRAL } from "@/constants";
+
 import {
   centralDevpoisJson,
   centralGymsJson,
@@ -25,26 +27,19 @@ import {
   cupStdRaidPathJson,
 } from "./cup/data";
 
-const IS_CENTRAL = import.meta.env.VITE_IS_CENTRAL as string;
-
-const devpoisJson = IS_CENTRAL === "true" ? centralDevpoisJson : cupDevpoisJson;
-const gymsJson = IS_CENTRAL === "true" ? centralGymsJson : cupGymsJson;
-const l13CellsJson =
-  IS_CENTRAL === "true" ? centralL13CellsJson : cupL13CellsJson;
-const l14CellsJson =
-  IS_CENTRAL === "true" ? centralL14CellsJson : cupL14CellsJson;
-const l17CellsJson =
-  IS_CENTRAL === "true" ? centralL17CellsJson : cupL17CellsJson;
+const devpoisJson = IS_CENTRAL ? centralDevpoisJson : cupDevpoisJson;
+const gymsJson = IS_CENTRAL ? centralGymsJson : cupGymsJson;
+const l13CellsJson = IS_CENTRAL ? centralL13CellsJson : cupL13CellsJson;
+const l14CellsJson = IS_CENTRAL ? centralL14CellsJson : cupL14CellsJson;
+const l17CellsJson = IS_CENTRAL ? centralL17CellsJson : cupL17CellsJson;
 const labelsJson = cupLabelsJson;
-const meetupspotsJson =
-  IS_CENTRAL === "true" ? centralMeetupspotsJson : cupMeetupspotsJson;
-const parkingJson = IS_CENTRAL === "true" ? centralParkingJson : cupParkingJson;
-const pokestopsJson =
-  IS_CENTRAL === "true" ? centralPokestopsJson : cupPokestopsJson;
-const powerspotsJson =
-  IS_CENTRAL === "true" ? centralPowerspotsJson : cupPowerspotsJson;
-const restroomsJson =
-  IS_CENTRAL === "true" ? centralRestroomsJson : cupRestroomsJson;
+const meetupspotsJson = IS_CENTRAL
+  ? centralMeetupspotsJson
+  : cupMeetupspotsJson;
+const parkingJson = IS_CENTRAL ? centralParkingJson : cupParkingJson;
+const pokestopsJson = IS_CENTRAL ? centralPokestopsJson : cupPokestopsJson;
+const powerspotsJson = IS_CENTRAL ? centralPowerspotsJson : cupPowerspotsJson;
+const restroomsJson = IS_CENTRAL ? centralRestroomsJson : cupRestroomsJson;
 const stdRaidPathJson = cupStdRaidPathJson;
 
 export {

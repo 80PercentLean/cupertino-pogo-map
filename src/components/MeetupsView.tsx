@@ -1,5 +1,6 @@
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
+import { IS_CENTRAL } from "@/constants";
 import { queryOptions, useQuery } from "@tanstack/react-query";
 import { ExternalLink, FlameKindling, Gift } from "lucide-react";
 
@@ -56,7 +57,7 @@ const getEventOptions = () => {
     queryKey: ["events"],
     queryFn: async (): Promise<DiscordEventListRes> => {
       let filter;
-      if (import.meta.env.VITE_IS_CENTRAL === "true") {
+      if (IS_CENTRAL) {
         filter = "wg";
       } else {
         filter = "cup-pogo";

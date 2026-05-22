@@ -1,3 +1,4 @@
+import { GROUP_NAME } from "@/constants";
 import { IS_MOBILE } from "@/constantsDom";
 import { imgPowerspot } from "@/leafletIcons";
 import { cn } from "@/lib/utils";
@@ -232,9 +233,9 @@ export const createPopupContent = (
                 void (async () => {
                   try {
                     await navigator.share({
-                      title: "Cupertino PoGO Map",
-                      text: "Check out the Cupertino PoGO map!",
-                      url: url,
+                      title: `${GROUP_NAME} Map`,
+                      text: `Check out the ${GROUP_NAME} map for Pokémon GO!`,
+                      url,
                     });
                   } catch (err) {
                     if (

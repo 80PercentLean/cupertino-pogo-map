@@ -1,4 +1,4 @@
-import { CENTER_CENTRAL, CENTER_CUP } from "@/constants";
+import { CENTER_CENTRAL, CENTER_CUP, IS_CENTRAL } from "@/constants";
 import { IS_MOBILE } from "@/constantsDom";
 import {
   devpoisJson,
@@ -319,10 +319,7 @@ export const useStore = create<StoreState>()(
 
         layerRestroom: {},
 
-        mapStart:
-          import.meta.env.VITE_IS_CENTRAL === "true"
-            ? CENTER_CENTRAL
-            : CENTER_CUP,
+        mapStart: IS_CENTRAL ? CENTER_CENTRAL : CENTER_CUP,
 
         modifiers: {
           // Hide disabled power spots

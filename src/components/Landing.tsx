@@ -4,13 +4,9 @@ import imgCampfire from "@/assets/campfire.png";
 import imgProfessor from "@/assets/raw/gotcg.jpg";
 import imgMap from "@/assets/raw/pgo-map-bg.jpg";
 import imgRaid from "@/assets/raw/raids_loading.png";
-import { MAP_PATH } from "@/constants";
+import { GROUP_NAME, IS_CENTRAL, MAP_PATH } from "@/constants";
 
 import FooterTxt from "./FooterTxt";
-
-const IS_CENTRAL = import.meta.env.VITE_IS_CENTRAL === "true";
-
-const GROUP_NAME = IS_CENTRAL ? "Wild\u00A0Goose" : "Cupertino PoGO\u00A0Group";
 
 const LOCATION = IS_CENTRAL
   ? "Central Park in Santa Clara,\u00A0California"
@@ -41,14 +37,14 @@ export default function Landing() {
           <div className="bg-foreground flex w-full max-w-150 rounded-xl">
             <img
               src={imgMap}
-              alt="Cupertino PoGO Map Icon"
+              alt="Community Map Icon"
               className="aspect-video w-29 rounded-l-xl object-cover"
             />
             <div className="self-center p-4">
               <h1 className="font-medium">Community Map & Free&nbsp;Parking</h1>
               <p className="mt-2 text-gray-500">
                 Get driving & walking directions and find parking, restrooms,
-                Gyms, PokéStops, Power Spots, and more.
+                Gyms, PokéStops, Power Spots, and&nbsp;more.
               </p>
             </div>
           </div>
@@ -64,7 +60,8 @@ export default function Landing() {
               <h1 className="font-medium">Meetups&nbsp;Schedule</h1>
               <p className="mt-2 text-gray-500">
                 View all upcoming meetups at {LOCATION}. Find our Campfire
-                meetup links where you can check-in for free in-game rewards.
+                meetup links where you can check-in for free
+                in-game&nbsp;rewards.
               </p>
             </div>
           </div>
@@ -85,8 +82,8 @@ export default function Landing() {
               <h1 className="font-medium">Join Our Discord&nbsp;Server</h1>
               <p className="mt-2 text-gray-500">
                 Join the Wild Goose × Cupertino PoGO Discord. Chat, coordinate
-                Raids & Max Battles, and trade with fellow Trainers in the
-                region.
+                Raids & Max Battles, and trade with fellow Trainers in
+                the&nbsp;region.
               </p>
             </div>
           </div>
@@ -109,8 +106,8 @@ export default function Landing() {
               </h1>
               <p className="mt-2 text-gray-500">
                 Find meetups, check-in to get free in-game rewards, win prizes
-                from contests, and chat with fellow members in our Campfire
-                group.
+                from contests, and chat with fellow members in our
+                Campfire&nbsp;group.
               </p>
             </div>
           </div>
@@ -132,7 +129,7 @@ export default function Landing() {
                 <h1 className="font-medium">Cupertino PoGO Guide</h1>
                 <p className="mt-2 text-gray-500">
                   Learn more about the community and get pro tips that will
-                  improve Pokémon GO experience by reading this guide!
+                  improve Pokémon GO experience by reading this&nbsp;guide!
                 </p>
               </div>
             </div>
@@ -157,7 +154,8 @@ export default function Landing() {
               <h1 className="font-medium">Download & Play Pokémon&nbsp;GO</h1>
               <p className="mt-2 text-gray-500">
                 New to the game? Visit the official website and download the
-                game from the App Store, Google Play, or Galaxy Store.
+                game from the App Store, Google Play, or Galaxy Store and play
+                for free&nbsp;today!
               </p>
             </div>
           </div>

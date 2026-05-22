@@ -6,6 +6,12 @@ export const CENTER_CENTRAL: LatLngTuple = [
   37.34153273361254, -121.9753335096175,
 ];
 
+export const IS_CENTRAL = import.meta.env.VITE_IS_CENTRAL === "true";
+
+export const GROUP_NAME = IS_CENTRAL
+  ? "Wild\u00A0Goose"
+  : "Cupertino PoGO\u00A0Group";
+
 export const ROOT_PATH = (import.meta.env.VITE_ROOT_PATH as string) ?? "";
 
 export const MAP_PATH = ROOT_PATH ? `${ROOT_PATH}/map` : "map";
