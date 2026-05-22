@@ -33,3 +33,9 @@ dist-ssr
 .env
 coverage
 .stylelintcache
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
