@@ -49,7 +49,9 @@ export default function Features({
 }: Props) {
   const layer = useStore((s) => s[getLayerKeyFromType(type)]);
   const showDisabled = useStore((s) => s.modifiers.isDisabled);
+  const showDisabledTemp = useStore((s) => s.isDisabledTemp);
   const showHidden = useStore((s) => s.modifiers.isHidden);
+  const showHiddenTemp = useStore((s) => s.isHiddenTemp);
   const showRemoved = useStore((s) => s.modifiers.removed);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
@@ -72,8 +74,8 @@ export default function Features({
     },
   } of features) {
     if (
-      (!showDisabled && isDisabled) ||
-      (!showHidden && isHidden) ||
+      (!showDisabled && !showDisabledTemp && isDisabled) ||
+      (!showHidden && !showHiddenTemp && isHidden) ||
       (!showRemoved && removed)
     ) {
       // Skip if hidden or removed and those modifiers are off

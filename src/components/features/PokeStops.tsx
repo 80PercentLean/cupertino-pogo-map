@@ -65,7 +65,7 @@ export default function PokeStops() {
           if (isCommunityContributed) {
             subtitle += " [Community Contributed]";
           } else {
-            subtitle += " [Overture Maps]";
+            subtitle += " [Other Source]";
           }
         }
         return subtitle;

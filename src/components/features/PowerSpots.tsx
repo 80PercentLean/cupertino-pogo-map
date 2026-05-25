@@ -41,7 +41,7 @@ export default function PowerSpots() {
           if (isCommunityContributed) {
             subtitle += " [Community Contributed]";
           } else {
-            subtitle += " [Overture Maps]";
+            subtitle += " [Other Source]";
           }
         }
         return subtitle;

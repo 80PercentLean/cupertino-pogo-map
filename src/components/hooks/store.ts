@@ -46,6 +46,12 @@ export interface PlacedMarkerState extends MarkerState {
   position: LatLngTuple;
 }
 
+export interface ToggleModifierResult {
+  modifiers: StoreState["modifiers"];
+  isDisabledTemp?: StoreState["isDisabledTemp"];
+  isHiddenTemp?: StoreState["isHiddenTemp"];
+}
+
 export interface StoreState {
   /** Controls which popup is currently open. */
   activePopup: string | null;
@@ -71,6 +77,20 @@ export interface StoreState {
 
   /** Initial error message to display when the app first loads. */
   initErrMsg: string | null;
+
+  /**
+   * Controls if disabled power spots are shown temporarily for the session.
+   * Used for the case when disabled power spots are shared as the user may not
+   * already have disabled power spots enabled in their settings.
+   */
+  isDisabledTemp: boolean;
+
+  /**
+   * Controls if hidden POIs are shown temporarily for the session.
+   * Used for the case when hidden POIs are shared as the user may not
+   * already have hidden POIs enabled in their settings.
+   */
+  isHiddenTemp: boolean;
 
   /** Open the layers overlay when true. */
   isLayersOverlayOpen: boolean;
@@ -104,10 +124,13 @@ export interface StoreState {
 
   /** Flags that determine which layer modifiers are applied. */
   modifiers: {
+    /** Determines if disabled power spots are visible or not. */
     isDisabled: boolean;
 
+    /** Determines if hiddne POIs are visible or not. */
     isHidden: boolean;
 
+    /** Determines if removed POIs are visible or not. */
     removed: boolean;
   };
 
@@ -295,6 +318,10 @@ export const useStore = create<StoreState>()(
         invertCoords:
           localStorage.getItem("invertCoords") === "true" ||
           DEFAULT_SETTINGS.invertCoords,
+
+        isDisabledTemp: false,
+
+        isHiddenTemp: false,
 
         // Layers overlay starts off closed
         isLayersOverlayOpen: false,
@@ -518,12 +545,22 @@ export const useStore = create<StoreState>()(
 
         toggleModifier: (m) =>
           set(
-            (s) => ({
-              modifiers: {
-                ...s.modifiers,
-                [m]: !s.modifiers[m],
-              },
-            }),
+            (s) => {
+              const result: ToggleModifierResult = {
+                modifiers: {
+                  ...s.modifiers,
+                  [m]: !s.modifiers[m],
+                },
+              };
+
+              if (m === "isDisabled") {
+                result.isDisabledTemp = false;
+              } else if (m === "isHidden") {
+                result.isHiddenTemp = false;
+              }
+
+              return result;
+            },
             undefined,
             "toggleModifier",
           ),
@@ -609,7 +646,7 @@ export const useStore = create<StoreState>()(
       }
 
       // Initialize marker states for each advanced layer
-      gymsJson.features.forEach(({ id, geometry }) => {
+      gymsJson.features.forEach(({ id, geometry, properties }) => {
         if (
           id &&
           idParam &&
@@ -622,12 +659,16 @@ export const useStore = create<StoreState>()(
             geometry.coordinates[1],
             geometry.coordinates[0],
           ];
+
+          if (properties.isHidden) {
+            initStoreState.isHiddenTemp = true;
+          }
         } else {
           initStoreState.layerGym[String(id)] = { isVisible: true };
         }
       });
 
-      pokestopsJson.features.forEach(({ id, geometry }) => {
+      pokestopsJson.features.forEach(({ id, geometry, properties }) => {
         if (
           id &&
           idParam &&
@@ -640,12 +681,16 @@ export const useStore = create<StoreState>()(
             geometry.coordinates[1],
             geometry.coordinates[0],
           ];
+
+          if (properties.isHidden) {
+            initStoreState.isHiddenTemp = true;
+          }
         } else {
           initStoreState.layerPokestop[String(id)] = { isVisible: true };
         }
       });
 
-      powerspotsJson.features.forEach(({ id, geometry }) => {
+      powerspotsJson.features.forEach(({ id, geometry, properties }) => {
         if (
           id &&
           idParam &&
@@ -658,6 +703,14 @@ export const useStore = create<StoreState>()(
             geometry.coordinates[1],
             geometry.coordinates[0],
           ];
+
+          if (properties.isDisabled) {
+            initStoreState.isDisabledTemp = true;
+          }
+
+          if (properties.isHidden) {
+            initStoreState.isHiddenTemp = true;
+          }
         } else {
           initStoreState.layerPowerspot[String(id)] = { isVisible: true };
         }
@@ -732,7 +785,7 @@ export const useStore = create<StoreState>()(
           ];
           initStoreState.wayfarerMode = true;
         } else {
-          initStoreState.layerDevpoi[String(id)] = { isVisible: true };
+          initStoreState.layerDevpoi[String(id)] = { isVisible: false };
         }
       });
 
