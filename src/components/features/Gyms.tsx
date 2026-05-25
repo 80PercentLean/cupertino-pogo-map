@@ -34,7 +34,7 @@ export default function Gyms() {
           if (isCommunityContributed) {
             subtitle += " [Community Contributed]";
           } else {
-            subtitle += " [Overture Maps]";
+            subtitle += " [Other Source]";
           }
         }
         return subtitle;

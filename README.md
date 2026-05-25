@@ -7,7 +7,8 @@ Some notable features are:
 - View and search locations for Gyms, PokéStops, Power Spots, parking spots, restrooms, and more.
 - Support for use on both desktop and mobile devices.
 - Get navigation instructions through Google Maps and shareable links for specific locations.
-- Visualize Google S2 cells which can provide valuable insights for Niantic Wayfinders.
+- Place your own markers and share their locations to send people specific coordinates and directions.
+- Visualize [Google S2 cells](https://s2geometry.io) which can provide valuable insights for [Niantic Wayfinders](https://wayfarer.nianticlabs.com).
 - Completely open source!
 
 ## Quick Start
