@@ -14,7 +14,7 @@ const LOCATION = IS_CENTRAL
 
 export default function Landing() {
   return (
-    <div className="container mx-auto flex min-h-screen flex-col items-center gap-4 p-4">
+    <div className="flex min-h-screen flex-col items-center gap-4">
       <h1 className="text-primary text-2xl font-bold tracking-wide uppercase">
         {GROUP_NAME}
       </h1>
