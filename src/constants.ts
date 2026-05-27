@@ -21,3 +21,13 @@ export const CUP_POGO_CAMPFIRE =
 
 export const WG_CAMPFIRE =
   "https://campfire.onelink.me/eBr8?af_dp=campfire://&af_force_deeplink=true&deep_link_sub1=cj1jbHVicyZjPWE4M2FmMzljLTRiNTgtNGM2NC1iZjViLTYwMTM4Yzc2MzNjNyZpPXRydWU=";
+
+export const CAMPFIRE_LINK = IS_CENTRAL ? WG_CAMPFIRE : CUP_POGO_CAMPFIRE;
+
+export const LOCATION = IS_CENTRAL
+  ? "Santa Clara Central\u00A0Park"
+  : "Cupertino Memorial Park/De Anza\u00A0College";
+
+export const LOCATION_LONG = IS_CENTRAL
+  ? "Central Park in Santa Clara,\u00A0California"
+  : "Memorial Park & De Anza College in Cupertino,\u00A0California";

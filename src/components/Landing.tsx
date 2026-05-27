@@ -2,27 +2,35 @@ import imgDiscord from "@/assets/Discord-Symbol-Blurple.png";
 import imgPgo from "@/assets/Pokemon_GO_Logo.png";
 import imgCampfire from "@/assets/campfire.png";
 import imgProfessor from "@/assets/gotcg.jpg";
+import imgPbp from "@/assets/pbp.webp";
 import imgRaid from "@/assets/raids-loading.jpg";
 import imgMap from "@/assets/raw/pgo-map-bg.jpg";
-import { GROUP_NAME, IS_CENTRAL, MAP_PATH } from "@/constants";
+import {
+  GROUP_NAME,
+  IS_CENTRAL,
+  LOCATION,
+  LOCATION_LONG,
+  MAP_PATH,
+} from "@/constants";
 
 import FooterTxt from "./FooterTxt";
 
-const LOCATION = IS_CENTRAL
-  ? "Central Park in Santa Clara,\u00A0California"
-  : "Memorial Park & De Anza College in Cupertino,\u00A0California";
-
+/**
+ * The home page.
+ */
 export default function Landing() {
+  // TODO: change page title
+
   return (
     <div className="flex min-h-screen flex-col items-center gap-4">
-      <h1 className="text-primary text-2xl font-bold tracking-wide uppercase">
+      <h1 className="text-2xl font-bold tracking-wide uppercase">
         {GROUP_NAME}
       </h1>
       <p className="text-secondary-foreground w-full max-w-150 text-center">
         <strong>{GROUP_NAME}</strong> is an official Pokémon GO Ambassador group
         based in{" "}
         <a href={MAP_PATH} className="underline">
-          {LOCATION}
+          {LOCATION_LONG}
         </a>
         .
       </p>
@@ -31,7 +39,7 @@ export default function Landing() {
         rewards and official Pokémon merchandise through&nbsp;giveaways!
       </p>
       <div
-        className={`grid gap-4 ${IS_CENTRAL ? "grid-rows-5" : "grid-rows-6"}`}
+        className={`grid gap-4 ${IS_CENTRAL ? "grid-rows-6" : "grid-rows-7"}`}
       >
         <a href={MAP_PATH} className="flex flex-1">
           <div className="bg-foreground flex w-full max-w-150 rounded-xl">
@@ -41,7 +49,9 @@ export default function Landing() {
               className="aspect-video w-29 rounded-l-xl object-cover"
             />
             <div className="self-center p-4">
-              <h1 className="font-medium">Community Map & Free&nbsp;Parking</h1>
+              <h1 className="font-medium text-black">
+                Community Map & Free&nbsp;Parking
+              </h1>
               <p className="mt-2 text-gray-500">
                 Get driving & walking directions and find parking, restrooms,
                 Gyms, PokéStops, Power Spots, and&nbsp;more.
@@ -57,11 +67,33 @@ export default function Landing() {
               className="aspect-video w-29 rounded-l-xl object-cover"
             />
             <div className="self-center p-4">
-              <h1 className="font-medium">Meetups&nbsp;Schedule</h1>
+              <h1 className="font-medium text-black">Meetups&nbsp;Schedule</h1>
               <p className="mt-2 text-gray-500">
                 View all upcoming meetups at {LOCATION}. Find our Campfire
                 meetup links where you can check-in for free
                 in-game&nbsp;rewards!
+              </p>
+            </div>
+          </div>
+        </a>
+        {/* TODO: use proper React Router routing */}
+        <a href="/checkin" className="flex flex-1">
+          <div className="bg-foreground flex w-full max-w-150 rounded-xl">
+            <img
+              src={imgPbp}
+              alt="Check-In Reward"
+              className="aspect-video w-29 rounded-l-xl bg-[#1f1f1f] object-contain p-2"
+              style={{
+                background: "linear-gradient(180deg,#234375 0,#19528e)",
+              }}
+            />
+            <div className="self-center p-4">
+              <h1 className="font-medium text-black">
+                Community Map & Free&nbsp;Parking
+              </h1>
+              <p className="mt-2 text-gray-500">
+                Get driving & walking directions and find parking, restrooms,
+                Gyms, PokéStops, Power Spots, and&nbsp;more.
               </p>
             </div>
           </div>
@@ -79,7 +111,9 @@ export default function Landing() {
               className="w-29 rounded-l-xl bg-[#1f1f1f] object-contain p-3"
             />
             <div className="self-center p-4">
-              <h1 className="font-medium">Join Our Discord&nbsp;Server</h1>
+              <h1 className="font-medium text-black">
+                Join Our Discord&nbsp;Server
+              </h1>
               <p className="mt-2 text-gray-500">
                 Join the Wild Goose × Cupertino PoGO Discord. Chat, coordinate
                 Raids & Max Battles, and trade with fellow Trainers in
@@ -101,7 +135,7 @@ export default function Landing() {
               className="aspect-video w-29 rounded-l-xl object-cover"
             />
             <div className="self-center p-4">
-              <h1 className="font-medium">
+              <h1 className="font-medium text-black">
                 Join Our Niantic Campfire&nbsp;Group
               </h1>
               <p className="mt-2 text-gray-500">
@@ -126,7 +160,7 @@ export default function Landing() {
                 className="aspect-video w-29 rounded-l-xl bg-[#1f1f1f] object-cover"
               />
               <div className="self-center p-4">
-                <h1 className="font-medium">Cupertino PoGO Guide</h1>
+                <h1 className="font-medium text-black">Cupertino PoGO Guide</h1>
                 <p className="mt-2 text-gray-500">
                   Learn more about the community and get pro tips that will
                   improve Pokémon GO experience by reading this&nbsp;guide!
@@ -151,7 +185,9 @@ export default function Landing() {
               }}
             />
             <div className="self-center p-4">
-              <h1 className="font-medium">Download & Play Pokémon&nbsp;GO</h1>
+              <h1 className="font-medium text-black">
+                Download & Play Pokémon&nbsp;GO
+              </h1>
               <p className="mt-2 text-gray-500">
                 New to the game? Visit the official website and download the
                 game from the App Store, Google Play, or Galaxy Store and play
@@ -161,7 +197,7 @@ export default function Landing() {
           </div>
         </a>
       </div>
-      <footer className="text-muted-foreground mt-8 flex flex-col gap-2 text-center text-sm">
+      <footer className="text-muted-foreground mt-20 flex flex-col gap-2 text-center text-sm">
         <FooterTxt />
       </footer>
     </div>

@@ -1,9 +1,4 @@
-import {
-  CUP_POGO_CAMPFIRE,
-  GROUP_NAME,
-  IS_CENTRAL,
-  WG_CAMPFIRE,
-} from "@/constants";
+import { CAMPFIRE_LINK, GROUP_NAME } from "@/constants";
 import { Info } from "lucide-react";
 
 import FooterTxt from "./FooterTxt";
@@ -11,8 +6,6 @@ import LinkExt from "./LinkExt";
 import UiOverlayCard from "./UiOverlayCard";
 import UiOverlayCardIconTitle from "./UiOverlayCardIconTitle";
 import { Separator } from "./ui/separator";
-
-const CAMPFIRE_LINK = IS_CENTRAL ? WG_CAMPFIRE : CUP_POGO_CAMPFIRE;
 
 /**
  * Displays the information view.
