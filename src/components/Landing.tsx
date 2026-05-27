@@ -89,11 +89,11 @@ export default function Landing() {
             />
             <div className="self-center p-4">
               <h1 className="font-medium text-black">
-                Community Map & Free&nbsp;Parking
+                How To Check-In For Free Rewards&nbsp;&&nbsp;Bonuses
               </h1>
               <p className="mt-2 text-gray-500">
-                Get driving & walking directions and find parking, restrooms,
-                Gyms, PokéStops, Power Spots, and&nbsp;more.
+                Learn how to check into our meetups to get free in-game rewards
+                & bonuses sent directly into your Pokémon GO&nbsp;account!
               </p>
             </div>
           </div>

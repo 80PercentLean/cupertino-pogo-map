@@ -9,13 +9,14 @@ import CheckInGuide from "./components/CheckInGuide";
 import Landing from "./components/Landing";
 import NotFound from "./components/NotFound";
 import Root from "./components/Root";
+import { ROOT_PATH } from "./constants";
 import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Root />}>
+        <Route path={ROOT_PATH || "/"} element={<Root />}>
           <Route index element={<Landing />} />
           <Route path="checkin" element={<CheckInGuide />} />
           <Route path="*" element={<NotFound />} />
