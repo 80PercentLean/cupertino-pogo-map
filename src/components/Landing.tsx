@@ -6,6 +6,7 @@ import imgPbp from "@/assets/pbp.webp";
 import imgRaid from "@/assets/raids-loading.jpg";
 import imgMap from "@/assets/raw/pgo-map-bg.jpg";
 import {
+  CHECK_IN_PATH,
   CITY,
   GROUP_NAME,
   IS_CENTRAL,
@@ -79,7 +80,7 @@ export default function Landing() {
             </div>
           </div>
         </a>
-        <Link to="/checkin" className="flex flex-1">
+        <Link to={CHECK_IN_PATH} className="flex flex-1">
           <div className="bg-foreground flex w-full max-w-150 rounded-xl">
             <img
               src={imgPbp}

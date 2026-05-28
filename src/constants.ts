@@ -14,6 +14,8 @@ export const GROUP_NAME = IS_CENTRAL
 
 export const ROOT_PATH = (import.meta.env.VITE_ROOT_PATH as string) ?? "";
 
+export const CHECK_IN_PATH = ROOT_PATH ? `${ROOT_PATH}/checkin` : "checkin";
+
 export const MAP_PATH = ROOT_PATH ? `${ROOT_PATH}/map` : "map";
 
 export const CUP_POGO_CAMPFIRE =

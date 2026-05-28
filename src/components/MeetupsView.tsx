@@ -1,6 +1,6 @@
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
-import { IS_CENTRAL } from "@/constants";
+import { CHECK_IN_PATH, IS_CENTRAL } from "@/constants";
 import { queryOptions, useQuery } from "@tanstack/react-query";
 import { ExternalLink, FlameKindling, Gift } from "lucide-react";
 
@@ -189,9 +189,19 @@ export default function MeetupsView() {
           <Gift />
           <AlertTitle>Get free stuff for checking into meetups!</AlertTitle>
           <AlertDescription className="text-purple-200">
-            Checking into our meetups on the official Niantic Campfire app can
-            earn you free rewards like Premium Battle Passes and special Pokémon
-            encounters with limited-time backgrounds.
+            <p>
+              Checking into our meetups on Campfire can earn you free rewards
+              like Premium Battle Passes and activate exclusive meetup bonuses!
+            </p>
+            <Button
+              asChild
+              className="mt-[1em] py-8 text-center font-bold text-balance whitespace-normal underline"
+            >
+              <a href={CHECK_IN_PATH}>
+                Learn how to check into meetups for free in-game items &
+                bonuses!
+              </a>
+            </Button>
           </AlertDescription>
         </Alert>
         {content}
