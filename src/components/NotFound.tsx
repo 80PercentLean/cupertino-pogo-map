@@ -10,11 +10,18 @@ export default function NotFound() {
   useSetDocTitle("Page Not Found");
 
   return (
-    <div className="flex min-h-screen flex-col justify-center">
-      <h1 className="text-center text-2xl font-bold">Page Not Found</h1>
-      <p className="text-secondary-foreground mt-2 text-center">
+    <div className="flex min-h-screen flex-col justify-center text-center">
+      <h1 className="text-2xl font-bold">Page Not Found</h1>
+      <p className="text-muted-foreground mt-4">
+        Unfortunately the page was not found on the {GROUP_NAME} website.
+      </p>
+      <p className="text-muted-foreground mt-4">
+        If you feel the page should actually be here, let the Community
+        Ambassadors know about this!
+      </p>
+      <p className="mt-8">
         <Link to={ROOT_PATH || "/"} className="underline">
-          🏠 Return to the <b>{GROUP_NAME}</b> home page.
+          🏠 Return to the home page.
         </Link>
       </p>
     </div>
