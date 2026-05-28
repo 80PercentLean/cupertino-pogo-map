@@ -1,3 +1,4 @@
+import { GROUP_NAME } from "@/constants";
 import {
   devpoisJson,
   gymsJson,
@@ -8,6 +9,7 @@ import {
   restroomsJson,
 } from "@/geojson/data";
 import type { CFeature, CProperties } from "@/types/CFeatures";
+import { useEffect } from "react";
 import { useSearchParams } from "react-router";
 
 import { type MarkerState, type PlacedMarkerState, useStore } from "./store";
@@ -209,6 +211,16 @@ export const useRemoveIdQueryParam = () => {
       );
     }
   };
+};
+
+/**
+ * Set the document title.
+ * @param title Text to set the document title to
+ */
+export const useSetDocTitle = (title: string) => {
+  useEffect(() => {
+    document.title = `${GROUP_NAME} | ${title}`;
+  }, []);
 };
 
 /**

@@ -24,9 +24,11 @@ export const WG_CAMPFIRE =
 
 export const CAMPFIRE_LINK = IS_CENTRAL ? WG_CAMPFIRE : CUP_POGO_CAMPFIRE;
 
+export const CITY = IS_CENTRAL ? "Santa Clara" : "Cupertino";
+
 export const LOCATION = IS_CENTRAL
   ? "Santa Clara Central\u00A0Park"
-  : "Cupertino Memorial Park/De Anza\u00A0College";
+  : "Cupertino Memorial Park & De Anza\u00A0College";
 
 export const LOCATION_LONG = IS_CENTRAL
   ? "Central Park in Santa Clara,\u00A0California"

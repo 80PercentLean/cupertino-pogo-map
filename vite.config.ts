@@ -15,21 +15,27 @@ export default defineConfig(({ mode }) => {
     return {
       name: "html-transform",
       transformIndexHtml(html, ctx) {
+        const GROUP_NAME =
+          env.VITE_IS_CENTRAL === "true" ? "Wild Goose" : "Cupertino PoGO";
+
         if (ctx.filename.endsWith("/index.html")) {
+          const CITY =
+            env.VITE_IS_CENTRAL === "true" ? "Santa Clara" : "Cupertino";
+
           return html.replace(
             "__TITLE__",
-            env.VITE_IS_CENTRAL === "true"
-              ? "Wild Goose | Pokémon GO Community in Santa Clara, California"
-              : "Cupertino PoGO | Pokémon GO Community in Cupertino, California",
+            `${GROUP_NAME} | Pokémon GO Community in ${CITY}, California`,
           );
         }
 
         if (ctx.filename.endsWith("/map.html")) {
+          const LOCATION =
+            env.VITE_IS_CENTRAL === "true"
+              ? "Santa Clara Central Park"
+              : "Cupertino Memorial Park & De Anza College";
           return html.replace(
             "__TITLE__",
-            env.VITE_IS_CENTRAL === "true"
-              ? "Wild Goose Map | Directions & Free Parking for Pokémon GO at Santa Clara Central Park"
-              : "Cupertino PoGO Map | Directions & Free Parking for Pokémon GO at Memorial Park & De Anza College",
+            `${GROUP_NAME}: Directions & Free Parking for Pokémon GO at ${LOCATION}`,
           );
         }
 

@@ -7,6 +7,7 @@ import {
   ROOT_PATH,
 } from "@/constants";
 import { ExternalLink } from "lucide-react";
+import { Link } from "react-router";
 
 import BinocularsIcon from "../assets/binoculars.png";
 import CampfireMeetupListScreenshot from "../assets/raw/5d5b9401-eb03-42e2-bf20-fdedbf7634d5.png";
@@ -16,12 +17,15 @@ import CampfireMapIconScreenshot from "../assets/raw/80b646b7-5624-4260-bbb9-395
 import CheckInResearchScreenshot from "../assets/raw/82fdda47-23c7-4182-8dc2-b08b582a46d7.png";
 import Callout, { CalloutFront } from "./Callout";
 import FooterTxt from "./FooterTxt";
+import { useSetDocTitle } from "./hooks";
 import { Button } from "./ui/button";
 
 /**
  * Guide that shows how to check-in on Campfire.
  */
 export default function CheckInGuide() {
+  useSetDocTitle("How To Check Into A Meetup");
+
   return (
     <div className="mx-auto flex min-h-screen max-w-[65ch] flex-col gap-4">
       <h1 className="text-4xl font-extrabold tracking-tight text-balance">
@@ -331,9 +335,9 @@ export default function CheckInGuide() {
       </p>
       <hr className="mt-10" />
       <p className="mt-4 text-center">
-        <a href={ROOT_PATH || "/"} className="underline">
+        <Link to={ROOT_PATH || "/"} className="underline">
           🏠 Return to the home page.
-        </a>
+        </Link>
       </p>
       <footer className="text-muted-foreground mt-20 flex flex-col gap-2 text-center text-sm">
         <FooterTxt />

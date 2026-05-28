@@ -6,20 +6,23 @@ import imgPbp from "@/assets/pbp.webp";
 import imgRaid from "@/assets/raids-loading.jpg";
 import imgMap from "@/assets/raw/pgo-map-bg.jpg";
 import {
+  CITY,
   GROUP_NAME,
   IS_CENTRAL,
   LOCATION,
   LOCATION_LONG,
   MAP_PATH,
 } from "@/constants";
+import { Link } from "react-router";
 
 import FooterTxt from "./FooterTxt";
+import { useSetDocTitle } from "./hooks";
 
 /**
  * The home page.
  */
 export default function Landing() {
-  // TODO: change page title
+  useSetDocTitle(`Pokémon GO Community in ${CITY}, California`);
 
   return (
     <div className="flex min-h-screen flex-col items-center gap-4">
@@ -76,8 +79,7 @@ export default function Landing() {
             </div>
           </div>
         </a>
-        {/* TODO: use proper React Router routing */}
-        <a href="/checkin" className="flex flex-1">
+        <Link to="/checkin" className="flex flex-1">
           <div className="bg-foreground flex w-full max-w-150 rounded-xl">
             <img
               src={imgPbp}
@@ -97,7 +99,7 @@ export default function Landing() {
               </p>
             </div>
           </div>
-        </a>
+        </Link>
         <a
           href="https://discord.gg/7tZ2cauare"
           rel="noopener noreferrer"
