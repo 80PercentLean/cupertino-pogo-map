@@ -41,7 +41,7 @@ export default function CheckInGuide() {
         <div className="mx-auto grid max-w-[65ch] grid-cols-3 grid-rows-1 gap-1">
           <img
             src={imgLuckyEgg}
-            alt="Premium Battle Pass from Check-In Rewards"
+            alt="Lucky Egg from Check-In Rewards"
             className="m-auto max-h-full drop-shadow-lg"
           />
           <img
@@ -51,21 +51,21 @@ export default function CheckInGuide() {
           />
           <img
             src={imgStarPiece}
-            alt="Premium Battle Pass from Check-In Rewards"
+            alt="Star Piece from Check-In Rewards"
             className="m-auto max-h-full drop-shadow-lg"
           />
         </div>
       </div>
-      <div className="mx-auto flex min-h-screen max-w-[65ch] flex-col gap-4 px-4">
+      <div className="mx-auto flex min-h-screen max-w-[65ch] flex-col gap-[1em] px-4">
         <h1 className="mt-[1em] text-4xl font-extrabold tracking-tight text-balance">
-          How To Check-In For Free Rewards & Special Meetup Bonuses
+          How To Check Into Meetups For Free Rewards & Special Bonuses
         </h1>
         <p className="text-muted-foreground text-xl text-pretty">
-          This guide will walk you through how you can check into meetups on
-          Niantic Campfire to receive premium in-game items and activate
-          exclusive meetup bonuses directly onto your Pokémon GO account.
+          This step-by-step guide will walk you through how you can check into
+          meetups to receive free in-game items and activate special bonuses
+          directly onto your Pokémon GO account.
         </p>
-        <h2 className="mt-[1em] border-b pb-2 text-3xl font-semibold tracking-tight text-balance">
+        <h2 className="mt-[1em] border-b pb-2 text-2xl font-semibold tracking-tight text-balance">
           1. Go to the meetup location.
         </h2>
         <p className="leading-7 text-pretty">
@@ -85,24 +85,26 @@ export default function CheckInGuide() {
           title={
             <CalloutFront
               title="How close do I need to be to the meetup in order to check-in?"
-              subtitle="Tap to learn more the meetup check-in range."
+              subtitle="Tap to learn more about the meetup check-in range."
             />
           }
           content={
             <>
               <p>
-                You must be within 1 km (which is roughly 0.6 miles) of the
-                meetup marker placed on Campfire.
+                You must be within roughly 0.6 miles of the meetup marker placed
+                on Campfire.
               </p>
               <p>
-                This range is large enough to cover the entire area, so you
-                should be able to check-in from the furthest corners of the park
-                {!IS_CENTRAL && "/campus"} if the meetup location is {LOCATION}.
+                When the meetup is at {LOCATION}, this range is large enough to
+                cover the entire area, so you will be able to check-in from the
+                furthest corners of the park
+                {!IS_CENTRAL && "/campus"}.
               </p>
             </>
           }
+          className="my-[1em]"
         />
-        <h2 className="mt-[1em] border-b pb-2 text-3xl font-semibold tracking-tight text-balance">
+        <h2 className="mt-[1em] border-b pb-2 text-2xl font-semibold tracking-tight text-balance">
           2. Open the Campfire Meetup List.
         </h2>
         <p className="leading-7 text-pretty">
@@ -113,7 +115,7 @@ export default function CheckInGuide() {
         <img
           src={CampfireMapIconScreenshot}
           alt="Screenshot showing where Campfire Map Icon is located in Pokemon GO"
-          className="mx-auto max-w-80"
+          className="mx-auto mt-[1em] max-w-80"
         />
         <Callout
           title={
@@ -125,19 +127,26 @@ export default function CheckInGuide() {
           content={
             <>
               <p>
-                <b>Campfire</b> is Niantic's official social platform for
-                Pokémon GO players.
+                <b>Niantic Campfire</b> is the Pokémon GO developer's official
+                social platform for the game.
               </p>
               <p>
-                <b>{GROUP_NAME}</b> is a Campfire Group that hosts meetups
+                <b>{GROUP_NAME}</b> is a Campfire group that hosts meetups
                 through this app. We are part of the{" "}
-                <b>official Pokémon GO Community Ambassador Program</b> which
-                allows us to gift you in-game rewards directly to your account
-                through your check-in.
+                <a
+                  href="https://pokemongo.com/find-your-community"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="font-bold underline"
+                >
+                  official Pokémon GO Community Ambassador Program
+                </a>{" "}
+                which allows us to gift you in-game rewards and activate special
+                bonuses directly to your account through your check-in.
               </p>
               <p>
-                Pokémon GO already comes with a light integration with Campfire,
-                so no additional download is required to check-in.
+                Pokémon GO already comes with a light Campfire integration, so
+                no additional download is required to check-in.
               </p>
               <p>
                 For access to additional features like chatting and trading with
@@ -156,8 +165,9 @@ export default function CheckInGuide() {
               </Button>
             </>
           }
+          className="mb-[1em]"
         />
-        <h2 className="mt-[1em] border-b pb-2 text-3xl font-semibold tracking-tight text-balance">
+        <h2 className="mt-[1em] border-b pb-2 text-2xl font-semibold tracking-tight text-balance">
           3. Find the Campfire Meetup and check-in.
         </h2>
         <p className="leading-7 text-pretty">
@@ -191,7 +201,7 @@ export default function CheckInGuide() {
           content={
             <>
               <p>
-                First make sure that you are at the correct meetup location!
+                First make sure that you are at the correct meetup location.
                 Usually it is at {LOCATION} but sometimes it could change, so
                 double-check the meetup details.
               </p>
@@ -207,22 +217,22 @@ export default function CheckInGuide() {
                 current location loads correctly.
               </p>
               <p>
-                If you can't see your own position on the Campfire map, or if it
-                isn't accurately showing your current position, go into your
-                phone settings and check that you have granted the Campfire app{" "}
-                <b>permission to access location</b> with{" "}
-                <b>precise location</b>.
+                If the Campfire map isn't accurately showing your current
+                position, go into your phone settings and check that you have
+                granted the Campfire app <b>permission to access location</b>{" "}
+                with <b>precise location</b>.
               </p>
             </>
           }
           type="troubleshooting"
+          className="mt-[1em]"
         />
         <img
           src={CampfireMeetupListScreenshot}
           alt="Screenshot of the Campfire Meetup List"
-          className="mx-auto max-w-80"
+          className="mx-auto mb-[1em] max-w-80"
         />
-        <h2 className="mt-[1em] border-b pb-2 text-3xl font-semibold tracking-tight text-balance">
+        <h2 className="mt-[1em] border-b pb-2 text-2xl font-semibold tracking-tight text-balance">
           4. Claim your first reward! (500 XP)
         </h2>
         <p className="leading-7 text-pretty">
@@ -237,7 +247,7 @@ export default function CheckInGuide() {
             alt="Binoculars"
             className="inline-block h-6 w-6 rounded-full border border-[#E9A85D] bg-white"
           />{" "}
-          in the bottom-right corner and pressing the "Events" tab at the top.
+          in the bottom-right corner and tapping on the "Events" tab at the top.
         </p>
         <p className="leading-7 text-pretty">
           Then scroll down until you find the{" "}
@@ -246,7 +256,7 @@ export default function CheckInGuide() {
         <img
           src={CheckInResearchFirstRewardScreenshot}
           alt="Screenshot of the first Check-In Timed Research reward"
-          className="mx-auto max-w-80"
+          className="mx-auto my-[1em] max-w-80"
         />
         <p className="leading-7 text-pretty">
           Claim the the 500 XP so you can start progressing through the rest of
@@ -276,6 +286,7 @@ export default function CheckInGuide() {
               </p>
             </>
           }
+          className="mt-[1em]"
         />
         <Callout
           title={
@@ -307,24 +318,26 @@ export default function CheckInGuide() {
                 If it has already been over an hour since you checked in,
                 unfortunately that means the first page of the Check-In Timed
                 Research has expired and you will not be able to claim any
-                rewards from it. Next time, claim the 500 XP as soon as you can!
+                rewards from it. Next time, claim the 500 XP as early as
+                possible!
               </p>
             </>
           }
           type="troubleshooting"
+          className="mb-[1em]"
         />
-        <h2 className="mt-[1em] border-b pb-2 text-3xl font-semibold tracking-tight text-balance">
+        <h2 className="mt-[1em] border-b pb-2 text-2xl font-semibold tracking-tight text-balance">
           5. Claim the rest of the rewards!
         </h2>
         <p className="leading-7 text-pretty">
-          Now you've finally reached the main part of the Timed Research. All
-          that's left for you to do is complete the tasks to claim the best
-          rewards the research has to offer!
+          Now you've finally reached the main part of the Check-In Timed
+          Research. All that's left for you to do is complete the remaining
+          tasks to claim the best rewards the Research has to offer!
         </p>
         <img
           src={CheckInResearchScreenshot}
           alt="Screenshot of the first Check-In Timed Research reward"
-          className="mx-auto max-w-80"
+          className="mx-auto my-[1em] max-w-80"
         />
         <p className="leading-7 text-pretty">
           The tasks and rewards will vary depending on the meetup's event, so
@@ -333,21 +346,69 @@ export default function CheckInGuide() {
         </p>
         <p className="leading-7 text-pretty">
           Sometimes rewards will change, but typically these are what you can
-          expect:
+          expect for some of our meetups:
         </p>
-        <ul className="list-disc space-y-1 pl-5 text-pretty">
-          <li>
-            <b>Raid Events:</b> Premium Battle Pass & 100 Link Charges
-          </li>
-          <li>
-            <b>Max Battle Events:</b> 800 Max Particles
-          </li>
-          <li>
-            <b>Community Day:</b> Premium Battle Pass, Lucky Egg, Star Piece,
-            Lure Module, 4 Featured Pokémon with Special Background, 200
-            Featured Pokémon Candies & 30 XL Candies, 25 Rare Candies
-          </li>
-        </ul>
+        <div className="my-[1em] w-full overflow-y-auto">
+          <table className="w-full">
+            <thead>
+              <tr className="bg-muted m-0 border-t p-0">
+                <th className="border px-4 py-2 text-left font-bold [[align=center]]:text-center [[align=right]]:text-right">
+                  Event Type
+                </th>
+                <th className="border px-4 py-2 text-left font-bold [[align=center]]:text-center [[align=right]]:text-right">
+                  Rewards
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="m-0 border-t p-0">
+                <td className="border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right">
+                  Raids
+                  <br />
+                  <span className="text-muted-foreground italic">
+                    Raid Hour/Raid Day
+                  </span>
+                </td>
+                <td className="border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right">
+                  <ul className="list-disc space-y-1 pl-5 text-pretty">
+                    <li>Premium Battle Pass</li>
+                    <li>100 Link Charges</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr className="m-0 border-t p-0">
+                <td className="border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right">
+                  Max Battles
+                  <br />
+                  <span className="text-muted-foreground italic">
+                    D-MAX/G-MAX
+                  </span>
+                </td>
+                <td className="border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right">
+                  <ul className="list-disc space-y-1 pl-5 text-pretty">
+                    <li>800 Max Particles</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr className="m-0 border-t p-0">
+                <td className="border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right">
+                  Community Days
+                </td>
+                <td className="border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right">
+                  <ul className="list-disc space-y-1 pl-5 text-pretty">
+                    <li>Premium Battle Pass</li>
+                    <li>Lucky Egg</li>
+                    <li>Star Piece</li>
+                    <li>Lure Module</li>
+                    <li>4 Featured Pokémon with Special Background</li>
+                    <li>200 Featured Pokémon Candies & 30 XL Candies</li>
+                    <li> 25 Rare Candies</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <p className="leading-7 text-pretty">
           You can find the which Check-In Bonuses were activated in the "What's
           Happening Now" section of the "Today" tab.
@@ -355,14 +416,14 @@ export default function CheckInGuide() {
         <img
           src={CheckInBonusScreenshot}
           alt="Screenshot of the Check-In Bonuses"
-          className="mx-auto max-w-80"
+          className="mx-auto my-[1em] max-w-80"
         />
         <p className="leading-7 text-pretty">
-          Usually every page after the first one of the Check-In Timed Research
-          will give you several hours to complete them.
+          Every Check-In Timed Research page after the first one will give you
+          several hours to complete them.
         </p>{" "}
         <p className="leading-7 text-pretty">
-          Good luck Trainer, and enjoy the meetup and your freebies!
+          🫡 Good luck out there Trainer. Enjoy the meetup and your freebies!
         </p>
         <hr className="mt-10" />
         <p className="text-center text-balance">

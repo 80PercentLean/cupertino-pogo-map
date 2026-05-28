@@ -6,11 +6,11 @@ import imgPbp from "@/assets/pbp.webp";
 import imgRaid from "@/assets/raids-loading.jpg";
 import imgMap from "@/assets/raw/pgo-map-bg.jpg";
 import {
+  CAMPFIRE_LINK,
   CHECK_IN_PATH,
   CITY,
   GROUP_NAME,
   IS_CENTRAL,
-  LOCATION,
   LOCATION_LONG,
   MAP_PATH,
 } from "@/constants";
@@ -27,11 +27,11 @@ export default function Landing() {
 
   return (
     <div className="mx-auto flex min-h-screen max-w-[65ch] flex-col items-center gap-4 p-4">
-      <h1 className="text-3xl font-extrabold tracking-wide text-balance">
+      <h1 className="text-3xl font-extrabold tracking-tight text-balance">
         {GROUP_NAME}
       </h1>
       <p className="text-muted-foreground text-center text-lg text-pretty">
-        {GROUP_NAME} is an official Pokémon GO Ambassador group based in
+        {GROUP_NAME} is a Pokémon GO community based in
         <br />
         <a href={MAP_PATH} className="font-bold underline">
           {LOCATION_LONG}
@@ -39,9 +39,21 @@ export default function Landing() {
         .
       </p>
       <p className="text-muted-foreground text-center text-lg text-pretty">
-        Join our meetups to catch Pokémon and defeat Raid Bosses together while
-        earning free in-game rewards and official Pokémon merchandise through
-        giveaways!
+        Join us to catch creatures, battle Raid Bosses, and make new friends
+        with fellow Pokémon Trainers!
+      </p>
+      <p className="text-muted-foreground text-center text-lg text-pretty">
+        As part of the{" "}
+        <a
+          href="https://pokemongo.com/find-your-community"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="font-bold underline"
+        >
+          official Pokémon GO Community Ambassador Program
+        </a>
+        , we offer exclusive perks including free in-game items, special
+        bonuses, and chances to win official Pokémon merchandise and swag.
       </p>
       <div
         className={`mt-4 grid gap-4 ${IS_CENTRAL ? "grid-rows-6" : "grid-rows-7"}`}
@@ -58,8 +70,8 @@ export default function Landing() {
                 Community Map & Free Parking
               </h1>
               <p className="mt-2 text-gray-500">
-                Get driving & walking directions and find parking, restrooms,
-                Gyms, PokéStops, Power Spots, and more.
+                Find free parking, restrooms, and real-time walking directions
+                to every Gym, PokéStop, and Power Spot.
               </p>
             </div>
           </div>
@@ -74,8 +86,8 @@ export default function Landing() {
             <div className="self-center p-4">
               <h1 className="font-medium text-black">Meetups Schedule</h1>
               <p className="mt-2 text-gray-500">
-                View all upcoming meetups at {LOCATION}. Find our Campfire
-                meetup links where you can check-in for free in-game rewards!
+                View upcoming meetups. RSVP and check-in on Campfire for free
+                in-game rewards & bonuses!
               </p>
             </div>
           </div>
@@ -95,8 +107,8 @@ export default function Landing() {
                 How To Check-In For Free Rewards & Bonuses
               </h1>
               <p className="mt-2 text-gray-500">
-                Learn how to check into our meetups to get free in-game rewards
-                & bonuses sent directly into your Pokémon GO account!
+                Follow our step-by-step check-in guide to get your free in-game
+                rewards & bonuses!
               </p>
             </div>
           </div>
@@ -118,15 +130,14 @@ export default function Landing() {
                 Join Our Discord Server
               </h1>
               <p className="mt-2 text-gray-500">
-                Join the Wild Goose × Cupertino PoGO Discord. Chat, coordinate
-                Raids & Max Battles, and trade with fellow Trainers in the
-                region.
+                Join the Wild Goose × Cupertino PoGO Discord to chat, coordinate
+                Raids/Max Battles, and trade with fellow Trainers in the region.
               </p>
             </div>
           </div>
         </a>
         <a
-          href="https://campfire.onelink.me/eBr8?af_dp=campfire://&af_force_deeplink=true&deep_link_sub1=cj1jbHVicyZjPTk4MjZkY2U4LTZhM2ItNDQxNC05N2M1LTg1NzYzNDYzY2VmNSZpPXRydWU="
+          href={CAMPFIRE_LINK}
           rel="noopener noreferrer"
           target="_blank"
           className="flex flex-1"
@@ -142,9 +153,8 @@ export default function Landing() {
                 Join Our Niantic Campfire Group
               </h1>
               <p className="mt-2 text-gray-500">
-                Find meetups, check-in to get free in-game rewards, win prizes
-                from contests, and chat with fellow members in our Campfire
-                group.
+                Stay up-to-date on meetups, collect check-in rewards, enter
+                contests/giveaways, and connect with the community.
               </p>
             </div>
           </div>
@@ -165,8 +175,8 @@ export default function Landing() {
               <div className="self-center p-4">
                 <h1 className="font-medium text-black">Cupertino PoGO Guide</h1>
                 <p className="mt-2 text-gray-500">
-                  Learn more about the community and get pro tips that will
-                  improve Pokémon GO experience by reading this guide!
+                  Learn about our community and discover tips to get the most
+                  out of playing Pokémon GO with us.
                 </p>
               </div>
             </div>
@@ -192,9 +202,8 @@ export default function Landing() {
                 Download & Play Pokémon GO
               </h1>
               <p className="mt-2 text-gray-500">
-                New to the game? Visit the official website and download the
-                game from the App Store, Google Play, or Galaxy Store and play
-                for free today!
+                New to the game? Visit the official website to download the game
+                and start your Pokémon adventure today!
               </p>
             </div>
           </div>

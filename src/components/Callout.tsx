@@ -10,6 +10,9 @@ import {
 } from "./ui/accordion";
 
 export interface Props {
+  /** class attribute value to append to the component's existing class value. */
+  className?: string;
+
   /** Content of the callout. */
   content: ReactNode;
 
@@ -72,10 +75,10 @@ export function CalloutFront({ subtitle, title, type }: CalloutFrontProps) {
 /**
  * Custom component that styles the shadcn/ui Accordion component like an Alert.
  */
-export default function Callout({ content, title, type }: Props) {
+export default function Callout({ className, content, title, type }: Props) {
   const isTroubleshooting = type === "troubleshooting";
   return (
-    <Accordion type="single" collapsible className="w-full">
+    <Accordion type="single" collapsible className={cn("w-full", className)}>
       <AccordionItem
         value="troubleshooting"
         className={cn(

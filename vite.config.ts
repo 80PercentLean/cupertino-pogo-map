@@ -29,13 +29,18 @@ export default defineConfig(({ mode }) => {
         }
 
         if (ctx.filename.endsWith("/map.html")) {
+          const MAP_NAME =
+            env.VITE_IS_CENTRAL === "true"
+              ? "Wild Goose Map"
+              : "Cupertino PoGO Map";
           const LOCATION =
             env.VITE_IS_CENTRAL === "true"
               ? "Santa Clara Central Park"
               : "Cupertino Memorial Park & De Anza College";
+
           return html.replace(
             "__TITLE__",
-            `${GROUP_NAME}: Directions & Free Parking for Pokémon GO at ${LOCATION}`,
+            `${MAP_NAME} | Directions & Free Parking for Pokémon GO at ${LOCATION}`,
           );
         }
 

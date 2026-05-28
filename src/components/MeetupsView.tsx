@@ -1,6 +1,6 @@
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
-import { CHECK_IN_PATH, IS_CENTRAL } from "@/constants";
+import { CAMPFIRE_LINK, CHECK_IN_PATH, IS_CENTRAL } from "@/constants";
 import { queryOptions, useQuery } from "@tanstack/react-query";
 import { ExternalLink, FlameKindling, Gift } from "lucide-react";
 
@@ -155,7 +155,7 @@ export default function MeetupsView() {
           <p>
             Be sure to check our{" "}
             <a
-              href="https://campfire.onelink.me/eBr8?af_dp=campfire://&af_force_deeplink=true&deep_link_sub1=cj1jbHVicyZjPTk4MjZkY2U4LTZhM2ItNDQxNC05N2M1LTg1NzYzNDYzY2VmNSZpPXRydWU="
+              href={CAMPFIRE_LINK}
               rel="noopener noreferrer"
               target="_blank"
               className="font-bold underline"
@@ -191,17 +191,15 @@ export default function MeetupsView() {
           <AlertDescription className="text-purple-200">
             <p>
               Checking into our meetups on Campfire can earn you free rewards
-              like Premium Battle Passes and activate exclusive meetup bonuses!
+              like Premium Battle Passes and activate special bonuses like
+              Reduced Egg Hatch Distance!
             </p>
-            <Button
-              asChild
-              className="mt-[1em] py-8 text-center font-bold text-balance whitespace-normal underline"
-            >
-              <a href={CHECK_IN_PATH}>
-                Learn how to check into meetups for free in-game items &
-                bonuses!
+            <p>
+              <a href={CHECK_IN_PATH} className="font-bold underline">
+                Read our check-in guide to learn how to get your free in-game
+                items & bonuses!
               </a>
-            </Button>
+            </p>
           </AlertDescription>
         </Alert>
         {content}

@@ -10,7 +10,7 @@ export const IS_CENTRAL = import.meta.env.VITE_IS_CENTRAL === "true";
 
 export const GROUP_NAME = IS_CENTRAL
   ? "Wild\u00A0Goose"
-  : "Cupertino PoGO\u00A0Group";
+  : "Cupertino\u00A0PoGO";
 
 export const ROOT_PATH = (import.meta.env.VITE_ROOT_PATH as string) ?? "";
 
