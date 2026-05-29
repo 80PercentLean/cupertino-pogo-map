@@ -71,7 +71,7 @@ export const emojiMRestroom = "🚹";
 export const emojiWRestroom = "🚺";
 
 /** Default Leaflet icon. */
-const DefaultIcon = icon({
+export const iconDefault = icon({
   iconAnchor: [12, 41],
   iconRetinaUrl: iconRetina,
   iconSize: [25, 41],
@@ -81,7 +81,45 @@ const DefaultIcon = icon({
   shadowUrl: iconShadow,
   tooltipAnchor: [16, -28],
 });
-Marker.prototype.options.icon = DefaultIcon;
+Marker.prototype.options.icon = iconDefault;
+
+export const iconDefaultHighlighted = divIcon({
+  className: "",
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+
+  html: `
+    <div style="
+      position: relative;
+      width: 25px;
+      height: 41px;
+    ">
+      <div style="
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 42px;
+        height: 42px;
+        transform: translate(-50%, -60%);
+        background: rgba(255, 255, 255, 0.6);
+        border: 1px solid #fff;
+        border-radius: 9999px;
+        pointer-events: none;
+      "></div>
+      <img
+        src="${imgLeafletMarker}"
+        style="
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 25px;
+          height: 41px;
+        "
+      />
+    </div>
+  `,
+});
 
 /** Leaflet icon for all/binary gender restrooms. */
 export const iconAllBinaryRestroom = divIcon({

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { iconDefault, iconDefaultHighlighted } from "@/leafletIcons";
 import { type Marker } from "leaflet";
 import { Trash2 } from "lucide-react";
 import { useEffect, useRef } from "react";
@@ -30,6 +31,7 @@ export default function PlacedMarker({ i }: Props) {
   const activePopup = useStore((s) => s.activePopup);
   const {
     id,
+    isHighlighted,
     isVisible,
     position,
     showInteractionRadius,
@@ -120,7 +122,13 @@ export default function PlacedMarker({ i }: Props) {
       {showInteractionRadius && <InteractionRadius position={position} />}
       <CMarker
         ref={markerRef}
+        icon={
+          iconDefaultHighlighted && isHighlighted
+            ? iconDefaultHighlighted
+            : iconDefault
+        }
         position={position}
+        zIndexOffset={isHighlighted ? 10000 : 0}
         data-testid={id}
         eventHandlers={{
           click: () => {

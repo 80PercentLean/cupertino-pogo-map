@@ -194,11 +194,11 @@ export default function FeatureMarker({
         ref={markerRef}
         icon={iconHighlighted && isHighlighted ? iconHighlighted : icon}
         position={position}
+        zIndexOffset={isHighlighted ? 10000 : 0}
         eventHandlers={{
           click: () => setIdQueryParam(id),
           popupclose: () => removeIdQueryParam(),
         }}
-        zIndexOffset={isHighlighted ? 10000 : 0}
       >
         {isPopupOpen && (
           <Popup>

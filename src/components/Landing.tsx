@@ -70,7 +70,7 @@ export default function Landing() {
               <CardTitle className="font-medium text-balance text-black">
                 Community Map & Free Parking
               </CardTitle>
-              <CardDescription className="mt-1 text-pretty text-gray-500">
+              <CardDescription className="text-pretty text-gray-600">
                 Find free parking, restrooms, and real-time walking directions
                 to every Gym, PokéStop, and Power Spot.
               </CardDescription>
@@ -91,7 +91,7 @@ export default function Landing() {
               <CardTitle className="font-medium text-balance text-black">
                 How To Check-In For Free Rewards & Bonuses
               </CardTitle>
-              <CardDescription className="mt-1 text-pretty text-gray-500">
+              <CardDescription className="text-pretty text-gray-600">
                 Follow our step-by-step check-in guide to get your free in-game
                 rewards & bonuses!
               </CardDescription>
@@ -109,7 +109,7 @@ export default function Landing() {
               <CardTitle className="font-medium text-balance text-black">
                 Meetup Schedule
               </CardTitle>
-              <CardDescription className="mt-1 text-pretty text-gray-500">
+              <CardDescription className="text-pretty text-gray-600">
                 View upcoming meetups. RSVP and check-in on Campfire for free
                 in-game rewards & bonuses!
               </CardDescription>
@@ -132,7 +132,7 @@ export default function Landing() {
               <CardTitle className="font-medium text-balance text-black">
                 Join Our Discord Server
               </CardTitle>
-              <CardDescription className="mt-1 text-pretty text-gray-500">
+              <CardDescription className="text-pretty text-gray-600">
                 Join the Wild Goose × Cupertino PoGO Discord to chat, coordinate
                 Raids/Max Battles, and trade with fellow Trainers in the region.
               </CardDescription>
@@ -155,7 +155,7 @@ export default function Landing() {
               <CardTitle className="font-medium text-balance text-black">
                 Join Our Niantic Campfire Group
               </CardTitle>
-              <CardDescription className="mt-1 text-pretty text-gray-500">
+              <CardDescription className="text-pretty text-gray-600">
                 Stay up-to-date on meetups, collect check-in rewards, enter
                 contests/giveaways, and connect with the community.
               </CardDescription>
@@ -179,7 +179,7 @@ export default function Landing() {
                 <CardTitle className="font-medium text-balance text-black">
                   Cupertino PoGO Guide
                 </CardTitle>
-                <CardDescription className="mt-1 text-pretty text-gray-500">
+                <CardDescription className="text-pretty text-gray-600">
                   Learn about our community and discover tips to get the most
                   out of playing Pokémon GO with us.
                 </CardDescription>
@@ -206,7 +206,7 @@ export default function Landing() {
               <CardTitle className="font-medium text-balance text-black">
                 Download & Play Pokémon GO
               </CardTitle>
-              <CardDescription className="mt-1 text-pretty text-gray-500">
+              <CardDescription className="text-pretty text-gray-600">
                 New to the game? Visit the official website to download the game
                 and start your Pokémon adventure today!
               </CardDescription>

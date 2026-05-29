@@ -56,11 +56,13 @@ export default function ListView() {
   const layerPokestop = useStore((s) => s.layerPokestop);
   const layerPowerspot = useStore((s) => s.layerPowerspot);
   const layerRestroom = useStore((s) => s.layerRestroom);
+  const placedMarkerStates = useStore((s) => s.placedMarkerStates);
   const setIsListViewOpen = useStore((s) => s.setIsListViewOpen);
   const showDisabled = useStore((s) => s.modifiers.isDisabled);
   const showHidden = useStore((s) => s.modifiers.isHidden);
   const showRemoved = useStore((s) => s.modifiers.removed);
   const setMarker = useStore((s) => s.setMarker);
+  const updatePlacedMarkerState = useStore((s) => s.updatePlacedMarkerState);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const [query, setQuery] = useState<string>("");
@@ -69,8 +71,8 @@ export default function ListView() {
 
   const setIdQueryParam = useSetIdQueryParam();
 
-  // TODO: add placed markers
-  const buildList = (...args: CFeatureCollection["features"][]) => {
+  // Build the main list from GeoJSON
+  const buildMainList = (...args: CFeatureCollection["features"][]) => {
     const featureData: FeatureData[] = [];
 
     for (const currFeatures of args) {
@@ -147,10 +149,10 @@ export default function ListView() {
       return 0;
     });
 
-    const list = [];
+    const listMain = [];
 
     featureData.forEach(
-      ({ coordinates, id, isDisabled, name, removed, subtype, type }, i) => {
+      ({ coordinates, id, isDisabled, name, removed, subtype, type }) => {
         let layer;
         let iconType;
         let icon;
@@ -211,13 +213,12 @@ export default function ListView() {
             alt = "Default Marker Icon";
         }
 
-        list.push(
+        listMain.push(
           <Button
             key={id}
             variant="ghost"
             className={cn(
-              "h-12 w-full cursor-pointer justify-start gap-2 rounded-none px-4 pr-0 text-sm font-normal",
-              i === 0 && "md:mt-2",
+              "h-12 w-full cursor-pointer justify-start gap-2 rounded-none px-4 pr-0 text-sm font-normal md:first:mt-2",
               removed && "line-through",
             )}
             onClick={() => {
@@ -287,18 +288,88 @@ export default function ListView() {
       },
     );
 
-    if (list.length === 0) {
-      list.push(
+    if (listMain.length === 0) {
+      listMain.push(
         <div key="not-found" className="px-4 py-4 text-sm italic">
           No points of interest were found...
         </div>,
       );
     }
 
-    return list;
+    return listMain;
   };
 
-  const list = buildList(
+  // Build the list of placed markers that will go in front of the main list
+  const listPlacedMarkers = placedMarkerStates.map(
+    ({ id, isVisible, position }, i) => {
+      return (
+        <Button
+          key={id}
+          variant="ghost"
+          className={
+            "h-12 w-full cursor-pointer justify-start gap-2 rounded-none px-4 pr-0 text-sm font-normal md:first:mt-2"
+          }
+          onClick={() => {
+            const mediaQuery = getDesktopMediaQuery();
+            if (!mediaQuery.matches) {
+              // Close the list view when a POI in it is tapped on mobile
+              setIsListViewOpen(false);
+            }
+
+            updatePlacedMarkerState(i, {
+              isVisible: true,
+            });
+
+            // The following conditions/setTimeout is a hack to get popups working
+            if (activePopup && activePopup !== id) {
+              setActivePopup(null);
+            }
+
+            if (activePopup !== id) {
+              setTimeout(() => {
+                setIdQueryParam(id);
+              }, DELAY);
+            }
+
+            // Hack to reduce flyTo glitches breaking positions of features on the map
+            setTimeout(() => {
+              map?.flyTo(position, 18);
+            }, DELAY - 500);
+          }}
+          onMouseEnter={() => {
+            updatePlacedMarkerState(i, {
+              isHighlighted: true,
+            });
+          }}
+          onMouseLeave={() => {
+            updatePlacedMarkerState(i, {
+              isHighlighted: false,
+            });
+          }}
+        >
+          <div className="flex h-full w-6 items-center justify-center">
+            <img
+              src={imgLeafletMarker}
+              alt="Placed Marker Icon"
+              className="h-full w-auto object-contain"
+            />
+          </div>
+          <div className="flex h-full items-center justify-center">
+            {isVisible ? (
+              <Eye className="w-4" />
+            ) : (
+              <EyeClosed className="h-4 w-4" />
+            )}
+          </div>
+          <div className="flex grow items-center overflow-x-auto pr-2">
+            Placed Marker #{i + 1}
+          </div>
+        </Button>
+      );
+    },
+  );
+
+  const listMain = buildMainList(
     gymsJson.features,
     meetupspotsJson.features,
     parkingJson.features,
@@ -341,7 +412,10 @@ export default function ListView() {
         />
         <InputGroupAddon align="inline-end">{btnSearch}</InputGroupAddon>
       </InputGroup>
-      <div className="h-fit overflow-x-hidden overflow-y-scroll">{list}</div>
+      <div className="h-fit overflow-x-hidden overflow-y-scroll">
+        {listPlacedMarkers}
+        {listMain}
+      </div>
     </Card>
   );
 }
