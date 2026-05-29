@@ -27,7 +27,7 @@ import { Button } from "./ui/button";
  * Guide that shows how to check-in on Campfire.
  */
 export default function CheckInGuide() {
-  useSetDocTitle("How To Check Into A Meetup");
+  useSetDocTitle("How To Check Into Meetups");
 
   return (
     <>

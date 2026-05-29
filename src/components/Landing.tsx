@@ -18,6 +18,7 @@ import { Link } from "react-router";
 
 import FooterTxt from "./FooterTxt";
 import { useSetDocTitle } from "./hooks";
+import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 
 /**
  * The home page.
@@ -31,7 +32,7 @@ export default function Landing() {
         {GROUP_NAME}
       </h1>
       <p className="text-muted-foreground text-center text-lg text-pretty">
-        {GROUP_NAME} is a Pokémon GO community based in
+        {GROUP_NAME} is a Pokémon GO group based in
         <br />
         <a href={MAP_PATH} className="font-bold underline">
           {LOCATION_LONG}
@@ -56,44 +57,28 @@ export default function Landing() {
         bonuses, and chances to win official Pokémon merchandise and swag.
       </p>
       <div
-        className={`mt-4 grid gap-4 ${IS_CENTRAL ? "grid-rows-6" : "grid-rows-7"}`}
+        className={`mt-4 grid w-full gap-4 ${IS_CENTRAL ? "grid-rows-6" : "grid-rows-7"}`}
       >
-        <a href={MAP_PATH} className="flex flex-1">
-          <div className="bg-foreground flex w-full max-w-150 rounded-xl">
+        <a href={MAP_PATH} className="flex">
+          <Card className="flex w-full flex-row gap-0 bg-white p-0">
             <img
               src={imgMap}
               alt="Community Map Icon"
               className="aspect-video w-29 rounded-l-xl object-cover"
             />
-            <div className="self-center p-4">
-              <h1 className="font-medium text-black">
+            <CardHeader className="w-full p-6">
+              <CardTitle className="font-medium text-black">
                 Community Map & Free Parking
-              </h1>
-              <p className="mt-2 text-gray-500">
+              </CardTitle>
+              <CardDescription className="mt-1 text-gray-500">
                 Find free parking, restrooms, and real-time walking directions
                 to every Gym, PokéStop, and Power Spot.
-              </p>
-            </div>
-          </div>
+              </CardDescription>
+            </CardHeader>
+          </Card>
         </a>
-        <a href={`${MAP_PATH}?start=meetups`} className="flex flex-1">
-          <div className="bg-foreground flex w-full max-w-150 rounded-xl">
-            <img
-              src={imgRaid}
-              alt="Meetup Picture"
-              className="aspect-video w-29 rounded-l-xl object-cover"
-            />
-            <div className="self-center p-4">
-              <h1 className="font-medium text-black">Meetups Schedule</h1>
-              <p className="mt-2 text-gray-500">
-                View upcoming meetups. RSVP and check-in on Campfire for free
-                in-game rewards & bonuses!
-              </p>
-            </div>
-          </div>
-        </a>
-        <Link to={CHECK_IN_PATH} className="flex flex-1">
-          <div className="bg-foreground flex w-full max-w-150 rounded-xl">
+        <Link to={CHECK_IN_PATH} className="flex">
+          <Card className="flex w-full flex-row gap-0 bg-white p-0">
             <img
               src={imgPbp}
               alt="Check-In Reward"
@@ -102,93 +87,113 @@ export default function Landing() {
                 background: "linear-gradient(180deg,#234375 0,#19528e)",
               }}
             />
-            <div className="self-center p-4">
-              <h1 className="font-medium text-black">
+            <CardHeader className="w-full p-6">
+              <CardTitle className="font-medium text-black">
                 How To Check-In For Free Rewards & Bonuses
-              </h1>
-              <p className="mt-2 text-gray-500">
+              </CardTitle>
+              <CardDescription className="mt-1 text-gray-500">
                 Follow our step-by-step check-in guide to get your free in-game
                 rewards & bonuses!
-              </p>
-            </div>
-          </div>
+              </CardDescription>
+            </CardHeader>
+          </Card>
         </Link>
+        <a href={`${MAP_PATH}?start=meetups`} className="flex">
+          <Card className="flex w-full flex-row gap-0 bg-white p-0">
+            <img
+              src={imgRaid}
+              alt="Meetup Picture"
+              className="aspect-video w-29 rounded-l-xl object-cover"
+            />
+            <CardHeader className="w-full p-6">
+              <CardTitle className="font-medium text-black">
+                Meetup Schedule
+              </CardTitle>
+              <CardDescription className="mt-1 text-gray-500">
+                View upcoming meetups. RSVP and check-in on Campfire for free
+                in-game rewards & bonuses!
+              </CardDescription>
+            </CardHeader>
+          </Card>
+        </a>
         <a
           href="https://discord.gg/7tZ2cauare"
           rel="noopener noreferrer"
           target="_blank"
-          className="flex flex-1"
+          className="flex"
         >
-          <div className="bg-foreground flex w-full max-w-150 rounded-xl">
+          <Card className="flex w-full flex-row gap-0 bg-white p-0">
             <img
               src={imgDiscord}
               alt="Discord Logo"
               className="w-29 rounded-l-xl bg-[#1f1f1f] object-contain p-3"
             />
-            <div className="self-center p-4">
-              <h1 className="font-medium text-black">
+            <CardHeader className="w-full p-6">
+              <CardTitle className="font-medium text-black">
                 Join Our Discord Server
-              </h1>
-              <p className="mt-2 text-gray-500">
+              </CardTitle>
+              <CardDescription className="mt-1 text-gray-500">
                 Join the Wild Goose × Cupertino PoGO Discord to chat, coordinate
                 Raids/Max Battles, and trade with fellow Trainers in the region.
-              </p>
-            </div>
-          </div>
+              </CardDescription>
+            </CardHeader>
+          </Card>
         </a>
         <a
           href={CAMPFIRE_LINK}
           rel="noopener noreferrer"
           target="_blank"
-          className="flex flex-1"
+          className="flex"
         >
-          <div className="bg-foreground flex w-full max-w-150 rounded-xl">
+          <Card className="flex w-full flex-row gap-0 bg-white p-0">
             <img
               src={imgCampfire}
               alt="Campfire Logo"
               className="aspect-video w-29 rounded-l-xl object-cover"
             />
-            <div className="self-center p-4">
-              <h1 className="font-medium text-black">
+            <CardHeader className="w-full p-6">
+              <CardTitle className="font-medium text-black">
                 Join Our Niantic Campfire Group
-              </h1>
-              <p className="mt-2 text-gray-500">
+              </CardTitle>
+              <CardDescription className="mt-1 text-gray-500">
                 Stay up-to-date on meetups, collect check-in rewards, enter
                 contests/giveaways, and connect with the community.
-              </p>
-            </div>
-          </div>
+              </CardDescription>
+            </CardHeader>
+          </Card>
         </a>
         {!IS_CENTRAL && (
           <a
             href="https://bit.ly/cupertinopogoguide"
             rel="noopener noreferrer"
             target="_blank"
-            className="flex flex-1"
+            className="flex"
           >
-            <div className="bg-foreground flex w-full max-w-150 rounded-xl">
+            <Card className="flex w-full flex-row gap-0 bg-white p-0">
               <img
                 src={imgProfessor}
                 alt="Pokémon GO Logo"
                 className="aspect-video w-29 rounded-l-xl bg-[#1f1f1f] object-cover"
               />
-              <div className="self-center p-4">
-                <h1 className="font-medium text-black">Cupertino PoGO Guide</h1>
-                <p className="mt-2 text-gray-500">
+              <CardHeader className="w-full p-6">
+                <CardTitle className="font-medium text-black">
+                  Cupertino PoGO Guide
+                </CardTitle>
+                <CardDescription className="mt-1 text-gray-500">
                   Learn about our community and discover tips to get the most
                   out of playing Pokémon GO with us.
-                </p>
-              </div>
-            </div>
+                </CardDescription>
+              </CardHeader>
+            </Card>
           </a>
         )}
         <a
           href="https://pokemongo.com"
           rel="noopener noreferrer"
           target="_blank"
-          className="flex flex-1"
+          className="flex"
         >
-          <div className="bg-foreground flex w-full max-w-150 rounded-xl">
+          <Card className="flex w-full flex-row gap-0 bg-white p-0">
             <img
               src={imgPgo}
               alt="Pokémon GO Logo"
@@ -197,16 +202,16 @@ export default function Landing() {
                 background: "linear-gradient(135deg, #BEE58D, #7ECA9F)",
               }}
             />
-            <div className="self-center p-4">
-              <h1 className="font-medium text-black">
+            <CardHeader className="w-full p-6">
+              <CardTitle className="font-medium text-black">
                 Download & Play Pokémon GO
-              </h1>
-              <p className="mt-2 text-gray-500">
+              </CardTitle>
+              <CardDescription className="mt-1 text-gray-500">
                 New to the game? Visit the official website to download the game
                 and start your Pokémon adventure today!
-              </p>
-            </div>
-          </div>
+              </CardDescription>
+            </CardHeader>
+          </Card>
         </a>
       </div>
       <footer className="text-muted-foreground mt-20 mb-6 flex flex-col gap-2 text-center text-sm">
