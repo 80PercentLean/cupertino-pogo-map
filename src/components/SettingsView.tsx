@@ -1,4 +1,3 @@
-import { Checkbox } from "@/components/ui/checkbox";
 import {
   Field,
   FieldContent,
@@ -23,6 +22,7 @@ import UiOverlayCardIconTitle from "./UiOverlayCardIconTitle";
 import { useFindPoiById, useRemoveIdQueryParam } from "./hooks";
 import { useStore } from "./hooks/store";
 import { Button } from "./ui/button";
+import { Switch } from "./ui/switch";
 
 /**
  * Persist settings in local storage.
@@ -73,14 +73,13 @@ export default function SettingsView() {
             <FieldLabel htmlFor="disable-animations" className="cursor-pointer">
               Disable animations
             </FieldLabel>
-            <Checkbox
+            <Switch
               id="disable-animations"
               checked={disableAnimations}
               className="cursor-pointer"
-              onCheckedChange={(s) => {
-                const newVal = s === true;
-                setDisableAnimations(newVal);
-                persistSettings("disableAnimations", newVal);
+              onCheckedChange={() => {
+                setDisableAnimations(!disableAnimations);
+                persistSettings("disableAnimations", !disableAnimations);
               }}
             />
           </Field>
@@ -94,7 +93,7 @@ export default function SettingsView() {
                 submitting Wayspots for Niantic Wayfarer.
               </FieldDescription>
             </FieldContent>
-            <Checkbox
+            <Switch
               id="wayfarer-mode"
               checked={wayfarerMode}
               className="cursor-pointer"
@@ -117,9 +116,8 @@ export default function SettingsView() {
                   showNoCaPoiZone: false,
                 });
 
-                const newVal = s === true;
-                setWayfarerMode(newVal);
-                persistSettings("wayfarerMode", newVal);
+                setWayfarerMode(s);
+                persistSettings("wayfarerMode", s);
               }}
             />
           </Field>
@@ -172,7 +170,7 @@ export default function SettingsView() {
                     since they are not within the community play area.
                   </FieldDescription>
                 </FieldContent>
-                <Checkbox
+                <Switch
                   id="hidden-pois"
                   checked={showHidden}
                   className="cursor-pointer"
@@ -195,7 +193,7 @@ export default function SettingsView() {
                     or can never spawn due to certain restrictions.
                   </FieldDescription>
                 </FieldContent>
-                <Checkbox
+                <Switch
                   id="disabled-power-spots"
                   checked={showDisabled}
                   className="cursor-pointer"
@@ -215,7 +213,7 @@ export default function SettingsView() {
                     Wayfarer.
                   </FieldDescription>
                 </FieldContent>
-                <Checkbox
+                <Switch
                   id="removed-pois"
                   checked={showRemoved}
                   className="cursor-pointer"
@@ -238,7 +236,7 @@ export default function SettingsView() {
                     {invertCoords ? <code>lng,lat</code> : <code>lat,lng</code>}
                   </FieldDescription>
                 </FieldContent>
-                <Checkbox
+                <Switch
                   id="invert-coords"
                   checked={invertCoords}
                   className="cursor-pointer"

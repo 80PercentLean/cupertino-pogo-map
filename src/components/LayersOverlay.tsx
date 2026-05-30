@@ -303,7 +303,7 @@ export default function LayersOverlay() {
                   <RadioGroupItem
                     id="map-type-option-1"
                     value="default"
-                    className="cursor-pointer"
+                    className="cursor-pointer border-gray-500"
                   />
                   <Label htmlFor="map-type-option-1" className="cursor-pointer">
                     Default
@@ -313,7 +313,7 @@ export default function LayersOverlay() {
                   <RadioGroupItem
                     id="map-type-option-2"
                     value="extra-info"
-                    className="cursor-pointer"
+                    className="cursor-pointer border-gray-500"
                   />
                   <Label htmlFor="map-type-option-2" className="cursor-pointer">
                     Extra Info
@@ -323,7 +323,7 @@ export default function LayersOverlay() {
                   <RadioGroupItem
                     id="map-type-option-3"
                     value="satellite"
-                    className="cursor-pointer"
+                    className="cursor-pointer border-gray-500"
                   />
                   <Label htmlFor="map-type-option-3" className="cursor-pointer">
                     Satellite
@@ -341,7 +341,7 @@ export default function LayersOverlay() {
               <Checkbox
                 id="l17-grid"
                 checked={searchParams.get("l17") === "on"}
-                className="cursor-pointer"
+                className="cursor-pointer border-gray-500"
                 onCheckedChange={() => toggleS2Cells("l17")}
               />
               <FieldLabel htmlFor="l17-grid" className="cursor-pointer">
@@ -352,7 +352,7 @@ export default function LayersOverlay() {
               <Checkbox
                 id="l14-grid"
                 checked={searchParams.get("l14") === "on"}
-                className="cursor-pointer"
+                className="cursor-pointer border-gray-500"
                 onCheckedChange={() => toggleS2Cells("l14")}
               />
               <FieldLabel htmlFor="l14-grid" className="cursor-pointer">
@@ -363,7 +363,7 @@ export default function LayersOverlay() {
               <Checkbox
                 id="l13-grid"
                 checked={searchParams.get("l13") === "on"}
-                className="cursor-pointer"
+                className="cursor-pointer border-gray-500"
                 onCheckedChange={() => toggleS2Cells("l13")}
               />
               <FieldLabel htmlFor="l13-grid" className="cursor-pointer">
@@ -381,7 +381,7 @@ export default function LayersOverlay() {
                 <Checkbox
                   id="labels"
                   checked={isLayerLabelOn}
-                  className="cursor-pointer"
+                  className="cursor-pointe border-gray-500"
                   onCheckedChange={() => toggleBasicLayer("label")}
                 />
                 <FieldLabel htmlFor="labels" className="cursor-pointer">
@@ -394,7 +394,7 @@ export default function LayersOverlay() {
                 <Checkbox
                   id="interaction-radii"
                   checked={isInteractionRadiiOn}
-                  className="cursor-pointer"
+                  className="cursor-pointer border-gray-500"
                   onCheckedChange={() => {
                     if (isInteractionRadiiOn) {
                       setLayer("gym", { showInteractionRadius: false });
@@ -428,7 +428,7 @@ export default function LayersOverlay() {
                 <Checkbox
                   id="no-ps-zones"
                   checked={isNoPowerSpotZoneOn}
-                  className="cursor-pointer"
+                  className="cursor-pointer border-gray-500"
                   onCheckedChange={() => {
                     if (isNoPowerSpotZoneOn) {
                       setLayer("gym", { showNoPowerSpotZone: false });
@@ -460,7 +460,7 @@ export default function LayersOverlay() {
                   <Checkbox
                     id="no-ca-poi-zones"
                     checked={isNoCaPoiZoneOn}
-                    className="cursor-pointer"
+                    className="cursor-pointer border-gray-500"
                     onCheckedChange={() => {
                       if (isNoCaPoiZoneOn) {
                         setLayer("gym", { showNoCaPoiZone: false });
