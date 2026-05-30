@@ -122,7 +122,7 @@ export default function MapView() {
       {searchParams.get("l14") === "on" && <L14Grid />}
       {searchParams.get("l13") === "on" && <L13Grid />}
       <PlacedMarkers />
-      <MyLocationMarker data-testid="marker-my-location" />
+      <MyLocationMarker data-testid="my-location" />
     </MapContainer>
   );
 }

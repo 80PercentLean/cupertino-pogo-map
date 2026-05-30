@@ -2,7 +2,7 @@ import type { CProperties } from "@/types/CFeatures";
 import { DivIcon, type LatLngTuple, type Marker } from "leaflet";
 import { Icon } from "leaflet";
 import { useEffect, useRef } from "react";
-import { Popup } from "react-leaflet";
+import { Popup, Tooltip } from "react-leaflet";
 
 import CMarker from "../CMarker";
 import { useRemoveIdQueryParam, useSetIdQueryParam } from "../hooks";
@@ -192,14 +192,17 @@ export default function FeatureMarker({
       {interactionRadius}
       <CMarker
         ref={markerRef}
+        alt={`Marker for "${title}"`}
         icon={iconHighlighted && isHighlighted ? iconHighlighted : icon}
         position={position}
         zIndexOffset={isHighlighted ? 10000 : 0}
+        data-testid={String(id)}
         eventHandlers={{
           click: () => setIdQueryParam(id),
           popupclose: () => removeIdQueryParam(),
         }}
       >
+        <Tooltip>{title}</Tooltip>
         {isPopupOpen && (
           <Popup>
             {createPopupContent(

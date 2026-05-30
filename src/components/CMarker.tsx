@@ -1,9 +1,9 @@
 import { Marker as LeafletMarker } from "leaflet";
-import { type Ref, useEffect, useRef } from "react";
+import { type RefObject, useEffect, useRef } from "react";
 import { Marker, type MarkerProps } from "react-leaflet";
 
 interface CMarkerExclusiveProps {
-  ref?: Ref<LeafletMarker>;
+  ref?: RefObject<LeafletMarker | null>;
   "data-testid"?: string;
 }
 
@@ -14,18 +14,19 @@ export type CMarkerProps = MarkerProps & CMarkerExclusiveProps;
  * HTML attributes to the marker's icon element.
  */
 export default function CMarker(props: CMarkerProps) {
-  // TODO: Not sure what the type of this ref should be
-  const { ref } = props;
-  const testId = props["data-testid"];
-  const markerRef = useRef<LeafletMarker>(null);
+  const { ref, "data-testid": testId } = props;
+  const refInternal = useRef<LeafletMarker | null>(null);
 
   useEffect(() => {
-    if (testId && markerRef.current) {
-      // @ts-expect-error _icon property has an unresolved type error at the moment
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-      markerRef.current._icon.dataset.testid = testId;
-    }
-  }, [testId]);
+    if (testId) {
+      const marker = ref?.current ?? refInternal.current;
+      const icon = marker?.getElement();
 
-  return <Marker ref={ref ?? markerRef} {...props} />;
+      if (icon) {
+        icon.dataset.testid = testId;
+      }
+    }
+  }, [ref, testId]);
+
+  return <Marker ref={ref ?? refInternal} {...props} />;
 }

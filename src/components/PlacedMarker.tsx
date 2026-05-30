@@ -3,7 +3,7 @@ import { iconDefault, iconDefaultHighlighted } from "@/leafletIcons";
 import { type Marker } from "leaflet";
 import { Trash2 } from "lucide-react";
 import { useEffect, useRef } from "react";
-import { Popup } from "react-leaflet";
+import { Popup, Tooltip } from "react-leaflet";
 import { useSearchParams } from "react-router";
 
 import CMarker from "./CMarker";
@@ -115,6 +115,8 @@ export default function PlacedMarker({ i }: Props) {
   shareUrl.search = "";
   shareUrl.searchParams.set("latlng", position.toString());
 
+  const title = `Placed Marker #${i + 1}`;
+
   return (
     <>
       {showNoPowerSpotZone && <NoPowerSpotZone position={position} />}
@@ -122,6 +124,7 @@ export default function PlacedMarker({ i }: Props) {
       {showInteractionRadius && <InteractionRadius position={position} />}
       <CMarker
         ref={markerRef}
+        alt={title}
         icon={
           iconDefaultHighlighted && isHighlighted
             ? iconDefaultHighlighted
@@ -153,10 +156,11 @@ export default function PlacedMarker({ i }: Props) {
           },
         }}
       >
+        <Tooltip>{title}</Tooltip>
         {isPopupOpen && (
           <Popup>
             {createPopupContent(
-              `Placed Marker #${i + 1}`,
+              title,
               undefined,
               position,
               wayfarerMode

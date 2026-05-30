@@ -1,3 +1,4 @@
+import { CircleMarker as LeafletCircleMarker } from "leaflet";
 import { useEffect, useRef } from "react";
 import { CircleMarker, type CircleMarkerProps } from "react-leaflet";
 
@@ -14,15 +15,18 @@ export type CCircleMarkerProps = CircleMarkerProps &
  */
 export default function CCircleMarker(props: CCircleMarkerProps) {
   // TODO: Not sure what the type of this ref should be
-  const markerRef = useRef(null);
+  const refInternal = useRef<LeafletCircleMarker | null>(null);
   const testId = props["data-testid"];
 
   useEffect(() => {
-    if (testId && markerRef.current) {
-      // @ts-expect-error Not sure how to resolve the following type error on _path
-      markerRef.current._path.dataset.testid = testId; // @eslint-ignore
+    if (testId && refInternal.current) {
+      const icon = refInternal.current?.getElement();
+
+      if (icon) {
+        icon.setAttribute("data-testid", testId);
+      }
     }
   }, [testId]);
 
-  return <CircleMarker ref={markerRef} {...props} />;
+  return <CircleMarker ref={refInternal} {...props} />;
 }

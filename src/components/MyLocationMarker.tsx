@@ -8,7 +8,9 @@ export type MyLocationMarkerProps = Omit<CCircleMarkerProps, "center">;
 /**
  * <CCircleMarker> that represents the user's current location.
  */
-export default function MyLocationMarker(props: MyLocationMarkerProps) {
+export default function MyLocationMarker({
+  "data-testid": testId,
+}: MyLocationMarkerProps) {
   const disableAnimations = useStore((s) => s.disableAnimations);
   const myLocation = useStore((s) => s.myLocation);
   const myLocationAccuracy = useStore((s) => s.myLocationAccuracy);
@@ -46,7 +48,7 @@ export default function MyLocationMarker(props: MyLocationMarkerProps) {
           interactive={false}
           pathOptions={{ color: "#fff", fillColor: "#5c84f0", fillOpacity: 1 }}
           radius={10}
-          data-testid={props["data-testid"]}
+          data-testid={testId}
         />
       </>
     );
