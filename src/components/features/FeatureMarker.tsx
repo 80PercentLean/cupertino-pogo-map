@@ -1,3 +1,4 @@
+import { IS_MOBILE } from "@/constantsDom";
 import type { CProperties } from "@/types/CFeatures";
 import { DivIcon, type LatLngTuple, type Marker } from "leaflet";
 import { Icon } from "leaflet";
@@ -202,7 +203,7 @@ export default function FeatureMarker({
           popupclose: () => removeIdQueryParam(),
         }}
       >
-        <Tooltip>{title}</Tooltip>
+        {!IS_MOBILE && <Tooltip>{title}</Tooltip>}
         {isPopupOpen && (
           <Popup>
             {createPopupContent(

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { IS_MOBILE } from "@/constantsDom";
 import { iconDefault, iconDefaultHighlighted } from "@/leafletIcons";
 import { type Marker } from "leaflet";
 import { Trash2 } from "lucide-react";
@@ -156,7 +157,7 @@ export default function PlacedMarker({ i }: Props) {
           },
         }}
       >
-        <Tooltip>{title}</Tooltip>
+        {!IS_MOBILE && <Tooltip>{title}</Tooltip>}
         {isPopupOpen && (
           <Popup>
             {createPopupContent(

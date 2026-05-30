@@ -73,10 +73,7 @@ export const useFindPoiById = () => {
           data: { markerState: layerPokestop[k] },
         };
 
-        const f = pokestopsJson.features.find((f) => {
-          console.log("check", f, id);
-          return String(f.id) === id;
-        });
+        const f = pokestopsJson.features.find((f) => String(f.id) === id);
         if (f) {
           result.data.properties = f.properties;
           result.data.geometry = f.geometry;
