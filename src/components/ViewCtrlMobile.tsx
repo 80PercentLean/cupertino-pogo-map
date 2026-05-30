@@ -41,7 +41,7 @@ export default function ViewCtrlMobile() {
           </Button>
         )}
       </div>
-      <div className="fixed right-0 bottom-0 left-0 z-1002 flex h-20 items-center justify-evenly bg-black">
+      <div className="fixed right-0 bottom-0 left-0 z-1002 flex h-20 items-center justify-evenly bg-black pb-[env(safe-area-inset-bottom)]">
         <Button
           className={cn(
             BTN_BASE_CLASSNAME,
