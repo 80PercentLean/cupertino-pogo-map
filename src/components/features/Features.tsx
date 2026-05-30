@@ -117,6 +117,7 @@ export default function Features({
                 })
               : subtitle
           }
+          subtype={subtype}
           title={name}
           type={type}
         />,

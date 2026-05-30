@@ -217,7 +217,7 @@ export const useRemoveIdQueryParam = () => {
 export const useSetDocTitle = (title: string) => {
   useEffect(() => {
     document.title = `${GROUP_NAME} | ${title}`;
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps, react-x/exhaustive-deps
 };
 
 /**

@@ -1,7 +1,7 @@
 /**
  * Code for setting up Leaflet icons.
  */
-import { Marker, divIcon, icon } from "leaflet";
+import { Marker, type PointTuple, divIcon, icon } from "leaflet";
 import iconRetina from "leaflet/dist/images/marker-icon-2x.png";
 import imgLeafletMarker from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
@@ -48,6 +48,14 @@ const createIconEmojiHighlightedHtml = (emoji: string) => `
       </div>
     </div>
 `;
+
+/**
+ * Create the tooltip offset value based off a given icon size.
+ * @param iconSize Size of the icon as a [width, height] tuple
+ */
+const createTooltipOffset = (iconSize: PointTuple): PointTuple => {
+  return [Math.floor(iconSize[0] / 2), Math.floor(iconSize[1] / 2) * -1];
+};
 
 /** Export images. */
 export { imgGym, imgLeafletMarker, imgPokestop, imgPowerspot, imgShowcase };
@@ -134,10 +142,14 @@ export const iconAllBinaryRestroomHighlighted = divIcon({
   html: createIconEmojiHighlightedHtml(emojiAllBinaryRestroom),
 });
 
+const ICON_GYM_SIZE: PointTuple = [37, 40];
+
+export const ICON_GYM_TOOLTIP_OFFSET = createTooltipOffset(ICON_GYM_SIZE);
+
 /** Leaflet icon for gyms. */
 export const iconGym = icon({
   iconAnchor: [18, 40],
-  iconSize: [37, 40],
+  iconSize: ICON_GYM_SIZE,
   iconUrl: imgGym,
   popupAnchor: [0, -33],
   shadowAnchor: [8, 20],
@@ -339,10 +351,15 @@ export const iconParkingWarnHighlighted = divIcon({
   `,
 });
 
+const ICON_POKESTOP_SIZE: PointTuple = [15, 20];
+
+export const ICON_POKESTOP_TOOLTIP_OFFSET =
+  createTooltipOffset(ICON_POKESTOP_SIZE);
+
 /** Leaflet icon for PokeStops. */
 export const iconPokestop = icon({
   iconAnchor: [7, 20],
-  iconSize: [15, 20],
+  iconSize: ICON_POKESTOP_SIZE,
   iconUrl: imgPokestop,
   popupAnchor: [0, -13],
 });
@@ -384,10 +401,15 @@ export const iconPokestopHighlighted = divIcon({
   `,
 });
 
+const ICON_POWER_SPOT_SIZE: PointTuple = [15, 20];
+
+export const ICON_POWER_SPOT_TOOLTIP_OFFSET =
+  createTooltipOffset(ICON_POWER_SPOT_SIZE);
+
 /** Leaflet icon for power spots. */
 export const iconPowerspot = icon({
   iconAnchor: [7, 20],
-  iconSize: [15, 20],
+  iconSize: ICON_POWER_SPOT_SIZE,
   iconUrl: imgPowerspot,
   popupAnchor: [0, -13],
 });
@@ -429,10 +451,17 @@ export const iconPowerspotHighlighted = divIcon({
   `,
 });
 
+const ICON_SHOWCASE_SIZE: PointTuple = [24, 25];
+
+export const ICON_SHOWCASE_TOOLTIP_OFFSET: PointTuple = [
+  ICON_SHOWCASE_SIZE[0] / 2,
+  0,
+];
+
 /** Leaflet icon for PokeStops with showcases. */
 export const iconShowcase = icon({
   iconAnchor: [12, 12],
-  iconSize: [24, 25],
+  iconSize: ICON_SHOWCASE_SIZE,
   iconUrl: imgShowcase,
 });
 

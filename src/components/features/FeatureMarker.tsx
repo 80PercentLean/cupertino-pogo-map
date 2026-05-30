@@ -1,6 +1,17 @@
 import { IS_MOBILE } from "@/constantsDom";
+import {
+  ICON_GYM_TOOLTIP_OFFSET,
+  ICON_POKESTOP_TOOLTIP_OFFSET,
+  ICON_POWER_SPOT_TOOLTIP_OFFSET,
+  ICON_SHOWCASE_TOOLTIP_OFFSET,
+} from "@/leafletIcons";
 import type { CProperties } from "@/types/CFeatures";
-import { DivIcon, type LatLngTuple, type Marker } from "leaflet";
+import {
+  DivIcon,
+  type LatLngTuple,
+  type Marker,
+  type PointTuple,
+} from "leaflet";
 import { Icon } from "leaflet";
 import { useEffect, useRef } from "react";
 import { Popup, Tooltip } from "react-leaflet";
@@ -40,6 +51,7 @@ export interface Props {
   removed?: boolean | string;
   renderHtml?: boolean;
   subtitle?: string;
+  subtype?: CProperties["subtype"];
   title: string;
   type: CProperties["type"];
 }
@@ -59,6 +71,7 @@ export default function FeatureMarker({
   removed,
   renderHtml,
   subtitle,
+  subtype,
   title,
   type,
 }: Props) {
@@ -167,6 +180,22 @@ export default function FeatureMarker({
     }
   }
 
+  let toolTipOffset;
+  if (type === "gym") {
+    toolTipOffset = ICON_GYM_TOOLTIP_OFFSET;
+  } else if (type === "pokestop") {
+    if (subtype === "showcase") {
+      console.log("got here ", ICON_SHOWCASE_TOOLTIP_OFFSET);
+      toolTipOffset = ICON_SHOWCASE_TOOLTIP_OFFSET;
+    } else {
+      toolTipOffset = ICON_POKESTOP_TOOLTIP_OFFSET;
+    }
+  } else if (type === "powerspot") {
+    toolTipOffset = ICON_POWER_SPOT_TOOLTIP_OFFSET;
+  } else {
+    toolTipOffset = [12, 0] as PointTuple;
+  }
+
   useEffect(() => {
     if (markerRef.current) {
       if (removed) {
@@ -203,7 +232,7 @@ export default function FeatureMarker({
           popupclose: () => removeIdQueryParam(),
         }}
       >
-        {!IS_MOBILE && <Tooltip>{title}</Tooltip>}
+        {!IS_MOBILE && <Tooltip offset={toolTipOffset}>{title}</Tooltip>}
         {isPopupOpen && (
           <Popup>
             {createPopupContent(
