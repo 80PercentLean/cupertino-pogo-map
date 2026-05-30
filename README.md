@@ -45,6 +45,8 @@ Here is more documentation that may be helpful for you:
 - [Contributing](./docs/contributing.md)
 - [Memorial Park/De Anza College POI History](./docs/history-mpda.md)
 - [Central Park POI History](./docs/history-central.md)
+- [Working With Tests](./docs/testing.md)
+- [Working With GeoJSON](./docs/geojson.md)
 - [Motivation](./docs/motivation.md)
 
 ## Technology Overview

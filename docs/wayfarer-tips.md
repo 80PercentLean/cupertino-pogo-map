@@ -19,3 +19,7 @@ Additionally, you will gain access to the following features:
 - Show the interaction radius for a specific POI which visualizes the 80m range in which the POI can be interacted with
 - Show the no Power Spot build zone for a specific POI which visualizes the 22m range in which Power Spots cannot be built around PokéStops & Gyms
 - Show the no Community Ambassador build zones which visualize the 30m range in which Community Campsite POIs cannot be built around PokéStops, Gyms, and Power Spots
+
+## Work With GeoJSON On Your Own
+
+[TODO:](./geojson.md)

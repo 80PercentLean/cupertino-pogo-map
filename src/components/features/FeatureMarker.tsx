@@ -185,7 +185,6 @@ export default function FeatureMarker({
     toolTipOffset = ICON_GYM_TOOLTIP_OFFSET;
   } else if (type === "pokestop") {
     if (subtype === "showcase") {
-      console.log("got here ", ICON_SHOWCASE_TOOLTIP_OFFSET);
       toolTipOffset = ICON_SHOWCASE_TOOLTIP_OFFSET;
     } else {
       toolTipOffset = ICON_POKESTOP_TOOLTIP_OFFSET;
