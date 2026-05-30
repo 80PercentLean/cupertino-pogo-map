@@ -25,12 +25,13 @@ import { cn } from "@/lib/utils";
 import { type CFeatureCollection, type CProperties } from "@/types/CFeatures";
 import { getDesktopMediaQuery } from "@/util";
 import type { LatLngTuple } from "leaflet";
+import { debounce } from "lodash-es";
 import { Eye, EyeClosed, Search, X } from "lucide-react";
-import { use, useDeferredValue, useState } from "react";
+import { use, useDeferredValue, useEffect, useMemo, useState } from "react";
 
 import { MapContext } from "./MapContext";
 import { useSetIdQueryParam } from "./hooks";
-import { useStore } from "./hooks/store";
+import { type MarkerState, useStore } from "./hooks/store";
 import { Button } from "./ui/button";
 import { InputGroup, InputGroupAddon, InputGroupInput } from "./ui/input-group";
 
@@ -71,7 +72,30 @@ export default function ListView() {
 
   const setIdQueryParam = useSetIdQueryParam();
 
-  // Build the main list from GeoJSON
+  /**
+   * Debounce highlighting the marker.
+   * Used to prevent excessive highlighting when scrolling through the list quickly.
+   */
+  const debouncedHighlight = useMemo(() => {
+    return debounce((type: CProperties["type"], id: string) => {
+      setMarker(type, id, { isHighlighted: true });
+    }, 500);
+  }, [setMarker]);
+
+  /**
+   * Debounce highlighting placed markers.
+   */
+  const debouncedPlacedHighlight = useMemo(() => {
+    return debounce((i: number) => {
+      updatePlacedMarkerState(i, {
+        isHighlighted: true,
+      });
+    }, 500);
+  }, [updatePlacedMarkerState]);
+
+  /**
+   * Build the main list from GeoJSON
+   */
   const buildMainList = (...args: CFeatureCollection["features"][]) => {
     const featureData: FeatureData[] = [];
 
@@ -153,7 +177,7 @@ export default function ListView() {
 
     featureData.forEach(
       ({ coordinates, id, isDisabled, name, removed, subtype, type }) => {
-        let layer;
+        let layer: Record<string, MarkerState> | undefined;
         let iconType;
         let icon;
         let alt;
@@ -246,11 +270,11 @@ export default function ListView() {
                 map?.flyTo(coordinates, 18);
               }, DELAY - 500);
             }}
-            onMouseEnter={() => {
-              setMarker(type, id, { isHighlighted: true });
-            }}
+            onMouseEnter={() => debouncedHighlight(type, id)}
             onMouseLeave={() => {
-              setMarker(type, id, { isHighlighted: false });
+              if (layer?.[id]?.isHighlighted) {
+                setMarker(type, id, { isHighlighted: false });
+              }
             }}
           >
             <div className="flex h-full w-6 items-center justify-center">
@@ -336,15 +360,13 @@ export default function ListView() {
               map?.flyTo(position, 18);
             }, DELAY - 500);
           }}
-          onMouseEnter={() => {
-            updatePlacedMarkerState(i, {
-              isHighlighted: true,
-            });
-          }}
+          onMouseEnter={() => debouncedPlacedHighlight(i)}
           onMouseLeave={() => {
-            updatePlacedMarkerState(i, {
-              isHighlighted: false,
-            });
+            if (placedMarkerStates[i]?.isHighlighted) {
+              updatePlacedMarkerState(i, {
+                isHighlighted: false,
+              });
+            }
           }}
         >
           <div className="flex h-full w-6 items-center justify-center">
@@ -388,19 +410,12 @@ export default function ListView() {
     btnSearchIcon = <Search />;
   }
 
-  const btnSearch = (
-    <Button
-      variant="ghost"
-      className={cn(
-        deferredQuery
-          ? "cursor-pointer"
-          : "hover:bg-transparent hover:text-inherit",
-      )}
-      onClick={btnSearchClickHandler}
-    >
-      {btnSearchIcon}
-    </Button>
-  );
+  useEffect(() => {
+    return () => {
+      debouncedHighlight.cancel();
+      debouncedPlacedHighlight.cancel();
+    };
+  }, [debouncedHighlight, debouncedPlacedHighlight]);
 
   return (
     <Card className="absolute inset-0 z-999 gap-0 rounded-none pt-0 pb-20 md:fixed md:top-0 md:left-0 md:m-2 md:max-h-[66vh] md:w-100 md:rounded-xl md:pb-0">
@@ -410,7 +425,19 @@ export default function ListView() {
           value={query}
           onChange={({ target }) => setQuery(target.value)}
         />
-        <InputGroupAddon align="inline-end">{btnSearch}</InputGroupAddon>
+        <InputGroupAddon align="inline-end">
+          <Button
+            variant="ghost"
+            className={cn(
+              deferredQuery
+                ? "cursor-pointer"
+                : "hover:bg-transparent hover:text-inherit",
+            )}
+            onClick={btnSearchClickHandler}
+          >
+            {btnSearchIcon}
+          </Button>
+        </InputGroupAddon>
       </InputGroup>
       <div className="h-fit overflow-x-hidden overflow-y-scroll">
         {listPlacedMarkers}
