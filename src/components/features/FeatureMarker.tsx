@@ -85,6 +85,7 @@ export default function FeatureMarker({
     showNoCaPoiZone,
     showNoPowerSpotZone,
   } = useStore((s) => s[getLayerKeyFromType(type)][id]);
+  const isSimpleMarkerEnabled = useStore((s) => s.isSimpleMarkerEnabled);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const markerRef = useRef<Marker | null>(null);
@@ -183,27 +184,36 @@ export default function FeatureMarker({
     }
   }
 
+  const DEFAULT_TOOLTIP_OFFSET = [12, 0] as PointTuple;
   let toolTipOffset;
   let isPokePoi = false;
   switch (type) {
     case "gym":
-      toolTipOffset = ICON_GYM_TOOLTIP_OFFSET;
+      toolTipOffset = isSimpleMarkerEnabled
+        ? DEFAULT_TOOLTIP_OFFSET
+        : ICON_GYM_TOOLTIP_OFFSET;
       isPokePoi = true;
       break;
     case "pokestop":
       if (subtype === "showcase") {
-        toolTipOffset = ICON_SHOWCASE_TOOLTIP_OFFSET;
+        toolTipOffset = isSimpleMarkerEnabled
+          ? DEFAULT_TOOLTIP_OFFSET
+          : ICON_SHOWCASE_TOOLTIP_OFFSET;
       } else {
-        toolTipOffset = ICON_POKESTOP_TOOLTIP_OFFSET;
+        toolTipOffset = isSimpleMarkerEnabled
+          ? DEFAULT_TOOLTIP_OFFSET
+          : ICON_POKESTOP_TOOLTIP_OFFSET;
       }
       isPokePoi = true;
       break;
     case "powerspot":
-      toolTipOffset = ICON_POWER_SPOT_TOOLTIP_OFFSET;
+      toolTipOffset = isSimpleMarkerEnabled
+        ? DEFAULT_TOOLTIP_OFFSET
+        : ICON_POWER_SPOT_TOOLTIP_OFFSET;
       isPokePoi = true;
       break;
     default:
-      toolTipOffset = [12, 0] as PointTuple;
+      toolTipOffset = DEFAULT_TOOLTIP_OFFSET;
   }
 
   useEffect(() => {
@@ -227,7 +237,7 @@ export default function FeatureMarker({
   }, [isPopupOpen]);
 
   let marker;
-  if (isPokePoi) {
+  if (isPokePoi && isSimpleMarkerEnabled) {
     let fillColor;
     if (isHighlighted) {
       fillColor = "#00ff00";

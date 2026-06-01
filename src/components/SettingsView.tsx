@@ -43,6 +43,8 @@ export default function SettingsView() {
   const activePopup = useStore((s) => s.activePopup);
   const disableAnimations = useStore((s) => s.disableAnimations);
   const invertCoords = useStore((s) => s.invertCoords);
+  const isLegendHidden = useStore((s) => s.isLegendHidden);
+  const isSimpleMarkerEnabled = useStore((s) => s.isSimpleMarkerEnabled);
   const myLocationRangeType = useStore((s) => s.myLocationRangeType);
   const resetSettings = useStore((s) => s.resetSettings);
   const setDisableAnimations = useStore((s) => s.setDisableAnimations);
@@ -53,6 +55,10 @@ export default function SettingsView() {
   const showHidden = useStore((s) => s.modifiers.isHidden);
   const showRemoved = useStore((s) => s.modifiers.removed);
   const toggleInvertCoords = useStore((s) => s.toggleInvertCoords);
+  const toggleIsLegendHidden = useStore((s) => s.toggleIsLegendHidden);
+  const toggleIsSimpleMarkerEnabled = useStore(
+    (s) => s.toggleIsSimpleMarkerEnabled,
+  );
   const toggleModifier = useStore((s) => s.toggleModifier);
   const updateAllPlacedMarkerStates = useStore(
     (s) => s.updateAllPlacedMarkerStates,
@@ -95,14 +101,26 @@ export default function SettingsView() {
           <Field orientation="horizontal">
             <FieldContent>
               <FieldLabel htmlFor="simple-icons" className="cursor-pointer">
-                Use simple icons
+                Use simple markers
               </FieldLabel>
               <FieldDescription className="text-pretty">
-                Replaces the image icons marker representing in-game POIs with
-                simple colored circles. Can make positions easier to read.
+                Replaces the image icons used for markers representing in-game
+                POIs with simple colored circles. Can make positions easier to
+                read.
               </FieldDescription>
             </FieldContent>
-            <Switch id="hide-legend" className="cursor-pointer" />
+            <Switch
+              id="simple-icons"
+              checked={isSimpleMarkerEnabled}
+              className="cursor-pointer"
+              onCheckedChange={() => {
+                toggleIsSimpleMarkerEnabled();
+                persistSettings(
+                  "isSimpleMarkerEnabled",
+                  !isSimpleMarkerEnabled,
+                );
+              }}
+            />
           </Field>
           <Field orientation="horizontal">
             <FieldContent>
@@ -113,7 +131,15 @@ export default function SettingsView() {
                 Hide the legend to make more of the map visible.
               </FieldDescription>
             </FieldContent>
-            <Switch id="simple-icons" className="cursor-pointer" />
+            <Switch
+              id="hide-legend"
+              checked={isLegendHidden}
+              className="cursor-pointer"
+              onCheckedChange={() => {
+                toggleIsLegendHidden();
+                persistSettings("isLegendHidden", !isLegendHidden);
+              }}
+            />
           </Field>
           <Field>
             <FieldContent>
@@ -132,7 +158,7 @@ export default function SettingsView() {
               <SelectTrigger>
                 <SelectValue placeholder="My Location Range Type" />
               </SelectTrigger>
-              <SelectContent className="z-[1001]">
+              <SelectContent className="z-1001">
                 <SelectItem value="poi">POI Interaction Range (80m)</SelectItem>
                 <SelectItem value="wild-spawn">
                   Wild Spawn Visibility (50m)

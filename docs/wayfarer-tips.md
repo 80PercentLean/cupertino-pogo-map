@@ -20,6 +20,20 @@ Additionally, you will gain access to the following features:
 - Show the no Power Spot build zone for a specific POI which visualizes the 22m range in which Power Spots cannot be built around PokéStops & Gyms
 - Show the no Community Ambassador build zones which visualize the 30m range in which Community Campsite POIs cannot be built around PokéStops, Gyms, and Power Spots
 
+## Available Special Keywords When Searching In The List
+
+The search feature supports the following keywords which can help filter the list:
+
+- `gym` or `gyms`: List all Gyms.
+- `pokestop` or `pokestops`: List all PokéStops.
+- `powerspot` or `powerspots`: List all Power Spots.
+- `devpoi`: List all dev POIs.
+- `meetupspot` or `meetupspots`: List all meetup spots.
+- `parking`: List all parking areas.
+- `restroom` or `restrooms`: List all restrooms.
+
+You can also combine these keywords together. For example, typing `gym pokestop restroom` will list all Gyms, PokéStops, and restrooms.
+
 ## Work With GeoJSON On Your Own
 
 [TODO:](./geojson.md)

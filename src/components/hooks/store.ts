@@ -95,8 +95,14 @@ export interface StoreState {
   /** Open the layers overlay when true. */
   isLayersOverlayOpen: boolean;
 
+  /** Hide the legend when true. */
+  isLegendHidden: boolean;
+
   /** Open the list view when true. */
   isListViewOpen: boolean;
+
+  /** Use simple markers for in-game POIs when true. */
+  isSimpleMarkerEnabled: boolean;
 
   /** Advanced layer which maintains the state for development POI markers. */
   layerDevpoi: Record<string, MarkerState>;
@@ -202,8 +208,14 @@ export interface StoreState {
   /** Toggle the `invertCoords` value. */
   toggleInvertCoords: () => void;
 
+  /** Toggle the `isLegendHidden` value. */
+  toggleIsLegendHidden: () => void;
+
   /** Toggle the `isListViewOpen` value. */
   toggleIsListViewOpen: () => void;
+
+  /** Toggle the `isSimpleMarkerEnabled` value. */
+  toggleIsSimpleMarkerEnabled: () => void;
 
   /** Toggle a modifier value. */
   toggleModifier: (modifier: ModifierType) => void;
@@ -233,6 +245,8 @@ const DEFAULT_SETTINGS = {
   invertCoords: false,
   isHidden: false,
   isDisabled: false,
+  isLegendHidden: false,
+  isSimpleMarkerEnabled: false,
   myLocationRangeType: "poi" as const,
   removed: false,
   wayfarerMode: false,
@@ -326,7 +340,15 @@ export const useStore = create<StoreState>()(
         // Layers overlay starts off closed
         isLayersOverlayOpen: false,
 
+        isLegendHidden:
+          localStorage.getItem("isLegendHidden") === "true" ||
+          DEFAULT_SETTINGS.isLegendHidden,
+
         isListViewOpen: !IS_MOBILE,
+
+        isSimpleMarkerEnabled:
+          localStorage.getItem("isSimpleMarkerEnabled") === "true" ||
+          DEFAULT_SETTINGS.isSimpleMarkerEnabled,
 
         // Advanced layer marker states will be initialized after initStoreState is initialized
         layerDevpoi: {},
@@ -535,11 +557,26 @@ export const useStore = create<StoreState>()(
             "toggleInvertCoords",
           ),
 
+        toggleIsLegendHidden: () =>
+          set(
+            (s) => ({ isLegendHidden: !s.isLegendHidden }),
+            undefined,
+            "toggleIsLegendHidden",
+          ),
+
         toggleIsListViewOpen: () => {
           set(
             (s) => ({ isListViewOpen: !s.isListViewOpen }),
             undefined,
             "toggleIsListViewOpen",
+          );
+        },
+
+        toggleIsSimpleMarkerEnabled: () => {
+          set(
+            (s) => ({ isSimpleMarkerEnabled: !s.isSimpleMarkerEnabled }),
+            undefined,
+            "toggleIsSimpleMarkerEnabled",
           );
         },
 
