@@ -17,7 +17,7 @@ export default function InfoView() {
     >
       <h2 className="font-semibold">About This Project</h2>
       <p className="mt-6">
-        This map app is an open source project run by the{" "}
+        This map app is an open source project run by{" "}
         <LinkExt href={CAMPFIRE_LINK} openNewWindow>
           {GROUP_NAME}
         </LinkExt>

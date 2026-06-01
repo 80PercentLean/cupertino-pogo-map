@@ -7,6 +7,7 @@ import {
 } from "@/leafletIcons";
 import type { CProperties } from "@/types/CFeatures";
 import {
+  CircleMarker,
   DivIcon,
   type LatLngTuple,
   type Marker,
@@ -16,6 +17,7 @@ import { Icon } from "leaflet";
 import { useEffect, useRef } from "react";
 import { Popup, Tooltip } from "react-leaflet";
 
+import CCircleMarker from "../CCircleMarker";
 import CMarker from "../CMarker";
 import { useRemoveIdQueryParam, useSetIdQueryParam } from "../hooks";
 import { getLayerKeyFromType, useStore } from "../hooks/store";
@@ -86,6 +88,7 @@ export default function FeatureMarker({
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   const markerRef = useRef<Marker | null>(null);
+  const circleMarkerRef = useRef<CircleMarker | null>(null);
 
   const removeIdQueryParam = useRemoveIdQueryParam();
   const setIdQueryParam = useSetIdQueryParam();
@@ -181,18 +184,26 @@ export default function FeatureMarker({
   }
 
   let toolTipOffset;
-  if (type === "gym") {
-    toolTipOffset = ICON_GYM_TOOLTIP_OFFSET;
-  } else if (type === "pokestop") {
-    if (subtype === "showcase") {
-      toolTipOffset = ICON_SHOWCASE_TOOLTIP_OFFSET;
-    } else {
-      toolTipOffset = ICON_POKESTOP_TOOLTIP_OFFSET;
-    }
-  } else if (type === "powerspot") {
-    toolTipOffset = ICON_POWER_SPOT_TOOLTIP_OFFSET;
-  } else {
-    toolTipOffset = [12, 0] as PointTuple;
+  let isPokePoi = false;
+  switch (type) {
+    case "gym":
+      toolTipOffset = ICON_GYM_TOOLTIP_OFFSET;
+      isPokePoi = true;
+      break;
+    case "pokestop":
+      if (subtype === "showcase") {
+        toolTipOffset = ICON_SHOWCASE_TOOLTIP_OFFSET;
+      } else {
+        toolTipOffset = ICON_POKESTOP_TOOLTIP_OFFSET;
+      }
+      isPokePoi = true;
+      break;
+    case "powerspot":
+      toolTipOffset = ICON_POWER_SPOT_TOOLTIP_OFFSET;
+      isPokePoi = true;
+      break;
+    default:
+      toolTipOffset = [12, 0] as PointTuple;
   }
 
   useEffect(() => {
@@ -208,17 +219,65 @@ export default function FeatureMarker({
   }, [isDisabled, removed]);
 
   useEffect(() => {
-    if (markerRef.current && isPopupOpen) {
+    const activeMarker = markerRef.current ?? circleMarkerRef.current;
+    if (activeMarker && isPopupOpen) {
       // Hack to get openPopup to work
-      setTimeout(() => markerRef.current?.openPopup(), 0);
+      setTimeout(() => activeMarker.openPopup(), 0);
     }
   }, [isPopupOpen]);
 
-  return (
-    <>
-      {noPowerSpotZone}
-      {noCaPoiZone}
-      {interactionRadius}
+  let marker;
+  if (isPokePoi) {
+    let fillColor;
+    if (isHighlighted) {
+      fillColor = "#00ff00";
+    } else if (isDisabled) {
+      fillColor = "#888";
+    } else if (removed) {
+      fillColor = "#000";
+    } else if (type === "gym") {
+      fillColor = "#ff0000";
+    } else if (type === "pokestop") {
+      fillColor = "#00ffff";
+    } else if (type === "powerspot") {
+      fillColor = "#ff00ff";
+    } else {
+      fillColor = "#fff";
+    }
+
+    marker = (
+      <CCircleMarker
+        ref={circleMarkerRef}
+        bubblingMouseEvents={false}
+        center={position}
+        pathOptions={{ color: "#fff", fillColor, fillOpacity: 1 }}
+        data-testid={String(id)}
+        eventHandlers={{
+          click: () => setIdQueryParam(id),
+          popupclose: () => removeIdQueryParam(),
+        }}
+      >
+        {!IS_MOBILE && <Tooltip offset={toolTipOffset}>{title}</Tooltip>}
+        {isPopupOpen && (
+          <Popup>
+            {createPopupContent(
+              title,
+              subtitle,
+              position,
+              desc,
+              photo,
+              wayfarerMode,
+              id,
+              undefined,
+              modifierBtns,
+              renderHtml,
+            )}
+          </Popup>
+        )}
+      </CCircleMarker>
+    );
+  } else {
+    marker = (
       <CMarker
         ref={markerRef}
         alt={`Marker for "${title}"`}
@@ -249,6 +308,15 @@ export default function FeatureMarker({
           </Popup>
         )}
       </CMarker>
+    );
+  }
+
+  return (
+    <>
+      {noPowerSpotZone}
+      {noCaPoiZone}
+      {interactionRadius}
+      {marker}
     </>
   );
 }

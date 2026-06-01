@@ -70,9 +70,18 @@ export default function SettingsView() {
       <FieldSet>
         <FieldGroup className="gap-3">
           <Field orientation="horizontal">
-            <FieldLabel htmlFor="disable-animations" className="cursor-pointer">
-              Disable animations
-            </FieldLabel>
+            <FieldContent>
+              <FieldLabel
+                htmlFor="disable-animations"
+                className="cursor-pointer"
+              >
+                Disable animations
+              </FieldLabel>
+              <FieldDescription className="text-pretty">
+                Disable animations on the map. Can improve performance on
+                lower-end devices.
+              </FieldDescription>
+            </FieldContent>
             <Switch
               id="disable-animations"
               checked={disableAnimations}
@@ -85,10 +94,61 @@ export default function SettingsView() {
           </Field>
           <Field orientation="horizontal">
             <FieldContent>
+              <FieldLabel htmlFor="simple-icons" className="cursor-pointer">
+                Use simple icons
+              </FieldLabel>
+              <FieldDescription className="text-pretty">
+                Replaces the image icons marker representing in-game POIs with
+                simple colored circles. Can make positions easier to read.
+              </FieldDescription>
+            </FieldContent>
+            <Switch id="hide-legend" className="cursor-pointer" />
+          </Field>
+          <Field orientation="horizontal">
+            <FieldContent>
+              <FieldLabel htmlFor="hide-legend" className="cursor-pointer">
+                Hide legend
+              </FieldLabel>
+              <FieldDescription className="text-pretty">
+                Hide the legend to make more of the map visible.
+              </FieldDescription>
+            </FieldContent>
+            <Switch id="simple-icons" className="cursor-pointer" />
+          </Field>
+          <Field>
+            <FieldContent>
+              <FieldLabel>My Location Range Type</FieldLabel>
+              <FieldDescription className="text-pretty">
+                Set the type of range around your location marker.
+              </FieldDescription>
+            </FieldContent>
+            <Select
+              value={myLocationRangeType}
+              onValueChange={(val: typeof myLocationRangeType) => {
+                setMyLocationRangeType(val);
+                persistSettings("myLocationRangeType", val);
+              }}
+            >
+              <SelectTrigger>
+                <SelectValue placeholder="My Location Range Type" />
+              </SelectTrigger>
+              <SelectContent className="z-[1001]">
+                <SelectItem value="poi">POI Interaction Range (80m)</SelectItem>
+                <SelectItem value="wild-spawn">
+                  Wild Spawn Visibility (50m)
+                </SelectItem>
+                <SelectItem value="location-accuracy">
+                  Location Accuracy
+                </SelectItem>
+              </SelectContent>
+            </Select>
+          </Field>
+          <Field orientation="horizontal">
+            <FieldContent>
               <FieldLabel htmlFor="wayfarer-mode" className="cursor-pointer">
                 Enable Wayfarer Mode
               </FieldLabel>
-              <FieldDescription>
+              <FieldDescription className="text-pretty">
                 This mode enables special features useful for planning &
                 submitting Wayspots for Niantic Wayfarer.
               </FieldDescription>
@@ -121,34 +181,6 @@ export default function SettingsView() {
               }}
             />
           </Field>
-          <Field>
-            <FieldContent>
-              <FieldLabel>My Location Range Type</FieldLabel>
-              <FieldDescription>
-                Set the type of range around your location.
-              </FieldDescription>
-            </FieldContent>
-            <Select
-              value={myLocationRangeType}
-              onValueChange={(val: typeof myLocationRangeType) => {
-                setMyLocationRangeType(val);
-                persistSettings("myLocationRangeType", val);
-              }}
-            >
-              <SelectTrigger>
-                <SelectValue placeholder="My Location Range Type" />
-              </SelectTrigger>
-              <SelectContent className="z-[1001]">
-                <SelectItem value="poi">POI Interaction Range (80m)</SelectItem>
-                <SelectItem value="wild-spawn">
-                  Wild Spawn Visibility (50m)
-                </SelectItem>
-                <SelectItem value="location-accuracy">
-                  Location Accuracy
-                </SelectItem>
-              </SelectContent>
-            </Select>
-          </Field>
         </FieldGroup>
       </FieldSet>
       {wayfarerMode && (
@@ -156,7 +188,7 @@ export default function SettingsView() {
           <FieldSeparator className="my-2" />
           <FieldSet>
             <FieldLegend>Wayfarer Settings</FieldLegend>
-            <FieldDescription>
+            <FieldDescription className="text-pretty">
               Special Wayfarer settings available when Wayfarer Mode is enabled.
             </FieldDescription>
             <FieldGroup className="gap-3">
@@ -165,7 +197,7 @@ export default function SettingsView() {
                   <FieldLabel htmlFor="hidden-pois" className="cursor-pointer">
                     Show hidden POIs
                   </FieldLabel>
-                  <FieldDescription>
+                  <FieldDescription className="text-pretty">
                     Display POIs that exist in-game but are hidden from this map
                     since they are not within the community play area.
                   </FieldDescription>
@@ -188,7 +220,7 @@ export default function SettingsView() {
                   >
                     Show disabled power spots
                   </FieldLabel>
-                  <FieldDescription>
+                  <FieldDescription className="text-pretty">
                     Display power spots that are not in the current spawn pool
                     or can never spawn due to certain restrictions.
                   </FieldDescription>
@@ -208,7 +240,7 @@ export default function SettingsView() {
                   <FieldLabel htmlFor="removed-pois" className="cursor-pointer">
                     Show removed POIs
                   </FieldLabel>
-                  <FieldDescription>
+                  <FieldDescription className="text-pretty">
                     Display POIs that have been removed in-game or from
                     Wayfarer.
                   </FieldDescription>
@@ -231,7 +263,7 @@ export default function SettingsView() {
                   >
                     Invert coordinates using the "Copy coords" button
                   </FieldLabel>
-                  <FieldDescription>
+                  <FieldDescription className="text-pretty">
                     Current copy coords format:{" "}
                     {invertCoords ? <code>lng,lat</code> : <code>lat,lng</code>}
                   </FieldDescription>

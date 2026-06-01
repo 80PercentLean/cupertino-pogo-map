@@ -46,7 +46,11 @@ export default function MyLocationMarker({
         <CCircleMarker
           center={myLocation}
           interactive={false}
-          pathOptions={{ color: "#fff", fillColor: "#5c84f0", fillOpacity: 1 }}
+          pathOptions={{
+            color: "#fff",
+            fillColor: "#3b82f6",
+            fillOpacity: 1,
+          }}
           radius={10}
           data-testid={testId}
         />

@@ -2,6 +2,7 @@ import { Activity } from "react";
 
 import BtnLayers from "./BtnLayers";
 import BtnMyLocation from "./BtnMyLocation";
+import Legend from "./Legend";
 import ListView from "./ListView";
 import ViewCtrl from "./ViewCtrl";
 import { useStore } from "./hooks/store";
@@ -20,6 +21,7 @@ export default function UiOverlay() {
       </Activity>
       <BtnLayers />
       <BtnMyLocation />
+      <Legend />
       <ViewCtrl />
     </>
   );

@@ -1,8 +1,9 @@
 import { CircleMarker as LeafletCircleMarker } from "leaflet";
-import { useEffect, useRef } from "react";
+import { type RefObject, useEffect, useRef } from "react";
 import { CircleMarker, type CircleMarkerProps } from "react-leaflet";
 
 interface CCircleMarkerExclusiveProps {
+  ref?: RefObject<LeafletCircleMarker | null>;
   "data-testid"?: string;
 }
 
@@ -14,9 +15,8 @@ export type CCircleMarkerProps = CircleMarkerProps &
  * HTML attributes to the marker's icon element.
  */
 export default function CCircleMarker(props: CCircleMarkerProps) {
-  // TODO: Not sure what the type of this ref should be
+  const { ref, "data-testid": testId } = props;
   const refInternal = useRef<LeafletCircleMarker | null>(null);
-  const testId = props["data-testid"];
 
   useEffect(() => {
     if (testId && refInternal.current) {
@@ -28,5 +28,5 @@ export default function CCircleMarker(props: CCircleMarkerProps) {
     }
   }, [testId]);
 
-  return <CircleMarker ref={refInternal} {...props} />;
+  return <CircleMarker ref={ref ?? refInternal} {...props} />;
 }

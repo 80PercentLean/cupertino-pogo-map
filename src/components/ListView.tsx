@@ -27,7 +27,14 @@ import { getDesktopMediaQuery } from "@/util";
 import type { LatLngTuple } from "leaflet";
 import { debounce } from "lodash-es";
 import { Eye, EyeClosed, Search, X } from "lucide-react";
-import { use, useDeferredValue, useEffect, useMemo, useState } from "react";
+import {
+  type ReactNode,
+  use,
+  useDeferredValue,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 
 import { MapContext } from "./MapContext";
 import { useSetIdQueryParam } from "./hooks";
@@ -173,7 +180,7 @@ export default function ListView() {
       return 0;
     });
 
-    const listMain = [];
+    const listMain: ReactNode[] = [];
 
     featureData.forEach(
       ({ coordinates, id, isDisabled, name, removed, subtype, type }) => {
@@ -312,18 +319,11 @@ export default function ListView() {
       },
     );
 
-    if (listMain.length === 0) {
-      listMain.push(
-        <div key="not-found" className="px-4 py-4 text-sm italic">
-          No points of interest were found...
-        </div>,
-      );
-    }
-
     return listMain;
   };
 
   // Build the list of placed markers that will go in front of the main list
+  // TODO: have search affect placed markers
   const listPlacedMarkers = placedMarkerStates.map(
     ({ id, isVisible, position }, i) => {
       return (
@@ -400,6 +400,14 @@ export default function ListView() {
     restroomsJson.features,
     devpoisJson.features,
   );
+
+  if (listMain.length === 0 && listPlacedMarkers.length === 0) {
+    listMain.push(
+      <div key="not-found" className="px-4 py-4 text-sm italic">
+        No points of interest were found...
+      </div>,
+    );
+  }
 
   let btnSearchIcon;
   let btnSearchClickHandler;
