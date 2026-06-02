@@ -1,5 +1,15 @@
 # Central Park POI History
 
+## 6-2-2026
+
+### Power Spots Created 🆕
+
+- Hearth South Community Pool (700330f3211833c0941e24fd34fc4e3c.16)
+
+### Power Spots Removed 🗑️
+
+- Hearth South Community Pool (700330f3211833c0941e24fd34fc4e3c.16)
+
 ## 5-25-2026
 
 ### Power Spots Created 🆕
