@@ -34,6 +34,7 @@ interface FeatureData {
   coordinates: LatLngTuple;
   id: string;
   isDisabled?: CProperties["isDisabled"];
+  isHidden?: CProperties["isHidden"];
   name: CProperties["name"];
   removed?: CProperties["removed"];
   subtype?: CProperties["subtype"];
@@ -94,69 +95,23 @@ export default function ListView() {
   const buildMainList = (...args: CFeatureCollection["features"][]) => {
     const featureData: FeatureData[] = [];
 
+    // Consolidate all feature collections & shape data nicely
     for (const currFeatures of args) {
-      if (
-        (currFeatures[0]?.properties?.type === "gym" && layerGym) ||
-        (currFeatures[0]?.properties?.type === "meetupspot" &&
-          layerMeetupspot) ||
-        (currFeatures[0]?.properties?.type === "parking" && layerPokestop) ||
-        (currFeatures[0]?.properties?.type === "pokestop" && layerPokestop) ||
-        (currFeatures[0]?.properties?.type === "powerspot" && layerPowerspot) ||
-        (currFeatures[0]?.properties?.type === "restroom" && layerRestroom) ||
-        (currFeatures[0]?.properties?.type === "devpoi" && layerDevpoi)
-      ) {
-        for (const {
-          geometry: { coordinates },
-          id,
-          properties: { isDisabled, isHidden, name, removed, subtype, type },
-        } of currFeatures) {
-          if (
-            (!showDisabled && isDisabled) ||
-            (!showHidden && isHidden) ||
-            (!showRemoved && removed) ||
-            (type === "devpoi" && !wayfarerMode)
-          ) {
-            // Skip if hidden or removed and those modifiers are off
-            continue;
-          }
-
-          const querySet = new Set(deferredQuery.toLowerCase().split(" "));
-          const matchGym = querySet.has("gym") || querySet.has("gyms");
-          const matchPokeStop =
-            querySet.has("pokestop") || querySet.has("pokestops");
-          const matchPowerSpot =
-            querySet.has("powerspot") || querySet.has("powerspots");
-          const matchMeetupSpot =
-            querySet.has("meetupspot") || querySet.has("meetupspots");
-          const matchParking = querySet.has("parking");
-          const matchRestroom =
-            querySet.has("restroom") || querySet.has("restrooms");
-          const matchDevPoi = querySet.has("devpoi");
-
-          if (
-            query === "" ||
-            name.toLowerCase().includes(deferredQuery.toLowerCase()) ||
-            (matchGym && type === "gym") ||
-            (matchPokeStop && type === "pokestop") ||
-            (matchPowerSpot && type === "powerspot") ||
-            (matchMeetupSpot && type === "meetupspot") ||
-            (matchParking && type === "parking") ||
-            (matchRestroom && type === "restroom") ||
-            (matchDevPoi && type === "devpoi") ||
-            deferredQuery === id
-          ) {
-            featureData.push({
-              coordinates: [coordinates[1], coordinates[0]],
-              id: id as string,
-              name,
-              isDisabled,
-              removed,
-              subtype,
-              type,
-            });
-          }
-          // TODO: hide highlight when featureData is not pushed
-        }
+      for (const {
+        geometry: { coordinates },
+        id,
+        properties: { isDisabled, isHidden, name, removed, subtype, type },
+      } of currFeatures) {
+        featureData.push({
+          coordinates: [coordinates[1], coordinates[0]],
+          id: id as string,
+          name,
+          isDisabled,
+          isHidden,
+          removed,
+          subtype,
+          type,
+        });
       }
     }
 
@@ -171,8 +126,41 @@ export default function ListView() {
 
     const listMain: ReactNode[] = [];
 
+    // Generate JSX for each list item & filter
     featureData.forEach(
-      ({ coordinates, id, isDisabled, name, removed, subtype, type }) => {
+      ({
+        coordinates,
+        id,
+        isDisabled,
+        isHidden,
+        name,
+        removed,
+        subtype,
+        type,
+      }) => {
+        if (
+          (!showDisabled && isDisabled) ||
+          (!showHidden && isHidden) ||
+          (!showRemoved && removed) ||
+          (type === "devpoi" && !wayfarerMode)
+        ) {
+          // Skip if hidden or removed and those modifiers are off
+          return;
+        }
+
+        const querySet = new Set(deferredQuery.toLowerCase().split(" "));
+        const matchGym = querySet.has("gym") || querySet.has("gyms");
+        const matchPokeStop =
+          querySet.has("pokestop") || querySet.has("pokestops");
+        const matchPowerSpot =
+          querySet.has("powerspot") || querySet.has("powerspots");
+        const matchMeetupSpot =
+          querySet.has("meetupspot") || querySet.has("meetupspots");
+        const matchParking = querySet.has("parking");
+        const matchRestroom =
+          querySet.has("restroom") || querySet.has("restrooms");
+        const matchDevPoi = querySet.has("devpoi");
+
         let layer: Record<string, MarkerState> | undefined;
         let icon;
         switch (type) {
@@ -256,70 +244,86 @@ export default function ListView() {
             );
         }
 
-        listMain.push(
-          <Button
-            key={id}
-            variant="ghost"
-            className={cn(
-              "h-12 w-full cursor-pointer justify-start gap-2 rounded-none px-4 pr-0 text-sm font-normal md:first:mt-2",
-              removed && "line-through",
-            )}
-            onClick={() => {
-              const mediaQuery = getDesktopMediaQuery();
-              if (!mediaQuery.matches) {
-                // Close the list view when a POI in it is tapped on mobile
-                setIsListViewOpen(false);
-              }
-
-              setMarker(type, id, { isVisible: true });
-
-              // The following conditions/setTimeout is a hack to get popups working
-              if (activePopup && activePopup !== id) {
-                setActivePopup(null);
-              }
-
-              if (activePopup !== id) {
-                setTimeout(() => {
-                  setIdQueryParam(id);
-                }, DELAY);
-              }
-
-              // Hack to reduce flyTo glitches breaking positions of features on the map
-              setTimeout(() => {
-                map?.flyTo(coordinates, 18);
-              }, DELAY - 500);
-            }}
-            onMouseEnter={() => {
-              if (layer?.[id]?.isVisible) {
-                debouncedHighlight(type, id);
-              }
-            }}
-            onMouseLeave={() => {
-              if (layer?.[id]?.isHighlighted) {
-                setMarker(type, id, { isHighlighted: false });
-              }
-            }}
-          >
-            <div className="flex h-full w-6 items-center justify-center">
-              {icon}
-            </div>
-            <div className="flex h-full items-center justify-center">
-              {layer?.[id]?.isVisible ? (
-                <Eye className="w-4" />
-              ) : (
-                <EyeClosed className="h-4 w-4" />
-              )}
-            </div>
-            <div
+        if (
+          deferredQuery.length < 2 ||
+          name.toLowerCase().includes(deferredQuery.toLowerCase()) ||
+          (matchGym && type === "gym") ||
+          (matchPokeStop && type === "pokestop") ||
+          (matchPowerSpot && type === "powerspot") ||
+          (matchMeetupSpot && type === "meetupspot") ||
+          (matchParking && type === "parking") ||
+          (matchRestroom && type === "restroom") ||
+          (matchDevPoi && type === "devpoi") ||
+          deferredQuery === id
+        ) {
+          console.log("item added", name);
+          listMain.push(
+            <Button
+              key={id}
+              variant="ghost"
               className={cn(
-                "flex grow items-center overflow-x-auto pr-2",
+                "h-12 w-full cursor-pointer justify-start gap-2 rounded-none px-4 pr-0 text-sm font-normal md:first:mt-2",
                 removed && "line-through",
               )}
+              onClick={() => {
+                const mediaQuery = getDesktopMediaQuery();
+                if (!mediaQuery.matches) {
+                  // Close the list view when a POI in it is tapped on mobile
+                  setIsListViewOpen(false);
+                }
+
+                setMarker(type, id, { isVisible: true });
+
+                // The following conditions/setTimeout is a hack to get popups working
+                if (activePopup && activePopup !== id) {
+                  setActivePopup(null);
+                }
+
+                if (activePopup !== id) {
+                  setTimeout(() => {
+                    setIdQueryParam(id);
+                  }, DELAY);
+                }
+
+                // Hack to reduce flyTo glitches breaking positions of features on the map
+                setTimeout(() => {
+                  map?.flyTo(coordinates, 18);
+                }, DELAY - 500);
+              }}
+              onMouseEnter={() => {
+                if (layer?.[id]?.isVisible) {
+                  debouncedHighlight(type, id);
+                }
+              }}
+              onMouseLeave={() => {
+                if (layer?.[id]?.isHighlighted) {
+                  setMarker(type, id, { isHighlighted: false });
+                }
+              }}
             >
-              {name}
-            </div>
-          </Button>,
-        );
+              <div className="flex h-full w-6 items-center justify-center">
+                {icon}
+              </div>
+              <div className="flex h-full items-center justify-center">
+                {layer?.[id]?.isVisible ? (
+                  <Eye className="w-4" />
+                ) : (
+                  <EyeClosed className="h-4 w-4" />
+                )}
+              </div>
+              <div
+                className={cn(
+                  "flex grow items-center overflow-x-auto pr-2",
+                  removed && "line-through",
+                )}
+              >
+                {name}
+              </div>
+            </Button>,
+          );
+        } else if (layer?.[id]?.isHighlighted) {
+          setMarker(type, id, { isHighlighted: false });
+        }
       },
     );
 
@@ -330,7 +334,7 @@ export default function ListView() {
   const listPlacedMarkers: ReactNode[] = [];
   placedMarkerStates.forEach(({ id, isVisible, position }, i) => {
     if (
-      deferredQuery === "" ||
+      deferredQuery.length < 2 ||
       `placed marker #${i + 1}`.includes(deferredQuery.toLowerCase())
     ) {
       listPlacedMarkers.push(
@@ -398,12 +402,10 @@ export default function ListView() {
           </div>
         </Button>,
       );
-    } else {
-      if (placedMarkerStates[i]?.isHighlighted) {
-        updatePlacedMarkerState(i, {
-          isHighlighted: false,
-        });
-      }
+    } else if (placedMarkerStates[i]?.isHighlighted) {
+      updatePlacedMarkerState(i, {
+        isHighlighted: false,
+      });
     }
   });
 
@@ -445,6 +447,7 @@ export default function ListView() {
     <Card className="absolute inset-0 z-999 gap-0 rounded-none pt-0 pb-20 md:fixed md:top-0 md:left-0 md:m-2 md:max-h-[66vh] md:w-100 md:rounded-xl md:pb-0">
       <InputGroup className="rounded-none py-6 md:rounded-t-xl">
         <InputGroupInput
+          name="search"
           placeholder="Search for Gyms, PokéStops, etc."
           value={query}
           onChange={({ target }) => setQuery(target.value)}
