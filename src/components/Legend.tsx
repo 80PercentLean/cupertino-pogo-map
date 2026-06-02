@@ -6,7 +6,7 @@ export default function Legend() {
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   return (
-    <Card className="left fixed bottom-22 z-998 m-2 py-4 md:bottom-14">
+    <Card className="left fixed bottom-22 z-998 m-2 py-4 md:bottom-14 [@media(max-height:600px)]:hidden">
       <CardContent className="grid grid-flow-col grid-rows-6 gap-x-2 gap-y-1 px-4 md:grid-rows-4 md:gap-x-4">
         <div className="grid grid-cols-[20px_1fr] items-center gap-x-2">
           <MapUiIcon
@@ -27,7 +27,9 @@ export default function Legend() {
             type="powerspot"
             className="h-4 w-4 justify-self-center object-contain md:h-5 md:w-5"
           />
-          <div className="text-xs md:text-sm">Enabled Power Spot</div>
+          <div className="text-xs text-pretty md:text-sm">
+            Enabled Power Spot
+          </div>
         </div>
         <div className="grid grid-cols-[20px_1fr] items-center gap-x-2">
           <MapUiIcon
@@ -35,14 +37,16 @@ export default function Legend() {
             type="powerspot"
             className="h-4 w-4 justify-self-center object-contain md:h-5 md:w-5"
           />
-          <div className="text-xs md:text-sm">Disabled Power Spot</div>
+          <div className="text-xs text-pretty md:text-sm">
+            Disabled Power Spot
+          </div>
         </div>
         <div className="grid grid-cols-[20px_1fr] items-center gap-x-2">
           <MapUiIcon
             type="meetupspot"
             className="h-4 w-4 justify-self-center md:h-5 md:w-5"
           />
-          <div className="text-xs md:text-sm">Meetup Spot</div>
+          <div className="text-xs text-pretty md:text-sm">Meetup Spot</div>
         </div>
         <div className="grid grid-cols-[20px_1fr] items-center gap-x-2">
           <div>
@@ -51,7 +55,7 @@ export default function Legend() {
               className="h-4 w-4 justify-self-center md:h-5 md:w-5"
             />
           </div>
-          <div className="text-xs md:text-sm">Free Parking</div>
+          <div className="text-xs text-pretty md:text-sm">Free Parking</div>
         </div>
         <div className="grid grid-cols-[20px_1fr] items-center gap-x-2">
           <div>
@@ -61,7 +65,9 @@ export default function Legend() {
               className="h-4 w-4 justify-self-center md:h-5 md:w-5"
             />
           </div>
-          <div className="text-xs md:text-sm">Parking (Free Sometimes)</div>
+          <div className="text-xs text-pretty md:text-sm">
+            Parking (Free Sometimes)
+          </div>
         </div>
         <div className="grid h-full grid-cols-[20px_1fr] items-center gap-x-2">
           <MapUiIcon
@@ -69,7 +75,7 @@ export default function Legend() {
             type="restroom"
             className="h-4 w-4 justify-self-center md:h-5 md:w-5"
           />
-          <div className="text-xs md:text-sm">
+          <div className="text-xs text-pretty md:text-sm">
             All-Gender/Men's/Women's Restroom
           </div>
         </div>
@@ -79,7 +85,7 @@ export default function Legend() {
             type="restroom"
             className="h-4 w-4 justify-self-center md:h-5 md:w-5"
           />
-          <div className="text-xs md:text-sm">Men's Restroom</div>
+          <div className="text-xs text-pretty md:text-sm">Men's Restroom</div>
         </div>
         <div className="grid grid-cols-[20px_1fr] items-center gap-x-2">
           <MapUiIcon
@@ -87,7 +93,7 @@ export default function Legend() {
             type="restroom"
             className="h-4 w-4 justify-self-center md:h-5 md:w-5"
           />
-          <div className="text-xs md:text-sm">Women's Restroom</div>
+          <div className="text-xs text-pretty md:text-sm">Women's Restroom</div>
         </div>
         {wayfarerMode && (
           <div className="grid grid-cols-[20px_1fr] items-center gap-x-2">
@@ -95,7 +101,7 @@ export default function Legend() {
               type="devpoi"
               className="h-4 w-4 justify-self-center md:h-5 md:w-5"
             />
-            <div className="text-xs md:text-sm">Dev POI</div>
+            <div className="text-xs text-pretty md:text-sm">Dev POI</div>
           </div>
         )}
       </CardContent>

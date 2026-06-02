@@ -12,7 +12,7 @@ import { useStore } from "./hooks/store";
  * No matter how <MapView> is dragged or zoomed, <UiOverlay> will remain static.
  */
 export default function UiOverlay() {
-  const isLegendHidden = useStore((s) => s.isLegendHidden);
+  const isLegendOpen = useStore((s) => s.isLegendOpen);
   const isListViewOpen = useStore((s) => s.isListViewOpen);
 
   return (
@@ -22,7 +22,7 @@ export default function UiOverlay() {
       </Activity>
       <BtnLayers />
       <BtnMyLocation />
-      {!isLegendHidden && <Legend />}
+      {isLegendOpen && <Legend />}
       <ViewCtrl />
     </>
   );

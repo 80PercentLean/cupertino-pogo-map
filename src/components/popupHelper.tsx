@@ -85,7 +85,7 @@ export const createBtnNoPowerSpotZone = (
       <img src={imgPowerspot} alt="Power Spot Icon" className="h-4" />
       <Ban
         className={cn(
-          "absolute !h-6 !w-6 group-hover:text-black",
+          "absolute h-6! w-6! group-hover:text-black",
           showNoPowerSpotZone ? "text-red-700" : "text-white",
         )}
       />
@@ -113,7 +113,7 @@ export const createBtnNoCaPoiZone = (
       <LandPlot />
       <Ban
         className={cn(
-          "absolute !h-6 !w-6 group-hover:text-black",
+          "absolute h-6! w-6! group-hover:text-black",
           showNoCaPoiZone ? "text-red-700" : "text-white",
         )}
       />

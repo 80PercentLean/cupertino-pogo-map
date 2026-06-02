@@ -5,6 +5,7 @@ import {
   List,
   Map,
   Settings,
+  Shapes,
   Toolbox,
 } from "lucide-react";
 
@@ -13,7 +14,7 @@ import { Button } from "./ui/button";
 
 const BTN_BASE_CLASSNAME =
   "h-14 max-w-20 cursor-pointer flex-col bg-black text-xs text-gray-300 transition-colors duration-500";
-const BTN_ACTIVE_CLASSNAME = "bg-emerald-700 font-bold text-white";
+const BTN_ACTIVE_CLASSNAME = "bg-emerald-700 text-white";
 
 /**
  * These view controls appears when the browser window is in mobile mode.
@@ -21,16 +22,31 @@ const BTN_ACTIVE_CLASSNAME = "bg-emerald-700 font-bold text-white";
 export default function ViewCtrlMobile() {
   const activeMainView = useStore((s) => s.activeMainView);
   const isLayersOverlayOpen = useStore((s) => s.isLayersOverlayOpen);
+  const isLegendOff = useStore((s) => s.isLegendOff);
+  const isLegendOpen = useStore((s) => s.isLegendOpen);
   const isListViewOpen = useStore((s) => s.isListViewOpen);
   const setActiveMainView = useStore((s) => s.setActiveMainView);
   const setIsLayersOverlayOpen = useStore((s) => s.setIsLayersOverlayOpen);
   const setIsListViewOpen = useStore((s) => s.setIsListViewOpen);
   const toggleIsListViewOpen = useStore((s) => s.toggleIsListViewOpen);
+  const toggleIsLegendOpen = useStore((s) => s.toggleIsLegendOpen);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   return (
     <>
-      <div className="fixed top-0 left-0 z-998 m-2">
+      <div className="fixed top-0 left-0 z-998 m-2 flex gap-2">
+        {!isLegendOff && (
+          <Button
+            className={cn(
+              "shadow-sm shadow-gray-500 [@media(max-height:600px)]:hidden",
+              isLegendOpen && BTN_ACTIVE_CLASSNAME,
+            )}
+            onClick={() => toggleIsLegendOpen()}
+          >
+            <Shapes />
+            Legend
+          </Button>
+        )}
         {wayfarerMode && (
           <Button
             className="shadow-sm shadow-gray-500"
@@ -64,7 +80,7 @@ export default function ViewCtrlMobile() {
             }
           }}
         >
-          <Map className="!h-6 !w-6" />
+          <Map className="h-6! w-6!" />
           Map View
         </Button>
         <Button
@@ -84,7 +100,7 @@ export default function ViewCtrlMobile() {
             }
           }}
         >
-          <List className="!h-6 !w-6" />
+          <List className="h-6! w-6!" />
           List View
         </Button>
         <Button
@@ -108,7 +124,7 @@ export default function ViewCtrlMobile() {
             }
           }}
         >
-          <FlameKindling className="!h-6 !w-6" />
+          <FlameKindling className="h-6! w-6!" />
           Meetups
         </Button>
         <Button
@@ -132,7 +148,7 @@ export default function ViewCtrlMobile() {
             }
           }}
         >
-          <Settings className="!h-6 !w-6" />
+          <Settings className="h-6! w-6!" />
           Settings
         </Button>
         <Button
@@ -156,7 +172,7 @@ export default function ViewCtrlMobile() {
             }
           }}
         >
-          <Info className="!h-6 !w-6" />
+          <Info className="h-6! w-6!" />
           Info
         </Button>
       </div>

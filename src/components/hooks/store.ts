@@ -95,8 +95,11 @@ export interface StoreState {
   /** Open the layers overlay when true. */
   isLayersOverlayOpen: boolean;
 
-  /** Hide the legend when true. */
-  isLegendHidden: boolean;
+  /** Open the legend overlay when true. */
+  isLegendOpen: boolean;
+
+  /** Turn off the legend when true. */
+  isLegendOff: boolean;
 
   /** Open the list view when true. */
   isListViewOpen: boolean;
@@ -208,8 +211,11 @@ export interface StoreState {
   /** Toggle the `invertCoords` value. */
   toggleInvertCoords: () => void;
 
-  /** Toggle the `isLegendHidden` value. */
-  toggleIsLegendHidden: () => void;
+  /** Toggle the `isLegendOpen` value. */
+  toggleIsLegendOpen: () => void;
+
+  /** Toggle the `isLegendOff` value. */
+  toggleIsLegendOff: () => void;
 
   /** Toggle the `isListViewOpen` value. */
   toggleIsListViewOpen: () => void;
@@ -245,7 +251,7 @@ const DEFAULT_SETTINGS = {
   invertCoords: false,
   isHidden: false,
   isDisabled: false,
-  isLegendHidden: false,
+  isLegendOff: false,
   isSimpleMarkerEnabled: false,
   myLocationRangeType: "poi" as const,
   removed: false,
@@ -340,9 +346,11 @@ export const useStore = create<StoreState>()(
         // Layers overlay starts off closed
         isLayersOverlayOpen: false,
 
-        isLegendHidden:
-          localStorage.getItem("isLegendHidden") === "true" ||
-          DEFAULT_SETTINGS.isLegendHidden,
+        isLegendOpen: !IS_MOBILE,
+
+        isLegendOff:
+          localStorage.getItem("isLegendOff") === "true" ||
+          DEFAULT_SETTINGS.isLegendOff,
 
         isListViewOpen: !IS_MOBILE,
 
@@ -557,11 +565,18 @@ export const useStore = create<StoreState>()(
             "toggleInvertCoords",
           ),
 
-        toggleIsLegendHidden: () =>
+        toggleIsLegendOpen: () =>
           set(
-            (s) => ({ isLegendHidden: !s.isLegendHidden }),
+            (s) => ({ isLegendOpen: !s.isLegendOpen }),
             undefined,
-            "toggleIsLegendHidden",
+            "toggleIsLegendOpen",
+          ),
+
+        toggleIsLegendOff: () =>
+          set(
+            (s) => ({ isLegendOff: !s.isLegendOff }),
+            undefined,
+            "toggleIsLegendOff",
           ),
 
         toggleIsListViewOpen: () => {

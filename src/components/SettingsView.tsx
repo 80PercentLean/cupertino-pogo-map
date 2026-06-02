@@ -43,7 +43,7 @@ export default function SettingsView() {
   const activePopup = useStore((s) => s.activePopup);
   const disableAnimations = useStore((s) => s.disableAnimations);
   const invertCoords = useStore((s) => s.invertCoords);
-  const isLegendHidden = useStore((s) => s.isLegendHidden);
+  const isLegendOff = useStore((s) => s.isLegendOff);
   const isSimpleMarkerEnabled = useStore((s) => s.isSimpleMarkerEnabled);
   const myLocationRangeType = useStore((s) => s.myLocationRangeType);
   const resetSettings = useStore((s) => s.resetSettings);
@@ -55,7 +55,7 @@ export default function SettingsView() {
   const showHidden = useStore((s) => s.modifiers.isHidden);
   const showRemoved = useStore((s) => s.modifiers.removed);
   const toggleInvertCoords = useStore((s) => s.toggleInvertCoords);
-  const toggleIsLegendHidden = useStore((s) => s.toggleIsLegendHidden);
+  const toggleIsLegendOff = useStore((s) => s.toggleIsLegendOff);
   const toggleIsSimpleMarkerEnabled = useStore(
     (s) => s.toggleIsSimpleMarkerEnabled,
   );
@@ -125,19 +125,20 @@ export default function SettingsView() {
           <Field orientation="horizontal">
             <FieldContent>
               <FieldLabel htmlFor="hide-legend" className="cursor-pointer">
-                Hide legend
+                Turn off legend
               </FieldLabel>
               <FieldDescription className="text-pretty">
-                Hide the legend to make more of the map visible.
+                Turn off the legend. This can be useful to make more of the map
+                visible.
               </FieldDescription>
             </FieldContent>
             <Switch
               id="hide-legend"
-              checked={isLegendHidden}
+              checked={isLegendOff}
               className="cursor-pointer"
               onCheckedChange={() => {
-                toggleIsLegendHidden();
-                persistSettings("isLegendHidden", !isLegendHidden);
+                toggleIsLegendOff();
+                persistSettings("isLegendOff", !isLegendOff);
               }}
             />
           </Field>
