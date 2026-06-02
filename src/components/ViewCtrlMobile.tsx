@@ -12,7 +12,7 @@ import { useStore } from "./hooks/store";
 import { Button } from "./ui/button";
 
 const BTN_BASE_CLASSNAME =
-  "h-14 w-20 cursor-pointer flex-col bg-black text-xs text-gray-300 transition-colors duration-500";
+  "h-14 max-w-20 cursor-pointer flex-col bg-black text-xs text-gray-300 transition-colors duration-500";
 const BTN_ACTIVE_CLASSNAME = "bg-emerald-700 font-bold text-white";
 
 /**

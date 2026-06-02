@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@source inline("bg-[#ff0000]"); /* Gym color */
+@source inline("bg-[#00ffff]"); /* PokeStop color */
+@source inline("bg-[#ff00ff]"); /* Power Spot color */
+@source inline("bg-[#888]"); /* Power Spot disabled color */
+
 @custom-variant dark (&:is(.dark *));
 
 body {

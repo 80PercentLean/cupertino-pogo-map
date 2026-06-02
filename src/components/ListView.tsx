@@ -8,19 +8,6 @@ import {
   powerspotsJson,
   restroomsJson,
 } from "@/geojson/data";
-import {
-  emojiAllBinaryRestroom,
-  emojiDevpoi,
-  emojiMRestroom,
-  emojiMeetupspot,
-  emojiParking,
-  emojiWRestroom,
-  imgGym,
-  imgLeafletMarker,
-  imgPokestop,
-  imgPowerspot,
-  imgShowcase,
-} from "@/leafletIcons";
 import { cn } from "@/lib/utils";
 import { type CFeatureCollection, type CProperties } from "@/types/CFeatures";
 import { getDesktopMediaQuery } from "@/util";
@@ -37,6 +24,7 @@ import {
 } from "react";
 
 import { MapContext } from "./MapContext";
+import MapUiIcon from "./MapUiIcon";
 import { useSetIdQueryParam } from "./hooks";
 import { type MarkerState, useStore } from "./hooks/store";
 import { Button } from "./ui/button";
@@ -185,63 +173,82 @@ export default function ListView() {
     featureData.forEach(
       ({ coordinates, id, isDisabled, name, removed, subtype, type }) => {
         let layer: Record<string, MarkerState> | undefined;
-        let iconType;
         let icon;
-        let alt;
         switch (type) {
           case "gym":
             layer = layerGym;
-            iconType = "img";
-            icon = imgGym;
-            alt = "Gym Icon";
+            icon = (
+              <MapUiIcon type="gym" className="flex h-6 w-6 object-contain" />
+            );
             break;
-          case "parking":
-            layer = layerParking;
-            iconType = "emoji";
-            icon = emojiParking;
-            break;
-          case "pokestop":
-            layer = layerPokestop;
-            iconType = "img";
-            if (subtype === "showcase") {
-              icon = imgShowcase;
-              alt = "Showcase Icon";
-            } else {
-              icon = imgPokestop;
-              alt = "PokéStop Icon";
-            }
-            break;
-          case "powerspot":
-            layer = layerPowerspot;
-            iconType = "img";
-            icon = imgPowerspot;
-            alt = "Power Spot Icon";
-            break;
+
           case "meetupspot":
             layer = layerMeetupspot;
-            iconType = "emoji";
-            icon = emojiMeetupspot;
+            icon = (
+              <MapUiIcon
+                type="meetupspot"
+                className="flex h-6 w-6 items-center justify-center"
+              />
+            );
             break;
+
+          case "parking":
+            layer = layerParking;
+            icon = (
+              <MapUiIcon
+                subtype={subtype}
+                type="parking"
+                className="flex h-6 w-6 items-center justify-center"
+              />
+            );
+            break;
+
+          case "pokestop":
+            layer = layerPokestop;
+            icon = (
+              <MapUiIcon type="pokestop" className="h-6 w-6 object-contain" />
+            );
+            break;
+
+          case "powerspot":
+            layer = layerPowerspot;
+            icon = (
+              <MapUiIcon
+                isDisabled={isDisabled}
+                type="powerspot"
+                className="h-6 w-6 object-contain"
+              />
+            );
+            break;
+
           case "restroom":
             layer = layerRestroom;
-            iconType = "emoji";
-            if (subtype === "men") {
-              icon = emojiMRestroom;
-            } else if (subtype === "women") {
-              icon = emojiWRestroom;
-            } else {
-              icon = emojiAllBinaryRestroom;
-            }
+            icon = (
+              <MapUiIcon
+                subtype={subtype}
+                type="restroom"
+                className="flex h-6 w-6 items-center justify-center"
+              />
+            );
             break;
+
           case "devpoi":
             layer = layerDevpoi;
-            iconType = "emoji";
-            icon = emojiDevpoi;
+            icon = (
+              <MapUiIcon
+                type="devpoi"
+                className="flex h-6 w-6 items-center justify-center"
+              />
+            );
             break;
+
           default:
-            iconType = "img";
-            icon = imgLeafletMarker;
-            alt = "Default Marker Icon";
+            icon = (
+              <MapUiIcon
+                alt="Icon for Placed Markers"
+                className="h-6 w-6 object-contain"
+              />
+            );
         }
 
         listMain.push(
@@ -285,19 +292,7 @@ export default function ListView() {
             }}
           >
             <div className="flex h-full w-6 items-center justify-center">
-              {iconType === "img" ? (
-                <img
-                  src={icon}
-                  alt={alt}
-                  className={cn(
-                    "h-full w-auto object-contain",
-                    removed && "brightness-0",
-                    isDisabled && "grayscale",
-                  )}
-                />
-              ) : (
-                icon
-              )}
+              {icon}
             </div>
             <div className="flex h-full items-center justify-center">
               {layer?.[id]?.isVisible ? (
@@ -370,10 +365,9 @@ export default function ListView() {
           }}
         >
           <div className="flex h-full w-6 items-center justify-center">
-            <img
-              src={imgLeafletMarker}
+            <MapUiIcon
               alt="Placed Marker Icon"
-              className="h-full w-auto object-contain"
+              className="h-6 w-6 object-contain"
             />
           </div>
           <div className="flex h-full items-center justify-center">

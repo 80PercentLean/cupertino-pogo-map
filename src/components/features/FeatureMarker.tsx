@@ -1,8 +1,14 @@
 import { IS_MOBILE } from "@/constantsDom";
 import {
+  ICON_GYM_COLOR,
   ICON_GYM_TOOLTIP_OFFSET,
+  ICON_POKESTOP_COLOR,
   ICON_POKESTOP_TOOLTIP_OFFSET,
-  ICON_POWER_SPOT_TOOLTIP_OFFSET,
+  ICON_POWERSPOT_COLOR,
+  ICON_POWERSPOT_DISABLED_COLOR,
+  ICON_POWERSPOT_DISABLED_STYLE,
+  ICON_POWERSPOT_TOOLTIP_OFFSET,
+  ICON_REMOVED_STYLE,
   ICON_SHOWCASE_TOOLTIP_OFFSET,
 } from "@/leafletIcons";
 import type { CProperties } from "@/types/CFeatures";
@@ -209,7 +215,7 @@ export default function FeatureMarker({
     case "powerspot":
       toolTipOffset = isSimpleMarkerEnabled
         ? DEFAULT_TOOLTIP_OFFSET
-        : ICON_POWER_SPOT_TOOLTIP_OFFSET;
+        : ICON_POWERSPOT_TOOLTIP_OFFSET;
       isPokePoi = true;
       break;
     default:
@@ -220,10 +226,12 @@ export default function FeatureMarker({
     if (markerRef.current) {
       if (removed) {
         // Add zero brightness class to removed POIs
-        markerRef.current?.getElement()?.classList.add("brightness-0");
+        markerRef.current?.getElement()?.classList.add(ICON_REMOVED_STYLE);
       } else if (isDisabled) {
         // Add grayscale class to disabled power spots
-        markerRef.current?.getElement()?.classList.add("grayscale");
+        markerRef.current
+          ?.getElement()
+          ?.classList.add(ICON_POWERSPOT_DISABLED_STYLE);
       }
     }
   }, [isDisabled, removed]);
@@ -242,15 +250,15 @@ export default function FeatureMarker({
     if (isHighlighted) {
       fillColor = "#00ff00";
     } else if (isDisabled) {
-      fillColor = "#888";
+      fillColor = ICON_POWERSPOT_DISABLED_COLOR;
     } else if (removed) {
       fillColor = "#000";
     } else if (type === "gym") {
-      fillColor = "#ff0000";
+      fillColor = ICON_GYM_COLOR;
     } else if (type === "pokestop") {
-      fillColor = "#00ffff";
+      fillColor = ICON_POKESTOP_COLOR;
     } else if (type === "powerspot") {
-      fillColor = "#ff00ff";
+      fillColor = ICON_POWERSPOT_COLOR;
     } else {
       fillColor = "#fff";
     }

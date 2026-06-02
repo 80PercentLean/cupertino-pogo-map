@@ -6,6 +6,7 @@ import iconRetina from "leaflet/dist/images/marker-icon-2x.png";
 import imgLeafletMarker from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
+import { renderToString } from "react-dom/server";
 
 import imgGym from "./assets/gym.webp";
 import imgPokestop from "./assets/pokestop.webp";
@@ -146,6 +147,8 @@ const ICON_GYM_SIZE: PointTuple = [37, 40];
 
 export const ICON_GYM_TOOLTIP_OFFSET = createTooltipOffset(ICON_GYM_SIZE);
 
+export const ICON_GYM_COLOR = "#ff0000";
+
 /** Leaflet icon for gyms. */
 export const iconGym = icon({
   iconAnchor: [18, 40],
@@ -280,17 +283,19 @@ export const iconParkingHighlighted = divIcon({
   html: createIconEmojiHighlightedHtml(emojiParking),
 });
 
-/** Leaflet icon for parking with restricted conditions. */
-export const iconParkingWarn = divIcon({
-  className: "icon-emoji",
-  html: `
-  <div class="relative inline-block">
-    ${emojiParking}
-    <div class="absolute top-0 right-1 flex items-center justify-center bg-yellow-400 text-black rounded-full w-3 h-3 text-xs font-bold ring-1 ring-black">
+export const jsxParkingWarn = (
+  <div className="relative inline-block">
+    {emojiParking}
+    <div className="absolute top-0 -right-1 flex h-3 w-3 items-center justify-center rounded-full bg-yellow-400 text-xs font-bold text-black ring-1 ring-black">
       !
     </div>
   </div>
-  `,
+);
+
+/** Leaflet icon for parking with restricted conditions. */
+export const iconParkingWarn = divIcon({
+  className: "icon-emoji",
+  html: renderToString(jsxParkingWarn),
   iconAnchor: [10, 10],
 });
 
@@ -356,6 +361,8 @@ const ICON_POKESTOP_SIZE: PointTuple = [15, 20];
 export const ICON_POKESTOP_TOOLTIP_OFFSET =
   createTooltipOffset(ICON_POKESTOP_SIZE);
 
+export const ICON_POKESTOP_COLOR = "#00ffff";
+
 /** Leaflet icon for PokeStops. */
 export const iconPokestop = icon({
   iconAnchor: [7, 20],
@@ -401,15 +408,21 @@ export const iconPokestopHighlighted = divIcon({
   `,
 });
 
-const ICON_POWER_SPOT_SIZE: PointTuple = [15, 20];
+const ICON_POWERSPOT_SIZE: PointTuple = [15, 20];
 
-export const ICON_POWER_SPOT_TOOLTIP_OFFSET =
-  createTooltipOffset(ICON_POWER_SPOT_SIZE);
+export const ICON_POWERSPOT_TOOLTIP_OFFSET =
+  createTooltipOffset(ICON_POWERSPOT_SIZE);
+
+export const ICON_POWERSPOT_COLOR = "#ff00ff";
+
+export const ICON_POWERSPOT_DISABLED_COLOR = "#888";
+
+export const ICON_POWERSPOT_DISABLED_STYLE = "grayscale";
 
 /** Leaflet icon for power spots. */
 export const iconPowerspot = icon({
   iconAnchor: [7, 20],
-  iconSize: ICON_POWER_SPOT_SIZE,
+  iconSize: ICON_POWERSPOT_SIZE,
   iconUrl: imgPowerspot,
   popupAnchor: [0, -13],
 });
@@ -513,3 +526,5 @@ export const iconWRestroomHighlighted = divIcon({
   iconAnchor: [10, 10],
   html: createIconEmojiHighlightedHtml(emojiWRestroom),
 });
+
+export const ICON_REMOVED_STYLE = "brightness-0";

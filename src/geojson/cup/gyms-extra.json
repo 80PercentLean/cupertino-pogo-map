@@ -163,7 +163,7 @@
       "properties": {
         "name": "\"Guardians Statue\", Memorial Park",
         "type": "gym",
-        "desc": "This is gym #6 on the standard raid path.\nIt is the first gym used for the quick raid group during Raid Hours.",
+        "desc": "This is gym #6 on the standard raid path.\n\nIt is the first gym used for the quick raid group during Raid Hours.",
         "source": "Wayfarer",
         "ingress": true
       }
