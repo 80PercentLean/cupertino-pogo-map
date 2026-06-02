@@ -1,6 +1,6 @@
 import { GROUP_NAME } from "@/constants";
 import { IS_MOBILE } from "@/constantsDom";
-import { imgPowerspot } from "@/leafletIcons";
+import { imgPowerspot } from "@/leafletImgs";
 import { cn } from "@/lib/utils";
 import { copyToClipboard } from "@/util";
 import type { LatLngTuple } from "leaflet";

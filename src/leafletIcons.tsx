@@ -1,54 +1,26 @@
 /**
  * Code for setting up Leaflet icons.
  */
+import {
+  emojiAllBinaryRestroom,
+  emojiDevpoi,
+  emojiMRestroom,
+  emojiParking,
+  emojiWRestroom,
+  iconRetina,
+  iconShadow,
+  imgGym,
+  imgLeafletMarker,
+  imgPokestop,
+  imgPowerspot,
+  imgShowcase,
+  markerShadow,
+} from "@/leafletImgs";
 import { Marker, type PointTuple, divIcon, icon } from "leaflet";
-import iconRetina from "leaflet/dist/images/marker-icon-2x.png";
-import imgLeafletMarker from "leaflet/dist/images/marker-icon.png";
-import markerShadow from "leaflet/dist/images/marker-shadow.png";
-import iconShadow from "leaflet/dist/images/marker-shadow.png";
 import { renderToString } from "react-dom/server";
 
-import imgGym from "./assets/gym.webp";
-import imgPokestop from "./assets/pokestop.webp";
-import imgPowerspot from "./assets/power-spot.webp";
-import imgShowcase from "./assets/showcase.webp";
-
-/**
- * Create the HTML used for a highlighted emoji icon
- * @param emoji Emoji to use as icon
- * @returns HTML for a highlighted emoji icon
- */
-const createIconEmojiHighlightedHtml = (emoji: string) => `
-    <div style="
-      position: relative;
-      width: 24px;
-      height: 24px;
-    ">
-      <div style="
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 34px;
-        height: 34px;
-        transform: translate(-50%, -50%);
-        background: rgba(255, 255, 255, 0.75);
-        border: 2px solid #fff;
-        border-radius: 9999px;
-        pointer-events: none;
-      "></div>
-      <div
-        class="icon-emoji"
-        style="
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          line-height: 1;"
-      >
-        ${emoji}
-      </div>
-    </div>
-`;
+import { IconEmojiHighlighted, MeetupSpot } from "./leafletJsxComponents";
+import { ICON_HIGHLIGHT_COLOR } from "./leafletStyles";
 
 /**
  * Create the tooltip offset value based off a given icon size.
@@ -57,27 +29,6 @@ const createIconEmojiHighlightedHtml = (emoji: string) => `
 const createTooltipOffset = (iconSize: PointTuple): PointTuple => {
   return [Math.floor(iconSize[0] / 2), Math.floor(iconSize[1] / 2) * -1];
 };
-
-/** Export images. */
-export { imgGym, imgLeafletMarker, imgPokestop, imgPowerspot, imgShowcase };
-
-/** Emoji for all-gender/binary restrooms. */
-export const emojiAllBinaryRestroom = "🚻";
-
-/** Emoji for dev POI. */
-export const emojiDevpoi = "🚧";
-
-/** Emoji for meetup spots. */
-export const emojiMeetupspot = "📍";
-
-/** Emoji for parking areas. */
-export const emojiParking = "🅿️";
-
-/** Emoji for male restrooms. */
-export const emojiMRestroom = "🚹";
-
-/** Emoji for female restrooms. */
-export const emojiWRestroom = "🚺";
 
 /** Default Leaflet icon. */
 export const iconDefault = icon({
@@ -92,62 +43,48 @@ export const iconDefault = icon({
 });
 Marker.prototype.options.icon = iconDefault;
 
+export const jsxDefaultHighlighted = (
+  <div className="relative h-[41px] w-[25px]">
+    <div
+      className={`bg-[${ICON_HIGHLIGHT_COLOR}]/33 pointer-events-none absolute top-1/2 left-1/2 h-[42px] w-[42px] -translate-x-1/2 -translate-y-[60%] rounded-full border border-white`}
+    ></div>
+    <img
+      src={imgLeafletMarker}
+      className="absolute top-0 left-0 h-[41px] w-[25px]"
+    />
+  </div>
+);
+
 export const iconDefaultHighlighted = divIcon({
   className: "",
   iconSize: [25, 41],
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],
-
-  html: `
-    <div style="
-      position: relative;
-      width: 25px;
-      height: 41px;
-    ">
-      <div style="
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 42px;
-        height: 42px;
-        transform: translate(-50%, -60%);
-        background: rgba(255, 255, 255, 0.6);
-        border: 1px solid #fff;
-        border-radius: 9999px;
-        pointer-events: none;
-      "></div>
-      <img
-        src="${imgLeafletMarker}"
-        style="
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 25px;
-          height: 41px;
-        "
-      />
-    </div>
-  `,
+  html: renderToString(jsxDefaultHighlighted),
 });
+
+export const jsxAllBinaryRestroom = (
+  <div className="text-xl text-shadow-sm">{emojiAllBinaryRestroom}</div>
+);
 
 /** Leaflet icon for all/binary gender restrooms. */
 export const iconAllBinaryRestroom = divIcon({
-  className: "icon-emoji",
-  html: `<div>${emojiAllBinaryRestroom}</div>`,
+  className: "",
+  html: renderToString(jsxAllBinaryRestroom),
   iconAnchor: [10, 10],
 });
 
 export const iconAllBinaryRestroomHighlighted = divIcon({
   className: "",
   iconAnchor: [10, 10],
-  html: createIconEmojiHighlightedHtml(emojiAllBinaryRestroom),
+  html: renderToString(
+    <IconEmojiHighlighted>{emojiAllBinaryRestroom}</IconEmojiHighlighted>,
+  ),
 });
 
 const ICON_GYM_SIZE: PointTuple = [37, 40];
 
 export const ICON_GYM_TOOLTIP_OFFSET = createTooltipOffset(ICON_GYM_SIZE);
-
-export const ICON_GYM_COLOR = "#ff0000";
 
 /** Leaflet icon for gyms. */
 export const iconGym = icon({
@@ -160,131 +97,106 @@ export const iconGym = icon({
   shadowUrl: markerShadow,
 });
 
+export const jsxGymHighlighted = (
+  <div className="relative h-10 w-[37px]">
+    <div
+      className={`bg-[${ICON_HIGHLIGHT_COLOR}]/33 pointer-events-none absolute top-1/2 left-1/2 h-[46px] w-[46px] -translate-x-1/2 -translate-y-[55%] rounded-full border-2 border-white`}
+    ></div>
+    <img src={imgGym} className="absolute top-0 left-0 h-10 w-[37px]" />
+  </div>
+);
+
 export const iconGymHighlighted = divIcon({
   className: "",
   iconSize: [37, 40],
   iconAnchor: [18, 40],
   popupAnchor: [0, -33],
-  html: `
-    <div style="
-      position: relative;
-      width: 37px;
-      height: 40px;
-    ">
-      <div style="
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 46px;
-        height: 46px;
-        transform: translate(-50%, -55%);
-        background: rgba(255, 255, 255, 0.75);
-        border: 2px solid #fff;
-        border-radius: 9999px;
-        pointer-events: none;
-      "></div>
-      <img
-        src="${imgGym}"
-        style="
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 37px;
-          height: 40px;
-        "
-      />
-    </div>
-  `,
+  html: renderToString(jsxGymHighlighted),
 });
+
+export const jsxDevpoi = (
+  <div className="text-xl text-shadow-sm">{emojiDevpoi}</div>
+);
 
 /** Leaflet icon for dev POIs. */
 export const iconDevpoi = divIcon({
-  className: "icon-emoji",
-  html: `<div>${emojiDevpoi}</div>`,
+  className: "",
+  html: renderToString(jsxDevpoi),
   iconAnchor: [10, 10],
 });
 
 export const iconDevpoiHighlighted = divIcon({
-  className: "", // override default class to avoid conflicts
+  className: "",
   iconAnchor: [10, 10],
-  html: createIconEmojiHighlightedHtml(emojiDevpoi),
+  html: renderToString(
+    <IconEmojiHighlighted>{emojiDevpoi}</IconEmojiHighlighted>,
+  ),
 });
 
 /** Leaflet icon for meetup spots. */
 export const iconMeetupspot = divIcon({
-  className: "icon-emoji icon-meetup-spot",
-  html: `<div>${emojiMeetupspot}</div>`,
+  className: "",
+  html: renderToString(<MeetupSpot />),
   iconAnchor: [15, 30],
   popupAnchor: [0, -20],
 });
+
+const jsxMeetupSpotHighlighted = (
+  <div className="relative h-9 w-9">
+    <div
+      className={`bg-[${ICON_HIGHLIGHT_COLOR}]/33 pointer-events-none absolute top-1/2 left-1/2 h-[50px] w-[50px] -translate-x-1/2 -translate-y-[58%] rounded-full border-2 border-white`}
+    ></div>
+    <MeetupSpot className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[58%] leading-none" />
+  </div>
+);
 
 export const iconMeetupspotHighlighted = divIcon({
   className: "",
   iconAnchor: [15, 30],
   popupAnchor: [0, -20],
-  html: `
-    <div style="
-      position: relative;
-      width: 36px;
-      height: 36px;
-    ">
-      <div style="
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 50px;
-        height: 50px;
-        transform: translate(-50%, -58%);
-        background: rgba(255, 255, 255, 0.75);
-        border: 2px solid #fff;
-        border-radius: 9999px;
-        pointer-events: none;
-      "></div>
-      <div
-        class="icon-emoji icon-meetup-spot"
-        style="
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -58%);
-          font-size: 30px;
-          line-height: 1;
-        "
-      >
-        ${emojiMeetupspot}
-      </div>
-    </div>
-  `,
+  html: renderToString(jsxMeetupSpotHighlighted),
 });
+
+export const jsxMRestroom = (
+  <div className="text-xl text-shadow-sm">{emojiMRestroom}</div>
+);
 
 /** Leaflet icon for men's restrooms. */
 export const iconMRestroom = divIcon({
-  className: "icon-emoji",
-  html: `<div>${emojiMRestroom}</div>`,
+  className: "",
+  html: renderToString(jsxMRestroom),
   iconAnchor: [10, 10],
 });
 
 export const iconMRestroomHighlighted = divIcon({
   className: "",
   iconAnchor: [10, 10],
-  html: createIconEmojiHighlightedHtml(emojiMRestroom),
+  html: renderToString(
+    <IconEmojiHighlighted>{emojiMRestroom}</IconEmojiHighlighted>,
+  ),
 });
+
+export const jsxParking = (
+  <div className="text-xl text-shadow-sm">{emojiParking}</div>
+);
 
 /** Leaflet icon for parking. */
 export const iconParking = divIcon({
-  className: "icon-emoji",
-  html: `<div>${emojiParking}</div>`,
+  className: "",
+  html: renderToString(jsxParking),
   iconAnchor: [10, 10],
 });
 
 export const iconParkingHighlighted = divIcon({
   className: "",
   iconAnchor: [10, 10],
-  html: createIconEmojiHighlightedHtml(emojiParking),
+  html: renderToString(
+    <IconEmojiHighlighted>{emojiParking}</IconEmojiHighlighted>,
+  ),
 });
 
 export const jsxParkingWarn = (
-  <div className="relative inline-block">
+  <div className="relative inline-block text-xl text-shadow-sm">
     {emojiParking}
     <div className="absolute top-0 -right-1 flex h-3 w-3 items-center justify-center rounded-full bg-yellow-400 text-xs font-bold text-black ring-1 ring-black">
       !
@@ -294,74 +206,30 @@ export const jsxParkingWarn = (
 
 /** Leaflet icon for parking with restricted conditions. */
 export const iconParkingWarn = divIcon({
-  className: "icon-emoji",
+  className: "",
   html: renderToString(jsxParkingWarn),
   iconAnchor: [10, 10],
 });
 
+export const jsxParkingWarnHiglighted = (
+  <div className="relative h-[26px] w-[26px]">
+    <div className="pointer-events-none absolute top-1/2 left-1/2 h-9 w-9 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white bg-white/75"></div>
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none">
+      {jsxParkingWarn}
+    </div>
+  </div>
+);
+
 export const iconParkingWarnHighlighted = divIcon({
   className: "",
   iconAnchor: [10, 10],
-  html: `
-    <div style="
-      position: relative;
-      width: 26px;
-      height: 26px;
-    ">
-      <div style="
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 36px;
-        height: 36px;
-        transform: translate(-50%, -50%);
-        background: rgba(255, 255, 255, 0.75);
-        border: 2px solid #fff;
-        border-radius: 9999px;
-        pointer-events: none;
-      "></div>
-      <div
-        class="icon-emoji"
-        style="
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          line-height: 1;
-        "
-      >
-        <div style="position: relative; display: inline-block;">
-          ${emojiParking}
-          <div style="
-            position: absolute;
-            top: 0;
-            right: -4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #facc15;
-            color: black;
-            border-radius: 9999px;
-            width: 12px;
-            height: 12px;
-            font-size: 10px;
-            font-weight: bold;
-            box-shadow: 0 0 0 1px black;
-          ">
-            !
-          </div>
-        </div>
-      </div>
-    </div>
-  `,
+  html: renderToString(jsxParkingWarnHiglighted),
 });
 
 const ICON_POKESTOP_SIZE: PointTuple = [15, 20];
 
 export const ICON_POKESTOP_TOOLTIP_OFFSET =
   createTooltipOffset(ICON_POKESTOP_SIZE);
-
-export const ICON_POKESTOP_COLOR = "#00ffff";
 
 /** Leaflet icon for PokeStops. */
 export const iconPokestop = icon({
@@ -371,53 +239,27 @@ export const iconPokestop = icon({
   popupAnchor: [0, -13],
 });
 
+export const jsxPokestopHiglighted = (
+  <div className="relative h-5 w-[15px]">
+    <div
+      className={`pointer-events-none absolute top-1/2 left-1/2 h-6 w-6 -translate-x-1/2 -translate-y-[55%] rounded-full border-2 border-white bg-[${ICON_HIGHLIGHT_COLOR}]/33`}
+    ></div>
+    <img src={imgPokestop} className="absolute top-0 left-0 h-5 w-[15px]" />
+  </div>
+);
+
 export const iconPokestopHighlighted = divIcon({
   className: "",
   iconSize: [15, 20],
   iconAnchor: [7, 20],
   popupAnchor: [0, -13],
-  html: `
-    <div style="
-      position: relative;
-      width: 15px;
-      height: 20px;
-    ">
-      <div style="
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 24px;
-        height: 24px;
-        transform: translate(-50%, -55%);
-        background: rgba(255, 255, 255, 0.75);
-        border: 2px solid #fff;
-        border-radius: 9999px;
-        pointer-events: none;
-      "></div>
-      <img
-        src="${imgPokestop}"
-        style="
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 15px;
-          height: 20px;
-        "
-      />
-    </div>
-  `,
+  html: renderToString(jsxPokestopHiglighted),
 });
 
 const ICON_POWERSPOT_SIZE: PointTuple = [15, 20];
 
 export const ICON_POWERSPOT_TOOLTIP_OFFSET =
   createTooltipOffset(ICON_POWERSPOT_SIZE);
-
-export const ICON_POWERSPOT_COLOR = "#ff00ff";
-
-export const ICON_POWERSPOT_DISABLED_COLOR = "#888";
-
-export const ICON_POWERSPOT_DISABLED_STYLE = "grayscale";
 
 /** Leaflet icon for power spots. */
 export const iconPowerspot = icon({
@@ -427,41 +269,21 @@ export const iconPowerspot = icon({
   popupAnchor: [0, -13],
 });
 
+export const jsxPowerspotHiglighted = (
+  <div className="relative h-5 w-[15px]">
+    <div
+      className={`pointer-events-none absolute top-1/2 left-1/2 h-6 w-6 -translate-x-1/2 -translate-y-[55%] rounded-full border-2 border-white bg-[${ICON_HIGHLIGHT_COLOR}]/33`}
+    ></div>
+    <img src={imgPowerspot} className="absolute top-0 left-0 h-5 w-[15px]" />
+  </div>
+);
+
 export const iconPowerspotHighlighted = divIcon({
   className: "",
   iconSize: [15, 20],
   iconAnchor: [7, 20],
   popupAnchor: [0, -13],
-  html: `
-    <div style="
-      position: relative;
-      width: 15px;
-      height: 20px;
-    ">
-      <div style="
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 24px;
-        height: 24px;
-        transform: translate(-50%, -55%);
-        background: rgba(255, 255, 255, 0.75);
-        border: 2px solid #fff;
-        border-radius: 9999px;
-        pointer-events: none;
-      "></div>
-      <img
-        src="${imgPowerspot}"
-        style="
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 15px;
-          height: 20px;
-        "
-      />
-    </div>
-  `,
+  html: renderToString(jsxPowerspotHiglighted),
 });
 
 const ICON_SHOWCASE_SIZE: PointTuple = [24, 25];
@@ -478,53 +300,37 @@ export const iconShowcase = icon({
   iconUrl: imgShowcase,
 });
 
+export const jsxShowcaseHighlighted = (
+  <div className="relative h-[25px] w-6">
+    <div
+      className={`pointer-events-none absolute top-1/2 left-1/2 h-[34px] w-[34px] -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white bg-[${ICON_HIGHLIGHT_COLOR}]/33`}
+    ></div>
+    <img src={imgShowcase} className="absolute top-0 left-0 h-[25px] w-6" />
+  </div>
+);
+
 export const iconShowcaseHighlighted = divIcon({
   className: "",
   iconSize: [24, 25],
   iconAnchor: [12, 12],
-  html: `
-    <div style="
-      position: relative;
-      width: 24px;
-      height: 25px;
-    ">
-      <div style="
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 34px;
-        height: 34px;
-        transform: translate(-50%, -50%);
-        background: rgba(255, 255, 255, 0.75);
-        border: 2px solid #fff;
-        border-radius: 9999px;
-        pointer-events: none;
-      "></div>
-      <img
-        src="${imgShowcase}"
-        style="
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 24px;
-          height: 25px;
-        "
-      />
-    </div>
-  `,
+  html: renderToString(jsxShowcaseHighlighted),
 });
+
+export const jsxWRestroom = (
+  <div className="text-xl text-shadow-sm">{emojiWRestroom}</div>
+);
 
 /** Leaflet icon for women's restrooms. */
 export const iconWRestroom = divIcon({
-  className: "icon-emoji",
-  html: `<div>${emojiWRestroom}</div>`,
+  className: "",
+  html: renderToString(jsxWRestroom),
   iconAnchor: [10, 10],
 });
 
 export const iconWRestroomHighlighted = divIcon({
   className: "",
   iconAnchor: [10, 10],
-  html: createIconEmojiHighlightedHtml(emojiWRestroom),
+  html: renderToString(
+    <IconEmojiHighlighted>{emojiWRestroom}</IconEmojiHighlighted>,
+  ),
 });
-
-export const ICON_REMOVED_STYLE = "brightness-0";

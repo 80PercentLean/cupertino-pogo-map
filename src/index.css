@@ -5,6 +5,7 @@
 @source inline("bg-[#00ffff]"); /* PokeStop color */
 @source inline("bg-[#ff00ff]"); /* Power Spot color */
 @source inline("bg-[#888]"); /* Power Spot disabled color */
+@source inline("bg-[#00ff00]/33"); /* Highlight circle color */
 
 @custom-variant dark (&:is(.dark *));
 
@@ -26,15 +27,6 @@ html#map > body {
 
 #map {
   height: 100dvh;
-}
-
-.icon-emoji {
-  font-size: 20px;
-  text-shadow: 0 -1px 2px rgb(0 0 0 / 60%);
-}
-
-.icon-meetup-spot {
-  font-size: 30px;
 }
 
 .label-map > div {

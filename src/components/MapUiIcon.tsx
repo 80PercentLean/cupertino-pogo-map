@@ -1,9 +1,5 @@
+import { jsxParkingWarn } from "@/leafletIcons";
 import {
-  ICON_GYM_COLOR,
-  ICON_POKESTOP_COLOR,
-  ICON_POWERSPOT_COLOR,
-  ICON_POWERSPOT_DISABLED_COLOR,
-  ICON_POWERSPOT_DISABLED_STYLE,
   emojiAllBinaryRestroom,
   emojiDevpoi,
   emojiMRestroom,
@@ -14,8 +10,15 @@ import {
   imgLeafletMarker,
   imgPokestop,
   imgPowerspot,
-  jsxParkingWarn,
-} from "@/leafletIcons";
+  imgShowcase,
+} from "@/leafletImgs";
+import {
+  ICON_GYM_COLOR,
+  ICON_POKESTOP_COLOR,
+  ICON_POWERSPOT_COLOR,
+  ICON_POWERSPOT_DISABLED_COLOR,
+  ICON_POWERSPOT_DISABLED_STYLE,
+} from "@/leafletStyles";
 import { cn } from "@/lib/utils";
 import { type CProperties } from "@/types/CFeatures";
 
@@ -30,7 +33,7 @@ export interface Props {
 }
 
 /**
- * Map icon used for the UI.,
+ * Map icon used for the UI.
  * Note this is different than the icons used on the actual map,
  * although they are visually the same.
  */
@@ -68,6 +71,16 @@ export default function UiMapIcon({
   }
 
   if (type === "pokestop") {
+    if (subtype === "showcase") {
+      return (
+        <img
+          alt={alt ?? "Icon for Showcases"}
+          src={imgShowcase}
+          className={className}
+        />
+      );
+    }
+
     if (isSimpleMarkerEnabled) {
       return (
         <div

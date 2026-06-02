@@ -1,16 +1,19 @@
 import { IS_MOBILE } from "@/constantsDom";
 import {
-  ICON_GYM_COLOR,
   ICON_GYM_TOOLTIP_OFFSET,
-  ICON_POKESTOP_COLOR,
   ICON_POKESTOP_TOOLTIP_OFFSET,
+  ICON_POWERSPOT_TOOLTIP_OFFSET,
+  ICON_SHOWCASE_TOOLTIP_OFFSET,
+} from "@/leafletIcons";
+import {
+  ICON_GYM_COLOR,
+  ICON_HIGHLIGHT_COLOR,
+  ICON_POKESTOP_COLOR,
   ICON_POWERSPOT_COLOR,
   ICON_POWERSPOT_DISABLED_COLOR,
   ICON_POWERSPOT_DISABLED_STYLE,
-  ICON_POWERSPOT_TOOLTIP_OFFSET,
   ICON_REMOVED_STYLE,
-  ICON_SHOWCASE_TOOLTIP_OFFSET,
-} from "@/leafletIcons";
+} from "@/leafletStyles";
 import type { CProperties } from "@/types/CFeatures";
 import {
   CircleMarker,
@@ -27,7 +30,6 @@ import CCircleMarker from "../CCircleMarker";
 import CMarker from "../CMarker";
 import { useRemoveIdQueryParam, useSetIdQueryParam } from "../hooks";
 import { getLayerKeyFromType, useStore } from "../hooks/store";
-// import NoCaPoiZone from "./NoCaPoiZone";
 import {
   type ModifierBtns,
   createBtnHide,
@@ -234,7 +236,7 @@ export default function FeatureMarker({
           ?.classList.add(ICON_POWERSPOT_DISABLED_STYLE);
       }
     }
-  }, [isDisabled, removed]);
+  }, [isDisabled, isHighlighted, removed]);
 
   useEffect(() => {
     const activeMarker = markerRef.current ?? circleMarkerRef.current;
@@ -245,10 +247,10 @@ export default function FeatureMarker({
   }, [isPopupOpen]);
 
   let marker;
-  if (isPokePoi && isSimpleMarkerEnabled) {
+  if (isPokePoi && subtype !== "showcase" && isSimpleMarkerEnabled) {
     let fillColor;
     if (isHighlighted) {
-      fillColor = "#00ff00";
+      fillColor = ICON_HIGHLIGHT_COLOR;
     } else if (isDisabled) {
       fillColor = ICON_POWERSPOT_DISABLED_COLOR;
     } else if (removed) {

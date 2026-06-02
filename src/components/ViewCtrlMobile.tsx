@@ -13,7 +13,7 @@ import { useStore } from "./hooks/store";
 import { Button } from "./ui/button";
 
 const BTN_BASE_CLASSNAME =
-  "h-14 max-w-20 cursor-pointer flex-col bg-black text-xs text-gray-300 transition-colors duration-500";
+  "h-14 w-full cursor-pointer flex-col bg-black text-xs text-gray-300 transition-colors duration-500";
 const BTN_ACTIVE_CLASSNAME = "bg-emerald-700 text-white";
 
 /**
@@ -57,7 +57,7 @@ export default function ViewCtrlMobile() {
           </Button>
         )}
       </div>
-      <div className="fixed right-0 bottom-0 left-0 z-1002 flex h-20 items-center justify-evenly bg-black pb-[env(safe-area-inset-bottom)]">
+      <div className="pr-[env(safe-area-inset-right)]pb-[env(safe-area-inset-bottom)] fixed right-0 bottom-0 left-0 z-1002 grid h-20 grid-cols-5 place-items-center bg-black pl-[env(safe-area-inset-left)]">
         <Button
           className={cn(
             BTN_BASE_CLASSNAME,

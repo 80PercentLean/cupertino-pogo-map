@@ -20,7 +20,7 @@ import {
   imgLeafletMarker,
   imgPokestop,
   imgPowerspot,
-} from "@/leafletIcons";
+} from "@/leafletImgs";
 import { X } from "lucide-react";
 import { useSearchParams } from "react-router";
 

@@ -1,8 +1,8 @@
+import { imgLeafletMarker } from "@/leafletImgs";
 import { Eye, EyeClosed } from "lucide-react";
 import { Fragment, use } from "react";
 import { Controller, type FieldErrors, useForm } from "react-hook-form";
 
-import { imgLeafletMarker } from "../../leafletIcons";
 import { MapContext } from "../MapContext";
 import { useRemoveIdQueryParam, useSetIdQueryParam } from "../hooks";
 import { useStore } from "../hooks/store";

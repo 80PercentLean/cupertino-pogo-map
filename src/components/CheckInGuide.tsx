@@ -349,7 +349,7 @@ export default function CheckInGuide() {
           expect for some of our meetups:
         </p>
         <div className="my-[1em] w-full overflow-y-auto">
-          <table className="w-full">
+          <table className="w-full text-pretty">
             <thead>
               <tr className="bg-muted m-0 border-t p-0">
                 <th className="border px-4 py-2 text-left font-bold [[align=center]]:text-center [[align=right]]:text-right">
@@ -370,7 +370,7 @@ export default function CheckInGuide() {
                   </span>
                 </td>
                 <td className="border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right">
-                  <ul className="list-disc space-y-1 pl-5 text-pretty">
+                  <ul className="list-disc space-y-1 pl-5">
                     <li>Premium Battle Pass</li>
                     <li>100 Link Charges</li>
                   </ul>
@@ -381,11 +381,11 @@ export default function CheckInGuide() {
                   Max Battles
                   <br />
                   <span className="text-muted-foreground italic">
-                    D-MAX/G-MAX
+                    D-MAX & G-MAX
                   </span>
                 </td>
                 <td className="border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right">
-                  <ul className="list-disc space-y-1 pl-5 text-pretty">
+                  <ul className="list-disc space-y-1 pl-5">
                     <li>800 Max Particles</li>
                   </ul>
                 </td>
@@ -395,7 +395,7 @@ export default function CheckInGuide() {
                   Community Days
                 </td>
                 <td className="border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right">
-                  <ul className="list-disc space-y-1 pl-5 text-pretty">
+                  <ul className="list-disc space-y-1 pl-5">
                     <li>Premium Battle Pass</li>
                     <li>Lucky Egg</li>
                     <li>Star Piece</li>

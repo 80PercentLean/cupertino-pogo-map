@@ -155,6 +155,7 @@ export default function ListView() {
               type,
             });
           }
+          // TODO: hide highlight when featureData is not pushed
         }
       }
     }
@@ -206,7 +207,11 @@ export default function ListView() {
           case "pokestop":
             layer = layerPokestop;
             icon = (
-              <MapUiIcon type="pokestop" className="h-6 w-6 object-contain" />
+              <MapUiIcon
+                subtype={subtype}
+                type="pokestop"
+                className="h-6 w-6 object-contain"
+              />
             );
             break;
 
@@ -284,7 +289,11 @@ export default function ListView() {
                 map?.flyTo(coordinates, 18);
               }, DELAY - 500);
             }}
-            onMouseEnter={() => debouncedHighlight(type, id)}
+            onMouseEnter={() => {
+              if (layer?.[id]?.isVisible) {
+                debouncedHighlight(type, id);
+              }
+            }}
             onMouseLeave={() => {
               if (layer?.[id]?.isHighlighted) {
                 setMarker(type, id, { isHighlighted: false });
@@ -358,7 +367,11 @@ export default function ListView() {
               map?.flyTo(position, 18);
             }, DELAY - 500);
           }}
-          onMouseEnter={() => debouncedPlacedHighlight(i)}
+          onMouseEnter={() => {
+            if (placedMarkerStates[i]?.isVisible) {
+              debouncedPlacedHighlight(i);
+            }
+          }}
           onMouseLeave={() => {
             if (placedMarkerStates[i]?.isHighlighted) {
               updatePlacedMarkerState(i, {
@@ -385,6 +398,12 @@ export default function ListView() {
           </div>
         </Button>,
       );
+    } else {
+      if (placedMarkerStates[i]?.isHighlighted) {
+        updatePlacedMarkerState(i, {
+          isHighlighted: false,
+        });
+      }
     }
   });
 
