@@ -318,10 +318,13 @@ export default function ListView() {
   };
 
   // Build the list of placed markers that will go in front of the main list
-  // TODO: have search affect placed markers
-  const listPlacedMarkers = placedMarkerStates.map(
-    ({ id, isVisible, position }, i) => {
-      return (
+  const listPlacedMarkers: ReactNode[] = [];
+  placedMarkerStates.forEach(({ id, isVisible, position }, i) => {
+    if (
+      deferredQuery === "" ||
+      `placed marker #${i + 1}`.includes(deferredQuery.toLowerCase())
+    ) {
+      listPlacedMarkers.push(
         <Button
           key={id}
           variant="ghost"
@@ -380,10 +383,10 @@ export default function ListView() {
           <div className="flex grow items-center overflow-x-auto pr-2">
             Placed Marker #{i + 1}
           </div>
-        </Button>
+        </Button>,
       );
-    },
-  );
+    }
+  });
 
   const listMain = buildMainList(
     gymsJson.features,
