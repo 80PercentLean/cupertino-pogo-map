@@ -13,11 +13,11 @@ import { ExternalLink } from "lucide-react";
 import { Link } from "react-router";
 
 import BinocularsIcon from "../assets/binoculars.png";
-import CampfireMeetupListScreenshot from "../assets/raw/5d5b9401-eb03-42e2-bf20-fdedbf7634d5.png";
-import CheckInBonusScreenshot from "../assets/raw/8c547686-bf38-40a9-baaa-e68e690018fe.png";
-import CheckInResearchFirstRewardScreenshot from "../assets/raw/37ea8cc7-cf94-4f02-9bfb-828df888fdd7.png";
-import CampfireMapIconScreenshot from "../assets/raw/80b646b7-5624-4260-bbb9-395f902d977e.png";
-import CheckInResearchScreenshot from "../assets/raw/82fdda47-23c7-4182-8dc2-b08b582a46d7.png";
+import CampfireMapIconScreenshot from "../assets/campfire-map-icon.jpg";
+import CampfireMeetupListScreenshot from "../assets/campfire-meetup-list.jpg";
+import CheckInBonusScreenshot from "../assets/check-in-bonus.jpg";
+import CheckInResearchFirstRewardScreenshot from "../assets/check-in-research-first-reward.jpg";
+import CheckInResearchScreenshot from "../assets/check-in-research.jpg";
 import Callout, { CalloutFront } from "./Callout";
 import FooterTxt from "./FooterTxt";
 import { useSetDocTitle } from "./hooks";

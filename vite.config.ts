@@ -15,6 +15,12 @@ export default defineConfig(({ mode }) => {
     return {
       name: "html-transform",
       transformIndexHtml(html, ctx) {
+        let transformedHtml;
+        transformedHtml = html.replace(
+          "__FAVICON__",
+          env.VITE_IS_CENTRAL === "true" ? "/wg-favicon.png" : "/vite.svg",
+        );
+
         const GROUP_NAME =
           env.VITE_IS_CENTRAL === "true" ? "Wild Goose" : "Cupertino PoGO";
 
@@ -22,10 +28,12 @@ export default defineConfig(({ mode }) => {
           const CITY =
             env.VITE_IS_CENTRAL === "true" ? "Santa Clara" : "Cupertino";
 
-          return html.replace(
+          transformedHtml = transformedHtml.replace(
             "__TITLE__",
             `${GROUP_NAME} | Pokémon GO Community in ${CITY}, California`,
           );
+
+          return transformedHtml;
         }
 
         if (ctx.filename.endsWith("/map.html")) {
@@ -38,13 +46,15 @@ export default defineConfig(({ mode }) => {
               ? "Santa Clara Central Park"
               : "Cupertino Memorial Park & De Anza College";
 
-          return html.replace(
+          transformedHtml = transformedHtml.replace(
             "__TITLE__",
             `${MAP_NAME} | Directions & Free Parking for Pokémon GO at ${LOCATION}`,
           );
+
+          return transformedHtml;
         }
 
-        return html;
+        return transformedHtml;
       },
     };
   };

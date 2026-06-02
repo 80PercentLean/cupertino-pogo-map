@@ -3,8 +3,8 @@ import imgPgo from "@/assets/Pokemon_GO_Logo.png";
 import imgCampfire from "@/assets/campfire.png";
 import imgProfessor from "@/assets/gotcg.jpg";
 import imgPbp from "@/assets/pbp.webp";
+import imgMap from "@/assets/pgo-map-bg.jpg";
 import imgRaid from "@/assets/raids-loading.jpg";
-import imgMap from "@/assets/raw/pgo-map-bg.jpg";
 import {
   CAMPFIRE_LINK,
   CHECK_IN_PATH,
