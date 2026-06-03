@@ -167,7 +167,11 @@ export default function ListView() {
           case "gym":
             layer = layerGym;
             icon = (
-              <MapUiIcon type="gym" className="flex h-6 w-6 object-contain" />
+              <MapUiIcon
+                removed={removed}
+                type="gym"
+                className="flex h-6 w-6 object-contain"
+              />
             );
             break;
 
@@ -196,6 +200,7 @@ export default function ListView() {
             layer = layerPokestop;
             icon = (
               <MapUiIcon
+                removed={removed}
                 subtype={subtype}
                 type="pokestop"
                 className="h-6 w-6 object-contain"
@@ -208,6 +213,7 @@ export default function ListView() {
             icon = (
               <MapUiIcon
                 isDisabled={isDisabled}
+                removed={removed}
                 type="powerspot"
                 className="h-6 w-6 object-contain"
               />
@@ -229,6 +235,7 @@ export default function ListView() {
             layer = layerDevpoi;
             icon = (
               <MapUiIcon
+                removed
                 type="devpoi"
                 className="flex h-6 w-6 items-center justify-center"
               />
@@ -256,15 +263,11 @@ export default function ListView() {
           (matchDevPoi && type === "devpoi") ||
           deferredQuery === id
         ) {
-          console.log("item added", name);
           listMain.push(
             <Button
               key={id}
               variant="ghost"
-              className={cn(
-                "h-12 w-full cursor-pointer justify-start gap-2 rounded-none px-4 pr-0 text-sm font-normal md:first:mt-2",
-                removed && "line-through",
-              )}
+              className="col-span-full grid h-12 cursor-pointer grid-cols-subgrid p-0 px-4 font-normal"
               onClick={() => {
                 const mediaQuery = getDesktopMediaQuery();
                 if (!mediaQuery.matches) {
@@ -301,21 +304,12 @@ export default function ListView() {
                 }
               }}
             >
-              <div className="flex h-full w-6 items-center justify-center">
-                {icon}
-              </div>
-              <div className="flex h-full items-center justify-center">
-                {layer?.[id]?.isVisible ? (
-                  <Eye className="w-4" />
-                ) : (
-                  <EyeClosed className="h-4 w-4" />
-                )}
+              <div className="justify-self-center">{icon}</div>
+              <div className="justify-self-center">
+                {layer?.[id]?.isVisible ? <Eye /> : <EyeClosed />}
               </div>
               <div
-                className={cn(
-                  "flex grow items-center overflow-x-auto pr-2",
-                  removed && "line-through",
-                )}
+                className={cn("truncate text-left", removed && "line-through")}
               >
                 {name}
               </div>
@@ -342,7 +336,7 @@ export default function ListView() {
           key={id}
           variant="ghost"
           className={
-            "h-12 w-full cursor-pointer justify-start gap-2 rounded-none px-4 pr-0 text-sm font-normal md:first:mt-2"
+            "col-span-full grid h-12 cursor-pointer grid-cols-subgrid p-0 px-4 font-normal"
           }
           onClick={() => {
             const mediaQuery = getDesktopMediaQuery();
@@ -384,22 +378,16 @@ export default function ListView() {
             }
           }}
         >
-          <div className="flex h-full w-6 items-center justify-center">
+          <div className="justify-self-center">
             <MapUiIcon
               alt="Placed Marker Icon"
               className="h-6 w-6 object-contain"
             />
           </div>
-          <div className="flex h-full items-center justify-center">
-            {isVisible ? (
-              <Eye className="w-4" />
-            ) : (
-              <EyeClosed className="h-4 w-4" />
-            )}
+          <div className="justify-self-center">
+            {isVisible ? <Eye /> : <EyeClosed />}
           </div>
-          <div className="flex grow items-center overflow-x-auto pr-2">
-            Placed Marker #{i + 1}
-          </div>
+          <div className="truncate text-left">Placed Marker #{i + 1}</div>
         </Button>,
       );
     } else if (placedMarkerStates[i]?.isHighlighted) {
@@ -421,7 +409,7 @@ export default function ListView() {
 
   if (listMain.length === 0 && listPlacedMarkers.length === 0) {
     listMain.push(
-      <div key="not-found" className="px-4 py-4 text-sm italic">
+      <div key="not-found" className="col-span-full px-4 py-4 text-sm italic">
         No points of interest were found...
       </div>,
     );
@@ -466,7 +454,7 @@ export default function ListView() {
           </Button>
         </InputGroupAddon>
       </InputGroup>
-      <div className="h-fit overflow-x-hidden overflow-y-scroll">
+      <div className="grid grid-cols-[40px_24px_1fr] gap-x-2 overflow-x-hidden overflow-y-scroll">
         {listPlacedMarkers}
         {listMain}
       </div>

@@ -12,6 +12,7 @@ import {
   ICON_POWERSPOT_COLOR,
   ICON_POWERSPOT_DISABLED_COLOR,
   ICON_POWERSPOT_DISABLED_STYLE,
+  ICON_REMOVED_COLOR,
   ICON_REMOVED_STYLE,
 } from "@/leafletStyles";
 import type { CProperties } from "@/types/CFeatures";
@@ -254,7 +255,7 @@ export default function FeatureMarker({
     } else if (isDisabled) {
       fillColor = ICON_POWERSPOT_DISABLED_COLOR;
     } else if (removed) {
-      fillColor = "#000";
+      fillColor = ICON_REMOVED_COLOR;
     } else if (type === "gym") {
       fillColor = ICON_GYM_COLOR;
     } else if (type === "pokestop") {

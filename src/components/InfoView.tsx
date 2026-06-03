@@ -15,15 +15,15 @@ export default function InfoView() {
     <UiOverlayCard
       title={<UiOverlayCardIconTitle Icon={Info} text="Information" />}
     >
-      <h2 className="font-semibold">About This Project</h2>
-      <p className="mt-6">
+      <h2 className="font-semibold text-balance">About This Project</h2>
+      <p className="mt-[1em] text-pretty">
         This map app is an open source project run by{" "}
         <LinkExt href={CAMPFIRE_LINK} openNewWindow>
           {GROUP_NAME}
         </LinkExt>
         .
       </p>
-      <p className="mt-6">
+      <p className="mt-[1em]">
         You can find the GitHub repository here:
         <br />
         <LinkExt
@@ -33,9 +33,34 @@ export default function InfoView() {
           https://github.com/80PercentLean/cupertino-pogo-map
         </LinkExt>
       </p>
-      <Separator className="my-6" />
-      <h2 className="font-semibold">Leaflet Attribution</h2>
-      <ul className="mt-6 list-disc space-y-2 pl-4">
+      <Separator className="my-[2em]" />
+      <h2 className="font-semibold text-balance">
+        What Are Enabled & Disabled Power Spots?
+      </h2>
+      <p className="mt-[1em] text-pretty">
+        Enabled/Disabled Power Spots are not official terms, but we use it to
+        distinguish different types of Power Spots that people usually don't
+        consider.
+      </p>
+      <p className="mt-[1em] text-pretty">
+        Most people are aware of <b>Active Power Spots</b> which are the Power
+        Spots that can spawn Pokémon for that given day.
+      </p>
+      <p className="mt-[1em] text-pretty">
+        <b>Enabled Power Spots</b> are different in that they are Power Spots
+        that are in the currently monthly spawn pool. That means for any given
+        day, they have a chance to become Active Power Spots and spawn Pokémon.
+      </p>
+      <p className="mt-[1em] text-pretty">
+        <b>Disabled Power Spots</b> are Power Spots that are not in the current
+        monthly spawn pool. That means for the given monthly time period, they
+        can never become Active Power Spots. When the monthly rotation occurs,
+        they do have a chance in becoming an Enabled Power Spot which in turn
+        will allow them to possibly spawn Pokémon for that month.
+      </p>
+      <Separator className="my-[2em]" />
+      <h2 className="font-semibold text-balance">Leaflet Attribution</h2>
+      <ul className="mt-[1em] list-disc space-y-2 pl-4">
         <li>
           Default tile layer: &copy;{" "}
           <LinkExt href="https://www.openstreetmap.org/copyright">

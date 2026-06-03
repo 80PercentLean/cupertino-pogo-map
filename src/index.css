@@ -5,7 +5,20 @@
 @source inline("bg-[#00ffff]"); /* PokeStop color */
 @source inline("bg-[#ff00ff]"); /* Power Spot color */
 @source inline("bg-[#888]"); /* Power Spot disabled color */
-@source inline("bg-[#00ff00]/33"); /* Highlight circle color */
+@source inline("bg-[#00ff00]/33"); /* Highlight color */
+@source inline("bg-[#000]"); /* Removed color */
+
+/* Used for dynamically defining rows for legend */
+@source inline("grid-rows-1");
+@source inline("grid-rows-2");
+@source inline("grid-rows-3");
+@source inline("grid-rows-4");
+@source inline("grid-rows-5");
+@source inline("grid-rows-6");
+@source inline("md:grid-rows-1");
+@source inline("md:grid-rows-2");
+@source inline("md:grid-rows-3");
+@source inline("md:grid-rows-4");
 
 @custom-variant dark (&:is(.dark *));
 

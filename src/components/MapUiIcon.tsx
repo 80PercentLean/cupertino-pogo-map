@@ -18,6 +18,8 @@ import {
   ICON_POWERSPOT_COLOR,
   ICON_POWERSPOT_DISABLED_COLOR,
   ICON_POWERSPOT_DISABLED_STYLE,
+  ICON_REMOVED_COLOR,
+  ICON_REMOVED_STYLE,
 } from "@/leafletStyles";
 import { cn } from "@/lib/utils";
 import { type CProperties } from "@/types/CFeatures";
@@ -28,6 +30,7 @@ export interface Props {
   alt?: string;
   className?: string;
   isDisabled?: boolean;
+  removed?: boolean | string;
   subtype?: CProperties["subtype"];
   type?: CProperties["type"];
 }
@@ -41,6 +44,7 @@ export default function UiMapIcon({
   alt,
   className,
   isDisabled,
+  removed,
   subtype,
   type,
 }: Props) {
@@ -49,12 +53,21 @@ export default function UiMapIcon({
   if (type === "gym") {
     if (isSimpleMarkerEnabled) {
       return (
-        <div className={cn(`rounded-full bg-[${ICON_GYM_COLOR}]`, className)} />
+        <div
+          className={cn(
+            `rounded-full bg-[${removed ? ICON_REMOVED_COLOR : ICON_GYM_COLOR}]`,
+            className,
+          )}
+        />
       );
     }
 
     return (
-      <img alt={alt ?? "Icon for Gyms"} src={imgGym} className={className} />
+      <img
+        alt={alt ?? "Icon for Gyms"}
+        src={imgGym}
+        className={cn(removed && ICON_REMOVED_STYLE, className)}
+      />
     );
   }
 
@@ -76,34 +89,16 @@ export default function UiMapIcon({
         <img
           alt={alt ?? "Icon for Showcases"}
           src={imgShowcase}
-          className={className}
+          className={cn(removed && ICON_REMOVED_STYLE, className)}
         />
       );
     }
 
-    if (isSimpleMarkerEnabled) {
-      return (
-        <div
-          className={cn(`rounded-full bg-[${ICON_POKESTOP_COLOR}]`, className)}
-        />
-      );
-    }
-
-    return (
-      <img
-        alt={alt ?? "Icon for PokéStops"}
-        src={imgPokestop}
-        className={className}
-      />
-    );
-  }
-
-  if (type === "powerspot") {
     if (isSimpleMarkerEnabled) {
       return (
         <div
           className={cn(
-            `rounded-full bg-[${isDisabled ? ICON_POWERSPOT_DISABLED_COLOR : ICON_POWERSPOT_COLOR}]`,
+            `rounded-full bg-[${removed ? ICON_REMOVED_COLOR : ICON_POKESTOP_COLOR}]`,
             className,
           )}
         />
@@ -112,9 +107,39 @@ export default function UiMapIcon({
 
     return (
       <img
+        alt={alt ?? "Icon for PokéStops"}
+        src={imgPokestop}
+        className={cn(removed && ICON_REMOVED_STYLE, className)}
+      />
+    );
+  }
+
+  if (type === "powerspot") {
+    if (isSimpleMarkerEnabled) {
+      let color;
+      if (removed) {
+        color = ICON_REMOVED_COLOR;
+      } else if (isDisabled) {
+        color = ICON_POWERSPOT_DISABLED_COLOR;
+      } else {
+        color = ICON_POWERSPOT_COLOR;
+      }
+
+      return <div className={cn(`rounded-full bg-[${color}]`, className)} />;
+    }
+
+    let style;
+    if (removed) {
+      style = ICON_REMOVED_STYLE;
+    } else if (isDisabled) {
+      style = ICON_POWERSPOT_DISABLED_STYLE;
+    }
+
+    return (
+      <img
         alt={alt ?? "Icon for Power Spots"}
         src={imgPowerspot}
-        className={cn(className, isDisabled && ICON_POWERSPOT_DISABLED_STYLE)}
+        className={cn(style, className)}
       />
     );
   }

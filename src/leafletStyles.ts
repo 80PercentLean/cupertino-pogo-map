@@ -11,3 +11,5 @@ export const ICON_POWERSPOT_DISABLED_COLOR = "#888";
 export const ICON_POWERSPOT_DISABLED_STYLE = "grayscale";
 
 export const ICON_REMOVED_STYLE = "brightness-0";
+
+export const ICON_REMOVED_COLOR = "#000";
