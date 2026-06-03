@@ -193,7 +193,7 @@ exports[`loads <MyLocationMarker> with set location > matches snapshot 1`] = `
             <path
               d="M0 0"
               data-testid="marker-my-location"
-              fill="#5c84f0"
+              fill="#3b82f6"
               fill-opacity="1"
               fill-rule="evenodd"
               stroke="#fff"
