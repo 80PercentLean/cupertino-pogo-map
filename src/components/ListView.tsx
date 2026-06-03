@@ -35,6 +35,7 @@ interface FeatureData {
   id: string;
   isDisabled?: CProperties["isDisabled"];
   isHidden?: CProperties["isHidden"];
+  isImpossible?: CProperties["isImpossible"];
   name: CProperties["name"];
   removed?: CProperties["removed"];
   subtype?: CProperties["subtype"];
@@ -100,7 +101,15 @@ export default function ListView() {
       for (const {
         geometry: { coordinates },
         id,
-        properties: { isDisabled, isHidden, name, removed, subtype, type },
+        properties: {
+          isDisabled,
+          isHidden,
+          isImpossible,
+          name,
+          removed,
+          subtype,
+          type,
+        },
       } of currFeatures) {
         featureData.push({
           coordinates: [coordinates[1], coordinates[0]],
@@ -108,6 +117,7 @@ export default function ListView() {
           name,
           isDisabled,
           isHidden,
+          isImpossible,
           removed,
           subtype,
           type,
@@ -133,6 +143,7 @@ export default function ListView() {
         id,
         isDisabled,
         isHidden,
+        isImpossible,
         name,
         removed,
         subtype,
@@ -213,6 +224,7 @@ export default function ListView() {
             icon = (
               <MapUiIcon
                 isDisabled={isDisabled}
+                isImpossible={isImpossible}
                 removed={removed}
                 type="powerspot"
                 className="h-6 w-6 object-contain"

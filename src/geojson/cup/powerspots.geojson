@@ -235,14 +235,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "U.S. Bank Branch",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fb451"
+        "l14Id": "808fb451",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.04483, 37.319561],
@@ -608,14 +608,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Visual and Performing Arts Center",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fb44d"
+        "l14Id": "808fb44d",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.043909, 37.321965],
@@ -671,7 +671,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Jkr Okaigan Dojo",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -679,7 +678,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fb445",
-        "isHidden": true
+        "isHidden": true,
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.054705, 37.322201],
@@ -713,7 +713,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Kumon Math & Reading Center of Cupertino - West",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -721,7 +720,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fb445",
-        "isHidden": true
+        "isHidden": true,
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.055061, 37.322949],
@@ -774,14 +774,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Vanitha Sankaran",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fb44d"
+        "l14Id": "808fb44d",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.038683, 37.324189],
@@ -895,14 +895,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Peet's Coffee & Tea",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fb453"
+        "l14Id": "808fb453",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.038324, 37.323121],
@@ -975,7 +975,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Memorial Park Rules East Sign",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -984,6 +983,7 @@
         "isCommunityContributed": true,
         "l14Id": "808fb44f",
         "photo": "43724c577be53244ac28e9ce54916d49.16.jpg",
+        "isImpossible": true,
         "submitter": "80PercentLean",
         "submitted": "2025-10-29T08:00:00Z",
         "created": "2025-11-01T08:00:00Z"
@@ -1082,14 +1082,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "California History Center",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fb44f"
+        "l14Id": "808fb44f",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.047294, 37.320819],
@@ -1145,7 +1145,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Starbucks",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -1153,7 +1152,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fb445",
-        "isHidden": true
+        "isHidden": true,
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.054806, 37.323059],
@@ -1250,7 +1250,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Sun Acupuncture Wellness Clinic",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -1258,7 +1257,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fb445",
-        "isHidden": true
+        "isHidden": true,
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.052515, 37.323061],
@@ -1313,7 +1313,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Ballet lady with butterfly",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -1321,7 +1320,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fb44f",
-        "photo": "50e752185d5e3c6cbf30912d632f715c.16.jpg"
+        "photo": "50e752185d5e3c6cbf30912d632f715c.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.048742, 37.324161],
@@ -1563,14 +1563,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Cupertino Historical Society and Museum",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fb44d"
+        "l14Id": "808fb44d",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.042587, 37.325684],
@@ -1646,14 +1646,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Sihua Technologies",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fb44d"
+        "l14Id": "808fb44d",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.038637, 37.324222],
@@ -1750,7 +1750,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Little Free Library",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -1758,7 +1757,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fb453",
-        "photo": "6e13a7944f793e65aef5d60dd16ae1ed.16.jpg"
+        "photo": "6e13a7944f793e65aef5d60dd16ae1ed.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.03836, 37.32308],
@@ -1792,7 +1792,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Pagan Totem Pole",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -1801,6 +1800,7 @@
         "isCommunityContributed": true,
         "l14Id": "808fb44f",
         "photo": "6fd708ea77d84a2ab8e2b5d94a8c9928.16.jpg",
+        "isImpossible": true,
         "ingress": true
       },
       "geometry": {
@@ -1854,7 +1854,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Halo Custom Guitars, Inc.",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -1862,7 +1861,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fb445",
-        "isHidden": true
+        "isHidden": true,
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.051727, 37.323288],
@@ -1875,7 +1875,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Mary Avenue Dog Park",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -1883,7 +1882,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fb447",
-        "isHidden": false
+        "isHidden": false,
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.050796, 37.327614],
@@ -2126,14 +2126,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Cupertino Sports Center",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fb44d"
+        "l14Id": "808fb44d",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.04303, 37.323363],
@@ -2227,7 +2227,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Enjoy Smoke-Free Parks",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -2236,6 +2235,7 @@
         "isCommunityContributed": true,
         "l14Id": "808fb44f",
         "photo": "8ccbc9eef9fb3fb6a4b913048bcccdb7.16.jpg",
+        "isImpossible": true,
         "submitter": "80PercentLean",
         "submitted": "2025-10-29T08:00:00Z",
         "created": "2025-11-04T08:00:00Z"
@@ -2414,7 +2414,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "AccessUSA",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -2422,6 +2421,7 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fb449",
+        "isImpossible": true,
         "isHidden": true
       },
       "geometry": {
@@ -2435,7 +2435,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Pet Ear Care Center",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -2443,7 +2442,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fb445",
-        "isHidden": true
+        "isHidden": true,
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.051795, 37.323334],
@@ -2602,7 +2602,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Salon Belle Vie",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -2610,7 +2609,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fb445",
-        "isHidden": true
+        "isHidden": true,
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.054825, 37.323078],
@@ -2623,14 +2623,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "New Life Church-Cupertino",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fb455"
+        "l14Id": "808fb455",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.039789, 37.314977],
@@ -2664,7 +2664,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Mary Avenue Dog Park Dedication Plaque",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -2674,6 +2673,7 @@
         "l14Id": "808fb447",
         "isHidden": true,
         "photo": "a4a6271d6ce330cab1c5741b1e86f407.16.jpg",
+        "isImpossible": true,
         "submitter": "80PercentLean",
         "submitted": "2025-11-08T08:00:00Z",
         "created": "2025-11-10T08:00:00Z"
@@ -2792,14 +2792,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Cupertino Veterans Memorial",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fb44f"
+        "l14Id": "808fb44f",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.045505, 37.324439],
@@ -3187,7 +3187,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "USS Little (DD-803) Memorial Stone",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -3195,7 +3194,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fb44f",
-        "photo": "b6dcc86d368a38ff924c0ab8e12245e7.16.jpg"
+        "photo": "b6dcc86d368a38ff924c0ab8e12245e7.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.045328, 37.324384],
@@ -3333,7 +3333,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Herbal Mineral Semi Permanent Makeup and Academy",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -3341,7 +3340,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fb445",
-        "isHidden": true
+        "isHidden": true,
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.052439, 37.32308],
@@ -3396,7 +3396,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Beautiful Chaos",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -3404,7 +3403,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fb44f",
-        "photo": "c4a155f41af749de9aeaab9301a1bcf2.12.jpg"
+        "photo": "c4a155f41af749de9aeaab9301a1bcf2.12.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.045795, 37.321792],
@@ -3497,14 +3497,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Le Petit Trianon",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fb44f"
+        "l14Id": "808fb44f",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.047292, 37.320817],
@@ -3642,14 +3642,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Voyager Craft Coffee",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fb453"
+        "l14Id": "808fb453",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.038309, 37.323135],
@@ -3766,14 +3766,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Quinn Orthopedic Physical Therapy",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fb44d"
+        "l14Id": "808fb44d",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.03858, 37.324187],
@@ -3848,14 +3848,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Euphrat Museum of Art",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fb453"
+        "l14Id": "808fb453",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.043699, 37.321704],
@@ -4012,7 +4012,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Goal Oriented Academics & Learning Sciences",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -4020,7 +4019,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fb445",
-        "isHidden": true
+        "isHidden": true,
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.052427, 37.32312],
@@ -4052,7 +4052,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Women in the Military",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -4060,7 +4059,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fb44f",
-        "photo": "f172b95a768e304f803eb40f8125b124.16.jpg"
+        "photo": "f172b95a768e304f803eb40f8125b124.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.045293, 37.324373],
@@ -4073,14 +4073,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Crystal Chior",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fb453"
+        "l14Id": "808fb453",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.039342, 37.322472],
@@ -4299,7 +4299,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Cupertino Victorian Dollhouse",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -4308,6 +4307,7 @@
         "isCommunityContributed": true,
         "l14Id": "808fb44d",
         "photo": "fd6205448fd6308bbe897ad2956b1c65.16.jpg",
+        "isImpossible": true,
         "submitter": "80PercentLean",
         "submitted": "2025-11-08T08:00:00Z",
         "created": "2025-11-10T08:00:00Z"
@@ -4342,14 +4342,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Cupertino Sanitary District",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fb44d"
+        "l14Id": "808fb44d",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.038583, 37.324252],
@@ -4383,7 +4383,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Loans By Irene - Granite Financial",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -4391,7 +4390,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fb445",
-        "isHidden": true
+        "isHidden": true,
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.052465, 37.323085],

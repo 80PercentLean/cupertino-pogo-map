@@ -12,6 +12,8 @@ import {
   ICON_POWERSPOT_COLOR,
   ICON_POWERSPOT_DISABLED_COLOR,
   ICON_POWERSPOT_DISABLED_STYLE,
+  ICON_POWERSPOT_IMPOSSIBLE_COLOR,
+  ICON_POWERSPOT_IMPOSSIBLE_STYLE,
   ICON_REMOVED_COLOR,
   ICON_REMOVED_STYLE,
 } from "@/leafletStyles";
@@ -52,14 +54,15 @@ export interface BtnModifierFlags {
 
 export interface Props {
   btnModifierFlags?: BtnModifierFlags;
-  desc?: string;
+  desc?: CProperties["desc"];
   icon: DivIcon | Icon;
   iconHighlighted?: DivIcon;
   id: string | number;
-  isDisabled?: boolean;
-  photo?: string;
+  isDisabled?: CProperties["isDisabled"];
+  isImpossible?: CProperties["isImpossible"];
+  photo?: CProperties["photo"];
   position: LatLngTuple;
-  removed?: boolean | string;
+  removed?: CProperties["removed"];
   renderHtml?: boolean;
   subtitle?: string;
   subtype?: CProperties["subtype"];
@@ -77,6 +80,7 @@ export default function FeatureMarker({
   icon,
   iconHighlighted,
   isDisabled,
+  isImpossible,
   photo,
   position,
   removed,
@@ -226,25 +230,50 @@ export default function FeatureMarker({
   }
 
   useEffect(() => {
+    let timeout;
     if (markerRef.current) {
-      if (removed) {
-        // Add zero brightness class to removed POIs
-        markerRef.current?.getElement()?.classList.add(ICON_REMOVED_STYLE);
-      } else if (isDisabled) {
-        // Add grayscale class to disabled power spots
-        markerRef.current
-          ?.getElement()
-          ?.classList.add(ICON_POWERSPOT_DISABLED_STYLE);
-      }
+      // Hack to reapply the classes since it can try to apply before the element exists
+      setTimeout(() => {
+        if (removed || isImpossible || isDisabled) {
+          console.log("get ele", markerRef.current?.getElement());
+        }
+
+        if (removed) {
+          // Add zero brightness class to removed POIs
+          markerRef.current?.getElement()?.classList.add(ICON_REMOVED_STYLE);
+        } else if (isImpossible) {
+          markerRef.current
+            ?.getElement()
+            ?.classList.add(ICON_POWERSPOT_IMPOSSIBLE_STYLE);
+        } else if (isDisabled) {
+          // Add grayscale class to disabled power spots
+          markerRef.current
+            ?.getElement()
+            ?.classList.add(ICON_POWERSPOT_DISABLED_STYLE);
+        }
+      }, 0);
     }
-  }, [isDisabled, isHighlighted, removed]);
+
+    return () => {
+      if (timeout) {
+        clearTimeout(timeout);
+      }
+    };
+  }, [isDisabled, isHighlighted, isImpossible, isSimpleMarkerEnabled, removed]);
 
   useEffect(() => {
+    let timeout;
     const activeMarker = markerRef.current ?? circleMarkerRef.current;
     if (activeMarker && isPopupOpen) {
       // Hack to get openPopup to work
       setTimeout(() => activeMarker.openPopup(), 0);
     }
+
+    return () => {
+      if (timeout) {
+        clearTimeout(timeout);
+      }
+    };
   }, [isPopupOpen]);
 
   let marker;
@@ -252,10 +281,12 @@ export default function FeatureMarker({
     let fillColor;
     if (isHighlighted) {
       fillColor = ICON_HIGHLIGHT_COLOR;
-    } else if (isDisabled) {
-      fillColor = ICON_POWERSPOT_DISABLED_COLOR;
     } else if (removed) {
       fillColor = ICON_REMOVED_COLOR;
+    } else if (isImpossible) {
+      fillColor = ICON_POWERSPOT_IMPOSSIBLE_COLOR;
+    } else if (isDisabled) {
+      fillColor = ICON_POWERSPOT_DISABLED_COLOR;
     } else if (type === "gym") {
       fillColor = ICON_GYM_COLOR;
     } else if (type === "pokestop") {

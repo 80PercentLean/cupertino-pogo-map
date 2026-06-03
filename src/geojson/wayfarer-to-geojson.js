@@ -79,6 +79,72 @@ const mergeFeaturesWithExtraData = (extraDataInput, features) => {
   }
 };
 
+const MAX_IMPOSSIBLE_DISTANCE_METERS = 22;
+
+const getPointCoordinates = (feature) => {
+  if (feature?.geometry?.type !== "Point") return null;
+
+  const [lng, lat] = feature.geometry.coordinates;
+  if (typeof lng !== "number" || typeof lat !== "number") return null;
+
+  return [lng, lat];
+};
+
+const haversineDistanceMeters = (coord1, coord2) => {
+  const [lng1, lat1] = coord1;
+  const [lng2, lat2] = coord2;
+
+  const earthRadiusMeters = 6371000;
+  const toRad = (deg) => (deg * Math.PI) / 180;
+
+  const dLat = toRad(lat2 - lat1);
+  const dLng = toRad(lng2 - lng1);
+
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
+
+  return 2 * earthRadiusMeters * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+};
+
+const markImpossiblePowerspots = (
+  featuresPowerspots,
+  featuresGyms,
+  featuresPokestops,
+) => {
+  const existingPois = [...featuresGyms, ...featuresPokestops]
+    .map((feature) => getPointCoordinates(feature))
+    .filter(Boolean);
+
+  const impossiblePowerspotIds = new Set();
+
+  for (const powerspot of featuresPowerspots) {
+    if (impossiblePowerspotIds.has(powerspot.id)) continue;
+
+    const powerspotCoordinates = getPointCoordinates(powerspot);
+    if (!powerspotCoordinates) continue;
+
+    const isImpossible = existingPois.some((poiCoordinates) => {
+      return (
+        haversineDistanceMeters(powerspotCoordinates, poiCoordinates) <=
+        MAX_IMPOSSIBLE_DISTANCE_METERS
+      );
+    });
+
+    if (isImpossible) {
+      powerspot.properties.isImpossible = true;
+
+      if (powerspot.properties.isDisabled) {
+        delete powerspot.properties.isDisabled;
+      }
+
+      impossiblePowerspotIds.add(powerspot.id);
+    }
+  }
+
+  console.log(`[Impossible Power Spots]: ${impossiblePowerspotIds.size}`);
+};
+
 /* Main async processing function */
 const processData = async () => {
   const featuresGyms = [];
@@ -203,6 +269,8 @@ const processData = async () => {
 
   // Wait for all images to finish downloading
   await Promise.all(imagePromises);
+
+  markImpossiblePowerspots(featuresPowerspots, featuresGyms, featuresPokestops);
 
   // Merge extra data
   mergeFeaturesWithExtraData(gymsExtraInput, featuresGyms);

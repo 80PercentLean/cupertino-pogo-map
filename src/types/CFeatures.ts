@@ -30,11 +30,14 @@ export interface CProperties {
   /** Flag which is true when the Wayfarer POI was submitted by the community through Wayfarer. */
   isCommunityContributed?: boolean;
 
-  /** Represents if a Wayfarer POI exists within Wayfarer but is not visible in-game. */
+  /** Represents if a Power Spot is disabled. */
   isDisabled?: boolean;
 
   /** Represents if a POI is isHidden. */
   isHidden?: boolean;
+
+  /** Represents if a Power Spot is impossible. */
+  isImpossible?: boolean;
 
   /**
    * When the Wayfarer POI was updated for the app. Ideally it is when it was edited in Wayfarer.

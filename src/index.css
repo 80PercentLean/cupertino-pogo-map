@@ -5,6 +5,7 @@
 @source inline("bg-[#00ffff]"); /* PokeStop color */
 @source inline("bg-[#ff00ff]"); /* Power Spot color */
 @source inline("bg-[#888]"); /* Power Spot disabled color */
+@source inline("bg-[#704214]"); /* Power Spot impossible color */
 @source inline("bg-[#00ff00]/33"); /* Highlight color */
 @source inline("bg-[#000]"); /* Removed color */
 

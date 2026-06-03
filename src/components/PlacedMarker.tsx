@@ -106,10 +106,17 @@ export default function PlacedMarker({ i }: Props) {
   );
 
   useEffect(() => {
+    let timeout: ReturnType<typeof setTimeout> | undefined;
     if (markerRef.current && isPopupOpen) {
       // Hack to get openPopup to work
-      setTimeout(() => markerRef.current?.openPopup(), 0);
+      timeout = setTimeout(() => markerRef.current?.openPopup(), 0);
     }
+
+    return () => {
+      if (timeout) {
+        clearTimeout(timeout);
+      }
+    };
   }, [isPopupOpen]);
 
   const shareUrl = new URL(window.location.href);

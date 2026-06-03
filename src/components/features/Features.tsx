@@ -65,6 +65,7 @@ export default function Features({
       isCommunityContributed,
       isDisabled,
       isHidden,
+      isImpossible,
       name,
       photo,
       removed,
@@ -101,6 +102,7 @@ export default function Features({
               : iconHighlighted
           }
           isDisabled={isDisabled}
+          isImpossible={isImpossible}
           photo={photo}
           position={position}
           removed={removed}

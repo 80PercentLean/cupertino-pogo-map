@@ -34,9 +34,7 @@ export default function InfoView() {
         </LinkExt>
       </p>
       <Separator className="my-[2em]" />
-      <h2 className="font-semibold text-balance">
-        What Are Enabled & Disabled Power Spots?
-      </h2>
+      <h2 className="font-semibold text-balance">Power Spot Terminology</h2>
       <p className="mt-[1em] text-pretty">
         Enabled/Disabled Power Spots are not official terms, but we use it to
         distinguish different types of Power Spots that people usually don't
@@ -57,6 +55,12 @@ export default function InfoView() {
         can never become Active Power Spots. When the monthly rotation occurs,
         they do have a chance in becoming an Enabled Power Spot which in turn
         will allow them to possibly spawn Pokémon for that month.
+      </p>
+      <p className="mt-[1em] text-pretty">
+        <b>Impossible Power Spots</b> are Power Spots that can never become
+        Enabled Power Spots. Due to certain conditions, they can essentially
+        never exist in-game, but they exist within Wayfarer. They may still
+        appear in other Niantic games.
       </p>
       <Separator className="my-[2em]" />
       <h2 className="font-semibold text-balance">Leaflet Attribution</h2>

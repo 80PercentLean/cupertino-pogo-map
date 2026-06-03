@@ -18,6 +18,8 @@ import {
   ICON_POWERSPOT_COLOR,
   ICON_POWERSPOT_DISABLED_COLOR,
   ICON_POWERSPOT_DISABLED_STYLE,
+  ICON_POWERSPOT_IMPOSSIBLE_COLOR,
+  ICON_POWERSPOT_IMPOSSIBLE_STYLE,
   ICON_REMOVED_COLOR,
   ICON_REMOVED_STYLE,
 } from "@/leafletStyles";
@@ -29,8 +31,9 @@ import { useStore } from "./hooks/store";
 export interface Props {
   alt?: string;
   className?: string;
-  isDisabled?: boolean;
-  removed?: boolean | string;
+  isDisabled?: CProperties["isDisabled"];
+  isImpossible?: CProperties["isImpossible"];
+  removed?: CProperties["removed"];
   subtype?: CProperties["subtype"];
   type?: CProperties["type"];
 }
@@ -44,6 +47,7 @@ export default function UiMapIcon({
   alt,
   className,
   isDisabled,
+  isImpossible,
   removed,
   subtype,
   type,
@@ -119,6 +123,8 @@ export default function UiMapIcon({
       let color;
       if (removed) {
         color = ICON_REMOVED_COLOR;
+      } else if (isImpossible) {
+        color = ICON_POWERSPOT_IMPOSSIBLE_COLOR;
       } else if (isDisabled) {
         color = ICON_POWERSPOT_DISABLED_COLOR;
       } else {
@@ -131,6 +137,8 @@ export default function UiMapIcon({
     let style;
     if (removed) {
       style = ICON_REMOVED_STYLE;
+    } else if (isImpossible) {
+      style = ICON_POWERSPOT_IMPOSSIBLE_STYLE;
     } else if (isDisabled) {
       style = ICON_POWERSPOT_DISABLED_STYLE;
     }

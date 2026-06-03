@@ -245,7 +245,7 @@ export default function SettingsView() {
                     htmlFor="disabled-power-spots"
                     className="cursor-pointer"
                   >
-                    Show disabled power spots
+                    Show disabled & impossible power spots
                   </FieldLabel>
                   <FieldDescription className="text-pretty">
                     Display power spots that are not in the current spawn pool
