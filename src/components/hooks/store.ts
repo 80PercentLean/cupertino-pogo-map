@@ -249,8 +249,8 @@ const SHARED_LOCATION_ERR_MSG =
 const DEFAULT_SETTINGS = {
   disableAnimations: false,
   invertCoords: false,
-  isHidden: false,
   isDisabled: false,
+  isHidden: false,
   isLegendOff: false,
   isSimpleMarkerEnabled: false,
   myLocationRangeType: "poi" as const,
@@ -418,7 +418,17 @@ export const useStore = create<StoreState>()(
         resetSettings: () =>
           set(
             () => ({
-              ...DEFAULT_SETTINGS,
+              disableAnimations: DEFAULT_SETTINGS.disableAnimations,
+              invertCoords: DEFAULT_SETTINGS.invertCoords,
+              isLegendOff: DEFAULT_SETTINGS.isLegendOff,
+              isSimpleMarkerEnabled: DEFAULT_SETTINGS.isSimpleMarkerEnabled,
+              modifiers: {
+                isDisabled: DEFAULT_SETTINGS.isDisabled,
+                isHidden: DEFAULT_SETTINGS.isHidden,
+                removed: DEFAULT_SETTINGS.removed,
+              },
+              myLocationRangeType: DEFAULT_SETTINGS.myLocationRangeType,
+              wayfarerMode: DEFAULT_SETTINGS.wayfarerMode,
             }),
             undefined,
             "resetSettings",

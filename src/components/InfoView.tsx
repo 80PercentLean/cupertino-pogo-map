@@ -58,9 +58,8 @@ export default function InfoView() {
       </p>
       <p className="mt-[1em] text-pretty">
         <b>Impossible Power Spots</b> are Power Spots that can never become
-        Enabled Power Spots. Due to certain conditions, they can essentially
-        never exist in-game, but they exist within Wayfarer. They may still
-        appear in other Niantic games.
+        Enabled Power Spots. They can essentially never exist in-game unless the
+        conditions around them are changed, but they do exist within Wayfarer.
       </p>
       <Separator className="my-[2em]" />
       <h2 className="font-semibold text-balance">Leaflet Attribution</h2>
