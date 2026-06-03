@@ -112,7 +112,7 @@ export default function Legend() {
                   <MapUiIcon
                     subtype="conditionally-free"
                     type="parking"
-                    className="h-4 w-4 md:h-5 md:w-5"
+                    className="h-4 w-4 text-base md:h-5 md:w-5"
                   />
                 </div>
                 <div className="text-xs text-pretty md:text-sm">

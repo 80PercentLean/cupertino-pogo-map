@@ -19,7 +19,12 @@ import {
 import { Marker, type PointTuple, divIcon, icon } from "leaflet";
 import { renderToString } from "react-dom/server";
 
-import { IconEmojiHighlighted, MeetupSpot } from "./leafletJsxComponents";
+import {
+  IconEmojiHighlighted,
+  MeetupSpot,
+  ParkingWarn,
+  ParkingWarnHighlighted,
+} from "./leafletJsxComponents";
 import { ICON_HIGHLIGHT_COLOR } from "./leafletStyles";
 
 /**
@@ -195,35 +200,17 @@ export const iconParkingHighlighted = divIcon({
   ),
 });
 
-export const jsxParkingWarn = (
-  <div className="relative inline-block text-xl text-shadow-sm">
-    {emojiParking}
-    <div className="absolute top-0 -right-1 flex h-3 w-3 items-center justify-center rounded-full bg-yellow-400 text-xs font-bold text-black ring-1 ring-black">
-      !
-    </div>
-  </div>
-);
-
 /** Leaflet icon for parking with restricted conditions. */
 export const iconParkingWarn = divIcon({
   className: "",
-  html: renderToString(jsxParkingWarn),
+  html: renderToString(<ParkingWarn />),
   iconAnchor: [10, 10],
 });
-
-export const jsxParkingWarnHiglighted = (
-  <div className="relative h-[26px] w-[26px]">
-    <div className="pointer-events-none absolute top-1/2 left-1/2 h-9 w-9 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white bg-white/75"></div>
-    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none">
-      {jsxParkingWarn}
-    </div>
-  </div>
-);
 
 export const iconParkingWarnHighlighted = divIcon({
   className: "",
   iconAnchor: [10, 10],
-  html: renderToString(jsxParkingWarnHiglighted),
+  html: renderToString(<ParkingWarnHighlighted />),
 });
 
 const ICON_POKESTOP_SIZE: PointTuple = [15, 20];

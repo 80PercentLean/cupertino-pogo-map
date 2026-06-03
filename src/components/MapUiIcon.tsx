@@ -1,4 +1,3 @@
-import { jsxParkingWarn } from "@/leafletIcons";
 import {
   emojiAllBinaryRestroom,
   emojiDevpoi,
@@ -12,6 +11,7 @@ import {
   imgPowerspot,
   imgShowcase,
 } from "@/leafletImgs";
+import { ParkingWarn } from "@/leafletJsxComponents";
 import {
   ICON_GYM_COLOR,
   ICON_POKESTOP_COLOR,
@@ -77,7 +77,7 @@ export default function UiMapIcon({
 
   if (type === "parking") {
     if (subtype === "conditionally-free") {
-      return <div className={className}>{jsxParkingWarn}</div>;
+      return <ParkingWarn className={className} />;
     }
 
     return <div className={className}>{emojiParking}</div>;
