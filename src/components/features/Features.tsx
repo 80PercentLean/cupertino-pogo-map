@@ -7,8 +7,9 @@ import FeatureMarker, { type BtnModifierFlags } from "./FeatureMarker";
 
 interface GetSubtitleOptions {
   isCommunityContributed?: CProperties["isCommunityContributed"];
-  isDisabled?: CProperties["isHidden"];
+  isDisabled?: CProperties["isDisabled"];
   isHidden?: CProperties["isHidden"];
+  isImpossible?: CProperties["isImpossible"];
   removed?: CProperties["removed"];
   source?: CProperties["source"];
   subtype?: CProperties["subtype"];
@@ -75,7 +76,7 @@ export default function Features({
     },
   } of features) {
     if (
-      (!showDisabled && !showDisabledTemp && isDisabled) ||
+      (!showDisabled && !showDisabledTemp && (isDisabled || isImpossible)) ||
       (!showHidden && !showHiddenTemp && isHidden) ||
       (!showRemoved && removed)
     ) {
@@ -111,7 +112,9 @@ export default function Features({
             typeof subtitle === "function"
               ? subtitle?.(type, {
                   isCommunityContributed,
+                  isDisabled,
                   isHidden,
+                  isImpossible,
                   removed,
                   source,
                   subtype,

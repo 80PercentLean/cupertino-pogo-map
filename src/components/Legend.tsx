@@ -10,6 +10,7 @@ export default function Legend() {
   const isLayerPowerspotOn = useIsLayerOn("powerspot");
   const isLayerRestroomOn = useIsLayerOn("restroom");
   const showDisabled = useStore((s) => s.modifiers.isDisabled);
+  const showDisabledTemp = useStore((s) => s.isDisabledTemp);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   if (
@@ -32,6 +33,14 @@ export default function Legend() {
 
     if (isLayerParkingOn) {
       itemCount += 2;
+    }
+
+    if (isLayerPowerspotOn) {
+      itemCount += 1;
+
+      if (showDisabled) {
+        itemCount += 2;
+      }
     }
 
     if (isLayerPokestopOn) {
@@ -80,30 +89,31 @@ export default function Legend() {
                   Enabled Power Spot
                 </div>
               </div>
-              {showDisabled && (
-                <>
-                  <div className="grid grid-cols-[20px_1fr] items-center gap-x-3">
-                    <MapUiIcon
-                      isDisabled={true}
-                      type="powerspot"
-                      className="h-4 w-4 object-contain md:h-5 md:w-5"
-                    />
-                    <div className="text-xs text-pretty md:text-sm">
-                      Disabled Power Spot
+              {showDisabled ||
+                (showDisabledTemp && (
+                  <>
+                    <div className="grid grid-cols-[20px_1fr] items-center gap-x-3">
+                      <MapUiIcon
+                        isDisabled={true}
+                        type="powerspot"
+                        className="h-4 w-4 object-contain md:h-5 md:w-5"
+                      />
+                      <div className="text-xs text-pretty md:text-sm">
+                        Disabled Power Spot
+                      </div>
                     </div>
-                  </div>
-                  <div className="grid grid-cols-[20px_1fr] items-center gap-x-3">
-                    <MapUiIcon
-                      isImpossible={true}
-                      type="powerspot"
-                      className="h-4 w-4 object-contain md:h-5 md:w-5"
-                    />
-                    <div className="text-xs text-pretty md:text-sm">
-                      Impossible Power Spot
+                    <div className="grid grid-cols-[20px_1fr] items-center gap-x-3">
+                      <MapUiIcon
+                        isImpossible={true}
+                        type="powerspot"
+                        className="h-4 w-4 object-contain md:h-5 md:w-5"
+                      />
+                      <div className="text-xs text-pretty md:text-sm">
+                        Impossible Power Spot
+                      </div>
                     </div>
-                  </div>
-                </>
-              )}
+                  </>
+                ))}
             </>
           )}
           {isLayerMeetupSpotOn && (
