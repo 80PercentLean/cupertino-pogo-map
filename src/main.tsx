@@ -15,6 +15,8 @@ if (E2E === "true") {
 }
 
 async function enableMocking() {
+  // @ts-expect-error process is not found, but this is only used for the dev server anyway
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   if (process.env.NODE_ENV !== "development") {
     return;
   }

@@ -100,7 +100,7 @@ export default function SettingsView() {
           </Field>
           <Field orientation="horizontal">
             <FieldContent>
-              <FieldLabel htmlFor="simple-icons" className="cursor-pointer">
+              <FieldLabel htmlFor="simple-markers" className="cursor-pointer">
                 Use simple markers
               </FieldLabel>
               <FieldDescription className="text-pretty">
@@ -110,7 +110,7 @@ export default function SettingsView() {
               </FieldDescription>
             </FieldContent>
             <Switch
-              id="simple-icons"
+              id="simple-markers"
               checked={isSimpleMarkerEnabled}
               className="cursor-pointer"
               onCheckedChange={() => {
@@ -144,7 +144,12 @@ export default function SettingsView() {
           </Field>
           <Field>
             <FieldContent>
-              <FieldLabel>My Location Range Type</FieldLabel>
+              <FieldLabel
+                htmlFor="my-location-range-type"
+                className="cursor-pointer"
+              >
+                My Location Range Type
+              </FieldLabel>
               <FieldDescription className="text-pretty">
                 Set the type of range around your location marker.
               </FieldDescription>
@@ -156,7 +161,7 @@ export default function SettingsView() {
                 persistSettings("myLocationRangeType", val);
               }}
             >
-              <SelectTrigger>
+              <SelectTrigger id="my-location-range-type">
                 <SelectValue placeholder="My Location Range Type" />
               </SelectTrigger>
               <SelectContent className="z-1001">

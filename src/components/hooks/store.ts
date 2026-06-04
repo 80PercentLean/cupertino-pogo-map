@@ -246,7 +246,7 @@ export interface StoreState {
 const SHARED_LOCATION_ERR_MSG =
   "An error occurred while trying to load the shared location.";
 
-const DEFAULT_SETTINGS = {
+export const DEFAULT_SETTINGS = {
   disableAnimations: false,
   invertCoords: false,
   isDisabled: false,

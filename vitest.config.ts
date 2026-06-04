@@ -15,7 +15,7 @@ export default defineConfig((configEnv) =>
         exclude: [...configDefaults.exclude, "src/e2e/*"],
         include: [...configDefaults.include, "src/e2e/__tests__/*"],
         globals: true,
-        setupFiles: ["./vitest-setup.ts"],
+        setupFiles: ["./vitest-setup.js"],
       },
     }),
   ),
