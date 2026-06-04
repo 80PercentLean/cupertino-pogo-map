@@ -83,6 +83,7 @@
     "eslint-plugin-react-x": "^5.8.3",
     "globals": "^16.4.0",
     "jsdom": "^27.0.1",
+    "msw": "^2.14.6",
     "prettier": "3.6.2",
     "prettier-plugin-tailwindcss": "^0.7.1",
     "stylelint": "^16.25.0",
@@ -95,5 +96,10 @@
     "vite-plugin-stylelint": "^6.0.2",
     "vitest": "^4.0.4",
     "wrangler": "^4.93.0"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
   }
 }

@@ -6,7 +6,14 @@ export const CENTER_CENTRAL: LatLngTuple = [
   37.34153273361254, -121.9753335096175,
 ];
 
-export const IS_CENTRAL = import.meta.env.VITE_IS_CENTRAL === "true";
+/**
+ * An alternate way to read VITE_IS_CENTRAL through a function.
+ * It exists so it can be stubbed by Vitest for certain tests, but from the regular
+ * app runtime perspective it is no different than directly reading IS_CENTRAL.
+ */
+export const GET_IS_CENTRAL = () => import.meta.env.VITE_IS_CENTRAL === "true";
+
+export const IS_CENTRAL = GET_IS_CENTRAL();
 
 export const GROUP_NAME = IS_CENTRAL
   ? "Wild\u00A0Goose"

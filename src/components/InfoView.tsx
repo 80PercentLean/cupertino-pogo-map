@@ -54,7 +54,7 @@ export default function InfoView() {
         monthly spawn pool. That means for the given monthly time period, they
         can never become Active Power Spots. When the monthly rotation occurs,
         they do have a chance in becoming an Enabled Power Spot which in turn
-        will allow them to possibly spawn Pokémon for that month.
+        will allow them to possibly spawn Pokémon during that month.
       </p>
       <p className="mt-[1em] text-pretty">
         <b>Impossible Power Spots</b> are Power Spots that can never become

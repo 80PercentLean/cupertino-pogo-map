@@ -234,10 +234,6 @@ export default function FeatureMarker({
     if (markerRef.current) {
       // Hack to reapply the classes since it can try to apply before the element exists
       setTimeout(() => {
-        if (removed || isImpossible || isDisabled) {
-          console.log("get ele", markerRef.current?.getElement());
-        }
-
         if (removed) {
           // Add zero brightness class to removed POIs
           markerRef.current?.getElement()?.classList.add(ICON_REMOVED_STYLE);

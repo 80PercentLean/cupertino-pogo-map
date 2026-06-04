@@ -1,6 +1,6 @@
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
-import { CAMPFIRE_LINK, CHECK_IN_PATH, IS_CENTRAL } from "@/constants";
+import { CAMPFIRE_LINK, CHECK_IN_PATH, GET_IS_CENTRAL } from "@/constants";
 import { queryOptions, useQuery } from "@tanstack/react-query";
 import { ExternalLink, FlameKindling, Gift } from "lucide-react";
 
@@ -15,6 +15,13 @@ import {
   CardTitle,
 } from "./ui/card";
 import { Spinner } from "./ui/spinner";
+
+interface ApiErrorRes {
+  error: {
+    message: string;
+    status: number;
+  };
+}
 
 interface DiscordEvent {
   id: string;
@@ -57,7 +64,7 @@ const getEventOptions = () => {
     queryKey: ["events"],
     queryFn: async (): Promise<DiscordEventListRes> => {
       let filter;
-      if (IS_CENTRAL) {
+      if (GET_IS_CENTRAL()) {
         filter = "wg";
       } else {
         filter = "cup-pogo";
@@ -72,7 +79,25 @@ const getEventOptions = () => {
       );
 
       if (!res.ok) {
-        throw new Error(`HTTP ${res.status}`);
+        let errData;
+
+        // Try reading the API error response, but if it's not JSON then
+        // something really went wrong and just show the HTTP status code
+        try {
+          errData = (await res.json()) as ApiErrorRes;
+        } catch (err) {
+          console.error(err);
+          throw new Error(`HTTP ${res.status}`);
+        }
+
+        if (errData.error.message) {
+          // The API error response was valid, so show the error message
+          throw new Error(errData.error.message);
+        } else {
+          // Some how the API error response didn't have a message,
+          // so just show the HTTP status code anyway
+          throw new Error(`HTTP ${res.status}`);
+        }
       }
 
       return (await res.json()) as DiscordEventListRes;
