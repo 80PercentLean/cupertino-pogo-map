@@ -15,6 +15,7 @@
     "lint": "eslint .",
     "lint:styles": "stylelint \"src/**/*.css\"",
     "preview": "npm run build && wrangler dev",
+    "preview:e2e": "VITE_E2E=true npm run preview",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
     "test:dev": "npm run test -- --ui",
