@@ -34,8 +34,8 @@ body {
   margin: 0;
 }
 
-html#map,
-html#map > body {
+html#map-app,
+html#map-app > body {
   overflow: hidden;
 }
 

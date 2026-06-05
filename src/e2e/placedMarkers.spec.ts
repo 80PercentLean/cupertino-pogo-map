@@ -1,10 +1,10 @@
 import { expect, test } from "@playwright/test";
 
-import { DEV_SERVER } from "./constants";
+import { MAP_APP } from "./constants";
 import { isMobileProject, isPixel7, longPressContextMenu } from "./util";
 
 test("loads map with no placed markers by default", async ({ page }) => {
-  await page.goto(DEV_SERVER, { waitUntil: "networkidle" });
+  await page.goto(MAP_APP, { waitUntil: "networkidle" });
 
   const markers = await page.locator('[data-testid*="placed-"]').all();
 
@@ -14,7 +14,7 @@ test("loads map with no placed markers by default", async ({ page }) => {
 test("creates a placed marker when the map is clicked", async ({
   page,
 }, testInfo) => {
-  await page.goto(DEV_SERVER, { waitUntil: "networkidle" });
+  await page.goto(MAP_APP, { waitUntil: "networkidle" });
 
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
@@ -26,13 +26,13 @@ test("creates a placed marker when the map is clicked", async ({
   if (IS_MOBILE) {
     await longPressContextMenu(
       page,
-      350,
+      200,
       100,
       1000,
       isPixel7(testInfo.project.name),
     );
   } else {
-    await page.locator("#map").click({ position: { x: 100, y: 100 } });
+    await page.locator("#map").click({ position: { x: 500, y: 100 } });
   }
 
   markers = await page.locator('[data-testid*="placed-"]').all();
@@ -42,7 +42,7 @@ test("creates a placed marker when the map is clicked", async ({
 test("creates two placed markers when the map is clicked at two different locations", async ({
   page,
 }, testInfo) => {
-  await page.goto(DEV_SERVER, { waitUntil: "networkidle" });
+  await page.goto(MAP_APP, { waitUntil: "networkidle" });
 
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
@@ -54,13 +54,13 @@ test("creates two placed markers when the map is clicked at two different locati
   if (IS_MOBILE) {
     await longPressContextMenu(
       page,
-      350,
+      200,
       100,
       1000,
       isPixel7(testInfo.project.name),
     );
   } else {
-    await page.locator("#map").click({ position: { x: 100, y: 100 } });
+    await page.locator("#map").click({ position: { x: 500, y: 100 } });
   }
 
   markers = await page.locator('[data-testid*="placed-"]').all();
@@ -70,13 +70,13 @@ test("creates two placed markers when the map is clicked at two different locati
   if (IS_MOBILE) {
     await longPressContextMenu(
       page,
-      50,
-      480,
+      250,
+      100,
       1000,
       isPixel7(testInfo.project.name),
     );
   } else {
-    await page.locator("#map").click({ position: { x: 200, y: 200 } });
+    await page.locator("#map").click({ position: { x: 550, y: 100 } });
   }
 
   markers = await page.locator('[data-testid*="placed-"]').all();
@@ -86,12 +86,12 @@ test("creates two placed markers when the map is clicked at two different locati
 test("creates a popup when a placed marker is clicked", async ({
   page,
 }, testInfo) => {
-  await page.goto(DEV_SERVER, { waitUntil: "networkidle" });
+  await page.goto(MAP_APP, { waitUntil: "networkidle" });
 
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
   let markers = await page.locator('[data-testid*="placed-"]').all();
-  let popups = await page.locator(".leaflet-popup").all();
+  const popups = await page.locator(".leaflet-popup").all();
 
   expect(markers.length).toBe(0);
   expect(popups.length).toBe(0);
@@ -100,13 +100,13 @@ test("creates a popup when a placed marker is clicked", async ({
   if (IS_MOBILE) {
     await longPressContextMenu(
       page,
-      50,
-      480,
+      200,
+      100,
       1000,
       isPixel7(testInfo.project.name),
     );
   } else {
-    await page.locator("#map").click({ position: { x: 200, y: 200 } });
+    await page.locator("#map").click({ position: { x: 500, y: 100 } });
   }
 
   markers = await page.locator('[data-testid*="placed-"]').all();
@@ -115,14 +115,14 @@ test("creates a popup when a placed marker is clicked", async ({
   // Click the marker
   await markers[0].click();
 
-  popups = await page.locator(".leaflet-popup").all();
-  expect(popups.length).toBe(1);
+  // Wait for popup to appear
+  await expect(page.locator(".leaflet-popup")).toBeVisible();
 });
 
 test("deletes a marker when the marker delete button is clicked", async ({
   page,
 }, testInfo) => {
-  await page.goto(DEV_SERVER, { waitUntil: "networkidle" });
+  await page.goto(MAP_APP, { waitUntil: "networkidle" });
 
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
@@ -136,13 +136,13 @@ test("deletes a marker when the marker delete button is clicked", async ({
   if (IS_MOBILE) {
     await longPressContextMenu(
       page,
-      50,
-      480,
+      200,
+      100,
       1000,
       isPixel7(testInfo.project.name),
     );
   } else {
-    await page.locator("#map").click({ position: { x: 200, y: 200 } });
+    await page.locator("#map").click({ position: { x: 500, y: 100 } });
   }
 
   markers = await page.locator('[data-testid*="placed-"]').all();
@@ -151,8 +151,8 @@ test("deletes a marker when the marker delete button is clicked", async ({
   // Click the marker
   await markers[0].click();
 
-  popups = await page.locator(".leaflet-popup").all();
-  expect(popups.length).toBe(1);
+  // Wait for popup to appear
+  await expect(page.locator(".leaflet-popup")).toBeVisible();
 
   // Click the delete button
   await page.getByTestId("delete-placed-marker-btn").click();

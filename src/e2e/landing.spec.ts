@@ -1,17 +1,17 @@
 import { expect, test } from "@playwright/test";
 
-import { MAP_APP } from "./constants";
+import { DEV_SERVER } from "./constants";
 
 test("has title", async ({ page }) => {
-  await page.goto(MAP_APP);
+  await page.goto(DEV_SERVER);
 
   await expect(page).toHaveTitle(
-    /Cupertino PoGO Map | Directions & Free Parking for Pokémon GO at Cupertino Memorial Park & De Anza College/i,
+    /Cupertino PoGO | Pokémon GO Community in Cupertino, California/i,
   );
 });
 
 test("shows expected default view", async ({ page }) => {
-  await page.goto(MAP_APP, { waitUntil: "networkidle" });
+  await page.goto(DEV_SERVER, { waitUntil: "networkidle" });
 
   await expect(page).toHaveScreenshot({ maxDiffPixels: 100 });
 });

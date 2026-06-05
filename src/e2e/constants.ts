@@ -1,1 +1,3 @@
-export const DEV_SERVER = "http://localhost:5173/cupertino-pogo-map";
+export const DEV_SERVER = "http://localhost:5173";
+
+export const MAP_APP = `${DEV_SERVER}/map`;
