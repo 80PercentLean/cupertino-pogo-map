@@ -6,7 +6,7 @@ on:
     branches: [main, staging]
   workflow_dispatch:
 jobs:
-  vitest:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
