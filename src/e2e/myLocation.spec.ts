@@ -1,14 +1,12 @@
 import { expect, test } from "@playwright/test";
 
-import { MAP_APP } from "./constants";
-
 test.use({
   geolocation: { latitude: 37.324330113371445, longitude: -122.0443618297577 },
   permissions: ["geolocation"],
 });
 
 test("shows my location", async ({ page }) => {
-  await page.goto(MAP_APP, { waitUntil: "networkidle" });
+  await page.goto("/map", { waitUntil: "networkidle" });
 
   // Check that my location marker doesn't exist yet
   await expect(page.getByTestId("my-location")).not.toBeVisible();
@@ -25,7 +23,7 @@ test("shows my location", async ({ page }) => {
 // TODO: This test only works on Firefox.
 // There seems to be an issues with moving to the end position.
 // test("shows change in my location", async ({ page, context }) => {
-//   await page.goto(MAP_APP, { waitUntil: "networkidle" });
+//   await page.goto('/map', { waitUntil: "networkidle" });
 
 //   // Check that my location marker doesn't exist yet
 //   await expect(page.getByTestId("my-location")).not.toBeVisible();

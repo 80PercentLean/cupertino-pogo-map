@@ -1,9 +1,7 @@
 import { expect, test } from "@playwright/test";
 
-import { DEV_SERVER } from "./constants";
-
 test("has title", async ({ page }) => {
-  await page.goto(DEV_SERVER);
+  await page.goto("/");
 
   await expect(page).toHaveTitle(
     /Cupertino PoGO | Pokémon GO Community in Cupertino, California/i,
@@ -11,7 +9,7 @@ test("has title", async ({ page }) => {
 });
 
 test("shows expected default view", async ({ page }) => {
-  await page.goto(DEV_SERVER, { waitUntil: "networkidle" });
+  await page.goto("/", { waitUntil: "networkidle" });
 
   await expect(page).toHaveScreenshot({ maxDiffPixels: 100 });
 });

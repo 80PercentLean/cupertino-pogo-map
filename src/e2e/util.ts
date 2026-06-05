@@ -28,22 +28,20 @@ export const isPixel7 = (projectName: string) => {
 /**
  * Simulates a long press to trigger the context menu event on mobile devices.
  * @param page Playwright page
- * @param clientX X coordinate relative to the viewport
- * @param clientY Y coordinate relative to the viewport
+ * @param position X & Y coordinates relative to the viewport
  * @param duration How long the press should last in milliseconds
  * @param manualContextMenu Manually fire the context menu event after the long press if true
  */
 export const longPressContextMenu = async (
   page: Page,
-  clientX: number,
-  clientY: number,
+  position: { x: number; y: number },
   duration: number,
   manualContextMenu?: boolean,
 ) => {
   await page.evaluate(
-    async ({ clientX, clientY, duration, manualContextMenu }) => {
+    async ({ position, duration, manualContextMenu }) => {
       return new Promise<void>((resolve) => {
-        const el = document.elementFromPoint(clientX, clientY);
+        const el = document.elementFromPoint(position.x, position.y);
 
         if (el === null) {
           throw new Error("Touched element not found");
@@ -52,8 +50,8 @@ export const longPressContextMenu = async (
         const touch = new Touch({
           identifier: Date.now(),
           target: el,
-          clientX,
-          clientY,
+          clientX: position.x,
+          clientY: position.y,
           radiusX: 2.5,
           radiusY: 2.5,
           force: 1,
@@ -80,8 +78,8 @@ export const longPressContextMenu = async (
             // Manually fire the contextmenu event since it doesn't fire with some Playwright projects
             const contextEvent = new MouseEvent("contextmenu", {
               bubbles: true,
-              clientX,
-              clientY,
+              clientX: position.x,
+              clientY: position.y,
               view: window,
             });
             el.dispatchEvent(contextEvent);
@@ -91,6 +89,6 @@ export const longPressContextMenu = async (
         }, duration);
       });
     },
-    { clientX, clientY, duration, manualContextMenu },
+    { position, duration, manualContextMenu },
   );
 };

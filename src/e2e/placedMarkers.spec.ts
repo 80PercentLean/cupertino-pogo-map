@@ -1,10 +1,14 @@
 import { expect, test } from "@playwright/test";
 
-import { MAP_APP } from "./constants";
 import { isMobileProject, isPixel7, longPressContextMenu } from "./util";
 
+const PLACED_MARKER_FIRST_DESKTOP = { x: 500, y: 100 };
+const PLACED_MARKER_SECOND_DESKTOP = { x: 550, y: 100 };
+const PLACED_MARKER_FIRST_MOBILE = { x: 50, y: 100 };
+const PLACED_MARKER_SECOND_MOBILE = { x: 100, y: 100 };
+
 test("loads map with no placed markers by default", async ({ page }) => {
-  await page.goto(MAP_APP, { waitUntil: "networkidle" });
+  await page.goto("/map", { waitUntil: "networkidle" });
 
   const markers = await page.locator('[data-testid*="placed-"]').all();
 
@@ -14,7 +18,7 @@ test("loads map with no placed markers by default", async ({ page }) => {
 test("creates a placed marker when the map is clicked", async ({
   page,
 }, testInfo) => {
-  await page.goto(MAP_APP, { waitUntil: "networkidle" });
+  await page.goto("/map", { waitUntil: "networkidle" });
 
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
@@ -26,13 +30,12 @@ test("creates a placed marker when the map is clicked", async ({
   if (IS_MOBILE) {
     await longPressContextMenu(
       page,
-      200,
-      100,
+      PLACED_MARKER_FIRST_MOBILE,
       1000,
       isPixel7(testInfo.project.name),
     );
   } else {
-    await page.locator("#map").click({ position: { x: 500, y: 100 } });
+    await page.locator("#map").click({ position: PLACED_MARKER_FIRST_DESKTOP });
   }
 
   markers = await page.locator('[data-testid*="placed-"]').all();
@@ -42,7 +45,7 @@ test("creates a placed marker when the map is clicked", async ({
 test("creates two placed markers when the map is clicked at two different locations", async ({
   page,
 }, testInfo) => {
-  await page.goto(MAP_APP, { waitUntil: "networkidle" });
+  await page.goto("/map", { waitUntil: "networkidle" });
 
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
@@ -54,13 +57,12 @@ test("creates two placed markers when the map is clicked at two different locati
   if (IS_MOBILE) {
     await longPressContextMenu(
       page,
-      200,
-      100,
+      PLACED_MARKER_FIRST_MOBILE,
       1000,
       isPixel7(testInfo.project.name),
     );
   } else {
-    await page.locator("#map").click({ position: { x: 500, y: 100 } });
+    await page.locator("#map").click({ position: PLACED_MARKER_FIRST_DESKTOP });
   }
 
   markers = await page.locator('[data-testid*="placed-"]').all();
@@ -70,13 +72,14 @@ test("creates two placed markers when the map is clicked at two different locati
   if (IS_MOBILE) {
     await longPressContextMenu(
       page,
-      250,
-      100,
+      PLACED_MARKER_SECOND_MOBILE,
       1000,
       isPixel7(testInfo.project.name),
     );
   } else {
-    await page.locator("#map").click({ position: { x: 550, y: 100 } });
+    await page
+      .locator("#map")
+      .click({ position: PLACED_MARKER_SECOND_DESKTOP });
   }
 
   markers = await page.locator('[data-testid*="placed-"]').all();
@@ -86,7 +89,7 @@ test("creates two placed markers when the map is clicked at two different locati
 test("creates a popup when a placed marker is clicked", async ({
   page,
 }, testInfo) => {
-  await page.goto(MAP_APP, { waitUntil: "networkidle" });
+  await page.goto("/map", { waitUntil: "networkidle" });
 
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
@@ -100,13 +103,12 @@ test("creates a popup when a placed marker is clicked", async ({
   if (IS_MOBILE) {
     await longPressContextMenu(
       page,
-      200,
-      100,
+      PLACED_MARKER_FIRST_MOBILE,
       1000,
       isPixel7(testInfo.project.name),
     );
   } else {
-    await page.locator("#map").click({ position: { x: 500, y: 100 } });
+    await page.locator("#map").click({ position: PLACED_MARKER_FIRST_DESKTOP });
   }
 
   markers = await page.locator('[data-testid*="placed-"]').all();
@@ -122,7 +124,7 @@ test("creates a popup when a placed marker is clicked", async ({
 test("deletes a marker when the marker delete button is clicked", async ({
   page,
 }, testInfo) => {
-  await page.goto(MAP_APP, { waitUntil: "networkidle" });
+  await page.goto("/map", { waitUntil: "networkidle" });
 
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
@@ -136,13 +138,14 @@ test("deletes a marker when the marker delete button is clicked", async ({
   if (IS_MOBILE) {
     await longPressContextMenu(
       page,
-      200,
-      100,
+      PLACED_MARKER_SECOND_MOBILE,
       1000,
       isPixel7(testInfo.project.name),
     );
   } else {
-    await page.locator("#map").click({ position: { x: 500, y: 100 } });
+    await page
+      .locator("#map")
+      .click({ position: PLACED_MARKER_SECOND_DESKTOP });
   }
 
   markers = await page.locator('[data-testid*="placed-"]').all();

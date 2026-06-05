@@ -8,6 +8,7 @@
   "scripts": {
     "build": "tsc -b && vite build",
     "dev": "vite",
+    "deploy": "npm run build && wrangler deploy",
     "format": "npm run format:check",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
@@ -20,8 +21,7 @@
     "test:e2e": "playwright test",
     "test:e2e:dev": "npm run test:e2e -- --ui",
     "test:e2e:report": "playwright show-report",
-    "test:watch": "npm run test watch",
-    "deploy": "npm run build && wrangler deploy"
+    "test:watch": "npm run test watch"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.3.3",
