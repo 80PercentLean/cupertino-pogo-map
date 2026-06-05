@@ -39,13 +39,15 @@ export default function ToolsViewBreadcrumbs({ nav, setNav }: Props) {
       <BreadcrumbList>
         <BreadcrumbItem>
           {nav === null ? (
-            <BreadcrumbPage>{toolsTitle}</BreadcrumbPage>
+            <BreadcrumbPage>
+              <h1>{toolsTitle}</h1>
+            </BreadcrumbPage>
           ) : (
             <BreadcrumbLink
               className="cursor-pointer"
               onClick={() => setNav(null)}
             >
-              {toolsTitle}
+              <h1>{toolsTitle}</h1>
             </BreadcrumbLink>
           )}
         </BreadcrumbItem>
@@ -53,7 +55,9 @@ export default function ToolsViewBreadcrumbs({ nav, setNav }: Props) {
           <>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage>{latestBreadcrumb}</BreadcrumbPage>
+              <BreadcrumbPage>
+                <h2>{latestBreadcrumb}</h2>
+              </BreadcrumbPage>
             </BreadcrumbItem>
           </>
         )}

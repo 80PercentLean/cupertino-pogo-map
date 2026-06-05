@@ -78,6 +78,10 @@ const getEventOptions = () => {
         },
       );
 
+      if (!res.headers.get("content-type")?.includes("application/json")) {
+        throw new Error("Encountered unexpected response content type");
+      }
+
       if (!res.ok) {
         let errData;
 
@@ -87,17 +91,16 @@ const getEventOptions = () => {
           errData = (await res.json()) as ApiErrorRes;
         } catch (err) {
           console.error(err);
-          throw new Error(`HTTP ${res.status}`);
+          throw new Error("Error parsing response JSON");
         }
 
         if (errData.error.message) {
           // The API error response was valid, so show the error message
           throw new Error(errData.error.message);
-        } else {
-          // Some how the API error response didn't have a message,
-          // so just show the HTTP status code anyway
-          throw new Error(`HTTP ${res.status}`);
         }
+
+        // Some how we got here, so just show the HTTP status code anyway
+        throw new Error(`HTTP ${res.status}`);
       }
 
       return (await res.json()) as DiscordEventListRes;

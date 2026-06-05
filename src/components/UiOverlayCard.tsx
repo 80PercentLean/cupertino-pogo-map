@@ -42,7 +42,9 @@ export default function UiOverlayCard({
           <Card className="absolute top-0 right-0 left-0 mb-20 h-full gap-0 rounded-none pb-15 md:static md:top-auto md:right-auto md:bottom-auto md:left-auto md:m-auto md:h-auto md:max-h-full md:w-125 md:rounded-xl md:pb-0">
             <CardHeader className="border-gray flex flex-row items-center justify-between border-b shadow-sm">
               {title && typeof title === "string" ? (
-                <CardTitle>{title}</CardTitle>
+                <CardTitle>
+                  <h1>{title}</h1>
+                </CardTitle>
               ) : (
                 title
               )}

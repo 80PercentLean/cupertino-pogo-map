@@ -51,7 +51,7 @@ afterEach(() => {
 test("loads <SettingsView>", () => {
   render(<TestComponent />);
 
-  expect(screen.getAllByText(/Settings/i)).toHaveLength(2);
+  expect(screen.getByRole("heading", { name: /Settings/i }));
 });
 
 test("enables disable animations when switch is clicked", async () => {
