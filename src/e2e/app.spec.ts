@@ -11,5 +11,5 @@ test("has title", async ({ page }) => {
 test("shows expected default view", async ({ page }) => {
   await page.goto("/map", { waitUntil: "networkidle" });
 
-  await expect(page).toHaveScreenshot({ maxDiffPixels: 100 });
+  await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 });

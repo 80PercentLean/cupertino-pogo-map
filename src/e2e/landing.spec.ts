@@ -11,5 +11,11 @@ test("has title", async ({ page }) => {
 test("shows expected default view", async ({ page }) => {
   await page.goto("/", { waitUntil: "networkidle" });
 
-  await expect(page).toHaveScreenshot({ maxDiffPixels: 100 });
+  await expect(page).toHaveScreenshot("landing-viewport.png", {
+    maxDiffPixelRatio: 0.0001,
+  });
+  await expect(page).toHaveScreenshot("landing-full.png", {
+    fullPage: true,
+    maxDiffPixelRatio: 0.001,
+  });
 });
