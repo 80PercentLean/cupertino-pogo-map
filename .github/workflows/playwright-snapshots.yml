@@ -2,7 +2,7 @@ name: Update Playwright Snapshots
 on:
   workflow_dispatch:
 jobs:
-  update-snapshots:
+  update-playwright-snapshots:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
