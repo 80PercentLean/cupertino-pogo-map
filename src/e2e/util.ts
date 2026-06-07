@@ -19,7 +19,7 @@ export const isMobileProject = (projectName: string) => {
 };
 
 export const isPixel7 = (projectName: string) => {
-  if (projectName === "pixel7") {
+  if (projectName.includes("pixel7")) {
     return true;
   }
   return false;

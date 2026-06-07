@@ -1,3 +1,5 @@
+import { expect, test } from "@playwright/test";
+
 import { isMobileProject } from "../util";
 
 test("isMobileProject returns true when project name includes iPhone", () => {

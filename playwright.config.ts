@@ -1,5 +1,18 @@
 import { defineConfig, devices } from "@playwright/test";
 
+const BASE_URL_CUP_POGO = "http://localhost:8787";
+const BASE_URL_WG = "http://localhost:8788";
+const METADATA_CUP_POGO = {
+  CITY: "Cupertino",
+  GROUP_NAME: "Cupertino Pogo",
+  LOCATION: "Cupertino Memorial Park & De Anza College",
+};
+const METADATA_WG = {
+  CITY: "Santa Clara",
+  GROUP_NAME: "Wild Goose",
+  LOCATION: "Santa Clara Central Park",
+};
+
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -27,7 +40,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
-    baseURL: "http://localhost:8787",
+    baseURL: BASE_URL_CUP_POGO, // Default to cup-pogo build
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
@@ -36,26 +49,67 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: "chromium",
-      use: { ...devices["Desktop Chrome"] },
+      name: "chromium-cup-pogo",
+      use: { ...devices["Desktop Chrome"], baseURL: BASE_URL_CUP_POGO },
+      testIgnore: /.*\.wg\.spec\.ts/,
+      metadata: METADATA_CUP_POGO,
     },
 
     {
-      name: "firefox",
-      use: { ...devices["Desktop Firefox"] },
+      name: "chromium-wg",
+      use: { ...devices["Desktop Chrome"], baseURL: BASE_URL_WG },
+      testIgnore: /.*\.cup-pogo\.spec\.ts/,
+      metadata: METADATA_WG,
     },
 
     {
-      name: "pixel7",
-      use: { ...devices["Pixel 7"] },
+      name: "firefox-cup-pogo",
+      use: { ...devices["Desktop Firefox"], baseURL: BASE_URL_CUP_POGO },
+      testIgnore: /.*\.wg\.spec\.ts/,
+      metadata: METADATA_CUP_POGO,
     },
 
     {
-      name: "iphone15",
+      name: "firefox-wg",
+      use: { ...devices["Desktop Firefox"], baseURL: BASE_URL_WG },
+      testIgnore: /.*\.cup-pogo\.spec\.ts/,
+      metadata: METADATA_WG,
+    },
+
+    {
+      name: "pixel7-cup-pogo",
+      use: { ...devices["Pixel 7"], baseURL: BASE_URL_CUP_POGO },
+      testIgnore: /.*\.wg\.spec\.ts/,
+      metadata: METADATA_CUP_POGO,
+    },
+
+    {
+      name: "pixel7-wg",
+      use: { ...devices["Pixel 7"], baseURL: BASE_URL_WG },
+      testIgnore: /.*\.cup-pogo\.spec\.ts/,
+      metadata: METADATA_WG,
+    },
+
+    {
+      name: "iphone15-cup-pogo",
       use: {
         ...devices["iPhone 15"],
+        baseURL: BASE_URL_CUP_POGO,
         browserName: "chromium", // TODO: remove this when Safari testing is setup
       },
+      testIgnore: /.*\.wg\.spec\.ts/,
+      metadata: METADATA_CUP_POGO,
+    },
+
+    {
+      name: "iphone15-wg",
+      use: {
+        ...devices["iPhone 15"],
+        baseURL: BASE_URL_WG,
+        browserName: "chromium", // TODO: remove this when Safari testing is setup
+      },
+      testIgnore: /.*\.cup-pogo\.spec\.ts/,
+      metadata: METADATA_WG,
     },
 
     // TODO: enable this when Safari testing setup
@@ -86,9 +140,16 @@ export default defineConfig({
   ],
 
   /* Run your local dev server before starting the tests */
-  webServer: {
-    command: "npm run preview:e2e",
-    url: "http://localhost:8787",
-    reuseExistingServer: !process.env.CI,
-  },
+  webServer: [
+    {
+      command: "npm run build:cup-pogo:e2e && npm run preview:cup-pogo",
+      url: "http://localhost:8787",
+      reuseExistingServer: !process.env.CI,
+    },
+    {
+      command: "npm run build:wg:e2e && npm run preview:wg",
+      url: "http://localhost:8788",
+      reuseExistingServer: !process.env.CI,
+    },
+  ],
 });

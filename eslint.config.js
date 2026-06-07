@@ -11,7 +11,7 @@ import tseslint from "typescript-eslint";
 
 export default defineConfig([
   ...pluginQuery.configs["flat/recommended-strict"],
-  globalIgnores(["coverage", "dist"]),
+  globalIgnores(["coverage", "dist", "dist-cup-pogo", "dist-wg"]),
   {
     files: ["**/*.{ts,tsx}"],
     extends: [

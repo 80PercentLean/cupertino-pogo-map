@@ -1,10 +1,13 @@
 import { expect, test } from "@playwright/test";
 
-test("has title", async ({ page }) => {
+test("has title", async ({ page }, { project }) => {
   await page.goto("/map");
 
   await expect(page).toHaveTitle(
-    /Cupertino PoGO Map | Directions & Free Parking for Pokémon GO at Cupertino Memorial Park & De Anza College/i,
+    new RegExp(
+      `${project.metadata.GROUP_NAME} Map | Directions & Free Parking for Pokémon GO at ${project.metadata.LOCATION}`,
+      "i",
+    ),
   );
 });
 

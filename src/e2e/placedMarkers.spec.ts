@@ -4,8 +4,8 @@ import { isMobileProject, isPixel7, longPressContextMenu } from "./util";
 
 const PLACED_MARKER_FIRST_DESKTOP = { x: 500, y: 100 };
 const PLACED_MARKER_SECOND_DESKTOP = { x: 550, y: 100 };
-const PLACED_MARKER_FIRST_MOBILE = { x: 50, y: 100 };
-const PLACED_MARKER_SECOND_MOBILE = { x: 100, y: 100 };
+const PLACED_MARKER_FIRST_MOBILE = { x: 100, y: 100 };
+const PLACED_MARKER_SECOND_MOBILE = { x: 120, y: 100 };
 
 test("loads map with no placed markers by default", async ({ page }) => {
   await page.goto("/map", { waitUntil: "networkidle" });
@@ -138,14 +138,12 @@ test("deletes a marker when the marker delete button is clicked", async ({
   if (IS_MOBILE) {
     await longPressContextMenu(
       page,
-      PLACED_MARKER_SECOND_MOBILE,
+      PLACED_MARKER_FIRST_MOBILE,
       1000,
       isPixel7(testInfo.project.name),
     );
   } else {
-    await page
-      .locator("#map")
-      .click({ position: PLACED_MARKER_SECOND_DESKTOP });
+    await page.locator("#map").click({ position: PLACED_MARKER_FIRST_DESKTOP });
   }
 
   markers = await page.locator('[data-testid*="placed-"]').all();

@@ -1,10 +1,13 @@
 import { expect, test } from "@playwright/test";
 
-test("has title", async ({ page }) => {
+test("has title", async ({ page }, { project }) => {
   await page.goto("/");
 
   await expect(page).toHaveTitle(
-    /Cupertino PoGO | Pokémon GO Community in Cupertino, California/i,
+    new RegExp(
+      `${project.metadata.GROUP_NAME} | Pokémon GO Community in ${project.metadata.CITY}, California`,
+      "i",
+    ),
   );
 });
 

@@ -1,9 +1,14 @@
 import { expect, test } from "@playwright/test";
 
-test("has title", async ({ page }) => {
+test("has title", async ({ page }, { project }) => {
   await page.goto("/checkin");
 
-  await expect(page).toHaveTitle(/Cupertino PoGO | How To Check Into Meetups/i);
+  await expect(page).toHaveTitle(
+    new RegExp(
+      `${project.metadata.GROUP_NAME} | How To Check Into Meetups`,
+      "i",
+    ),
+  );
 });
 
 test("shows expected default view", async ({ page }) => {
