@@ -85,14 +85,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Erik's DeliCafe",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65"
+        "l14Id": "808fca65",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.977734, 37.339199],
@@ -186,7 +186,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Central Park Pond",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -194,7 +193,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "photo": "0df134f5a6e839a9a8c1b27789a19a33.16.jpg"
+        "photo": "0df134f5a6e839a9a8c1b27789a19a33.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.974984, 37.341606],
@@ -306,7 +306,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "St. Justins Stained Glass Art",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -314,7 +313,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "photo": "15b6a55f381736489b78e25aa3ba653d.16.jpg"
+        "photo": "15b6a55f381736489b78e25aa3ba653d.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.974701, 37.339364],
@@ -347,14 +347,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Vive la Vie Massage",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65"
+        "l14Id": "808fca65",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.977766, 37.339145],
@@ -387,7 +387,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Central Park Picnic Area",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -395,7 +394,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "photo": "1a1c679661be37688e100fa8225ac08e.16.jpg"
+        "photo": "1a1c679661be37688e100fa8225ac08e.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.976661, 37.341773],
@@ -648,14 +648,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "The UPS Store 4636",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65"
+        "l14Id": "808fca65",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.976094, 37.338174],
@@ -668,7 +668,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Kindness Corner",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -676,7 +675,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "photo": "31ff47052e8034e9b52b4d5743f2c5ba.16.jpg"
+        "photo": "31ff47052e8034e9b52b4d5743f2c5ba.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.976872, 37.341772],
@@ -792,14 +792,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Santa Clara Pet Hospital",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65"
+        "l14Id": "808fca65",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.9778, 37.339244],
@@ -872,14 +872,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "My Hair and Face Salon",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65"
+        "l14Id": "808fca65",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.977734, 37.339199],
@@ -971,14 +971,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Santa Clara Lawn Bowls Club",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67"
+        "l14Id": "808fca67",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.973213, 37.342259],
@@ -1052,14 +1052,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Eve Hair Salon",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f"
+        "l14Id": "808fca6f",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.978741, 37.345853],
@@ -1072,14 +1072,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Western Union",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f"
+        "l14Id": "808fca6f",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.978096, 37.345918],
@@ -1112,7 +1112,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Central Park Field Bleachers",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -1120,7 +1119,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca69",
-        "photo": "51481e5c49223aed9aecd19c75002ec2.16.jpg"
+        "photo": "51481e5c49223aed9aecd19c75002ec2.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.973559, 37.34431],
@@ -1133,14 +1133,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Garlic Mediterranean Grill",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65"
+        "l14Id": "808fca65",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.976184, 37.338191],
@@ -1213,14 +1213,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Angel Santa Clara",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65"
+        "l14Id": "808fca65",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.977684, 37.339286],
@@ -1350,14 +1350,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Realcom Associates",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65"
+        "l14Id": "808fca65",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.977796, 37.339255],
@@ -1409,14 +1409,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Sally Beauty",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67"
+        "l14Id": "808fca67",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.974461, 37.338219],
@@ -1608,14 +1608,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Beauty Nails",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67"
+        "l14Id": "808fca67",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.973249, 37.338737],
@@ -1708,14 +1708,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Montage Dance Productions",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f"
+        "l14Id": "808fca6f",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.978741, 37.345853],
@@ -1728,7 +1728,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Butterfly season themed seating",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -1736,7 +1735,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "photo": "8453db4bd3ea3dc8ae47b92c44fb68ef.16.jpg"
+        "photo": "8453db4bd3ea3dc8ae47b92c44fb68ef.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.97448, 37.338337],
@@ -1749,14 +1749,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Caffino",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65"
+        "l14Id": "808fca65",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.976175, 37.338162],
@@ -1809,14 +1809,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Armadillo Willy's BBQ",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67"
+        "l14Id": "808fca67",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.97277, 37.338884],
@@ -1870,14 +1870,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Kunjip",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f"
+        "l14Id": "808fca6f",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.978769, 37.345788],
@@ -1931,14 +1931,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Roberta Jones Junior Theatre",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f"
+        "l14Id": "808fca6f",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.976586, 37.342863],
@@ -2052,14 +2052,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Water Spring",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67"
+        "l14Id": "808fca67",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.973187, 37.338735],
@@ -2092,14 +2092,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Caffino Drive-Thru Espresso.",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65"
+        "l14Id": "808fca65",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.976399, 37.338236],
@@ -2112,14 +2112,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Mr T’s Barber Shop",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f"
+        "l14Id": "808fca6f",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.978648, 37.3458],
@@ -2132,7 +2132,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Central Park Pond Bio-Filtration",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -2140,7 +2139,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "photo": "a7cd870b513d34008716e2f9f057fbc8.16.jpg"
+        "photo": "a7cd870b513d34008716e2f9f057fbc8.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.974982, 37.341562],
@@ -2252,14 +2252,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Veterans Memorial",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f"
+        "l14Id": "808fca6f",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.977116, 37.342295],
@@ -2372,7 +2372,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Sequoia Gigantea",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -2380,7 +2379,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "photo": "b6f500589831408c845ea502d2e25704.16.jpg"
+        "photo": "b6f500589831408c845ea502d2e25704.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.975816, 37.343019],
@@ -2510,14 +2510,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "St Justin Catholic Church",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67"
+        "l14Id": "808fca67",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.974842, 37.339263],
@@ -2551,14 +2551,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Sumiya",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67"
+        "l14Id": "808fca67",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.972908, 37.338847],
@@ -2571,14 +2571,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Tobang",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f"
+        "l14Id": "808fca6f",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.977997, 37.345772],
@@ -2852,14 +2852,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Community Recreation Center",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f"
+        "l14Id": "808fca6f",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.976597, 37.34287],
@@ -2931,7 +2931,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Freedom Tree Central Park",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -2939,7 +2938,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "photo": "dfb5f11fde184aec9238f80d8cf468c0.16.jpg"
+        "photo": "dfb5f11fde184aec9238f80d8cf468c0.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.97727, 37.341987],
@@ -2952,14 +2952,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Taichi Pot Shabu Shabu",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67"
+        "l14Id": "808fca67",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.973066, 37.338694],
@@ -3011,14 +3011,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Santa Clara Pet Hospital",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65"
+        "l14Id": "808fca65",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.977811, 37.339292],
@@ -3031,14 +3031,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "San Jose Art Academy",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65"
+        "l14Id": "808fca65",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.979869, 37.338117],
@@ -3051,14 +3051,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Stan's Donut Shop",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67"
+        "l14Id": "808fca67",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.972898, 37.338937],
@@ -3071,14 +3071,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Kumon Math and Reading Center",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f"
+        "l14Id": "808fca6f",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.978598, 37.345864],
@@ -3131,14 +3131,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Mariposa Hair Stylists",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67"
+        "l14Id": "808fca67",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.973295, 37.338718],
@@ -3151,14 +3151,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Popeyes Louisiana Kitchen",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65"
+        "l14Id": "808fca65",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.976244, 37.338124],
@@ -3273,14 +3273,14 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Korean Spring BBQ",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f"
+        "l14Id": "808fca6f",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.978626, 37.345767],
@@ -3333,7 +3333,6 @@
       "properties": {
         "checked": "2026-06-01T08:00:00Z",
         "name": "Santa Clara Community Center Garden",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -3341,7 +3340,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "photo": "fa16239e56d135bbad3cbfa4c147b6b8.16.jpg"
+        "photo": "fa16239e56d135bbad3cbfa4c147b6b8.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.976129, 37.342974],
