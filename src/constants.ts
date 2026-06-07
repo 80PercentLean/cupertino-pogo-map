@@ -58,6 +58,16 @@ export const GET_CITY = () => (GET_IS_CENTRAL() ? "Santa Clara" : "Cupertino");
 
 export const CITY = IS_CENTRAL ? "Santa Clara" : "Cupertino";
 
+/**
+ * An alternate way to read LOCATION through a function.
+ * It exists so it can be stubbed by Vitest for certain tests, but from the regular
+ * app runtime perspective it is no different than directly reading LOCATION.
+ */
+export const GET_LOCATION = () =>
+  GET_IS_CENTRAL()
+    ? "Santa Clara Central Park"
+    : "Cupertino Memorial Park & De Anza College";
+
 export const LOCATION = IS_CENTRAL
   ? "Santa Clara Central Park"
   : "Cupertino Memorial Park & De Anza College";

@@ -2,10 +2,10 @@ import imgLuckyEgg from "@/assets/lucky-egg.webp";
 import imgPbp from "@/assets/pbp.webp";
 import imgStarPiece from "@/assets/star-piece.webp";
 import {
-  CAMPFIRE_LINK,
-  GROUP_NAME,
-  IS_CENTRAL,
-  LOCATION,
+  GET_CAMPFIRE_LINK,
+  GET_GROUP_NAME,
+  GET_IS_CENTRAL,
+  GET_LOCATION,
   MAP_PATH,
   ROOT_PATH,
 } from "@/constants";
@@ -66,17 +66,18 @@ export default function CheckInGuide() {
           directly onto your Pokémon GO account.
         </p>
         <h2 className="mt-[1em] border-b pb-2 text-2xl font-semibold tracking-tight text-balance">
-          1. Go to the meetup location.
+          1. Go to the meetup GET_LOCATION().
         </h2>
         <p className="leading-7 text-pretty">
-          First, you must be physically present at the meetup location during
-          the specified meetup time.
+          First, you must be physically present at the meetup GET_LOCATION()
+          during the specified meetup time.
         </p>
         <p className="leading-7 text-pretty">
-          For most <b>{GROUP_NAME}</b> events, this usually means you must be at{" "}
+          For most <b>{GET_GROUP_NAME()}</b> events, this usually means you must
+          be at{" "}
           <b>
             <a href={MAP_PATH} className="underline">
-              {LOCATION}
+              {GET_LOCATION()}
             </a>
           </b>{" "}
           in order for the check-in to work.
@@ -95,10 +96,10 @@ export default function CheckInGuide() {
                 on Campfire.
               </p>
               <p>
-                When the meetup is at {LOCATION}, this range is large enough to
-                cover the entire area, so you will be able to check-in from the
-                furthest corners of the park
-                {!IS_CENTRAL && "/campus"}.
+                When the meetup is at {GET_LOCATION()}, this range is large
+                enough to cover the entire area, so you will be able to check-in
+                from the furthest corners of the park
+                {!GET_IS_CENTRAL() && "/campus"}.
               </p>
             </>
           }
@@ -131,7 +132,7 @@ export default function CheckInGuide() {
                 social platform for the game.
               </p>
               <p>
-                <b>{GROUP_NAME}</b> is a Campfire group that hosts meetups
+                <b>{GET_GROUP_NAME()}</b> is a Campfire group that hosts meetups
                 through this app. We are part of the{" "}
                 <a
                   href="https://pokemongo.com/find-your-community"
@@ -150,12 +151,12 @@ export default function CheckInGuide() {
               </p>
               <p>
                 For access to additional features like chatting and trading with
-                fellow {GROUP_NAME} members, a full top-down live Raid map, and
-                more, download Campfire by tapping on the button below:
+                fellow {GET_GROUP_NAME()} members, a full top-down live Raid
+                map, and more, download Campfire by tapping on the button below:
               </p>
               <Button asChild>
                 <a
-                  href={CAMPFIRE_LINK}
+                  href={GET_CAMPFIRE_LINK()}
                   rel="noopener noreferrer"
                   target="_blank"
                   className="mt-[1em] w-full text-center text-lg font-bold"
@@ -172,7 +173,8 @@ export default function CheckInGuide() {
         </h2>
         <p className="leading-7 text-pretty">
           The Campfire Meetup List may have other meetups in the area, so you
-          will need to specifically find the one hosted by <b>{GROUP_NAME}</b>.
+          will need to specifically find the one hosted by{" "}
+          <b>{GET_GROUP_NAME()}</b>.
         </p>
         <p className="leading-7 text-pretty">
           Once you find the correct meetup, tap{" "}
@@ -201,26 +203,27 @@ export default function CheckInGuide() {
           content={
             <>
               <p>
-                First make sure that you are at the correct meetup location.
-                Usually it is at {LOCATION} but sometimes it could change, so
-                double-check the meetup details.
+                First make sure that you are at the correct meetup
+                GET_LOCATION(). Usually it is at {GET_LOCATION()} but sometimes
+                it could change, so double-check the meetup details.
               </p>
               <p>
-                If you actually are at correct location, then sometimes it takes
-                a little bit for your phone's location to load properly. Wait a
-                few seconds before trying to check-in again.
+                If you actually are at correct GET_LOCATION(), then sometimes it
+                takes a little bit for your phone's GET_LOCATION() to load
+                properly. Wait a few seconds before trying to check-in again.
               </p>
               <p>
                 If that doesn't work, it's possible that you have the Campfire
                 app but you haven't given it sufficient permissions. You can
                 test this by opening the Campfire map and seeing if your phone's
-                current location loads correctly.
+                current GET_LOCATION() loads correctly.
               </p>
               <p>
                 If the Campfire map isn't accurately showing your current
                 position, go into your phone settings and check that you have
-                granted the Campfire app <b>permission to access location</b>{" "}
-                with <b>precise location</b>.
+                granted the Campfire app{" "}
+                <b>permission to access GET_LOCATION()</b> with{" "}
+                <b>precise GET_LOCATION()</b>.
               </p>
             </>
           }
