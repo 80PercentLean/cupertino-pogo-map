@@ -15,6 +15,14 @@ export const GET_IS_CENTRAL = () => import.meta.env.VITE_IS_CENTRAL === "true";
 
 export const IS_CENTRAL = GET_IS_CENTRAL();
 
+/**
+ * An alternate way to read GROUP_NAME through a function.
+ * It exists so it can be stubbed by Vitest for certain tests, but from the regular
+ * app runtime perspective it is no different than directly reading GROUP_NAME.
+ */
+export const GET_GROUP_NAME = () =>
+  GET_IS_CENTRAL() ? "Wild\u00A0Goose" : "Cupertino\u00A0PoGO";
+
 export const GROUP_NAME = IS_CENTRAL
   ? "Wild\u00A0Goose"
   : "Cupertino\u00A0PoGO";
@@ -31,13 +39,33 @@ export const CUP_POGO_CAMPFIRE =
 export const WG_CAMPFIRE =
   "https://campfire.onelink.me/eBr8?af_dp=campfire://&af_force_deeplink=true&deep_link_sub1=cj1jbHVicyZjPWE4M2FmMzljLTRiNTgtNGM2NC1iZjViLTYwMTM4Yzc2MzNjNyZpPXRydWU=";
 
+/**
+ * An alternate way to read CAMPFIRE_LINK through a function.
+ * It exists so it can be stubbed by Vitest for certain tests, but from the regular
+ * app runtime perspective it is no different than directly reading CAMPFIRE_LINK.
+ */
+export const GET_CAMPFIRE_LINK = () =>
+  GET_IS_CENTRAL() ? WG_CAMPFIRE : CUP_POGO_CAMPFIRE;
+
 export const CAMPFIRE_LINK = IS_CENTRAL ? WG_CAMPFIRE : CUP_POGO_CAMPFIRE;
+
+/**
+ * An alternate way to read CITY through a function.
+ * It exists so it can be stubbed by Vitest for certain tests, but from the regular
+ * app runtime perspective it is no different than directly reading CITY.
+ */
+export const GET_CITY = () => (GET_IS_CENTRAL() ? "Santa Clara" : "Cupertino");
 
 export const CITY = IS_CENTRAL ? "Santa Clara" : "Cupertino";
 
 export const LOCATION = IS_CENTRAL
   ? "Santa Clara Central Park"
   : "Cupertino Memorial Park & De Anza College";
+
+export const GET_LOCATION_LONG = () =>
+  GET_IS_CENTRAL()
+    ? "Central Park, Santa Clara, California"
+    : "Memorial Park & De Anza College, Cupertino, California";
 
 export const LOCATION_LONG = IS_CENTRAL
   ? "Central Park, Santa Clara, California"

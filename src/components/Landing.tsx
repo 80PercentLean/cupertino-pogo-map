@@ -6,12 +6,12 @@ import imgPbp from "@/assets/pbp.webp";
 import imgMap from "@/assets/pgo-map-bg.jpg";
 import imgRaid from "@/assets/raids-loading.jpg";
 import {
-  CAMPFIRE_LINK,
   CHECK_IN_PATH,
-  CITY,
-  GROUP_NAME,
-  IS_CENTRAL,
-  LOCATION_LONG,
+  GET_CAMPFIRE_LINK,
+  GET_CITY,
+  GET_GROUP_NAME,
+  GET_IS_CENTRAL,
+  GET_LOCATION_LONG,
   MAP_PATH,
 } from "@/constants";
 import { Link } from "react-router";
@@ -24,18 +24,18 @@ import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
  * The home page.
  */
 export default function Landing() {
-  useSetDocTitle(`Pokémon GO Community in ${CITY}, California`);
+  useSetDocTitle(`Pokémon GO Community in ${GET_CITY()}, California`);
 
   return (
     <div className="mx-auto flex min-h-screen max-w-[65ch] flex-col items-center gap-4 p-4">
       <h1 className="text-3xl font-extrabold tracking-tight text-balance">
-        {GROUP_NAME}
+        {GET_GROUP_NAME()}
       </h1>
       <p className="text-muted-foreground text-center text-pretty">
-        {GROUP_NAME} is a Pokémon GO group based in
+        {GET_GROUP_NAME()} is a Pokémon GO group based in
         <br />
         <a href={MAP_PATH} className="font-bold underline">
-          {LOCATION_LONG}
+          {GET_LOCATION_LONG()}
         </a>
         .
       </p>
@@ -57,7 +57,7 @@ export default function Landing() {
         bonuses, and chances to win official Pokémon merchandise and swag.
       </p>
       <div
-        className={`mt-4 grid w-full gap-4 ${IS_CENTRAL ? "grid-rows-6" : "grid-rows-7"}`}
+        className={`mt-4 grid w-full gap-4 ${GET_IS_CENTRAL() ? "grid-rows-6" : "grid-rows-7"}`}
       >
         <a href={MAP_PATH} className="flex">
           <Card className="flex w-full flex-row gap-0 bg-white p-0">
@@ -140,7 +140,7 @@ export default function Landing() {
           </Card>
         </a>
         <a
-          href={CAMPFIRE_LINK}
+          href={GET_CAMPFIRE_LINK()}
           rel="noopener noreferrer"
           target="_blank"
           className="flex"
@@ -162,7 +162,7 @@ export default function Landing() {
             </CardHeader>
           </Card>
         </a>
-        {!IS_CENTRAL && (
+        {!GET_IS_CENTRAL() && (
           <a
             href="https://bit.ly/cupertinopogoguide"
             rel="noopener noreferrer"
