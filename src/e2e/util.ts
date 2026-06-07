@@ -6,15 +6,12 @@ import type { Page } from "@playwright/test";
  * @returns True if Playwright is emulating a mobile device, false if not
  */
 export const isMobileProject = (projectName: string) => {
-  console.log("Project name:", projectName);
   const iphoneRegex = new RegExp("iphone", "i");
   const pixelRegex = new RegExp("pixel", "i");
 
   if (iphoneRegex.test(projectName) || pixelRegex.test(projectName)) {
-    console.log("Mobile Playwright project detected");
     return true;
   }
-  console.log("Desktop Playwright project detected");
   return false;
 };
 

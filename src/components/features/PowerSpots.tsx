@@ -29,20 +29,23 @@ export default function PowerSpots() {
         } = {},
       ) => {
         let subtitle = "Power Spot";
-        if (isDisabled) {
+
+        if (isImpossible) {
+          subtitle += " (Impossible)";
+        } else if (isDisabled) {
           subtitle += " (Disabled)";
         } else {
           subtitle += " (Enabled)";
         }
+
         if (isHidden) {
           subtitle += " (Hidden)";
         }
-        if (isImpossible) {
-          subtitle += " (Impossible)";
-        }
+
         if (removed) {
           subtitle += " (Removed)";
         }
+
         if (wayfarerMode) {
           if (isCommunityContributed) {
             subtitle += " [Community Contributed]";

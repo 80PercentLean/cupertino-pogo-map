@@ -17,7 +17,7 @@ afterEach(() => {
 });
 
 test.each([["false"], ["true"]])(
-  "loads <Landing> when VITE_IS_CENTRAL is %s",
+  "loads correct <Landing> when VITE_IS_CENTRAL is %s",
   (IS_CENTRAL) => {
     vi.stubEnv("VITE_IS_CENTRAL", IS_CENTRAL);
 
