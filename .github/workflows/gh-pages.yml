@@ -37,7 +37,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build
-        run: npm run build
+        run: npm run build:wg
         env:
           VITE_API: ${{ vars.VITE_API }}
           VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
