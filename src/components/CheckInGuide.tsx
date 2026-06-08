@@ -9,7 +9,7 @@ import {
   MAP_PATH,
   ROOT_PATH,
 } from "@/constants";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Home } from "lucide-react";
 import { Link } from "react-router";
 
 import BinocularsIcon from "../assets/binoculars.png";
@@ -32,28 +32,38 @@ export default function CheckInGuide() {
   return (
     <>
       <div
-        className="flex h-[33vh]"
+        className="flex h-[33vh] items-center"
         style={{
           background:
             "linear-gradient(0deg,rgba(255,255,255,0.75),rgba(255,255,255,0.75)),linear-gradient(315deg,#24ccaa,#a2db95 98.97%)",
         }}
       >
-        <div className="mx-auto grid max-w-[65ch] grid-cols-3 grid-rows-1 gap-1">
-          <img
-            src={imgLuckyEgg}
-            alt="Lucky Egg from Check-In Rewards"
-            className="m-auto max-h-full drop-shadow-lg"
-          />
-          <img
-            src={imgPbp}
-            alt="Premium Battle Pass from Check-In Rewards"
-            className="m-auto max-h-full drop-shadow-lg"
-          />
-          <img
-            src={imgStarPiece}
-            alt="Star Piece from Check-In Rewards"
-            className="m-auto max-h-full drop-shadow-lg"
-          />
+        <div className="relative mx-auto">
+          <div className="grid max-w-[65ch] grid-cols-3 grid-rows-1 gap-1">
+            <img
+              src={imgLuckyEgg}
+              alt="Lucky Egg from Check-In Rewards"
+              className="m-auto max-h-full drop-shadow-lg"
+            />
+            <img
+              src={imgPbp}
+              alt="Premium Battle Pass from Check-In Rewards"
+              className="m-auto max-h-full drop-shadow-lg"
+            />
+            <img
+              src={imgStarPiece}
+              alt="Star Piece from Check-In Rewards"
+              className="m-auto max-h-full drop-shadow-lg"
+            />
+          </div>
+          <Button variant="secondary" asChild>
+            <Link
+              to={ROOT_PATH || "/"}
+              className="absolute top-0 right-0 mx-4 -translate-y-8 cursor-pointer shadow-sm sm:-translate-y-6 lg:top-1/2 lg:right-auto lg:left-full lg:-translate-y-1/2"
+            >
+              <Home /> Home
+            </Link>
+          </Button>
         </div>
       </div>
       <div className="mx-auto flex min-h-screen max-w-[65ch] flex-col gap-[1em] px-4">
@@ -66,10 +76,10 @@ export default function CheckInGuide() {
           directly onto your Pokémon GO account.
         </p>
         <h2 className="mt-[1em] border-b pb-2 text-2xl font-semibold tracking-tight text-balance">
-          1. Go to the meetup GET_LOCATION().
+          1. Go to the meetup {GET_LOCATION()}.
         </h2>
         <p className="leading-7 text-pretty">
-          First, you must be physically present at the meetup GET_LOCATION()
+          First, you must be physically present at the meetup {GET_LOCATION()}{" "}
           during the specified meetup time.
         </p>
         <p className="leading-7 text-pretty">
@@ -159,7 +169,7 @@ export default function CheckInGuide() {
                   href={GET_CAMPFIRE_LINK()}
                   rel="noopener noreferrer"
                   target="_blank"
-                  className="mt-[1em] w-full text-center text-lg font-bold"
+                  className="mt-[1em] w-full cursor-pointer text-center text-lg font-bold"
                 >
                   Download the Niantic Campfire app! <ExternalLink />
                 </a>
@@ -429,12 +439,11 @@ export default function CheckInGuide() {
           🫡 Good luck out there Trainer. Enjoy the meetup and your freebies!
         </p>
         <hr className="mt-10" />
-        <p className="text-center text-balance">
-          <Link to={ROOT_PATH || "/"} className="underline">
-            🏠 Return to the home page.
+        <Button asChild>
+          <Link to={ROOT_PATH || "/"} className="cursor-pointer">
+            <Home /> Back To Home
           </Link>
-        </p>
-        <hr />
+        </Button>
         <footer className="text-muted-foreground mt-20 mb-6 flex flex-col gap-2 text-center text-sm">
           <FooterTxt />
         </footer>
