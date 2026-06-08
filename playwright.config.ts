@@ -51,42 +51,42 @@ export default defineConfig({
     {
       name: "chromium-cup-pogo",
       use: { ...devices["Desktop Chrome"], baseURL: BASE_URL_CUP_POGO },
-      testIgnore: /.*\.wg\.spec\.ts/,
+      testIgnore: ["**/*.wg.spec.ts", "**/*.mobile.spec.ts"],
       metadata: METADATA_CUP_POGO,
     },
 
     {
       name: "chromium-wg",
       use: { ...devices["Desktop Chrome"], baseURL: BASE_URL_WG },
-      testIgnore: /.*\.cup-pogo\.spec\.ts/,
+      testIgnore: ["**/*.cup-pogo.spec.ts", "**/*.mobile.spec.ts"],
       metadata: METADATA_WG,
     },
 
     {
       name: "firefox-cup-pogo",
       use: { ...devices["Desktop Firefox"], baseURL: BASE_URL_CUP_POGO },
-      testIgnore: /.*\.wg\.spec\.ts/,
+      testIgnore: ["**/*.wg.spec.ts", "**/*.mobile.spec.ts"],
       metadata: METADATA_CUP_POGO,
     },
 
     {
       name: "firefox-wg",
       use: { ...devices["Desktop Firefox"], baseURL: BASE_URL_WG },
-      testIgnore: /.*\.cup-pogo\.spec\.ts/,
+      testIgnore: ["**/*.cup-pogo.spec.ts", "**/*.mobile.spec.ts"],
       metadata: METADATA_WG,
     },
 
     {
       name: "pixel7-cup-pogo",
       use: { ...devices["Pixel 7"], baseURL: BASE_URL_CUP_POGO },
-      testIgnore: /.*\.wg\.spec\.ts/,
+      testIgnore: ["**/*.wg.spec.ts", "**/*.wg.mobile.spec.ts"],
       metadata: METADATA_CUP_POGO,
     },
 
     {
       name: "pixel7-wg",
       use: { ...devices["Pixel 7"], baseURL: BASE_URL_WG },
-      testIgnore: /.*\.cup-pogo\.spec\.ts/,
+      testIgnore: ["**/*.cup-pogo.spec.ts", "**/*.cup-pogo.mobile.spec.ts"],
       metadata: METADATA_WG,
     },
 
@@ -97,7 +97,7 @@ export default defineConfig({
         baseURL: BASE_URL_CUP_POGO,
         browserName: "chromium", // TODO: remove this when Safari testing is setup
       },
-      testIgnore: /.*\.wg\.spec\.ts/,
+      testIgnore: ["**/*.wg.spec.ts", "**/*.wg.mobile.spec.ts"],
       metadata: METADATA_CUP_POGO,
     },
 
@@ -108,7 +108,7 @@ export default defineConfig({
         baseURL: BASE_URL_WG,
         browserName: "chromium", // TODO: remove this when Safari testing is setup
       },
-      testIgnore: /.*\.cup-pogo\.spec\.ts/,
+      testIgnore: ["**/*.cup-pogo.spec.ts", "**/*.cup-pogo.mobile.spec.ts"],
       metadata: METADATA_WG,
     },
 
@@ -142,12 +142,12 @@ export default defineConfig({
   /* Run your local dev server before starting the tests */
   webServer: [
     {
-      command: "npm run build:cup-pogo:e2e && npm run preview:cup-pogo",
+      command: "npm run dev:cup-pogo:e2e",
       url: "http://localhost:8787",
       reuseExistingServer: !process.env.CI,
     },
     {
-      command: "npm run build:wg:e2e && npm run preview:wg",
+      command: "npm run dev:wg:e2e",
       url: "http://localhost:8788",
       reuseExistingServer: !process.env.CI,
     },

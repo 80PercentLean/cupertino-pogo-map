@@ -29,9 +29,9 @@ export const GROUP_NAME = IS_CENTRAL
 
 export const ROOT_PATH = (import.meta.env.VITE_ROOT_PATH as string) ?? "";
 
-export const CHECK_IN_PATH = ROOT_PATH ? `${ROOT_PATH}/checkin` : "checkin";
+export const CHECK_IN_PATH = ROOT_PATH ? `${ROOT_PATH}/checkin` : "/checkin";
 
-export const MAP_PATH = ROOT_PATH ? `${ROOT_PATH}/map` : "map";
+export const MAP_PATH = ROOT_PATH ? `${ROOT_PATH}/map` : "/map";
 
 export const CUP_POGO_CAMPFIRE =
   "https://campfire.onelink.me/eBr8?af_dp=campfire://&af_force_deeplink=true&deep_link_sub1=cj1jbHVicyZjPTk4MjZkY2U4LTZhM2ItNDQxNC05N2M1LTg1NzYzNDYzY2VmNSZpPXRydWU=";
@@ -48,6 +48,8 @@ export const GET_CAMPFIRE_LINK = () =>
   GET_IS_CENTRAL() ? WG_CAMPFIRE : CUP_POGO_CAMPFIRE;
 
 export const CAMPFIRE_LINK = IS_CENTRAL ? WG_CAMPFIRE : CUP_POGO_CAMPFIRE;
+
+export const DISCORD_LINK = "https://discord.gg/7tZ2cauare";
 
 /**
  * An alternate way to read CITY through a function.

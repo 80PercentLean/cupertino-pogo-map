@@ -22,3 +22,11 @@ test("shows expected default view", async ({ page }) => {
     maxDiffPixelRatio: 0.001,
   });
 });
+
+test("redirects to the checkin path from the check-in path", async ({
+  page,
+}) => {
+  await page.goto("/check-in", { waitUntil: "networkidle" });
+
+  await expect(page).toHaveURL("/checkin");
+});

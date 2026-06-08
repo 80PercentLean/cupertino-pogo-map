@@ -7,6 +7,7 @@ import imgMap from "@/assets/pgo-map-bg.jpg";
 import imgRaid from "@/assets/raids-loading.jpg";
 import {
   CHECK_IN_PATH,
+  DISCORD_LINK,
   GET_CAMPFIRE_LINK,
   GET_CITY,
   GET_GROUP_NAME,
@@ -117,7 +118,7 @@ export default function Landing() {
           </Card>
         </a>
         <a
-          href="https://discord.gg/7tZ2cauare"
+          href={DISCORD_LINK}
           rel="noopener noreferrer"
           target="_blank"
           className="flex"

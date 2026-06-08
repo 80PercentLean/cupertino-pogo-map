@@ -10,7 +10,7 @@ import Landing from "./components/Landing";
 import NotFound from "./components/NotFound";
 import Root from "./components/Root";
 import ScrollToTop from "./components/ScrollToTop";
-import { ROOT_PATH } from "./constants";
+import { CHECK_IN_PATH, ROOT_PATH } from "./constants";
 import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
@@ -23,7 +23,7 @@ createRoot(document.getElementById("root")!).render(
           <Route path="checkin" element={<CheckInGuide />} />
           <Route
             path="check-in"
-            element={<Navigate to={`${ROOT_PATH}/checkin`} replace />}
+            element={<Navigate to={CHECK_IN_PATH} replace />}
           />
           <Route path="*" element={<NotFound />} />
         </Route>

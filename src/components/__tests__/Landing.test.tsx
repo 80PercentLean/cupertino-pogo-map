@@ -1,4 +1,10 @@
-import { CUP_POGO_CAMPFIRE, WG_CAMPFIRE } from "@/constants";
+import {
+  CHECK_IN_PATH,
+  CUP_POGO_CAMPFIRE,
+  DISCORD_LINK,
+  MAP_PATH,
+  WG_CAMPFIRE,
+} from "@/constants";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router";
 
@@ -51,3 +57,29 @@ test.each([["false"], ["true"]])(
     }
   },
 );
+
+test("has a link to the check-in guide", () => {
+  render(<TestComponent />);
+
+  const link = screen.getByRole("link", {
+    name: /How To Check-In For Free Rewards & Bonuses/i,
+  });
+  expect(link).toBeInTheDocument();
+  expect(link).toHaveAttribute("href", CHECK_IN_PATH);
+});
+
+test("has a link to the map meetups view", () => {
+  render(<TestComponent />);
+
+  const link = screen.getByRole("link", { name: /Meetup Schedule/i });
+  expect(link).toBeInTheDocument();
+  expect(link).toHaveAttribute("href", `${MAP_PATH}?start=meetups`);
+});
+
+test("has a link to the Discord server", () => {
+  render(<TestComponent />);
+
+  const link = screen.getByRole("link", { name: /Join Our Discord Server/i });
+  expect(link).toBeInTheDocument();
+  expect(link).toHaveAttribute("href", DISCORD_LINK);
+});

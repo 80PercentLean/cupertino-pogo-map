@@ -56,7 +56,10 @@ export default function Legend() {
     }
 
     return (
-      <Card className="left fixed bottom-22 z-998 m-2 py-4 md:bottom-14 [@media(max-height:600px)]:hidden">
+      <Card
+        className="left fixed bottom-22 z-998 m-2 py-4 md:bottom-14 [@media(max-height:600px)]:hidden"
+        data-testid="legend"
+      >
         <CardContent
           className={`grid grid-flow-col grid-rows-${Math.min(6, itemCount)} gap-x-2 gap-y-1 px-4 md:grid-rows-${Math.min(4, itemCount)} md:gap-x-4`}
         >
