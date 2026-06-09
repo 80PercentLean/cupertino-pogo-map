@@ -22,16 +22,24 @@ export function IconEmojiHighlighted({ children }: PropsWithChildren) {
 
 export function MeetupSpot({ className }: { className?: string }) {
   return (
-    <div className={cn("text-3xl text-shadow-sm", className)}>
+    <div
+      className={cn("text-3xl text-shadow-sm", className)}
+      data-poitype="meetupspot"
+    >
       {emojiMeetupspot}
     </div>
   );
 }
 
-export function ParkingWarn({ className }: { className?: string }) {
+export function ParkingWarn(
+  { className, isMarker }: { className?: string; isMarker?: boolean } = {
+    isMarker: true,
+  },
+) {
   return (
     <div
       className={cn("relative inline-block text-xl text-shadow-sm", className)}
+      data-poitype={isMarker ? "parking" : undefined}
     >
       {emojiParking}
       <div className="absolute top-0 -right-1 flex h-3 w-3 items-center justify-center rounded-full bg-yellow-400 text-xs font-bold text-black ring-1 ring-black">

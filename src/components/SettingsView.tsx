@@ -71,6 +71,7 @@ export default function SettingsView() {
 
   return (
     <UiOverlayCard
+      closeBtnLabel="Close settings view"
       title={<UiOverlayCardIconTitle Icon={Settings} text="Settings" />}
     >
       <FieldSet>

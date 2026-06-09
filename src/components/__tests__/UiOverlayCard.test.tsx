@@ -81,6 +81,7 @@ test("loads <UiOverlayCard>", () => {
 
   expect(screen.getByRole("heading", { name: /Lorem Ipsum/i }));
   expect(screen.getAllByRole("paragraph")).toHaveLength(5);
+  expect(screen.getByRole("button", { name: /Close view/i }));
 });
 
 test("loads <UiOverlayCard> with <UiOverlayCardIconTitle>", () => {

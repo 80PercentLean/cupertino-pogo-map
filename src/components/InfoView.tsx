@@ -13,6 +13,7 @@ import { Separator } from "./ui/separator";
 export default function InfoView() {
   return (
     <UiOverlayCard
+      closeBtnLabel="Close information view"
       title={<UiOverlayCardIconTitle Icon={Info} text="Information" />}
     >
       <h2 className="font-semibold text-balance">About This Project</h2>

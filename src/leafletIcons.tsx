@@ -69,7 +69,9 @@ export const iconDefaultHighlighted = divIcon({
 });
 
 export const jsxAllBinaryRestroom = (
-  <div className="text-xl text-shadow-sm">{emojiAllBinaryRestroom}</div>
+  <div className="text-xl text-shadow-sm" data-poitype="restroom">
+    {emojiAllBinaryRestroom}
+  </div>
 );
 
 /** Leaflet icon for all/binary gender restrooms. */
@@ -120,7 +122,9 @@ export const iconGymHighlighted = divIcon({
 });
 
 export const jsxDevpoi = (
-  <div className="text-xl text-shadow-sm">{emojiDevpoi}</div>
+  <div className="text-xl text-shadow-sm" data-poitype="devpoi">
+    {emojiDevpoi}
+  </div>
 );
 
 /** Leaflet icon for dev POIs. */
@@ -163,7 +167,9 @@ export const iconMeetupspotHighlighted = divIcon({
 });
 
 export const jsxMRestroom = (
-  <div className="text-xl text-shadow-sm">{emojiMRestroom}</div>
+  <div className="text-xl text-shadow-sm" data-poitype="restroom">
+    {emojiMRestroom}
+  </div>
 );
 
 /** Leaflet icon for men's restrooms. */
@@ -182,7 +188,9 @@ export const iconMRestroomHighlighted = divIcon({
 });
 
 export const jsxParking = (
-  <div className="text-xl text-shadow-sm">{emojiParking}</div>
+  <div className="text-xl text-shadow-sm" data-poitype="parking">
+    {emojiParking}
+  </div>
 );
 
 /** Leaflet icon for parking. */
@@ -304,7 +312,9 @@ export const iconShowcaseHighlighted = divIcon({
 });
 
 export const jsxWRestroom = (
-  <div className="text-xl text-shadow-sm">{emojiWRestroom}</div>
+  <div className="text-xl text-shadow-sm" data-poitype="restroom">
+    {emojiWRestroom}
+  </div>
 );
 
 /** Leaflet icon for women's restrooms. */

@@ -8,7 +8,9 @@ import MapCover from "./MapCover";
 import { useStore } from "./hooks/store";
 
 export interface Props {
+  closeBtnLabel?: string;
   title?: ReactNode;
+  "data-testid"?: string;
 }
 
 /**
@@ -16,6 +18,8 @@ export interface Props {
  */
 export default function UiOverlayCard({
   children,
+  closeBtnLabel,
+  "data-testid": testId,
   title,
 }: PropsWithChildren<Props>) {
   const activeMainView = useStore((s) => s.activeMainView);
@@ -38,7 +42,10 @@ export default function UiOverlayCard({
   return (
     <MapCover>
       {createPortal(
-        <div className="fixed inset-0 z-1001 flex h-full items-center justify-center">
+        <div
+          className="fixed inset-0 z-1001 flex h-full items-center justify-center"
+          data-testid={testId}
+        >
           <Card className="absolute top-0 right-0 left-0 mb-20 h-full gap-0 rounded-none pb-15 md:static md:top-auto md:right-auto md:bottom-auto md:left-auto md:m-auto md:h-auto md:max-h-full md:w-125 md:rounded-xl md:pb-0">
             <CardHeader className="border-gray flex flex-row items-center justify-between border-b shadow-[0_5px_5px_-5px_rgba(0,0,0,0.5)]">
               {title && typeof title === "string" ? (
@@ -52,6 +59,7 @@ export default function UiOverlayCard({
                 variant="ghost"
                 size="icon"
                 className="h-6 w-6 cursor-pointer"
+                aria-label={closeBtnLabel || "Close view"}
                 onClick={() => setActiveMainView(null)}
               >
                 <X className="h-4 w-4" />

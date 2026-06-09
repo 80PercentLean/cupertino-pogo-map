@@ -22,11 +22,15 @@ export default function StdRaidPath() {
     const COLOR = "#5a9ffc";
     let path;
     if (disableAnimations) {
-      path = polyline(LATLNGS as LatLngTuple[], { color: COLOR });
+      path = polyline(LATLNGS as LatLngTuple[], {
+        color: COLOR,
+        className: "std-raid-path",
+      });
     } else {
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
       path = new AntPath(LATLNGS, {
         color: COLOR,
+        className: "std-raid-path",
         dashArray: [10, 20],
         delay: 1000,
         hardwareAccelerated: true,

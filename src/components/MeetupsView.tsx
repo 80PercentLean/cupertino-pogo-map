@@ -208,9 +208,11 @@ export default function MeetupsView() {
 
   return (
     <UiOverlayCard
+      closeBtnLabel="Close meetups view"
       title={
         <UiOverlayCardIconTitle Icon={FlameKindling} text="Campfire Meetups" />
       }
+      data-testid="meetups-view"
     >
       <div className="flex flex-col gap-6">
         <Alert className="border-purple-900 bg-purple-800 text-purple-50">

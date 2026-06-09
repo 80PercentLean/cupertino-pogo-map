@@ -81,7 +81,7 @@ export default function UiMapIcon({
 
   if (type === "parking") {
     if (subtype === "conditionally-free") {
-      return <ParkingWarn className={className} />;
+      return <ParkingWarn isMarker={false} className={className} />;
     }
 
     return <div className={className}>{emojiParking}</div>;

@@ -1,6 +1,6 @@
 import { server } from "@/mocks/node";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import { HttpResponse, http } from "msw";
 
 import MeetupsView from "../MeetupsView";
@@ -41,6 +41,15 @@ test("filters for Cupertino PoGO events & completes loading successfully", async
     await screen.findByText(/First Friendship Friday/i),
   ).toBeInTheDocument();
   expect(screen.queryByText(/Kartana Raid Hour/i)).not.toBeInTheDocument();
+
+  // Assert that Campfire links exist
+  const view = screen.getByTestId("meetups-view");
+  const links = within(view).getAllByRole("link");
+  expect(
+    links.some((link) =>
+      link.getAttribute("href")?.includes("https://cmpf.re"),
+    ),
+  ).toBe(true);
 });
 
 test("filters for Wild Goose events & completes loading successfully", async () => {
@@ -55,6 +64,15 @@ test("filters for Wild Goose events & completes loading successfully", async () 
   expect(
     screen.queryByText(/First Friendship Friday/i),
   ).not.toBeInTheDocument();
+
+  // Assert that Campfire links exist
+  const view = screen.getByTestId("meetups-view");
+  const links = within(view).getAllByRole("link");
+  expect(
+    links.some((link) =>
+      link.getAttribute("href")?.includes("https://cmpf.re"),
+    ),
+  ).toBe(true);
 });
 
 test("API returns a 500 error", async () => {

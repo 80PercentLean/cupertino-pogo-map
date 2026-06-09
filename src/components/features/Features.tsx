@@ -103,6 +103,7 @@ export default function Features({
               : iconHighlighted
           }
           isDisabled={isDisabled}
+          isHidden={isHidden}
           isImpossible={isImpossible}
           photo={photo}
           position={position}

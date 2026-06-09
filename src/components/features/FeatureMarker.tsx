@@ -59,6 +59,7 @@ export interface Props {
   iconHighlighted?: DivIcon;
   id: string | number;
   isDisabled?: CProperties["isDisabled"];
+  isHidden?: CProperties["isHidden"];
   isImpossible?: CProperties["isImpossible"];
   photo?: CProperties["photo"];
   position: LatLngTuple;
@@ -80,6 +81,7 @@ export default function FeatureMarker({
   icon,
   iconHighlighted,
   isDisabled,
+  isHidden,
   isImpossible,
   photo,
   position,
@@ -332,6 +334,17 @@ export default function FeatureMarker({
         icon={iconHighlighted && isHighlighted ? iconHighlighted : icon}
         position={position}
         zIndexOffset={isHighlighted ? 10000 : 0}
+        data-isdisabled={
+          typeof isDisabled === "boolean" ? String(isDisabled) : undefined
+        }
+        data-ishidden={
+          typeof isHidden === "boolean" ? String(isHidden) : undefined
+        }
+        data-isimpossible={
+          typeof isImpossible === "boolean" ? String(isImpossible) : undefined
+        }
+        data-poitype={type}
+        data-removed={removed ? "true" : undefined}
         data-testid={String(id)}
         eventHandlers={{
           click: () => setIdQueryParam(id),

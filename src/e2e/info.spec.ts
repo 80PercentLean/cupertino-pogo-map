@@ -3,15 +3,40 @@ import { expect, test } from "@playwright/test";
 test("opens info view when info button is used", async ({ page }) => {
   await page.goto("/map", { waitUntil: "networkidle" });
 
+  // Expect info view to be closed
   await expect(
     page.getByRole("heading", { name: "Information" }),
   ).not.toBeVisible();
 
   await page.getByRole("button", { name: /\bInfo\b/i }).click();
 
+  // Expect info view to be open
   await expect(
     page.getByRole("heading", { name: "Information" }),
   ).toBeVisible();
+});
+
+test("closes info view when the close button is used", async ({ page }) => {
+  await page.goto("/map", { waitUntil: "networkidle" });
+
+  // Expect info view to be closed
+  await expect(
+    page.getByRole("heading", { name: "Information" }),
+  ).not.toBeVisible();
+
+  await page.getByRole("button", { name: /\bInfo\b/i }).click();
+
+  // Expect info view to be open
+  await expect(
+    page.getByRole("heading", { name: "Information" }),
+  ).toBeVisible();
+
+  await page.getByRole("button", { name: "Close information view" }).click();
+
+  // Expect info view to be closed again
+  await expect(
+    page.getByRole("heading", { name: "Information" }),
+  ).not.toBeVisible();
 });
 
 test("starts app with info view open when start param is set to it", async ({
@@ -19,6 +44,7 @@ test("starts app with info view open when start param is set to it", async ({
 }) => {
   await page.goto("/map?start=info", { waitUntil: "networkidle" });
 
+  // Expect info view to be open
   await expect(
     page.getByRole("heading", { name: "Information" }),
   ).toBeVisible();
