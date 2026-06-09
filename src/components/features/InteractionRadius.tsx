@@ -1,5 +1,6 @@
 import { type LatLngTuple } from "leaflet";
-import { Circle } from "react-leaflet";
+
+import CCircle from "../CCircle";
 
 export interface Props {
   position: LatLngTuple;
@@ -10,7 +11,7 @@ export interface Props {
  */
 export default function InteractionRadius({ position }: Props) {
   return (
-    <Circle
+    <CCircle
       center={position}
       interactive={false}
       pathOptions={{
@@ -20,6 +21,7 @@ export default function InteractionRadius({ position }: Props) {
         weight: 1,
       }}
       radius={80}
+      data-rangetype="interaction"
     />
   );
 }

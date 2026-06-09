@@ -151,6 +151,7 @@ export default function ListView() {
       }) => {
         if (
           (!showDisabled && isDisabled) ||
+          (!showDisabled && isImpossible) ||
           (!showHidden && isHidden) ||
           (!showRemoved && removed) ||
           (type === "devpoi" && !wayfarerMode)

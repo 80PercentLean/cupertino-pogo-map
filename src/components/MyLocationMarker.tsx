@@ -1,5 +1,4 @@
-import { Circle } from "react-leaflet";
-
+import CCircle from "./CCircle";
 import CCircleMarker, { type CCircleMarkerProps } from "./CCircleMarker";
 import { useStore } from "./hooks/store";
 
@@ -31,7 +30,7 @@ export default function MyLocationMarker({
 
   if (myLocation) {
     const accuracyCircle = myLocationAccuracy && (
-      <Circle
+      <CCircle
         center={myLocation}
         interactive={false}
         pathOptions={{ fillColor: "#5c84f0", stroke: false }}

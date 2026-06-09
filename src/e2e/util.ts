@@ -89,3 +89,20 @@ export const longPressContextMenu = async (
     { position, duration, manualContextMenu },
   );
 };
+
+/**
+ * Wait for Leaflet map's tile layer to load.
+ * Useful to make sure the layers have loaded before taking screenshots.
+ * @param page Playwright page
+ */
+export const waitForMapTilesToLoad = (page: Page) =>
+  page.waitForFunction(() => {
+    const tiles = Array.from(document.querySelectorAll(".leaflet-tile"));
+
+    return (
+      tiles.length > 0 &&
+      tiles.every((tile) => {
+        return tile instanceof HTMLImageElement && tile.complete;
+      })
+    );
+  });

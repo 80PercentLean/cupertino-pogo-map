@@ -347,6 +347,18 @@ export default function CheckInGuide() {
           Research. All that's left for you to do is complete the remaining
           tasks to claim the best rewards the Research has to offer!
         </p>
+        <p>
+          The next page of the Check-In Timed Research won't appear immediately,
+          so you will need to return to the in-game Pokémon GO map, tap on the{" "}
+          <b>Binoculars</b>{" "}
+          <img
+            src={BinocularsIcon}
+            alt="Binoculars"
+            className="inline-block h-6 w-6 rounded-full border border-[#E9A85D] bg-white"
+          />{" "}
+          in the bottom-right corner, tap on the "Events" tab, and scroll down
+          again until you see the new page.
+        </p>
         <img
           src={CheckInResearchScreenshot}
           alt="Screenshot of the first Check-In Timed Research reward"

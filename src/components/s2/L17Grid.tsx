@@ -9,7 +9,12 @@ export default function L17Grid() {
     <GeoJSON
       data={l17CellsJson}
       interactive={false}
-      style={{ fillOpacity: 0, color: "#ffa500", weight: 1 }}
+      style={{
+        className: "l17-grid",
+        fillOpacity: 0,
+        color: "#ffa500",
+        weight: 1,
+      }}
     />
   );
 }

@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-// TODO: move all these tests to all test file when WG implements them
+// TODO: move the following tests to all test file when WG implements them
 
 // To clarify, "brand new load" means a completely new user is opening this for the
 // very first time
@@ -51,9 +51,14 @@ test("toggles meetup spot layer when meetup spot button is used", async ({
 }) => {
   await page.goto("/map", { waitUntil: "networkidle" });
 
-  // Expect meetups to be visible
   const poi = page.locator('[data-poitype="meetupspot"]');
+  const legendIcon = page.getByTestId("legend").getByText("Meetup Spot");
+
+  // Expect meetups to be visible
   expect(await poi.count()).toBeGreaterThan(0);
+
+  // Expect meetup spot icon to be turned on in the legend
+  await expect(legendIcon).toBeVisible();
 
   await page.getByRole("button", { name: "Open Layers" }).click();
 
@@ -63,18 +68,32 @@ test("toggles meetup spot layer when meetup spot button is used", async ({
   // Expect meetups to be turned off
   expect(await poi.count()).toBe(0);
 
+  // Expect meetup spot icon to be turned off in the legend
+  await expect(legendIcon).not.toBeVisible();
+
   await layerBtn.click();
 
   // Expect meetups to be turned back on
   expect(await poi.count()).toBeGreaterThan(0);
+
+  // Expect meetup spot icon to be turned back on in the legend
+  await expect(legendIcon).toBeVisible();
 });
 
 test("toggles parking layer when parking button is used", async ({ page }) => {
   await page.goto("/map", { waitUntil: "networkidle" });
 
-  // Expect parking to be visible
   const poi = page.locator('[data-poitype="parking"]');
+  const legend = page.getByTestId("legend");
+  const parkingLegendIcon = legend.getByText("Free Parking");
+  const parkingWarnLegendIcon = legend.getByText("Parking (Free Sometimes)");
+
+  // Expect parking to be visible
   expect(await poi.count()).toBeGreaterThan(0);
+
+  // Expect parking icons to be turned on in the legend
+  await expect(parkingLegendIcon).toBeVisible();
+  await expect(parkingWarnLegendIcon).toBeVisible();
 
   await page.getByRole("button", { name: "Open Layers" }).click();
 
@@ -84,10 +103,18 @@ test("toggles parking layer when parking button is used", async ({ page }) => {
   // Expect parking to be turned off
   expect(await poi.count()).toBe(0);
 
+  // Expect parking icons to be turned off in the legend
+  await expect(parkingLegendIcon).not.toBeVisible();
+  await expect(parkingWarnLegendIcon).not.toBeVisible();
+
   await layerBtn.click();
 
   // Expect parking to be turned back on
   expect(await poi.count()).toBeGreaterThan(0);
+
+  // Expect parking icons to be turned back on in the legend
+  await expect(parkingLegendIcon).toBeVisible();
+  await expect(parkingWarnLegendIcon).toBeVisible();
 });
 
 test("toggles Standard Raid Path layer when Standard Raid Path button is used", async ({
@@ -118,9 +145,19 @@ test("toggles restrooms layer when restrooms button is used", async ({
 }) => {
   await page.goto("/map", { waitUntil: "networkidle" });
 
-  // Expect restroom to be visible
   const poi = page.locator('[data-poitype="restroom"]');
+  const legend = page.getByTestId("legend");
+  const allBinaryRestroomIcon = legend.getByText("All-Gender/Men's/Women's");
+  const mRestroomIcon = legend.getByText("Men's Restroom", { exact: true });
+  const wRestroomIcon = legend.getByText("Women's Restroom", { exact: true });
+
+  // Expect restroom to be visible
   expect(await poi.count()).toBeGreaterThan(0);
+
+  // Expect restroom icons to be turned on in the legend
+  await expect(allBinaryRestroomIcon).toBeVisible();
+  await expect(mRestroomIcon).toBeVisible();
+  await expect(wRestroomIcon).toBeVisible();
 
   await page.getByRole("button", { name: "Open Layers" }).click();
 
@@ -130,8 +167,18 @@ test("toggles restrooms layer when restrooms button is used", async ({
   // Expect restroom to be turned off
   expect(await poi.count()).toBe(0);
 
+  // Expect restroom icons to be turned off in the legend
+  await expect(allBinaryRestroomIcon).not.toBeVisible();
+  await expect(mRestroomIcon).not.toBeVisible();
+  await expect(wRestroomIcon).not.toBeVisible();
+
   await layerBtn.click();
 
   // Expect restroom to be turned back on
   expect(await poi.count()).toBeGreaterThan(0);
+
+  // Expect restroom icons to be turned back on in the legend
+  await expect(allBinaryRestroomIcon).toBeVisible();
+  await expect(mRestroomIcon).toBeVisible();
+  await expect(wRestroomIcon).toBeVisible();
 });

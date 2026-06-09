@@ -72,7 +72,7 @@ export const createBtnNoPowerSpotZone = (
   return (
     <Button
       size="icon"
-      title="Toggle No Power Spot Build Zones (22m)"
+      title="Toggle No Power Spot Zones (22m)"
       variant="outline"
       className={cn(
         "group cursor-pointer rounded-full text-white",
@@ -100,7 +100,7 @@ export const createBtnNoCaPoiZone = (
   return (
     <Button
       size="icon"
-      title="Toggle No CA POI Build Zones (30m)"
+      title="Toggle No CA POI Zones (30m)"
       variant="outline"
       className={cn(
         "group cursor-pointer rounded-full text-white",

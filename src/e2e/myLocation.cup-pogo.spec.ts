@@ -1,5 +1,7 @@
 import { expect, test } from "@playwright/test";
 
+import { waitForMapTilesToLoad } from "./util";
+
 test.use({
   geolocation: { latitude: 37.324330113371445, longitude: -122.0443618297577 },
   permissions: ["geolocation"],
@@ -16,6 +18,8 @@ test("shows my location", async ({ page }) => {
 
   // Check that my location marker is visible
   await expect(page.getByTestId("my-location")).toBeVisible();
+
+  await waitForMapTilesToLoad(page);
 
   await expect(page).toHaveScreenshot({ maxDiffPixels: 100 });
 });

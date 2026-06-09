@@ -453,7 +453,7 @@ export default function LayersOverlay() {
                   }}
                 />
                 <FieldLabel htmlFor="no-ps-zones" className="cursor-pointer">
-                  No Power Spot Build Zones (22m)
+                  No Power Spot Zones (22m)
                 </FieldLabel>
               </Field>
             </Field>
@@ -488,7 +488,7 @@ export default function LayersOverlay() {
                     htmlFor="no-ca-poi-zones"
                     className="cursor-pointer"
                   >
-                    No CA POI Build Zones (30m)
+                    No CA POI Zones (30m)
                   </FieldLabel>
                 </Field>
               </Field>

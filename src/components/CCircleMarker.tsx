@@ -19,14 +19,15 @@ export default function CCircleMarker(props: CCircleMarkerProps) {
   const refInternal = useRef<LeafletCircleMarker | null>(null);
 
   useEffect(() => {
-    if (testId && refInternal.current) {
-      const icon = refInternal.current?.getElement();
+    if (testId) {
+      const marker = ref?.current ?? refInternal.current;
+      const icon = marker?.getElement();
 
       if (icon) {
         icon.setAttribute("data-testid", testId);
       }
     }
-  }, [testId]);
+  }, [ref, testId]);
 
   return <CircleMarker ref={ref ?? refInternal} {...props} />;
 }

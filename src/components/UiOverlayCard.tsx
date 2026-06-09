@@ -59,7 +59,7 @@ export default function UiOverlayCard({
                 variant="ghost"
                 size="icon"
                 className="h-6 w-6 cursor-pointer"
-                aria-label={closeBtnLabel || "Close view"}
+                aria-label={closeBtnLabel ?? "Close view"}
                 onClick={() => setActiveMainView(null)}
               >
                 <X className="h-4 w-4" />

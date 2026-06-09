@@ -9,7 +9,12 @@ export default function L13Grid() {
     <GeoJSON
       data={l13CellsJson}
       interactive={false}
-      style={{ fillOpacity: 0, color: "#0f0", weight: 2 }}
+      style={{
+        className: "l13-grid",
+        fillOpacity: 0,
+        color: "#0f0",
+        weight: 2,
+      }}
     />
   );
 }
