@@ -45,7 +45,8 @@ exports[`matches <L13Grid> the default snapshot 1`] = `
         >
           <g>
             <path
-              d="M2 2L2 -2L-2 -2L-2 2z"
+              class="l13-grid"
+              d="M0 0"
               fill="#0f0"
               fill-opacity="0"
               fill-rule="evenodd"
