@@ -1,5 +1,52 @@
 # Memorial Park/De Anza College POI History
 
+## 6-10-2026
+
+### Power Spots Enabled 🟢
+
+- 76 Gas Station (174224ec875346eda4cd3f4d45fb77f9.23)
+- The Little Chihuahua (1b473e293bbc4e17a32c8a039dc3db66.23)
+- Leili Estaki Photography (2d096753b27c4284a74215921ddff377.23)
+- Richard Kent Memorial (5713b98e832f48188235aa3c7d9293cd.16)
+- Recreation-City of Cupertino, Teen Center (78437672b6cf4f4e8cc54fe78961eb1b.23)
+- Picnic and BBQ pit (901e917e9c4f3cf198d04b6bc5e32ef8.16)
+- Genji Sushi (9b7e64790ff4472ab6acc815cfe09b6d.23)
+- La Vita É Una Fontana (9bc3e5e15754404da54b3d9d120db8d8.11)
+- Memorial Park (baaf219aafc744bdaed3bd74aeec80d8.23)
+- De Anza College Plaque (c3adc001297c49458120c74dcfeb42dd.16)
+- Magda Lattin Trinom (fd2196a55a8a4728b5783dfecd34c62e.11)
+
+### Power Spots Disabled 🚫
+
+- Rite Time Watch Repair (0c3be0e5132b4166940c34d9d3feff7d.23)
+- MIXT (1e42ce08b9d34eaaa345bc9614813ca5.23)
+- Steven S Wong (39a4f2b7cc724b49ba1d9da3cea8897c.23)
+- Cupertino Marketplace (3d1706fa8b384933973c6ec87cfb800f.23)
+- Stellar Motion (531d9c60fd7446068c0c9c154ec702e5.16)
+- Dionysus (5333cc20d862479f8f762e663840e77f.16)
+- MLC Fountain B (6bc7dd2ac69541b1b5a8e801fadab86a.16)
+- Whole Foods (a93d954fcaa2478285f406155cc2e989.23)
+- Memorial Park Picnic Area Sign (ad00c2d425553236b3e3dfb3b5c35367.16)
+- DeAnza College Carving (ad5bd7b034df4bd683a7e484b9494944.16)
+- In memory of Virginia J. Logan (b30f61b279c93f489023653df85f8cc7.16)
+- Silicon Valley Association of REALTORS (c5f03844ca284f13ae21efab6198f4da.23)
+- De Anza College Bookstore (e90df635338a46c0a747366e66e159f5.23)
+- Lifetime Tennis (f0d0f13bcdf04299a8353029f0d5f3c0.23)
+- Home Of Christ IN Cupertino (fd7bd22db5a04fef8794dc783dccb711.23)
+
+### PokéStop Renamed
+
+- Community pool ➡️ Glenbrook North Community Pool (accb87acb12b30a184eba98d03dddc84.16)
+
+## 6-2-2026
+
+### Showcases Created 🆕
+
+- Cupertino Community Center (0e298cdc9bd14410acab01a746c8bc0a.16)
+- De Anza Athletic Fields (a71e5bbac79e42d0b4c0dbd0a3dc6e92.16)
+- Pickleball at Memorial Park (c28d519e7b4d37c8ae3054ec1a867972.16)
+- Half Basketball Court (ecc31a54326a37bcac4633792ba44298.16)
+
 ## 5-5-26
 
 ### PokeStops Created 🆕

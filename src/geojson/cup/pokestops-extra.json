@@ -54,6 +54,7 @@
       "properties": {
         "name": "Cupertino Community Center",
         "type": "pokestop",
+        "subtype": "showcase",
         "source": "Wayfarer",
         "ingress": true
       }
@@ -783,6 +784,7 @@
       "properties": {
         "name": "De Anza Athletic Fields",
         "type": "pokestop",
+        "subtype": "showcase",
         "source": "Wayfarer",
         "ingress": true
       }
@@ -794,6 +796,15 @@
         "type": "pokestop",
         "isHidden": true,
         "source": "Wayfarer"
+      }
+    },
+    {
+      "id": "accb87acb12b30a184eba98d03dddc84.16",
+      "properties": {
+        "name": "Glenbrook North Community Pool",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "updated": "2026-06-06T08:00:00Z"
       }
     },
     {
@@ -888,6 +899,7 @@
       "properties": {
         "name": "Mary Avenue Dog Park Rules Sign",
         "type": "pokestop",
+        "subtype": "showcase",
         "source": "Wayfarer",
         "isHidden": false,
         "submitter": "80PercentLean",
@@ -902,6 +914,15 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "ingress": true
+      }
+    },
+    {
+      "id": "c28d519e7b4d37c8ae3054ec1a867972.16",
+      "properties": {
+        "name": "Pickleball at Memorial Park",
+        "type": "pokestop",
+        "subtype": "showcase",
+        "source": "Wayfarer"
       }
     },
     {
@@ -1079,6 +1100,16 @@
         "submitter": "80PercentLean",
         "submitted": "2025-07-10T08:00:00Z",
         "created": "2025-07-15T08:00:00Z"
+      }
+    },
+    {
+      "id": "ecc31a54326a37bcac4633792ba44298.16",
+      "properties": {
+        "name": "Half Basketball Court",
+        "type": "pokestop",
+        "subtype": "showcase",
+        "isHidden": true,
+        "source": "Wayfarer"
       }
     },
     {
