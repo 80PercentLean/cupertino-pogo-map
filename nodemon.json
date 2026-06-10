@@ -1,5 +1,5 @@
 {
   "ignore": ["*.test.js", "*.spec.js", "*.test.ts", "*.spec.ts"],
   "watch": ["package.json", "src", "public"],
-  "ext": "css,html,js,jsx,json,ts,tsx"
+  "ext": "css,geojson,html,js,jsx,json,ts,tsx"
 }

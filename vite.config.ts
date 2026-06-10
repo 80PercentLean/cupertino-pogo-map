@@ -59,6 +59,23 @@ export default defineConfig(({ mode }) => {
     };
   };
 
+  const plugins = [
+    htmlTitlePlugin(),
+    react({
+      babel: {
+        plugins: ["babel-plugin-react-compiler"],
+      },
+    }),
+    tailwindcss(),
+    stylelint(),
+  ];
+
+  if (!env.VITE_E2E) {
+    // Only include Cloudflare Vite plugin when not running in E2E mode
+    // since it causes issues there
+    plugins.push(cloudflare());
+  }
+
   return {
     base: env.VITE_ROOT_PATH ?? "/",
     server: {
@@ -73,17 +90,7 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
-    plugins: [
-      htmlTitlePlugin(),
-      react({
-        babel: {
-          plugins: ["babel-plugin-react-compiler"],
-        },
-      }),
-      tailwindcss(),
-      stylelint(),
-      cloudflare(),
-    ],
+    plugins,
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "./src"),

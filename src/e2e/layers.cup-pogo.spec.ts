@@ -27,17 +27,20 @@ test("displays default layers on brand new load", async ({ page }) => {
   );
   expect(await powerspotsEnabled.count()).toBeGreaterThan(0);
 
-  // Expect dev POIs to hidden
-  const powerspotsDisabled = page.locator(
-    '[data-poitype="powerspot"][data-isdisabled="true"]',
-  );
-  expect(await powerspotsDisabled.count()).toBe(0);
-
   // Expect disabled & impossible power spots to be hidden
   const powerspotsImpossible = page.locator(
     '[data-poitype="powerspot"][data-isimpossible="true"]',
   );
   expect(await powerspotsImpossible.count()).toBe(0);
+
+  const powerspotsDisabled = page.locator(
+    '[data-poitype="powerspot"][data-isdisabled="true"]',
+  );
+  expect(await powerspotsDisabled.count()).toBe(0);
+
+  // Expect POIs in development to be hidden
+  const devpois = page.locator('[data-poitype="devpoi"]');
+  expect(await devpois.count()).toBe(0);
 
   // Expect all hidden POIs to be hidden
   const hiddenPois = page.locator('[data-poitype="hidden"]');

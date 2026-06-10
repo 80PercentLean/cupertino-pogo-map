@@ -445,7 +445,10 @@ export default function ListView() {
   }, [debouncedHighlight, debouncedPlacedHighlight]);
 
   return (
-    <Card className="absolute inset-0 z-999 gap-0 rounded-none pt-0 pb-20 md:fixed md:top-0 md:left-0 md:m-2 md:max-h-[66vh] md:w-100 md:rounded-xl md:pb-0">
+    <Card
+      className="absolute inset-0 z-999 gap-0 rounded-none pt-0 pb-20 md:fixed md:top-0 md:left-0 md:m-2 md:max-h-[66vh] md:w-100 md:rounded-xl md:pb-0"
+      data-testid="list-view"
+    >
       <InputGroup className="rounded-none py-6 md:rounded-t-xl">
         <InputGroupInput
           name="search"
@@ -455,6 +458,7 @@ export default function ListView() {
         />
         <InputGroupAddon align="inline-end">
           <Button
+            aria-label={deferredQuery ? "Clear search" : undefined}
             variant="ghost"
             className={cn(
               deferredQuery
@@ -467,7 +471,10 @@ export default function ListView() {
           </Button>
         </InputGroupAddon>
       </InputGroup>
-      <div className="grid grid-cols-[40px_24px_1fr] gap-x-2 overflow-x-hidden overflow-y-scroll">
+      <div
+        className="grid grid-cols-[40px_24px_1fr] gap-x-2 overflow-x-hidden overflow-y-scroll"
+        data-testid="list-view-items"
+      >
         {listPlacedMarkers}
         {listMain}
       </div>

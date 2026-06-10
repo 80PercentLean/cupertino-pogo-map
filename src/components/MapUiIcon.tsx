@@ -66,9 +66,20 @@ export default function UiMapIcon({
       );
     }
 
+    let gymAltTxt;
+    if (alt) {
+      gymAltTxt = alt;
+    } else {
+      gymAltTxt = "Icon for Gyms";
+
+      if (removed) {
+        gymAltTxt += " (Removed)";
+      }
+    }
+
     return (
       <img
-        alt={alt ?? "Icon for Gyms"}
+        alt={gymAltTxt}
         src={imgGym}
         className={cn(removed && ICON_REMOVED_STYLE, className)}
       />
@@ -89,9 +100,20 @@ export default function UiMapIcon({
 
   if (type === "pokestop") {
     if (subtype === "showcase") {
+      let showcaseAltTxt;
+      if (alt) {
+        showcaseAltTxt = alt;
+      } else {
+        showcaseAltTxt = "Icon for PokéStop Showcases";
+
+        if (removed) {
+          showcaseAltTxt += " (Removed)";
+        }
+      }
+
       return (
         <img
-          alt={alt ?? "Icon for Showcases"}
+          alt={showcaseAltTxt}
           src={imgShowcase}
           className={cn(removed && ICON_REMOVED_STYLE, className)}
         />
@@ -109,9 +131,20 @@ export default function UiMapIcon({
       );
     }
 
+    let pokestopAltTxt;
+    if (alt) {
+      pokestopAltTxt = alt;
+    } else {
+      pokestopAltTxt = "Icon for PokéStops";
+
+      if (removed) {
+        pokestopAltTxt += " (Removed)";
+      }
+    }
+
     return (
       <img
-        alt={alt ?? "Icon for PokéStops"}
+        alt={pokestopAltTxt}
         src={imgPokestop}
         className={cn(removed && ICON_REMOVED_STYLE, className)}
       />
@@ -143,9 +176,26 @@ export default function UiMapIcon({
       style = ICON_POWERSPOT_DISABLED_STYLE;
     }
 
+    let powerspotAltTxt;
+    if (alt) {
+      powerspotAltTxt = alt;
+    } else {
+      powerspotAltTxt = "Icon for Power Spots";
+
+      if (removed) {
+        powerspotAltTxt += " (Removed)";
+      } else if (isImpossible) {
+        powerspotAltTxt += " (Impossible)";
+      } else if (isDisabled) {
+        powerspotAltTxt += " (Disabled)";
+      } else {
+        powerspotAltTxt += " (Enabled)";
+      }
+    }
+
     return (
       <img
-        alt={alt ?? "Icon for Power Spots"}
+        alt={powerspotAltTxt}
         src={imgPowerspot}
         className={cn(style, className)}
       />
@@ -165,7 +215,15 @@ export default function UiMapIcon({
   }
 
   if (type === "devpoi") {
-    return <div className={className}>{emojiDevpoi}</div>;
+    return (
+      <div
+        aria-label="Icon for POIs In-Development"
+        role="img"
+        className={className}
+      >
+        {emojiDevpoi}
+      </div>
+    );
   }
 
   return (

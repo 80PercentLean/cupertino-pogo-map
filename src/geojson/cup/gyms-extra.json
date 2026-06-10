@@ -67,6 +67,7 @@
         "name": "Mary Avenue Dog Park",
         "type": "gym",
         "source": "Wayfarer",
+        "isHidden": false,
         "ingress": true,
         "converted": "2025-11-02T08:00:00Z"
       }

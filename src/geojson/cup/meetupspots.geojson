@@ -4,9 +4,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Quinlan Community Center Gazebo (Walking Raid Group)",
+        "name": "Quinlan Community Center Gazebo Meetup Spot",
         "type": "meetupspot",
-        "desc": "This is the meetup spot mainly used for Raid Days and our walking group for Raid Hours where we try to pass by as many gyms as possible to maximize the amount of raids we complete.\n\nThe walking raid group meets up here for Raid Hour every Wednesday at 6:00pm. The quick raid group meets up at the same time on the other side of the park at the Veterans Memorial.",
+        "desc": "This is the meetup spot mainly used for our guided group on Raid Days/Hours where walk together to clear as many Raids as possible.\n\nFor Raid Hours, we meet here every Wednesday at 6:00pm.The walking raid group meets up here for Raid Hour every Wednesday at 6:00pm. The quick raid group meets up at the same time on the other side of the park at the Veterans Memorial.",
         "marker-color": "#ffa500",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -20,7 +20,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Veterans Memorial (Quick Raid Group)",
+        "name": "Veterans Memorial Meetup Spot",
         "type": "meetupspot",
         "desc": "This is the meetup spot mainly used for our quick group during Raid Hours where players who only have time for two or three Raids will complete their raids together.\n\nThe quick raid group meets up here for Raid Hour every Wednesday at 6:00pm. The walking raid group meets up at the same time on the other side of the park at the Quinlan Community Center gazebo.",
         "marker-color": "#ffa500",
@@ -36,7 +36,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Hinson Campus Center",
+        "name": "Hinson Campus Center Meetup Spot",
         "type": "meetupspot",
         "desc": "This is the meetup spot mainly used for non-Raid/Max Battle events like Spotlight Hour & Community Day.",
         "marker-color": "#ffa500",
