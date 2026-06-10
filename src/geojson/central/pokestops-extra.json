@@ -1,6 +1,15 @@
 {
   "features": [
     {
+      "id": "2785b79a4d3546409b7481c48d7545f9.16",
+      "properties": {
+        "name": "Jerry Scott Memorial",
+        "type": "pokestop",
+        "subtype": "showcase",
+        "source": "Wayfarer"
+      }
+    },
+    {
       "id": "fd677db6a63242f98ed3684bacd5dbc2.16",
       "properties": {
         "name": "Santa Clara Community Recreation Center",

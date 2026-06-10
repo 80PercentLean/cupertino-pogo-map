@@ -1,6 +1,41 @@
 # Central Park POI History
 
+## 6-10-2026
+
+### Power Spots Enabled 🟢
+
+- Santa Clara's Magical Bridge Playground (1cc912e1b0a23b378292ca2803c6d5e7.16)
+- Santa Clara Central Park Picnic Area (38df85549710366cbcdc394bd983f186.16")
+- Woodsborough Homes Association (3a5947908ca34874a8ee3327431e9c0a.23)
+- Ganesha Indian Cuisine Sweets & Catering (7a5f0ec5a1974b0fb59b427eb3b20b11.23)
+- Wooden Amphitheater (93d65ab675354e7ba0c268b5c780a570.16)
+- Redbox (a03a4d2db02240b59e115e12d21f497a.23)
+- S&B Housecleaning (ad1bb90f3acd4f76a118ae5e62226a34.23)
+- Boba Pup (c0358e7604294a6d88c28cc17ac6f2ff.23)
+- Santa Clara Central Park Library Ceiling Artwork (c4a6136297513f5b87ad3adeb7f7c763.16)
+- Central Park Pavilion (ccf3a48f0d484db08796149b79666adc.23)
+- Anytime Fitness (e32498c5784646c696a811121c965c14.23)
+- Central Park Arbor Picnic Area (faec58277a0944b0a6448460aeaa9f6c.23)
+
+### Power Spots Disabled 🚫
+
+- Togo's (064d569dc6304038b9ab23ad6ce9e8c9.23)
+- Starbucks (12e2cdf886ba4447b4befacaab5ced7c.23)
+- 1000 Kiely (5a3e235007d140878c37100946f15771.23)
+- Orchard - Reading Across Boundaries (5c4436c8b98840578624466c6be1e8a7.16)
+- Swing and Sway Zone (5d696643422531028ba43320ee8e54bc.16)
+- Central Park Rock & Wood Playground (6f2edc70552f45beb0b70990312ff054.23)
+- Arbor Center (7425e94ee09b436b96d5a17ef273b332.16)
+- Boba Pup (b8a557dd19164136a3de51a42a64b99a.23)
+- Edmund D Pickett Jr. Memorial (cb1cefb622b13f1ca502103c159ca69b.16)
+- Reading Across Boundaries: Page (cf4d79a0983b4fae8caa4b45e654d45f.16)
+- Woodsborough Map (cf78b6b11d6f380ca1f7cda63e8c2cd0.16)
+
 ## 6-2-2026
+
+### Showcases Created 🆕
+
+- Jerry Scott Memorial (2785b79a4d3546409b7481c48d7545f9.16)
 
 ### Power Spots Created 🆕
 
