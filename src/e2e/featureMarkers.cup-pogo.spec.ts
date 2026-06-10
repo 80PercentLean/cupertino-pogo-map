@@ -28,8 +28,8 @@ test("creates a popup when a marker is used", async ({ page }) => {
 
   // Check that the popup has the expected content
   await expect(page.getByRole("heading", { name: POI_NAME_A })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Nav" })).toBeVisible();
-  await expect(page.getByRole("button", { name: "Share" })).toBeVisible();
+  await expect(page.getByRole("link", { name: /nav/i })).toBeVisible();
+  await expect(page.getByRole("button", { name: /share/i })).toBeVisible();
 
   await waitForMapTilesToLoad(page);
 
