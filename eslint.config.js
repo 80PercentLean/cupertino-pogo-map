@@ -11,7 +11,16 @@ import tseslint from "typescript-eslint";
 
 export default defineConfig([
   ...pluginQuery.configs["flat/recommended-strict"],
-  globalIgnores(["coverage", "dist", "dist-cup-pogo", "dist-wg"]),
+  globalIgnores([
+    ".wrangler",
+    "coverage",
+    "dist",
+    "dist-cup-pogo",
+    "dist-wg",
+    "src/components/ui/**",
+    "src/lib/**",
+    "public/mockServiceWorker.js",
+  ]),
   {
     files: ["**/*.{ts,tsx}"],
     extends: [
@@ -24,7 +33,6 @@ export default defineConfig([
       reactRefresh.configs.vite,
       eslintConfigPrettier,
     ],
-    ignores: ["src/components/ui/**"],
     languageOptions: {
       parserOptions: {
         project: ["./tsconfig.node.json", "./tsconfig.app.json"],

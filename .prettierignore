@@ -1,5 +1,9 @@
 # Ignore artifacts:
-build
+.wrangler
 coverage
+dist
+dist-cup-pogo
+dist-wg
 src/components/ui
 src/lib
+public/mockServiceWorker.js
