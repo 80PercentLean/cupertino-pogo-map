@@ -1,5 +1,7 @@
 import { expect, test } from "@playwright/test";
 
+import { E2E_MAP_PATH } from "./constants";
+
 test("opens meetups view when meetup button is used", async ({ page }) => {
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 

@@ -1,5 +1,7 @@
 import { expect, test } from "@playwright/test";
 
+import { E2E_MAP_PATH } from "./constants";
+
 // TODO: move the following tests to all test file when WG implements them
 
 // To clarify, "brand new load" means a completely new user is opening this for the

@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
 
+import { E2E_MAP_PATH } from "./constants";
 import { waitForMapTilesToLoad } from "./util";
 
 test.use({
