@@ -1,9 +1,10 @@
 import { expect, test } from "@playwright/test";
 
+import { E2E_MAP_PATH } from "./constants";
 import { waitForMapTilesToLoad } from "./util";
 
 test("has title", async ({ page }, { project }) => {
-  await page.goto("/map");
+  await page.goto(E2E_MAP_PATH);
 
   await expect(page).toHaveTitle(
     new RegExp(
@@ -14,11 +15,9 @@ test("has title", async ({ page }, { project }) => {
 });
 
 test("shows expected default view", async ({ page }) => {
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   await waitForMapTilesToLoad(page);
 
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 });
-
-// TODO: test popup

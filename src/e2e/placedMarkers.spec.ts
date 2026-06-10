@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
 
+import { E2E_MAP_PATH } from "./constants";
 import { isMobileProject, isPixel7, longPressContextMenu } from "./util";
 
 const PLACED_MARKER_FIRST_DESKTOP = { x: 500, y: 100 };
@@ -8,17 +9,17 @@ const PLACED_MARKER_FIRST_MOBILE = { x: 100, y: 100 };
 const PLACED_MARKER_SECOND_MOBILE = { x: 120, y: 100 };
 
 test("loads map with no placed markers by default", async ({ page }) => {
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const markers = await page.locator('[data-testid*="placed-"]').all();
 
   expect(markers.length).toBe(0);
 });
 
-test("creates a placed marker when the map is clicked", async ({
+test("creates a placed marker when the map is used", async ({
   page,
 }, testInfo) => {
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
@@ -42,10 +43,10 @@ test("creates a placed marker when the map is clicked", async ({
   expect(markers.length).toBe(1);
 });
 
-test("creates two placed markers when the map is clicked at two different locations", async ({
+test("creates two placed markers when the map is used at two different locations", async ({
   page,
 }, testInfo) => {
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
@@ -86,10 +87,10 @@ test("creates two placed markers when the map is clicked at two different locati
   expect(markers.length).toBe(2);
 });
 
-test("creates a popup when a placed marker is clicked", async ({
+test("creates a popup when a placed marker is used", async ({
   page,
 }, testInfo) => {
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
@@ -121,10 +122,10 @@ test("creates a popup when a placed marker is clicked", async ({
   await expect(page.locator(".leaflet-popup")).toBeVisible();
 });
 
-test("deletes a marker when the marker delete button is clicked", async ({
+test("deletes a marker when the marker delete button is used", async ({
   page,
 }, testInfo) => {
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 

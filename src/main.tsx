@@ -11,7 +11,11 @@ import "./setupLeaflet.ts";
 const E2E = import.meta.env.VITE_E2E as string;
 
 if (E2E === "true") {
-  console.log("App is running in E2E testing mode.", E2E);
+  console.log("App is running in E2E testing mode");
+
+  document.addEventListener("click", ({ clientX, clientY }) => {
+    console.log("Clicked:", { clientX, clientY });
+  });
 }
 
 async function enableMocking() {

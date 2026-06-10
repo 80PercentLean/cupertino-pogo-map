@@ -1,9 +1,10 @@
 import { expect, test } from "@playwright/test";
 
+import { E2E_MAP_PATH } from "./constants";
 import { isMobileProject, waitForMapTilesToLoad } from "./util";
 
 test("opens layers overlay when layers button is used", async ({ page }) => {
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   // Expect layers overlay to be closed
   await expect(page.getByRole("heading", { name: "Layers" })).not.toBeVisible();
@@ -17,7 +18,7 @@ test("opens layers overlay when layers button is used", async ({ page }) => {
 test("closes layers overlay when its close button is used", async ({
   page,
 }) => {
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   // Expect layers overlay to be closed
   await expect(page.getByRole("heading", { name: "Layers" })).not.toBeVisible();
@@ -38,7 +39,7 @@ test("toggles Gym layer when Gym button is used", async ({
 }, testInfo) => {
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const poi = page.locator('[data-poitype="gym"]');
   const legendIcon = page.getByTestId("legend").getByText("Gym");
@@ -81,7 +82,7 @@ test("toggles PokeStop layer when PokeStop button is used", async ({
 }, testInfo) => {
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const poi = page.locator('[data-poitype="pokestop"]');
   const legendIcon = page.getByTestId("legend").getByText("PokéStop");
@@ -124,7 +125,7 @@ test("toggles Power Spot layer when Power Spot button is used", async ({
 }, testInfo) => {
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const poi = page.locator('[data-poitype="powerspot"]');
   const legendIcon = page.getByTestId("legend").getByText("Enabled Power Spot");
@@ -165,7 +166,7 @@ test("toggles Power Spot layer when Power Spot button is used", async ({
 test("switches map type to extra info", async ({ page }, testInfo) => {
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   await page.getByRole("button", { name: "Open Layers" }).click();
 
@@ -181,13 +182,14 @@ test("switches map type to extra info", async ({ page }, testInfo) => {
 
   await waitForMapTilesToLoad(page);
 
+  // Screenshot the extra info map tiles
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 });
 
 test("switches map type to satellite", async ({ page }, testInfo) => {
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   await page.getByRole("button", { name: "Open Layers" }).click();
 
@@ -203,6 +205,7 @@ test("switches map type to satellite", async ({ page }, testInfo) => {
 
   await waitForMapTilesToLoad(page);
 
+  // Screenshot the satellite map tiles
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 });
 
@@ -211,7 +214,7 @@ test("switches map type to satellite and back to default", async ({
 }, testInfo) => {
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const openLayersOverlayButton = page.getByRole("button", {
     name: "Open Layers",
@@ -233,6 +236,7 @@ test("switches map type to satellite and back to default", async ({
 
   await waitForMapTilesToLoad(page);
 
+  // Screenshot that the map tiles have changed to satellite
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 
   if (IS_MOBILE) {
@@ -249,6 +253,7 @@ test("switches map type to satellite and back to default", async ({
 
   await waitForMapTilesToLoad(page);
 
+  // Screenshot that the map tiles have changed back to default
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 });
 
@@ -257,7 +262,7 @@ test("toggles L17 grid when L17 grid checkbox is used", async ({
 }, testInfo) => {
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const openLayersOverlayButton = page.getByRole("button", {
     name: "Open Layers",
@@ -281,7 +286,7 @@ test("toggles L17 grid when L17 grid checkbox is used", async ({
 
   await waitForMapTilesToLoad(page);
 
-  // Take screenshot of map with L17 grid turned on
+  // Screenshot the L17 grid
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 
   if (IS_MOBILE) {
@@ -300,7 +305,7 @@ test("toggles L14 grid when L14 grid checkbox is used", async ({
 }, testInfo) => {
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const openLayersOverlayButton = page.getByRole("button", {
     name: "Open Layers",
@@ -324,7 +329,7 @@ test("toggles L14 grid when L14 grid checkbox is used", async ({
 
   await waitForMapTilesToLoad(page);
 
-  // Take screenshot of map with L14 grid turned on
+  // Screenshot the L14 grid
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 
   if (IS_MOBILE) {
@@ -343,7 +348,7 @@ test("toggles L13 grid when L13 grid checkbox is used", async ({
 }, testInfo) => {
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const openLayersOverlayButton = page.getByRole("button", {
     name: "Open Layers",
@@ -367,7 +372,7 @@ test("toggles L13 grid when L13 grid checkbox is used", async ({
 
   await waitForMapTilesToLoad(page);
 
-  // Take screenshot of map with L13 grid turned on
+  // Screenshot the L13 grid
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 
   if (IS_MOBILE) {
@@ -386,7 +391,7 @@ test("toggles labels when labels checkbox is used", async ({
 }, testInfo) => {
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const openLayersOverlayButton = page.getByRole("button", {
     name: "Open Layers",
@@ -410,7 +415,7 @@ test("toggles labels when labels checkbox is used", async ({
 
   await waitForMapTilesToLoad(page);
 
-  // Take screenshot of map with labels turned off
+  // Screenshot the map with labels off
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 
   if (IS_MOBILE) {
@@ -429,7 +434,7 @@ test("toggles all interaction radii when interaction radii checkbox is used", as
 }, testInfo) => {
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const openLayersOverlayButton = page.getByRole("button", {
     name: "Open Layers",
@@ -455,7 +460,7 @@ test("toggles all interaction radii when interaction radii checkbox is used", as
 
   await waitForMapTilesToLoad(page);
 
-  // Take screenshot of map with interaction radii turned on
+  // Screenshot the map with interaction radii turned on
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 
   if (IS_MOBILE) {
@@ -474,7 +479,7 @@ test("toggles all no power spot zones when no power spot zones checkbox is used"
 }, testInfo) => {
   const IS_MOBILE = isMobileProject(testInfo.project.name);
 
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const openLayersOverlayButton = page.getByRole("button", {
     name: "Open Layers",
@@ -500,7 +505,7 @@ test("toggles all no power spot zones when no power spot zones checkbox is used"
 
   await waitForMapTilesToLoad(page);
 
-  // Take screenshot of map with no power spot zones turned on
+  // Screenshot the map with no power spot zones turned on
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 
   if (IS_MOBILE) {

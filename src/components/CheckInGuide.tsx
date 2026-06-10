@@ -416,10 +416,10 @@ export default function CheckInGuide() {
                 </td>
               </tr>
               <tr className="m-0 border-t p-0">
-                <td className="border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right">
+                <td className="border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right">
                   Community Days
                 </td>
-                <td className="border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right">
+                <td className="border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right">
                   <ul className="list-disc space-y-1 pl-5">
                     <li>Premium Battle Pass</li>
                     <li>Lucky Egg</li>

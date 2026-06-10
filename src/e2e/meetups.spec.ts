@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 test("opens meetups view when meetup button is used", async ({ page }) => {
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   // Expect meetups view to be closed
   await expect(
@@ -17,7 +17,7 @@ test("opens meetups view when meetup button is used", async ({ page }) => {
 });
 
 test("closes meetups view when the close button is used", async ({ page }) => {
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   // Expect meetups view to be closed
   await expect(

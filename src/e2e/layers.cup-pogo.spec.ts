@@ -5,7 +5,7 @@ import { expect, test } from "@playwright/test";
 // To clarify, "brand new load" means a completely new user is opening this for the
 // very first time
 test("displays default layers on brand new load", async ({ page }) => {
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   // Expect Gyms, PokeStops, meetup spots, parking, and restrooms to be visible
   const gyms = page.locator('[data-poitype="gym"]');
@@ -49,7 +49,7 @@ test("displays default layers on brand new load", async ({ page }) => {
 test("toggles meetup spot layer when meetup spot button is used", async ({
   page,
 }) => {
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const poi = page.locator('[data-poitype="meetupspot"]');
   const legendIcon = page.getByTestId("legend").getByText("Meetup Spot");
@@ -81,7 +81,7 @@ test("toggles meetup spot layer when meetup spot button is used", async ({
 });
 
 test("toggles parking layer when parking button is used", async ({ page }) => {
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const poi = page.locator('[data-poitype="parking"]');
   const legend = page.getByTestId("legend");
@@ -120,7 +120,7 @@ test("toggles parking layer when parking button is used", async ({ page }) => {
 test("toggles Standard Raid Path layer when Standard Raid Path button is used", async ({
   page,
 }) => {
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   // Expect raid path to be visible
   const path = page.locator(".std-raid-path");
@@ -143,7 +143,7 @@ test("toggles Standard Raid Path layer when Standard Raid Path button is used", 
 test("toggles restrooms layer when restrooms button is used", async ({
   page,
 }) => {
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const poi = page.locator('[data-poitype="restroom"]');
   const legend = page.getByTestId("legend");

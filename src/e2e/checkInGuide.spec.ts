@@ -1,7 +1,9 @@
 import { expect, test } from "@playwright/test";
 
+import { E2E_CHECK_IN_PATH } from "./constants";
+
 test("has title", async ({ page }, { project }) => {
-  await page.goto("/checkin");
+  await page.goto(E2E_CHECK_IN_PATH);
 
   await expect(page).toHaveTitle(
     new RegExp(
@@ -12,7 +14,7 @@ test("has title", async ({ page }, { project }) => {
 });
 
 test("shows expected default view", async ({ page }) => {
-  await page.goto("/checkin", { waitUntil: "networkidle" });
+  await page.goto(E2E_CHECK_IN_PATH, { waitUntil: "networkidle" });
 
   await expect(page).toHaveScreenshot("check-in-guide-viewport.png", {
     maxDiffPixelRatio: 0.0001,
@@ -28,5 +30,5 @@ test("redirects to the checkin path from the check-in path", async ({
 }) => {
   await page.goto("/check-in", { waitUntil: "networkidle" });
 
-  await expect(page).toHaveURL("/checkin");
+  await expect(page).toHaveURL(E2E_CHECK_IN_PATH);
 });

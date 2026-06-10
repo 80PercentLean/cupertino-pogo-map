@@ -8,7 +8,7 @@ test.use({
 });
 
 test("shows my location", async ({ page }) => {
-  await page.goto("/map", { waitUntil: "networkidle" });
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   // Check that my location marker doesn't exist yet
   await expect(page.getByTestId("my-location")).not.toBeVisible();
@@ -21,6 +21,7 @@ test("shows my location", async ({ page }) => {
 
   await waitForMapTilesToLoad(page);
 
+  // Screenshot the my location marker
   await expect(page).toHaveScreenshot({ maxDiffPixels: 100 });
 });
 
