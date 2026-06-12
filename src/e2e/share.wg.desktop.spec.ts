@@ -8,7 +8,18 @@ test.use({
   permissions: ["clipboard-read", "clipboard-write"],
 });
 
-test("copies share URL to clipboard", async ({ page }) => {
+test("copies share URL to clipboard", async ({ browser }) => {
+  const permissions =
+    browser.browserType().name() === "chromium"
+      ? ["clipboard-read", "clipboard-write"]
+      : [];
+
+  const context = await browser.newContext({
+    permissions,
+  });
+
+  const page = await context.newPage();
+
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   // Click on "De Anza Bike Route" marker
@@ -27,4 +38,6 @@ test("copies share URL to clipboard", async ({ page }) => {
 
   // Test the correct POI URL is in the clipboard
   expect(clipboardText).toBe(`${WG_E2E_SERVER}/map?id=${POI_ID}`);
+
+  await context.close();
 });

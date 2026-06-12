@@ -5,16 +5,17 @@ import { E2E_MAP_PATH } from "./constants";
 test("map view button closes all open views/overlays", async ({ page }) => {
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
+  const viewCtrl = page.getByTestId("view-ctrl-main-bar");
   const list = page.getByTestId("list-view");
-  const listViewBtn = page.getByRole("button", { name: /List View/i });
-  const mapViewBtn = page.getByRole("button", { name: /Map View/i });
-  const meetupsViewBtn = page.getByRole("button", { name: /Meetups/i });
+  const listViewBtn = viewCtrl.getByRole("button", { name: /List View/i });
+  const mapViewBtn = viewCtrl.getByRole("button", { name: /Map View/i });
+  const meetupsViewBtn = viewCtrl.getByRole("button", { name: /Meetups/i });
   const meetupsViewHeading = page.getByRole("heading", {
     name: "Campfire Meetups",
   });
-  const settingsViewBtn = page.getByRole("button", { name: /Settings/i });
+  const settingsViewBtn = viewCtrl.getByRole("button", { name: /Settings/i });
   const settingsViewHeading = page.getByRole("heading", { name: /Settings/i });
-  const infoViewBtn = page.getByRole("button", { name: /Info/i });
+  const infoViewBtn = viewCtrl.getByRole("button", { name: /Info/i });
   const infoViewHeading = page.getByRole("heading", { name: /Information/i });
   const layersBtn = page.getByRole("button", { name: /Open Layers/i });
   const layersHeading = page.getByRole("heading", { name: /Layers/i });

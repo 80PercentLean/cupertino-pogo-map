@@ -1,6 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 import { E2E_MAP_PATH } from "./constants";
+import { isMobileProject } from "./util";
 
 // TODO: move the following tests to all test file when WG implements them
 
@@ -53,7 +54,9 @@ test("displays default layers on brand new load", async ({ page }) => {
 
 test("toggles meetup spot layer when meetup spot button is used", async ({
   page,
-}) => {
+}, testInfo) => {
+  const IS_MOBILE = isMobileProject(testInfo.project.name);
+
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const poi = page.locator('[data-poitype="meetupspot"]');
@@ -61,6 +64,10 @@ test("toggles meetup spot layer when meetup spot button is used", async ({
 
   // Expect meetups to be visible
   expect(await poi.count()).toBeGreaterThan(0);
+
+  if (IS_MOBILE) {
+    await page.getByRole("button", { name: "Legend" }).click();
+  }
 
   // Expect meetup spot icon to be turned on in the legend
   await expect(legendIcon).toBeVisible();
@@ -85,7 +92,11 @@ test("toggles meetup spot layer when meetup spot button is used", async ({
   await expect(legendIcon).toBeVisible();
 });
 
-test("toggles parking layer when parking button is used", async ({ page }) => {
+test("toggles parking layer when parking button is used", async ({
+  page,
+}, testInfo) => {
+  const IS_MOBILE = isMobileProject(testInfo.project.name);
+
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const poi = page.locator('[data-poitype="parking"]');
@@ -95,6 +106,10 @@ test("toggles parking layer when parking button is used", async ({ page }) => {
 
   // Expect parking to be visible
   expect(await poi.count()).toBeGreaterThan(0);
+
+  if (IS_MOBILE) {
+    await page.getByRole("button", { name: "Legend" }).click();
+  }
 
   // Expect parking icons to be turned on in the legend
   await expect(parkingLegendIcon).toBeVisible();
@@ -147,7 +162,9 @@ test("toggles Standard Raid Path layer when Standard Raid Path button is used", 
 
 test("toggles restrooms layer when restrooms button is used", async ({
   page,
-}) => {
+}, testInfo) => {
+  const IS_MOBILE = isMobileProject(testInfo.project.name);
+
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const poi = page.locator('[data-poitype="restroom"]');
@@ -158,6 +175,10 @@ test("toggles restrooms layer when restrooms button is used", async ({
 
   // Expect restroom to be visible
   expect(await poi.count()).toBeGreaterThan(0);
+
+  if (IS_MOBILE) {
+    await page.getByRole("button", { name: "Legend" }).click();
+  }
 
   // Expect restroom icons to be turned on in the legend
   await expect(allBinaryRestroomIcon).toBeVisible();

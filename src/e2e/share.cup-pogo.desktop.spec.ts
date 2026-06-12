@@ -4,11 +4,18 @@ import { CUP_POGO_E2E_SERVER, E2E_MAP_PATH } from "./constants";
 
 const POI_ID = "d9503dbb79bd3cac975ba3745bb01430.16";
 
-test.use({
-  permissions: ["clipboard-read", "clipboard-write"],
-});
+test("copies share URL to clipboard", async ({ browser }) => {
+  const permissions =
+    browser.browserType().name() === "chromium"
+      ? ["clipboard-read", "clipboard-write"]
+      : [];
 
-test("copies share URL to clipboard", async ({ page }) => {
+  const context = await browser.newContext({
+    permissions,
+  });
+
+  const page = await context.newPage();
+
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   // Click on "De Anza Bike Route" marker
@@ -27,4 +34,6 @@ test("copies share URL to clipboard", async ({ page }) => {
 
   // Test the correct POI URL is in the clipboard
   expect(clipboardText).toBe(`${CUP_POGO_E2E_SERVER}/map?id=${POI_ID}`);
+
+  await context.close();
 });

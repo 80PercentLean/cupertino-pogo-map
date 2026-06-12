@@ -19,7 +19,10 @@ export default function ViewCtrlDesktop() {
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
   return (
-    <div className="fixed bottom-0 left-0 z-1001 m-2 flex gap-2">
+    <div
+      className="fixed bottom-0 left-0 z-1001 m-2 flex gap-2"
+      data-testid="view-ctrl-main-bar"
+    >
       <Button
         className={cn(
           BTN_BASE_CLASSNAME,

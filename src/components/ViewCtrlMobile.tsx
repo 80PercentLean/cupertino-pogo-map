@@ -57,7 +57,10 @@ export default function ViewCtrlMobile() {
           </Button>
         )}
       </div>
-      <div className="pr-[env(safe-area-inset-right)]pb-[env(safe-area-inset-bottom)] fixed right-0 bottom-0 left-0 z-1002 grid h-20 grid-cols-5 place-items-center bg-black pl-[env(safe-area-inset-left)]">
+      <div
+        className="pr-[env(safe-area-inset-right)]pb-[env(safe-area-inset-bottom)] fixed right-0 bottom-0 left-0 z-1002 grid h-20 grid-cols-5 place-items-center bg-black pl-[env(safe-area-inset-left)]"
+        data-testid="view-ctrl-main-bar"
+      >
         <Button
           className={cn(
             BTN_BASE_CLASSNAME,

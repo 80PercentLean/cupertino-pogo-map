@@ -38,7 +38,7 @@ export default function CheckInGuide() {
             "linear-gradient(0deg,rgba(255,255,255,0.75),rgba(255,255,255,0.75)),linear-gradient(315deg,#24ccaa,#a2db95 98.97%)",
         }}
       >
-        <div className="relative mx-auto">
+        <div className="relative mx-auto flex h-full items-center">
           <div className="grid max-w-[65ch] grid-cols-3 grid-rows-1 gap-1">
             <img
               src={imgLuckyEgg}
@@ -57,10 +57,7 @@ export default function CheckInGuide() {
             />
           </div>
           <Button variant="secondary" asChild>
-            <Link
-              to={ROOT_PATH || "/"}
-              className="absolute top-0 right-0 mx-4 -translate-y-8 cursor-pointer shadow-sm sm:-translate-y-6 lg:top-1/2 lg:right-auto lg:left-full lg:-translate-y-1/2"
-            >
+            <Link to={ROOT_PATH || "/"} className="absolute top-3 right-4">
               <Home /> Home
             </Link>
           </Button>

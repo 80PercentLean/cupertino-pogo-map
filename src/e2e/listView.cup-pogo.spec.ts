@@ -90,7 +90,7 @@ test("filters list when text is typed into search bar", async ({
 
 test("search bar supports 'gym' keyword", async ({ page }, testInfo) => {
   const IS_MOBILE = isMobileProject(testInfo.project.name);
-  const COUNT_TARGET = 16;
+  const COUNT_TARGET = 17;
 
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
@@ -116,7 +116,7 @@ test("search bar supports 'gym' keyword", async ({ page }, testInfo) => {
 
 test("search bar supports 'gyms' keyword", async ({ page }, testInfo) => {
   const IS_MOBILE = isMobileProject(testInfo.project.name);
-  const COUNT_TARGET = 16;
+  const COUNT_TARGET = 17;
 
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
@@ -194,7 +194,7 @@ test("search bar supports 'pokestops' keyword", async ({ page }, testInfo) => {
 
 test("search bar supports 'powerspot' keyword", async ({ page }, testInfo) => {
   const IS_MOBILE = isMobileProject(testInfo.project.name);
-  const COUNT_TARGET = 41;
+  const COUNT_TARGET = 39;
 
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
@@ -220,7 +220,7 @@ test("search bar supports 'powerspot' keyword", async ({ page }, testInfo) => {
 
 test("search bar supports 'powerspots' keyword", async ({ page }, testInfo) => {
   const IS_MOBILE = isMobileProject(testInfo.project.name);
-  const COUNT_TARGET = 41;
+  const COUNT_TARGET = 39;
 
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 

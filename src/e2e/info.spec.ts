@@ -10,7 +10,8 @@ test("opens info view when info button is used", async ({ page }) => {
     page.getByRole("heading", { name: /Information/i }),
   ).not.toBeVisible();
 
-  await page.getByRole("button", { name: /Info/i }).click();
+  const viewCtrl = page.getByTestId("view-ctrl-main-bar");
+  await viewCtrl.getByRole("button", { name: /Info/i }).click();
 
   // Expect info view to be open
   await expect(
@@ -26,7 +27,8 @@ test("closes info view when the close button is used", async ({ page }) => {
     page.getByRole("heading", { name: /Information/i }),
   ).not.toBeVisible();
 
-  await page.getByRole("button", { name: /Info/i }).click();
+  const viewCtrl = page.getByTestId("view-ctrl-main-bar");
+  await viewCtrl.getByRole("button", { name: /Info/i }).click();
 
   // Expect info view to be open
   await expect(
