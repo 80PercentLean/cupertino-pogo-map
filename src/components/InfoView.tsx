@@ -1,4 +1,4 @@
-import { CAMPFIRE_LINK, GROUP_NAME, ROOT_PATH } from "@/constants";
+import { GROUP_NAME, ROOT_PATH } from "@/constants";
 import { Info } from "lucide-react";
 
 import FooterTxt from "./FooterTxt";
