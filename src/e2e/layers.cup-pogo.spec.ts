@@ -65,7 +65,7 @@ test("toggles meetup spot layer when meetup spot button is used", async ({
   // Expect meetup spot icon to be turned on in the legend
   await expect(legendIcon).toBeVisible();
 
-  await page.getByRole("button", { name: "Open Layers" }).click();
+  await page.getByRole("button", { name: /Open Layers/i }).click();
 
   const layerBtn = page.getByRole("button", { name: "📍 Meetup Spots" });
   await layerBtn.click();
@@ -100,7 +100,7 @@ test("toggles parking layer when parking button is used", async ({ page }) => {
   await expect(parkingLegendIcon).toBeVisible();
   await expect(parkingWarnLegendIcon).toBeVisible();
 
-  await page.getByRole("button", { name: "Open Layers" }).click();
+  await page.getByRole("button", { name: /Open Layers/i }).click();
 
   const layerBtn = page.getByRole("button", { name: "🅿️ Parking" });
   await layerBtn.click();
@@ -131,7 +131,7 @@ test("toggles Standard Raid Path layer when Standard Raid Path button is used", 
   const path = page.locator(".std-raid-path");
   await expect(path).toBeVisible();
 
-  await page.getByRole("button", { name: "Open Layers" }).click();
+  await page.getByRole("button", { name: /Open Layers/i }).click();
 
   const layerBtn = page.getByRole("button", { name: "🚶 Standard Raid Path" });
   await layerBtn.click();
@@ -164,7 +164,7 @@ test("toggles restrooms layer when restrooms button is used", async ({
   await expect(mRestroomIcon).toBeVisible();
   await expect(wRestroomIcon).toBeVisible();
 
-  await page.getByRole("button", { name: "Open Layers" }).click();
+  await page.getByRole("button", { name: /Open Layers/i }).click();
 
   const layerBtn = page.getByRole("button", { name: "🚻 Restrooms" });
   await layerBtn.click();

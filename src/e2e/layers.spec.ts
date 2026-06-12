@@ -7,12 +7,14 @@ test("opens layers overlay when layers button is used", async ({ page }) => {
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   // Expect layers overlay to be closed
-  await expect(page.getByRole("heading", { name: "Layers" })).not.toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: /Layers/i }),
+  ).not.toBeVisible();
 
-  await page.getByRole("button", { name: "Open Layers" }).click();
+  await page.getByRole("button", { name: /Open Layers/i }).click();
 
   // Expect layers overlay to be open
-  await expect(page.getByRole("heading", { name: "Layers" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: /Layers/i })).toBeVisible();
 });
 
 test("closes layers overlay when its close button is used", async ({
@@ -21,17 +23,21 @@ test("closes layers overlay when its close button is used", async ({
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   // Expect layers overlay to be closed
-  await expect(page.getByRole("heading", { name: "Layers" })).not.toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: /Layers/i }),
+  ).not.toBeVisible();
 
-  await page.getByRole("button", { name: "Open Layers" }).click();
+  await page.getByRole("button", { name: /Open Layers/i }).click();
 
   // Expect layers overlay to be open
-  await expect(page.getByRole("heading", { name: "Layers" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: /Layers/i })).toBeVisible();
 
   await page.getByRole("button", { name: "Close layers overlay" }).click();
 
   // Expect layers overlay to be closed again
-  await expect(page.getByRole("heading", { name: "Layers" })).not.toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: /Layers/i }),
+  ).not.toBeVisible();
 });
 
 test("toggles Gym layer when Gym button is used", async ({
@@ -55,7 +61,7 @@ test("toggles Gym layer when Gym button is used", async ({
   // Expect Gym icon to be turned on in the legend
   await expect(legendIcon).toBeVisible();
 
-  await page.getByRole("button", { name: "Open Layers" }).click();
+  await page.getByRole("button", { name: /Open Layers/i }).click();
 
   const layerBtn = page.getByRole("button", {
     name: "Gym Layer Button Icon Gyms",
@@ -98,7 +104,7 @@ test("toggles PokeStop layer when PokeStop button is used", async ({
   // Expect PokeStop icon to be turned on in the legend
   await expect(legendIcon).toBeVisible();
 
-  await page.getByRole("button", { name: "Open Layers" }).click();
+  await page.getByRole("button", { name: /Open Layers/i }).click();
 
   const layerBtn = page.getByRole("button", {
     name: "PokéStop Layer Button Icon",
@@ -141,7 +147,7 @@ test("toggles Power Spot layer when Power Spot button is used", async ({
   // Expect Enabled Power Spot icon to be turned on in the legend
   await expect(legendIcon).toBeVisible();
 
-  await page.getByRole("button", { name: "Open Layers" }).click();
+  await page.getByRole("button", { name: /Open Layers/i }).click();
 
   const layerBtn = page.getByRole("button", {
     name: "Power Spot Layer Button Icon",
@@ -168,7 +174,7 @@ test("switches map type to extra info", async ({ page }, testInfo) => {
 
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
-  await page.getByRole("button", { name: "Open Layers" }).click();
+  await page.getByRole("button", { name: /Open Layers/i }).click();
 
   await page.getByText("Extra Info", { exact: true }).click();
 
@@ -191,7 +197,7 @@ test("switches map type to satellite", async ({ page }, testInfo) => {
 
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
-  await page.getByRole("button", { name: "Open Layers" }).click();
+  await page.getByRole("button", { name: /Open Layers/i }).click();
 
   await page.getByText("Satellite", { exact: true }).click();
 
@@ -217,7 +223,7 @@ test("switches map type to satellite and back to default", async ({
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const openLayersOverlayButton = page.getByRole("button", {
-    name: "Open Layers",
+    name: /Open Layers/i,
   });
   await openLayersOverlayButton.click();
 
@@ -265,7 +271,7 @@ test("toggles L17 grid when L17 grid checkbox is used", async ({
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const openLayersOverlayButton = page.getByRole("button", {
-    name: "Open Layers",
+    name: /Open Layers/i,
   });
   await openLayersOverlayButton.click();
 
@@ -308,7 +314,7 @@ test("toggles L14 grid when L14 grid checkbox is used", async ({
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const openLayersOverlayButton = page.getByRole("button", {
-    name: "Open Layers",
+    name: /Open Layers/i,
   });
   await openLayersOverlayButton.click();
 
@@ -351,7 +357,7 @@ test("toggles L13 grid when L13 grid checkbox is used", async ({
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const openLayersOverlayButton = page.getByRole("button", {
-    name: "Open Layers",
+    name: /Open Layers/i,
   });
   await openLayersOverlayButton.click();
 
@@ -394,7 +400,7 @@ test("toggles labels when labels checkbox is used", async ({
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const openLayersOverlayButton = page.getByRole("button", {
-    name: "Open Layers",
+    name: /Open Layers/i,
   });
   await openLayersOverlayButton.click();
 
@@ -437,7 +443,7 @@ test("toggles all interaction radii when interaction radii checkbox is used", as
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const openLayersOverlayButton = page.getByRole("button", {
-    name: "Open Layers",
+    name: /Open Layers/i,
   });
   await openLayersOverlayButton.click();
 
@@ -482,7 +488,7 @@ test("toggles all no power spot zones when no power spot zones checkbox is used"
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const openLayersOverlayButton = page.getByRole("button", {
-    name: "Open Layers",
+    name: /Open Layers/i,
   });
   await openLayersOverlayButton.click();
 

@@ -29,20 +29,19 @@ export default function Landing() {
 
   return (
     <div className="mx-auto flex min-h-screen max-w-[65ch] flex-col items-center gap-4 p-4">
-      <h1 className="text-3xl font-extrabold tracking-tight text-balance">
-        {GET_GROUP_NAME()}
+      <h1 className="text-center text-3xl font-extrabold tracking-tight text-balance">
+        Welcome to {GET_GROUP_NAME()}!
       </h1>
       <p className="text-muted-foreground text-center text-pretty">
-        {GET_GROUP_NAME()} is a Pokémon GO group based in
-        <br />
+        We're a Pokémon GO community based in{" "}
         <a href={MAP_PATH} className="font-bold underline">
           {GET_LOCATION_LONG()}
         </a>
         .
       </p>
       <p className="text-muted-foreground text-center text-pretty">
-        Join us to catch creatures, battle Raid Bosses, and make new friends
-        with fellow Pokémon Trainers!
+        Join us for walks, special events, Raid Battles, and opportunities to
+        meet fellow Pokémon Trainers.
       </p>
       <p className="text-muted-foreground text-center text-pretty">
         As part of the{" "}

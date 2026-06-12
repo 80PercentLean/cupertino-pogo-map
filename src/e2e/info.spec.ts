@@ -7,14 +7,14 @@ test("opens info view when info button is used", async ({ page }) => {
 
   // Expect info view to be closed
   await expect(
-    page.getByRole("heading", { name: "Information" }),
+    page.getByRole("heading", { name: /Information/i }),
   ).not.toBeVisible();
 
-  await page.getByRole("button", { name: /\bInfo\b/i }).click();
+  await page.getByRole("button", { name: /Info/i }).click();
 
   // Expect info view to be open
   await expect(
-    page.getByRole("heading", { name: "Information" }),
+    page.getByRole("heading", { name: /Information/i }),
   ).toBeVisible();
 });
 
@@ -23,21 +23,21 @@ test("closes info view when the close button is used", async ({ page }) => {
 
   // Expect info view to be closed
   await expect(
-    page.getByRole("heading", { name: "Information" }),
+    page.getByRole("heading", { name: /Information/i }),
   ).not.toBeVisible();
 
-  await page.getByRole("button", { name: /\bInfo\b/i }).click();
+  await page.getByRole("button", { name: /Info/i }).click();
 
   // Expect info view to be open
   await expect(
-    page.getByRole("heading", { name: "Information" }),
+    page.getByRole("heading", { name: /Information/i }),
   ).toBeVisible();
 
   await page.getByRole("button", { name: "Close information view" }).click();
 
   // Expect info view to be closed again
   await expect(
-    page.getByRole("heading", { name: "Information" }),
+    page.getByRole("heading", { name: /Information/i }),
   ).not.toBeVisible();
 });
 
@@ -48,6 +48,6 @@ test("starts app with info view open when start param is set to it", async ({
 
   // Expect info view to be open
   await expect(
-    page.getByRole("heading", { name: "Information" }),
+    page.getByRole("heading", { name: /Information/i }),
   ).toBeVisible();
 });
