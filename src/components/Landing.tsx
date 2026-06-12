@@ -44,17 +44,9 @@ export default function Landing() {
         meet fellow Pokémon Trainers.
       </p>
       <p className="text-muted-foreground text-center text-pretty">
-        As part of the{" "}
-        <a
-          href="https://pokemongo.com/find-your-community"
-          rel="noopener noreferrer"
-          target="_blank"
-          className="font-bold underline"
-        >
-          official Pokémon GO Community Ambassador Program
-        </a>
-        , we offer exclusive perks including free in-game items, special
-        bonuses, and chances to win official Pokémon merchandise and swag.
+        As part of the <b>official Pokémon GO Community Ambassador Program</b>,
+        we offer exclusive perks including free in-game items, special bonuses,
+        and chances to win official Pokémon merchandise and swag.
       </p>
       <div
         className={`mt-4 grid w-full gap-4 ${GET_IS_CENTRAL() ? "grid-rows-6" : "grid-rows-7"}`}

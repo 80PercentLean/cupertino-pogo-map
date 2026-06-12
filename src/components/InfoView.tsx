@@ -1,4 +1,4 @@
-import { CAMPFIRE_LINK, GROUP_NAME } from "@/constants";
+import { CAMPFIRE_LINK, GROUP_NAME, ROOT_PATH } from "@/constants";
 import { Info } from "lucide-react";
 
 import FooterTxt from "./FooterTxt";
@@ -18,11 +18,8 @@ export default function InfoView() {
     >
       <h2 className="font-semibold text-balance">About This Project</h2>
       <p className="mt-[1em] text-pretty">
-        This map app is an open source project run by{" "}
-        <LinkExt href={CAMPFIRE_LINK} openNewWindow>
-          {GROUP_NAME}
-        </LinkExt>
-        .
+        This app is an open source project run by{" "}
+        <LinkExt href={ROOT_PATH || "/"}>{GROUP_NAME}</LinkExt>.
       </p>
       <p className="mt-[1em]">
         You can find the GitHub repository here:

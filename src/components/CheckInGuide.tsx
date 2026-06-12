@@ -73,11 +73,11 @@ export default function CheckInGuide() {
           directly onto your Pokémon GO account.
         </p>
         <h2 className="mt-[1em] border-b pb-2 text-2xl font-semibold tracking-tight text-balance">
-          1. Go to the meetup {GET_LOCATION()}.
+          1. Go to the meetup location.
         </h2>
         <p className="leading-7 text-pretty">
-          First, you must be physically present at the meetup {GET_LOCATION()}{" "}
-          during the specified meetup time.
+          First, you must be physically present at the meetup location during
+          the specified meetup time.
         </p>
         <p className="leading-7 text-pretty">
           For most <b>{GET_GROUP_NAME()}</b> events, this usually means you must
@@ -210,27 +210,26 @@ export default function CheckInGuide() {
           content={
             <>
               <p>
-                First make sure that you are at the correct meetup
-                GET_LOCATION(). Usually it is at {GET_LOCATION()} but sometimes
-                it could change, so double-check the meetup details.
+                First make sure that you are at the correct meetup location.
+                Usually it is at {GET_LOCATION()} but sometimes it could change,
+                so double-check the meetup details.
               </p>
               <p>
-                If you actually are at correct GET_LOCATION(), then sometimes it
-                takes a little bit for your phone's GET_LOCATION() to load
-                properly. Wait a few seconds before trying to check-in again.
+                If you actually are at correct location, then sometimes it takes
+                a little bit for your phone's location to load properly. Wait a
+                few seconds before trying to check-in again.
               </p>
               <p>
                 If that doesn't work, it's possible that you have the Campfire
                 app but you haven't given it sufficient permissions. You can
                 test this by opening the Campfire map and seeing if your phone's
-                current GET_LOCATION() loads correctly.
+                current location loads correctly.
               </p>
               <p>
                 If the Campfire map isn't accurately showing your current
                 position, go into your phone settings and check that you have
-                granted the Campfire app{" "}
-                <b>permission to access GET_LOCATION()</b> with{" "}
-                <b>precise GET_LOCATION()</b>.
+                granted the Campfire app <b>permission to access location</b>{" "}
+                with <b>precise location</b>.
               </p>
             </>
           }
@@ -346,15 +345,15 @@ export default function CheckInGuide() {
         </p>
         <p>
           The next page of the Check-In Timed Research won't appear immediately,
-          so you will need to return to the in-game Pokémon GO map, tap on the{" "}
-          <b>Binoculars</b>{" "}
+          so you will need to reopen your Event Timed Research Tab by returning
+          to the in-game Pokémon GO map, tapping on the <b>Binoculars</b>{" "}
           <img
             src={BinocularsIcon}
             alt="Binoculars"
             className="inline-block h-6 w-6 rounded-full border border-[#E9A85D] bg-white"
           />{" "}
-          in the bottom-right corner, tap on the "Events" tab, and scroll down
-          again until you see the new page.
+          in the bottom-right corner, tapping on the "Events" tab, and scrolling
+          down again until you see the new page.
         </p>
         <img
           src={CheckInResearchScreenshot}
