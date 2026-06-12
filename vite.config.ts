@@ -22,7 +22,7 @@ export const createGtag = (measurementId: string) => `
       dataLayer.push(arguments);
     }
     gtag("js", new Date());
-    gtag("config", ${measurementId});
+    gtag("config", "${measurementId}");
   </script>
 `;
 
