@@ -6,7 +6,7 @@
       "properties": {
         "name": "Quinlan Community Center Gazebo Meetup Spot",
         "type": "meetupspot",
-        "desc": "This is the meetup spot mainly used for our guided group on Raid Days/Hours where walk together to clear as many Raids as possible.\n\nFor Raid Hours, we meet here every Wednesday at 6:00pm.The walking raid group meets up here for Raid Hour every Wednesday at 6:00pm. The quick raid group meets up at the same time on the other side of the park at the Veterans Memorial.",
+        "desc": "This is the meetup spot mainly used for our guided group on Raid Days/Hours where we walk together to clear as many Raids as possible.\n\nThe guided raid group meets up here for Raid Hour every Wednesday at 6:00pm. The quick raid group meets up at the same time on the other side of the park at the Veterans Memorial.",
         "marker-color": "#ffa500",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -15,14 +15,14 @@
         "coordinates": [-122.04264387488368, 37.32581727496601],
         "type": "Point"
       },
-      "id": "ms-67286922-5c82-4983-896e-067fe1fac828"
+      "id": "quinlan-meetup"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Veterans Memorial Meetup Spot",
         "type": "meetupspot",
-        "desc": "This is the meetup spot mainly used for our quick group during Raid Hours where players who only have time for two or three Raids will complete their raids together.\n\nThe quick raid group meets up here for Raid Hour every Wednesday at 6:00pm. The walking raid group meets up at the same time on the other side of the park at the Quinlan Community Center gazebo.",
+        "desc": "This is the meetup spot mainly used for our quick raid group during Raid Hours where players who only have time for 2–3 Raids will complete them together.\n\nThe quick raid group meets up here for Raid Hour every Wednesday at 6:00pm. The guided raid group meets up at the same time on the other side of the park at the Quinlan Community Center gazebo.",
         "marker-color": "#ffa500",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -31,14 +31,14 @@
         "coordinates": [-122.04542532563212, 37.32440050021801],
         "type": "Point"
       },
-      "id": "ms-c91c4743-035e-4b80-9218-6dc82d233270"
+      "id": "veterans-meetup"
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Hinson Campus Center Meetup Spot",
         "type": "meetupspot",
-        "desc": "This is the meetup spot mainly used for non-Raid/Max Battle events like Spotlight Hour & Community Day.",
+        "desc": "This is our main meetup location for non-Raid/non-Max Battle events such as Community Days, Spotlight Hours, and Friendship Fridays.\n\nWe typically gather on the outdoor patio, but may move indoors depending on the weather and planned activities.",
         "marker-color": "#ffa500",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -47,7 +47,7 @@
         "coordinates": [-122.04597383737566, 37.3207904231419],
         "type": "Point"
       },
-      "id": "ms-ff6189fd-cfb7-48db-88d5-dcf03592f6d4"
+      "id": "hinson-meetup"
     }
   ]
 }
