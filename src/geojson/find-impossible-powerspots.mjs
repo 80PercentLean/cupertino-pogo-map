@@ -41,11 +41,19 @@ const existingPois = [...gyms, ...pokestops];
 const nearbyPowerspots = [];
 
 for (const powerspot of powerspots) {
+  if (powerspot.properties.removed) {
+    continue;
+  }
+
   const powerspotCoords = powerspot.geometry.coordinates;
 
   let foundMatch = false;
 
   for (const poi of existingPois) {
+    if (poi.properties.removed) {
+      continue;
+    }
+
     const poiCoords = poi.geometry.coordinates;
 
     const distance = haversineDistanceMeters(powerspotCoords, poiCoords);

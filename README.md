@@ -37,6 +37,10 @@ By default, the app will load Cupertino PoGO's Campsite. To load Wild Goose's Ca
 
 Rename `.env.example` to `.env` and set `VITE_IS_CENTRAL=true`.
 
+## Discord Event API Integration
+
+The meetups view of this app communicates with the REST API ran by the [Goose Discord Bot](https://github.com/80PercentLean/goose-discord-bot) which acts as a proxy to the Discord API.
+
 ## Other Resources
 
 Here is more documentation that may be helpful for you:
@@ -64,13 +68,16 @@ This open source project is built with the following:
 - [React Hook Form](https://react-hook-form.com): Form library for React
 - [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API): Adds support for usage of device latitude/longitude coordinates. Used for live location feature that allows the user to see their own real-time location on the map when they gives permission.
 - [Local Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage): Allows for saving of user settings that persist across browser sessions.
+- [TanStack Query](https://tanstack.com/query): Data-fetching library
 - [shadcn/ui](https://ui.shadcn.com): Set of accessible React components
 - [Tailwind CSS](https://tailwindcss.com): Utility-first CSS framework
 - [Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries) / [window.matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia): Used to implement responsive design and conditionally execute code based off screen size and device
 - [Node.js](https://nodejs.org): JavaScript runtime environment used for the development environment & GeoJSON generation script
 - [Vite](https://vite.dev): Frontend build tool
 - [Vitest](https://vitest.dev): Framework for unit testing
+- [Mock Service Worker](https://mswjs.io): API mocking library
 - [Playwright](https://playwright.dev): Framework for end-to-end testing
+- [Cloudflare Pages](https://pages.cloudflare.com): JAMstack platform that hosts the production & staging builds
 
 ## License
 
