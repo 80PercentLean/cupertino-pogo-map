@@ -164,7 +164,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Lifetime Activities Women's Restroom",
+        "name": "Santa Clara Tennis Center Women's Restroom",
         "type": "restroom",
         "subtype": "women",
         "marker-color": "#87ceeb",
@@ -180,7 +180,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Lifetime Activities Men's Restroom",
+        "name": "Santa Clara Tennis Center Men's Restroom",
         "type": "restroom",
         "subtype": "men",
         "marker-color": "#87ceeb",
