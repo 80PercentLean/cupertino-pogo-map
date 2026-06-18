@@ -46,6 +46,8 @@
 - De Anza Athletic Fields (a71e5bbac79e42d0b4c0dbd0a3dc6e92.16)
 - Pickleball at Memorial Park (c28d519e7b4d37c8ae3054ec1a867972.16)
 - Half Basketball Court (ecc31a54326a37bcac4633792ba44298.16)
+- Cupertino Post Office (31411bad1d724028a310963abf315f46.12)
+- McClellan Pond Bench (b6bd84bb9ff33aed9c2532e9b341b1f4.16)
 
 ## 5-5-26
 

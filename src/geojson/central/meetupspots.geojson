@@ -1,4 +1,37 @@
 {
   "type": "FeatureCollection",
-  "features": []
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Community Recreation Center Meetup Spot",
+        "type": "meetupspot",
+        "desc": "This is the meetup spot mainly used for our guided group on Raid Days/Hours where we walk together to clear as many Gyms as possible.",
+        "marker-color": "#ffa500",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97663336992265, 37.34318076727118],
+        "type": "Point"
+      },
+      "id": "crc-meetup"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Santa Clara Tennis Center Meetup Spot",
+        "type": "meetupspot",
+        "desc": "This is the meetup spot mainly used for our guided group for Max Battle events where we walk together to clear as many Power Spots as possible.",
+        "marker-color": "#ffa500",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97338789701465, 37.34445060107276],
+        "type": "Point"
+      },
+      "id": "tennis-center-meetup"
+    }
+  ]
 }
