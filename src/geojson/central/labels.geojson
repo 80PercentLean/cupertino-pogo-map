@@ -1,0 +1,165 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Central Park",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "labelClass": "label-central"
+      },
+      "geometry": {
+        "coordinates": [-121.97424352169038, 37.34361790811525],
+        "type": "Point"
+      },
+      "id": "label-9356fdc8-6de0-4f00-a08f-188718ecd624"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Santa Clara Tennis Center",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "labelClass": "label-tennis-center"
+      },
+      "geometry": {
+        "coordinates": [-121.97373390197755, 37.34485894776585],
+        "type": "Point"
+      },
+      "id": "label-ec32e0f1-234d-41c6-a74c-bcbf1bd5b62e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Community Recreation Center",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "labelClass": "label-crc"
+      },
+      "geometry": {
+        "coordinates": [-121.97663336992265, 37.34285984029995],
+        "type": "Point"
+      },
+      "id": "label-26e325df-bc77-4ac1-a659-b5620dbead58"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Veterans Memorial",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "labelClass": "label-memorial"
+      },
+      "geometry": {
+        "coordinates": [-121.9773441553116, 37.342306477948924],
+        "type": "Point"
+      },
+      "id": "label-c2b542b1-3036-442a-8a37-f4f9c11aaa79"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pond",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "labelClass": "label-pond"
+      },
+      "geometry": {
+        "coordinates": [-121.97522521018983, 37.34175844262288],
+        "type": "Point"
+      },
+      "id": "label-a805dce4-08a3-44c5-86cb-030bd24735cd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Magical Bridge Playground",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "labelClass": "label-playground"
+      },
+      "geometry": {
+        "coordinates": [-121.9766601920128, 37.34149615192722],
+        "type": "Point"
+      },
+      "id": "label-feb54613-c200-450d-a0d3-170ade7dd998"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pavilion",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "labelClass": "label-pavilion"
+      },
+      "geometry": {
+        "coordinates": [-121.97555243968965, 37.340963037933975],
+        "type": "Point"
+      },
+      "id": "label-af757adb-8a7e-4711-9068-0d8351abeefa"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Central Park Library",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "labelClass": "label-library"
+      },
+      "geometry": {
+        "coordinates": [-121.97353407740593, 37.34072846657806],
+        "type": "Point"
+      },
+      "id": "label-39d2a866-a4fc-4cfd-81a0-6d989b19a7e3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kiely Plaza",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "labelClass": "label-kiely"
+      },
+      "geometry": {
+        "coordinates": [-121.97855919599535, 37.346099966905506],
+        "type": "Point"
+      },
+      "id": "label-d5d55500-d6a3-40aa-8fa8-3ea9ff2673f1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mariposa Shopping Center",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "labelClass": "label-mariposa"
+      },
+      "geometry": {
+        "coordinates": [-121.97426363825798, 37.33857464078961],
+        "type": "Point"
+      },
+      "id": "label-8311170c-160b-41de-83a4-27bc041a91cf"
+    }
+  ]
+}

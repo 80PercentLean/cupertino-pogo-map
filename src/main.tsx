@@ -29,7 +29,28 @@ async function enableMocking() {
 
   // `worker.start()` returns a Promise that resolves
   // once the Service Worker is up and ready to intercept requests.
-  return worker.start();
+  return worker.start({
+    onUnhandledRequest(request, print) {
+      const url = new URL(request.url);
+
+      // Ignore requests to local files
+      if (
+        // Ignore static assets
+        /\.(png|jpe?g|gif|webp|svg|ico|avif|woff2?|ttf|eot|css|map)$/i.test(
+          url.pathname,
+        ) ||
+        // Ignore requests to local files
+        url.pathname.startsWith("/src/assets/") ||
+        url.pathname.startsWith("/node_modules/") ||
+        // Ignore requests to map tiles
+        url.hostname === "server.arcgisonline.com"
+      ) {
+        return;
+      }
+
+      print.warning();
+    },
+  });
 }
 
 enableMocking()

@@ -39,24 +39,11 @@ export interface CProperties {
   /** Represents if a Power Spot is impossible. */
   isImpossible?: boolean;
 
-  /**
-   * When the Wayfarer POI was updated for the app. Ideally it is when it was edited in Wayfarer.
-   * This should only change when the POI's corresponding values in Wayfarer change.
-   * The value is in a simplified ISO 8601 format.
-   * That means `updated`'s timestamp is only changed when the following changes:
-   * - `geometry.coordinates`
-   * - `properties.converted`
-   * - `properties.isDiabled`
-   * - `properties.l14Id`
-   * - `properties.name`
-   * - `properties.photo`
-   * - `properties.removed`
-   * - `properties.type`
-   */
-  updated?: string;
-
   /** ID for the L14 cell that the Wayfarer POI belongs to. */
   l14Id?: string;
+
+  /** CSS class unique to the label. */
+  labelClass?: string;
 
   /** Name of the POI or label. */
   name: string;
@@ -111,6 +98,22 @@ export interface CProperties {
     | "pokestop"
     | "powerspot"
     | "restroom";
+
+  /**
+   * When the Wayfarer POI was updated for the app. Ideally it is when it was edited in Wayfarer.
+   * This should only change when the POI's corresponding values in Wayfarer change.
+   * The value is in a simplified ISO 8601 format.
+   * That means `updated`'s timestamp is only changed when the following changes:
+   * - `geometry.coordinates`
+   * - `properties.converted`
+   * - `properties.isDiabled`
+   * - `properties.l14Id`
+   * - `properties.name`
+   * - `properties.photo`
+   * - `properties.removed`
+   * - `properties.type`
+   */
+  updated?: string;
 }
 
 /** A GeoJSON `Feature` representing a POI or a label. */

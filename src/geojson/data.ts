@@ -6,6 +6,7 @@ import {
   centralL13CellsJson,
   centralL14CellsJson,
   centralL17CellsJson,
+  centralLabelsJson,
   centralMeetupspotsJson,
   centralParkingJson,
   centralPokestopsJson,
@@ -32,7 +33,7 @@ const gymsJson = IS_CENTRAL ? centralGymsJson : cupGymsJson;
 const l13CellsJson = IS_CENTRAL ? centralL13CellsJson : cupL13CellsJson;
 const l14CellsJson = IS_CENTRAL ? centralL14CellsJson : cupL14CellsJson;
 const l17CellsJson = IS_CENTRAL ? centralL17CellsJson : cupL17CellsJson;
-const labelsJson = cupLabelsJson;
+const labelsJson = IS_CENTRAL ? centralLabelsJson : cupLabelsJson;
 const meetupspotsJson = IS_CENTRAL
   ? centralMeetupspotsJson
   : cupMeetupspotsJson;
