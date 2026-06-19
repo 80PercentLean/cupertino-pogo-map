@@ -44,30 +44,24 @@ exports[`matches <Labels> default snapshot 1`] = `
         <div
           class="leaflet-marker-icon label-map label-mp leaflet-zoom-hide"
           role="button"
-          style="margin-left: -50px; margin-top: -7px; width: 12px; height: 12px; left: 59px; top: -233px; z-index: -233;"
+          style="margin-left: -55px; margin-top: -7px; width: 12px; height: 12px; left: 59px; top: -233px; z-index: -233;"
           tabindex="0"
         >
-          <div>
+          <div
+            data-testid="label-mp"
+          >
             Memorial Park
-          </div>
-        </div>
-        <div
-          class="leaflet-marker-icon label-map label-veterans leaflet-zoom-hide"
-          role="button"
-          style="margin-left: -30px; margin-top: -20px; width: 12px; height: 12px; left: -25px; top: -147px; z-index: -147;"
-          tabindex="0"
-        >
-          <div>
-            Veterans Memorial
           </div>
         </div>
         <div
           class="leaflet-marker-icon label-map label-quinlan leaflet-zoom-hide"
           role="button"
-          style="margin-left: -50px; margin-top: -25px; width: 12px; height: 12px; left: 115px; top: -233px; z-index: -233;"
+          style="margin-left: -45px; margin-top: -25px; width: 12px; height: 12px; left: 115px; top: -239px; z-index: -239;"
           tabindex="0"
         >
-          <div>
+          <div
+            data-testid="label-quinlan"
+          >
             Quinlan Community Center
           </div>
         </div>
@@ -77,8 +71,34 @@ exports[`matches <Labels> default snapshot 1`] = `
           style="margin-left: -40px; margin-top: -10px; width: 12px; height: 12px; left: -1px; top: -268px; z-index: -268;"
           tabindex="0"
         >
-          <div>
+          <div
+            data-testid="label-mp-tennis"
+          >
             Tennis Courts
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon label-map label-amphitheatre leaflet-zoom-hide"
+          role="button"
+          style="margin-left: -40px; margin-top: -15px; width: 12px; height: 12px; left: 6px; top: -155px; z-index: -155;"
+          tabindex="0"
+        >
+          <div
+            data-testid="label-amphitheatre"
+          >
+            Amphitheatre
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon label-map label-veterans leaflet-zoom-hide"
+          role="button"
+          style="margin-left: -30px; margin-top: -20px; width: 12px; height: 12px; left: -25px; top: -147px; z-index: -147;"
+          tabindex="0"
+        >
+          <div
+            data-testid="label-veterans"
+          >
+            Veterans Memorial
           </div>
         </div>
         <div
@@ -87,18 +107,34 @@ exports[`matches <Labels> default snapshot 1`] = `
           style="margin-left: -25px; margin-top: -20px; width: 12px; height: 12px; left: -43px; top: -84px; z-index: -84;"
           tabindex="0"
         >
-          <div>
+          <div
+            data-testid="label-senior"
+          >
             Senior Center
           </div>
         </div>
         <div
-          class="leaflet-marker-icon label-map label-mp leaflet-zoom-hide"
+          class="leaflet-marker-icon label-map label-da leaflet-zoom-hide"
           role="button"
-          style="margin-left: -50px; margin-top: -7px; width: 12px; height: 12px; left: 14px; top: 243px; z-index: 243;"
+          style="margin-left: -30px; margin-top: -30px; width: 12px; height: 12px; left: 14px; top: 243px; z-index: 243;"
           tabindex="0"
         >
-          <div>
+          <div
+            data-testid="label-da"
+          >
             De Anza College
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon label-map label-vpac leaflet-zoom-hide"
+          role="button"
+          style="margin-left: -55px; margin-top: -20px; width: 12px; height: 12px; left: 50px; top: -1px; z-index: -1;"
+          tabindex="0"
+        >
+          <div
+            data-testid="label-vpac"
+          >
+            Visual & Performing Arts Center (VPAC)
           </div>
         </div>
         <div
@@ -107,8 +143,22 @@ exports[`matches <Labels> default snapshot 1`] = `
           style="margin-left: -25px; margin-top: -30px; width: 12px; height: 12px; left: -29px; top: 62px; z-index: 62;"
           tabindex="0"
         >
-          <div>
+          <div
+            data-testid="label-hinson"
+          >
             Hinson Campus Center
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon label-map label-dehart leaflet-zoom-hide"
+          role="button"
+          style="margin-left: -30px; margin-top: -30px; width: 12px; height: 12px; left: -83px; top: 88px; z-index: 88;"
+          tabindex="0"
+        >
+          <div
+            data-testid="label-dehart"
+          >
+            A. Robert De Hart Library
           </div>
         </div>
         <div
@@ -117,7 +167,9 @@ exports[`matches <Labels> default snapshot 1`] = `
           style="margin-left: -30px; margin-top: -40px; width: 12px; height: 12px; left: -150px; top: 63px; z-index: 63;"
           tabindex="0"
         >
-          <div>
+          <div
+            data-testid="label-mlc"
+          >
             Media & Learning Center (MLC)
           </div>
         </div>
@@ -127,8 +179,22 @@ exports[`matches <Labels> default snapshot 1`] = `
           style="margin-left: -35px; margin-top: -20px; width: 12px; height: 12px; left: -55px; top: 171px; z-index: 171;"
           tabindex="0"
         >
-          <div>
+          <div
+            data-testid="label-fujitsu"
+          >
             Fujitsu Planetarium
+          </div>
+        </div>
+        <div
+          class="leaflet-marker-icon label-map label-kirsch leaflet-zoom-hide"
+          role="button"
+          style="margin-left: -65px; margin-top: -20px; width: 12px; height: 12px; left: 61px; top: 333px; z-index: 333;"
+          tabindex="0"
+        >
+          <div
+            data-testid="label-kirsch"
+          >
+            Kirsch Center for Environmental Studies
           </div>
         </div>
       </div>
