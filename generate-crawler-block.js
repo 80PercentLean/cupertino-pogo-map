@@ -3,9 +3,9 @@ import path from "node:path";
 
 const productionBranch = "main";
 
-const isProduction = process.env.CF_PAGES_BRANCH === productionBranch;
+const disallowCrawling = process.env.VITE_DISALLOW_CRAWLING === "true";
 
-if (!isProduction) {
+if (disallowCrawling) {
   const outDir =
     process.env.VITE_IS_CENTRAL === "true" ? "dist-wg" : "dist-cup-pogo";
 
@@ -23,10 +23,8 @@ Disallow: /
   fs.writeFileSync(path.join(outDir, "_headers"), headers);
 
   console.log(
-    `Generated non-production robots.txt and _headers with crawler blocking in: ${outDir}`,
+    `Generated non-production robots.txt and _headers that blocks crawlers in: ${outDir}`,
   );
 } else {
-  console.log(
-    "Skipped robots.txt and _headers generation since this is for production.",
-  );
+  console.log("Skipped robots.txt and _headers generation.");
 }
