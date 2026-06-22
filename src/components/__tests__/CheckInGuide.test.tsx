@@ -1,4 +1,4 @@
-import { CUP_POGO_CAMPFIRE, WG_CAMPFIRE } from "@/constants";
+import { CAMPFIRE_PATH } from "@/constants";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { MemoryRouter } from "react-router";
@@ -41,21 +41,6 @@ test.each([["false"], ["true"]])(
       expect(screen.queryAllByText(/cupertino/i)).toHaveLength(0);
       expect(screen.queryAllByText(/memorial park/i)).toHaveLength(0);
       expect(screen.queryAllByText(/de anza college/i)).toHaveLength(0);
-
-      const callout = screen.getByRole("button", {
-        name: /What is Campfire?/i,
-      });
-      expect(callout).toBeInTheDocument();
-
-      // Click the callout to view the Campfire link
-      await user.click(callout);
-
-      const campfireLink = await screen.findByRole("link", {
-        name: /Download the Niantic Campfire app/i,
-      });
-
-      expect(campfireLink).toBeInTheDocument();
-      expect(campfireLink).toHaveAttribute("href", WG_CAMPFIRE);
     } else {
       // Cupertino-related text should be found
       expect(screen.getAllByText(/cupertino/i).length).toBeGreaterThan(0);
@@ -66,21 +51,21 @@ test.each([["false"], ["true"]])(
       expect(screen.queryAllByText(/wild goose/i)).toHaveLength(0);
       expect(screen.queryAllByText(/santa clara/i)).toHaveLength(0);
       expect(screen.queryAllByText(/central park/i)).toHaveLength(0);
-
-      const callout = screen.getByRole("button", {
-        name: /What is Campfire?/i,
-      });
-      expect(callout).toBeInTheDocument();
-
-      // Click the callout to view the Campfire link
-      await user.click(callout);
-
-      const campfireLink = await screen.findByRole("link", {
-        name: /Download the Niantic Campfire app/i,
-      });
-
-      expect(campfireLink).toBeInTheDocument();
-      expect(campfireLink).toHaveAttribute("href", CUP_POGO_CAMPFIRE);
     }
+
+    const callout = screen.getByRole("button", {
+      name: /What is Campfire?/i,
+    });
+    expect(callout).toBeInTheDocument();
+
+    // Click the callout to view the Campfire link
+    await user.click(callout);
+
+    const campfireLink = await screen.findByRole("link", {
+      name: /Download the Niantic Campfire app/i,
+    });
+
+    expect(campfireLink).toBeInTheDocument();
+    expect(campfireLink).toHaveAttribute("href", CAMPFIRE_PATH);
   },
 );

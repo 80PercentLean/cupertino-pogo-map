@@ -1,6 +1,6 @@
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
-import { CAMPFIRE_LINK, CHECK_IN_PATH, GET_IS_CENTRAL } from "@/constants";
+import { CAMPFIRE_PATH, CHECK_IN_PATH, GET_IS_CENTRAL } from "@/constants";
 import { queryOptions, useQuery } from "@tanstack/react-query";
 import { ExternalLink, FlameKindling, Gift } from "lucide-react";
 
@@ -183,7 +183,7 @@ export default function MeetupsView() {
           <p>
             Be sure to check our{" "}
             <a
-              href={CAMPFIRE_LINK}
+              href={CAMPFIRE_PATH}
               rel="noopener noreferrer"
               target="_blank"
               className="font-bold underline"

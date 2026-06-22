@@ -29,7 +29,13 @@ export const GROUP_NAME = IS_CENTRAL
 
 export const ROOT_PATH = (import.meta.env.VITE_ROOT_PATH as string) ?? "";
 
+export const CAMPFIRE_PATH = ROOT_PATH ? `${ROOT_PATH}/contact` : "/campfire";
+
 export const CHECK_IN_PATH = ROOT_PATH ? `${ROOT_PATH}/checkin` : "/checkin";
+
+export const CONTACT_PATH = ROOT_PATH ? `${ROOT_PATH}/contact` : "/contact";
+
+export const DISCORD_PATH = ROOT_PATH ? `${ROOT_PATH}/discord` : "/discord";
 
 export const MAP_PATH = ROOT_PATH ? `${ROOT_PATH}/map` : "/map";
 
@@ -48,6 +54,8 @@ export const GET_CAMPFIRE_LINK = () =>
   GET_IS_CENTRAL() ? WG_CAMPFIRE : CUP_POGO_CAMPFIRE;
 
 export const CAMPFIRE_LINK = IS_CENTRAL ? WG_CAMPFIRE : CUP_POGO_CAMPFIRE;
+
+export const CONTACT_FORM_LINK = "https://forms.gle/SYu9SQgsJcfghVTP9";
 
 export const DISCORD_LINK = "https://discord.gg/7tZ2cauare";
 

@@ -1,5 +1,5 @@
 /**
- * Script that generates the _redirects file for Cloudflare Pages.
+ * Script that generates a _redirects file for Cloudflare Pages.
  */
 import fs from "node:fs";
 import path from "node:path";

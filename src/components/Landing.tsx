@@ -1,14 +1,16 @@
 import imgDiscord from "@/assets/Discord-Symbol-Blurple.png";
 import imgPgo from "@/assets/Pokemon_GO_Logo.png";
 import imgCampfire from "@/assets/campfire.png";
+import imgContact from "@/assets/contact.jpg";
 import imgProfessor from "@/assets/gotcg.jpg";
 import imgPbp from "@/assets/pbp.webp";
 import imgMap from "@/assets/pgo-map-bg.jpg";
 import imgRaid from "@/assets/raids-loading.jpg";
 import {
+  CAMPFIRE_PATH,
   CHECK_IN_PATH,
-  DISCORD_LINK,
-  GET_CAMPFIRE_LINK,
+  CONTACT_PATH,
+  DISCORD_PATH,
   GET_CITY,
   GET_GROUP_NAME,
   GET_IS_CENTRAL,
@@ -49,7 +51,7 @@ export default function Landing() {
         and chances to win official Pokémon merchandise and swag.
       </p>
       <div
-        className={`mt-4 grid w-full gap-4 ${GET_IS_CENTRAL() ? "grid-rows-6" : "grid-rows-7"}`}
+        className={`mt-4 grid w-full gap-4 ${GET_IS_CENTRAL() ? "grid-rows-7" : "grid-rows-8"}`}
       >
         <a href={MAP_PATH} className="flex">
           <Card className="flex w-full flex-row gap-0 bg-white p-0">
@@ -109,7 +111,7 @@ export default function Landing() {
           </Card>
         </a>
         <a
-          href={DISCORD_LINK}
+          href={DISCORD_PATH}
           rel="noopener noreferrer"
           target="_blank"
           className="flex"
@@ -132,7 +134,7 @@ export default function Landing() {
           </Card>
         </a>
         <a
-          href={GET_CAMPFIRE_LINK()}
+          href={CAMPFIRE_PATH}
           rel="noopener noreferrer"
           target="_blank"
           className="flex"
@@ -201,6 +203,33 @@ export default function Landing() {
               <CardDescription className="text-pretty text-gray-600">
                 New to the game? Visit the official website to download the game
                 and start your Pokémon adventure today!
+              </CardDescription>
+            </CardHeader>
+          </Card>
+        </a>
+        <a
+          href={CONTACT_PATH}
+          rel="noopener noreferrer"
+          target="_blank"
+          className="flex"
+        >
+          <Card className="flex w-full flex-row gap-0 bg-white p-0">
+            <img
+              src={imgContact}
+              alt="Pokémon GO Logo"
+              className="aspect-video w-29 rounded-l-xl bg-[#1f1f1f] object-cover"
+              style={{
+                background: "linear-gradient(135deg, #BEE58D, #7ECA9F)",
+              }}
+            />
+            <CardHeader className="w-full p-6">
+              <CardTitle className="font-medium text-balance text-black">
+                Contact Us
+              </CardTitle>
+              <CardDescription className="text-pretty text-gray-600">
+                Questions, feedback, partnership opportunities, or general
+                inquiries are all welcome! Submit this form and we'll e-mail you
+                back as soon as possible.
               </CardDescription>
             </CardHeader>
           </Card>
