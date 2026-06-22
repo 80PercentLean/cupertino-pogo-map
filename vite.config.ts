@@ -65,6 +65,11 @@ export default defineConfig(({ mode }) => {
             `${GROUP_NAME} | Pokémon GO Community in ${CITY}, California`,
           );
 
+          transformedHtml = transformedHtml.replace(
+            "__META_DESC__",
+            `Join ${GROUP_NAME}, the ${CITY} Pokémon GO community! Find meetup schedules, our interactive map with free parking, Discord, Campfire, and local event information.`,
+          );
+
           return transformedHtml;
         }
 
@@ -82,6 +87,11 @@ export default defineConfig(({ mode }) => {
           transformedHtml = transformedHtml.replace(
             "__TITLE__",
             `${MAP_NAME} | Directions & Free Parking for Pokémon GO at ${LOCATION}`,
+          );
+
+          transformedHtml = transformedHtml.replace(
+            "__META_DESC__",
+            `Explore ${GROUP_NAME}'s interactive map of ${LOCATION} with directions to free parking, restrooms, Gyms, PokéStops, Power Spots, and more.`,
           );
 
           return transformedHtml;

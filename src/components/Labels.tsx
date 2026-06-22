@@ -1,4 +1,4 @@
-import { IS_CENTRAL } from "@/constants";
+import { GET_IS_CENTRAL } from "@/constants";
 import { labelsJson } from "@/geojson/data";
 import { marker } from "leaflet";
 import { GeoJSON } from "react-leaflet";
@@ -6,7 +6,7 @@ import { GeoJSON } from "react-leaflet";
 import { labelsIconsCentral, labelsIconsMpDa } from "../leafletLabels";
 import type { CFeature } from "../types/CFeatures";
 
-const labels = IS_CENTRAL ? labelsIconsCentral : labelsIconsMpDa;
+const labelIcons = GET_IS_CENTRAL() ? labelsIconsCentral : labelsIconsMpDa;
 
 /**
  * React Leaflet's <GeoJSON> specialized for rendering text on the map which we call labels.
@@ -22,7 +22,7 @@ export default function Labels() {
         let icon;
 
         if (labelClass) {
-          for (const labelIcon of labels) {
+          for (const labelIcon of labelIcons) {
             if (labelIcon.options.className?.includes(labelClass)) {
               icon = labelIcon;
               break;

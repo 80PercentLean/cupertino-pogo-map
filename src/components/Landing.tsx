@@ -28,12 +28,12 @@ export default function Landing() {
   useSetDocTitle(`Pokémon GO Community in ${GET_CITY()}, California`);
 
   return (
-    <div className="mx-auto flex min-h-screen max-w-[65ch] flex-col items-center gap-4 p-4">
+    <main className="mx-auto flex min-h-screen max-w-[65ch] flex-col items-center gap-4 p-4">
       <h1 className="text-center text-3xl font-extrabold tracking-tight text-balance">
         Welcome to {GET_GROUP_NAME()}!
       </h1>
       <p className="text-muted-foreground text-center text-pretty">
-        We're a Pokémon GO community based in{" "}
+        We're a <b>Pokémon GO community</b> based in{" "}
         <a href={MAP_PATH} className="font-bold underline">
           {GET_LOCATION_LONG()}
         </a>
@@ -209,6 +209,6 @@ export default function Landing() {
       <footer className="text-muted-foreground mt-20 mb-6 flex flex-col gap-2 text-center text-sm">
         <FooterTxt />
       </footer>
-    </div>
+    </main>
   );
 }

@@ -1,4 +1,4 @@
-import { IS_CENTRAL } from "@/constants";
+import { GET_IS_CENTRAL } from "@/constants";
 
 import {
   centralDevpoisJson,
@@ -28,19 +28,25 @@ import {
   cupStdRaidPathJson,
 } from "./cup/data";
 
-const devpoisJson = IS_CENTRAL ? centralDevpoisJson : cupDevpoisJson;
-const gymsJson = IS_CENTRAL ? centralGymsJson : cupGymsJson;
-const l13CellsJson = IS_CENTRAL ? centralL13CellsJson : cupL13CellsJson;
-const l14CellsJson = IS_CENTRAL ? centralL14CellsJson : cupL14CellsJson;
-const l17CellsJson = IS_CENTRAL ? centralL17CellsJson : cupL17CellsJson;
-const labelsJson = IS_CENTRAL ? centralLabelsJson : cupLabelsJson;
-const meetupspotsJson = IS_CENTRAL
+const devpoisJson = GET_IS_CENTRAL() ? centralDevpoisJson : cupDevpoisJson;
+const gymsJson = GET_IS_CENTRAL() ? centralGymsJson : cupGymsJson;
+const l13CellsJson = GET_IS_CENTRAL() ? centralL13CellsJson : cupL13CellsJson;
+const l14CellsJson = GET_IS_CENTRAL() ? centralL14CellsJson : cupL14CellsJson;
+const l17CellsJson = GET_IS_CENTRAL() ? centralL17CellsJson : cupL17CellsJson;
+const labelsJson = GET_IS_CENTRAL() ? centralLabelsJson : cupLabelsJson;
+const meetupspotsJson = GET_IS_CENTRAL()
   ? centralMeetupspotsJson
   : cupMeetupspotsJson;
-const parkingJson = IS_CENTRAL ? centralParkingJson : cupParkingJson;
-const pokestopsJson = IS_CENTRAL ? centralPokestopsJson : cupPokestopsJson;
-const powerspotsJson = IS_CENTRAL ? centralPowerspotsJson : cupPowerspotsJson;
-const restroomsJson = IS_CENTRAL ? centralRestroomsJson : cupRestroomsJson;
+const parkingJson = GET_IS_CENTRAL() ? centralParkingJson : cupParkingJson;
+const pokestopsJson = GET_IS_CENTRAL()
+  ? centralPokestopsJson
+  : cupPokestopsJson;
+const powerspotsJson = GET_IS_CENTRAL()
+  ? centralPowerspotsJson
+  : cupPowerspotsJson;
+const restroomsJson = GET_IS_CENTRAL()
+  ? centralRestroomsJson
+  : cupRestroomsJson;
 const stdRaidPathJson = cupStdRaidPathJson;
 
 export {
