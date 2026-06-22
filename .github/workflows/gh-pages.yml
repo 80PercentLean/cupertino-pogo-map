@@ -38,6 +38,8 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build:wg
+      - name: Disable crawling of the entire site
+        run: node generate-crawler-rules.js
         env:
           VITE_API: ${{ vars.VITE_API }}
           VITE_API_KEY: ${{ secrets.VITE_API_KEY }}

@@ -3,6 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import { type Plugin, defineConfig, loadEnv } from "vite";
+import Sitemap from "vite-plugin-sitemap";
 import stylelint from "vite-plugin-stylelint";
 
 /**
@@ -112,6 +113,18 @@ export default defineConfig(({ mode }) => {
     tailwindcss(),
     stylelint(),
   ];
+
+  if (env.VITE_SITEMAP_URL) {
+    plugins.push(
+      Sitemap({
+        dynamicRoutes: ["/checkin"],
+        generateRobotsTxt: false,
+        hostname: env.VITE_SITEMAP_URL,
+        outDir: env.VITE_IS_CENTRAL === "true" ? "dist-wg" : "dist-cup-pogo",
+        readable: true,
+      }),
+    );
+  }
 
   if (!env.VITE_E2E) {
     // Only include Cloudflare Vite plugin when not running in E2E mode
