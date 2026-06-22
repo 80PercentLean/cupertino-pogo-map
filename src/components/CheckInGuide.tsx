@@ -30,7 +30,7 @@ export default function CheckInGuide() {
   useSetDocTitle("How To Check Into Meetups");
 
   return (
-    <>
+    <main>
       <div
         className="flex h-[33vh] items-center"
         style={{
@@ -456,6 +456,6 @@ export default function CheckInGuide() {
           <FooterTxt />
         </footer>
       </div>
-    </>
+    </main>
   );
 }

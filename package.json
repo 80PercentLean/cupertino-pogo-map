@@ -1,7 +1,7 @@
 {
   "name": "cupertino-pogo-map",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "80PercentLean",
   "license": "MIT",
   "type": "module",
@@ -9,9 +9,9 @@
     "build": "npm run build:cup-pogo",
     "build:all": "npm run build:cup-pogo && npm run build:wg",
     "build:all:e2e": "VITE_E2E=true VITE_API=http://localhost:9001/api/v1 nodemon --exec \"npm run build:all\"",
-    "build:cup-pogo": "VITE_IS_CENTRAL=false vite build --outDir dist-cup-pogo",
+    "build:cup-pogo": "VITE_IS_CENTRAL=false vite build --outDir dist-cup-pogo && VITE_IS_CENTRAL=false node generate-redirects.js && VITE_IS_CENTRAL=false node generate-crawler-block.js",
     "build:cup-pogo:e2e": "VITE_E2E=true VITE_API=http://localhost:9001/api/v1 npm run build:cup-pogo",
-    "build:wg": "VITE_IS_CENTRAL=true vite build --outDir dist-wg",
+    "build:wg": "VITE_IS_CENTRAL=true vite build --outDir dist-wg && VITE_IS_CENTRAL=true node generate-redirects.js && VITE_IS_CENTRAL=true node generate-crawler-block.js",
     "build:wg:e2e": "VITE_E2E=true VITE_API=http://localhost:9001/api/v1 npm run build:wg",
     "dev": "vite",
     "dev:cup-pogo:e2e": "VITE_E2E=true nodemon --exec \"npm run build:cup-pogo:e2e && npm run preview:cup-pogo\"",
@@ -107,6 +107,7 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.59.4",
     "vite": "^7.1.7",
+    "vite-plugin-sitemap": "^0.8.2",
     "vite-plugin-stylelint": "^6.0.2",
     "vitest": "^4.0.4",
     "wrangler": "^4.93.0"

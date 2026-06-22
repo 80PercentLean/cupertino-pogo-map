@@ -48,72 +48,149 @@ html#map-app > body {
   align-items: center;
   justify-content: center;
   -webkit-text-stroke: 2px #fff;
+  color: #82827e;
   paint-order: stroke fill;
   text-align: center;
 }
 
 .label-mp > div {
-  color: #82827e;
   font-size: 16px;
   font-style: italic;
   width: 110px;
   height: 14px;
 }
 
-.label-veterans > div {
-  color: #82827e;
-  font-size: 12px;
-  width: 60px;
-  height: 40px;
-}
-
 .label-quinlan > div {
-  color: #82827e;
   font-size: 12px;
   width: 90px;
   height: 50px;
 }
 
 .label-mp-tennis > div {
-  color: #82827e;
   font-size: 12px;
   width: 80px;
   height: 20px;
 }
 
+.label-amphitheatre > div {
+  font-size: 12px;
+  width: 80px;
+  height: 30px;
+}
+
+.label-veterans > div {
+  font-size: 12px;
+  width: 60px;
+  height: 40px;
+}
+
 .label-senior > div {
-  color: #82827e;
   font-size: 12px;
   width: 50px;
   height: 40px;
 }
 
 .label-da > div {
-  color: #999;
   font-size: 16px;
   font-style: italic;
-  width: 50px;
+  width: 60px;
   height: 60px;
 }
 
+.label-vpac > div {
+  font-size: 12px;
+  width: 110px;
+  height: 40px;
+}
+
 .label-hinson > div {
-  color: #999;
   font-size: 12px;
   width: 50px;
   height: 60px;
 }
 
+.label-dehart > div {
+  font-size: 12px;
+  width: 60px;
+  height: 60px;
+}
+
 .label-mlc > div {
-  color: #999;
   font-size: 12px;
   width: 60px;
   height: 80px;
 }
 
 .label-fujitsu > div {
-  color: #999;
   font-size: 12px;
   width: 70px;
+  height: 40px;
+}
+
+.label-kirsch > div {
+  font-size: 12px;
+  width: 130px;
+  height: 40px;
+}
+
+.label-central > div {
+  font-size: 16px;
+  font-style: italic;
+  width: 100px;
+  height: 14px;
+}
+
+.label-tennis-center > div {
+  font-size: 12px;
+  width: 90px;
+  height: 40px;
+}
+
+.label-crc > div {
+  font-size: 12px;
+  width: 80px;
+  height: 60px;
+}
+
+.label-memorial > div {
+  font-size: 12px;
+  width: 60px;
+  height: 40px;
+}
+
+.label-pond > div {
+  font-size: 12px;
+  width: 40px;
+  height: 30px;
+}
+
+.label-playground > div {
+  font-size: 12px;
+  width: 90px;
+  height: 40px;
+}
+
+.label-pavilion > div {
+  font-size: 12px;
+  width: 50px;
+  height: 20px;
+}
+
+.label-library > div {
+  font-size: 12px;
+  width: 80px;
+  height: 40px;
+}
+
+.label-kiely > div {
+  font-size: 10px;
+  width: 60px;
+  height: 20px;
+}
+
+.label-mariposa > div {
+  font-size: 10px;
+  width: 80px;
   height: 40px;
 }
 

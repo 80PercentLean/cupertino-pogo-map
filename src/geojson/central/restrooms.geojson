@@ -1,4 +1,197 @@
 {
   "type": "FeatureCollection",
-  "features": []
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Central Park Library First Floor Men's Restroom",
+        "type": "restroom",
+        "subtype": "men",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.9736534357071, 37.34039046929037],
+        "type": "Point"
+      },
+      "id": "restroom-95dff742-e54f-4c47-bb03-34ebedec7f07"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Central Park Library First Floor Women's Restroom",
+        "type": "restroom",
+        "subtype": "women",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97368428111079, 37.34039046929037],
+        "type": "Point"
+      },
+      "id": "restroom-38be7ed3-9d5d-444c-afa7-33a99947f034"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Central Park Library First Floor Family Restroom A",
+        "type": "restroom",
+        "subtype": "all",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97394043207171, 37.34042885391693],
+        "type": "Point"
+      },
+      "id": "restroom-8e7982bd-20a9-4d53-9d29-3cddad3e878e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Central Park Library First Floor Family Restroom B",
+        "type": "restroom",
+        "subtype": "all",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97388947010042, 37.34042885391693],
+        "type": "Point"
+      },
+      "id": "restroom-9f954e30-ee53-40f3-b0b1-b950b5dfece4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Central Park Library Second Floor Women's Restroom",
+        "type": "restroom",
+        "subtype": "women",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97343081235888, 37.340569597379925],
+        "type": "Point"
+      },
+      "id": "restroom-49c93cd4-7fef-4a9f-a652-a797002dd8ee"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Central Park Library Second Floor Men's Restroom",
+        "type": "restroom",
+        "subtype": "men",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97343081235888, 37.3405386764902],
+        "type": "Point"
+      },
+      "id": "restroom-f6b8108d-372f-4e26-838c-5114411a1fc6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Community Recreation Center Women's Restroom",
+        "type": "restroom",
+        "subtype": "women",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97656229138376, 37.34271696871543],
+        "type": "Point"
+      },
+      "id": "restroom-b9977ead-c7ac-4669-a941-5998beb2c82a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Community Recreation Center Men's Restroom",
+        "type": "restroom",
+        "subtype": "men",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97652205824852, 37.34271696871543],
+        "type": "Point"
+      },
+      "id": "restroom-21d17a17-f1b4-483a-8752-9478a0382ce7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arbor Center Women's Restroom",
+        "type": "restroom",
+        "subtype": "women",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.9768935441971, 37.3407775133767],
+        "type": "Point"
+      },
+      "id": "restroom-abfeb4c5-dfa4-40eb-a3f8-1a3c2dffca7a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arbor Center Men's Restroom",
+        "type": "restroom",
+        "subtype": "men",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97688013315202, 37.3408052354661],
+        "type": "Point"
+      },
+      "id": "restroom-eb939966-a41b-48c8-8e3b-f70820b118b7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Santa Clara Tennis Center Women's Restroom",
+        "type": "restroom",
+        "subtype": "women",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97430521249774, 37.344422880329034],
+        "type": "Point"
+      },
+      "id": "restroom-71ba63a2-0cf7-42ce-bc91-2c706a1f7623"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Santa Clara Tennis Center Men's Restroom",
+        "type": "restroom",
+        "subtype": "men",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97430521249774, 37.344382365377484],
+        "type": "Point"
+      },
+      "id": "restroom-b7c93ce7-e346-4c57-89a4-bda94c1f0450"
+    }
+  ]
 }

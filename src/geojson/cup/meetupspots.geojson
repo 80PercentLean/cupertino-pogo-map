@@ -6,7 +6,7 @@
       "properties": {
         "name": "Quinlan Community Center Gazebo Meetup Spot",
         "type": "meetupspot",
-        "desc": "This is the meetup spot mainly used for our guided group on Raid Days/Hours where we walk together to clear as many Raids as possible.\n\nThe guided raid group meets up here for Raid Hour every Wednesday at 6:00pm. The quick raid group meets up at the same time on the other side of the park at the Veterans Memorial.",
+        "desc": "This is the meetup spot mainly used for our guided group on Raid Days/Hours where we walk together to clear as many Gyms as possible.\n\nThe guided raid group meets up here for Raid Hour every Wednesday at 6:00pm. The quick raid group meets up at the same time on the other side of the park at the Veterans Memorial.",
         "marker-color": "#ffa500",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -22,7 +22,7 @@
       "properties": {
         "name": "Veterans Memorial Meetup Spot",
         "type": "meetupspot",
-        "desc": "This is the meetup spot mainly used for our quick raid group during Raid Hours where players who only have time for 2–3 Raids will complete them together.\n\nThe quick raid group meets up here for Raid Hour every Wednesday at 6:00pm. The guided raid group meets up at the same time on the other side of the park at the Quinlan Community Center gazebo.",
+        "desc": "This is the meetup spot mainly used for our quick raid group during Raid Hours where players who only have time to clear 2–3 Gyms will complete them together.\n\nThe quick raid group meets up here for Raid Hour every Wednesday at 6:00pm. The guided raid group meets up at the same time on the other side of the park at the Quinlan Community Center gazebo.",
         "marker-color": "#ffa500",
         "marker-size": "small",
         "marker-symbol": "circle"

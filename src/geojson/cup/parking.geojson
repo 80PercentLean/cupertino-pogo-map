@@ -58,7 +58,7 @@
         "name": "Quinlan Community Center Upper Parking Lot",
         "type": "parking",
         "subtype": "free",
-        "desc": "<p>Free parking during Memorial Park's open hours.</p><p>This is a great parking lot for Raid Days and our Raid Hour walking group as it is close to the Quinlan Community Center gazebo meetup spot.</p>",
+        "desc": "<p>Free parking during Memorial Park's open hours.</p><p>This is a great parking lot for Raid Days & Raid Hours as it is close to the Quinlan Community Center gazebo meetup spot where our guided Raid groups start.</p>",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"

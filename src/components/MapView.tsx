@@ -1,4 +1,5 @@
 // import { type LatLngBoundsExpression } from "leaflet";
+import { IS_CENTRAL } from "@/constants";
 import { MapContainer, TileLayer } from "react-leaflet";
 import { useSearchParams } from "react-router";
 
@@ -7,7 +8,6 @@ import Labels from "./Labels";
 import LeafletDebug from "./LeafletDebug";
 import MyLocationMarker from "./MyLocationMarker";
 import PlacedMarkers from "./PlacedMarkers";
-import StdRaidPath from "./StdRaidPath";
 import DevPois from "./features/DevPois";
 import Gyms from "./features/Gyms";
 import MeetupSpots from "./features/MeetupSpots";
@@ -15,6 +15,7 @@ import Parking from "./features/Parking";
 import PokeStops from "./features/PokeStops";
 import PowerSpots from "./features/PowerSpots";
 import Restrooms from "./features/Restrooms";
+import StdRaidPath from "./features/StdRaidPath";
 import { useIsLayerOn, useStore } from "./hooks/store";
 import L13Grid from "./s2/L13Grid";
 import L14Grid from "./s2/L14Grid";
@@ -116,7 +117,7 @@ export default function MapView() {
       {isLayerPokestopOn && <PokeStops />}
       {isLayerGymOn && <Gyms />}
       {isLayerParkingOn && <Parking />}
-      {isStdRaidPathOn && <StdRaidPath />}
+      {!IS_CENTRAL && isStdRaidPathOn && <StdRaidPath />}
       {isLayerMeetupSpotOn && <MeetupSpots />}
       {searchParams.get("l17") === "on" && <L17Grid />}
       {searchParams.get("l14") === "on" && <L14Grid />}

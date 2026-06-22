@@ -3,7 +3,12 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import { type Plugin, defineConfig, loadEnv } from "vite";
+import Sitemap from "vite-plugin-sitemap";
 import stylelint from "vite-plugin-stylelint";
+
+import packageJson from "./package.json";
+
+process.env.VITE_VERSION = packageJson.version;
 
 /**
  * Installs the Google tag for Google Analytics.
@@ -65,6 +70,11 @@ export default defineConfig(({ mode }) => {
             `${GROUP_NAME} | Pokémon GO Community in ${CITY}, California`,
           );
 
+          transformedHtml = transformedHtml.replace(
+            "__META_DESC__",
+            `Join ${GROUP_NAME}, the ${CITY} Pokémon GO community! Find meetup schedules, our interactive map with free parking, Discord, Campfire, and local event information.`,
+          );
+
           return transformedHtml;
         }
 
@@ -82,6 +92,11 @@ export default defineConfig(({ mode }) => {
           transformedHtml = transformedHtml.replace(
             "__TITLE__",
             `${MAP_NAME} | Directions & Free Parking for Pokémon GO at ${LOCATION}`,
+          );
+
+          transformedHtml = transformedHtml.replace(
+            "__META_DESC__",
+            `Explore ${GROUP_NAME}'s interactive map of ${LOCATION} with directions to free parking, restrooms, Gyms, PokéStops, Power Spots, and more.`,
           );
 
           return transformedHtml;
@@ -102,6 +117,17 @@ export default defineConfig(({ mode }) => {
     tailwindcss(),
     stylelint(),
   ];
+
+  if (env.VITE_SITEMAP_URL) {
+    plugins.push(
+      Sitemap({
+        dynamicRoutes: ["/checkin"],
+        generateRobotsTxt: false,
+        hostname: env.VITE_SITEMAP_URL,
+        outDir: env.VITE_IS_CENTRAL === "true" ? "dist-wg" : "dist-cup-pogo",
+      }),
+    );
+  }
 
   if (!env.VITE_E2E) {
     // Only include Cloudflare Vite plugin when not running in E2E mode

@@ -149,14 +149,16 @@ export const createPopupContent = (
 ) => {
   let description;
   if (desc && renderHtml) {
-    description = <div dangerouslySetInnerHTML={{ __html: desc }} />;
+    description = (
+      <div dangerouslySetInnerHTML={{ __html: desc }} className="text-pretty" />
+    );
   } else {
-    description = <p className="whitespace-pre-line">{desc}</p>;
+    description = <p className="text-pretty whitespace-pre-line">{desc}</p>;
   }
   return (
     <>
-      <h1 className="font-bold">{title}</h1>
-      {subtitle && <p className="my-0! italic">{subtitle}</p>}
+      <h1 className="font-bold text-balance">{title}</h1>
+      {subtitle && <p className="my-0! text-balance italic">{subtitle}</p>}
       {wayfarerMode && id && (
         <p className="my-0! font-mono text-xs text-gray-500">{id}</p>
       )}

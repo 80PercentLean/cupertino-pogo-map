@@ -5,7 +5,7 @@ import { AntPath } from "leaflet-ant-path";
 import { useEffect } from "react";
 import { useMap } from "react-leaflet";
 
-import { useStore } from "./hooks/store";
+import { useStore } from "../hooks/store";
 
 const LATLNGS = stdRaidPathJson.features[0].geometry.coordinates.map(
   ([lng, lat]) => [lat, lng],

@@ -1,4 +1,192 @@
 {
   "type": "FeatureCollection",
-  "features": []
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Community Recreation Center Parking Lot",
+        "type": "parking",
+        "subtype": "free",
+        "desc": "<p>Free parking during Central Park's open hours.</p><p>This is a great parking lot for Raid Days & Raid Hours as it is close to the Community Recreation Center meetup spot where our guided Raid groups start.</p>",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97663336992265, 37.343505957653676],
+        "type": "Point"
+      },
+      "id": "parking-83e2d6f6-e057-429d-90be-6703fe95bbce"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Santa Clara Sports Center Parking Lot",
+        "type": "parking",
+        "subtype": "free",
+        "desc": "<p>Free parking during Central Park's open hours.</p><p>This is a great parking lot for Max Battle events as it is close to the Santa Clara Tennis Center meetup spot where our guided Max Battle groups start.</p>",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97322964668275, 37.344957035935764],
+        "type": "Point"
+      },
+      "id": "parking-2b68de9c-80fb-47d8-8b63-26a7efef6cc3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fatjo Sports Center Parking Lot",
+        "type": "parking",
+        "subtype": "free",
+        "desc": "<p>Free parking during Central Park's open hours.</p><p>This is a great parking lot for Max Battle events as it is close to the Santa Clara Tennis Center meetup spot where our guided Max Battle groups start.</p>",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97322964668275, 37.34359231945303],
+        "type": "Point"
+      },
+      "id": "parking-5b1be74d-a3e0-49eb-acaa-1c8085ec5809"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lawn Bowling Green Parking Lot",
+        "type": "parking",
+        "subtype": "free",
+        "desc": "<p>Free parking during Central Park's open hours.</p><p>This is a great parking lot for Max Battle events as it is close to the Santa Clara Tennis Center meetup spot where our guided Max Battle groups start.</p>",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97322964668275, 37.34155159556527],
+        "type": "Point"
+      },
+      "id": "parking-baf35f8d-705b-44e4-ada6-37e05657f1e8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Central Park Library Garage",
+        "type": "parking",
+        "subtype": "free",
+        "desc": "<p>Free parking during the following times:</p><p><span class=\"font-bold\">Mon:</span> 9:45am–6:15pm<br/><span class=\"font-bold\">Tue–Thu:</span> 9:45am–7:15pm<br/><span class=\"font-bold\">Fri:</span> 9:45am–6:15pm<br/><span class=\"font-bold\">Sat:</span> 9:45am–5:15pm<br/><span class=\"font-bold\">Sun:</span> 12:45am–5:15pm</p><p class=\"popup-txt-alert\">Closed Holidays</p>",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97333693504335, 37.341027011813],
+        "type": "Point"
+      },
+      "id": "parking-246f811c-1c5c-4c12-8f9b-a165878ceb18"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Central Park Library Upper Parking Lot",
+        "type": "parking",
+        "subtype": "free",
+        "desc": "<p>Free parking during Central Park's open hours.</p>",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97317332029344, 37.34065596255616],
+        "type": "Point"
+      },
+      "id": "parking-7d86bacf-8681-4062-afdc-f53214c845a7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Central Park Library Lower Parking Lot",
+        "type": "parking",
+        "subtype": "free",
+        "desc": "<p>Free parking during Central Park's open hours.</p>",
+        "marker-color": "#00f",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97356492280963, 37.33996717085717],
+        "type": "Point"
+      },
+      "id": "parking-45062295-f84e-4576-ae86-5236d3398e2b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Homestead Road Street Parking A",
+        "type": "parking",
+        "subtype": "conditionally-free",
+        "desc": "<p>Free street parking.</p><p class=\"popup-txt-alert\">Vehicles over 20 feet in length are not allowed to park here.</p><p class=\"popup-txt-alert\">Please note that a small portion of the west end of this block does not allow parking at any time.</p>",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97557389736177, 37.33885613440144],
+        "type": "Point"
+      },
+      "id": "restroom-2a0d7efc-3212-477c-a7e7-22747ada271c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Homestead Road Street Parking B",
+        "type": "parking",
+        "subtype": "conditionally-free",
+        "desc": "<p>Free street parking.</p><p class=\"popup-txt-alert\">Vehicles over 20 feet in length are not allowed to park here.</p>",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.9744446873665, 37.339205867419174],
+        "type": "Point"
+      },
+      "id": "restroom-c61653c7-6df1-4003-a9a7-a6e3369afd25"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Homestead Road Street Parking C",
+        "type": "parking",
+        "subtype": "conditionally-free",
+        "desc": "<p>Free street parking.</p><p class=\"popup-txt-alert\">Vehicles over 20 feet in length are not allowed to park here.</p>",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97339057922365, 37.3395428037862],
+        "type": "Point"
+      },
+      "id": "restroom-5f203cb2-0dc2-4cf7-b364-bbc88027031f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Las Palmas Drive Street Parking",
+        "type": "parking",
+        "subtype": "free",
+        "desc": "<p>Free street parking next to Orange Square and Randy's Donuts.</p>",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.97264358401301, 37.34003860929913],
+        "type": "Point"
+      },
+      "id": "restroom-d6f813b7-486c-4e19-96dd-263ede9b76ec"
+    }
+  ]
 }

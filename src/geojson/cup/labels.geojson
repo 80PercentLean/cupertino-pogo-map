@@ -8,7 +8,8 @@
         "type": "Label",
         "marker-color": "#808080",
         "marker-size": "small",
-        "marker-symbol": "circle"
+        "marker-symbol": "circle",
+        "labelClass": "label-mp"
       },
       "geometry": {
         "coordinates": [-122.04359874129298, 37.325824220005856],
@@ -19,29 +20,15 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Veteran's Memorial",
-        "type": "Label",
-        "marker-color": "#808080",
-        "marker-size": "small",
-        "marker-symbol": "circle"
-      },
-      "geometry": {
-        "coordinates": [-122.04541191458705, 37.324353575660965],
-        "type": "Point"
-      },
-      "id": "label-96e2516f-70c8-47cb-a633-17cafce1e81f"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Quinlan Community Center",
         "type": "Label",
         "marker-color": "#808080",
         "marker-size": "small",
-        "marker-symbol": "circle"
+        "marker-symbol": "circle",
+        "labelClass": "label-quinlan"
       },
       "geometry": {
-        "coordinates": [-122.04240649938585, 37.325816754878815],
+        "coordinates": [-122.04240515828134, 37.325925532370924],
         "type": "Point"
       },
       "id": "label-5009042d-0acb-42ff-a4f4-0369da14bbe2"
@@ -53,7 +40,8 @@
         "type": "Label",
         "marker-color": "#808080",
         "marker-size": "small",
-        "marker-symbol": "circle"
+        "marker-symbol": "circle",
+        "labelClass": "label-mp-tennis"
       },
       "geometry": {
         "coordinates": [-122.04489693045616, 37.32641396269837],
@@ -64,11 +52,44 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Amphitheatre",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "labelClass": "label-amphitheatre"
+      },
+      "geometry": {
+        "coordinates": [-122.04474806785585, 37.324492216313104],
+        "type": "Point"
+      },
+      "id": "label-278577ef-ed6e-4ed4-8119-2bfd68904e31"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Veteran's Memorial",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "labelClass": "label-veterans"
+      },
+      "geometry": {
+        "coordinates": [-122.04541191458705, 37.324353575660965],
+        "type": "Point"
+      },
+      "id": "label-96e2516f-70c8-47cb-a633-17cafce1e81f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Senior Center",
         "type": "Label",
         "marker-color": "#808080",
         "marker-size": "small",
-        "marker-symbol": "circle"
+        "marker-symbol": "circle",
+        "labelClass": "label-senior"
       },
       "geometry": {
         "coordinates": [-122.04579278826714, 37.323281768140895],
@@ -83,7 +104,8 @@
         "type": "Label",
         "marker-color": "#808080",
         "marker-size": "small",
-        "marker-symbol": "circle"
+        "marker-symbol": "circle",
+        "labelClass": "label-da"
       },
       "geometry": {
         "coordinates": [-122.04456567764284, 37.317700656680685],
@@ -94,11 +116,28 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Visual & Performing Arts Center (VPAC)",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "labelClass": "label-vpac"
+      },
+      "geometry": {
+        "coordinates": [-122.04378515481952, 37.32187079821713],
+        "type": "Point"
+      },
+      "id": "label-a6d666b7-170a-46f2-a2fa-3fcb70cd585f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Hinson Campus Center",
         "type": "Label",
         "marker-color": "#808080",
         "marker-size": "small",
-        "marker-symbol": "circle"
+        "marker-symbol": "circle",
+        "labelClass": "label-hinson"
       },
       "geometry": {
         "coordinates": [-122.04548165202144, 37.32078935662378],
@@ -109,11 +148,28 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "A. Robert De Hart Library",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "labelClass": "label-dehart"
+      },
+      "geometry": {
+        "coordinates": [-122.04664438962938, 37.3203542159709],
+        "type": "Point"
+      },
+      "id": "label-59b26f49-9def-46aa-9762-f77eb3e07c8a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Media & Learning Center",
         "type": "Label",
         "marker-color": "#808080",
         "marker-size": "small",
-        "marker-symbol": "circle"
+        "marker-symbol": "circle",
+        "labelClass": "label-mlc"
       },
       "geometry": {
         "coordinates": [-122.04808339476588, 37.320774425368604],
@@ -128,13 +184,30 @@
         "type": "Label",
         "marker-color": "#808080",
         "marker-size": "small",
-        "marker-symbol": "circle"
+        "marker-symbol": "circle",
+        "labelClass": "label-fujitsu"
       },
       "geometry": {
         "coordinates": [-122.0460529625416, 37.31892186019315],
         "type": "Point"
       },
       "id": "label-a0951982-0c83-4b7d-826e-45c900fae98e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kirsch Center for Environmental Studies",
+        "type": "Label",
+        "marker-color": "#808080",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "labelClass": "label-kirsch"
+      },
+      "geometry": {
+        "coordinates": [-122.04355582594874, 37.31616372519694],
+        "type": "Point"
+      },
+      "id": "label-1d508a0e-b3ad-4dca-97e7-bcdc2236e186"
     }
   ]
 }

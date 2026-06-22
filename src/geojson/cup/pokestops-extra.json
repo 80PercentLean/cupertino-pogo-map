@@ -295,6 +295,16 @@
       }
     },
     {
+      "id": "31411bad1d724028a310963abf315f46.12",
+      "properties": {
+        "name": "Cupertino Post Office",
+        "type": "pokestop",
+        "subtype": "showcase",
+        "source": "Wayfarer",
+        "ingress": true
+      }
+    },
+    {
       "id": "371ca7ed88c64b5887012b3205b6a1a7.16",
       "properties": {
         "name": "Joey Clavijo Memorial Tree",
@@ -864,6 +874,15 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "ingress": true
+      }
+    },
+    {
+      "id": "b6bd84bb9ff33aed9c2532e9b341b1f4.16",
+      "properties": {
+        "name": "McClellan Pond Bench",
+        "type": "pokestop",
+        "subtype": "showcase",
+        "source": "Wayfarer"
       }
     },
     {

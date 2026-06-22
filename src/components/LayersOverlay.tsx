@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/field";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { IS_CENTRAL } from "@/constants";
 import {
   emojiAllBinaryRestroom,
   emojiDevpoi,
@@ -206,14 +207,16 @@ export default function LayersOverlay() {
                 }}
               />
             </Field>
-            <Field className="w-14">
-              <BtnLayer
-                isActive={isStdRaidPathOn}
-                imagery={<span className="text-xl">🚶</span>}
-                label="Standard Raid Path"
-                onClick={() => toggleBasicLayer("stdRaidPath")}
-              />
-            </Field>
+            {!IS_CENTRAL && (
+              <Field className="w-14">
+                <BtnLayer
+                  isActive={isStdRaidPathOn}
+                  imagery={<span className="text-xl">🚶</span>}
+                  label="Standard Raid Path"
+                  onClick={() => toggleBasicLayer("stdRaidPath")}
+                />
+              </Field>
+            )}
             <Field className="w-14">
               <BtnLayer
                 isActive={isLayerRestroomOn}

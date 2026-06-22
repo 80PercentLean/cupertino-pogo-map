@@ -45,7 +45,7 @@ export default function Restrooms() {
           case "women":
             return "Women's Restroom";
           default:
-            return "All-Gender/Men/Women's Restroom";
+            return "All-Gender/Family/Men's/Women's Restroom";
         }
       }}
       type="restroom"
