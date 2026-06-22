@@ -1,3 +1,6 @@
+/**
+ * Script that generates robots.txt and a _headers file to specifically block crawlers.
+ */
 import fs from "node:fs";
 import path from "node:path";
 
@@ -23,7 +26,7 @@ Disallow: /
   fs.writeFileSync(path.join(outDir, "_headers"), headers);
 
   console.log(
-    `Generated non-production robots.txt and _headers that blocks crawlers in: ${outDir}`,
+    `Generated non-production robots.txt and _headers that block crawlers in: ${outDir}`,
   );
 } else {
   console.log("Skipped robots.txt and _headers generation.");

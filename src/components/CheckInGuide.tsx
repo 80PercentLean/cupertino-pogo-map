@@ -2,7 +2,7 @@ import imgLuckyEgg from "@/assets/lucky-egg.webp";
 import imgPbp from "@/assets/pbp.webp";
 import imgStarPiece from "@/assets/star-piece.webp";
 import {
-  GET_CAMPFIRE_LINK,
+  CAMPFIRE_PATH,
   GET_GROUP_NAME,
   GET_IS_CENTRAL,
   GET_LOCATION,
@@ -163,7 +163,7 @@ export default function CheckInGuide() {
               </p>
               <Button asChild>
                 <a
-                  href={GET_CAMPFIRE_LINK()}
+                  href={CAMPFIRE_PATH}
                   rel="noopener noreferrer"
                   target="_blank"
                   className="mt-[1em] w-full cursor-pointer text-center text-lg font-bold"

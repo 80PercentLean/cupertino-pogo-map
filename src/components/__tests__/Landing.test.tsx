@@ -1,9 +1,8 @@
 import {
+  CAMPFIRE_PATH,
   CHECK_IN_PATH,
-  CUP_POGO_CAMPFIRE,
-  DISCORD_LINK,
+  DISCORD_PATH,
   MAP_PATH,
-  WG_CAMPFIRE,
 } from "@/constants";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router";
@@ -36,24 +35,18 @@ test.each([["false"], ["true"]])(
       screen.getByRole("heading", { name: new RegExp(title, "i") }),
     ).toBeInTheDocument();
 
+    const link = screen.getByRole("link", {
+      name: /Campfire Logo/i,
+    });
+    expect(link).toBeInTheDocument();
+    expect(link).toHaveAttribute("href", CAMPFIRE_PATH);
+
     if (IS_CENTRAL === "true") {
       expect(screen.queryAllByText(/cupertino/i)).toHaveLength(1);
-
-      const link = screen.getByRole("link", {
-        name: /Campfire Logo/i,
-      });
-      expect(link).toBeInTheDocument();
-      expect(link).toHaveAttribute("href", WG_CAMPFIRE);
     } else {
       expect(screen.queryAllByText(/wild goose/i)).toHaveLength(1);
       expect(screen.queryAllByText(/santa clara/i)).toHaveLength(0);
       expect(screen.queryAllByText(/central park/i)).toHaveLength(0);
-
-      const link = screen.getByRole("link", {
-        name: /Campfire Logo/i,
-      });
-      expect(link).toBeInTheDocument();
-      expect(link).toHaveAttribute("href", CUP_POGO_CAMPFIRE);
     }
   },
 );
@@ -81,5 +74,5 @@ test("has a link to the Discord server", () => {
 
   const link = screen.getByRole("link", { name: /Join Our Discord Server/i });
   expect(link).toBeInTheDocument();
-  expect(link).toHaveAttribute("href", DISCORD_LINK);
+  expect(link).toHaveAttribute("href", DISCORD_PATH);
 });
