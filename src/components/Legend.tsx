@@ -61,7 +61,7 @@ export default function Legend() {
         data-testid="legend"
       >
         <CardContent
-          className={`grid grid-flow-col grid-rows-${Math.min(6, itemCount)} gap-x-2 gap-y-1 px-4 md:grid-rows-${Math.min(4, itemCount)} md:gap-x-4`}
+          className={`grid grid-cols-${Math.min(3, itemCount)} gap-x-2 gap-y-1 px-4 md:gap-x-4`}
         >
           {isLayerGymOn && (
             <div className="grid grid-cols-[20px_1fr] items-center gap-x-3">
@@ -157,7 +157,9 @@ export default function Legend() {
                   className="h-4 w-4 md:h-5 md:w-5"
                 />
                 <div className="text-xs text-pretty md:text-sm">
-                  All-Gender / Family / Men's / Women's Restroom
+                  All-Gender / Family /
+                  <br />
+                  Men's / Women's Restroom
                 </div>
               </div>
               <div className="grid grid-cols-[20px_1fr] items-center gap-x-3">
