@@ -6,6 +6,10 @@ import { type Plugin, defineConfig, loadEnv } from "vite";
 import Sitemap from "vite-plugin-sitemap";
 import stylelint from "vite-plugin-stylelint";
 
+import packageJson from "./package.json";
+
+process.env.VITE_VERSION = packageJson.version;
+
 /**
  * Installs the Google tag for Google Analytics.
  * @param measurementId The Google Analytics measurement ID
@@ -121,7 +125,6 @@ export default defineConfig(({ mode }) => {
         generateRobotsTxt: false,
         hostname: env.VITE_SITEMAP_URL,
         outDir: env.VITE_IS_CENTRAL === "true" ? "dist-wg" : "dist-cup-pogo",
-        readable: true,
       }),
     );
   }
