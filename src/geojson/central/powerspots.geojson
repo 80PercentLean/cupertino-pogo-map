@@ -174,7 +174,8 @@
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f"
+        "l14Id": "808fca6f",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.978019, 37.344429],
@@ -215,7 +216,8 @@
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f"
+        "l14Id": "808fca6f",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.978926, 37.341377],
@@ -556,7 +558,8 @@
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f"
+        "l14Id": "808fca6f",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.978746, 37.341476],
@@ -1239,7 +1242,8 @@
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f"
+        "l14Id": "808fca6f",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.97791, 37.344463],
@@ -2239,7 +2243,8 @@
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca6f"
+        "l14Id": "808fca6f",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.977992, 37.344446],
@@ -2458,7 +2463,8 @@
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca65"
+        "l14Id": "808fca65",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.976817, 37.337229],
@@ -2979,7 +2985,8 @@
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67"
+        "l14Id": "808fca67",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.971336, 37.340641],
@@ -3300,7 +3307,8 @@
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca69"
+        "l14Id": "808fca69",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.97125, 37.347015],

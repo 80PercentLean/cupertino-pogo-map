@@ -1,10 +1,17 @@
 /**
- * A simple Node.js script that sorts features alphabetically.
+ * A simple Node.js script that sorts features by ID alphabetically.
  */
-const fs = require("fs");
-const path = require("path");
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-const INPUT_FILE = path.join(__dirname, "cup/powerspots-extra.json");
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const INPUT_FILE = path.join(
+  __dirname,
+  "../src/geojson/cup/pokestops-extra.json",
+);
 const OUTPUT_FILE = "output.json";
 
 const data = JSON.parse(fs.readFileSync(INPUT_FILE, "utf8"));

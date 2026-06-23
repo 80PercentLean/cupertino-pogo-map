@@ -274,7 +274,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "photo": "356e80596630361a88d2378819d0ce73.16.jpg"
+        "photo": "356e80596630361a88d2378819d0ce73.16.jpg",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.978351, 37.34456],
@@ -294,7 +295,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "photo": "38fdddfce5823823880d3d4751a07bad.16.jpg"
+        "photo": "38fdddfce5823823880d3d4751a07bad.16.jpg",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.980237, 37.342866],
@@ -414,7 +416,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "photo": "4fc4c54c416f3e9f87b37aa2ffd1cc9b.16.jpg"
+        "photo": "4fc4c54c416f3e9f87b37aa2ffd1cc9b.16.jpg",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.980681, 37.337483],
@@ -494,7 +497,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "photo": "6803168177823f0d907fe17121bf281e.16.jpg"
+        "photo": "6803168177823f0d907fe17121bf281e.16.jpg",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.978397, 37.338308],
@@ -514,7 +518,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "photo": "69eca7dc80c939b09d772d59385ee0f2.16.jpg"
+        "photo": "69eca7dc80c939b09d772d59385ee0f2.16.jpg",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.979149, 37.341281],
@@ -534,7 +539,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "photo": "700330f3211833c0941e24fd34fc4e3c.16.jpg"
+        "photo": "700330f3211833c0941e24fd34fc4e3c.16.jpg",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.979636, 37.340505],
@@ -554,7 +560,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "photo": "7834e8ebeacd3f8687d1ccc17e269fb3.16.jpg"
+        "photo": "7834e8ebeacd3f8687d1ccc17e269fb3.16.jpg",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.981261, 37.3407],
@@ -574,7 +581,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "photo": "7e3e4a611a4f3d2b8ec9f91ac2e9ad02.16.jpg"
+        "photo": "7e3e4a611a4f3d2b8ec9f91ac2e9ad02.16.jpg",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.979152, 37.344602],
@@ -654,7 +662,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "photo": "8c2832c267093a969177c5f85b64a973.16.jpg"
+        "photo": "8c2832c267093a969177c5f85b64a973.16.jpg",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.979638, 37.340672],
@@ -694,7 +703,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "photo": "9205d467ef8335a1bda6a2b27b67b0b4.16.jpg"
+        "photo": "9205d467ef8335a1bda6a2b27b67b0b4.16.jpg",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.978309, 37.344134],
@@ -834,7 +844,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "photo": "9ed6a7336951328fa9e8fb322283df64.16.jpg"
+        "photo": "9ed6a7336951328fa9e8fb322283df64.16.jpg",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.979518, 37.341421],
@@ -894,7 +905,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "photo": "a283524bda383150b7dbf38ae9ba616a.16.jpg"
+        "photo": "a283524bda383150b7dbf38ae9ba616a.16.jpg",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.975955, 37.339384],
@@ -992,7 +1004,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "photo": "b5d48eaf287c37749e902f54e800a990.16.jpg"
+        "photo": "b5d48eaf287c37749e902f54e800a990.16.jpg",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.979042, 37.344036],
@@ -1072,7 +1085,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "photo": "c83f3ab275fc3d54b0c5ba8ce64fb61f.16.jpg"
+        "photo": "c83f3ab275fc3d54b0c5ba8ce64fb61f.16.jpg",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.98079, 37.340644],
@@ -1112,7 +1126,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "photo": "cceae9dffbf5314f9676084ace08a02b.16.jpg"
+        "photo": "cceae9dffbf5314f9676084ace08a02b.16.jpg",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.978319, 37.343064],
@@ -1192,7 +1207,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6f",
-        "photo": "de6056e2dc1f4ee18f1370dacd5bedc3.16.jpg"
+        "photo": "de6056e2dc1f4ee18f1370dacd5bedc3.16.jpg",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.981056, 37.342277],
@@ -1292,7 +1308,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca67",
-        "photo": "f2c50c3a68b337dab647cdfef7778548.16.jpg"
+        "photo": "f2c50c3a68b337dab647cdfef7778548.16.jpg",
+        "isHidden": true
       },
       "geometry": {
         "coordinates": [-121.971527, 37.33982],

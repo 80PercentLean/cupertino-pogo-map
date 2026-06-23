@@ -1,3 +1,6 @@
+/**
+ * Script that finds all impossible power spots based off their proximity to nearby gyms and PokeStops.
+ */
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
