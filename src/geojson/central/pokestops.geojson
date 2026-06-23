@@ -923,6 +923,24 @@
       "type": "Feature"
     },
     {
+      "id": "ambassador-pokestop",
+      "properties": {
+        "name": "Community Ambassador Location",
+        "type": "pokestop",
+        "source": "PGO Map",
+        "photo": "pogo-ca-logo.jpg",
+        "desc": "This PokéStop location is controlled by the Community Ambassadors so it can change locations.",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.9751111, 37.3408611],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
       "id": "b1e37fdc59f54099840a2b0dc0f367e7.16",
       "properties": {
         "checked": "2026-06-09T08:00:00Z",
@@ -1379,6 +1397,24 @@
       },
       "geometry": {
         "coordinates": [-121.979273, 37.337748],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "starbucks-pokestop",
+      "properties": {
+        "name": "Starbucks",
+        "type": "pokestop",
+        "subtype": "sponsored",
+        "source": "PGO Map",
+        "desc": "This is a Sponsored Location.",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.975153, 37.337864],
         "type": "Point"
       },
       "type": "Feature"

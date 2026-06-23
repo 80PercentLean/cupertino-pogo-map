@@ -2033,14 +2033,14 @@
       "properties": {
         "checked": "2026-06-09T08:00:00Z",
         "name": "Safeway",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67"
+        "l14Id": "808fca67",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.975134, 37.337892],
@@ -2670,14 +2670,14 @@
       "properties": {
         "checked": "2026-06-09T08:00:00Z",
         "name": "Redbox",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67"
+        "l14Id": "808fca67",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.975152, 37.337955],
@@ -3091,14 +3091,14 @@
       "properties": {
         "checked": "2026-06-09T08:00:00Z",
         "name": "KeyMe",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67"
+        "l14Id": "808fca67",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.975086, 37.337879],
@@ -3191,14 +3191,14 @@
       "properties": {
         "checked": "2026-06-09T08:00:00Z",
         "name": "KeyMe Locksmiths",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fca67"
+        "l14Id": "808fca67",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.975, 37.3379],

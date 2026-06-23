@@ -49,6 +49,11 @@ const findImpossiblePowerspots = (
   const output = [];
 
   for (const powerspot of featuresPowerspots) {
+    if (powerspot.properties.removed) {
+      // Power spot is removed so skip it
+      continue;
+    }
+
     for (const gymPokestop of featuresGymsPokestops) {
       if (gymPokestop.properties.removed) {
         // Gym/PokeStop is removed so skip it
