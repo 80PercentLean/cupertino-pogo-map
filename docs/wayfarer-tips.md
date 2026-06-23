@@ -26,6 +26,7 @@ The search feature supports the following keywords which can help filter the lis
 
 - `gym` or `gyms`: List all Gyms.
 - `pokestop` or `pokestops`: List all PokéStops.
+- `showcase` or `showcases`: List all Showcase PokéStops.
 - `powerspot` or `powerspots`: List all Power Spots.
 - `devpoi`: List all dev POIs.
 - `meetupspot` or `meetupspots`: List all meetup spots.

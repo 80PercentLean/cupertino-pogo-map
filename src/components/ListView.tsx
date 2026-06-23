@@ -164,6 +164,8 @@ export default function ListView() {
         const matchGym = querySet.has("gym") || querySet.has("gyms");
         const matchPokeStop =
           querySet.has("pokestop") || querySet.has("pokestops");
+        const matchShowcase =
+          querySet.has("showcase") || querySet.has("showcases");
         const matchPowerSpot =
           querySet.has("powerspot") || querySet.has("powerspots");
         const matchMeetupSpot =
@@ -269,6 +271,7 @@ export default function ListView() {
           name.toLowerCase().includes(deferredQuery.toLowerCase()) ||
           (matchGym && type === "gym") ||
           (matchPokeStop && type === "pokestop") ||
+          (matchShowcase && subtype === "showcase") ||
           (matchPowerSpot && type === "powerspot") ||
           (matchMeetupSpot && type === "meetupspot") ||
           (matchParking && type === "parking") ||
