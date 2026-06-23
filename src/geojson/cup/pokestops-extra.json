@@ -829,7 +829,6 @@
       }
     },
     {
-      "type": "Feature",
       "id": "ambassador-pokestop",
       "properties": {
         "name": "Community Ambassador Location",
@@ -844,7 +843,8 @@
       "geometry": {
         "coordinates": [-122.046372, 37.321038],
         "type": "Point"
-      }
+      },
+      "type": "Feature"
     },
     {
       "id": "b1e051c452ac3c609a3b9072a3d89770.16",

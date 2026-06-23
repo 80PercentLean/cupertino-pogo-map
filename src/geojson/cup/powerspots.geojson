@@ -984,10 +984,10 @@
         "isCommunityContributed": true,
         "l14Id": "808fb44f",
         "photo": "43724c577be53244ac28e9ce54916d49.16.jpg",
-        "isImpossible": true,
         "submitter": "80PercentLean",
         "submitted": "2025-10-29T08:00:00Z",
-        "created": "2025-11-01T08:00:00Z"
+        "created": "2025-11-01T08:00:00Z",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.044342, 37.325229],
@@ -1803,8 +1803,8 @@
         "isCommunityContributed": true,
         "l14Id": "808fb44f",
         "photo": "6fd708ea77d84a2ab8e2b5d94a8c9928.16.jpg",
-        "isImpossible": true,
-        "ingress": true
+        "ingress": true,
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.045742, 37.3217],
@@ -2237,10 +2237,10 @@
         "isCommunityContributed": true,
         "l14Id": "808fb44f",
         "photo": "8ccbc9eef9fb3fb6a4b913048bcccdb7.16.jpg",
-        "isImpossible": true,
         "submitter": "80PercentLean",
         "submitted": "2025-10-29T08:00:00Z",
-        "created": "2025-11-04T08:00:00Z"
+        "created": "2025-11-04T08:00:00Z",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.045692, 37.325233],
@@ -2422,8 +2422,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fb449",
-        "isImpossible": true,
-        "isHidden": true
+        "isHidden": true,
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.047459, 37.325678],
@@ -2672,10 +2672,10 @@
         "l14Id": "808fb447",
         "isHidden": true,
         "photo": "a4a6271d6ce330cab1c5741b1e86f407.16.jpg",
-        "isImpossible": true,
         "submitter": "80PercentLean",
         "submitted": "2025-11-08T08:00:00Z",
-        "created": "2025-11-10T08:00:00Z"
+        "created": "2025-11-10T08:00:00Z",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.050702, 37.327567],
@@ -4310,10 +4310,10 @@
         "isCommunityContributed": true,
         "l14Id": "808fb44d",
         "photo": "fd6205448fd6308bbe897ad2956b1c65.16.jpg",
-        "isImpossible": true,
         "submitter": "80PercentLean",
         "submitted": "2025-11-08T08:00:00Z",
-        "created": "2025-11-10T08:00:00Z"
+        "created": "2025-11-10T08:00:00Z",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-122.042345, 37.325758],
