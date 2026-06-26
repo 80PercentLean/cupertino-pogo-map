@@ -1,6 +1,25 @@
 {
   "features": [
     {
+      "id": "1bdcc6ff2d23468388e09603e478abfe.12",
+      "properties": {
+        "name": "Santa Clara Post Office",
+        "type": "pokestop",
+        "updated": "2025-06-23T08:00:00Z"
+      }
+    },
+    {
+      "id": "21a0a8b8910a32e4b6c252143cd89881.16",
+      "properties": {
+        "name": "Cooking Cooking",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-06-16T08:00:00Z",
+        "created": "2025-06-19T08:00:00Z"
+      }
+    },
+    {
       "id": "2785b79a4d3546409b7481c48d7545f9.16",
       "properties": {
         "name": "Jerry Scott Memorial",
@@ -37,6 +56,17 @@
       }
     },
     {
+      "id": "5d99b340dcef3e58814c708d875c04b4.16",
+      "properties": {
+        "name": "Boba Pup",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-06-16T08:00:00Z",
+        "created": "2025-06-19T08:00:00Z"
+      }
+    },
+    {
       "id": "6803168177823f0d907fe17121bf281e.16",
       "properties": {
         "name": "Casa Santa Clara Pool",
@@ -61,6 +91,16 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "isHidden": true
+      }
+    },
+    {
+      "id": "75283acb14eb3d3cb61ec3549deaa99f.16",
+      "properties": {
+        "name": "Orange Square",
+        "type": "pokestop",
+        "submitter": "80PercentLean",
+        "submitted": "2025-06-10T08:00:00Z",
+        "created": "2025-06-14T08:00:00Z"
       }
     },
     {
@@ -118,6 +158,17 @@
       }
     },
     {
+      "id": "a6039de4b7153346a17850ee466fa66b.16",
+      "properties": {
+        "name": "Kiely Plaza Main Sign",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-06-16T08:00:00Z",
+        "created": "2025-06-22T08:00:00Z"
+      }
+    },
+    {
       "id": "ambassador-pokestop",
       "properties": {
         "name": "Community Ambassador Location",
@@ -134,6 +185,17 @@
         "type": "Point"
       },
       "type": "Feature"
+    },
+    {
+      "id": "b2f9c365dfaa35b5b34519186cede210.16",
+      "properties": {
+        "name": "Bay Area Pizza",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-06-16T08:00:00Z",
+        "created": "2025-06-19T08:00:00Z"
+      }
     },
     {
       "id": "b5d48eaf287c37749e902f54e800a990.16",
@@ -169,6 +231,17 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "isHidden": true
+      }
+    },
+    {
+      "id": "df939732c0c938c09fd5751e9e0081ed.16",
+      "properties": {
+        "name": "Santa Clara Fire Station 3 Dedication Plaque",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-06-16T08:00:00Z",
+        "created": "2025-06-17T08:00:00Z"
       }
     },
     {

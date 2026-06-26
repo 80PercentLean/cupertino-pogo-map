@@ -47,6 +47,17 @@
       }
     },
     {
+      "id": "41a23fb2eaf23af69c41810285802aba.16",
+      "properties": {
+        "name": "Santa Clara Fire Station 3 Little Free Library",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-06-16T08:00:00Z",
+        "created": "2025-06-20T08:00:00Z"
+      }
+    },
+    {
       "id": "5a3e235007d140878c37100946f15771.23",
       "properties": {
         "name": "1000 Kiely",
@@ -118,6 +129,17 @@
         "type": "powerspot",
         "source": "Wayfarer",
         "isHidden": true
+      }
+    },
+    {
+      "id": "f07e6f9ee5943391928454b83baa0ba6.16",
+      "properties": {
+        "name": "Randy's Donut Statue",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-06-10T08:00:00Z",
+        "created": "2025-06-15T08:00:00Z"
       }
     },
     {
