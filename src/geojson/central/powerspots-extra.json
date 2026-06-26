@@ -1,6 +1,24 @@
 {
   "features": [
     {
+      "id": "0a5e24ba57ec4191bc11886e07c809de.23",
+      "properties": {
+        "name": "Fausto Electric",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "0f4fb4df22ee42699ea30cae32de0cfb.23",
+      "properties": {
+        "name": "Hearth Apartments",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
       "type": "Feature",
       "id": "1c18cdc7fa8833c3abfcdba0d6d4b5be.16",
       "properties": {
@@ -17,6 +35,35 @@
       "geometry": {
         "coordinates": [-121.97448, 37.34064],
         "type": "Point"
+      }
+    },
+    {
+      "id": "283368601cee4056ae24085707daa83b.23",
+      "properties": {
+        "name": "Proper Hour Handyman Service",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "41a23fb2eaf23af69c41810285802aba.16",
+      "properties": {
+        "name": "Santa Clara Fire Station 3 Little Free Library",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-06-16T08:00:00Z",
+        "created": "2025-06-20T08:00:00Z"
+      }
+    },
+    {
+      "id": "5a3e235007d140878c37100946f15771.23",
+      "properties": {
+        "name": "1000 Kiely",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
       }
     },
     {
@@ -55,6 +102,53 @@
       "geometry": {
         "coordinates": [-121.981283, 37.336585],
         "type": "Point"
+      }
+    },
+    {
+      "id": "ad1bb90f3acd4f76a118ae5e62226a34.23",
+      "properties": {
+        "name": "S&B Housecleaning",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "bf34edc0d35a4556bd68722de3982569.23",
+      "properties": {
+        "name": "Clearway Restoration",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "e0230f47d8b54312b50d8863c5b6ab95.23",
+      "properties": {
+        "name": "La Palma Apartments",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "f07e6f9ee5943391928454b83baa0ba6.16",
+      "properties": {
+        "name": "Randy's Donut Statue",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-06-10T08:00:00Z",
+        "created": "2025-06-15T08:00:00Z"
+      }
+    },
+    {
+      "id": "f84de11fe5aa4bc7a4209a1a02912c35.23",
+      "properties": {
+        "name": "Koala-T Day Care",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
       }
     }
   ]

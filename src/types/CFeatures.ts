@@ -67,6 +67,7 @@ export interface CProperties {
     | "Eyeball"
     | "In-Game"
     | "Ingress"
+    | "PGO Map"
     | "Wayfarer";
 
   /**
@@ -86,6 +87,7 @@ export interface CProperties {
     | "men"
     | "paid"
     | "showcase"
+    | "sponsored"
     | "women";
 
   /** Type of POI or label. */

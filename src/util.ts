@@ -1,5 +1,7 @@
 import { toast } from "sonner";
 
+import type { CProperties } from "./types/CFeatures";
+
 /**
  * Capitalize the first letter of a string.
  * @param str Input string to capitalize
@@ -50,5 +52,15 @@ export const copyToClipboard = async (value: string) => {
   } catch (err) {
     toast.error(`Failed to copy to clipboard: ${value}`);
     console.error(err);
+  }
+};
+
+export const getTextFromPoiType = (type: CProperties["type"]) => {
+  if (type === "gym") {
+    return "Gym";
+  } else if (type === "pokestop") {
+    return "PokéStop";
+  } else if (type === "powerspot") {
+    return "Power Spot";
   }
 };

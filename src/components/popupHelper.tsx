@@ -2,7 +2,8 @@ import { GROUP_NAME } from "@/constants";
 import { IS_MOBILE } from "@/constantsDom";
 import { imgPowerspot } from "@/leafletImgs";
 import { cn } from "@/lib/utils";
-import { copyToClipboard } from "@/util";
+import type { CProperties } from "@/types/CFeatures";
+import { copyToClipboard, getTextFromPoiType } from "@/util";
 import type { LatLngTuple } from "leaflet";
 import {
   Ban,
@@ -132,6 +133,7 @@ export const createBtnNoCaPoiZone = (
  * @param id The ID of the popup's POI
  * @param shareUrl The URL to share, otherwise it will default to the current page URL
  * @param modifierBtns Modifier buttons to use in the popup
+ * @param type Type that determines share text
  * @param renderHtml Set description HTML directly
  * @returns The content of the popup as a string
  */
@@ -145,6 +147,7 @@ export const createPopupContent = (
   id?: string | number,
   shareUrl?: string,
   modifierBtns?: ModifierBtns,
+  type?: CProperties["type"],
   renderHtml?: boolean,
 ) => {
   let description;
@@ -157,7 +160,7 @@ export const createPopupContent = (
   }
   return (
     <>
-      <h1 className="font-bold text-balance">{title}</h1>
+      <h1 className="min-w-42 font-bold text-balance">{title}</h1>
       {subtitle && <p className="my-0! text-balance italic">{subtitle}</p>}
       {wayfarerMode && id && (
         <p className="my-0! font-mono text-xs text-gray-500">{id}</p>
@@ -165,7 +168,11 @@ export const createPopupContent = (
       {img && (
         <div className="mt-4 flex justify-center">
           <a href={img} rel="noopener noreferrer" target="_blank">
-            <img src={img} alt={title ?? ""} className="h-42 object-cover" />
+            <img
+              src={img}
+              alt={title ?? "POI Image"}
+              className="h-42 min-w-42 object-cover"
+            />
           </a>
         </div>
       )}
@@ -233,10 +240,21 @@ export const createPopupContent = (
               const url = shareUrl ?? window.location.href;
               if (IS_MOBILE) {
                 void (async () => {
+                  let locationTxt;
+                  if (
+                    type === "gym" ||
+                    type === "pokestop" ||
+                    type === "powerspot"
+                  ) {
+                    locationTxt = `the "${title}" ${getTextFromPoiType(type)}`;
+                  } else if (type) {
+                    locationTxt = `"${title}"`;
+                  } else {
+                    locationTxt = "this point of interest";
+                  }
                   try {
                     await navigator.share({
-                      title: `${GROUP_NAME} Map`,
-                      text: `Check out the ${GROUP_NAME} map for Pokémon GO!`,
+                      text: `Check out ${locationTxt} on the ${GROUP_NAME} Map!`,
                       url,
                     });
                   } catch (err) {

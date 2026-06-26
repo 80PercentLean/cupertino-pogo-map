@@ -172,8 +172,8 @@ export default function FeatureMarker({
   let noCaPoiZone;
   let noPowerSpotZone;
 
-  // Do not show interactive radius for disabled power spots & removed POIs
-  if (!isDisabled && !removed) {
+  // Do not show interactive radius for removed POIs
+  if (!removed) {
     modifierBtns.interactionRadius = btnInteractionRadius;
 
     if (showInteractionRadius) {
@@ -274,6 +274,20 @@ export default function FeatureMarker({
     };
   }, [isPopupOpen]);
 
+  const popupContent = createPopupContent(
+    title,
+    subtitle,
+    position,
+    desc,
+    photo,
+    wayfarerMode,
+    id,
+    undefined,
+    modifierBtns,
+    type,
+    renderHtml,
+  );
+
   let marker;
   if (isPokePoi && subtype !== "showcase" && isSimpleMarkerEnabled) {
     let fillColor;
@@ -308,22 +322,7 @@ export default function FeatureMarker({
         }}
       >
         {!IS_MOBILE && <Tooltip offset={toolTipOffset}>{title}</Tooltip>}
-        {isPopupOpen && (
-          <Popup>
-            {createPopupContent(
-              title,
-              subtitle,
-              position,
-              desc,
-              photo,
-              wayfarerMode,
-              id,
-              undefined,
-              modifierBtns,
-              renderHtml,
-            )}
-          </Popup>
-        )}
+        {isPopupOpen && <Popup>{popupContent}</Popup>}
       </CCircleMarker>
     );
   } else {
@@ -352,22 +351,7 @@ export default function FeatureMarker({
         }}
       >
         {!IS_MOBILE && <Tooltip offset={toolTipOffset}>{title}</Tooltip>}
-        {isPopupOpen && (
-          <Popup>
-            {createPopupContent(
-              title,
-              subtitle,
-              position,
-              desc,
-              photo,
-              wayfarerMode,
-              id,
-              undefined,
-              modifierBtns,
-              renderHtml,
-            )}
-          </Popup>
-        )}
+        {isPopupOpen && <Popup>{popupContent}</Popup>}
       </CMarker>
     );
   }

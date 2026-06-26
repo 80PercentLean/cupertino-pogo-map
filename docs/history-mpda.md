@@ -1,5 +1,11 @@
 # Memorial Park/De Anza College POI History
 
+## 6-22-2026
+
+### Gym Renamed
+
+- Euphrat Museum of Art ➡️ Euphrat Museum of Art at De Anza College (288a4a15a212419a8c1ba425a26d4096.12)
+
 ## 6-10-2026
 
 ### Power Spots Enabled 🟢

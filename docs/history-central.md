@@ -1,5 +1,45 @@
 # Central Park POI History
 
+## 6-26-2026
+
+### PokeStop Moved 🚚
+
+- Santa Clara Post Office (1bdcc6ff2d23468388e09603e478abfe.12)
+  - [-121.978036, 37.345516] ➡️ [-121.978171, 37.345517]
+
+### PokeStops Created 🆕
+
+- Cooking Cooking (21a0a8b8910a32e4b6c252143cd89881.16)
+- Boba Pup (5d99b340dcef3e58814c708d875c04b4.16)
+- Orange Square (75283acb14eb3d3cb61ec3549deaa99f.16)
+- Kiely Plaza Main Sign (a6039de4b7153346a17850ee466fa66b.16)
+- Bay Area Pizza (b2f9c365dfaa35b5b34519186cede210.16)
+- Santa Clara Fire Station 3 Dedication Plaque (df939732c0c938c09fd5751e9e0081ed.16)
+
+### Power Spots Created 🆕
+
+- Santa Clara Fire Station 3 Little Free Library (41a23fb2eaf23af69c41810285802aba.16)
+- Randy's Donut Statue (f07e6f9ee5943391928454b83baa0ba6.16)
+
+### Power Spots Blocked 🛑
+
+- Santa Clara Fire Station 3 Little Free Library (41a23fb2eaf23af69c41810285802aba.16)
+- Randy's Donut Statue (f07e6f9ee5943391928454b83baa0ba6.16)
+- HouseMaidHero (70ad22a07b014430873369a337da1a97.23)
+- Greenyard Landscaping & Demolition (19970dd27cf245dd81dc536df9443c50.23)
+- Cooking Cooking (05eaf2d0c0f74d17981d76eb472cb2b5.23)
+- Lisa Pro Nails (77d1b99015d2444cb15c2df9c8cffb14.23)
+- Boba Pup (b8a557dd19164136a3de51a42a64b99a.23)
+- Orange Square (44176e23d285499d91fc0904f7281b48.23)
+- Ipar Golf (b5d8c6adddfd41e2a9b3fac07fac2d93.23)
+- Redbox (a03a4d2db02240b59e115e12d21f497a.23)
+- Empress Hair Design (3918a7a63b9346eeb04d1d750d2ceb35.23)
+- TOGO'S Sandwiches (a90f1319689a4dbe92e17495a2abeb82.23)
+- Boba Pup (c0358e7604294a6d88c28cc17ac6f2ff.23)
+- KeyMe Locksmiths (cd9cc927177b4304b7a87af0c23126ac.23)
+- Lisa Pro Nails (d60c10e75e6e4f0da0fbc6a6a082827d.23)
+- Bay Area Pizza (b85bb2d9c58c46deb4d6e8990dc5fdca.23)
+
 ## 6-10-2026
 
 ### Power Spots Enabled 🟢

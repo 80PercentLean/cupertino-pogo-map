@@ -1,12 +1,256 @@
 {
   "features": [
     {
+      "id": "1bdcc6ff2d23468388e09603e478abfe.12",
+      "properties": {
+        "name": "Santa Clara Post Office",
+        "type": "pokestop",
+        "updated": "2025-06-23T08:00:00Z"
+      }
+    },
+    {
+      "id": "21a0a8b8910a32e4b6c252143cd89881.16",
+      "properties": {
+        "name": "Cooking Cooking",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-06-16T08:00:00Z",
+        "created": "2025-06-19T08:00:00Z"
+      }
+    },
+    {
       "id": "2785b79a4d3546409b7481c48d7545f9.16",
       "properties": {
         "name": "Jerry Scott Memorial",
         "type": "pokestop",
         "subtype": "showcase",
         "source": "Wayfarer"
+      }
+    },
+    {
+      "id": "356e80596630361a88d2378819d0ce73.16",
+      "properties": {
+        "name": "1000 Kiely Pool",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "38fdddfce5823823880d3d4751a07bad.16",
+      "properties": {
+        "name": "Woodsborough Pool Central",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "4fc4c54c416f3e9f87b37aa2ffd1cc9b.16",
+      "properties": {
+        "name": "Homestead Garden Pool",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "5d99b340dcef3e58814c708d875c04b4.16",
+      "properties": {
+        "name": "Boba Pup",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-06-16T08:00:00Z",
+        "created": "2025-06-19T08:00:00Z"
+      }
+    },
+    {
+      "id": "6803168177823f0d907fe17121bf281e.16",
+      "properties": {
+        "name": "Casa Santa Clara Pool",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "69eca7dc80c939b09d772d59385ee0f2.16",
+      "properties": {
+        "name": "Hearth Community Pool",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "700330f3211833c0941e24fd34fc4e3c.16",
+      "properties": {
+        "name": "Hearth South Community Pool",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "75283acb14eb3d3cb61ec3549deaa99f.16",
+      "properties": {
+        "name": "Orange Square",
+        "type": "pokestop",
+        "submitter": "80PercentLean",
+        "submitted": "2025-06-10T08:00:00Z",
+        "created": "2025-06-14T08:00:00Z"
+      }
+    },
+    {
+      "id": "7834e8ebeacd3f8687d1ccc17e269fb3.16",
+      "properties": {
+        "name": "Via Siena Pergola",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "7e3e4a611a4f3d2b8ec9f91ac2e9ad02.16",
+      "properties": {
+        "name": "1000 Kiely Basketball Court",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "8c2832c267093a969177c5f85b64a973.16",
+      "properties": {
+        "name": "Hearth Library Fireplace",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "9205d467ef8335a1bda6a2b27b67b0b4.16",
+      "properties": {
+        "name": "1000 Kiely Play Structure 2",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "9ed6a7336951328fa9e8fb322283df64.16",
+      "properties": {
+        "name": "Bocce Playground",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "a283524bda383150b7dbf38ae9ba616a.16",
+      "properties": {
+        "name": "Parkview Swimming Pool",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "a6039de4b7153346a17850ee466fa66b.16",
+      "properties": {
+        "name": "Kiely Plaza Main Sign",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-06-16T08:00:00Z",
+        "created": "2025-06-22T08:00:00Z"
+      }
+    },
+    {
+      "id": "ambassador-pokestop",
+      "properties": {
+        "name": "Community Ambassador Location",
+        "type": "pokestop",
+        "source": "PGO Map",
+        "photo": "pogo-ca-logo.jpg",
+        "desc": "This PokéStop location is controlled by the Community Ambassadors so it can change locations.",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.9751111, 37.3408611],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "b2f9c365dfaa35b5b34519186cede210.16",
+      "properties": {
+        "name": "Bay Area Pizza",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-06-16T08:00:00Z",
+        "created": "2025-06-19T08:00:00Z"
+      }
+    },
+    {
+      "id": "b5d48eaf287c37749e902f54e800a990.16",
+      "properties": {
+        "name": "1000 Kiely Bocce Court",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "c83f3ab275fc3d54b0c5ba8ce64fb61f.16",
+      "properties": {
+        "name": "Via Siena Pool",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "cceae9dffbf5314f9676084ace08a02b.16",
+      "properties": {
+        "name": "Woodsborough Pool East",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "de6056e2dc1f4ee18f1370dacd5bedc3.16",
+      "properties": {
+        "name": "Woodsborough Play Structure South",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "df939732c0c938c09fd5751e9e0081ed.16",
+      "properties": {
+        "name": "Santa Clara Fire Station 3 Dedication Plaque",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-06-16T08:00:00Z",
+        "created": "2025-06-17T08:00:00Z"
+      }
+    },
+    {
+      "id": "f2c50c3a68b337dab647cdfef7778548.16",
+      "properties": {
+        "name": "Fountains a la valencia",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
       }
     },
     {
@@ -17,6 +261,24 @@
         "subtype": "showcase",
         "source": "Wayfarer"
       }
+    },
+    {
+      "id": "starbucks-pokestop",
+      "properties": {
+        "name": "Starbucks",
+        "type": "pokestop",
+        "subtype": "sponsored",
+        "source": "PGO Map",
+        "desc": "This is a Sponsored Location.",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [-121.975153, 37.337864],
+        "type": "Point"
+      },
+      "type": "Feature"
     }
   ]
 }
