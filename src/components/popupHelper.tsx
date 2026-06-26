@@ -160,7 +160,7 @@ export const createPopupContent = (
   }
   return (
     <>
-      <h1 className="font-bold text-balance">{title}</h1>
+      <h1 className="min-w-42 font-bold text-balance">{title}</h1>
       {subtitle && <p className="my-0! text-balance italic">{subtitle}</p>}
       {wayfarerMode && id && (
         <p className="my-0! font-mono text-xs text-gray-500">{id}</p>
@@ -168,7 +168,11 @@ export const createPopupContent = (
       {img && (
         <div className="mt-4 flex justify-center">
           <a href={img} rel="noopener noreferrer" target="_blank">
-            <img src={img} alt={title ?? ""} className="h-42 object-cover" />
+            <img
+              src={img}
+              alt={title ?? "POI Image"}
+              className="h-42 min-w-42 object-cover"
+            />
           </a>
         </div>
       )}
