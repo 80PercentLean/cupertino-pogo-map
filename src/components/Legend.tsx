@@ -23,6 +23,7 @@ export default function Legend() {
     wayfarerMode
   ) {
     let itemCount = 0;
+
     if (isLayerGymOn) {
       itemCount += 1;
     }
@@ -55,13 +56,24 @@ export default function Legend() {
       itemCount += 1;
     }
 
+    let rowCount;
+    if (itemCount > 9) {
+      rowCount = 4;
+    } else if (itemCount > 6) {
+      rowCount = 3;
+    } else if (itemCount > 3) {
+      rowCount = 2;
+    } else {
+      rowCount = 1;
+    }
+
     return (
       <Card
-        className="left fixed bottom-22 z-998 m-2 py-4 md:bottom-14 [@media(max-height:600px)]:hidden"
+        className="left fixed bottom-22 z-998 m-2 py-2 md:bottom-14 [@media(max-height:600px)]:hidden"
         data-testid="legend"
       >
         <CardContent
-          className={`grid grid-cols-${Math.min(3, itemCount)} gap-x-2 gap-y-1 px-4 md:gap-x-4`}
+          className={`grid grid-cols-${Math.min(3, itemCount)} grid-rows-${rowCount} gap-x-2 gap-y-2 px-4 md:gap-x-4`}
         >
           {isLayerGymOn && (
             <div className="grid grid-cols-[20px_1fr] items-center gap-x-3">
