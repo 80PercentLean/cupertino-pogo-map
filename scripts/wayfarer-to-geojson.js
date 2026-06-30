@@ -203,10 +203,13 @@ const processData = async () => {
             }
 
             // Assign feature to correct array
-            if (f.properties.type === "gym") featuresGyms.push(f);
-            else if (f.properties.type === "pokestop")
+            if (f.properties.type === "gym") {
+              featuresGyms.push(f);
+            } else if (f.properties.type === "pokestop") {
               featuresPokestops.push(f);
-            else featuresPowerspots.push(f);
+            } else {
+              featuresPowerspots.push(f);
+            }
 
             processed.add(f.id);
           }

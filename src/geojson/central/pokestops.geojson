@@ -1307,7 +1307,7 @@
         "name": "Community Ambassador Location",
         "type": "pokestop",
         "source": "PGO Map",
-        "photo": "pogo-ca-logo.jpg",
+        "photo": "pgo-ca-logo.jpg",
         "desc": "This PokéStop location is controlled by the Community Ambassadors so it can change locations.",
         "marker-color": "#00fcff",
         "marker-size": "medium",

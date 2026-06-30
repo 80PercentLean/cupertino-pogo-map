@@ -1,5 +1,15 @@
 # Memorial Park/De Anza College POI History
 
+## 6-29-2026
+
+TODO:
+
+### Gyms Created 🆕
+
+### PokeStops Created 🆕
+
+### Power Spots Created 🆕
+
 ## 6-22-2026
 
 ### Gym Renamed
