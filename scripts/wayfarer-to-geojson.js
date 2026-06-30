@@ -9,7 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 /* Set directory where the input data is relative to this script file location. */
-const RELATIVE_INPUT_DIR = "../src/geojson/cup";
+const RELATIVE_INPUT_DIR = "../src/geojson/central";
 
 /* Wayfarer & extra data inputs. */
 const WAYFARER_INPUT = path.join(__dirname, "wayfarer.json");
@@ -129,11 +129,26 @@ const processData = async () => {
               type: "Feature",
             };
 
+            if (
+              poi.title.includes("Santa Clara Campsite - Energy") ||
+              poi.title.includes("Santa Clara Campsite - Welcoming") ||
+              poi.title.includes("Santa Clara Campsite - Resilient") ||
+              poi.title.includes("Santa Clara Campsite - Passionate") ||
+              poi.title.includes("Santa Clara Campsite - Family") ||
+              poi.title.includes("Santa Clara Campsite - Thoughtful")
+            ) {
+              f.properties.type = "gym";
+            }
+
             if (Array.isArray(poi.gmo) && poi.gmo[0]) {
               const entity = poi.gmo[0].entity;
-              if (entity === "POKESTOP") f.properties.type = "pokestop";
-              else if (entity === "GYM") f.properties.type = "gym";
-              else if (entity === "POWERSPOT") f.properties.type = "powerspot";
+              if (entity === "POKESTOP") {
+                f.properties.type = "pokestop";
+              } else if (entity === "GYM") {
+                f.properties.type = "gym";
+              } else if (entity === "POWERSPOT") {
+                f.properties.type = "powerspot";
+              }
             }
 
             if (!f.properties.type) {

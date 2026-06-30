@@ -82,6 +82,26 @@
       "type": "Feature"
     },
     {
+      "id": "22e350b507083b4083112079287ba119.16",
+      "properties": {
+        "checked": "2026-06-30T08:00:00Z",
+        "name": "Santa Clara Campsite - Welcoming",
+        "type": "gym",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca69",
+        "photo": "22e350b507083b4083112079287ba119.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-121.975133, 37.343586],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
       "id": "55c59fad6b8b4f3bb7aecba18576f189.16",
       "properties": {
         "checked": "2026-06-30T08:00:00Z",
@@ -98,6 +118,26 @@
       },
       "geometry": {
         "coordinates": [-121.986126, 37.340534],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "57ac4f42556f3b6a8c28c67971ee6a17.16",
+      "properties": {
+        "checked": "2026-06-30T08:00:00Z",
+        "name": "Santa Clara Campsite - Resilient",
+        "type": "gym",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca65",
+        "photo": "57ac4f42556f3b6a8c28c67971ee6a17.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-121.97611, 37.341607],
         "type": "Point"
       },
       "type": "Feature"
@@ -184,6 +224,26 @@
       "type": "Feature"
     },
     {
+      "id": "91ebd3480b0336d29f9cd756483d2f28.16",
+      "properties": {
+        "checked": "2026-06-30T08:00:00Z",
+        "name": "Santa Clara Campsite - Family",
+        "type": "gym",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca65",
+        "photo": "91ebd3480b0336d29f9cd756483d2f28.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-121.977, 37.341129],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
       "id": "9e9fd7bcdaf54c5c8af161027405a760.11",
       "properties": {
         "checked": "2026-06-30T08:00:00Z",
@@ -199,6 +259,26 @@
       },
       "geometry": {
         "coordinates": [-121.975407, 37.34194],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "b5982fd125df355bb01053b2f1aa021f.16",
+      "properties": {
+        "checked": "2026-06-30T08:00:00Z",
+        "name": "Santa Clara Campsite - Energy",
+        "type": "gym",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca6f",
+        "photo": "b5982fd125df355bb01053b2f1aa021f.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-121.976711, 37.342605],
         "type": "Point"
       },
       "type": "Feature"
@@ -282,6 +362,46 @@
       },
       "geometry": {
         "coordinates": [-121.984475, 37.346238],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "e9503dce17a63a3e9f3c15995d02a62c.16",
+      "properties": {
+        "checked": "2026-06-30T08:00:00Z",
+        "name": "Santa Clara Campsite - Thoughtful",
+        "type": "gym",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca67",
+        "photo": "e9503dce17a63a3e9f3c15995d02a62c.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-121.973932, 37.342835],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "ecb862cd79fb335e88b300de03701788.16",
+      "properties": {
+        "checked": "2026-06-30T08:00:00Z",
+        "name": "Santa Clara Campsite - Passionate",
+        "type": "gym",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca65",
+        "photo": "ecb862cd79fb335e88b300de03701788.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-121.976292, 37.339858],
         "type": "Point"
       },
       "type": "Feature"

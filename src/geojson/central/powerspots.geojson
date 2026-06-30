@@ -68,7 +68,6 @@
       "properties": {
         "checked": "2026-06-30T08:00:00Z",
         "name": "Magical Bridge playground signage",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -76,7 +75,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "photo": "04ef486c00f63d32ac881e755d8b318d.16.jpg"
+        "photo": "04ef486c00f63d32ac881e755d8b318d.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.976903, 37.341205],
@@ -712,27 +712,6 @@
       },
       "geometry": {
         "coordinates": [-121.976203, 37.343039],
-        "type": "Point"
-      },
-      "type": "Feature"
-    },
-    {
-      "id": "22e350b507083b4083112079287ba119.16",
-      "properties": {
-        "checked": "2026-06-30T08:00:00Z",
-        "name": "Santa Clara Campsite - Welcoming",
-        "isDisabled": true,
-        "type": "powerspot",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle",
-        "source": "Wayfarer",
-        "isCommunityContributed": false,
-        "l14Id": "808fca69",
-        "photo": "22e350b507083b4083112079287ba119.16.jpg"
-      },
-      "geometry": {
-        "coordinates": [-121.975133, 37.343586],
         "type": "Point"
       },
       "type": "Feature"
@@ -1790,27 +1769,6 @@
       },
       "geometry": {
         "coordinates": [-121.977684, 37.339286],
-        "type": "Point"
-      },
-      "type": "Feature"
-    },
-    {
-      "id": "57ac4f42556f3b6a8c28c67971ee6a17.16",
-      "properties": {
-        "checked": "2026-06-30T08:00:00Z",
-        "name": "Santa Clara Campsite - Resilient",
-        "isDisabled": true,
-        "type": "powerspot",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle",
-        "source": "Wayfarer",
-        "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "photo": "57ac4f42556f3b6a8c28c67971ee6a17.16.jpg"
-      },
-      "geometry": {
-        "coordinates": [-121.97611, 37.341607],
         "type": "Point"
       },
       "type": "Feature"
@@ -2999,27 +2957,6 @@
       "type": "Feature"
     },
     {
-      "id": "91ebd3480b0336d29f9cd756483d2f28.16",
-      "properties": {
-        "checked": "2026-06-30T08:00:00Z",
-        "name": "Santa Clara Campsite - Family",
-        "isDisabled": true,
-        "type": "powerspot",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle",
-        "source": "Wayfarer",
-        "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "photo": "91ebd3480b0336d29f9cd756483d2f28.16.jpg"
-      },
-      "geometry": {
-        "coordinates": [-121.977, 37.341129],
-        "type": "Point"
-      },
-      "type": "Feature"
-    },
-    {
       "id": "93d65ab675354e7ba0c268b5c780a570.16",
       "properties": {
         "checked": "2026-06-30T08:00:00Z",
@@ -3726,27 +3663,6 @@
       },
       "geometry": {
         "coordinates": [-121.976641, 37.341239],
-        "type": "Point"
-      },
-      "type": "Feature"
-    },
-    {
-      "id": "b5982fd125df355bb01053b2f1aa021f.16",
-      "properties": {
-        "checked": "2026-06-30T08:00:00Z",
-        "name": "Santa Clara Campsite - Energy",
-        "isDisabled": true,
-        "type": "powerspot",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle",
-        "source": "Wayfarer",
-        "isCommunityContributed": false,
-        "l14Id": "808fca6f",
-        "photo": "b5982fd125df355bb01053b2f1aa021f.16.jpg"
-      },
-      "geometry": {
-        "coordinates": [-121.976711, 37.342605],
         "type": "Point"
       },
       "type": "Feature"
@@ -4952,27 +4868,6 @@
       "type": "Feature"
     },
     {
-      "id": "e9503dce17a63a3e9f3c15995d02a62c.16",
-      "properties": {
-        "checked": "2026-06-30T08:00:00Z",
-        "name": "Santa Clara Campsite - Thoughtful",
-        "isDisabled": true,
-        "type": "powerspot",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle",
-        "source": "Wayfarer",
-        "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "photo": "e9503dce17a63a3e9f3c15995d02a62c.16.jpg"
-      },
-      "geometry": {
-        "coordinates": [-121.973932, 37.342835],
-        "type": "Point"
-      },
-      "type": "Feature"
-    },
-    {
       "id": "ea5f1ee2757b49ea9911dbab329397c6.23",
       "properties": {
         "checked": "2026-06-30T08:00:00Z",
@@ -5008,27 +4903,6 @@
       },
       "geometry": {
         "coordinates": [-121.977093, 37.337932],
-        "type": "Point"
-      },
-      "type": "Feature"
-    },
-    {
-      "id": "ecb862cd79fb335e88b300de03701788.16",
-      "properties": {
-        "checked": "2026-06-30T08:00:00Z",
-        "name": "Santa Clara Campsite - Passionate",
-        "isDisabled": true,
-        "type": "powerspot",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle",
-        "source": "Wayfarer",
-        "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "photo": "ecb862cd79fb335e88b300de03701788.16.jpg"
-      },
-      "geometry": {
-        "coordinates": [-121.976292, 37.339858],
         "type": "Point"
       },
       "type": "Feature"
@@ -5224,7 +5098,6 @@
       "properties": {
         "checked": "2026-06-30T08:00:00Z",
         "name": "Santa Clara Central Park Picnic Area",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -5232,7 +5105,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "photo": "f623cc41100e37e1af5b1a0e30ce11ee.16.jpg"
+        "photo": "f623cc41100e37e1af5b1a0e30ce11ee.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.977043, 37.341293],
