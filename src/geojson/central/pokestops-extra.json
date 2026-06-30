@@ -61,6 +61,7 @@
         "name": "Boba Pup",
         "type": "pokestop",
         "source": "Wayfarer",
+        "isHidden": false,
         "submitter": "80PercentLean",
         "submitted": "2025-06-16T08:00:00Z",
         "created": "2025-06-19T08:00:00Z"
