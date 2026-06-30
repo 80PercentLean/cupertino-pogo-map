@@ -12,6 +12,8 @@ TODO:
 
 ### Power Spots Blocked 🛑
 
+- Magical Bridge playground signage (04ef486c00f63d32ac881e755d8b318d.16)
+- Santa Clara Central Park Picnic Area (f623cc41100e37e1af5b1a0e30ce11ee.16)
 - Lifetime Activities Center (c6ef238a4c9f4baf9728234ee9342fb6.23)
 
 ## 6-26-2026
