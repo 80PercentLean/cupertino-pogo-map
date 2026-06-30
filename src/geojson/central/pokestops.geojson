@@ -702,6 +702,26 @@
       "type": "Feature"
     },
     {
+      "id": "5fd52f535b593c0a8ae6d0de53a5b601.16",
+      "properties": {
+        "checked": "2026-06-30T08:00:00Z",
+        "name": "Santa Clara Campsite - Social",
+        "type": "pokestop",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca67",
+        "photo": "5fd52f535b593c0a8ae6d0de53a5b601.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-121.975702, 37.341394],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
       "id": "61888bac52af34b39511335a0f3c45ee.16",
       "properties": {
         "checked": "2026-06-30T08:00:00Z",
@@ -1425,6 +1445,26 @@
       "type": "Feature"
     },
     {
+      "id": "be27e1039bea31d9ab8d8927e5c1bf21.16",
+      "properties": {
+        "checked": "2026-06-30T08:00:00Z",
+        "name": "Santa Clara Campsite - Diversity",
+        "type": "pokestop",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca67",
+        "photo": "be27e1039bea31d9ab8d8927e5c1bf21.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-121.974533, 37.34246],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
       "id": "be650b56825b3db8935cb38faa69063a.16",
       "properties": {
         "checked": "2026-06-30T08:00:00Z",
@@ -1480,6 +1520,26 @@
       },
       "geometry": {
         "coordinates": [-121.970352, 37.34027],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "c5ff02ec4c9138a98905f8f3e6214e32.16",
+      "properties": {
+        "checked": "2026-06-30T08:00:00Z",
+        "name": "Santa Clara Campsite - Camaraderie",
+        "type": "pokestop",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca65",
+        "photo": "c5ff02ec4c9138a98905f8f3e6214e32.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-121.976657, 37.339551],
         "type": "Point"
       },
       "type": "Feature"
@@ -1623,6 +1683,26 @@
       },
       "geometry": {
         "coordinates": [-121.973363, 37.344784],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "d99d3d1b9ff3395283efc68511ef9748.16",
+      "properties": {
+        "checked": "2026-06-30T08:00:00Z",
+        "name": "Santa Clara Campsite - Positive",
+        "type": "pokestop",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca67",
+        "photo": "d99d3d1b9ff3395283efc68511ef9748.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-121.974812, 37.340865],
         "type": "Point"
       },
       "type": "Feature"
@@ -1870,6 +1950,26 @@
       },
       "geometry": {
         "coordinates": [-121.976553, 37.340924],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "fb8180cfd0313ea1be14914ee3651395.16",
+      "properties": {
+        "checked": "2026-06-30T08:00:00Z",
+        "name": "Santa Clara Campsite - Opportunity",
+        "type": "pokestop",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca69",
+        "photo": "fb8180cfd0313ea1be14914ee3651395.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-121.974715, 37.344319],
         "type": "Point"
       },
       "type": "Feature"

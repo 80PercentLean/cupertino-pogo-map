@@ -1937,27 +1937,6 @@
       "type": "Feature"
     },
     {
-      "id": "5fd52f535b593c0a8ae6d0de53a5b601.16",
-      "properties": {
-        "checked": "2026-06-30T08:00:00Z",
-        "name": "Santa Clara Campsite - Social",
-        "isDisabled": true,
-        "type": "powerspot",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle",
-        "source": "Wayfarer",
-        "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "photo": "5fd52f535b593c0a8ae6d0de53a5b601.16.jpg"
-      },
-      "geometry": {
-        "coordinates": [-121.975702, 37.341394],
-        "type": "Point"
-      },
-      "type": "Feature"
-    },
-    {
       "id": "621fbe72b39f4ed3b68187b28cc5e53b.23",
       "properties": {
         "checked": "2026-06-30T08:00:00Z",
@@ -3811,27 +3790,6 @@
       "type": "Feature"
     },
     {
-      "id": "be27e1039bea31d9ab8d8927e5c1bf21.16",
-      "properties": {
-        "checked": "2026-06-30T08:00:00Z",
-        "name": "Santa Clara Campsite - Diversity",
-        "isDisabled": true,
-        "type": "powerspot",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle",
-        "source": "Wayfarer",
-        "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "photo": "be27e1039bea31d9ab8d8927e5c1bf21.16.jpg"
-      },
-      "geometry": {
-        "coordinates": [-121.974533, 37.34246],
-        "type": "Point"
-      },
-      "type": "Feature"
-    },
-    {
       "id": "beb4f4a8c58046eb99f1a6a52c7c5b10.23",
       "properties": {
         "checked": "2026-06-30T08:00:00Z",
@@ -4010,27 +3968,6 @@
       },
       "geometry": {
         "coordinates": [-121.976302, 37.35114],
-        "type": "Point"
-      },
-      "type": "Feature"
-    },
-    {
-      "id": "c5ff02ec4c9138a98905f8f3e6214e32.16",
-      "properties": {
-        "checked": "2026-06-30T08:00:00Z",
-        "name": "Santa Clara Campsite - Camaraderie",
-        "isDisabled": true,
-        "type": "powerspot",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle",
-        "source": "Wayfarer",
-        "isCommunityContributed": false,
-        "l14Id": "808fca65",
-        "photo": "c5ff02ec4c9138a98905f8f3e6214e32.16.jpg"
-      },
-      "geometry": {
-        "coordinates": [-121.976657, 37.339551],
         "type": "Point"
       },
       "type": "Feature"
@@ -4446,7 +4383,6 @@
       "properties": {
         "checked": "2026-06-30T08:00:00Z",
         "name": "Lifetime Activities Center",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -4454,31 +4390,11 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca69",
-        "photo": "d82d0033bf3736f89a9a43c2d7d2c316.16.jpg"
+        "photo": "d82d0033bf3736f89a9a43c2d7d2c316.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.974599, 37.344453],
-        "type": "Point"
-      },
-      "type": "Feature"
-    },
-    {
-      "id": "d99d3d1b9ff3395283efc68511ef9748.16",
-      "properties": {
-        "checked": "2026-06-30T08:00:00Z",
-        "name": "Santa Clara Campsite - Positive",
-        "isDisabled": true,
-        "type": "powerspot",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle",
-        "source": "Wayfarer",
-        "isCommunityContributed": false,
-        "l14Id": "808fca67",
-        "photo": "d99d3d1b9ff3395283efc68511ef9748.16.jpg"
-      },
-      "geometry": {
-        "coordinates": [-121.974812, 37.340865],
         "type": "Point"
       },
       "type": "Feature"
@@ -5253,27 +5169,6 @@
       },
       "geometry": {
         "coordinates": [-121.976891, 37.340801],
-        "type": "Point"
-      },
-      "type": "Feature"
-    },
-    {
-      "id": "fb8180cfd0313ea1be14914ee3651395.16",
-      "properties": {
-        "checked": "2026-06-30T08:00:00Z",
-        "name": "Santa Clara Campsite - Opportunity",
-        "isDisabled": true,
-        "type": "powerspot",
-        "marker-color": "#ff40ff",
-        "marker-size": "small",
-        "marker-symbol": "circle",
-        "source": "Wayfarer",
-        "isCommunityContributed": false,
-        "l14Id": "808fca69",
-        "photo": "fb8180cfd0313ea1be14914ee3651395.16.jpg"
-      },
-      "geometry": {
-        "coordinates": [-121.974715, 37.344319],
         "type": "Point"
       },
       "type": "Feature"

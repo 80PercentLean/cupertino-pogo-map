@@ -152,8 +152,18 @@ const processData = async () => {
             }
 
             if (!f.properties.type) {
-              f.properties.isDisabled = true;
-              f.properties.type = "powerspot";
+              if (
+                poi.title.includes("Santa Clara Campsite - Camaraderie") ||
+                poi.title.includes("Santa Clara Campsite - Diversity") ||
+                poi.title.includes("Santa Clara Campsite - Opportunity") ||
+                poi.title.includes("Santa Clara Campsite - Positive") ||
+                poi.title.includes("Santa Clara Campsite - Social")
+              ) {
+                f.properties.type = "pokestop";
+              } else {
+                f.properties.isDisabled = true;
+                f.properties.type = "powerspot";
+              }
             }
 
             if (f.properties.type === "gym") {

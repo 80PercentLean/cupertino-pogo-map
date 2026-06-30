@@ -10,6 +10,10 @@ TODO:
 
 ### Power Spots Created 🆕
 
+### Power Spots Blocked 🛑
+
+- Lifetime Activities Center (c6ef238a4c9f4baf9728234ee9342fb6.23)
+
 ## 6-26-2026
 
 ### PokeStop Moved 🚚
