@@ -1,5 +1,15 @@
 # Central Park POI History
 
+## 6-29-2026
+
+TODO:
+
+### Gyms Created 🆕
+
+### PokeStops Created 🆕
+
+### Power Spots Created 🆕
+
 ## 6-26-2026
 
 ### PokeStop Moved 🚚
