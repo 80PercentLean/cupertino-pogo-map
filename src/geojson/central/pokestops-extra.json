@@ -61,6 +61,7 @@
         "name": "Boba Pup",
         "type": "pokestop",
         "source": "Wayfarer",
+        "isHidden": false,
         "submitter": "80PercentLean",
         "submitted": "2025-06-16T08:00:00Z",
         "created": "2025-06-19T08:00:00Z"
@@ -174,7 +175,7 @@
         "name": "Community Ambassador Location",
         "type": "pokestop",
         "source": "PGO Map",
-        "photo": "pogo-ca-logo.jpg",
+        "photo": "pgo-ca-logo.jpg",
         "desc": "This PokéStop location is controlled by the Community Ambassadors so it can change locations.",
         "marker-color": "#00fcff",
         "marker-size": "medium",

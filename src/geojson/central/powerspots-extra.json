@@ -132,6 +132,16 @@
       }
     },
     {
+      "id": "ed05601ca59547a8989200d3ef9d4db5.23",
+      "properties": {
+        "checked": "2026-06-25T08:00:00Z",
+        "name": "Montage Dance Productions",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": false
+      }
+    },
+    {
       "id": "f07e6f9ee5943391928454b83baa0ba6.16",
       "properties": {
         "name": "Randy's Donut Statue",

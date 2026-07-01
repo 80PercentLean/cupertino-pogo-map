@@ -13,6 +13,10 @@
 @source inline("grid-cols-1");
 @source inline("grid-cols-2");
 @source inline("grid-cols-3");
+@source inline("grid-rows-1");
+@source inline("grid-rows-2");
+@source inline("grid-rows-3");
+@source inline("grid-rows-4");
 
 @custom-variant dark (&:is(.dark *));
 

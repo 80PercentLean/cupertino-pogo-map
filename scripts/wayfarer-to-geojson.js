@@ -131,9 +131,13 @@ const processData = async () => {
 
             if (Array.isArray(poi.gmo) && poi.gmo[0]) {
               const entity = poi.gmo[0].entity;
-              if (entity === "POKESTOP") f.properties.type = "pokestop";
-              else if (entity === "GYM") f.properties.type = "gym";
-              else if (entity === "POWERSPOT") f.properties.type = "powerspot";
+              if (entity === "POKESTOP") {
+                f.properties.type = "pokestop";
+              } else if (entity === "GYM") {
+                f.properties.type = "gym";
+              } else if (entity === "POWERSPOT") {
+                f.properties.type = "powerspot";
+              }
             }
 
             if (!f.properties.type) {
@@ -203,10 +207,13 @@ const processData = async () => {
             }
 
             // Assign feature to correct array
-            if (f.properties.type === "gym") featuresGyms.push(f);
-            else if (f.properties.type === "pokestop")
+            if (f.properties.type === "gym") {
+              featuresGyms.push(f);
+            } else if (f.properties.type === "pokestop") {
               featuresPokestops.push(f);
-            else featuresPowerspots.push(f);
+            } else {
+              featuresPowerspots.push(f);
+            }
 
             processed.add(f.id);
           }

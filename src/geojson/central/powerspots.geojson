@@ -4,7 +4,7 @@
     {
       "id": "00b2222f1f2946509455e07188ea7be5.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Emanuel Elias, M.D.",
         "isDisabled": true,
         "type": "powerspot",
@@ -25,7 +25,7 @@
     {
       "id": "022bbb0f960b4bafba7d1a801b20e172.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Neha R Patel, D.O.",
         "isDisabled": true,
         "type": "powerspot",
@@ -46,7 +46,7 @@
     {
       "id": "024b183a187848fe8f44e7f2d73f9f88.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara City Library",
         "isDisabled": true,
         "type": "powerspot",
@@ -66,9 +66,8 @@
     {
       "id": "04ef486c00f63d32ac881e755d8b318d.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Magical Bridge playground signage",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -76,7 +75,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "photo": "04ef486c00f63d32ac881e755d8b318d.16.jpg"
+        "photo": "04ef486c00f63d32ac881e755d8b318d.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.976903, 37.341205],
@@ -87,7 +87,7 @@
     {
       "id": "05eaf2d0c0f74d17981d76eb472cb2b5.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Cooking Cooking",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -107,7 +107,7 @@
     {
       "id": "064d569dc6304038b9ab23ad6ce9e8c9.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Togo's",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -127,7 +127,7 @@
     {
       "id": "0845a643a8124d28afeee3bb9e791123.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Erik's DeliCafe",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -147,7 +147,7 @@
     {
       "id": "08afb072b12247658f96906d52d18f02.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "BP",
         "isDisabled": true,
         "type": "powerspot",
@@ -167,7 +167,7 @@
     {
       "id": "09ef34c7aad8419cab4800b18e1d0569.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara First Baptist Church",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -187,7 +187,7 @@
     {
       "id": "0a02291d06c832178530389cf99936b7.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Veterans Memorial Name Sign",
         "isDisabled": true,
         "type": "powerspot",
@@ -208,7 +208,7 @@
     {
       "id": "0a42a215247a43e1af173507a98fd17f.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Western Union",
         "isDisabled": true,
         "type": "powerspot",
@@ -228,7 +228,7 @@
     {
       "id": "0a5e24ba57ec4191bc11886e07c809de.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Fausto Electric",
         "isDisabled": true,
         "type": "powerspot",
@@ -249,7 +249,7 @@
     {
       "id": "0df134f5a6e839a9a8c1b27789a19a33.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Central Park Pond",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -270,7 +270,7 @@
     {
       "id": "0f4fb4df22ee42699ea30cae32de0cfb.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Hearth Apartments",
         "isDisabled": true,
         "type": "powerspot",
@@ -291,7 +291,7 @@
     {
       "id": "1103233ea28c43839ef8ea429d8f8bbc.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Chase Mortgage",
         "isDisabled": true,
         "type": "powerspot",
@@ -311,7 +311,7 @@
     {
       "id": "1168034ee88a4e328f9eab67460aaadd.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Blue Sky Day Spa",
         "isDisabled": true,
         "type": "powerspot",
@@ -331,7 +331,7 @@
     {
       "id": "12e2cdf886ba4447b4befacaab5ced7c.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Starbucks",
         "isDisabled": true,
         "type": "powerspot",
@@ -351,7 +351,7 @@
     {
       "id": "13af55b7fd443ab59f1561b68b78c614.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "St Justin’s Parish Information Board",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -371,7 +371,7 @@
     {
       "id": "15b6a55f381736489b78e25aa3ba653d.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "St. Justins Stained Glass Art",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -392,7 +392,7 @@
     {
       "id": "173a0ed108a1400c8b91fe0d2d73d8d2.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "SCCHGS",
         "isDisabled": true,
         "type": "powerspot",
@@ -412,7 +412,7 @@
     {
       "id": "178dbb494c7a46369330909d64fe964b.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Kenneth Vereschagin, M.D.",
         "isDisabled": true,
         "type": "powerspot",
@@ -433,7 +433,7 @@
     {
       "id": "1986a7dc23f5460cbd69565f9377d40c.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Vive la Vie Massage",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -453,7 +453,7 @@
     {
       "id": "19970dd27cf245dd81dc536df9443c50.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Greenyard Landscaping & Demolition",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -473,7 +473,7 @@
     {
       "id": "1a1c679661be37688e100fa8225ac08e.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Central Park Picnic Area",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -513,7 +513,7 @@
     {
       "id": "1cc912e1b0a23b378292ca2803c6d5e7.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara's Magical Bridge Playground",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -533,7 +533,7 @@
     {
       "id": "1cfa0835cd2548c09f4b8f4bd917ad02.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "CP Studios/Cheer Perfection Studios",
         "isDisabled": true,
         "type": "powerspot",
@@ -554,7 +554,7 @@
     {
       "id": "1d295e6e17424fa8a34b24e960092be8.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Moonlite Shopping Center",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -574,7 +574,7 @@
     {
       "id": "1ddc96aa9cc03bcd9d09d78af204fbf3.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Chess board bench",
         "isDisabled": true,
         "type": "powerspot",
@@ -595,7 +595,7 @@
     {
       "id": "1e1fed518c3a44dea9328a5ee8c6ea4c.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Amy Morishima, M.D.",
         "isDisabled": true,
         "type": "powerspot",
@@ -616,7 +616,7 @@
     {
       "id": "1ebfc4126569468395d3bd40cafb6190.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Camino Medical Group: Latta Robert J MD",
         "isDisabled": true,
         "type": "powerspot",
@@ -637,7 +637,7 @@
     {
       "id": "2126829780ec4270a7d49c54d55870e7.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Paris Baguette",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -657,7 +657,7 @@
     {
       "id": "21ab399fd12f482b88b7422db85d8ba5.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Meeral Health Care",
         "isDisabled": true,
         "type": "powerspot",
@@ -678,7 +678,7 @@
     {
       "id": "22206eada7cf4fe0b74d216b68b778c0.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Catherine M Nguyen, M.D.",
         "isDisabled": true,
         "type": "powerspot",
@@ -699,7 +699,7 @@
     {
       "id": "229088f543c43bc98ab707657339e787.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Central Park Playground near Senior Center",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -719,7 +719,7 @@
     {
       "id": "234c4c642a434ce5a289bdb1fbe9278d.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Ewha Dang",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -739,7 +739,7 @@
     {
       "id": "235255fcad384e2ebcf5a349210e30b6.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Central Park Footbridge",
         "isDisabled": true,
         "type": "powerspot",
@@ -759,7 +759,7 @@
     {
       "id": "24c9ec8385ee4620810435a0bbb9a082.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Loopkicks Tricking",
         "isDisabled": true,
         "type": "powerspot",
@@ -780,7 +780,7 @@
     {
       "id": "259d746144e63df4bfb166707e78dcf7.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Central Park Field Scoreboard",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -800,7 +800,7 @@
     {
       "id": "27e0ff10bf6848fdbaf925348fe26198.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "LibertyX Bitcoin ATM",
         "isDisabled": true,
         "type": "powerspot",
@@ -821,7 +821,7 @@
     {
       "id": "283368601cee4056ae24085707daa83b.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Proper Hour Handyman Service",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -841,7 +841,7 @@
     {
       "id": "2836a261ec5748eca55a0168921c2cf4.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Redbox",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -861,7 +861,7 @@
     {
       "id": "2a3ad132e6954d86b2baf67a6a466028.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Yelena Shaanova, M.D.",
         "isDisabled": true,
         "type": "powerspot",
@@ -882,7 +882,7 @@
     {
       "id": "2b21013c641f4de0bd6af3c8a3db939f.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "WCI Electric",
         "isDisabled": true,
         "type": "powerspot",
@@ -903,7 +903,7 @@
     {
       "id": "2c36bf04d4b24d94a05ead504b07c8cc.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Chase Bank",
         "isDisabled": true,
         "type": "powerspot",
@@ -923,7 +923,7 @@
     {
       "id": "2f4aa8f8327e4e6992ac3be92d2c23a5.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Central Park Amphitheater",
         "isDisabled": true,
         "type": "powerspot",
@@ -943,7 +943,7 @@
     {
       "id": "300c2aafb4824fdc8ca8d974f6628fb7.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Ewha Dang",
         "isDisabled": true,
         "type": "powerspot",
@@ -963,7 +963,7 @@
     {
       "id": "30e505816e1c4843a40c9cee8046d1b0.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "7-Eleven",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -983,7 +983,7 @@
     {
       "id": "3169001a6a0542ec8e34db30b30d72ca.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "The UPS Store 4636",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1003,7 +1003,7 @@
     {
       "id": "31ff47052e8034e9b52b4d5743f2c5ba.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Kindness Corner",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1024,7 +1024,7 @@
     {
       "id": "32f738dc2e2e400bba6f81a3aef130fd.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Basketball Courts at Central Park",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1044,7 +1044,7 @@
     {
       "id": "33d4da3aebb84f3b9539d0ffbabd4dcb.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Danawa",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1064,7 +1064,7 @@
     {
       "id": "34378a83370241018d1ee79d241dd25f.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Center Park Bridge",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1084,7 +1084,7 @@
     {
       "id": "3869613d27ac383a92c6fd56f711f859.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Sculpture in Magical Bridge Playground",
         "isDisabled": true,
         "type": "powerspot",
@@ -1105,7 +1105,7 @@
     {
       "id": "38b4560c1bb3334d952c4857eb8852c1.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Central Park Picnic Area",
         "isDisabled": true,
         "type": "powerspot",
@@ -1126,7 +1126,7 @@
     {
       "id": "38df85549710366cbcdc394bd983f186.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Central Park Picnic Area",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1146,7 +1146,7 @@
     {
       "id": "391688b4640b410082d68b7789b9cd44.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Pet Hospital",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1166,7 +1166,7 @@
     {
       "id": "3918a7a63b9346eeb04d1d750d2ceb35.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Empress Hair Design",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1186,7 +1186,7 @@
     {
       "id": "3a5947908ca34874a8ee3327431e9c0a.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Woodsborough Homes Association",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1205,7 +1205,7 @@
     {
       "id": "3a626d79c5a2473db5d7b2972b05a559.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Moore Family Towing Service",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1225,7 +1225,7 @@
     {
       "id": "3a9135b01593487eb1e461f7cf8e3463.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "El Pollo Loco",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1245,7 +1245,7 @@
     {
       "id": "3bb0647d232744a3b866b95a89477153.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Children's World Bilingual Montessori School",
         "isDisabled": true,
         "type": "powerspot",
@@ -1265,7 +1265,7 @@
     {
       "id": "3e209d9fa878487080607c734956a975.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "My Hair and Face Salon",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1285,7 +1285,7 @@
     {
       "id": "3e6aef6ffdbc425998b50ca1e95c6ffc.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "U.S. Bank ATM",
         "isDisabled": true,
         "type": "powerspot",
@@ -1305,7 +1305,7 @@
     {
       "id": "3f76cc7d870f43f180783fa1a68a4f0e.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Vidhi Shah, M.D.",
         "isDisabled": true,
         "type": "powerspot",
@@ -1326,7 +1326,7 @@
     {
       "id": "41a23fb2eaf23af69c41810285802aba.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Fire Station 3 Little Free Library",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1350,7 +1350,7 @@
     {
       "id": "44176e23d285499d91fc0904f7281b48.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Orange Square",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1370,7 +1370,7 @@
     {
       "id": "4606a657770c40979fdfbd0bd8390ffc.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Sarah's Cafe",
         "isDisabled": true,
         "type": "powerspot",
@@ -1390,7 +1390,7 @@
     {
       "id": "463bb8108a8c466e8298f56d0ad9c43f.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Central Park Playground",
         "isDisabled": true,
         "type": "powerspot",
@@ -1410,7 +1410,7 @@
     {
       "id": "4834ec66bbe749dbb7c24b1da9b866b5.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Lawn Bowls Club",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1430,7 +1430,7 @@
     {
       "id": "48e46d917215476d9276efec055aa598.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Juega y Aprende Daycare",
         "isDisabled": true,
         "type": "powerspot",
@@ -1450,7 +1450,7 @@
     {
       "id": "4a272e53388540b7b204bcef7490dbc1.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Park Terrace Apartments",
         "isDisabled": true,
         "type": "powerspot",
@@ -1471,7 +1471,7 @@
     {
       "id": "4af53920f8ad3550873fdfc4355abeb2.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Central Park Directional Information Sign",
         "isDisabled": true,
         "type": "powerspot",
@@ -1492,7 +1492,7 @@
     {
       "id": "4be26abdd0004b43adc953609a738cfb.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Interstellar Gymnastics",
         "isDisabled": true,
         "type": "powerspot",
@@ -1513,7 +1513,7 @@
     {
       "id": "4c5f3354ef52435da7c30ca0af734384.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Kumon Math and Reading Center of SANTA CLARA - CENTRAL PARK",
         "isDisabled": true,
         "type": "powerspot",
@@ -1533,7 +1533,7 @@
     {
       "id": "4dac0aa6d26f4359ac0df4cacb753644.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Melissa Huck-Nguyen, M.D.",
         "isDisabled": true,
         "type": "powerspot",
@@ -1554,7 +1554,7 @@
     {
       "id": "4f7eb2c7f4b34a5aa503d7f2847a5c05.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Eve Hair Salon",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1574,7 +1574,7 @@
     {
       "id": "508a16b56a3d44aa921f5083dd1121ef.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Great Clips",
         "isDisabled": true,
         "type": "powerspot",
@@ -1595,7 +1595,7 @@
     {
       "id": "5090e603d21f405dbe36d9f216cbbc76.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Western Union",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1615,7 +1615,7 @@
     {
       "id": "51023caaa85b41378344302ef8c180fd.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Citibank ATM",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1635,7 +1635,7 @@
     {
       "id": "51481e5c49223aed9aecd19c75002ec2.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Central Park Field Bleachers",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1656,7 +1656,7 @@
     {
       "id": "51cff810793e40e89f2d3ac8d79e6359.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Garlic Mediterranean Grill",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1676,7 +1676,7 @@
     {
       "id": "52354ab162dc454cb06e0547b1632ba6.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Central Park Basketball Courts",
         "isDisabled": true,
         "type": "powerspot",
@@ -1696,7 +1696,7 @@
     {
       "id": "53da807db3254a5d829380aa4574f5f7.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Public Media Solution",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1716,7 +1716,7 @@
     {
       "id": "5541cfecc2e338d29af3391eef7547c3.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Turtle Island - Fragrant Mountain",
         "isDisabled": true,
         "type": "powerspot",
@@ -1737,7 +1737,7 @@
     {
       "id": "55f6ec20830249bea34b8e8ae56400b9.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Shred Nations",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1756,7 +1756,7 @@
     {
       "id": "572f26257a8c45139c1a4bef759074dd.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Angel Santa Clara",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1776,7 +1776,7 @@
     {
       "id": "591c2e19ffb7465bb6905564a4935c01.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "MGM Electric",
         "isDisabled": true,
         "type": "powerspot",
@@ -1797,7 +1797,7 @@
     {
       "id": "5a3e235007d140878c37100946f15771.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "1000 Kiely",
         "isDisabled": true,
         "type": "powerspot",
@@ -1818,7 +1818,7 @@
     {
       "id": "5b661dcf54d34c658c410f2b850df826.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Taco Bell",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1837,7 +1837,7 @@
     {
       "id": "5be52d1fdcf944abb9d0bb7558f384b7.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Church of Jesus Christ of Latter Day Saints",
         "isDisabled": true,
         "type": "powerspot",
@@ -1858,7 +1858,7 @@
     {
       "id": "5c4436c8b98840578624466c6be1e8a7.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Orchard - Reading Across Boundaries",
         "isDisabled": true,
         "type": "powerspot",
@@ -1898,7 +1898,7 @@
     {
       "id": "5d696643422531028ba43320ee8e54bc.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Swing and Sway Zone",
         "isDisabled": true,
         "type": "powerspot",
@@ -1919,7 +1919,7 @@
     {
       "id": "5dbcd691a71447a48331d6224e93f1c6.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Hankook Tire",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1939,7 +1939,7 @@
     {
       "id": "621fbe72b39f4ed3b68187b28cc5e53b.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Katrina B Ang, M.D.",
         "isDisabled": true,
         "type": "powerspot",
@@ -1960,7 +1960,7 @@
     {
       "id": "62a8f5f559544d1daf80fee3f1399827.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "China China Restaurant & Buffet",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -1980,7 +1980,7 @@
     {
       "id": "62d0c318aeb336679c0472e8184db97b.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Hearth Neighborhood Gathering Area",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2000,7 +2000,7 @@
     {
       "id": "6367a2998d944b7a9eee1f7c3acaec76.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "H&R Block",
         "isDisabled": true,
         "type": "powerspot",
@@ -2021,7 +2021,7 @@
     {
       "id": "68049a7a9e4a494294a92caa96d009dc.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Synapse Print Services",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2041,7 +2041,7 @@
     {
       "id": "6ab5d8087c824db29b1e4596f3c21265.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Realcom Associates",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2061,7 +2061,7 @@
     {
       "id": "6c86d9caa1bd468a924511834e5833f7.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Patelco Credit Union",
         "isDisabled": true,
         "type": "powerspot",
@@ -2101,7 +2101,7 @@
     {
       "id": "6d05f43979064facab7ad829e2eaee13.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Kent T Hiura, DDS",
         "isDisabled": true,
         "type": "powerspot",
@@ -2121,7 +2121,7 @@
     {
       "id": "6e26eb5c843f4be08295f7ca29d75168.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Granada Inn - Silicon Valley",
         "isDisabled": true,
         "type": "powerspot",
@@ -2142,7 +2142,7 @@
     {
       "id": "6e47a48481cc4de3b43c3fc7b0347971.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Sally Beauty",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2162,7 +2162,7 @@
     {
       "id": "6eca491039324e059e53f30515fcf5de.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Ramos Furniture",
         "isDisabled": true,
         "type": "powerspot",
@@ -2183,7 +2183,7 @@
     {
       "id": "6f2edc70552f45beb0b70990312ff054.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Central Park Rock & Wood Playground",
         "isDisabled": true,
         "type": "powerspot",
@@ -2203,7 +2203,7 @@
     {
       "id": "7095e2aef1d338c293647a9e38748baf.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Central Park Bleachers",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2223,7 +2223,7 @@
     {
       "id": "70ad22a07b014430873369a337da1a97.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "HouseMaidHero",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2243,7 +2243,7 @@
     {
       "id": "70c2892af5ca31e2b271c4e03c2b9746.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Sequoia Gigantea",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2263,7 +2263,7 @@
     {
       "id": "73bf1a6c16ba4872866fbdd151f4c452.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Stone Toad",
         "isDisabled": true,
         "type": "powerspot",
@@ -2284,7 +2284,7 @@
     {
       "id": "7425e94ee09b436b96d5a17ef273b332.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Arbor Center",
         "isDisabled": true,
         "type": "powerspot",
@@ -2305,7 +2305,7 @@
     {
       "id": "757a4ffc78c44e39b19ee2bb68b3a6df.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "James Kim, M.D.",
         "isDisabled": true,
         "type": "powerspot",
@@ -2324,9 +2324,29 @@
       "type": "Feature"
     },
     {
+      "id": "76e7bb0095d1375c8fbc9c4383c6bf94.16",
+      "properties": {
+        "checked": "2026-07-01T08:00:00Z",
+        "name": "Santa Clara Campsite - Genuine",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca67",
+        "photo": "76e7bb0095d1375c8fbc9c4383c6bf94.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-121.974007, 37.341342],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
       "id": "77d1b99015d2444cb15c2df9c8cffb14.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Lisa Pro Nails",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2346,7 +2366,7 @@
     {
       "id": "7865476129d54ecfa9496168215bcd24.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Jeff Tao, M.D.",
         "isDisabled": true,
         "type": "powerspot",
@@ -2367,7 +2387,7 @@
     {
       "id": "7998cde7dc254176976957db50c358e8.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Rite Aid",
         "isDisabled": true,
         "type": "powerspot",
@@ -2388,7 +2408,7 @@
     {
       "id": "79c5162ce915412c82baad9fdff48080.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "CVS Pharmacy",
         "isDisabled": true,
         "type": "powerspot",
@@ -2408,7 +2428,7 @@
     {
       "id": "7a5f0ec5a1974b0fb59b427eb3b20b11.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Ganesha Indian Cuisine Sweets & Catering",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2427,7 +2447,7 @@
     {
       "id": "7d4f86ed387f44f1879473b3db0734dd.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Beauty Nails",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2447,7 +2467,7 @@
     {
       "id": "7f0904fa5b164629805e20b8128280bd.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "PE Fitness",
         "isDisabled": true,
         "type": "powerspot",
@@ -2468,7 +2488,7 @@
     {
       "id": "7f6bc9394c8a426aafd1e8b0d9fe2f72.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Jehovah's Witnesses",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2487,7 +2507,7 @@
     {
       "id": "80149ff119024e47a45b554548ef7159.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Dilshad Kekobad, M.D.",
         "isDisabled": true,
         "type": "powerspot",
@@ -2508,7 +2528,7 @@
     {
       "id": "808219ce031d4232aecdaf6861088c52.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Passage",
         "isDisabled": true,
         "type": "powerspot",
@@ -2529,7 +2549,7 @@
     {
       "id": "80a154bd9a7f4089a7f5ffa322b63f94.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Hi Tech Automotive Works",
         "isDisabled": true,
         "type": "powerspot",
@@ -2550,7 +2570,7 @@
     {
       "id": "8214bedcb77a343dacc9a72411fd4850.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Central Park Library Entrance Sign - II",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2570,7 +2590,7 @@
     {
       "id": "82c5d9ec62f74410b3f27d359ef02fed.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Ray N J's Hair Design",
         "isDisabled": true,
         "type": "powerspot",
@@ -2591,7 +2611,7 @@
     {
       "id": "8316f05e72c64dd889cc93402a0b6a4e.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Ronald A. Nakano DDS",
         "isDisabled": true,
         "type": "powerspot",
@@ -2611,7 +2631,7 @@
     {
       "id": "83563ded62274211b62be125c5de880d.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Silicon Valley Judo",
         "isDisabled": true,
         "type": "powerspot",
@@ -2632,7 +2652,7 @@
     {
       "id": "83b4472c71cf44bdbb771ecdca5bdd3c.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Montage Dance Productions",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2652,7 +2672,7 @@
     {
       "id": "8453db4bd3ea3dc8ae47b92c44fb68ef.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Butterfly season themed seating",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2673,7 +2693,7 @@
     {
       "id": "865e50d9819e4cd1a32675f70eeb6ac8.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Caffino",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2693,7 +2713,7 @@
     {
       "id": "865f2f6b9c8a47f99db7734d6fe1b05c.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Meditation",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2713,7 +2733,7 @@
     {
       "id": "86e89c24b908416e801c9a7334be7e71.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Arusuvai Indian Restaurant",
         "isDisabled": true,
         "type": "powerspot",
@@ -2733,7 +2753,7 @@
     {
       "id": "871255dbae474dc69dbc21dffb01e437.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Saroja Dandamudi, M.D.",
         "isDisabled": true,
         "type": "powerspot",
@@ -2754,7 +2774,7 @@
     {
       "id": "872ba5801ec04ac2a1c6b06c4b8dcc6e.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Best Brains Learning Center - Santa Clara",
         "isDisabled": true,
         "type": "powerspot",
@@ -2774,7 +2794,7 @@
     {
       "id": "8a405312ce3b4dd6aa984b6e8a20d1db.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Armadillo Willy's BBQ",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2794,7 +2814,7 @@
     {
       "id": "8a758853c9e54279a4f5129716f7328d.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Anytime Fitness - Santa Clara, CA",
         "isDisabled": true,
         "type": "powerspot",
@@ -2814,7 +2834,7 @@
     {
       "id": "8b889048d7c448d0adc462b5d3d945c6.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara First Baptist Church",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2835,7 +2855,7 @@
     {
       "id": "8bb6785ff32e4cbe996ea7a7a1db0d9a.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "MSC Computers",
         "isDisabled": true,
         "type": "powerspot",
@@ -2856,7 +2876,7 @@
     {
       "id": "8cc37bf4a9d840adacd5908d75d05138.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Western Union",
         "isDisabled": true,
         "type": "powerspot",
@@ -2877,7 +2897,7 @@
     {
       "id": "8fd39662012946029a0cfb5b4e3de930.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Challenge",
         "isDisabled": true,
         "type": "powerspot",
@@ -2898,7 +2918,7 @@
     {
       "id": "90967d68e2ca49e99b3d11abcb92c22c.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Kunjip",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2918,7 +2938,7 @@
     {
       "id": "93d65ab675354e7ba0c268b5c780a570.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Wooden Amphitheater",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2936,9 +2956,29 @@
       "type": "Feature"
     },
     {
+      "id": "96097a315972388f8fa7875aa67492b1.16",
+      "properties": {
+        "checked": "2026-07-01T08:00:00Z",
+        "name": "Santa Clara Campsite - Empowering",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca67",
+        "photo": "96097a315972388f8fa7875aa67492b1.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-121.974458, 37.341957],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
       "id": "96ab5169f02f4a20a45839dc4badf59b.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Bethlehem Santa Clara",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2959,7 +2999,7 @@
     {
       "id": "97d58300384f42789a1ec71ce8856618.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Best Brains",
         "isDisabled": true,
         "type": "powerspot",
@@ -2979,7 +3019,7 @@
     {
       "id": "982d74de8a1443efbbe1814293594d8b.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Roberta Jones Junior Theatre",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -2999,7 +3039,7 @@
     {
       "id": "9a6d10e7554132b79e8e59c853593afc.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Alderwood Fountain III",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3020,7 +3060,7 @@
     {
       "id": "9a9639493d6a459994fae74b7830dd61.11",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Veterans Memorial",
         "isDisabled": true,
         "type": "powerspot",
@@ -3041,7 +3081,7 @@
     {
       "id": "9ab541eb79f84a27a2d363832026207b.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Edmond D Pickett Jr. Memorial",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3061,7 +3101,7 @@
     {
       "id": "9afcfe912c6d48a5b3fa3d127d3a9b4d.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Center Lab",
         "isDisabled": true,
         "type": "powerspot",
@@ -3082,7 +3122,7 @@
     {
       "id": "9b0b68457530460483aa02ef2f9971a2.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "US Bank",
         "isDisabled": true,
         "type": "powerspot",
@@ -3102,7 +3142,7 @@
     {
       "id": "9cd20745b3f145348d9abb08fb7eac4d.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Kathleen A Coquia, D.O.",
         "isDisabled": true,
         "type": "powerspot",
@@ -3123,7 +3163,7 @@
     {
       "id": "a03a4d2db02240b59e115e12d21f497a.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Redbox",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3143,7 +3183,7 @@
     {
       "id": "a32337519c814c79a21f7d0bd927ee87.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Safeway",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3163,7 +3203,7 @@
     {
       "id": "a3a25358d7eb4bd7b494f1c32976ca94.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Water Spring",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3183,7 +3223,7 @@
     {
       "id": "a434d900f631321ea3d4996535a6b36e.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Central Park Picnic Area",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3203,7 +3243,7 @@
     {
       "id": "a6389be825b248aa948ac14ad9db41f8.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Caffino Drive-Thru Espresso.",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3223,7 +3263,7 @@
     {
       "id": "a68bf6580f2349cabd8ca23ae2653260.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Mr T’s Barber Shop",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3243,7 +3283,7 @@
     {
       "id": "a7cd870b513d34008716e2f9f057fbc8.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Central Park Pond Bio-Filtration",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3264,7 +3304,7 @@
     {
       "id": "a7e42875c8c1434d9046877fbafb6882.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "KeyMe Locksmiths",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3284,7 +3324,7 @@
     {
       "id": "a7ef7132581f48ce83739b824bcc0831.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Wells Fargo",
         "isDisabled": true,
         "type": "powerspot",
@@ -3304,7 +3344,7 @@
     {
       "id": "a82208f0fdb14d8797e700da301c61a8.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Lombardi Auto Service",
         "isDisabled": true,
         "type": "powerspot",
@@ -3325,7 +3365,7 @@
     {
       "id": "a90f1319689a4dbe92e17495a2abeb82.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "TOGO'S Sandwiches",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3345,7 +3385,7 @@
     {
       "id": "aa4ca2addade47fe89fdae10a40269be.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Ross Dress for Less",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3364,7 +3404,7 @@
     {
       "id": "aa76bc8794fd4ea6b616083aefcb91b7.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Beauty & The Beast",
         "isDisabled": true,
         "type": "powerspot",
@@ -3384,7 +3424,7 @@
     {
       "id": "aaba1f12ccf64b30ae6202c6e168835c.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Apple Land Day Care",
         "isDisabled": true,
         "type": "powerspot",
@@ -3405,7 +3445,7 @@
     {
       "id": "ad1bb90f3acd4f76a118ae5e62226a34.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "S&B Housecleaning",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3425,7 +3465,7 @@
     {
       "id": "adc7be19730d44b291f8f3711b438761.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Veterans Memorial",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3445,7 +3485,7 @@
     {
       "id": "add438b86c814031bd874f6ae9b38a46.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "City of Santa Clara Flag Poles",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3465,7 +3505,7 @@
     {
       "id": "ae3ff9fb23d447d3853017d07744ae1b.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Daniel Ouyang, M.D.",
         "isDisabled": true,
         "type": "powerspot",
@@ -3486,7 +3526,7 @@
     {
       "id": "b0b9a3f2f29f42d692a34ceb0f710581.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "ampm",
         "isDisabled": true,
         "type": "powerspot",
@@ -3506,7 +3546,7 @@
     {
       "id": "b24f190e1d7e4504808e9cbdc5e0c083.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Lily Y Deng, M.D. FAAP",
         "isDisabled": true,
         "type": "powerspot",
@@ -3527,7 +3567,7 @@
     {
       "id": "b39b3a0bf6b642098f355532f9ca31ad.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Ed's Glass & Screens",
         "isDisabled": true,
         "type": "powerspot",
@@ -3548,7 +3588,7 @@
     {
       "id": "b3df68e1cdb342628bbd44e9d56c8f52.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Lifetime Activities - Santa Clara",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3567,7 +3607,7 @@
     {
       "id": "b54ac394d02b4b14b742a611c7d35c20.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Dynasty Health Spa",
         "isDisabled": true,
         "type": "powerspot",
@@ -3588,7 +3628,7 @@
     {
       "id": "b57dae1bea09344a95640dd2855fc52f.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Avery’s Library",
         "isDisabled": true,
         "type": "powerspot",
@@ -3609,7 +3649,7 @@
     {
       "id": "b5c84b56b0784eda8e9d54cd11270967.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Manisha Panchal, M.D.",
         "isDisabled": true,
         "type": "powerspot",
@@ -3630,7 +3670,7 @@
     {
       "id": "b5d8c6adddfd41e2a9b3fac07fac2d93.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Ipar Golf",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3650,7 +3690,7 @@
     {
       "id": "b6f500589831408c845ea502d2e25704.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Sequoia Gigantea",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3671,7 +3711,7 @@
     {
       "id": "b74959c462e7483484971b8177abe61b.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "123 Home Care",
         "isDisabled": true,
         "type": "powerspot",
@@ -3691,7 +3731,7 @@
     {
       "id": "b85bb2d9c58c46deb4d6e8990dc5fdca.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Bay Area Pizza",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3711,7 +3751,7 @@
     {
       "id": "b8a557dd19164136a3de51a42a64b99a.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Boba Pup",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3731,7 +3771,7 @@
     {
       "id": "b9c014b84f64458399f907ef02a90882.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Smart Red Apple Family Daycare",
         "isDisabled": true,
         "type": "powerspot",
@@ -3752,7 +3792,7 @@
     {
       "id": "beb4f4a8c58046eb99f1a6a52c7c5b10.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Hue.Church",
         "isDisabled": true,
         "type": "powerspot",
@@ -3773,7 +3813,7 @@
     {
       "id": "bf34edc0d35a4556bd68722de3982569.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Clearway Restoration",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3793,7 +3833,7 @@
     {
       "id": "bf45a7b7dc4647159623758a52c3c629.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Mariani's Inn & Restaurant",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3813,7 +3853,7 @@
     {
       "id": "c0358e7604294a6d88c28cc17ac6f2ff.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Boba Pup",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3833,7 +3873,7 @@
     {
       "id": "c0f91d4ac4de437ebd38799c00ccdf3d.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Precise Collision",
         "isDisabled": true,
         "type": "powerspot",
@@ -3854,7 +3894,7 @@
     {
       "id": "c1120a1286b8393da913ac90a454959b.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Kiely Center Sign",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3874,7 +3914,7 @@
     {
       "id": "c43d2c1f2f784b599b1a7c35641445a1.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "St Justin Catholic Church",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3894,7 +3934,7 @@
     {
       "id": "c4a6136297513f5b87ad3adeb7f7c763.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Central Park Library Ceiling Artwork",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3914,7 +3954,7 @@
     {
       "id": "c59544a817da4755a951fd2f27761e21.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Vicky's Nails & Hair",
         "isDisabled": true,
         "type": "powerspot",
@@ -3935,7 +3975,7 @@
     {
       "id": "c6ef238a4c9f4baf9728234ee9342fb6.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Sumiya",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -3955,7 +3995,7 @@
     {
       "id": "c7ccbe6667fc47cf8469b84eddb19084.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Amazon Locker - Barrow",
         "isDisabled": true,
         "type": "powerspot",
@@ -3976,7 +4016,7 @@
     {
       "id": "c7dcb81d39684d49bfb10534e99b4167.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Chennai Tiffins Indian Restaurant",
         "isDisabled": true,
         "type": "powerspot",
@@ -3997,7 +4037,7 @@
     {
       "id": "c9a61eda59cc4570a13fed153a536e99.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Mathnasium",
         "isDisabled": true,
         "type": "powerspot",
@@ -4018,7 +4058,7 @@
     {
       "id": "ca156924b0314474b7370eaf09db5e26.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Tobang",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4038,7 +4078,7 @@
     {
       "id": "cb1cefb622b13f1ca502103c159ca69b.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Edmund D Pickett Jr. Memorial",
         "isDisabled": true,
         "type": "powerspot",
@@ -4059,7 +4099,7 @@
     {
       "id": "ccf3a48f0d484db08796149b79666adc.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Central Park Pavilion",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4078,7 +4118,7 @@
     {
       "id": "cd171a5f10dc421396b6f6f6f6634f21.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Light of the Lord Community Church",
         "isDisabled": true,
         "type": "powerspot",
@@ -4098,7 +4138,7 @@
     {
       "id": "cd9cc927177b4304b7a87af0c23126ac.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "KeyMe Locksmiths",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4118,7 +4158,7 @@
     {
       "id": "ce022903e6ef4c3b9fc920a760c8e53d.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Redbox",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4138,7 +4178,7 @@
     {
       "id": "cec97c14772b43d28688740da6ed7777.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Screenmobile",
         "isDisabled": true,
         "type": "powerspot",
@@ -4158,7 +4198,7 @@
     {
       "id": "cf4d79a0983b4fae8caa4b45e654d45f.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Reading Across Boundaries: Page",
         "isDisabled": true,
         "type": "powerspot",
@@ -4179,7 +4219,7 @@
     {
       "id": "cf78b6b11d6f380ca1f7cda63e8c2cd0.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Woodsborough Map",
         "isDisabled": true,
         "type": "powerspot",
@@ -4200,7 +4240,7 @@
     {
       "id": "d049c9ebe8bd49188903975173a19683.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "O K Pet Grooming",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4220,7 +4260,7 @@
     {
       "id": "d1e73bcee6824ff6bce1deaef75d3e8e.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Center - Palo Alto Medical Foundation",
         "isDisabled": true,
         "type": "powerspot",
@@ -4241,7 +4281,7 @@
     {
       "id": "d2b8b4698dda35fea35b255d0936c6dd.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Central Park Outdoor Gym",
         "isDisabled": true,
         "type": "powerspot",
@@ -4262,7 +4302,7 @@
     {
       "id": "d325c41db81b48cbbca568708c4e16bb.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "ABC Tree Farms & Pick of the Patch Pumpkins",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4282,7 +4322,7 @@
     {
       "id": "d58b402148b340e69a42680e71656854.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Tennis Center",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4301,7 +4341,7 @@
     {
       "id": "d5c0196b71b74e2f99ca0e381f2f0d44.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Hotel Stratford",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4321,7 +4361,7 @@
     {
       "id": "d60c10e75e6e4f0da0fbc6a6a082827d.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Lisa Pro Nails",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4341,9 +4381,8 @@
     {
       "id": "d82d0033bf3736f89a9a43c2d7d2c316.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Lifetime Activities Center",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -4351,7 +4390,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca69",
-        "photo": "d82d0033bf3736f89a9a43c2d7d2c316.16.jpg"
+        "photo": "d82d0033bf3736f89a9a43c2d7d2c316.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.974599, 37.344453],
@@ -4362,7 +4402,7 @@
     {
       "id": "d9f0a5c2a7784a8aa00a4bb9c9e41b9c.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "MinuteClinic",
         "isDisabled": true,
         "type": "powerspot",
@@ -4382,7 +4422,7 @@
     {
       "id": "da0ff2e785cd45febc07b811197e8c94.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Lynne C Wu, M.D.",
         "isDisabled": true,
         "type": "powerspot",
@@ -4403,7 +4443,7 @@
     {
       "id": "da399cad0c584507b076a8866e738cd6.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Community Recreation Center",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4423,7 +4463,7 @@
     {
       "id": "da8a6168bb434c80b23434bdee5d6aff.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Farmers Insurance - Vanessa Ooi",
         "isDisabled": true,
         "type": "powerspot",
@@ -4443,7 +4483,7 @@
     {
       "id": "dc018126083042f7a510c1986043ec58.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Beauty College",
         "isDisabled": true,
         "type": "powerspot",
@@ -4464,7 +4504,7 @@
     {
       "id": "de2501a502ef4ca487b125fbfa818727.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Sera Lee Anne DDS",
         "isDisabled": true,
         "type": "powerspot",
@@ -4484,7 +4524,7 @@
     {
       "id": "df580e9ca0084db9917da18ea950d18b.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "ABC Tax and Accounting",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4503,7 +4543,7 @@
     {
       "id": "dfa801e8b5e541e888545e3fdc413a90.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "American Furniture & Mattress",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4523,7 +4563,7 @@
     {
       "id": "dfb5f11fde184aec9238f80d8cf468c0.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Freedom Tree Central Park",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4544,7 +4584,7 @@
     {
       "id": "e00fc669a8fc4edd8c8437084043b36e.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Taichi Pot Shabu Shabu",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4564,7 +4604,7 @@
     {
       "id": "e0230f47d8b54312b50d8863c5b6ab95.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "La Palma Apartments",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4584,7 +4624,7 @@
     {
       "id": "e32498c5784646c696a811121c965c14.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Anytime Fitness",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4603,7 +4643,7 @@
     {
       "id": "e3e9f4a1238c4e47afdadab7c2439967.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Pet Hospital",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4623,7 +4663,7 @@
     {
       "id": "e4b021b4397c42cda76b47948a008ccb.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Evo Sports Clubs",
         "isDisabled": true,
         "type": "powerspot",
@@ -4644,7 +4684,7 @@
     {
       "id": "e63e131437df4d35bca914697362a27e.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "San Jose Art Academy",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4664,7 +4704,7 @@
     {
       "id": "e8800401214a489196146c87f202b808.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Stan's Donut Shop",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4684,7 +4724,7 @@
     {
       "id": "e8b4a7e88da94ad08f43324e2c50db88.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Kumon Math and Reading Center",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4704,7 +4744,7 @@
     {
       "id": "e8d5c55de56946d1bc7da078d945027c.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Elite Event Center",
         "isDisabled": true,
         "type": "powerspot",
@@ -4725,7 +4765,7 @@
     {
       "id": "e8ecb9a6371c4519a22ecd61a3fb3720.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Time Honored Vintage",
         "isDisabled": true,
         "type": "powerspot",
@@ -4746,7 +4786,7 @@
     {
       "id": "ea5f1ee2757b49ea9911dbab329397c6.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "KeyMe",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4766,7 +4806,7 @@
     {
       "id": "eb869eefe48449749d9cf13115f38b36.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "ARCO",
         "isDisabled": true,
         "type": "powerspot",
@@ -4795,7 +4835,7 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fca6d",
-        "isHidden": true
+        "isHidden": false
       },
       "geometry": {
         "coordinates": [-121.979122, 37.346386],
@@ -4806,7 +4846,7 @@
     {
       "id": "ed127d736b7848aca54d862d0dbefd73.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Mariposa Hair Stylists",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4826,7 +4866,7 @@
     {
       "id": "ee7aa3f36f6b486bacf7203e1219821b.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Popeyes Louisiana Kitchen",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4846,7 +4886,7 @@
     {
       "id": "f07e6f9ee5943391928454b83baa0ba6.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Randy's Donut Statue",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4870,7 +4910,7 @@
     {
       "id": "f12d35072e9634448a35fefb3376fb6c.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Central Park Field Flagpole",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4890,7 +4930,7 @@
     {
       "id": "f2d8972198af4e30931135c6e84309fa.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Shining Star Montessori Daycare and Preschool",
         "isDisabled": true,
         "type": "powerspot",
@@ -4911,7 +4951,7 @@
     {
       "id": "f45e6b18efc94b699336289b9c45f9f7.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "KeyMe Locksmiths",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -4931,7 +4971,7 @@
     {
       "id": "f4f7569e433b494d8f7d5607bd755aaf.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Hyunsoo Zhu, M.D.",
         "isDisabled": true,
         "type": "powerspot",
@@ -4952,7 +4992,7 @@
     {
       "id": "f54dfa8a31e04c5aa1a48275179f9696.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "LibertyX Bitcoin ATM",
         "isDisabled": true,
         "type": "powerspot",
@@ -4972,9 +5012,8 @@
     {
       "id": "f623cc41100e37e1af5b1a0e30ce11ee.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Central Park Picnic Area",
-        "isDisabled": true,
         "type": "powerspot",
         "marker-color": "#ff40ff",
         "marker-size": "small",
@@ -4982,7 +5021,8 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca65",
-        "photo": "f623cc41100e37e1af5b1a0e30ce11ee.16.jpg"
+        "photo": "f623cc41100e37e1af5b1a0e30ce11ee.16.jpg",
+        "isImpossible": true
       },
       "geometry": {
         "coordinates": [-121.977043, 37.341293],
@@ -4993,7 +5033,7 @@
     {
       "id": "f631fbba4688313d911e3f8c045d80ab.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Praise The Children and They Will Grow Steps",
         "isDisabled": true,
         "type": "powerspot",
@@ -5014,7 +5054,7 @@
     {
       "id": "f69430e97caa4d46b578377e9d5150b1.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Korean Spring BBQ",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -5034,7 +5074,7 @@
     {
       "id": "f84de11fe5aa4bc7a4209a1a02912c35.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Koala-T Day Care",
         "isDisabled": true,
         "type": "powerspot",
@@ -5055,7 +5095,7 @@
     {
       "id": "f952b3e1f1544f629365885014c50bfe.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Liberty Tax Service",
         "isDisabled": true,
         "type": "powerspot",
@@ -5075,7 +5115,7 @@
     {
       "id": "fa16239e56d135bbad3cbfa4c147b6b8.16",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Santa Clara Community Center Garden",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -5096,7 +5136,7 @@
     {
       "id": "fa7f93011b1c40f89e6be6d04eca1be9.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Angela Chen, M.D.",
         "isDisabled": true,
         "type": "powerspot",
@@ -5117,7 +5157,7 @@
     {
       "id": "faec58277a0944b0a6448460aeaa9f6c.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Central Park Arbor Picnic Area",
         "type": "powerspot",
         "marker-color": "#ff40ff",
@@ -5136,7 +5176,7 @@
     {
       "id": "fda51e0e4f3d4f87bc182ac4f0e1a491.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Chase ATM",
         "isDisabled": true,
         "type": "powerspot",
@@ -5156,7 +5196,7 @@
     {
       "id": "fea8c56824b54b07a4eb330e7786142e.23",
       "properties": {
-        "checked": "2026-06-25T08:00:00Z",
+        "checked": "2026-07-01T08:00:00Z",
         "name": "Alderwood Apartments",
         "isDisabled": true,
         "type": "powerspot",

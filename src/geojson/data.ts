@@ -12,6 +12,7 @@ import {
   centralPokestopsJson,
   centralPowerspotsJson,
   centralRestroomsJson,
+  centralStdRaidPathJson,
 } from "./central/data";
 import {
   cupDevpoisJson,
@@ -47,7 +48,9 @@ const powerspotsJson = GET_IS_CENTRAL()
 const restroomsJson = GET_IS_CENTRAL()
   ? centralRestroomsJson
   : cupRestroomsJson;
-const stdRaidPathJson = cupStdRaidPathJson;
+const stdRaidPathJson = GET_IS_CENTRAL()
+  ? centralStdRaidPathJson
+  : cupStdRaidPathJson;
 
 export {
   devpoisJson,

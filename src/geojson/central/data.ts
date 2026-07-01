@@ -1,4 +1,5 @@
 import type { CFeatureCollection } from "@/types/CFeatures";
+import type { FeatureCollection, LineString } from "geojson";
 
 import devpois from "./devpois.geojson?raw";
 import gyms from "./gyms.geojson?raw";
@@ -11,6 +12,7 @@ import parkingJson from "./parking.geojson?raw";
 import pokestops from "./pokestops.geojson?raw";
 import powerspots from "./powerspots.geojson?raw";
 import restrooms from "./restrooms.geojson?raw";
+import stdRaidPath from "./std-raid-path.geojson?raw";
 
 export const centralDevpoisJson = JSON.parse(devpois) as CFeatureCollection;
 export const centralGymsJson = JSON.parse(gyms) as CFeatureCollection;
@@ -25,3 +27,6 @@ export const centralPowerspotsJson = JSON.parse(
   powerspots,
 ) as CFeatureCollection;
 export const centralRestroomsJson = JSON.parse(restrooms) as CFeatureCollection;
+export const centralStdRaidPathJson = JSON.parse(
+  stdRaidPath,
+) as FeatureCollection<LineString>;

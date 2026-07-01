@@ -12,7 +12,7 @@ const INPUT_FILE = path.join(
   __dirname,
   "../src/geojson/cup/pokestops-extra.json",
 );
-const OUTPUT_FILE = "output.json";
+const OUTPUT_FILE = path.join(__dirname, "output.json");
 
 const data = JSON.parse(fs.readFileSync(INPUT_FILE, "utf8"));
 

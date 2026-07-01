@@ -1,5 +1,35 @@
 # Central Park POI History
 
+## 6-29-2026
+
+### Gyms Created 🆕
+
+- Santa Clara Campsite - Welcoming (22e350b507083b4083112079287ba119.16)
+- Santa Clara Campsite - Resilient (57ac4f42556f3b6a8c28c67971ee6a17.16)
+- Santa Clara Campsite - Family (91ebd3480b0336d29f9cd756483d2f28.16)
+- Santa Clara Campsite - Energy (b5982fd125df355bb01053b2f1aa021f.16)
+- Santa Clara Campsite - Thoughtful (e9503dce17a63a3e9f3c15995d02a62c.16)
+- Santa Clara Campsite - Passionate (ecb862cd79fb335e88b300de03701788.16)
+
+### PokeStops Created 🆕
+
+- Santa Clara Campsite - Social (5fd52f535b593c0a8ae6d0de53a5b601.16)
+- Santa Clara Campsite - Diversity (be27e1039bea31d9ab8d8927e5c1bf21.16)
+- Santa Clara Campsite - Camaraderie (c5ff02ec4c9138a98905f8f3e6214e32.16)
+- Santa Clara Campsite - Positive (d99d3d1b9ff3395283efc68511ef9748.16)
+- Santa Clara Campsite - Opportunity (fb8180cfd0313ea1be14914ee3651395.16)
+
+### Power Spots Created 🆕
+
+- Santa Clara Campsite - Genuine (76e7bb0095d1375c8fbc9c4383c6bf94.16)
+- Santa Clara Campsite - Empowering (96097a315972388f8fa7875aa67492b1.16)
+
+### Power Spots Blocked 🛑
+
+- Magical Bridge playground signage (04ef486c00f63d32ac881e755d8b318d.16)
+- Santa Clara Central Park Picnic Area (f623cc41100e37e1af5b1a0e30ce11ee.16)
+- Lifetime Activities Center (c6ef238a4c9f4baf9728234ee9342fb6.23)
+
 ## 6-26-2026
 
 ### PokeStop Moved 🚚
