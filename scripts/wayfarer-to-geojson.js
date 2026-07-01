@@ -9,7 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 /* Set directory where the input data is relative to this script file location. */
-const RELATIVE_INPUT_DIR = "../src/geojson/central";
+const RELATIVE_INPUT_DIR = "../src/geojson/cup";
 
 /* Wayfarer & extra data inputs. */
 const WAYFARER_INPUT = path.join(__dirname, "wayfarer.json");
@@ -129,17 +129,6 @@ const processData = async () => {
               type: "Feature",
             };
 
-            if (
-              poi.title.includes("Santa Clara Campsite - Energy") ||
-              poi.title.includes("Santa Clara Campsite - Welcoming") ||
-              poi.title.includes("Santa Clara Campsite - Resilient") ||
-              poi.title.includes("Santa Clara Campsite - Passionate") ||
-              poi.title.includes("Santa Clara Campsite - Family") ||
-              poi.title.includes("Santa Clara Campsite - Thoughtful")
-            ) {
-              f.properties.type = "gym";
-            }
-
             if (Array.isArray(poi.gmo) && poi.gmo[0]) {
               const entity = poi.gmo[0].entity;
               if (entity === "POKESTOP") {
@@ -152,18 +141,8 @@ const processData = async () => {
             }
 
             if (!f.properties.type) {
-              if (
-                poi.title.includes("Santa Clara Campsite - Camaraderie") ||
-                poi.title.includes("Santa Clara Campsite - Diversity") ||
-                poi.title.includes("Santa Clara Campsite - Opportunity") ||
-                poi.title.includes("Santa Clara Campsite - Positive") ||
-                poi.title.includes("Santa Clara Campsite - Social")
-              ) {
-                f.properties.type = "pokestop";
-              } else {
-                f.properties.isDisabled = true;
-                f.properties.type = "powerspot";
-              }
+              f.properties.isDisabled = true;
+              f.properties.type = "powerspot";
             }
 
             if (f.properties.type === "gym") {

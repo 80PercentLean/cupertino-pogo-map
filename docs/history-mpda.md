@@ -2,13 +2,44 @@
 
 ## 6-29-2026
 
-TODO:
-
 ### Gyms Created 🆕
+
+- Cupertino Campsite - Humble (14f6edcc903838a0974bb59f07f60a82.16)
+- Cupertino Campsite - Honest (3ab04ddb013d3ba689cd1d289dedf105.16)
+- Cupertino Campsite - Genuine (3cdbf67f7d3d33058bec4cb0f2dde89a.16)
+- Cupertino Campsite - Ambitious (4d68c9a647da36e999b85df48f040bd5.16)
+- Cupertino Campsite - Encouraging (6d5b2a1080a4376b9276224f526c839f.16)
+- Cupertino Campsite - Dedicated (6da533b86c7e3a078dc4886bdf5b0a55.16)
+- Cupertino Campsite - Opportunity (7ea0190767293f6db5f4e3bb8dc6b8e9.16)
+- Cupertino Campsite - Innovative (b19ea9734bb833bda1105738a809e742.16)
+- Cupertino Campsite - Diversity (cbcbe5a30dc93f9c84d479364037b2b3.16)
 
 ### PokeStops Created 🆕
 
+- Cupertino Campsite - Integrity (097625600eab3c96ac46b17ee0714138.16)
+- Cupertino Campsite - Guiding (0eed4917409436b7aca604322e7cdb39.16)
+- Cupertino Campsite - Friendly (1d45921e4f6338aa912d0551c05e9ae1.16)
+- Cupertino Campsite - Accepting (2bfde515f8733c70a63579bbd9359f99.16)
+- Cupertino Campsite - Welcoming (36b15bb6d7553e0dbca278041b06d810.16)
+- Cupertino Campsite - Genuine (588651f27a4532bb9f589ce5f364c44d.16)
+- Cupertino Campsite - Wholesome (729d2555798e313fb8e9f587f65cf2e1.16)
+- Cupertino Campsite - Impactful (924eeb2bebe03d1da70d3fe84a9e1a46.16)
+- Cupertino Campsite - Empathetic (a90144f5072f3afa8069958346bc3203.16)
+- Cupertino Campsite - Welcoming (c6bbb0aaf7233881a38ea6fd0eefbace.16)
+- Cupertino Campsite - Supportive (f5129dfed4033f53aba4f0c64135ec32.16)
+
 ### Power Spots Created 🆕
+
+- Cupertino Campsite - Ambitious (175d1af2e58a331f8abb6ce07ff50cf1.16)
+- Cupertino Campsite - Social (3a3f7ff956e43a5fb0538ca1b27afa13.16)
+- Cupertino Campsite - Selfless (65e0fa0d18a4366ca7cdc49f8f954531.16)
+- Cupertino Campsite - Dedicated (6f59eb65897a323d91f2e73aea4e5bff.16)
+
+### Power Spots Disabled 🚫
+
+- Dionysus (5333cc20d862479f8f762e663840e77f.16)
+- Bright Skeleton Shark (be4e0108d56438c89d14d6c71a83f6df.16)
+- Memorial Park BBQ Spot A (cc6014b6bc9f36e59a178a8ad750e43f.16)
 
 ## 6-22-2026
 
