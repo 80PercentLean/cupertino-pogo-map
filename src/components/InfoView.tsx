@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { GROUP_NAME, ROOT_PATH } from "@/constants";
+import { DISCORD_PATH, GROUP_NAME, ROOT_PATH } from "@/constants";
 import { Info } from "lucide-react";
 
 import FooterTxt from "./FooterTxt";
@@ -119,6 +119,39 @@ export default function InfoView() {
               become Enabled Power Spots. They can essentially never exist
               in-game unless the conditions around them are changed, but they do
               exist within Wayfarer.
+            </p>
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="real-time-wayspot">
+          <AccordionTrigger className="cursor-pointer">
+            <h2 className="font-semibold text-balance">
+              Does this map reflect the latest Wayfarer map in real time?
+            </h2>
+          </AccordionTrigger>
+          <AccordionContent>
+            <p className="text-pretty">
+              Unfortunately, no. To do that, we'd need a real-time connection to
+              the Wayfarer API. We intentionally avoid that because it would
+              make this app non-compliant with Niantic's Terms of Service.
+            </p>
+            <p className="mt-[1em] text-pretty">
+              Instead, all of the data used by this map is manually curated.
+              While we strive to keep it as accurate and up to date as the
+              Wayfarer map, updates must be manually published before they
+              appear here.
+            </p>
+            <p className="mt-[1em] text-pretty">
+              We typically refresh the data every couple of weeks, but if you
+              notice something that's out of date, just let us know on{" "}
+              <LinkExt href={DISCORD_PATH} openNewWindow>
+                Discord
+              </LinkExt>{" "}
+              and we're happy to publish an update sooner.
+            </p>
+            <p className="mt-[1em] text-pretty">
+              Also note that because this is done manually, sometimes mistakes
+              may slip through the cracks. If you see something wrong on the
+              map, please let us know immediately!
             </p>
           </AccordionContent>
         </AccordionItem>
