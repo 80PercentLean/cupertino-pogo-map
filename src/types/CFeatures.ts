@@ -93,6 +93,7 @@ export interface CProperties {
   /** Type of POI or label. */
   type:
     | "devpoi"
+    | "fooddrink"
     | "gym"
     | "label"
     | "meetupspot"

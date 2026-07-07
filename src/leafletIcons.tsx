@@ -4,6 +4,7 @@
 import {
   emojiAllBinaryRestroom,
   emojiDevpoi,
+  emojiFoodDrink,
   emojiMRestroom,
   emojiParking,
   emojiWRestroom,
@@ -139,6 +140,21 @@ export const iconDevpoiHighlighted = divIcon({
   iconAnchor: [10, 10],
   html: renderToString(
     <IconEmojiHighlighted>{emojiDevpoi}</IconEmojiHighlighted>,
+  ),
+});
+
+/** Leaflet icon for food/drink POIs. */
+export const iconFoodDrink = divIcon({
+  className: "",
+  html: renderToString(emojiFoodDrink),
+  iconAnchor: [10, 10],
+});
+
+export const iconFoodDrinkHighlighted = divIcon({
+  className: "",
+  iconAnchor: [10, 10],
+  html: renderToString(
+    <IconEmojiHighlighted>{emojiFoodDrink}</IconEmojiHighlighted>,
   ),
 });
 
