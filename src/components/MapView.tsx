@@ -8,6 +8,7 @@ import LeafletDebug from "./LeafletDebug";
 import MyLocationMarker from "./MyLocationMarker";
 import PlacedMarkers from "./PlacedMarkers";
 import DevPois from "./features/DevPois";
+import Fooddrink from "./features/FoodDrink";
 import Gyms from "./features/Gyms";
 import MeetupSpots from "./features/MeetupSpots";
 import Parking from "./features/Parking";
@@ -118,6 +119,7 @@ export default function MapView() {
       {isLayerParkingOn && <Parking />}
       {isStdRaidPathOn && <StdRaidPath />}
       {isLayerMeetupSpotOn && <MeetupSpots />}
+      <Fooddrink />
       {searchParams.get("l17") === "on" && <L17Grid />}
       {searchParams.get("l14") === "on" && <L14Grid />}
       {searchParams.get("l13") === "on" && <L13Grid />}

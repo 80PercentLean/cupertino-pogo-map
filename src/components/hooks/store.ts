@@ -2,6 +2,7 @@ import { CENTER_CENTRAL, CENTER_CUP, IS_CENTRAL } from "@/constants";
 import { IS_MOBILE } from "@/constantsDom";
 import {
   devpoisJson,
+  fooddrinkJson,
   gymsJson,
   meetupspotsJson,
   parkingJson,
@@ -109,6 +110,9 @@ export interface StoreState {
 
   /** Advanced layer which maintains the state for development POI markers. */
   layerDevpoi: Record<string, MarkerState>;
+
+  /** Advanced layer which maintains the state for food/drink POI markers. */
+  layerFooddrink: Record<string, MarkerState>;
 
   /** Advanced layer which maintains the state for gym markers. */
   layerGym: Record<string, MarkerState>;
@@ -360,6 +364,8 @@ export const useStore = create<StoreState>()(
 
         // Advanced layer marker states will be initialized after initStoreState is initialized
         layerDevpoi: {},
+
+        layerFooddrink: {},
 
         layerGym: {},
 
@@ -829,6 +835,25 @@ export const useStore = create<StoreState>()(
           ];
         } else {
           initStoreState.layerRestroom[String(id)] = { isVisible: true };
+        }
+      });
+
+      // Initialize marker states for each advanced layer
+      fooddrinkJson.features.forEach(({ id, geometry }) => {
+        if (
+          id &&
+          idParam &&
+          String(id) === idParam &&
+          !initStoreState.activePopup
+        ) {
+          initStoreState.activePopup = String(id);
+          initStoreState.layerFooddrink[String(id)] = { isVisible: true };
+          initStoreState.mapStart = [
+            geometry.coordinates[1],
+            geometry.coordinates[0],
+          ];
+        } else {
+          initStoreState.layerFooddrink[String(id)] = { isVisible: true };
         }
       });
 

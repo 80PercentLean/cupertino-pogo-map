@@ -24,6 +24,10 @@ if (!IS_CENTRAL) {
   dynamicRedirects.push(
     "/guide https://docs.google.com/document/d/1NCGM5HAbRauIoQV4E7ZWGc2-Kx3woO3BxWpeZeXX6eM/edit?usp=sharing 301",
   );
+  dynamicRedirects.push("/central https://www.wildgoosepogo.com/map 301");
+} else {
+  dynamicRedirects.push("/deanza https://www.cupertinopogo.com/map 301");
+  dynamicRedirects.push("/memorial https://www.cupertinopogo.com/map 301");
 }
 
 const redirects = [baseRedirects, dynamicRedirects.join("\n")]
