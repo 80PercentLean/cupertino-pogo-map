@@ -15,7 +15,7 @@ export const emojiAllBinaryRestroom = "🚻";
 export const emojiDevpoi = "🚧";
 
 /** Emoji for food/drink POIs. */
-export const emojiFoodDrink = "🍽️";
+export const emojiFooddrink = "🍊";
 
 /** Emoji for meetup spots. */
 export const emojiMeetupspot = "📍";

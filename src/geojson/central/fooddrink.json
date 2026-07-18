@@ -1,0 +1,22 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Orange Square",
+        "type": "fooddrink",
+        "desc": "<p>Orange Square is a Taiwanese fusion restaurant featuring bento-style meals, specialty boba teas, and authentic street-food inspired dishes.</p><p>Find their hours, menu, and more at: <a href=\"https://www.orangesq.com\" rel=\"noopener noreferrer\" target=\"_blank\">www.orangesq.com</a></p>",
+        "marker-color": "#87ceeb",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "photo": "orange-square.jpeg"
+      },
+      "geometry": {
+        "coordinates": [-121.97283938527109, 37.34003007933948],
+        "type": "Point"
+      },
+      "id": "orange-square-sc"
+    }
+  ]
+}

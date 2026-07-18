@@ -2,6 +2,7 @@ import { GET_IS_CENTRAL } from "@/constants";
 
 import {
   centralDevpoisJson,
+  centralFooddrinkJson,
   centralGymsJson,
   centralL13CellsJson,
   centralL14CellsJson,
@@ -51,6 +52,7 @@ const restroomsJson = GET_IS_CENTRAL()
 const stdRaidPathJson = GET_IS_CENTRAL()
   ? centralStdRaidPathJson
   : cupStdRaidPathJson;
+const fooddrinkJson = centralFooddrinkJson;
 
 export {
   devpoisJson,
@@ -65,4 +67,5 @@ export {
   powerspotsJson,
   restroomsJson,
   stdRaidPathJson,
+  fooddrinkJson,
 };
