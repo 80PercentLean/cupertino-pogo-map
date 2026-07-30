@@ -1,8 +1,11 @@
 import {
   emojiAllBinaryRestroom,
   emojiDevpoi,
+  emojiDrink,
+  emojiFood,
   emojiMRestroom,
   emojiMeetupspot,
+  emojiOrangeSq,
   emojiParking,
   emojiWRestroom,
   imgGym,
@@ -84,6 +87,18 @@ export default function UiMapIcon({
         className={cn(removed && ICON_REMOVED_STYLE, className)}
       />
     );
+  }
+
+  if (type === "fooddrink") {
+    if (subtype === "drink") {
+      return <div className={className}>{emojiDrink}</div>;
+    }
+
+    if (subtype === "orange-sq") {
+      return <div className={className}>{emojiOrangeSq}</div>;
+    }
+
+    return <div className={className}>{emojiFood}</div>;
   }
 
   if (type === "meetupspot") {

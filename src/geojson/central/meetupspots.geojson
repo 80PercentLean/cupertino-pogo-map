@@ -6,7 +6,7 @@
       "properties": {
         "name": "Community Recreation Center Meetup Spot",
         "type": "meetupspot",
-        "desc": "This is the meetup spot mainly used for our guided group on Raid Days/Hours where we walk together to clear as many Gyms as possible.",
+        "desc": "This is the meetup spot at the Central Park Community Recreation Center.\n\nIt is mainly used for our guided group on Raid events where we walk together to clear as many Gyms as possible.",
         "marker-color": "#ffa500",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -20,9 +20,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Santa Clara Tennis Center Meetup Spot",
+        "name": "Tennis Center Meetup Spot",
         "type": "meetupspot",
-        "desc": "This is the meetup spot mainly used for our guided group for Max Battle events where we walk together to clear as many Power Spots as possible.",
+        "desc": "This is the meetup spot at the Santa Clara Tennis Center.\n\nIt is mainly used for our guided group on Max Battle events where we walk together to clear as many Power Spots as possible.",
         "marker-color": "#ffa500",
         "marker-size": "small",
         "marker-symbol": "circle"

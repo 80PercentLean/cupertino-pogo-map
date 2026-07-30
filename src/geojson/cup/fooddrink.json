@@ -4,7 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Orange Square Santa Clara",
+        "name": "Orange Square Cupertino",
         "type": "fooddrink",
         "subtype": "orange-sq",
         "isPartner": true,
@@ -15,7 +15,7 @@
         "photo": "orange-square.jpeg"
       },
       "geometry": {
-        "coordinates": [-121.97283938527109, 37.34003007933948],
+        "coordinates": [-122.02946484088899, 37.32348013367056],
         "type": "Point"
       },
       "id": "orange-square"

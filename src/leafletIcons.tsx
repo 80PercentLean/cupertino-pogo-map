@@ -4,7 +4,8 @@
 import {
   emojiAllBinaryRestroom,
   emojiDevpoi,
-  emojiFooddrink,
+  emojiDrink,
+  emojiFood,
   emojiMRestroom,
   emojiParking,
   emojiWRestroom,
@@ -23,6 +24,7 @@ import { renderToString } from "react-dom/server";
 import {
   IconEmojiHighlighted,
   MeetupSpot,
+  OrangeSq,
   ParkingWarn,
   ParkingWarnHighlighted,
 } from "./leafletJsxComponents";
@@ -143,18 +145,33 @@ export const iconDevpoiHighlighted = divIcon({
   ),
 });
 
-/** Leaflet icon for food/drink POIs. */
-export const iconFooddrink = divIcon({
+/** Leaflet icon for drink POIs. */
+export const iconDrink = divIcon({
   className: "",
-  html: renderToString(emojiFooddrink),
+  html: renderToString(emojiDrink),
   iconAnchor: [10, 10],
 });
 
-export const iconFooddrinkHighlighted = divIcon({
+export const iconDrinkHighlighted = divIcon({
   className: "",
   iconAnchor: [10, 10],
   html: renderToString(
-    <IconEmojiHighlighted>{emojiFooddrink}</IconEmojiHighlighted>,
+    <IconEmojiHighlighted>{emojiDrink}</IconEmojiHighlighted>,
+  ),
+});
+
+/** Leaflet icon for food POIs. */
+export const iconFood = divIcon({
+  className: "",
+  html: renderToString(emojiFood),
+  iconAnchor: [10, 10],
+});
+
+export const iconFoodHighlighted = divIcon({
+  className: "",
+  iconAnchor: [10, 10],
+  html: renderToString(
+    <IconEmojiHighlighted>{emojiFood}</IconEmojiHighlighted>,
   ),
 });
 
@@ -201,6 +218,29 @@ export const iconMRestroomHighlighted = divIcon({
   html: renderToString(
     <IconEmojiHighlighted>{emojiMRestroom}</IconEmojiHighlighted>,
   ),
+});
+
+const jsxOrangeSqHighlighted = (
+  <div className="relative h-9 w-9">
+    <div
+      className={`bg-[${ICON_HIGHLIGHT_COLOR}]/33 pointer-events-none absolute top-1/2 left-1/2 h-[50px] w-[50px] -translate-x-1/2 -translate-y-[58%] rounded-full border-2 border-white`}
+    ></div>
+    <OrangeSq className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[58%] leading-none" />
+  </div>
+);
+
+export const iconOrangeSq = divIcon({
+  className: "",
+  html: renderToString(<OrangeSq />),
+  iconAnchor: [15, 20],
+  popupAnchor: [0, -10],
+});
+
+export const iconOrangeSqHighlighted = divIcon({
+  className: "",
+  iconAnchor: [15, 20],
+  popupAnchor: [0, -10],
+  html: renderToString(jsxOrangeSqHighlighted),
 });
 
 export const jsxParking = (

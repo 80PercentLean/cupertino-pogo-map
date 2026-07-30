@@ -3,7 +3,7 @@
  */
 import type { PropsWithChildren } from "react";
 
-import { emojiMeetupspot, emojiParking } from "./leafletImgs";
+import { emojiMeetupspot, emojiOrangeSq, emojiParking } from "./leafletImgs";
 import { ICON_HIGHLIGHT_COLOR } from "./leafletStyles";
 import { cn } from "./lib/utils";
 
@@ -27,6 +27,17 @@ export function MeetupSpot({ className }: { className?: string }) {
       data-poitype="meetupspot"
     >
       {emojiMeetupspot}
+    </div>
+  );
+}
+
+export function OrangeSq({ className }: { className?: string }) {
+  return (
+    <div
+      className={cn("text-3xl text-shadow-sm", className)}
+      data-poitype="fooddrink"
+    >
+      {emojiOrangeSq}
     </div>
   );
 }

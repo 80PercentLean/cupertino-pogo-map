@@ -2,6 +2,7 @@ import type { CFeatureCollection } from "@/types/CFeatures";
 import type { FeatureCollection, LineString } from "geojson";
 
 import devpois from "./devpois.geojson?raw";
+import fooddrink from "./fooddrink.json?raw";
 import gyms from "./gyms.geojson?raw";
 import l13Cells from "./l13.geojson?raw";
 import l14Cells from "./l14.geojson?raw";
@@ -15,6 +16,7 @@ import restrooms from "./restrooms.geojson?raw";
 import stdRaidPath from "./std-raid-path.geojson?raw";
 
 export const cupDevpoisJson = JSON.parse(devpois) as CFeatureCollection;
+export const cupFooddrinkJson = JSON.parse(fooddrink) as CFeatureCollection;
 export const cupGymsJson = JSON.parse(gyms) as CFeatureCollection;
 export const cupL13CellsJson = JSON.parse(l13Cells) as CFeatureCollection;
 export const cupL14CellsJson = JSON.parse(l14Cells) as CFeatureCollection;

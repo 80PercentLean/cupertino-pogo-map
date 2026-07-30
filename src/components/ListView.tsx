@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import {
   devpoisJson,
+  fooddrinkJson,
   gymsJson,
   meetupspotsJson,
   parkingJson,
@@ -36,6 +37,7 @@ interface FeatureData {
   isDisabled?: CProperties["isDisabled"];
   isHidden?: CProperties["isHidden"];
   isImpossible?: CProperties["isImpossible"];
+  isPartner?: CProperties["isPartner"];
   name: CProperties["name"];
   removed?: CProperties["removed"];
   subtype?: CProperties["subtype"];
@@ -49,6 +51,7 @@ export default function ListView() {
   const activePopup = useStore((s) => s.activePopup);
   const layerDevpoi = useStore((s) => s.layerDevpoi);
   const layerGym = useStore((s) => s.layerGym);
+  const layerFooddrink = useStore((s) => s.layerFooddrink);
   const layerMeetupspot = useStore((s) => s.layerMeetupspot);
   const layerParking = useStore((s) => s.layerParking);
   const layerPokestop = useStore((s) => s.layerPokestop);
@@ -105,6 +108,7 @@ export default function ListView() {
           isDisabled,
           isHidden,
           isImpossible,
+          isPartner,
           name,
           removed,
           subtype,
@@ -118,6 +122,7 @@ export default function ListView() {
           isDisabled,
           isHidden,
           isImpossible,
+          isPartner,
           removed,
           subtype,
           type,
@@ -134,6 +139,7 @@ export default function ListView() {
       return 0;
     });
 
+    const listPartners: ReactNode[] = [];
     const listMain: ReactNode[] = [];
 
     // Generate JSX for each list item & filter
@@ -144,6 +150,7 @@ export default function ListView() {
         isDisabled,
         isHidden,
         isImpossible,
+        isPartner,
         name,
         removed,
         subtype,
@@ -185,6 +192,17 @@ export default function ListView() {
                 removed={removed}
                 type="gym"
                 className="flex h-6 w-6 object-contain"
+              />
+            );
+            break;
+
+          case "fooddrink":
+            layer = layerFooddrink;
+            icon = (
+              <MapUiIcon
+                subtype={subtype}
+                type="fooddrink"
+                className="h-6 w-6 object-contain"
               />
             );
             break;
@@ -279,7 +297,7 @@ export default function ListView() {
           (matchDevPoi && type === "devpoi") ||
           deferredQuery === id
         ) {
-          listMain.push(
+          const listItem = (
             <Button
               key={id}
               variant="ghost"
@@ -329,13 +347,24 @@ export default function ListView() {
               >
                 {name}
               </div>
-            </Button>,
+            </Button>
           );
+
+          if (isPartner) {
+            listPartners.push(listItem);
+          } else {
+            listMain.push(listItem);
+          }
         } else if (layer?.[id]?.isHighlighted) {
           setMarker(type, id, { isHighlighted: false });
         }
       },
     );
+
+    // Put partners on top of the main list when they appear in the search results
+    if (listPartners.length > 0) {
+      listMain.unshift(...listPartners);
+    }
 
     return listMain;
   };
@@ -415,11 +444,12 @@ export default function ListView() {
 
   const listMain = buildMainList(
     gymsJson.features,
-    meetupspotsJson.features,
-    parkingJson.features,
     pokestopsJson.features,
     powerspotsJson.features,
+    meetupspotsJson.features,
+    parkingJson.features,
     restroomsJson.features,
+    fooddrinkJson.features,
     devpoisJson.features,
   );
 
