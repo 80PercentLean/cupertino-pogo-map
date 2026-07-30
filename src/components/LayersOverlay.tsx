@@ -14,6 +14,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import {
   emojiAllBinaryRestroom,
   emojiDevpoi,
+  emojiFood,
   emojiMeetupspot,
   emojiParking,
   imgGym,
@@ -21,7 +22,7 @@ import {
   imgPokestop,
   imgPowerspot,
 } from "@/leafletImgs";
-import { X } from "lucide-react";
+import { Route, X } from "lucide-react";
 import { useSearchParams } from "react-router";
 
 import BtnLayer from "./BtnLayer";
@@ -44,8 +45,9 @@ export default function LayersOverlay() {
   const hasPlacedMarkers = useStore((s) => s.placedMarkerStates.length > 0);
   const isInteractionRadiiOn = useIsInteractionRadiiOn();
   const isLayerDevpoiOn = useIsLayerOn("devpoi");
-  const isLayerLabelOn = useStore((s) => s.basicLayers.label);
+  const isLayerFooddrinkOn = useIsLayerOn("fooddrink");
   const isLayerGymOn = useIsLayerOn("gym");
+  const isLayerLabelOn = useStore((s) => s.basicLayers.label);
   const isLayerMeetupSpotOn = useIsLayerOn("meetupspot");
   const isLayerParkingOn = useIsLayerOn("parking");
   const isLayerPlacedMarkerOn = useStore((s) => {
@@ -209,7 +211,11 @@ export default function LayersOverlay() {
             <Field className="w-14">
               <BtnLayer
                 isActive={isStdRaidPathOn}
-                imagery={<span className="text-xl">🚶</span>}
+                imagery={
+                  <span className="text-xl">
+                    <Route style={{ color: "#5a9ffc" }} />
+                  </span>
+                }
                 label="Standard Raid Path"
                 onClick={() => toggleBasicLayer("stdRaidPath")}
               />
@@ -233,6 +239,27 @@ export default function LayersOverlay() {
                     setLayer("restroom", { isVisible: false }, true);
                   } else {
                     setLayer("restroom", { isVisible: true }, true);
+                  }
+                }}
+              />
+            </Field>
+            <Field className="w-14">
+              <BtnLayer
+                isActive={isLayerFooddrinkOn}
+                imagery={<span className="text-xl">{emojiFood}</span>}
+                label="Food & Drink"
+                onClick={() => {
+                  if (isLayerFooddrinkOn) {
+                    if (activePopup) {
+                      const poi = findPoiById(activePopup);
+                      if (poi?.type === "fooddrink") {
+                        removeIdQueryParam();
+                      }
+                    }
+
+                    setLayer("fooddrink", { isVisible: false }, true);
+                  } else {
+                    setLayer("fooddrink", { isVisible: true }, true);
                   }
                 }}
               />
