@@ -628,9 +628,10 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Senior Center Restrooms",
+        "name": "Cupertino Senior Center Restrooms",
         "type": "restroom",
         "subtype": "all-binary",
+        "desc": "<p><span class=\"font-bold\">Mon–Fri:</span> 8:00am–5:00pm<br/><span class=\"font-bold\">Sat–Sun:</span> Closed</p><p>This restroom is only available during Cupertino Senior Center opening hours.</p>",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -647,6 +648,7 @@
         "name": "Quinlan Community Center North Restrooms",
         "type": "restroom",
         "subtype": "all-binary",
+        "desc": "<p><span class=\"font-bold\">Mon–Fri:</span> 8:00am–5:00pm<br/><span class=\"font-bold\">Sat–Sun:</span> Closed</p><p>This restroom is only available during Quinlan Community Center opening hours.</p>",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -663,6 +665,7 @@
         "name": "Quinlan Community Center South Restrooms",
         "type": "restroom",
         "subtype": "all-binary",
+        "desc": "<p><span class=\"font-bold\">Mon–Fri:</span> 8:00am–5:00pm<br/><span class=\"font-bold\">Sat–Sun:</span> Closed</p><p>This restroom is only available during Quinlan Community Center opening hours.</p>",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"

@@ -48,6 +48,7 @@ export default function Restrooms() {
             return "All-Gender/Family/Men's/Women's Restroom";
         }
       }}
+      renderHtml={true}
       type="restroom"
     />
   );
