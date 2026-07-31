@@ -9,7 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 /* Set directory where the input data is relative to this script file location. */
-const RELATIVE_INPUT_DIR = "../src/geojson/central";
+const RELATIVE_INPUT_DIR = "../src/geojson/cup";
 
 /* Wayfarer & extra data inputs. */
 const WAYFARER_INPUT = path.join(__dirname, "wayfarer.json");
