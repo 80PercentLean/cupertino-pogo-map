@@ -1,6 +1,5 @@
 import { CAMPFIRE_PATH } from "@/constants";
 import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import { MemoryRouter } from "react-router";
 
 import CheckInGuide from "../CheckInGuide";
@@ -21,8 +20,6 @@ test.each([["false"], ["true"]])(
   "loads correct <CheckInGuide> when VITE_IS_CENTRAL is %s",
   async (IS_CENTRAL) => {
     vi.stubEnv("VITE_IS_CENTRAL", IS_CENTRAL);
-    const user = userEvent.setup();
-
     render(<TestComponent />);
 
     expect(
