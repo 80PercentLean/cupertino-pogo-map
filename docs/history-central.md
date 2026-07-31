@@ -1,5 +1,33 @@
 # Central Park POI History
 
+# 7-30-2026
+
+### PokeStops Created 🆕
+
+- Tennis Court 5 at Santa Clara Tennis Center (13318978d04034eba37844834edbee16.16)
+- La Palma Community Pool (3e239e87d1aa313c8871decc8b880d76.16)
+- Community Seating Area at Santa Clara Tennis Center (66f40613ed16376393325213a1e50176.16)
+
+### PokeStop Moved 🚚
+
+- Santa Clara PAL Softball Field 2 (b1e37fdc59f54099840a2b0dc0f367e7.16)
+  - [-121.975193, 37.342916] ➡️ [-121.975123, 37.343054]
+
+### Power Spots Created 🆕
+
+- Painting sets at "The Shed" (9b6cd21767c936f19dbc5c6e068d4f6d.16)
+
+### Power Spots Blocked 🛑
+
+- Shred Nations (55f6ec20830249bea34b8e8ae56400b9.23)
+
+### Power Spots Removed 🗑️
+
+- Jehovah's Witnesses (7f6bc9394c8a426aafd1e8b0d9fe2f72.23)
+- Clearway Restoration (bf34edc0d35a4556bd68722de3982569.23)
+- La Palma Apartments (e0230f47d8b54312b50d8863c5b6ab95.23)
+- Koala-T Day Care (f84de11fe5aa4bc7a4209a1a02912c35.23)
+
 # 7-5-2026
 
 ### Power Spots Enabled Pool
@@ -133,7 +161,7 @@ _From here on out history will only show the enabled power spots instead of show
 
 ## 6-26-2026
 
-### PokeStop Moved 🚚
+### PokeStops Moved 🚚
 
 - Santa Clara Post Office (1bdcc6ff2d23468388e09603e478abfe.12)
   - [-121.978036, 37.345516] ➡️ [-121.978171, 37.345517]

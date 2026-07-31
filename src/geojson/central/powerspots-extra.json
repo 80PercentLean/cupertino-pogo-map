@@ -58,6 +58,15 @@
       }
     },
     {
+      "id": "55f6ec20830249bea34b8e8ae56400b9.23",
+      "properties": {
+        "name": "Shred Nations",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "updated": "2026-07-30T08:00:00Z"
+      }
+    },
+    {
       "id": "5a3e235007d140878c37100946f15771.23",
       "properties": {
         "name": "1000 Kiely",
@@ -105,6 +114,36 @@
       }
     },
     {
+      "id": "7f6bc9394c8a426aafd1e8b0d9fe2f72.23",
+      "properties": {
+        "name": "Jehovah's Witnesses",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca65",
+        "removed": "2026-07-25T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-121.979495, 37.337366],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "9b6cd21767c936f19dbc5c6e068d4f6d.16",
+      "properties": {
+        "name": "Painting sets at \"The Shed\"",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2026-07-29T08:00:00Z",
+        "created": "2026-07-21T08:00:00Z"
+      }
+    },
+    {
       "id": "ad1bb90f3acd4f76a118ae5e62226a34.23",
       "properties": {
         "name": "S&B Housecleaning",
@@ -123,12 +162,31 @@
       }
     },
     {
+      "id": "bf34edc0d35a4556bd68722de3982569.23",
+      "properties": {
+        "checked": "2026-07-05T08:00:00Z",
+        "name": "Clearway Restoration",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca65",
+        "removed": "2026-07-27T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-121.976817, 37.337229],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
       "id": "e0230f47d8b54312b50d8863c5b6ab95.23",
       "properties": {
         "name": "La Palma Apartments",
         "type": "powerspot",
-        "source": "Wayfarer",
-        "isHidden": true
+        "source": "Wayfarer"
       }
     },
     {
@@ -160,6 +218,27 @@
         "source": "Wayfarer",
         "isHidden": true
       }
+    },
+    {
+      "id": "f84de11fe5aa4bc7a4209a1a02912c35.23",
+      "properties": {
+        "checked": "2026-07-05T08:00:00Z",
+        "name": "Koala-T Day Care",
+        "isDisabled": true,
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca69",
+        "removed": "2026-07-28T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-121.97125, 37.347015],
+        "type": "Point"
+      },
+      "type": "Feature"
     }
   ]
 }

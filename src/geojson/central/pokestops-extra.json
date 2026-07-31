@@ -1,6 +1,17 @@
 {
   "features": [
     {
+      "id": "13318978d04034eba37844834edbee16.16",
+      "properties": {
+        "name": "Tennis Court 5 at Santa Clara Tennis Center",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-07-21T08:00:00Z",
+        "created": "2025-07-23T08:00:00Z"
+      }
+    },
+    {
       "id": "1bdcc6ff2d23468388e09603e478abfe.12",
       "properties": {
         "name": "Santa Clara Post Office",
@@ -47,6 +58,17 @@
       }
     },
     {
+      "id": "3e239e87d1aa313c8871decc8b880d76.16",
+      "properties": {
+        "name": "La Palma Community Pool",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-07-21T08:00:00Z",
+        "created": "2025-07-24T08:00:00Z"
+      }
+    },
+    {
       "id": "4fc4c54c416f3e9f87b37aa2ffd1cc9b.16",
       "properties": {
         "name": "Homestead Garden Pool",
@@ -65,6 +87,17 @@
         "submitter": "80PercentLean",
         "submitted": "2025-06-16T08:00:00Z",
         "created": "2025-06-19T08:00:00Z"
+      }
+    },
+    {
+      "id": "66f40613ed16376393325213a1e50176.16",
+      "properties": {
+        "name": "Community Seating Area at Santa Clara Tennis Center",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2025-07-21T08:00:00Z",
+        "created": "2025-07-27T08:00:00Z"
       }
     },
     {
@@ -186,6 +219,15 @@
         "type": "Point"
       },
       "type": "Feature"
+    },
+    {
+      "id": "b1e37fdc59f54099840a2b0dc0f367e7.16",
+      "properties": {
+        "name": "Santa Clara PAL Softball Field 2",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "updated": "2025-07-25T08:00:00Z"
+      }
     },
     {
       "id": "b2f9c365dfaa35b5b34519186cede210.16",
