@@ -166,8 +166,10 @@ export default function CheckInGuide() {
           3. Join the group and check into the meetup.
         </h2>
         <p>
-          Once you have setup your Campfire app, now you can join the Wild Goose
-          Campfire group through the link below:
+          Once you have setup your Campfire app, you can{" "}
+          <b>
+            join the {GET_GROUP_NAME()} Campfire group through the link below:
+          </b>
         </p>
         <a
           href={CAMPFIRE_PATH}

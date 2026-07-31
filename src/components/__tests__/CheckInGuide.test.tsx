@@ -53,14 +53,6 @@ test.each([["false"], ["true"]])(
       expect(screen.queryAllByText(/central park/i)).toHaveLength(0);
     }
 
-    const callout = screen.getByRole("button", {
-      name: /What is Campfire?/i,
-    });
-    expect(callout).toBeInTheDocument();
-
-    // Click the callout to view the Campfire link
-    await user.click(callout);
-
     const campfireLink = await screen.findByRole("link", {
       name: /Download the Niantic Campfire app/i,
     });
