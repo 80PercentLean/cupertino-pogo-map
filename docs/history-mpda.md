@@ -71,6 +71,8 @@
 - Two as One (47c77e0e74b44eaca46574a503484946.12)
 - Winrows Corporation (a54eaeaf58b84ee7b1d339fa4941394f.23)
 
+_From now on, the history will only show the enabled power spots instead of showing what power spot states have changed._
+
 ## 6-29-2026
 
 ### Gyms Created 🆕
