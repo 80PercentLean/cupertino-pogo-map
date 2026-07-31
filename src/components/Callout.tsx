@@ -49,9 +49,7 @@ export function CalloutFront({ subtitle, title, type }: CalloutFrontProps) {
       <p
         className={cn(
           "font-medium",
-          type === "troubleshooting"
-            ? "text-yellow-900 dark:text-yellow-100"
-            : "text-blue-950 dark:text-blue-100",
+          type === "troubleshooting" ? "text-yellow-100" : "text-blue-100",
         )}
       >
         {title}
@@ -61,8 +59,8 @@ export function CalloutFront({ subtitle, title, type }: CalloutFrontProps) {
           className={cn(
             "text-sm",
             type === "troubleshooting"
-              ? "text-yellow-800/80 dark:text-yellow-200/80"
-              : "text-blue-900/80 dark:text-blue-200/80",
+              ? "text-yellow-200/80"
+              : "text-blue-200/80",
           )}
         >
           {subtitle}
@@ -102,9 +100,7 @@ export default function Callout({ className, content, title, type }: Props) {
           <div
             className={cn(
               "space-y-3 text-sm",
-              isTroubleshooting
-                ? "text-yellow-900 dark:text-yellow-100"
-                : "text-blue-950 dark:text-blue-100",
+              isTroubleshooting ? "text-yellow-100" : "text-blue-100",
             )}
           >
             <hr />

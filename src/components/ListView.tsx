@@ -301,7 +301,7 @@ export default function ListView() {
             <Button
               key={id}
               variant="ghost"
-              className="col-span-full grid h-12 cursor-pointer grid-cols-subgrid p-0 px-4 font-normal"
+              className="col-span-full grid h-12 cursor-pointer grid-cols-subgrid rounded-none p-0 px-4 font-normal"
               onClick={() => {
                 const mediaQuery = getDesktopMediaQuery();
                 if (!mediaQuery.matches) {
@@ -381,7 +381,7 @@ export default function ListView() {
           key={id}
           variant="ghost"
           className={
-            "col-span-full grid h-12 cursor-pointer grid-cols-subgrid p-0 px-4 font-normal"
+            "col-span-full grid h-12 cursor-pointer grid-cols-subgrid rounded-none p-0 px-4 font-normal"
           }
           onClick={() => {
             const mediaQuery = getDesktopMediaQuery();

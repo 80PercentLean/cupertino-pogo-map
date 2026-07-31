@@ -1,3 +1,4 @@
+import imgCampfire from "@/assets/campfire.png";
 import imgLuckyEgg from "@/assets/lucky-egg.webp";
 import imgPbp from "@/assets/pbp.webp";
 import imgStarPiece from "@/assets/star-piece.webp";
@@ -13,11 +14,11 @@ import { ExternalLink, Home } from "lucide-react";
 import { Link } from "react-router";
 
 import BinocularsIcon from "../assets/binoculars.png";
-import CampfireMapIconScreenshot from "../assets/campfire-map-icon.jpg";
-import CampfireMeetupListScreenshot from "../assets/campfire-meetup-list.jpg";
 import CheckInBonusScreenshot from "../assets/check-in-bonus.jpg";
 import CheckInResearchFirstRewardScreenshot from "../assets/check-in-research-first-reward.jpg";
 import CheckInResearchScreenshot from "../assets/check-in-research.jpg";
+import CupPogoMeetupChannelScreenshot from "../assets/cup-pogo-meetups-channel.png";
+import WgMeetupChannelScreenshot from "../assets/wg-meetups-channel.png";
 import Callout, { CalloutFront } from "./Callout";
 import FooterTxt from "./FooterTxt";
 import { useSetDocTitle } from "./hooks";
@@ -113,89 +114,89 @@ export default function CheckInGuide() {
           className="my-[1em]"
         />
         <h2 className="mt-[1em] border-b pb-2 text-2xl font-semibold tracking-tight text-balance">
-          2. Open the Campfire Meetup List.
+          2. Download the Campfire app.
         </h2>
+        <img
+          src={imgCampfire}
+          alt="Campfire Logo"
+          className="aspect-video max-h-50 w-full rounded-xl bg-gray-700 object-contain"
+        />
         <p className="leading-7 text-pretty">
-          From the in-game Pokémon GO map, tap the map icon near the top-right
-          corner of the screen. This will open up Pokémon GO's built-in Campfire
-          Meetup List.
+          There are multiple ways to check-in, but we always recommend doing so
+          through the <b>Campfire app</b> for the smoothest experience.
+        </p>
+        <p className="leading-7 text-pretty">
+          <b>Niantic Campfire</b> is the Pokémon GO developer's official social
+          platform for the game.
+        </p>
+        <p className="leading-7 text-pretty">
+          <b>{GET_GROUP_NAME()}</b> is a Campfire group that hosts meetups
+          through this app. We are part of the{" "}
+          <b>official Pokémon GO Community Ambassador Program</b> which allows
+          us to gift you in-game rewards and activate special bonuses directly
+          to your account through your check-in.
+        </p>
+        <p className="leading-7 text-pretty">
+          In addition to check-ins and rewards, Campfire lets you chat with
+          fellow {GET_GROUP_NAME()} members, view a live top-down raid map, and
+          access other helpful features. We also use our Campfire group to host
+          contests, giveaways, and coordinate trading.
+        </p>
+        <p className="leading-7 text-pretty">
+          Download Campfire by tapping the button below:
+        </p>
+        <Button asChild>
+          <a
+            href={CAMPFIRE_PATH}
+            rel="noopener noreferrer"
+            target="_blank"
+            className="mt-[1em] w-full cursor-pointer text-center text-lg font-bold"
+          >
+            Download the Niantic Campfire app! <ExternalLink />
+          </a>
+        </Button>
+        <p className="leading-7 text-pretty text-yellow-100">
+          <b>
+            Please make sure that you grant the Campfire app location
+            permissions! It uses that to determine if you are close enough to
+            the meetup to qualify for a check-in.
+          </b>
+        </p>
+        <h2 className="mt-[1em] border-b pb-2 text-2xl font-semibold tracking-tight text-balance">
+          3. Join the group and check into the meetup.
+        </h2>
+        <p>
+          Once you have setup your Campfire app, now you can join the Wild Goose
+          Campfire group through the link below:
+        </p>
+        <a
+          href={CAMPFIRE_PATH}
+          rel="noopener noreferrer"
+          target="_blank"
+          className="block w-full text-center text-blue-400 underline"
+        >
+          {GET_IS_CENTRAL()
+            ? "www.wildgoosepogo.com/campfire"
+            : "www.cupertinopogo.com/campfire"}
+        </a>
+        <p className="leading-7 text-pretty">
+          Once you've joined the group, click on the "Meetups" channel and find
+          the particular meetup you want to check into.
         </p>
         <img
-          src={CampfireMapIconScreenshot}
-          alt="Screenshot showing where Campfire Map Icon is located in Pokemon GO"
-          className="mx-auto mt-[1em] max-w-80"
-        />
-        <Callout
-          title={
-            <CalloutFront
-              title="What is Campfire?"
-              subtitle="Tap to learn more about Niantic Campfire."
-            />
+          src={
+            GET_IS_CENTRAL()
+              ? WgMeetupChannelScreenshot
+              : CupPogoMeetupChannelScreenshot
           }
-          content={
-            <>
-              <p>
-                <b>Niantic Campfire</b> is the Pokémon GO developer's official
-                social platform for the game.
-              </p>
-              <p>
-                <b>{GET_GROUP_NAME()}</b> is a Campfire group that hosts meetups
-                through this app. We are part of the{" "}
-                <a
-                  href="https://pokemongo.com/find-your-community"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="font-bold underline"
-                >
-                  official Pokémon GO Community Ambassador Program
-                </a>{" "}
-                which allows us to gift you in-game rewards and activate special
-                bonuses directly to your account through your check-in.
-              </p>
-              <p>
-                Pokémon GO already comes with a light Campfire integration, so
-                no additional download is required to check-in.
-              </p>
-              <p>
-                For access to additional features like chatting and trading with
-                fellow {GET_GROUP_NAME()} members, a full top-down live Raid
-                map, and more, download Campfire by tapping on the button below:
-              </p>
-              <Button asChild>
-                <a
-                  href={CAMPFIRE_PATH}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="mt-[1em] w-full cursor-pointer text-center text-lg font-bold"
-                >
-                  Download the Niantic Campfire app! <ExternalLink />
-                </a>
-              </Button>
-            </>
-          }
-          className="mb-[1em]"
+          alt="Screenshot of the Campfire group's Meetups channel"
         />
-        <h2 className="mt-[1em] border-b pb-2 text-2xl font-semibold tracking-tight text-balance">
-          3. Find the Campfire Meetup and check-in.
-        </h2>
         <p className="leading-7 text-pretty">
-          The Campfire Meetup List may have other meetups in the area, so you
-          will need to specifically find the one hosted by{" "}
-          <b>{GET_GROUP_NAME()}</b>.
-        </p>
-        <p className="leading-7 text-pretty">
-          Once you find the correct meetup, tap{" "}
-          <span className="rounded-2xl border border-[#80CAEF] px-2 py-1 font-bold text-[#80CAEF]">
-            JOIN&nbsp;MEETUP
-          </span>{" "}
-          .
-        </p>
-        <p className="leading-7 text-pretty">
-          This button will change into{" "}
+          If the meetup is currently happening, usually you will see a green{" "}
           <span className="rounded-2xl bg-[#6AE091] px-2 py-1 font-bold">
             CHECK&nbsp;IN
           </span>{" "}
-          . Tap it again to officially check-in!
+          button that you can press.
         </p>
         <Callout
           title={
@@ -220,10 +221,10 @@ export default function CheckInGuide() {
                 few seconds before trying to check-in again.
               </p>
               <p>
-                If that doesn't work, it's possible that you have the Campfire
-                app but you haven't given it sufficient permissions. You can
-                test this by opening the Campfire map and seeing if your phone's
-                current location loads correctly.
+                If that doesn't work, it's possible that you haven't given the
+                Campfire app sufficient permissions. You can test this by
+                opening the Campfire map and seeing if your phone's current
+                location loads correctly.
               </p>
               <p>
                 If the Campfire map isn't accurately showing your current
@@ -235,11 +236,6 @@ export default function CheckInGuide() {
           }
           type="troubleshooting"
           className="mt-[1em]"
-        />
-        <img
-          src={CampfireMeetupListScreenshot}
-          alt="Screenshot of the Campfire Meetup List"
-          className="mx-auto mb-[1em] max-w-80"
         />
         <h2 className="mt-[1em] border-b pb-2 text-2xl font-semibold tracking-tight text-balance">
           4. Claim your first reward! (500 XP)
@@ -388,6 +384,8 @@ export default function CheckInGuide() {
                   <br />
                   <span className="text-muted-foreground italic">
                     Raid Hour/Raid Day
+                    <br />
+                    Wednesdays/Weekends
                   </span>
                 </td>
                 <td className="border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right">
@@ -403,6 +401,8 @@ export default function CheckInGuide() {
                   <br />
                   <span className="text-muted-foreground italic">
                     D-MAX & G-MAX
+                    <br />
+                    Mondays/Weekends
                   </span>
                 </td>
                 <td className="border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right">
@@ -413,7 +413,36 @@ export default function CheckInGuide() {
               </tr>
               <tr className="m-0 border-t p-0">
                 <td className="border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right">
-                  Community Days
+                  Spotlight Hour
+                  <br />
+                  <span className="text-muted-foreground italic">
+                    Thursdays
+                  </span>
+                </td>
+                <td className="border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right">
+                  <ul className="list-disc space-y-1 pl-5">
+                    <li>Super Incubator</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr className="m-0 border-t p-0">
+                <td className="border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right">
+                  Friendship Friday
+                  <br />
+                  <span className="text-muted-foreground italic">Fridays</span>
+                </td>
+                <td className="border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right">
+                  <ul className="list-disc space-y-1 pl-5">
+                    <li>Egg Incubator</li>
+                    <li>Incense</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr className="m-0 border-t p-0">
+                <td className="border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right">
+                  Community Day
+                  <br />
+                  <span className="text-muted-foreground italic">Weekends</span>
                 </td>
                 <td className="border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right">
                   <ul className="list-disc space-y-1 pl-5">
@@ -444,7 +473,7 @@ export default function CheckInGuide() {
           several hours to complete them.
         </p>{" "}
         <p className="leading-7 text-pretty">
-          🫡 Good luck out there Trainer. Enjoy the meetup and your freebies!
+          Happy catching! Enjoy the meetup and your freebies! 🎉
         </p>
         <hr className="mt-10" />
         <Button asChild>
