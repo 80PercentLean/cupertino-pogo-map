@@ -17,6 +17,7 @@ import {
 } from "./central/data";
 import {
   cupDevpoisJson,
+  cupFooddrinkJson,
   cupGymsJson,
   cupL13CellsJson,
   cupL14CellsJson,
@@ -32,6 +33,9 @@ import {
 
 const devpoisJson = GET_IS_CENTRAL() ? centralDevpoisJson : cupDevpoisJson;
 const gymsJson = GET_IS_CENTRAL() ? centralGymsJson : cupGymsJson;
+const fooddrinkJson = GET_IS_CENTRAL()
+  ? centralFooddrinkJson
+  : cupFooddrinkJson;
 const l13CellsJson = GET_IS_CENTRAL() ? centralL13CellsJson : cupL13CellsJson;
 const l14CellsJson = GET_IS_CENTRAL() ? centralL14CellsJson : cupL14CellsJson;
 const l17CellsJson = GET_IS_CENTRAL() ? centralL17CellsJson : cupL17CellsJson;
@@ -52,10 +56,10 @@ const restroomsJson = GET_IS_CENTRAL()
 const stdRaidPathJson = GET_IS_CENTRAL()
   ? centralStdRaidPathJson
   : cupStdRaidPathJson;
-const fooddrinkJson = centralFooddrinkJson;
 
 export {
   devpoisJson,
+  fooddrinkJson,
   gymsJson,
   l13CellsJson,
   l14CellsJson,
@@ -67,5 +71,4 @@ export {
   powerspotsJson,
   restroomsJson,
   stdRaidPathJson,
-  fooddrinkJson,
 };

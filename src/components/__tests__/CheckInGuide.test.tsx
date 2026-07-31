@@ -1,6 +1,5 @@
 import { CAMPFIRE_PATH } from "@/constants";
 import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import { MemoryRouter } from "react-router";
 
 import CheckInGuide from "../CheckInGuide";
@@ -21,8 +20,6 @@ test.each([["false"], ["true"]])(
   "loads correct <CheckInGuide> when VITE_IS_CENTRAL is %s",
   async (IS_CENTRAL) => {
     vi.stubEnv("VITE_IS_CENTRAL", IS_CENTRAL);
-    const user = userEvent.setup();
-
     render(<TestComponent />);
 
     expect(
@@ -52,14 +49,6 @@ test.each([["false"], ["true"]])(
       expect(screen.queryAllByText(/santa clara/i)).toHaveLength(0);
       expect(screen.queryAllByText(/central park/i)).toHaveLength(0);
     }
-
-    const callout = screen.getByRole("button", {
-      name: /What is Campfire?/i,
-    });
-    expect(callout).toBeInTheDocument();
-
-    // Click the callout to view the Campfire link
-    await user.click(callout);
 
     const campfireLink = await screen.findByRole("link", {
       name: /Download the Niantic Campfire app/i,

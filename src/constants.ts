@@ -29,7 +29,7 @@ export const GROUP_NAME = IS_CENTRAL
 
 export const ROOT_PATH = (import.meta.env.VITE_ROOT_PATH as string) ?? "";
 
-export const CAMPFIRE_PATH = ROOT_PATH ? `${ROOT_PATH}/contact` : "/campfire";
+export const CAMPFIRE_PATH = ROOT_PATH ? `${ROOT_PATH}/campfire` : "/campfire";
 
 export const CHECK_IN_PATH = ROOT_PATH ? `${ROOT_PATH}/checkin` : "/checkin";
 

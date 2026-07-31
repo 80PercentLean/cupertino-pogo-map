@@ -14,14 +14,20 @@ export const emojiAllBinaryRestroom = "🚻";
 /** Emoji for dev POI. */
 export const emojiDevpoi = "🚧";
 
-/** Emoji for food/drink POIs. */
-export const emojiFooddrink = "🍊";
+/** Emoji for drink POIs. */
+export const emojiDrink = "🥤";
+
+/** Emoji for food POIs. */
+export const emojiFood = "🍽️";
 
 /** Emoji for meetup spots. */
 export const emojiMeetupspot = "📍";
 
 /** Emoji for male restrooms. */
 export const emojiMRestroom = "🚹";
+
+/** Emoji for Orange Square. */
+export const emojiOrangeSq = "🍊";
 
 /** Emoji for parking areas. */
 export const emojiParking = "🅿️";

@@ -16,15 +16,7 @@ import { type MarkerState, type PlacedMarkerState, useStore } from "./store";
 
 interface PoiData {
   id: string;
-  type:
-    | "devpoi"
-    | "gym"
-    | "meetupspot"
-    | "parking"
-    | "placed"
-    | "pokestop"
-    | "powerspot"
-    | "restroom";
+  type: CFeature["properties"]["type"] | "placed";
   data: {
     geometry?: CFeature["geometry"];
     markerState?: MarkerState | PlacedMarkerState;

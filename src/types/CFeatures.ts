@@ -39,6 +39,9 @@ export interface CProperties {
   /** Represents if a Power Spot is impossible. */
   isImpossible?: boolean;
 
+  /** Determines if the POI belongs to a partner. */
+  isPartner?: boolean;
+
   /** ID for the L14 cell that the Wayfarer POI belongs to. */
   l14Id?: string;
 
@@ -83,8 +86,11 @@ export interface CProperties {
   subtype:
     | "all-binary"
     | "conditionally-free"
+    | "drink"
+    | "food"
     | "free"
     | "men"
+    | "orange-sq"
     | "paid"
     | "showcase"
     | "sponsored"

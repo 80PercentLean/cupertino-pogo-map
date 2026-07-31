@@ -7,6 +7,7 @@
         "name": "Central Park Library First Floor Men's Restroom",
         "type": "restroom",
         "subtype": "men",
+        "desc": "<p><span class=\"font-bold\">Mon:</span> 10:00am–6:00pm<br/><span class=\"font-bold\">Tue–Thu:</span> 10:00am–7:00pm<br/><span class=\"font-bold\">Fri:</span> 10:00am–6:00pm<br/><span class=\"font-bold\">Sat:</span> 10:00am–5:00pm<br/><span class=\"font-bold\">Sun:</span> 1:00–5:00pm</p><p>This restroom is only available during Central Park Library opening hours.</p>",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -23,6 +24,7 @@
         "name": "Central Park Library First Floor Women's Restroom",
         "type": "restroom",
         "subtype": "women",
+        "desc": "<p><span class=\"font-bold\">Mon:</span> 10:00am–6:00pm<br/><span class=\"font-bold\">Tue–Thu:</span> 10:00am–7:00pm<br/><span class=\"font-bold\">Fri:</span> 10:00am–6:00pm<br/><span class=\"font-bold\">Sat:</span> 10:00am–5:00pm<br/><span class=\"font-bold\">Sun:</span> 1:00–5:00pm</p><p>This restroom is only available during Central Park Library opening hours.</p>",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -39,6 +41,7 @@
         "name": "Central Park Library First Floor Family Restroom A",
         "type": "restroom",
         "subtype": "all",
+        "desc": "<p><span class=\"font-bold\">Mon:</span> 10:00am–6:00pm<br/><span class=\"font-bold\">Tue–Thu:</span> 10:00am–7:00pm<br/><span class=\"font-bold\">Fri:</span> 10:00am–6:00pm<br/><span class=\"font-bold\">Sat:</span> 10:00am–5:00pm<br/><span class=\"font-bold\">Sun:</span> 1:00–5:00pm</p><p>This restroom is only available during Central Park Library opening hours.</p>",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -55,6 +58,7 @@
         "name": "Central Park Library First Floor Family Restroom B",
         "type": "restroom",
         "subtype": "all",
+        "desc": "<p><span class=\"font-bold\">Mon:</span> 10:00am–6:00pm<br/><span class=\"font-bold\">Tue–Thu:</span> 10:00am–7:00pm<br/><span class=\"font-bold\">Fri:</span> 10:00am–6:00pm<br/><span class=\"font-bold\">Sat:</span> 10:00am–5:00pm<br/><span class=\"font-bold\">Sun:</span> 1:00–5:00pm</p><p>This restroom is only available during Central Park Library opening hours.</p>",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -71,6 +75,7 @@
         "name": "Central Park Library Second Floor Women's Restroom",
         "type": "restroom",
         "subtype": "women",
+        "desc": "<p><span class=\"font-bold\">Mon:</span> 10:00am–6:00pm<br/><span class=\"font-bold\">Tue–Thu:</span> 10:00am–7:00pm<br/><span class=\"font-bold\">Fri:</span> 10:00am–6:00pm<br/><span class=\"font-bold\">Sat:</span> 10:00am–5:00pm<br/><span class=\"font-bold\">Sun:</span> 1:00–5:00pm</p><p>This restroom is only available during Central Park Library opening hours.</p>",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -87,6 +92,7 @@
         "name": "Central Park Library Second Floor Men's Restroom",
         "type": "restroom",
         "subtype": "men",
+        "desc": "<p><span class=\"font-bold\">Mon:</span> 10:00am–6:00pm<br/><span class=\"font-bold\">Tue–Thu:</span> 10:00am–7:00pm<br/><span class=\"font-bold\">Fri:</span> 10:00am–6:00pm<br/><span class=\"font-bold\">Sat:</span> 10:00am–5:00pm<br/><span class=\"font-bold\">Sun:</span> 1:00–5:00pm</p><p>This restroom is only available during Central Park Library opening hours.</p>",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -103,6 +109,7 @@
         "name": "Community Recreation Center Women's Restroom",
         "type": "restroom",
         "subtype": "women",
+        "desc": "<p><span class=\"font-bold\">Mon–Fri:</span> 8:30am–8:00pm<br/><span class=\"font-bold\">Sat:</span> 8:30am–12:30pm<br/><span class=\"font-bold\">Sun:</span> Closed</p><p>This restroom is only available during Community Recreation Center opening hours.</p>",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
@@ -119,6 +126,7 @@
         "name": "Community Recreation Center Men's Restroom",
         "type": "restroom",
         "subtype": "men",
+        "desc": "<p><span class=\"font-bold\">Mon–Fri:</span> 8:30am–8:00pm<br/><span class=\"font-bold\">Sat:</span> 8:30am–12:30pm<br/><span class=\"font-bold\">Sun:</span> Closed</p><p>This restroom is only available during Community Recreation Center opening hours.</p>",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle"
