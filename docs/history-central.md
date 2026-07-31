@@ -8,7 +8,7 @@
 - La Palma Community Pool (3e239e87d1aa313c8871decc8b880d76.16)
 - Community Seating Area at Santa Clara Tennis Center (66f40613ed16376393325213a1e50176.16)
 
-### PokeStop Moved 🚚
+### PokeStops Moved 🚚
 
 - Santa Clara PAL Softball Field 2 (b1e37fdc59f54099840a2b0dc0f367e7.16)
   - [-121.975193, 37.342916] ➡️ [-121.975123, 37.343054]
@@ -16,6 +16,11 @@
 ### Power Spots Created 🆕
 
 - Painting sets at "The Shed" (9b6cd21767c936f19dbc5c6e068d4f6d.16)
+
+### Power Spots Moved 🚚
+
+- Shred Nations (55f6ec20830249bea34b8e8ae56400b9.23)
+  - [-121.976335, 37.338513] ➡️ [-121.976083, 37.338133]
 
 ### Power Spots Blocked 🛑
 
