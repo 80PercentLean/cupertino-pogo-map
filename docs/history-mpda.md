@@ -73,6 +73,18 @@
 
 _From now on, the history will only show the enabled power spots instead of showing what power spot states have changed._
 
+## 7-10-2026
+
+### PokeStops Created 🆕
+
+- Community Ambassador Location (ambassador-pokestop)
+
+## 7-1-2026
+
+### PokeStops Removed 🗑️
+
+- Community Ambassador Location (ambassador-pokestop)
+
 ## 6-29-2026
 
 ### Gyms Created 🆕

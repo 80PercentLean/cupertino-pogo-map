@@ -1,6 +1,16 @@
 # Central Park POI History
 
-# 7-30-2026
+## 8-3-2026
+
+### PokeStops Created 🆕
+
+- Plaque For Santa Clara Community Recreation Center (2010f4d67d6f36159b70af8767ffc999.16)
+
+### Power Spots Created 🆕
+
+- Outdoor Plaza at the Community Recreation Center (4b260aed8a2c3c1b8a2391f352cc1e0e.16)
+
+## 7-30-2026
 
 ### PokeStops Created 🆕
 
@@ -33,7 +43,7 @@
 - La Palma Apartments (e0230f47d8b54312b50d8863c5b6ab95.23)
 - Koala-T Day Care (f84de11fe5aa4bc7a4209a1a02912c35.23)
 
-# 7-5-2026
+## 7-5-2026
 
 ### Power Spot Enabled Pool ✅
 

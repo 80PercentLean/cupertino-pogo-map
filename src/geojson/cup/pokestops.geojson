@@ -2143,7 +2143,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.046372, 37.321038],
+        "coordinates": [-122.0457432, 37.32078296],
         "type": "Point"
       },
       "type": "Feature"
