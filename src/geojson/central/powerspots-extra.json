@@ -30,7 +30,7 @@
         "marker-size": "small",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "removed": "2025-03-17T08:00:00Z"
+        "removed": "2026-03-17T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-121.97448, 37.34064],
@@ -53,8 +53,8 @@
         "type": "powerspot",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "submitted": "2025-06-16T08:00:00Z",
-        "created": "2025-06-20T08:00:00Z"
+        "submitted": "2026-06-16T08:00:00Z",
+        "created": "2026-06-20T08:00:00Z"
       }
     },
     {
@@ -64,8 +64,8 @@
         "type": "powerspot",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "submitted": "2025-07-26T08:00:00Z",
-        "created": "2025-08-03T08:00:00Z"
+        "submitted": "2026-07-26T08:00:00Z",
+        "created": "2026-08-03T08:00:00Z"
       }
     },
     {
@@ -117,7 +117,7 @@
         "marker-size": "small",
         "marker-symbol": "circle",
         "type": "powerspot",
-        "removed": "2025-03-17T08:00:00Z"
+        "removed": "2026-03-17T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-121.981283, 37.336585],
@@ -217,8 +217,8 @@
         "type": "powerspot",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "submitted": "2025-06-10T08:00:00Z",
-        "created": "2025-06-15T08:00:00Z"
+        "submitted": "2026-06-10T08:00:00Z",
+        "created": "2026-06-15T08:00:00Z"
       }
     },
     {
