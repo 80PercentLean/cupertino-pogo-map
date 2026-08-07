@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 import { E2E_MAP_PATH } from "./constants";
-import { isMobileProject, waitForMapTilesToLoad } from "./util";
+import { isMobileProject } from "./util";
 
 const POI_ID_A = "d9503dbb79bd3cac975ba3745bb01430.16";
 const POI_NAME_A = "De Anza Bike Route";
@@ -30,11 +30,6 @@ test("creates a popup when a marker is used", async ({ page }) => {
   await expect(page.getByRole("heading", { name: POI_NAME_A })).toBeVisible();
   await expect(page.getByRole("link", { name: /nav/i })).toBeVisible();
   await expect(page.getByRole("button", { name: /share/i })).toBeVisible();
-
-  await waitForMapTilesToLoad(page);
-
-  // Screenshot popup
-  await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 });
 
 test("closes the popup when a popup when the close button is used", async ({

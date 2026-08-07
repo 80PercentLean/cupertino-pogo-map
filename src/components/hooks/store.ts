@@ -105,8 +105,14 @@ export interface StoreState {
   /** Open the list view when true. */
   isListViewOpen: boolean;
 
+  /** Run geolocation API for my location functionality when true. */
+  isMyLocationOn: boolean;
+
   /** Use simple markers for in-game POIs when true. */
   isSimpleMarkerEnabled: boolean;
+
+  /** Hide UI overlay when true. */
+  isUiOverlayHidden: boolean;
 
   /** Advanced layer which maintains the state for development POI markers. */
   layerDevpoi: Record<string, MarkerState>;
@@ -181,6 +187,12 @@ export interface StoreState {
 
   /** Set the `isListViewOpen` value. */
   setIsListViewOpen: (val: StoreState["isListViewOpen"]) => void;
+
+  /** Set the `isMyLocationOn` value. */
+  setIsMyLocationOn: (val: StoreState["isMyLocationOn"]) => void;
+
+  /** Set the `isUiOverlayHidden` value. */
+  setIsUiOverlayHidden: (val: StoreState["isUiOverlayHidden"]) => void;
 
   /** Set marker values for an advanced layer. */
   setLayer: (
@@ -358,9 +370,13 @@ export const useStore = create<StoreState>()(
 
         isListViewOpen: !IS_MOBILE,
 
+        isMyLocationOn: false,
+
         isSimpleMarkerEnabled:
           localStorage.getItem("isSimpleMarkerEnabled") === "true" ||
           DEFAULT_SETTINGS.isSimpleMarkerEnabled,
+
+        isUiOverlayHidden: false,
 
         // Advanced layer marker states will be initialized after initStoreState is initialized
         layerDevpoi: {},
@@ -428,6 +444,7 @@ export const useStore = create<StoreState>()(
               invertCoords: DEFAULT_SETTINGS.invertCoords,
               isLegendOff: DEFAULT_SETTINGS.isLegendOff,
               isSimpleMarkerEnabled: DEFAULT_SETTINGS.isSimpleMarkerEnabled,
+              isUiOverlayHidden: false,
               modifiers: {
                 isDisabled: DEFAULT_SETTINGS.isDisabled,
                 isHidden: DEFAULT_SETTINGS.isHidden,
@@ -462,6 +479,16 @@ export const useStore = create<StoreState>()(
 
         setIsListViewOpen: (val) =>
           set(() => ({ isListViewOpen: val }), undefined, "setIsListViewOpen"),
+
+        setIsMyLocationOn: (val) =>
+          set(() => ({ isMyLocationOn: val }), undefined, "setIsMyLocationOn"),
+
+        setIsUiOverlayHidden: (val) =>
+          set(
+            () => ({ isUiOverlayHidden: val }),
+            undefined,
+            "setIsUiOverlayHidden",
+          ),
 
         setLayer: (type, state, override) =>
           set(

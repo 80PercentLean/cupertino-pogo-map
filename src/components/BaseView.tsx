@@ -7,6 +7,7 @@ import InfoView from "./InfoView";
 import { MapContext } from "./MapContext";
 import MapView from "./MapView";
 import MeetupsView from "./MeetupsView";
+import MyLocation from "./MyLocation";
 import SettingsView from "./SettingsView";
 import ToolsView from "./Tools/ToolsView";
 import UiOverlay from "./UiOverlay";
@@ -21,12 +22,33 @@ export default function BaseView() {
   const activeMainView = useStore((s) => s.activeMainView);
   const activePopup = useStore((s) => s.activePopup);
   const setActivePopup = useStore((s) => s.setActivePopup);
+  const isMyLocationOn = useStore((s) => s.isMyLocationOn);
+  const isUiOverlayHidden = useStore((s) => s.isUiOverlayHidden);
+  const setIsUiOverlayHidden = useStore((s) => s.setIsUiOverlayHidden);
 
   const [searchParams] = useSearchParams();
 
   const initErrMsg = useStore((s) => s.initErrMsg);
 
   const removeIdQueryParam = useRemoveIdQueryParam();
+
+  useEffect(() => {
+    // Respond to "h" keypress to toggle visibility for UI overlay
+    const handleKeydown = (e: KeyboardEvent) => {
+      if (e.key.toLowerCase() === "h") {
+        setIsUiOverlayHidden(!isUiOverlayHidden);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeydown);
+    return () => window.removeEventListener("keydown", handleKeydown);
+  }, [isUiOverlayHidden, setIsUiOverlayHidden]);
+
+  useEffect(() => {
+    if (isUiOverlayHidden) {
+      toast("UI overlay was hidden. Press H to show it again.");
+    }
+  }, [isUiOverlayHidden]);
 
   useEffect(() => {
     if (initErrMsg) {
@@ -52,7 +74,8 @@ export default function BaseView() {
   return (
     <MapContext value={{ map, setMap }}>
       <MapView />
-      <UiOverlay />
+      {isMyLocationOn && <MyLocation />}
+      {!isUiOverlayHidden && <UiOverlay />}
       {activeMainView === "meetups" && <MeetupsView />}
       {activeMainView === "settings" && <SettingsView />}
       {activeMainView === "info" && <InfoView />}

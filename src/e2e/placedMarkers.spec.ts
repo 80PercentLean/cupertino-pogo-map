@@ -48,6 +48,12 @@ test("creates a placed marker when the map is clicked/long-pressed", async ({
 
   await waitForMapTilesToLoad(page);
 
+  // Hide UI overlay by pressing "h"
+  await page.keyboard.press("h");
+
+  // Close toast so it isn't in the way
+  await page.getByRole("button", { name: "Close toast" }).click();
+
   // Screenshot the map with a placed marker on it
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 });
@@ -91,6 +97,12 @@ test("creates two placed markers when the map is used at two different locations
   }
 
   expect(await markers.count()).toBe(2);
+
+  // Hide UI overlay by pressing "h"
+  await page.keyboard.press("h");
+
+  // Close toast so it isn't in the way
+  await page.getByRole("button", { name: "Close toast" }).click();
 
   // Screenshot the map with two placed markers on it
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
