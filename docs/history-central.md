@@ -351,7 +351,3 @@ _From now on, the history will only show the enabled power spots instead of show
 - Santa Clara Central Park Outdoor Gym (d2b8b4698dda35fea35b255d0936c6dd.16)
 - ARCO (eb869eefe48449749d9cf13115f38b36.23)
 - Santa Clara Central Park Picnic Area (f623cc41100e37e1af5b1a0e30ce11ee.16)
-
-```
-
-```
