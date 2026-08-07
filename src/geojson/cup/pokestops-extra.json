@@ -1099,6 +1099,17 @@
       }
     },
     {
+      "id": "e32bbbb35a5032be823e0da0d9d50b78.16",
+      "properties": {
+        "name": "Roundtree Community Center",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2026-07-28T08:00:00Z",
+        "created": "2026-08-02T08:00:00Z"
+      }
+    },
+    {
       "id": "e3b9e3209b5131849c85a09934934903.16",
       "properties": {
         "name": "Glenbrook Creekside Shelter",

@@ -1,5 +1,69 @@
 # Memorial Park/De Anza College POI History
 
+## 8-6-2026
+
+### PokeStops Created 🆕
+
+- De Anza College Soccer Field (183a2a8ee12f312da4b70bf9ae4760eb.16)
+- Roundtree Community Center (e32bbbb35a5032be823e0da0d9d50b78.16)
+
+### Power Spots Created 🆕
+
+- Northeast Bulletin Board (0fc1bd1fcabe30a4add34d6f4aadecad.16)
+- Central Bulletin Board (12d8560dcb1337d8b5a89672556df9be.16)
+
+### Power Spot Enabled Pool ✅
+
+- Abundant Life Assembly Of God (b07c979aee9a419b84141dfcb17e9dd2.23)
+- Aidens Gazebo at Memorial Park (83abb8e46af44228a9b285ddbc18fc68.16)
+- Amazing Vijay - Magician (cf952a982a40492581e2a96e91dd52fd.23)
+- American Builders Construction Group Cupertino (b7d3b822863045c697d2ce502c0ad7ad.23)
+- Bicycle Rack (29a0dba42c2d4cac8def7f6cf3751afb.16)
+- Central Bulletin Board (12d8560dcb1337d8b5a89672556df9be.16)
+- Church of Jesus Christ of Latter Day Saints (c77335e81ae042c4945572f0afbad5a7.23)
+- Cupertino Campsite - Ambitious (175d1af2e58a331f8abb6ce07ff50cf1.16)
+- Cupertino Campsite - Dedicated (6f59eb65897a323d91f2e73aea4e5bff.16)
+- Cupertino Campsite - Selfless (65e0fa0d18a4366ca7cdc49f8f954531.16)
+- Cupertino Campsite - Social (3a3f7ff956e43a5fb0538ca1b27afa13.16)
+- Cupertino Historical Society (a973a46573844e84bfe3f06280c06603.12)
+- De Anza College Plaque (c3adc001297c49458120c74dcfeb42dd.16)
+- De Anza College Stadium & Track (05855a9f0064410c8795031ee5a50f9a.23)
+- De Anza Expedition (e168c5fe6bbe4d00af77d88a26bef382.16)
+- De Anza Instrument Music Building (5ac385a466373981bc0c0a14d30762ef.16)
+- Donation Tile Mosaic (aa4b99f74b37475e88668217c67b4fb8.16)
+- Faria CDC (8a120852051145a8b146d8b67e2ff2cc.23)
+- Glenbrook Main Fountain (20fcc9a406f54509836994e74315f1ec.16)
+- Home Of Christ IN Cupertino (fd7bd22db5a04fef8794dc783dccb711.23)
+- In memory of Virginia J. Logan (b30f61b279c93f489023653df85f8cc7.16)
+- La Vita É Una Fontana (9bc3e5e15754404da54b3d9d120db8d8.11)
+- Lifetime Tennis Bulletin Board (0bd8617af5043ab7ad638c73aff5915d.16)
+- Made by TessS Embroidery (e038eb1f18bb418a96f5583f29421b78.23)
+- McClellan Terrace Apartments (b535f4f52bca4c2580005a4a094d253c.23)
+- Memorial Park (baaf219aafc744bdaed3bd74aeec80d8.23)
+- Memorial Park BBQ Spot B (0d65c50b28de3aafae85ad96e12cf811.16)
+- Memorial Park Picnic Area Sign (ad00c2d425553236b3e3dfb3b5c35367.16)
+- Memorial Park Water Fountain (4f3aea5e10b24d9fa25d0cfc29aae42d.16)
+- MLC Fountain B (6bc7dd2ac69541b1b5a8e801fadab86a.16)
+- Muralism (509559c22ab1403ea688836c507e1e4d.16)
+- Nina Piano Lessons (7111a6ff48a94bed86b53d5db95eb105.23)
+- Northeast Bulletin Board (0fc1bd1fcabe30a4add34d6f4aadecad.16)
+- NW Entrance to Memorial Park (49dd51f3fbd03847bd1bf7eb59d37638.16)
+- Panda Express (d4bb990592aa4bdcad990c5e49e45c07.23)
+- Payal Shah Yoga (a55ec5c9ecd74358b36729f9151a83e3.23)
+- Quad Mosaic - West (a51a102d011040e4967ef044b63e66d8.16)
+- Recreation-City of Cupertino, Teen Center (78437672b6cf4f4e8cc54fe78961eb1b.23)
+- Richard Kent Memorial (5713b98e832f48188235aa3c7d9293cd.16)
+- Shelf of Skulls (560f9f27a1444b8c8346d158317ecad0.16)
+- Shell (f8892be3cd144981ba72a8a2d742f11e.23)
+- Sister Cities Bench (289e551ab1b3301b8dec4fde37f2bdca.16)
+- Smoke-Free Memorial Park (ab73728e90553414907c188d0df79dde.16)
+- The Commons Entrance Sign (2e41444e74343603bf7303d73dcde267.16)
+- Toyokawa Stone Lantern (31f847990f104b1bb6ac8027ec45ba4c.11)
+- Turtle Sculpture (e6caf1f03e3b438d9efab4e86ceac208.11)
+- Two as One (47c77e0e74b44eaca46574a503484946.12)
+- Whole Foods (a93d954fcaa2478285f406155cc2e989.23)
+- Winrows Corporation (a54eaeaf58b84ee7b1d339fa4941394f.23)
+
 ## 7-31-2026
 
 ### PokeStops Created 🆕

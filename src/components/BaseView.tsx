@@ -15,6 +15,14 @@ import { useRemoveIdQueryParam } from "./hooks";
 import { useStore } from "./hooks/store";
 
 /**
+ * Checks if target element is a content editable element.
+ */
+const isTypingElement = (target: EventTarget | null) =>
+  target instanceof HTMLInputElement ||
+  target instanceof HTMLTextAreaElement ||
+  (target instanceof HTMLElement && target.isContentEditable);
+
+/**
  * Base view that renders the map and UI overlay on top of it.
  */
 export default function BaseView() {
@@ -35,6 +43,11 @@ export default function BaseView() {
   useEffect(() => {
     // Respond to "h" keypress to toggle visibility for UI overlay
     const handleKeydown = (e: KeyboardEvent) => {
+      if (isTypingElement(e.target)) {
+        // Only respond to keypresses when not typing in a content editable element
+        return;
+      }
+
       if (e.key.toLowerCase() === "h") {
         setIsUiOverlayHidden(!isUiOverlayHidden);
       }
