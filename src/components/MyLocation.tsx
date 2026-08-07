@@ -1,4 +1,4 @@
-import { type Dispatch, type SetStateAction, use, useEffect } from "react";
+import { use, useEffect } from "react";
 import { toast } from "sonner";
 
 import { MapContext } from "./MapContext";
