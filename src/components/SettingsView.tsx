@@ -55,6 +55,7 @@ export default function SettingsView() {
   const setWayfarerMode = useStore((s) => s.setWayfarerMode);
   const showDisabled = useStore((s) => s.modifiers.isDisabled);
   const showHidden = useStore((s) => s.modifiers.isHidden);
+  const showImpossible = useStore((s) => s.modifiers.isImpossible);
   const showRemoved = useStore((s) => s.modifiers.removed);
   const toggleInvertCoords = useStore((s) => s.toggleInvertCoords);
   const toggleIsLegendOff = useStore((s) => s.toggleIsLegendOff);
@@ -94,7 +95,7 @@ export default function SettingsView() {
             <Switch
               id="disable-animations"
               checked={disableAnimations}
-              className="cursor-pointer"
+              className="cursor-pointer data-[state=checked]:bg-green-500"
               onCheckedChange={() => {
                 setDisableAnimations(!disableAnimations);
                 persistSettings("disableAnimations", !disableAnimations);
@@ -115,7 +116,7 @@ export default function SettingsView() {
             <Switch
               id="simple-markers"
               checked={isSimpleMarkerEnabled}
-              className="cursor-pointer"
+              className="cursor-pointer data-[state=checked]:bg-green-500"
               onCheckedChange={() => {
                 toggleIsSimpleMarkerEnabled();
                 persistSettings(
@@ -138,7 +139,7 @@ export default function SettingsView() {
             <Switch
               id="hide-legend"
               checked={isLegendOff}
-              className="cursor-pointer"
+              className="cursor-pointer data-[state=checked]:bg-green-500"
               onCheckedChange={() => {
                 toggleIsLegendOff();
                 persistSettings("isLegendOff", !isLegendOff);
@@ -217,7 +218,7 @@ export default function SettingsView() {
             <Switch
               id="wayfarer-mode"
               checked={wayfarerMode}
-              className="cursor-pointer"
+              className="cursor-pointer data-[state=checked]:bg-green-500"
               onCheckedChange={(s) => {
                 if (!s && activePopup) {
                   const poi = findPoiById(activePopup);
@@ -266,7 +267,7 @@ export default function SettingsView() {
                 <Switch
                   id="hidden-pois"
                   checked={showHidden}
-                  className="cursor-pointer"
+                  className="cursor-pointer data-[state=checked]:bg-green-500"
                   onCheckedChange={() => {
                     toggleModifier("isHidden");
                     persistSettings("isHidden", !showHidden);
@@ -279,20 +280,44 @@ export default function SettingsView() {
                     htmlFor="disabled-power-spots"
                     className="cursor-pointer"
                   >
-                    Show disabled & impossible power spots
+                    Show disabled power spots
                   </FieldLabel>
                   <FieldDescription className="text-pretty">
-                    Display power spots that are not in the current spawn pool
-                    or can never spawn due to certain restrictions.
+                    Display power spots are eligible to be the in spawn pool,
+                    but are currently not in it. These power spots cannot spawn
+                    unless they are selected the next time the pool cycles.
                   </FieldDescription>
                 </FieldContent>
                 <Switch
                   id="disabled-power-spots"
                   checked={showDisabled}
-                  className="cursor-pointer"
+                  className="cursor-pointer data-[state=checked]:bg-green-500"
                   onCheckedChange={() => {
                     toggleModifier("isDisabled");
                     persistSettings("isDisabled", !showDisabled);
+                  }}
+                />
+              </Field>
+              <Field orientation="horizontal" className="rounded-xl border p-3">
+                <FieldContent>
+                  <FieldLabel
+                    htmlFor="impossible-power-spots"
+                    className="cursor-pointer"
+                  >
+                    Show impossible power spots
+                  </FieldLabel>
+                  <FieldDescription className="text-pretty">
+                    Display power spots that can never spawn due to certain
+                    restrictions.
+                  </FieldDescription>
+                </FieldContent>
+                <Switch
+                  id="impossible-power-spots"
+                  checked={showImpossible}
+                  className="cursor-pointer data-[state=checked]:bg-green-500"
+                  onCheckedChange={() => {
+                    toggleModifier("isImpossible");
+                    persistSettings("isImpossible", !showImpossible);
                   }}
                 />
               </Field>
@@ -309,7 +334,7 @@ export default function SettingsView() {
                 <Switch
                   id="removed-pois"
                   checked={showRemoved}
-                  className="cursor-pointer"
+                  className="cursor-pointer data-[state=checked]:bg-green-500"
                   onCheckedChange={() => {
                     toggleModifier("removed");
                     persistSettings("removed", !showRemoved);
@@ -332,7 +357,7 @@ export default function SettingsView() {
                 <Switch
                   id="invert-coords"
                   checked={invertCoords}
-                  className="cursor-pointer"
+                  className="cursor-pointer data-[state=checked]:bg-green-500"
                   onCheckedChange={() => {
                     toggleInvertCoords();
                     persistSettings("invertCoords", !invertCoords);
