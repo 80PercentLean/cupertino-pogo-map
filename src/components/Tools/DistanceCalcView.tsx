@@ -12,13 +12,14 @@ import { latLng } from "leaflet";
 import { useState } from "react";
 import { Controller, type FieldErrors, useForm } from "react-hook-form";
 
+import { useStore } from "../hooks/store";
 import { Separator } from "../ui/separator";
 
 interface FormData {
-  latA: number;
-  lngA: number;
-  latB: number;
-  lngB: number;
+  latA?: number;
+  lngA?: number;
+  latB?: number;
+  lngB?: number;
 }
 
 /**
@@ -26,8 +27,23 @@ interface FormData {
  */
 export default function DistanceCalcView() {
   const [distance, setDistance] = useState<number | null>(null);
+  const latA = useStore((s) => s.latA);
+  const lngA = useStore((s) => s.lngA);
+  const latB = useStore((s) => s.latB);
+  const lngB = useStore((s) => s.lngB);
+  const setLatA = useStore((s) => s.setLatA);
+  const setLngA = useStore((s) => s.setLngA);
+  const setLatB = useStore((s) => s.setLatB);
+  const setLngB = useStore((s) => s.setLngB);
 
-  const { control, handleSubmit } = useForm<FormData>();
+  const { control, handleSubmit } = useForm<FormData>({
+    defaultValues: {
+      latA,
+      lngA,
+      latB,
+      lngB,
+    },
+  });
 
   let output;
   if (distance !== null) {
@@ -41,6 +57,17 @@ export default function DistanceCalcView() {
   }
 
   const onSubmit = ({ latA, lngA, latB, lngB }: FormData) => {
+    if (
+      latA === undefined ||
+      lngA === undefined ||
+      latB === undefined ||
+      lngB === undefined
+    ) {
+      throw new Error(
+        "All latitude and longitude values must be provided to calculate the distance.",
+      );
+    }
+
     const p1 = latLng(latA, lngA);
     const p2 = latLng(latB, lngB);
 
@@ -68,6 +95,10 @@ export default function DistanceCalcView() {
                 aria-invalid={invalid}
                 step="any"
                 type="number"
+                onChange={(e) => {
+                  field.onChange(e);
+                  setLatA(parseFloat(e.target.value));
+                }}
               />
               {invalid && <FieldError errors={[error]} />}
             </Field>
@@ -86,6 +117,10 @@ export default function DistanceCalcView() {
                 aria-invalid={invalid}
                 step="any"
                 type="number"
+                onChange={(e) => {
+                  field.onChange(e);
+                  setLngA(parseFloat(e.target.value));
+                }}
               />
               {invalid && <FieldError errors={[error]} />}
             </Field>
@@ -105,6 +140,10 @@ export default function DistanceCalcView() {
                 aria-invalid={invalid}
                 step="any"
                 type="number"
+                onChange={(e) => {
+                  field.onChange(e);
+                  setLatB(parseFloat(e.target.value));
+                }}
               />
               {invalid && <FieldError errors={[error]} />}
             </Field>
@@ -123,6 +162,10 @@ export default function DistanceCalcView() {
                 aria-invalid={invalid}
                 step="any"
                 type="number"
+                onChange={(e) => {
+                  field.onChange(e);
+                  setLngB(parseFloat(e.target.value));
+                }}
               />
               {invalid && <FieldError errors={[error]} />}
             </Field>

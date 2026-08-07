@@ -114,6 +114,18 @@ export interface StoreState {
   /** Hide UI overlay when true. */
   isUiOverlayHidden: boolean;
 
+  /** Latitude value for coordinate A for the distance calculator. */
+  latA?: number;
+
+  /** Longitude value for coordinate A for the distance calculator. */
+  lngA?: number;
+
+  /** Latitude value for coordinate B for the distance calculator. */
+  latB?: number;
+
+  /** Longitude value for coordinate B for the distance calculator. */
+  lngB?: number;
+
   /** Advanced layer which maintains the state for development POI markers. */
   layerDevpoi: Record<string, MarkerState>;
 
@@ -193,6 +205,18 @@ export interface StoreState {
 
   /** Set the `isUiOverlayHidden` value. */
   setIsUiOverlayHidden: (val: StoreState["isUiOverlayHidden"]) => void;
+
+  /** Set the `latA` value. */
+  setLatA: (val: StoreState["latA"]) => void;
+
+  /** Set the `lngA` value. */
+  setLngA: (val: StoreState["lngA"]) => void;
+
+  /** Set the `latB` value. */
+  setLatB: (val: StoreState["latB"]) => void;
+
+  /** Set the `lngB` value. */
+  setLngB: (val: StoreState["lngB"]) => void;
 
   /** Set marker values for an advanced layer. */
   setLayer: (
@@ -378,6 +402,14 @@ export const useStore = create<StoreState>()(
 
         isUiOverlayHidden: false,
 
+        latA: undefined,
+
+        lngA: undefined,
+
+        latB: undefined,
+
+        lngB: undefined,
+
         // Advanced layer marker states will be initialized after initStoreState is initialized
         layerDevpoi: {},
 
@@ -489,6 +521,14 @@ export const useStore = create<StoreState>()(
             undefined,
             "setIsUiOverlayHidden",
           ),
+
+        setLatA: (val) => set(() => ({ latA: val }), undefined, "setLatA"),
+
+        setLngA: (val) => set(() => ({ lngA: val }), undefined, "setLngA"),
+
+        setLatB: (val) => set(() => ({ latB: val }), undefined, "setLatB"),
+
+        setLngB: (val) => set(() => ({ lngB: val }), undefined, "setLngB"),
 
         setLayer: (type, state, override) =>
           set(
