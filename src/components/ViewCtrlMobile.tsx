@@ -34,7 +34,10 @@ export default function ViewCtrlMobile() {
 
   return (
     <>
-      <div className="fixed top-0 left-0 z-998 m-2 flex gap-2">
+      <div
+        className="fixed top-0 left-0 z-998 m-2 flex gap-2"
+        data-testid="secondary-bar"
+      >
         {!isLegendOff && (
           <Button
             className={cn(

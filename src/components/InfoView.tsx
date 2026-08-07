@@ -62,7 +62,7 @@ export default function InfoView() {
         <AccordionItem value="using-with-wayfarer">
           <AccordionTrigger className="cursor-pointer">
             <h2 className="font-semibold text-balance">
-              Using With Niantic Wayfarer
+              Use With Niantic Wayfarer
             </h2>
           </AccordionTrigger>
           <AccordionContent>
@@ -78,7 +78,7 @@ export default function InfoView() {
                 openNewWindow
               >
                 "Use With Niantic Wayfarer: Tips for Wayfinders" document
-              </LinkExt>
+              </LinkExt>{" "}
               on our GitHub to learn how to make the most of the tools and
               features available on this map.
             </p>

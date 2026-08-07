@@ -45,8 +45,8 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "submitted": "2025-03-28T08:00:00Z",
-        "created": "2025-04-02T08:00:00Z"
+        "submitted": "2026-03-28T08:00:00Z",
+        "created": "2026-04-02T08:00:00Z"
       }
     },
     {
@@ -150,8 +150,8 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-24T08:00:00Z",
+        "submitted": "2026-03-17T08:00:00Z",
+        "created": "2026-03-24T08:00:00Z",
         "isHidden": true
       }
     },
@@ -280,8 +280,8 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-28T08:00:00Z",
+        "submitted": "2026-03-17T08:00:00Z",
+        "created": "2026-03-28T08:00:00Z",
         "isHidden": true
       }
     },
@@ -360,8 +360,8 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "submitted": "2025-07-17T08:00:00Z",
-        "created": "2025-07-22T08:00:00Z"
+        "submitted": "2026-07-17T08:00:00Z",
+        "created": "2026-07-22T08:00:00Z"
       }
     },
     {
@@ -438,8 +438,8 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-22T08:00:00Z",
+        "submitted": "2026-03-17T08:00:00Z",
+        "created": "2026-03-22T08:00:00Z",
         "isHidden": true
       }
     },
@@ -534,8 +534,8 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-22T08:00:00Z",
+        "submitted": "2026-03-17T08:00:00Z",
+        "created": "2026-03-22T08:00:00Z",
         "isHidden": true
       }
     },
@@ -556,8 +556,8 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-23T08:00:00Z",
+        "submitted": "2026-03-17T08:00:00Z",
+        "created": "2026-03-23T08:00:00Z",
         "isHidden": true
       }
     },
@@ -597,8 +597,8 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "submitted": "2025-03-27T08:00:00Z",
-        "created": "2025-03-29T08:00:00Z",
+        "submitted": "2026-03-27T08:00:00Z",
+        "created": "2026-03-29T08:00:00Z",
         "isHidden": true
       }
     },
@@ -609,8 +609,8 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-24T08:00:00Z",
+        "submitted": "2026-03-17T08:00:00Z",
+        "created": "2026-03-24T08:00:00Z",
         "isHidden": true
       }
     },
@@ -774,8 +774,8 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "submitted": "2025-03-26T08:00:00Z",
-        "created": "2025-03-31T08:00:00Z",
+        "submitted": "2026-03-26T08:00:00Z",
+        "created": "2026-03-31T08:00:00Z",
         "isHidden": true
       }
     },
@@ -841,7 +841,7 @@
         "marker-symbol": "circle"
       },
       "geometry": {
-        "coordinates": [-122.046372, 37.321038],
+        "coordinates": [-122.0457432, 37.32078296],
         "type": "Point"
       },
       "type": "Feature"
@@ -862,8 +862,8 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "submitted": "2025-03-18T08:00:00Z",
-        "created": "2025-03-23T08:00:00Z",
+        "submitted": "2026-03-18T08:00:00Z",
+        "created": "2026-03-23T08:00:00Z",
         "isHidden": true
       }
     },
@@ -951,8 +951,8 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-23T08:00:00Z",
+        "submitted": "2026-03-17T08:00:00Z",
+        "created": "2026-03-23T08:00:00Z",
         "isHidden": true
       }
     },
@@ -1093,9 +1093,20 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-18T08:00:00Z",
+        "submitted": "2026-03-17T08:00:00Z",
+        "created": "2026-03-18T08:00:00Z",
         "isHidden": true
+      }
+    },
+    {
+      "id": "e32bbbb35a5032be823e0da0d9d50b78.16",
+      "properties": {
+        "name": "Roundtree Community Center",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2026-07-28T08:00:00Z",
+        "created": "2026-08-02T08:00:00Z"
       }
     },
     {
@@ -1105,8 +1116,8 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "submitter": "80PercentLean",
-        "submitted": "2025-03-17T08:00:00Z",
-        "created": "2025-03-20T08:00:00Z",
+        "submitted": "2026-03-17T08:00:00Z",
+        "created": "2026-03-20T08:00:00Z",
         "isHidden": true
       }
     },

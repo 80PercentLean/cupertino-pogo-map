@@ -1,19 +1,16 @@
-import { type Dispatch, type SetStateAction, use, useEffect } from "react";
+import { use, useEffect } from "react";
 import { toast } from "sonner";
 
 import { MapContext } from "./MapContext";
 import { useStore } from "./hooks/store";
 
-export interface Props {
-  setIsMyLocationOn: Dispatch<SetStateAction<boolean>>;
-}
-
 /**
  * This component handles the imperative code for the geolocation API.
  * It does not render any visual UI.
  */
-export default function MyLocation({ setIsMyLocationOn }: Props) {
+export default function MyLocation() {
   const { map } = use(MapContext);
+  const setIsMyLocationOn = useStore((s) => s.setIsMyLocationOn);
   const setMyLocation = useStore((s) => s.setMyLocation);
   const setMyLocationAccuracy = useStore((s) => s.setMyLocationAccuracy);
 

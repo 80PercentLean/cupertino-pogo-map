@@ -15,7 +15,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Settings } from "lucide-react";
+import { Eye, EyeClosed, Settings } from "lucide-react";
 
 import UiOverlayCard from "./UiOverlayCard";
 import UiOverlayCardIconTitle from "./UiOverlayCardIconTitle";
@@ -45,9 +45,11 @@ export default function SettingsView() {
   const invertCoords = useStore((s) => s.invertCoords);
   const isLegendOff = useStore((s) => s.isLegendOff);
   const isSimpleMarkerEnabled = useStore((s) => s.isSimpleMarkerEnabled);
+  const isUiOverlayHidden = useStore((s) => s.isUiOverlayHidden);
   const myLocationRangeType = useStore((s) => s.myLocationRangeType);
   const resetSettings = useStore((s) => s.resetSettings);
   const setDisableAnimations = useStore((s) => s.setDisableAnimations);
+  const setIsUiOverlayHidden = useStore((s) => s.setIsUiOverlayHidden);
   const setLayer = useStore((s) => s.setLayer);
   const setMyLocationRangeType = useStore((s) => s.setMyLocationRangeType);
   const setWayfarerMode = useStore((s) => s.setWayfarerMode);
@@ -76,7 +78,7 @@ export default function SettingsView() {
     >
       <FieldSet>
         <FieldGroup className="gap-3">
-          <Field orientation="horizontal">
+          <Field orientation="horizontal" className="rounded-xl border p-3">
             <FieldContent>
               <FieldLabel
                 htmlFor="disable-animations"
@@ -99,7 +101,7 @@ export default function SettingsView() {
               }}
             />
           </Field>
-          <Field orientation="horizontal">
+          <Field orientation="horizontal" className="rounded-xl border p-3">
             <FieldContent>
               <FieldLabel htmlFor="simple-markers" className="cursor-pointer">
                 Use simple markers
@@ -123,7 +125,7 @@ export default function SettingsView() {
               }}
             />
           </Field>
-          <Field orientation="horizontal">
+          <Field orientation="horizontal" className="rounded-xl border p-3">
             <FieldContent>
               <FieldLabel htmlFor="hide-legend" className="cursor-pointer">
                 Turn off legend
@@ -143,7 +145,7 @@ export default function SettingsView() {
               }}
             />
           </Field>
-          <Field>
+          <Field className="rounded-xl border p-3">
             <FieldContent>
               <FieldLabel
                 htmlFor="my-location-range-type"
@@ -176,7 +178,33 @@ export default function SettingsView() {
               </SelectContent>
             </Select>
           </Field>
-          <Field orientation="horizontal">
+          <Field className="rounded-xl border p-3">
+            <FieldContent>
+              <FieldLabel>Hide UI Overlay</FieldLabel>
+              <FieldDescription>
+                Hide the UI elements that hover over the map. This is useful for
+                taking clean screenshots with an unobstructed map view. Press H
+                to show the UI again.
+              </FieldDescription>
+            </FieldContent>
+            <Button
+              className="cursor-pointer"
+              onClick={() => setIsUiOverlayHidden(!isUiOverlayHidden)}
+            >
+              {isUiOverlayHidden ? (
+                <>
+                  <EyeClosed />
+                  Click To Show UI Overlay
+                </>
+              ) : (
+                <>
+                  <Eye />
+                  Click To Hide UI Overlay
+                </>
+              )}
+            </Button>
+          </Field>
+          <Field orientation="horizontal" className="rounded-xl border p-3">
             <FieldContent>
               <FieldLabel htmlFor="wayfarer-mode" className="cursor-pointer">
                 Enable Wayfarer Mode
@@ -225,7 +253,7 @@ export default function SettingsView() {
               Special Wayfarer settings available when Wayfarer Mode is enabled.
             </FieldDescription>
             <FieldGroup className="gap-3">
-              <Field orientation="horizontal">
+              <Field orientation="horizontal" className="rounded-xl border p-3">
                 <FieldContent>
                   <FieldLabel htmlFor="hidden-pois" className="cursor-pointer">
                     Show hidden POIs
@@ -245,7 +273,7 @@ export default function SettingsView() {
                   }}
                 />
               </Field>
-              <Field orientation="horizontal">
+              <Field orientation="horizontal" className="rounded-xl border p-3">
                 <FieldContent>
                   <FieldLabel
                     htmlFor="disabled-power-spots"
@@ -268,7 +296,7 @@ export default function SettingsView() {
                   }}
                 />
               </Field>
-              <Field orientation="horizontal">
+              <Field orientation="horizontal" className="rounded-xl border p-3">
                 <FieldContent>
                   <FieldLabel htmlFor="removed-pois" className="cursor-pointer">
                     Show removed POIs
@@ -288,7 +316,7 @@ export default function SettingsView() {
                   }}
                 />
               </Field>
-              <Field orientation="horizontal">
+              <Field orientation="horizontal" className="rounded-xl border p-3">
                 <FieldContent>
                   <FieldLabel
                     htmlFor="invert-coords"
@@ -318,6 +346,7 @@ export default function SettingsView() {
       <FieldSeparator className="my-2" />
       <Field>
         <Button
+          className="cursor-pointer"
           onClick={() => {
             localStorage.clear();
             resetSettings();

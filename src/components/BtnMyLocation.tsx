@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { use, useState } from "react";
+import { use } from "react";
 
 import { MapContext } from "./MapContext";
-import MyLocation from "./MyLocation";
 import { useStore } from "./hooks/store";
 
 /**
@@ -10,9 +9,10 @@ import { useStore } from "./hooks/store";
  */
 export default function BtnMyLocation() {
   const { map } = use(MapContext);
-  const [isMyLocationOn, setIsMyLocationOn] = useState(false);
   const disableAnimations = useStore((s) => s.disableAnimations);
+  const isMyLocationOn = useStore((s) => s.isMyLocationOn);
   const myLocation = useStore((s) => s.myLocation);
+  const setIsMyLocationOn = useStore((s) => s.setIsMyLocationOn);
 
   let radiusClassName = "absolute inset-0 rounded-full";
   let markerClassName = "rounded-full";
@@ -38,14 +38,13 @@ export default function BtnMyLocation() {
         if (map && isMyLocationOn && myLocation) {
           map.flyTo(myLocation, 18);
         } else {
-          setIsMyLocationOn(() => true);
+          setIsMyLocationOn(true);
         }
       }}
     >
       <div className="relative flex h-6 w-6 items-center justify-center">
         <div className={radiusClassName} />
         <div className={markerClassName} data-testid="btn-my-location-icon" />
-        {isMyLocationOn && <MyLocation setIsMyLocationOn={setIsMyLocationOn} />}
       </div>
     </Button>
   );

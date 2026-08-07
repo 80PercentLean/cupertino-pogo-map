@@ -19,4 +19,4 @@ jobs:
         with:
           name: playwright-linux-snapshots
           path: |
-            **/*-snapshots/**
+            **/*-snapshots/*-linux.png

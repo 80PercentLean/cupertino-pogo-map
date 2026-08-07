@@ -109,3 +109,54 @@ test("resets the search query when the clear search button is used", async ({
   await expect(searchBar).toHaveValue("");
   expect(await listItems.getByRole("button").count()).toBe(listStartCount);
 });
+
+test("doesn't hide UI overlay when H is typed into the search bar", async ({
+  page,
+}, testInfo) => {
+  const IS_MOBILE = isMobileProject(testInfo.project.name);
+
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
+
+  const listView = page.getByTestId("list-view");
+  const btnLayers = page.getByTestId("btn-layers");
+  const viewCtrl = page.getByTestId("view-ctrl-main-bar");
+  const btnMyLocation = page.getByRole("button", { name: /Show My Location/i });
+  const legend = page.getByTestId("legend");
+  const secondaryBar = page.getByTestId("secondary-bar");
+
+  if (IS_MOBILE) {
+    // Mobile UI overlay should be visible
+    await expect(secondaryBar).toBeVisible();
+    await expect(btnLayers).toBeVisible();
+    await expect(btnMyLocation).toBeVisible();
+    await expect(viewCtrl).toBeVisible();
+    await page.getByRole("button", { name: /List View/i }).click();
+  } else {
+    // UI overlay should be visible
+    await expect(listView).toBeVisible();
+    await expect(btnLayers).toBeVisible();
+    await expect(legend).toBeVisible();
+    await expect(viewCtrl).toBeVisible();
+    await expect(btnMyLocation).toBeVisible();
+  }
+
+  const searchBar = page.getByRole("textbox", {
+    name: /Search for Gyms, PokéStops/i,
+  });
+  await searchBar.fill("h");
+
+  if (IS_MOBILE) {
+    // Mobile UI overlay should still be visible
+    await expect(secondaryBar).toBeVisible();
+    await expect(btnLayers).toBeVisible();
+    await expect(btnMyLocation).toBeVisible();
+    await expect(viewCtrl).toBeVisible();
+  } else {
+    // UI overlay should still be visible
+    await expect(listView).toBeVisible();
+    await expect(btnLayers).toBeVisible();
+    await expect(legend).toBeVisible();
+    await expect(viewCtrl).toBeVisible();
+    await expect(btnMyLocation).toBeVisible();
+  }
+});

@@ -4,7 +4,7 @@ import { E2E_MAP_PATH } from "./constants";
 import { waitForMapTilesToLoad } from "./util";
 
 test.use({
-  geolocation: { latitude: 37.34353687732166, longitude: -121.97424083948138 },
+  geolocation: { latitude: 37.34394203041524, longitude: -121.97377681732178 },
   permissions: ["geolocation"],
 });
 
@@ -15,12 +15,15 @@ test("shows my location", async ({ page }) => {
   await expect(page.getByTestId("my-location")).not.toBeVisible();
 
   // Click my location button to create my location marker
-  await page.getByTestId("btn-my-location-icon").click();
+  await page.getByRole("button", { name: /Show My Location/i }).click();
 
   // Check that my location marker is visible
   await expect(page.getByTestId("my-location")).toBeVisible();
 
   await waitForMapTilesToLoad(page);
+
+  // Hide UI overlay by pressing "h"
+  await page.keyboard.press("h");
 
   // Screenshot the my location marker
   await expect(page).toHaveScreenshot({ maxDiffPixels: 100 });
@@ -35,7 +38,7 @@ test("shows my location", async ({ page }) => {
 //   await expect(page.getByTestId("my-location")).not.toBeVisible();
 
 //   // Click my location button to create my location marker
-//   await page.getByTestId("btn-my-location-icon").click();
+//   await page.getByRole("button", { name: /Show My Location/i }).click();
 
 //   // Check that my location marker is visible
 //   await expect(page.getByTestId("my-location")).toBeVisible();

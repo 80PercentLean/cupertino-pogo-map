@@ -1,6 +1,56 @@
 # Central Park POI History
 
-# 7-30-2026
+## 8-6-2026
+
+### Power Spot Enabled Pool ✅
+
+- Arusuvai Indian Restaurant (86e89c24b908416e801c9a7334be7e71.23)
+- Basketball Courts at Central Park (32f738dc2e2e400bba6f81a3aef130fd.16)
+- BP (08afb072b12247658f96906d52d18f02.23)
+- Central Park Amphitheater (2f4aa8f8327e4e6992ac3be92d2c23a5.23)
+- Central Park Field Flagpole (f12d35072e9634448a35fefb3376fb6c.16)
+- Central Park Field Scoreboard (259d746144e63df4bfb166707e78dcf7.16)
+- Central Park Rock & Wood Playground (6f2edc70552f45beb0b70990312ff054.23)
+- Challenge (8fd39662012946029a0cfb5b4e3de930.16)
+- Chess board bench (1ddc96aa9cc03bcd9d09d78af204fbf3.16)
+- Edmond D Pickett Jr. Memorial (9ab541eb79f84a27a2d363832026207b.16)
+- Ganesha Indian Cuisine Sweets & Catering (7a5f0ec5a1974b0fb59b427eb3b20b11.23)
+- Hearth Neighborhood Gathering Area (62d0c318aeb336679c0472e8184db97b.16)
+- Kiely Center Sign (c1120a1286b8393da913ac90a454959b.16)
+- Lifetime Activities - Santa Clara (b3df68e1cdb342628bbd44e9d56c8f52.23)
+- Painting sets at "The Shed" (9b6cd21767c936f19dbc5c6e068d4f6d.16)
+- Passage (808219ce031d4232aecdaf6861088c52.16)
+- Proper Hour Handyman Service (283368601cee4056ae24085707daa83b.23)
+- Reading Across Boundaries: Page (cf4d79a0983b4fae8caa4b45e654d45f.16)
+- S&B Housecleaning (ad1bb90f3acd4f76a118ae5e62226a34.23)
+- Santa Clara Campsite - Empowering (96097a315972388f8fa7875aa67492b1.16)
+- Santa Clara Campsite - Genuine (76e7bb0095d1375c8fbc9c4383c6bf94.16)
+- Santa Clara Center Park Bridge (34378a83370241018d1ee79d241dd25f.16)
+- Santa Clara Central Park Bleachers (7095e2aef1d338c293647a9e38748baf.16)
+- Santa Clara Central Park Directional Information Sign (4af53920f8ad3550873fdfc4355abeb2.16)
+- Santa Clara Central Park Library Ceiling Artwork (c4a6136297513f5b87ad3adeb7f7c763.16)
+- Santa Clara Central Park Picnic Area (38df85549710366cbcdc394bd983f186.16)
+- Santa Clara Central Park Picnic Area (a434d900f631321ea3d4996535a6b36e.16)
+- Santa Clara Tennis Center (d58b402148b340e69a42680e71656854.23)
+- Santa Clara Veterans Memorial (9a9639493d6a459994fae74b7830dd61.11)
+- Sequoia Gigantea (70c2892af5ca31e2b271c4e03c2b9746.16)
+- St Justin’s Parish Information Board (13af55b7fd443ab59f1561b68b78c614.16)
+- Starbucks (12e2cdf886ba4447b4befacaab5ced7c.23)
+- Stone Toad (73bf1a6c16ba4872866fbdd151f4c452.16)
+- Western Union (0a42a215247a43e1af173507a98fd17f.23)
+- Woodsborough Homes Association (3a5947908ca34874a8ee3327431e9c0a.23)
+
+## 8-3-2026
+
+### PokeStops Created 🆕
+
+- Plaque For Santa Clara Community Recreation Center (2010f4d67d6f36159b70af8767ffc999.16)
+
+### Power Spots Created 🆕
+
+- Outdoor Plaza at the Community Recreation Center (4b260aed8a2c3c1b8a2391f352cc1e0e.16)
+
+## 7-30-2026
 
 ### PokeStops Created 🆕
 
@@ -33,7 +83,7 @@
 - La Palma Apartments (e0230f47d8b54312b50d8863c5b6ab95.23)
 - Koala-T Day Care (f84de11fe5aa4bc7a4209a1a02912c35.23)
 
-# 7-5-2026
+## 7-5-2026
 
 ### Power Spot Enabled Pool ✅
 

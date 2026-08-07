@@ -22,7 +22,7 @@ test("toggles the legend when the legend button is tapped", async ({
   await waitForMapTilesToLoad(page);
 
   // Screenshot the mobile map with the legend open
-  await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
+  await expect(legend).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 
   await legendButton.click();
 
