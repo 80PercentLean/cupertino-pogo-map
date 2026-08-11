@@ -192,7 +192,7 @@ _From now on, the history will only show the enabled power spots instead of show
 
 ## 6-22-2026
 
-### Gym Renamed
+### Gyms Renamed
 
 - Euphrat Museum of Art ➡️ Euphrat Museum of Art at De Anza College (288a4a15a212419a8c1ba425a26d4096.12)
 
@@ -230,7 +230,7 @@ _From now on, the history will only show the enabled power spots instead of show
 - Lifetime Tennis (f0d0f13bcdf04299a8353029f0d5f3c0.23)
 - Home Of Christ IN Cupertino (fd7bd22db5a04fef8794dc783dccb711.23)
 
-### PokéStop Renamed
+### PokéStops Renamed
 
 - Community pool ➡️ Glenbrook North Community Pool (accb87acb12b30a184eba98d03dddc84.16)
 

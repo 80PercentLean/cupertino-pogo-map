@@ -1,5 +1,11 @@
 # Central Park POI History
 
+## 8-9-2026
+
+### PokéStops Renamed
+
+- West Tennis Courts at Central Park ➡️ West Tennis Courts Rules Sign at Central Park (1cdc415a64ce46f18beb536fa33741e2.16)
+
 ## 8-6-2026
 
 ### Power Spot Enabled Pool ✅
