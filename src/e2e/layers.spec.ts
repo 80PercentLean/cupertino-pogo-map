@@ -1,7 +1,11 @@
 import { expect, test } from "@playwright/test";
 
 import { E2E_MAP_PATH } from "./constants";
-import { isMobileProject, waitForMapTilesToLoad } from "./util";
+import {
+  isMobileProject,
+  turnOffAllLayers,
+  waitForMapTilesToLoad,
+} from "./util";
 
 test("opens layers overlay when layers button is used", async ({ page }) => {
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
@@ -83,6 +87,31 @@ test("toggles Gym layer when Gym button is used", async ({
   await expect(legendIcon).toBeVisible();
 });
 
+test("snapshots Gym layer", async ({ page }) => {
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
+
+  await turnOffAllLayers(page, true);
+  await page
+    .getByRole("button", {
+      name: "Gym Layer Button Icon Gyms",
+    })
+    .click();
+
+  // Expect Gyms to be visible
+  expect(await page.locator('[data-poitype="gym"]').count()).toBeGreaterThan(0);
+
+  await waitForMapTilesToLoad(page);
+
+  // Hide UI overlay by pressing "h"
+  await page.keyboard.press("h");
+
+  // Close toast so it isn't in the way
+  await page.getByRole("button", { name: "Close toast" }).click();
+
+  // Screenshot the map with the Gym layer only
+  await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
+});
+
 test("toggles PokeStop layer when PokeStop button is used", async ({
   page,
 }, testInfo) => {
@@ -124,6 +153,33 @@ test("toggles PokeStop layer when PokeStop button is used", async ({
 
   // Expect PokeStop icon to be turned back on in the legend
   await expect(legendIcon).toBeVisible();
+});
+
+test("snapshots PokeStop layer", async ({ page }) => {
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
+
+  await turnOffAllLayers(page, true);
+  await page
+    .getByRole("button", {
+      name: "PokéStop Layer Button Icon",
+    })
+    .click();
+
+  // Expect PokeStops to be visible
+  expect(
+    await page.locator('[data-poitype="pokestop"]').count(),
+  ).toBeGreaterThan(0);
+
+  await waitForMapTilesToLoad(page);
+
+  // Hide UI overlay by pressing "h"
+  await page.keyboard.press("h");
+
+  // Close toast so it isn't in the way
+  await page.getByRole("button", { name: "Close toast" }).click();
+
+  // Screenshot the map with the PokeStop layer only
+  await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 });
 
 test("toggles Power Spot layer when Power Spot button is used", async ({
@@ -169,9 +225,34 @@ test("toggles Power Spot layer when Power Spot button is used", async ({
   await expect(legendIcon).toBeVisible();
 });
 
-test("switches map type to extra info", async ({ page }, testInfo) => {
-  const IS_MOBILE = isMobileProject(testInfo.project.name);
+test("snapshots Power Spot layer", async ({ page }) => {
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
+  await turnOffAllLayers(page, true);
+  await page
+    .getByRole("button", {
+      name: "Power Spot Layer Button Icon",
+    })
+    .click();
+
+  // Expect Power Spots to be visible
+  expect(
+    await page.locator('[data-poitype="powerspot"]').count(),
+  ).toBeGreaterThan(0);
+
+  await waitForMapTilesToLoad(page);
+
+  // Hide UI overlay by pressing "h"
+  await page.keyboard.press("h");
+
+  // Close toast so it isn't in the way
+  await page.getByRole("button", { name: "Close toast" }).click();
+
+  // Screenshot the map with the Power Spot layer only
+  await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
+});
+
+test("switches map type to extra info", async ({ page }) => {
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   await page.getByRole("button", { name: /Open Layers/i }).click();
@@ -181,11 +262,7 @@ test("switches map type to extra info", async ({ page }, testInfo) => {
   const url = new URL(page.url());
   expect(url.searchParams.get("type")).toBe("extra-info");
 
-  if (IS_MOBILE) {
-    // Close the layers overlay since it blocks the map on mobile
-    await page.getByRole("button", { name: "Close layers overlay" }).click();
-  }
-
+  await turnOffAllLayers(page, false, true);
   await waitForMapTilesToLoad(page);
 
   // Hide UI overlay by pressing "h"
@@ -198,9 +275,7 @@ test("switches map type to extra info", async ({ page }, testInfo) => {
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 });
 
-test("switches map type to satellite", async ({ page }, testInfo) => {
-  const IS_MOBILE = isMobileProject(testInfo.project.name);
-
+test("switches map type to satellite", async ({ page }) => {
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   await page.getByRole("button", { name: /Open Layers/i }).click();
@@ -210,11 +285,7 @@ test("switches map type to satellite", async ({ page }, testInfo) => {
   const url = new URL(page.url());
   expect(url.searchParams.get("type")).toBe("satellite");
 
-  if (IS_MOBILE) {
-    // Close the layers overlay since it blocks the map on mobile
-    await page.getByRole("button", { name: "Close layers overlay" }).click();
-  }
-
+  await turnOffAllLayers(page, false, true);
   await waitForMapTilesToLoad(page);
 
   // Hide UI overlay by pressing "h"
@@ -243,6 +314,8 @@ test("switches map type to satellite and back to default", async ({
 
   const url = new URL(page.url());
   expect(url.searchParams.get("type")).toBe("satellite");
+
+  await turnOffAllLayers(page);
 
   const closeLayersOverlayButton = page.getByRole("button", {
     name: "Close layers overlay",
@@ -290,11 +363,7 @@ test("switches map type to satellite and back to default", async ({
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 });
 
-test("toggles L17 grid when L17 grid checkbox is used", async ({
-  page,
-}, testInfo) => {
-  const IS_MOBILE = isMobileProject(testInfo.project.name);
-
+test("toggles L17 grid when L17 grid checkbox is used", async ({ page }) => {
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const openLayersOverlayButton = page.getByRole("button", {
@@ -303,19 +372,31 @@ test("toggles L17 grid when L17 grid checkbox is used", async ({
   await openLayersOverlayButton.click();
 
   // Expect L17 grid to be hidden
-  const l17grid = page.locator(".l17-grid");
-  await expect(l17grid).not.toBeVisible();
+  const grid = page.locator(".l17-grid");
+  await expect(grid).not.toBeVisible();
 
-  const l17GridCheckbox = page.getByRole("checkbox", { name: "L17 Grid" });
-  await l17GridCheckbox.click();
+  const gridCheckbox = page.getByRole("checkbox", { name: "L17 Grid" });
+  await gridCheckbox.click();
 
   // Expect L17 grid to be turned on
-  await expect(l17grid).toBeVisible();
+  await expect(grid).toBeVisible();
 
-  if (IS_MOBILE) {
-    // Close the layers overlay since it blocks the map on mobile
-    await page.getByRole("button", { name: "Close layers overlay" }).click();
-  }
+  await gridCheckbox.click();
+
+  // Expect L17 grid to be turned back off
+  await expect(grid).not.toBeVisible();
+});
+
+test("snapshots L17 grid", async ({ page }) => {
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
+
+  const grid = page.locator(".l17-grid");
+
+  await turnOffAllLayers(page, true);
+  await page.getByRole("checkbox", { name: "L17 Grid" }).click();
+
+  // Expect L17 grid to be turned on
+  await expect(grid).toBeVisible();
 
   await waitForMapTilesToLoad(page);
 
@@ -325,28 +406,11 @@ test("toggles L17 grid when L17 grid checkbox is used", async ({
   // Close toast so it isn't in the way
   await page.getByRole("button", { name: "Close toast" }).click();
 
-  // Screenshot the L17 grid
+  // Screenshot the map with the L17 grid only
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
-
-  // Reveal UI overlay by pressing "h"
-  await page.keyboard.press("h");
-
-  if (IS_MOBILE) {
-    // Reopen the layers overlay
-    await openLayersOverlayButton.click();
-  }
-
-  await l17GridCheckbox.click();
-
-  // Expect L17 grid to be turned back off
-  await expect(l17grid).not.toBeVisible();
 });
 
-test("toggles L14 grid when L14 grid checkbox is used", async ({
-  page,
-}, testInfo) => {
-  const IS_MOBILE = isMobileProject(testInfo.project.name);
-
+test("toggles L14 grid when L14 grid checkbox is used", async ({ page }) => {
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const openLayersOverlayButton = page.getByRole("button", {
@@ -355,19 +419,31 @@ test("toggles L14 grid when L14 grid checkbox is used", async ({
   await openLayersOverlayButton.click();
 
   // Expect L14 grid to be hidden
-  const l14grid = page.locator(".l14-grid");
-  await expect(l14grid).not.toBeVisible();
+  const grid = page.locator(".l14-grid");
+  await expect(grid).not.toBeVisible();
 
-  const l14GridCheckbox = page.getByRole("checkbox", { name: "L14 Grid" });
-  await l14GridCheckbox.click();
+  const gridCheckbox = page.getByRole("checkbox", { name: "L14 Grid" });
+  await gridCheckbox.click();
 
   // Expect L14 grid to be turned on
-  await expect(l14grid).toBeVisible();
+  await expect(grid).toBeVisible();
 
-  if (IS_MOBILE) {
-    // Close the layers overlay since it blocks the map on mobile
-    await page.getByRole("button", { name: "Close layers overlay" }).click();
-  }
+  await gridCheckbox.click();
+
+  // Expect L14 grid to be turned back off
+  await expect(grid).not.toBeVisible();
+});
+
+test("snapshots L14 grid", async ({ page }) => {
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
+
+  const grid = page.locator(".l14-grid");
+
+  await turnOffAllLayers(page, true);
+  await page.getByRole("checkbox", { name: "L14 Grid" }).click();
+
+  // Expect L14 grid to be turned on
+  await expect(grid).toBeVisible();
 
   await waitForMapTilesToLoad(page);
 
@@ -377,28 +453,11 @@ test("toggles L14 grid when L14 grid checkbox is used", async ({
   // Close toast so it isn't in the way
   await page.getByRole("button", { name: "Close toast" }).click();
 
-  // Screenshot the L14 grid
+  // Screenshot the map with the L14 grid only
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
-
-  // Reveal UI overlay by pressing "h"
-  await page.keyboard.press("h");
-
-  if (IS_MOBILE) {
-    // Reopen the layers overlay
-    await openLayersOverlayButton.click();
-  }
-
-  await l14GridCheckbox.click();
-
-  // Expect L14 grid to be turned back off
-  await expect(l14grid).not.toBeVisible();
 });
 
-test("toggles L13 grid when L13 grid checkbox is used", async ({
-  page,
-}, testInfo) => {
-  const IS_MOBILE = isMobileProject(testInfo.project.name);
-
+test("toggles L13 grid when L13 grid checkbox is used", async ({ page }) => {
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const openLayersOverlayButton = page.getByRole("button", {
@@ -407,19 +466,31 @@ test("toggles L13 grid when L13 grid checkbox is used", async ({
   await openLayersOverlayButton.click();
 
   // Expect L13 grid to be hidden
-  const l13grid = page.locator(".l13-grid");
-  await expect(l13grid).not.toBeVisible();
+  const grid = page.locator(".l13-grid");
+  await expect(grid).not.toBeVisible();
 
-  const l13GridCheckbox = page.getByRole("checkbox", { name: "L13 Grid" });
-  await l13GridCheckbox.click();
+  const gridCheckbox = page.getByRole("checkbox", { name: "L13 Grid" });
+  await gridCheckbox.click();
 
   // Expect L13 grid to be turned on
-  await expect(l13grid).toBeVisible();
+  await expect(grid).toBeVisible();
 
-  if (IS_MOBILE) {
-    // Close the layers overlay since it blocks the map on mobile
-    await page.getByRole("button", { name: "Close layers overlay" }).click();
-  }
+  await gridCheckbox.click();
+
+  // Expect L13 grid to be turned back off
+  await expect(grid).not.toBeVisible();
+});
+
+test("snapshots L13 grid", async ({ page }) => {
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
+
+  const grid = page.locator(".l13-grid");
+
+  await turnOffAllLayers(page, true);
+  await page.getByRole("checkbox", { name: "L13 Grid" }).click();
+
+  // Expect L13 grid to be turned on
+  await expect(grid).toBeVisible();
 
   await waitForMapTilesToLoad(page);
 
@@ -429,34 +500,18 @@ test("toggles L13 grid when L13 grid checkbox is used", async ({
   // Close toast so it isn't in the way
   await page.getByRole("button", { name: "Close toast" }).click();
 
-  // Screenshot the L13 grid
+  // Screenshot the map with the L13 grid only
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
-
-  // Reveal UI overlay by pressing "h"
-  await page.keyboard.press("h");
-
-  if (IS_MOBILE) {
-    // Reopen the layers overlay
-    await openLayersOverlayButton.click();
-  }
-
-  await l13GridCheckbox.click();
-
-  // Expect L17 grid to be turned back off
-  await expect(l13grid).not.toBeVisible();
 });
 
-test("toggles labels when labels checkbox is used", async ({
-  page,
-}, testInfo) => {
-  const IS_MOBILE = isMobileProject(testInfo.project.name);
-
+test("toggles labels when labels checkbox is used", async ({ page }) => {
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
-  const openLayersOverlayButton = page.getByRole("button", {
-    name: /Open Layers/i,
-  });
-  await openLayersOverlayButton.click();
+  await page
+    .getByRole("button", {
+      name: /Open Layers/i,
+    })
+    .click();
 
   // Expect labels to be visible
   const labels = page.locator(".label-map");
@@ -468,10 +523,20 @@ test("toggles labels when labels checkbox is used", async ({
   // Expect labels to be turned off
   expect(await labels.count()).toBe(0);
 
-  if (IS_MOBILE) {
-    // Close the layers overlay since it blocks the map on mobile
-    await page.getByRole("button", { name: "Close layers overlay" }).click();
-  }
+  await labelsCheckbox.click();
+
+  // Expect labels to be turned back on
+  expect(await labels.count()).toBeGreaterThan(0);
+});
+
+test("snapshots labels", async ({ page }) => {
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
+
+  await turnOffAllLayers(page, true);
+  await page.getByRole("checkbox", { name: "Labels" }).click();
+
+  // Expect labels to be visible
+  expect(await page.locator(".label-map").count()).toBeGreaterThan(0);
 
   await waitForMapTilesToLoad(page);
 
@@ -481,28 +546,13 @@ test("toggles labels when labels checkbox is used", async ({
   // Close toast so it isn't in the way
   await page.getByRole("button", { name: "Close toast" }).click();
 
-  // Screenshot the map with labels off
+  // Screenshot the map with labels on
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
-
-  // Reveal UI overlay by pressing "h"
-  await page.keyboard.press("h");
-
-  if (IS_MOBILE) {
-    // Reopen the layers overlay
-    await openLayersOverlayButton.click();
-  }
-
-  await labelsCheckbox.click();
-
-  // Expect labels to be turned back on
-  expect(await labels.count()).toBeGreaterThan(0);
 });
 
 test("toggles all interaction radii when interaction radii checkbox is used", async ({
   page,
-}, testInfo) => {
-  const IS_MOBILE = isMobileProject(testInfo.project.name);
-
+}) => {
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const openLayersOverlayButton = page.getByRole("button", {
@@ -522,10 +572,41 @@ test("toggles all interaction radii when interaction radii checkbox is used", as
   // Expect interaction radii to be turned on
   expect(await interactionRadii.count()).toBeGreaterThan(0);
 
-  if (IS_MOBILE) {
-    // Close the layers overlay since it blocks the map on mobile
-    await page.getByRole("button", { name: "Close layers overlay" }).click();
-  }
+  await interactionRadiiCheckbox.click();
+
+  // Expect interaction radii to be turned back off
+  expect(await interactionRadii.count()).toBe(0);
+});
+
+test("snapshots all interaction radii", async ({ page }) => {
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
+
+  // Open layers overlay
+  await page
+    .getByRole("button", {
+      name: /Open Layers/i,
+    })
+    .click();
+
+  // Turn off unnecessary layers
+  await page.getByRole("button", { name: "📍 Meetup Spots" }).click();
+  await page.getByRole("button", { name: "🅿️ Parking" }).click();
+  await page.getByRole("button", { name: "🚻 Restrooms" }).click();
+  await page.getByRole("button", { name: "🍽️ Food & Drink" }).click();
+  await page.getByRole("button", { name: "Standard Raid Path" }).click();
+  await page.getByRole("checkbox", { name: "Labels" }).click();
+
+  // Enable interaction radii
+  await page
+    .getByRole("checkbox", {
+      name: "Interaction Radii (80m)",
+    })
+    .click();
+
+  // Expect interaction radii to be turned on
+  expect(
+    await page.locator('[data-rangetype="interaction"]').count(),
+  ).toBeGreaterThan(0);
 
   await waitForMapTilesToLoad(page);
 
@@ -537,26 +618,11 @@ test("toggles all interaction radii when interaction radii checkbox is used", as
 
   // Screenshot the map with interaction radii turned on
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
-
-  // Reveal UI overlay by pressing "h"
-  await page.keyboard.press("h");
-
-  if (IS_MOBILE) {
-    // Reopen the layers overlay
-    await openLayersOverlayButton.click();
-  }
-
-  await interactionRadiiCheckbox.click();
-
-  // Expect interaction radii to be turned back off
-  expect(await interactionRadii.count()).toBe(0);
 });
 
 test("toggles all no power spot zones when no power spot zones checkbox is used", async ({
   page,
-}, testInfo) => {
-  const IS_MOBILE = isMobileProject(testInfo.project.name);
-
+}) => {
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   const openLayersOverlayButton = page.getByRole("button", {
@@ -576,10 +642,46 @@ test("toggles all no power spot zones when no power spot zones checkbox is used"
   // Expect no power spot zones to be turned on
   expect(await noPowerSpotZones.count()).toBeGreaterThan(0);
 
-  if (IS_MOBILE) {
-    // Close the layers overlay since it blocks the map on mobile
-    await page.getByRole("button", { name: "Close layers overlay" }).click();
-  }
+  await noPowerSpotZonesCheckbox.click();
+
+  // Expect no power spot zones to be turned back off
+  expect(await noPowerSpotZones.count()).toBe(0);
+});
+
+test("snapshots all no power spot zones", async ({ page }) => {
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
+
+  // Open layers overlay
+  await page
+    .getByRole("button", {
+      name: /Open Layers/i,
+    })
+    .click();
+
+  // Turn off unnecessary layers
+  await page
+    .getByRole("button", {
+      name: "Power Spot Layer Button Icon",
+    })
+    .click();
+  await page.getByRole("button", { name: "📍 Meetup Spots" }).click();
+  await page.getByRole("button", { name: "🅿️ Parking" }).click();
+  await page.getByRole("button", { name: "🚻 Restrooms" }).click();
+  await page.getByRole("button", { name: "🍽️ Food & Drink" }).click();
+  await page.getByRole("button", { name: "Standard Raid Path" }).click();
+  await page.getByRole("checkbox", { name: "Labels" }).click();
+
+  // Enable no power spot zones
+  await page
+    .getByRole("checkbox", {
+      name: "No Power Spot Zones (22m)",
+    })
+    .click();
+
+  // Expect no power spot zones to be turned on
+  expect(
+    await page.locator('[data-rangetype="no-power-spot"]').count(),
+  ).toBeGreaterThan(0);
 
   await waitForMapTilesToLoad(page);
 
@@ -591,19 +693,6 @@ test("toggles all no power spot zones when no power spot zones checkbox is used"
 
   // Screenshot the map with no power spot zones turned on
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
-
-  // Reveal UI overlay by pressing "h"
-  await page.keyboard.press("h");
-
-  if (IS_MOBILE) {
-    // Reopen the layers overlay
-    await openLayersOverlayButton.click();
-  }
-
-  await noPowerSpotZonesCheckbox.click();
-
-  // Expect no power spot zones to be turned back off
-  expect(await noPowerSpotZones.count()).toBe(0);
 });
 
 // To clarify, "brand new load" means a completely new user is opening this for the

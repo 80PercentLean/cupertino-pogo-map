@@ -5,6 +5,7 @@ import {
   isMobileProject,
   isPixel7,
   longPressContextMenu,
+  turnOffAllLayers,
   waitForMapTilesToLoad,
 } from "./util";
 
@@ -45,7 +46,34 @@ test("creates a placed marker when the map is clicked/long-pressed", async ({
   }
 
   expect(await markers.count()).toBe(1);
+});
 
+test("creates a placed marker when the map is clicked/long-pressed with snapshots", async ({
+  page,
+}, testInfo) => {
+  const IS_MOBILE = isMobileProject(testInfo.project.name);
+
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
+
+  const markers = page.locator('[data-testid*="placed-"]');
+
+  expect(await markers.count()).toBe(0);
+
+  // Place a marker
+  if (IS_MOBILE) {
+    await longPressContextMenu(
+      page,
+      PLACED_MARKER_FIRST_MOBILE,
+      1000,
+      isPixel7(testInfo.project.name),
+    );
+  } else {
+    await page.locator("#map").click({ position: PLACED_MARKER_FIRST_DESKTOP });
+  }
+
+  expect(await markers.count()).toBe(1);
+
+  await turnOffAllLayers(page, true);
   await waitForMapTilesToLoad(page);
 
   // Hide UI overlay by pressing "h"
@@ -97,6 +125,50 @@ test("creates two placed markers when the map is used at two different locations
   }
 
   expect(await markers.count()).toBe(2);
+});
+
+test("creates two placed markers when the map is used at two different locations with snapshots", async ({
+  page,
+}, testInfo) => {
+  const IS_MOBILE = isMobileProject(testInfo.project.name);
+
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
+
+  const markers = page.locator('[data-testid*="placed-"]');
+
+  expect(await markers.count()).toBe(0);
+
+  // Place a marker
+  const map = page.locator("#map");
+  if (IS_MOBILE) {
+    await longPressContextMenu(
+      page,
+      PLACED_MARKER_FIRST_MOBILE,
+      1000,
+      isPixel7(testInfo.project.name),
+    );
+  } else {
+    await map.click({ position: PLACED_MARKER_FIRST_DESKTOP });
+  }
+
+  expect(await markers.count()).toBe(1);
+
+  // Place another marker
+  if (IS_MOBILE) {
+    await longPressContextMenu(
+      page,
+      PLACED_MARKER_SECOND_MOBILE,
+      1000,
+      isPixel7(testInfo.project.name),
+    );
+  } else {
+    await map.click({ position: PLACED_MARKER_SECOND_DESKTOP });
+  }
+
+  expect(await markers.count()).toBe(2);
+
+  await turnOffAllLayers(page, true);
+  await waitForMapTilesToLoad(page);
 
   // Hide UI overlay by pressing "h"
   await page.keyboard.press("h");

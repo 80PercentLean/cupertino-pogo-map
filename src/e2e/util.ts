@@ -91,6 +91,52 @@ export const longPressContextMenu = async (
 };
 
 /**
+ * Turn off all layers using the layers overlay.
+ * @param page Playwright page
+ * @param openLayersOverlay Opens the layers overlay at the start when true
+ * @param closeLayerOverlay Closes the layers overlay at the end when true
+ */
+export const turnOffAllLayers = async (
+  page: Page,
+  openLayersOverlay?: boolean,
+  closeLayerOverlay?: boolean,
+) => {
+  if (openLayersOverlay) {
+    await page.getByRole("button", { name: /Open Layers/i }).click();
+  }
+
+  await page
+    .getByRole("button", {
+      name: "Gym Layer Button Icon Gyms",
+    })
+    .click();
+  await page
+    .getByRole("button", {
+      name: "PokéStop Layer Button Icon",
+    })
+    .click();
+  await page
+    .getByRole("button", {
+      name: "Power Spot Layer Button Icon",
+    })
+    .click();
+  await page.getByRole("button", { name: "📍 Meetup Spots" }).click();
+  await page.getByRole("button", { name: "🅿️ Parking" }).click();
+  await page.getByRole("button", { name: "🚻 Restrooms" }).click();
+  await page.getByRole("button", { name: "🍽️ Food & Drink" }).click();
+  await page.getByRole("button", { name: "Standard Raid Path" }).click();
+  await page.getByRole("checkbox", { name: "Labels" }).click();
+
+  if (closeLayerOverlay) {
+    await page
+      .getByRole("button", {
+        name: "Close layers overlay",
+      })
+      .click();
+  }
+};
+
+/**
  * Wait for Leaflet map's tile layer to load.
  * Useful to make sure the layers have loaded before taking screenshots.
  * @param page Playwright page

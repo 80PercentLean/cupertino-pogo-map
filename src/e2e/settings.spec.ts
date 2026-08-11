@@ -87,6 +87,7 @@ test('toggles simple markers on the map when "Use simple markers" switch is used
   // Close toast so it isn't in the way
   await page.getByRole("button", { name: "Close toast" }).click();
 
+  // Screenshot normal markers
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 });
 
