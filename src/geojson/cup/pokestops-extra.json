@@ -295,6 +295,15 @@
       }
     },
     {
+      "id": "306fd7dd8a5e3263836904df5f83c6ae.16",
+      "properties": {
+        "name": "Cupertino Bike Route: De Anza College",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
       "id": "31411bad1d724028a310963abf315f46.12",
       "properties": {
         "name": "Cupertino Post Office",
@@ -335,6 +344,15 @@
       }
     },
     {
+      "id": "42deca2c90173c51ba02b5fd59e86a61.16",
+      "properties": {
+        "name": "Cupertino Bike Route: To Civic Center",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
       "id": "435eda0671dc4fb6a34e4517affb1814.16",
       "properties": {
         "name": "Home of Christ",
@@ -351,6 +369,15 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "ingress": true
+      }
+    },
+    {
+      "id": "46cdbd442bf83b888dd5006e783e2d0b.16",
+      "properties": {
+        "name": "Cupertino Bike Route",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
       }
     },
     {
@@ -547,6 +574,15 @@
         "isHidden": true,
         "source": "Wayfarer",
         "updated": "2025-09-16T08:00:00Z"
+      }
+    },
+    {
+      "id": "780e634fe7323b2fb1f1ebbaba53753b.16",
+      "properties": {
+        "name": "Cupertino Safe Bike Route Marker: De Anza College and City Hall",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
       }
     },
     {
@@ -1106,7 +1142,17 @@
         "source": "Wayfarer",
         "submitter": "80PercentLean",
         "submitted": "2026-07-28T08:00:00Z",
-        "created": "2026-08-02T08:00:00Z"
+        "created": "2026-08-02T08:00:00Z",
+        "isHidden": true
+      }
+    },
+    {
+      "id": "e3a53eef46bf3232b455d7e197960e2e.16",
+      "properties": {
+        "name": "Le Beaulieu Grill Area",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
       }
     },
     {
