@@ -282,7 +282,7 @@ describe("wayfarer mode", () => {
     expect(localStorage.getItem("isHidden")).toBe("true");
   });
 
-  test("enables disabled & impossible power spots when switch is clicked", async () => {
+  test("enables disabled power spots when switch is clicked", async () => {
     const user = userEvent.setup();
 
     render(<TestComponent />);
@@ -290,7 +290,7 @@ describe("wayfarer mode", () => {
     await expectWayfarerModeToTurnedOn(user);
 
     const switchEle = screen.getByRole("switch", {
-      name: /Show disabled & impossible power spots/i,
+      name: /Show disabled power spots/i,
     });
     expect(switchEle).toBeInTheDocument();
     expect(switchEle).not.toBeChecked();
@@ -304,6 +304,30 @@ describe("wayfarer mode", () => {
 
     expect(useStore.getState().modifiers.isDisabled).toBe(true);
     expect(localStorage.getItem("isDisabled")).toBe("true");
+  });
+
+  test("enables impossible power spots when switch is clicked", async () => {
+    const user = userEvent.setup();
+
+    render(<TestComponent />);
+
+    await expectWayfarerModeToTurnedOn(user);
+
+    const switchEle = screen.getByRole("switch", {
+      name: /Show impossible power spots/i,
+    });
+    expect(switchEle).toBeInTheDocument();
+    expect(switchEle).not.toBeChecked();
+
+    expect(useStore.getState().modifiers.isImpossible).toBe(false);
+    expect(localStorage.getItem("isImpossible")).toBe(null);
+
+    await user.click(switchEle);
+
+    expect(switchEle).toBeChecked();
+
+    expect(useStore.getState().modifiers.isImpossible).toBe(true);
+    expect(localStorage.getItem("isImpossible")).toBe("true");
   });
 
   test("enables removed POIs when switch is clicked", async () => {
