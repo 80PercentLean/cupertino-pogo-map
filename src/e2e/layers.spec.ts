@@ -2,6 +2,7 @@ import { expect, test } from "@playwright/test";
 
 import { E2E_MAP_PATH } from "./constants";
 import {
+  enableHiddenPois,
   isMobileProject,
   turnOffAllLayers,
   waitForMapTilesToLoad,
@@ -87,7 +88,7 @@ test("toggles Gym layer when Gym button is used", async ({
   await expect(legendIcon).toBeVisible();
 });
 
-test("snapshots Gym layer", async ({ page }) => {
+test("snapshots complete Gym layer", async ({ page }) => {
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   await turnOffAllLayers(page, true);
@@ -99,6 +100,8 @@ test("snapshots Gym layer", async ({ page }) => {
 
   // Expect Gyms to be visible
   expect(await page.locator('[data-poitype="gym"]').count()).toBeGreaterThan(0);
+
+  await enableHiddenPois(page, true);
 
   await waitForMapTilesToLoad(page);
 
@@ -155,7 +158,7 @@ test("toggles PokeStop layer when PokeStop button is used", async ({
   await expect(legendIcon).toBeVisible();
 });
 
-test("snapshots PokeStop layer", async ({ page }) => {
+test("snapshots complete PokeStop layer", async ({ page }) => {
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   await turnOffAllLayers(page, true);
@@ -169,6 +172,8 @@ test("snapshots PokeStop layer", async ({ page }) => {
   expect(
     await page.locator('[data-poitype="pokestop"]').count(),
   ).toBeGreaterThan(0);
+
+  await enableHiddenPois(page, true);
 
   await waitForMapTilesToLoad(page);
 
@@ -225,7 +230,7 @@ test("toggles Power Spot layer when Power Spot button is used", async ({
   await expect(legendIcon).toBeVisible();
 });
 
-test("snapshots Power Spot layer", async ({ page }) => {
+test("snapshots complete Enabled Power Spot layer", async ({ page }) => {
   await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
 
   await turnOffAllLayers(page, true);
@@ -242,6 +247,8 @@ test("snapshots Power Spot layer", async ({ page }) => {
 
   await waitForMapTilesToLoad(page);
 
+  await enableHiddenPois(page, true);
+
   // Hide UI overlay by pressing "h"
   await page.keyboard.press("h");
 
@@ -249,6 +256,105 @@ test("snapshots Power Spot layer", async ({ page }) => {
   await page.getByRole("button", { name: "Close toast" }).click();
 
   // Screenshot the map with the Power Spot layer only
+  await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
+});
+
+test("snapshots complete Enabled & Disabled Power Spot layer", async ({
+  page,
+}) => {
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
+
+  await turnOffAllLayers(page, true);
+  await page
+    .getByRole("button", {
+      name: "Power Spot Layer Button Icon",
+    })
+    .click();
+
+  // Open settings and enable hidden POIs & Disabled Power Spots
+  await enableHiddenPois(page);
+  await page.getByRole("switch", { name: "Show disabled power spots" }).click();
+  await page.getByRole("button", { name: "Close settings view" }).click();
+
+  // Expect Power Spots to be visible
+  expect(
+    await page.locator('[data-poitype="powerspot"]').count(),
+  ).toBeGreaterThan(0);
+
+  await waitForMapTilesToLoad(page);
+
+  // Hide UI overlay by pressing "h"
+  await page.keyboard.press("h");
+
+  // Close toast so it isn't in the way
+  await page.getByRole("button", { name: "Close toast" }).click();
+
+  // Screenshot the map with the Power Spot layer only
+  await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
+});
+
+test("snapshots complete Power Spot layer with blocking POIs", async ({
+  page,
+}) => {
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
+
+  // Turn on Gym & PokeStop layers and enable No Power Spot Zones
+  await turnOffAllLayers(page, true);
+  await page
+    .getByRole("button", {
+      name: "Gym Layer Button Icon Gyms",
+    })
+    .click();
+  await page
+    .getByRole("button", {
+      name: "PokéStop Layer Button Icon",
+    })
+    .click();
+  await page
+    .getByRole("checkbox", {
+      name: "No Power Spot Zones (22m)",
+    })
+    .click();
+  await page
+    .getByRole("button", {
+      name: "Power Spot Layer Button Icon",
+    })
+    .click();
+  await page
+    .getByRole("button", {
+      name: "Close layers overlay",
+    })
+    .click();
+
+  // Open settings
+  await enableHiddenPois(page);
+  await page.getByRole("switch", { name: "Show disabled power spots" }).click();
+  await page
+    .getByRole("switch", { name: "Show impossible power spots" })
+    .click();
+  await page.getByRole("button", { name: "Close settings view" }).click();
+
+  // Expect Gyms, PokeStops, Power Spots, and No Power Spot Zones to be visible
+  expect(await page.locator('[data-poitype="gym"]').count()).toBeGreaterThan(0);
+  expect(
+    await page.locator('[data-poitype="pokestop"]').count(),
+  ).toBeGreaterThan(0);
+  expect(
+    await page.locator('[data-poitype="powerspot"]').count(),
+  ).toBeGreaterThan(0);
+  expect(
+    await page.locator('[data-rangetype="no-power-spot"]').count(),
+  ).toBeGreaterThan(0);
+
+  await waitForMapTilesToLoad(page);
+
+  // Hide UI overlay by pressing "h"
+  await page.keyboard.press("h");
+
+  // Close toast so it isn't in the way
+  await page.getByRole("button", { name: "Close toast" }).click();
+
+  // Screenshot the map with Gyms, PokeStops, Power Spots, and No Power Spot Zones
   await expect(page).toHaveScreenshot({ maxDiffPixelRatio: 0.0001 });
 });
 

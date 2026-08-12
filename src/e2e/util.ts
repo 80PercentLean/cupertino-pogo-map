@@ -1,6 +1,24 @@
 import type { Page } from "@playwright/test";
 
 /**
+ * Turn on hidden POIs in the settings.
+ * @param page Playwright page
+ * @param closeSettingsView Closes the settings view at the end when true
+ */
+export const enableHiddenPois = async (
+  page: Page,
+  closeSettingsView?: boolean,
+) => {
+  await page.getByRole("button", { name: /Settings/i }).click();
+  await page.getByRole("switch", { name: "Enable Wayfarer Mode" }).click();
+  await page.getByRole("switch", { name: "Show hidden POIs" }).click();
+
+  if (closeSettingsView) {
+    await page.getByRole("button", { name: "Close settings view" }).click();
+  }
+};
+
+/**
  * Checks if Playwright is emulating a mobile device.
  * @param projectName Name of the Playwright project
  * @returns True if Playwright is emulating a mobile device, false if not
