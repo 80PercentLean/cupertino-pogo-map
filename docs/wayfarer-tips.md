@@ -37,4 +37,6 @@ You can also combine these keywords together. For example, typing `gym pokestop 
 
 ## Work With GeoJSON On Your Own
 
-[TODO:](./geojson.md)
+We've built our map data using [GeoJSON](https://geojson.org), an open standard format for geographic data. Because GeoJSON is widely supported, you can use our map data with many other applications and tools outside of this project.
+
+For more information, read our ["Working With GeoJSON" document](./geojson.md).
