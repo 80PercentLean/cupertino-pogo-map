@@ -98,7 +98,14 @@ export default function InfoView() {
             </p>
             <p className="mt-[1em] text-pretty">
               Most people are aware of <b>Active Power Spots</b> which are the
-              Power Spots that can spawn Pokémon for that given day.
+              Power Spots that appear in the in-game map and can spawn Pokémon
+              for that given day.
+            </p>
+            <p className="mt-[1em] text-pretty">
+              Most people are also aware of <b>Inactive Power Spots</b> which
+              are the Power Spots that appear in the in-game map but don't
+              currently have a Pokémon spawned on it. Usually these appear the
+              day before a Power Spot becomes active.
             </p>
             <p className="mt-[1em] text-pretty">
               <b>Enabled Power Spots</b> are different in that they are Power
@@ -111,8 +118,9 @@ export default function InfoView() {
               current monthly spawn pool. That means for the given monthly time
               period, they can never become Active Power Spots. When the monthly
               rotation occurs, they do have a chance in becoming an Enabled
-              Power Spot which in turn will allow them to possibly spawn Pokémon
-              during that month.
+              Power Spot which in turn will allow them to possibly appear in the
+              in-game map as an Active Power Spot during that month. These
+              should not be confused with Inactive Power Spots.
             </p>
             <p className="mt-[1em] text-pretty">
               <b>Impossible Power Spots</b> are Power Spots that can never

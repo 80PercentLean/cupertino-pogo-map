@@ -47,9 +47,9 @@ Some people have assumed this tool uses bots or scanners, but from the beginning
 
 The project is also fully open source, so anyone can review how it works and verify that no bots or scanners are used to collect map data.
 
-Rather than accessing the Wayfarer API, we manually maintain the map using information available through the Wayfarer map, Pokémon GO map, and in-game map. We combine these sources to create a more complete view of the local play area.
+Rather than accessing the Wayfarer API, we manually maintain the map using information available through the Wayfarer map, Pokémon GO map, and in-game map. We combine these sources to create a complete view of the local play area.
 
-The trade-off is that the process is manual and is prone to human error, so some information may occasionally be outdated or incorrect. We aim to update the map every couple of weeks, but if you spot something that needs to be corrected, please let us know on [Discord](https://www.wildgoosepogo.com/discord) or [GitHub Discussions](https://github.com/80PercentLean/cupertino-pogo-map/discussions). We'll do our best to address the issue and publish an update sooner.
+The trade-off is that the process is manual and susceptible to human error, so some information may occasionally be outdated or incorrect. We aim to update the map every couple of weeks, but if you spot something that needs to be corrected, please let us know on [Discord](https://www.wildgoosepogo.com/discord) or [GitHub Discussions](https://github.com/80PercentLean/cupertino-pogo-map/discussions). We'll do our best to address the issue and publish an update sooner.
 
 ## Other Resources
 
