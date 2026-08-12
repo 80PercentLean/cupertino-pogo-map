@@ -139,14 +139,16 @@ export default function InfoView() {
           <AccordionContent>
             <p className="text-pretty">
               Unfortunately, no. To do that, we'd need a real-time connection to
-              the Wayfarer API. We intentionally avoid that because it would
-              make this app non-compliant with Niantic's Terms of Service.
+              the Wayfarer API. We intentionally avoid that because supporting
+              that would make this app non-compliant with Niantic's Terms of
+              Service.
             </p>
             <p className="mt-[1em] text-pretty">
               Instead, all of the data used by this map is manually curated.
-              While we strive to keep it as accurate and up to date as
-              thein-game map, updates must be manually published before they
-              appear here.
+              While we strive to keep it as accurate and up to date as often as
+              possible, updates are manually published which means that
+              sometimes this map won't always reflect the current state of the
+              in-game map.
             </p>
             <p className="mt-[1em] text-pretty">
               We typically update the data every couple of weeks, but if you
