@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 import { E2E_MAP_PATH } from "./constants";
-import { waitForMapTilesToLoad } from "./util";
+import { turnOffAllLayers, waitForMapTilesToLoad } from "./util";
 
 test.use({
   geolocation: { latitude: 37.34394203041524, longitude: -121.97377681732178 },
@@ -19,7 +19,21 @@ test("shows my location", async ({ page }) => {
 
   // Check that my location marker is visible
   await expect(page.getByTestId("my-location")).toBeVisible();
+});
 
+test("shows my location with snapshot", async ({ page }) => {
+  await page.goto(E2E_MAP_PATH, { waitUntil: "networkidle" });
+
+  // Check that my location marker doesn't exist yet
+  await expect(page.getByTestId("my-location")).not.toBeVisible();
+
+  // Click my location button to create my location marker
+  await page.getByRole("button", { name: /Show My Location/i }).click();
+
+  // Check that my location marker is visible
+  await expect(page.getByTestId("my-location")).toBeVisible();
+
+  await turnOffAllLayers(page, true);
   await waitForMapTilesToLoad(page);
 
   // Hide UI overlay by pressing "h"

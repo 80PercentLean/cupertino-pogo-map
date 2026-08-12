@@ -17,7 +17,6 @@ exports[`matches <BtnMyLocation> default snapshot 1`] = `
       />
       <div
         class="rounded-full h-3 w-3 bg-gray-400"
-        data-testid="btn-my-location-icon"
       />
     </div>
   </button>

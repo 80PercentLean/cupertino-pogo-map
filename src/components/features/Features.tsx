@@ -53,6 +53,8 @@ export default function Features({
   const showDisabledTemp = useStore((s) => s.isDisabledTemp);
   const showHidden = useStore((s) => s.modifiers.isHidden);
   const showHiddenTemp = useStore((s) => s.isHiddenTemp);
+  const showImpossible = useStore((s) => s.modifiers.isImpossible);
+  const showImpossibleTemp = useStore((s) => s.isImpossibleTemp);
   const showRemoved = useStore((s) => s.modifiers.removed);
   const wayfarerMode = useStore((s) => s.wayfarerMode);
 
@@ -76,7 +78,8 @@ export default function Features({
     },
   } of features) {
     if (
-      (!showDisabled && !showDisabledTemp && (isDisabled || isImpossible)) ||
+      (!showDisabled && !showDisabledTemp && isDisabled) ||
+      (!showImpossible && !showImpossibleTemp && isImpossible) ||
       (!showHidden && !showHiddenTemp && isHidden) ||
       (!showRemoved && removed)
     ) {

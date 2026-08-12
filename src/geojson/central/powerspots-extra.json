@@ -58,6 +58,15 @@
       }
     },
     {
+      "id": "48e46d917215476d9276efec055aa598.23",
+      "properties": {
+        "name": "Juega y Aprende Daycare",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
       "id": "4b260aed8a2c3c1b8a2391f352cc1e0e.16",
       "properties": {
         "name": "Outdoor Plaza at the Community Recreation Center",
@@ -191,6 +200,15 @@
         "type": "Point"
       },
       "type": "Feature"
+    },
+    {
+      "id": "cec97c14772b43d28688740da6ed7777.23",
+      "properties": {
+        "name": "Screenmobile",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
     },
     {
       "id": "e0230f47d8b54312b50d8863c5b6ab95.23",

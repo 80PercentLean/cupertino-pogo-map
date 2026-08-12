@@ -1,6 +1,24 @@
 import type { Page } from "@playwright/test";
 
 /**
+ * Turn on hidden POIs in the settings.
+ * @param page Playwright page
+ * @param closeSettingsView Closes the settings view at the end when true
+ */
+export const enableHiddenPois = async (
+  page: Page,
+  closeSettingsView?: boolean,
+) => {
+  await page.getByRole("button", { name: /Settings/i }).click();
+  await page.getByRole("switch", { name: "Enable Wayfarer Mode" }).click();
+  await page.getByRole("switch", { name: "Show hidden POIs" }).click();
+
+  if (closeSettingsView) {
+    await page.getByRole("button", { name: "Close settings view" }).click();
+  }
+};
+
+/**
  * Checks if Playwright is emulating a mobile device.
  * @param projectName Name of the Playwright project
  * @returns True if Playwright is emulating a mobile device, false if not
@@ -88,6 +106,52 @@ export const longPressContextMenu = async (
     },
     { position, duration, manualContextMenu },
   );
+};
+
+/**
+ * Turn off all layers using the layers overlay.
+ * @param page Playwright page
+ * @param openLayersOverlay Opens the layers overlay at the start when true
+ * @param closeLayerOverlay Closes the layers overlay at the end when true
+ */
+export const turnOffAllLayers = async (
+  page: Page,
+  openLayersOverlay?: boolean,
+  closeLayerOverlay?: boolean,
+) => {
+  if (openLayersOverlay) {
+    await page.getByRole("button", { name: /Open Layers/i }).click();
+  }
+
+  await page
+    .getByRole("button", {
+      name: "Gym Layer Button Icon Gyms",
+    })
+    .click();
+  await page
+    .getByRole("button", {
+      name: "PokéStop Layer Button Icon",
+    })
+    .click();
+  await page
+    .getByRole("button", {
+      name: "Power Spot Layer Button Icon",
+    })
+    .click();
+  await page.getByRole("button", { name: "📍 Meetup Spots" }).click();
+  await page.getByRole("button", { name: "🅿️ Parking" }).click();
+  await page.getByRole("button", { name: "🚻 Restrooms" }).click();
+  await page.getByRole("button", { name: "🍽️ Food & Drink" }).click();
+  await page.getByRole("button", { name: "Standard Raid Path" }).click();
+  await page.getByRole("checkbox", { name: "Labels" }).click();
+
+  if (closeLayerOverlay) {
+    await page
+      .getByRole("button", {
+        name: "Close layers overlay",
+      })
+      .click();
+  }
 };
 
 /**

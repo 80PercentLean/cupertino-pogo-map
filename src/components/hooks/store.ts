@@ -16,6 +16,11 @@ import { type LatLngTuple } from "leaflet";
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 
+// TODO: This is only to migrate people with a legacy setting. Remove after a month or so.
+if (localStorage.getItem("isDisabled") === "true") {
+  localStorage.setItem("isImpossible", "true");
+}
+
 /** Global variable that allows placed markers to have a simple unique ID. */
 let placedMarkerCount = 0;
 
@@ -51,6 +56,7 @@ export interface ToggleModifierResult {
   modifiers: StoreState["modifiers"];
   isDisabledTemp?: StoreState["isDisabledTemp"];
   isHiddenTemp?: StoreState["isHiddenTemp"];
+  isImpossibleTemp?: StoreState["isImpossibleTemp"];
 }
 
 export interface StoreState {
@@ -92,6 +98,13 @@ export interface StoreState {
    * already have hidden POIs enabled in their settings.
    */
   isHiddenTemp: boolean;
+
+  /**
+   * Controls if impossible power spots are shown temporarily for the session.
+   * Used for the case when impossible power spots are shared as the user may not
+   * already have impossible power spots enabled in their settings.
+   */
+  isImpossibleTemp: boolean;
 
   /** Open the layers overlay when true. */
   isLayersOverlayOpen: boolean;
@@ -158,8 +171,11 @@ export interface StoreState {
     /** Determines if disabled power spots are visible or not. */
     isDisabled: boolean;
 
-    /** Determines if hiddne POIs are visible or not. */
+    /** Determines if hidden POIs are visible or not. */
     isHidden: boolean;
+
+    /** Determines if impossible power spots are visible or not. */
+    isImpossible: boolean;
 
     /** Determines if removed POIs are visible or not. */
     removed: boolean;
@@ -291,6 +307,7 @@ export const DEFAULT_SETTINGS = {
   invertCoords: false,
   isDisabled: false,
   isHidden: false,
+  isImpossible: false,
   isLegendOff: false,
   isSimpleMarkerEnabled: false,
   myLocationRangeType: "poi" as const,
@@ -383,6 +400,8 @@ export const useStore = create<StoreState>()(
 
         isHiddenTemp: false,
 
+        isImpossibleTemp: false,
+
         // Layers overlay starts off closed
         isLayersOverlayOpen: false,
 
@@ -432,15 +451,17 @@ export const useStore = create<StoreState>()(
         mapStart: IS_CENTRAL ? CENTER_CENTRAL : CENTER_CUP,
 
         modifiers: {
-          // Hide disabled power spots
           isDisabled:
             localStorage.getItem("isDisabled") === "true" ||
             DEFAULT_SETTINGS.isDisabled,
 
-          // Hide hidden POIs
           isHidden:
             localStorage.getItem("isHidden") === "true" ||
             DEFAULT_SETTINGS.isHidden,
+
+          isImpossible:
+            localStorage.getItem("isImpossible") === "true" ||
+            DEFAULT_SETTINGS.isImpossible,
 
           removed:
             localStorage.getItem("removed") === "true" ||
@@ -479,6 +500,7 @@ export const useStore = create<StoreState>()(
               isUiOverlayHidden: false,
               modifiers: {
                 isDisabled: DEFAULT_SETTINGS.isDisabled,
+                isImpossible: DEFAULT_SETTINGS.isImpossible,
                 isHidden: DEFAULT_SETTINGS.isHidden,
                 removed: DEFAULT_SETTINGS.removed,
               },
@@ -692,6 +714,8 @@ export const useStore = create<StoreState>()(
                 result.isDisabledTemp = false;
               } else if (m === "isHidden") {
                 result.isHiddenTemp = false;
+              } else if (m === "isImpossible") {
+                result.isImpossibleTemp = false;
               }
 
               return result;
@@ -845,6 +869,10 @@ export const useStore = create<StoreState>()(
 
           if (properties.isHidden) {
             initStoreState.isHiddenTemp = true;
+          }
+
+          if (properties.isImpossible) {
+            initStoreState.isImpossibleTemp = true;
           }
         } else {
           initStoreState.layerPowerspot[String(id)] = { isVisible: true };

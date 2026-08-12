@@ -48,14 +48,14 @@ export default function InfoView() {
               features, we'd love your involvement!
             </p>
             <p className="mt-[1em]">
-              We have{" "}
+              Please read our{" "}
               <LinkExt
-                href="https://github.com/80PercentLean/cupertino-pogo-map/discussions"
+                href="https://github.com/80PercentLean/cupertino-pogo-map/blob/main/docs/contributing.md"
                 openNewWindow
               >
-                GitHub Discussions
+                "Contributing" document
               </LinkExt>{" "}
-              open if you have any questions and feature suggestions.
+              for more information.
             </p>
           </AccordionContent>
         </AccordionItem>
@@ -98,7 +98,14 @@ export default function InfoView() {
             </p>
             <p className="mt-[1em] text-pretty">
               Most people are aware of <b>Active Power Spots</b> which are the
-              Power Spots that can spawn Pokémon for that given day.
+              Power Spots that appear in the in-game map and can spawn Pokémon
+              for that given day.
+            </p>
+            <p className="mt-[1em] text-pretty">
+              Most people are also aware of <b>Inactive Power Spots</b> which
+              are the Power Spots that appear in the in-game map but don't
+              currently have a Pokémon spawned on it. Usually these appear the
+              day before a Power Spot becomes active.
             </p>
             <p className="mt-[1em] text-pretty">
               <b>Enabled Power Spots</b> are different in that they are Power
@@ -111,8 +118,9 @@ export default function InfoView() {
               current monthly spawn pool. That means for the given monthly time
               period, they can never become Active Power Spots. When the monthly
               rotation occurs, they do have a chance in becoming an Enabled
-              Power Spot which in turn will allow them to possibly spawn Pokémon
-              during that month.
+              Power Spot which in turn will allow them to possibly appear in the
+              in-game map as an Active Power Spot during that month. These
+              should not be confused with Inactive Power Spots.
             </p>
             <p className="mt-[1em] text-pretty">
               <b>Impossible Power Spots</b> are Power Spots that can never
@@ -136,22 +144,26 @@ export default function InfoView() {
             </p>
             <p className="mt-[1em] text-pretty">
               Instead, all of the data used by this map is manually curated.
-              While we strive to keep it as accurate and up to date as the
-              Wayfarer map, updates must be manually published before they
+              While we strive to keep it as accurate and up to date as
+              thein-game map, updates must be manually published before they
               appear here.
             </p>
             <p className="mt-[1em] text-pretty">
-              We typically refresh the data every couple of weeks, but if you
-              notice something that's out of date, just let us know on{" "}
+              We typically update the data every couple of weeks, but if you
+              notice something that's out of date or incorrect, just let us know
+              on{" "}
               <LinkExt href={DISCORD_PATH} openNewWindow>
                 Discord
               </LinkExt>{" "}
-              and we're happy to publish an update sooner.
-            </p>
-            <p className="mt-[1em] text-pretty">
-              Also note that because this is done manually, sometimes mistakes
-              may slip through the cracks. If you see something wrong on the
-              map, please let us know immediately!
+              or{" "}
+              <LinkExt
+                href="https://github.com/80PercentLean/cupertino-pogo-map/discussions"
+                openNewWindow
+              >
+                GitHub Discussions
+              </LinkExt>{" "}
+              and we'll be happy to try and address it and publish an update
+              sooner.
             </p>
           </AccordionContent>
         </AccordionItem>
