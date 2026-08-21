@@ -156,7 +156,8 @@
         "name": "Kingdom Hall of Jehovah's Witnesses Sign",
         "type": "gym",
         "source": "Wayfarer",
-        "ingress": true
+        "ingress": true,
+        "converted": "2025-10-03T08:00:00Z"
       }
     },
     {

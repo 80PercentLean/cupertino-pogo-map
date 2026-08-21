@@ -1,5 +1,11 @@
 # Memorial Park/De Anza College POI History
 
+## 8-20-2026
+
+### PokeStops Created 🆕
+
+- Glenbrook South Community Pool (9294f1ec7335380399e4aadf5f57d80d.16)
+
 ## 8-6-2026
 
 ### PokeStops Created 🆕
@@ -230,7 +236,7 @@ _From now on, the history will only show the enabled power spots instead of show
 - Lifetime Tennis (f0d0f13bcdf04299a8353029f0d5f3c0.23)
 - Home Of Christ IN Cupertino (fd7bd22db5a04fef8794dc783dccb711.23)
 
-### PokéStops Renamed
+### PokeStops Renamed
 
 - Community pool ➡️ Glenbrook North Community Pool (accb87acb12b30a184eba98d03dddc84.16)
 

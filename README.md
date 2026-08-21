@@ -1,6 +1,6 @@
 # Cupertino PoGO Map
 
-**Cupertino PoGO Map** is an interactive map of the [Pokémon GO Community Campsites](https://pokemongo.com/find-your-community#community-campsites) for the [Cupertino PoGO](https://tinyurl.com/CupertinoPogo) and [Wild Goose](https://campfire.onelink.me/eBr8?af_dp=campfire://&af_force_deeplink=true&deep_link_sub1=cj1jbHVicyZjPWE4M2FmMzljLTRiNTgtNGM2NC1iZjViLTYwMTM4Yzc2MzNjNyZpPXRydWU=) groups.
+**Cupertino PoGO Map** is an interactive map of the [Pokémon GO Community Campsites](https://pokemongo.com/find-your-community#community-campsites) for the [Cupertino PoGO](https://www.cupertinopogo.com) and [Wild Goose](https://www.wildgoosepogo.com) groups.
 
 Some notable features are:
 
@@ -8,7 +8,7 @@ Some notable features are:
 - Support for use on both desktop and mobile devices.
 - Get navigation instructions through Google Maps and shareable links for specific locations.
 - Place your own markers and share their locations to send people specific coordinates and directions.
-- Visualize [Google S2 cells](https://s2geometry.io) which can provide valuable insights for [Niantic Wayfinders](https://wayfarer.nianticlabs.com).
+- Visualize [Google S2 cells](https://s2geometry.io) which can provide valuable insights for [Niantic Wayfinders](./docs/wayfarer-tips.md).
 - Completely open source!
 
 ## Quick Start
@@ -29,7 +29,7 @@ npm run dev
 
 Finally, load the web app at:
 
-[`http://localhost:5173/cupertino-pogo-map`](http://localhost:5173/cupertino-pogo-map)
+[`http://localhost:5173`](http://localhost:5173)
 
 ## Loading Wild Goose's Campsite
 
@@ -41,7 +41,7 @@ Rename `.env.example` to `.env` and set `VITE_IS_CENTRAL=true`.
 
 The meetups view of this app communicates with the REST API ran by the [Goose Discord Bot](https://github.com/80PercentLean/goose-discord-bot) which acts as a proxy to the Discord API.
 
-## Where does the map data come from? How do updates work?
+## Where does the map data come from and how do updates work?
 
 Some people have assumed this tool uses bots or scanners, but from the beginning we've designed it to comply with Niantic's Terms of Service.
 
@@ -49,19 +49,19 @@ The project is also fully open source, so anyone can review how it works and ver
 
 Rather than accessing the Wayfarer API, we manually maintain the map using information available through the Wayfarer map, Pokémon GO map, and in-game map. We combine these sources to create a complete view of the local play area.
 
-The trade-off is that the process is manual and susceptible to human error, so some information may occasionally be outdated or incorrect. We aim to update the map every couple of weeks, but if you spot something that needs to be corrected, please let us know on [Discord](https://www.wildgoosepogo.com/discord) or [GitHub Discussions](https://github.com/80PercentLean/cupertino-pogo-map/discussions). We'll do our best to address the issue and publish an update sooner.
+The trade-off is that the process is manual and susceptible to human error, so some information may occasionally be outdated or incorrect. We aim to update the map every couple of weeks, but if you spot something that needs to be corrected, please let us know on [Discord](https://www.cupertinopogo.com/discord) or [GitHub Discussions](https://github.com/80PercentLean/cupertino-pogo-map/discussions). We'll do our best to address the issue and publish an update sooner.
 
 ## Other Resources
 
 Here is more documentation that may be helpful for you:
 
+- [Motivation](./docs/motivation.md)
 - [Use With Niantic Wayfarer: Tips For Wayfinders](./docs/wayfarer-tips.md)
-- [Contributing](./docs/contributing.md)
 - [Memorial Park/De Anza College POI History](./docs/history-mpda.md)
 - [Central Park POI History](./docs/history-central.md)
+- [Contributing](./docs/contributing.md)
 - [Working With Tests](./docs/testing.md)
 - [Working With GeoJSON](./docs/geojson.md)
-- [Motivation](./docs/motivation.md)
 
 ## Technology Overview
 

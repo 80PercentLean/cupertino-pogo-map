@@ -182,7 +182,7 @@ export default function Landing() {
           </a>
         )}
         <a
-          href="https://pokemongo.com"
+          href="https://pokemongolive.com/refer?code=8MC6XM6G6&source=InvitePage"
           rel="noopener noreferrer"
           target="_blank"
           className="flex"
@@ -201,8 +201,8 @@ export default function Landing() {
                 Download & Play Pokémon GO
               </CardTitle>
               <CardDescription className="text-pretty text-gray-600">
-                New to the game? Visit the official website to download the game
-                and start your Pokémon adventure today!
+                New to the game? Create an account through this referral link
+                and get a special welcome reward, bonus items, and more!
               </CardDescription>
             </CardHeader>
           </Card>

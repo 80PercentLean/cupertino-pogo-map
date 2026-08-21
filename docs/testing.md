@@ -37,11 +37,11 @@ Here are the [package.json](../package.json) scripts that involve Playwright:
 - `test:e2e:dev`: Run Playwright in [UI mode](https://playwright.dev/docs/test-ui-mode)
 - `test:e2e:report`: Open the last run [Playwright test report](https://playwright.dev/docs/test-reporters)
 
-### Reducing Flakiness Of Tests
+### End-To-End Testing Mode
 
-When running end-to-end tests, you should enable `VITE_E2E` in your `.env` file. This runs the app in E2E testing mode which makes it run in a more consistent way to reduce the chance of the E2E tests to fail.
+Playwright has been configured to enable the `VITE_E2E` environment variable which runs the app in E2E testing mode which reduces the chance of E2E tests incorrectly failing.
 
-For example, many of our Playwright tests are [visual comparisons](https://playwright.dev/docs/test-snapshots) which involve taking and diffing screenshots. Animations like the ants on the raid path can cause them to fail, so when the app is in E2E testing mode, it will automatically disable animations in the settings.
+For example, many of our Playwright tests use [visual comparisons](https://playwright.dev/docs/test-snapshots) which involve taking and diffing screenshots. Animations like the ants on the raid path can cause them to fail, so when the app is in E2E testing mode, it will disable animations in the settings by default.
 
 ## Fixtures
 

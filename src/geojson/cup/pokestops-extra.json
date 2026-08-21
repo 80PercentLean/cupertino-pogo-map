@@ -730,6 +730,17 @@
       }
     },
     {
+      "id": "9294f1ec7335380399e4aadf5f57d80d.16",
+      "properties": {
+        "name": "Glenbrook South Community Pool",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2026-08-10T08:00:00Z",
+        "created": "2026-08-14T08:00:00Z"
+      }
+    },
+    {
       "id": "9324f41b49b83e64b91c7456334945ae.16",
       "properties": {
         "name": "Memorial Park Athletic Field & Event Lawn",

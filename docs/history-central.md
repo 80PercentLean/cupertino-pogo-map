@@ -1,8 +1,39 @@
 # Central Park POI History
 
+## 8-20-2026
+
+## PokeStops Upgraded To Gym 🆕
+
+- Santa Clara Library Statue (200a432d91be4f0db989c206d5ee63d9.12)
+
+### PokeStops Created 🆕
+
+- Tennis Court Rules (0df7306a736d3ae2aa92e5c9c18f927b.16)
+
+## Power Spots Upgraded To PokeStop 🆕
+
+- Sequoia Gigantea (70c2892af5ca31e2b271c4e03c2b9746.16)
+
+### Power Spots Created 🆕
+
+- Tennis Court 10 at Central Park (cf797d64d3e5392eb79bbc9384a3465f.16)
+
+### Power Spots Unblocked 🆕
+
+- Central Park Pond (0df134f5a6e839a9a8c1b27789a19a33.16)
+- Central Park Pond Bio-Filtration (a7cd870b513d34008716e2f9f057fbc8.16)
+
+### PokeStops Removed 🗑️
+
+- Central Park Vertical Fountain (93f4307ec8a448f2961bf48ec8400212.16)
+
+### Gyms Removed 🗑️
+
+= Central Park Water Fountain (22e350b507083b4083112079287ba119.16)
+
 ## 8-9-2026
 
-### PokéStops Renamed
+### PokeStops Renamed
 
 - West Tennis Courts at Central Park ➡️ West Tennis Courts Rules Sign at Central Park (1cdc415a64ce46f18beb536fa33741e2.16)
 
