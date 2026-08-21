@@ -211,6 +211,17 @@
       }
     },
     {
+      "id": "cf797d64d3e5392eb79bbc9384a3465f.16",
+      "properties": {
+        "name": "Tennis Court 10 at Central Park",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2026-08-21T08:00:00Z",
+        "created": "2026-08-26T08:00:00Z"
+      }
+    },
+    {
       "id": "e0230f47d8b54312b50d8863c5b6ab95.23",
       "properties": {
         "name": "La Palma Apartments",

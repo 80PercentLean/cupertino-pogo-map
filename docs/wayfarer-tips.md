@@ -52,7 +52,7 @@ The following screenshot shows a placed marker with a popup open. You can click 
 
 _We gotta flex the 13 PokéStops and 3 Gyms that are all spinnable at our [Campsite's meetup spot at De Anza College](https://www.cupertinopogo.com/map?id=hinson-meetup)!_
 
-You can also place markers at precise locations by entering exact latitude and longitude coordinates using the Placed Marker Tool, which is available when Wayfarer Mode is enabled.
+You can also place markers at precise locations by entering exact latitude and longitude coordinates using the **Placed Marker Tool** which can be found in tools and is only accessible when Wayfarer Mode is enabled.
 
 ![Placed Marker Tool](./images/placed-marker-tool.png)
 

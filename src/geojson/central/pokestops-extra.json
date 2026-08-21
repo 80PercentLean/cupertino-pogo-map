@@ -1,6 +1,17 @@
 {
   "features": [
     {
+      "id": "0df7306a736d3ae2aa92e5c9c18f927b.16",
+      "properties": {
+        "name": "Tennis Court Rules",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2026-07-26T08:00:00Z",
+        "created": "2026-08-12T08:00:00Z"
+      }
+    },
+    {
       "id": "13318978d04034eba37844834edbee16.16",
       "properties": {
         "name": "Tennis Court 5 at Santa Clara Tennis Center",
@@ -150,6 +161,15 @@
       }
     },
     {
+      "id": "70c2892af5ca31e2b271c4e03c2b9746.16",
+      "properties": {
+        "name": "Sequoia Gigantea",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "converted": "2026-08-17T08:00:00Z"
+      }
+    },
+    {
       "id": "75283acb14eb3d3cb61ec3549deaa99f.16",
       "properties": {
         "name": "Orange Square",
@@ -194,6 +214,27 @@
         "source": "Wayfarer",
         "isHidden": true
       }
+    },
+    {
+      "id": "93f4307ec8a448f2961bf48ec8400212.16",
+      "properties": {
+        "checked": "2026-08-11T08:00:00Z",
+        "name": "Central Park Vertical Fountain",
+        "type": "pokestop",
+        "removed": "2026-08-17T08:00:00Z",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fca67",
+        "photo": "93f4307ec8a448f2961bf48ec8400212.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-121.975067, 37.341442],
+        "type": "Point"
+      },
+      "type": "Feature"
     },
     {
       "id": "9ed6a7336951328fa9e8fb322283df64.16",
