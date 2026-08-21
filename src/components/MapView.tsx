@@ -1,4 +1,5 @@
 // import { type LatLngBoundsExpression } from "leaflet";
+import { GET_IS_CENTRAL } from "@/constants";
 import { MapContainer, TileLayer } from "react-leaflet";
 import { useSearchParams } from "react-router";
 
@@ -117,7 +118,7 @@ export default function MapView() {
       {isLayerPokestopOn && <PokeStops />}
       {isLayerGymOn && <Gyms />}
       {isLayerParkingOn && <Parking />}
-      {isStdRaidPathOn && <StdRaidPath />}
+      {!GET_IS_CENTRAL() && isStdRaidPathOn && <StdRaidPath />}
       {isLayerMeetupSpotOn && <MeetupSpots />}
       <Fooddrink />
       {searchParams.get("l17") === "on" && <L17Grid />}
