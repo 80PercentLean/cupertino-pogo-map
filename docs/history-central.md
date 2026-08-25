@@ -1,5 +1,11 @@
 # Central Park POI History
 
+## 8-25-2026
+
+### PokeStops Created 🆕
+
+- Table Tennis Area at Santa Clara Tennis Center (d50a6bb931893d5980687e2a473617da.16)
+
 ## 8-20-2026
 
 ## PokeStops Upgraded To Gym 🆕

@@ -331,6 +331,17 @@
       }
     },
     {
+      "id": "d50a6bb931893d5980687e2a473617da.16",
+      "properties": {
+        "name": "Table Tennis Area at Santa Clara Tennis Center",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2026-07-21T08:00:00Z",
+        "created": "2026-08-20T08:00:00Z"
+      }
+    },
+    {
       "id": "de6056e2dc1f4ee18f1370dacd5bedc3.16",
       "properties": {
         "name": "Woodsborough Play Structure South",
