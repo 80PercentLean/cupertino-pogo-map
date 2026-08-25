@@ -1,5 +1,11 @@
 # Memorial Park/De Anza College POI History
 
+## 8-22-2026
+
+### PokeStops Renamed
+
+- Community Ambassador Location ➡️ Cupertino Campsite - Passionate (49d4538eb0023964a587a66a08a56424.16)
+
 ## 8-20-2026
 
 ### PokeStops Created 🆕
