@@ -41,6 +41,7 @@ jobs:
         env:
           VITE_API: ${{ vars.VITE_API }}
           VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
+          VITE_CARTO_API_KEY: ${{ secrets.VITE_CARTO_API_KEY }}
           VITE_IS_CENTRAL: ${{ vars.VITE_IS_CENTRAL }}
           VITE_ROOT_PATH: ${{ vars.VITE_ROOT_PATH }}
       - name: Setup Pages

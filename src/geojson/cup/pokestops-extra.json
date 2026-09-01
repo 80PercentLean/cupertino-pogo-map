@@ -730,6 +730,28 @@
       }
     },
     {
+      "id": "911cac13009631deaa6de402722f08ef.16",
+      "properties": {
+        "name": "Orange Square",
+        "type": "pokestop",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fb5af",
+        "photo": "911cac13009631deaa6de402722f08ef.16.jpg",
+        "submitter": "80PercentLean",
+        "submitted": "2025-06-16T08:00:00Z",
+        "created": "2025-06-21T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-122.0295, 37.323436],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
       "id": "9294f1ec7335380399e4aadf5f57d80d.16",
       "properties": {
         "name": "Glenbrook South Community Pool",

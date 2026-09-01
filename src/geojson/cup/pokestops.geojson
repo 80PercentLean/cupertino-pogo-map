@@ -1843,6 +1843,28 @@
       "type": "Feature"
     },
     {
+      "id": "911cac13009631deaa6de402722f08ef.16",
+      "properties": {
+        "name": "Orange Square",
+        "type": "pokestop",
+        "marker-color": "#00fcff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fb5af",
+        "photo": "911cac13009631deaa6de402722f08ef.16.jpg",
+        "submitter": "80PercentLean",
+        "submitted": "2025-06-16T08:00:00Z",
+        "created": "2025-06-21T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-122.0295, 37.323436],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
       "id": "924eeb2bebe03d1da70d3fe84a9e1a46.16",
       "properties": {
         "checked": "2026-08-25T08:00:00Z",

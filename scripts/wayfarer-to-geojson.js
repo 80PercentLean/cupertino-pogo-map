@@ -79,7 +79,8 @@ const mergeFeaturesWithExtraData = (extraDataInput, features) => {
         f.properties.removed ||
         (f.properties.type === "pokestop" &&
           f.properties.name === "Community Ambassador Location") ||
-        f.properties.subtype === "sponsored"
+        f.properties.subtype === "sponsored" ||
+        f.properties.name === "Orange Square"
       ) {
         features.push(f);
       }
