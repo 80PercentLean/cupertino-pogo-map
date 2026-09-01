@@ -35,7 +35,7 @@
 
 ### Gyms Removed 🗑️
 
-= Central Park Water Fountain (22e350b507083b4083112079287ba119.16)
+- Central Park Water Fountain (22e350b507083b4083112079287ba119.16)
 
 ## 8-9-2026
 
