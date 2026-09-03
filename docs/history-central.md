@@ -1,5 +1,19 @@
 # Central Park POI History
 
+## 9-2-2026
+
+### Gyms Moved 🚚
+
+- Santa Clara Campsite - Thoughtful (e9503dce17a63a3e9f3c15995d02a62c.16)
+  - [-121.973932, 37.342835] ➡️ [-121.975353, 37.342252]
+- Santa Clara Campsite - Passionate (ecb862cd79fb335e88b300de03701788.16)
+  - [-121.976292, 37.339858] ➡️ [-121.976595, 37.340212]
+
+### PokeStops Moved 🚚
+
+- Santa Clara Campsite - Camaraderie (c5ff02ec4c9138a98905f8f3e6214e32.16)
+  - [-121.976657, 37.339551] ➡️ [-121.976937, 37.340012]
+
 ## 8-25-2026
 
 ### PokeStops Created 🆕

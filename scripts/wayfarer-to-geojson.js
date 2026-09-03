@@ -80,7 +80,7 @@ const mergeFeaturesWithExtraData = (extraDataInput, features) => {
         (f.properties.type === "pokestop" &&
           f.properties.name === "Community Ambassador Location") ||
         f.properties.subtype === "sponsored" ||
-        f.properties.name === "Orange Square"
+        f.id === "911cac13009631deaa6de402722f08ef.16" // Orange Square Cupertino PokeStop
       ) {
         features.push(f);
       }
