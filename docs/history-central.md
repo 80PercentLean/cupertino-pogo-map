@@ -1,5 +1,11 @@
 # Central Park POI History
 
+## 9-3-2026
+
+### Power Spots Created 🆕
+
+- David M Wright Memorial Bench (e48c4a4d479a314bbb9790ace47909ed.16)
+
 ## 9-2-2026
 
 ### Gyms Moved 🚚
