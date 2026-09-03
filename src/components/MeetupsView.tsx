@@ -26,6 +26,9 @@ interface ApiErrorRes {
 interface DiscordEvent {
   id: string;
   description: string;
+  entity_metadata?: {
+    location?: string;
+  };
   image: string;
   name: string;
   scheduled_start_time: string;
@@ -123,7 +126,14 @@ export default function MeetupsView() {
     content = <p>{`An error occurred: ${error.message}`}</p>;
   } else {
     const meetups = data.data.map(
-      ({ id, description, image, name, scheduled_start_time }) => {
+      ({
+        id,
+        description,
+        entity_metadata,
+        image,
+        name,
+        scheduled_start_time,
+      }) => {
         const d = new Date(scheduled_start_time);
         const meetupStartTxt = new Intl.DateTimeFormat("en-US", {
           timeZone: "America/Los_Angeles",
@@ -132,6 +142,13 @@ export default function MeetupsView() {
         }).format(d);
 
         const meetupLink = extractCampfireLink(description);
+
+        const location = entity_metadata?.location ? (
+          <>
+            {entity_metadata.location}
+            <br />
+          </>
+        ) : undefined;
 
         return (
           <Card key={id} className="relative mx-auto w-full pt-0">
@@ -152,7 +169,10 @@ export default function MeetupsView() {
             </div>
             <CardHeader>
               <CardTitle>{name}</CardTitle>
-              <CardDescription>{meetupStartTxt}</CardDescription>
+              <CardDescription>
+                {location}
+                {meetupStartTxt}
+              </CardDescription>
             </CardHeader>
             <CardFooter>
               {meetupLink && (
