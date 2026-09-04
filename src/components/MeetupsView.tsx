@@ -26,8 +26,12 @@ interface ApiErrorRes {
 interface DiscordEvent {
   id: string;
   description: string;
+  entity_metadata?: {
+    location?: string;
+  };
   image: string;
   name: string;
+  scheduled_end_time: string;
   scheduled_start_time: string;
 }
 
@@ -50,13 +54,25 @@ const HOURS_72_MS = 72 * 60 * 60 * 1000;
 
 /**
  * Check if a datetime will occur within 72 hours.
- * @param date Datetime
+ * @param date Datetime representing start time
  * @returns True if the datetime will occur within 72 hours, false otherwise
  */
 const isWithin72Hours = (date: Date): boolean => {
   const diff = date.getTime() - Date.now();
 
   return diff >= 0 && diff <= HOURS_72_MS;
+};
+
+/**
+ * Check if it is currently within a start and end time.
+ * @param startTime Datetime representing start time
+ * @param endTime Datetime representing end time
+ * @returns True if it is currently within the start and end time, false otherwise
+ */
+const isHappeningNow = (startTime: Date, endTime: Date) => {
+  const now = new Date();
+
+  return now >= startTime && now <= endTime;
 };
 
 const getEventOptions = () => {
@@ -123,7 +139,15 @@ export default function MeetupsView() {
     content = <p>{`An error occurred: ${error.message}`}</p>;
   } else {
     const meetups = data.data.map(
-      ({ id, description, image, name, scheduled_start_time }) => {
+      ({
+        id,
+        description,
+        entity_metadata,
+        image,
+        name,
+        scheduled_end_time,
+        scheduled_start_time,
+      }) => {
         const d = new Date(scheduled_start_time);
         const meetupStartTxt = new Intl.DateTimeFormat("en-US", {
           timeZone: "America/Los_Angeles",
@@ -133,6 +157,36 @@ export default function MeetupsView() {
 
         const meetupLink = extractCampfireLink(description);
 
+        const location = entity_metadata?.location ? (
+          <>
+            {entity_metadata.location}
+            <br />
+          </>
+        ) : undefined;
+
+        let timingLabel;
+        if (
+          isHappeningNow(
+            new Date(scheduled_start_time),
+            new Date(scheduled_end_time),
+          )
+        ) {
+          timingLabel = (
+            <Badge className="absolute bottom-6 left-6 bg-green-950 text-green-300 uppercase">
+              Happening Now
+            </Badge>
+          );
+        } else if (isWithin72Hours(d)) {
+          timingLabel = (
+            <Badge
+              variant="destructive"
+              className="absolute bottom-6 left-6 uppercase"
+            >
+              Starting Soon
+            </Badge>
+          );
+        }
+
         return (
           <Card key={id} className="relative mx-auto w-full pt-0">
             <div className="relative">
@@ -141,18 +195,14 @@ export default function MeetupsView() {
                 alt="Event cover"
                 className="aspect-video w-full rounded-t-xl object-cover"
               />
-              {isWithin72Hours(d) && (
-                <Badge
-                  variant="destructive"
-                  className="absolute bottom-6 left-6 uppercase"
-                >
-                  Starting Soon
-                </Badge>
-              )}
+              {timingLabel}
             </div>
             <CardHeader>
               <CardTitle>{name}</CardTitle>
-              <CardDescription>{meetupStartTxt}</CardDescription>
+              <CardDescription>
+                {location}
+                {meetupStartTxt}
+              </CardDescription>
             </CardHeader>
             <CardFooter>
               {meetupLink && (
