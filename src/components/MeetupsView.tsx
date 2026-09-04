@@ -31,6 +31,7 @@ interface DiscordEvent {
   };
   image: string;
   name: string;
+  scheduled_end_time: string;
   scheduled_start_time: string;
 }
 
@@ -53,13 +54,25 @@ const HOURS_72_MS = 72 * 60 * 60 * 1000;
 
 /**
  * Check if a datetime will occur within 72 hours.
- * @param date Datetime
+ * @param date Datetime representing start time
  * @returns True if the datetime will occur within 72 hours, false otherwise
  */
 const isWithin72Hours = (date: Date): boolean => {
   const diff = date.getTime() - Date.now();
 
   return diff >= 0 && diff <= HOURS_72_MS;
+};
+
+/**
+ * Check if it is currently within a start and end time.
+ * @param startTime Datetime representing start time
+ * @param endTime Datetime representing end time
+ * @returns True if it is currently within the start and end time, false otherwise
+ */
+const isHappeningNow = (startTime: Date, endTime: Date) => {
+  const now = new Date();
+
+  return now >= startTime && now <= endTime;
 };
 
 const getEventOptions = () => {
@@ -132,6 +145,7 @@ export default function MeetupsView() {
         entity_metadata,
         image,
         name,
+        scheduled_end_time,
         scheduled_start_time,
       }) => {
         const d = new Date(scheduled_start_time);
@@ -150,6 +164,29 @@ export default function MeetupsView() {
           </>
         ) : undefined;
 
+        let timingLabel;
+        if (
+          isHappeningNow(
+            new Date(scheduled_start_time),
+            new Date(scheduled_end_time),
+          )
+        ) {
+          timingLabel = (
+            <Badge className="absolute bottom-6 left-6 bg-green-50 text-green-700 uppercase dark:bg-green-950 dark:text-green-300">
+              Happening Now
+            </Badge>
+          );
+        } else if (isWithin72Hours(d)) {
+          timingLabel = (
+            <Badge
+              variant="destructive"
+              className="absolute bottom-6 left-6 uppercase"
+            >
+              Starting Soon
+            </Badge>
+          );
+        }
+
         return (
           <Card key={id} className="relative mx-auto w-full pt-0">
             <div className="relative">
@@ -158,14 +195,7 @@ export default function MeetupsView() {
                 alt="Event cover"
                 className="aspect-video w-full rounded-t-xl object-cover"
               />
-              {isWithin72Hours(d) && (
-                <Badge
-                  variant="destructive"
-                  className="absolute bottom-6 left-6 uppercase"
-                >
-                  Starting Soon
-                </Badge>
-              )}
+              {timingLabel}
             </div>
             <CardHeader>
               <CardTitle>{name}</CardTitle>
