@@ -172,7 +172,7 @@ export default function MeetupsView() {
           )
         ) {
           timingLabel = (
-            <Badge className="absolute bottom-6 left-6 bg-green-50 text-green-700 uppercase dark:bg-green-950 dark:text-green-300">
+            <Badge className="absolute bottom-6 left-6 bg-green-950 text-green-300 uppercase">
               Happening Now
             </Badge>
           );
