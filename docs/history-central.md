@@ -1,8 +1,65 @@
 # Central Park POI History
 
-## 9-3-2026
+## 9-4-2026
+
+### Power Spots Moved 🚚
+
+- Hearth Neighborhood Gathering Area (62d0c318aeb336679c0472e8184db97b.16)
+  - [-121.978013, 37.341305] ➡️ [-121.978013, 37.341305]
+
+### PokeStops Moved 🚚
+
+- Hearth Statue (979b11ee0fbb30a8be114453499b96ca.16)
+  - [-121.978249, 37.341073] ➡️ [-121.978812, 37.341757]
+
+### Power Spots Converted To PokeStops 🆕
+
+- Hearth Neighborhood Gathering Area (62d0c318aeb336679c0472e8184db97b.16)
 
 ### Power Spots Created 🆕
+
+- Pool at Alderwood Apartments (e8da132a3dec3accab80906950dc0f7f.16)
+- Loopkicks Mural (fc6fd6f5029939c9ae3e9ee75688fe53.16) {TODO: Might be PokeStop}
+
+### Power Spot Enabled Pool ✅
+
+- 1000 Kiely (5a3e235007d140878c37100946f15771.23)
+- ABC Tax and Accounting (df580e9ca0084db9917da18ea950d18b.23)
+- Arusuvai Indian Restaurant (86e89c24b908416e801c9a7334be7e71.23)
+- Basketball Courts at Central Park (32f738dc2e2e400bba6f81a3aef130fd.16)
+- Central Park Amphitheater (2f4aa8f8327e4e6992ac3be92d2c23a5.23)
+- Central Park Field Flagpole (f12d35072e9634448a35fefb3376fb6c.16)
+- Central Park Field Scoreboard (259d746144e63df4bfb166707e78dcf7.16)
+- Central Park Playground (463bb8108a8c466e8298f56d0ad9c43f.23)
+- Central Park Pond (0df134f5a6e839a9a8c1b27789a19a33.16)
+- City of Santa Clara Flag Poles (add438b86c814031bd874f6ae9b38a46.16)
+- Edmond D Pickett Jr. Memorial (9ab541eb79f84a27a2d363832026207b.16)
+- Ganesha Indian Cuisine Sweets & Catering (7a5f0ec5a1974b0fb59b427eb3b20b11.23)
+- Kiely Center Sign (c1120a1286b8393da913ac90a454959b.16)
+- Lifetime Activities - Santa Clara (b3df68e1cdb342628bbd44e9d56c8f52.23)
+- Painting sets at "The Shed" (9b6cd21767c936f19dbc5c6e068d4f6d.16)
+- Proper Hour Handyman Service (283368601cee4056ae24085707daa83b.23)
+- Santa Clara Campsite - Empowering (96097a315972388f8fa7875aa67492b1.16)
+- Santa Clara Campsite - Genuine (76e7bb0095d1375c8fbc9c4383c6bf94.16)
+- Santa Clara Center Park Bridge (34378a83370241018d1ee79d241dd25f.16)
+- Santa Clara Central Park Bleachers (7095e2aef1d338c293647a9e38748baf.16)
+- Santa Clara Central Park Directional Information Sign (4af53920f8ad3550873fdfc4355abeb2.16)
+- Santa Clara Central Park Library Ceiling Artwork (c4a6136297513f5b87ad3adeb7f7c763.16)
+- Santa Clara Central Park Outdoor Gym (d2b8b4698dda35fea35b255d0936c6dd.16)
+- Santa Clara Central Park Picnic Area (38df85549710366cbcdc394bd983f186.16)
+- Santa Clara Central Park Picnic Area (a434d900f631321ea3d4996535a6b36e.16)
+- Santa Clara Tennis Center (d58b402148b340e69a42680e71656854.23)
+- St Justin’s Parish Information Board (13af55b7fd443ab59f1561b68b78c614.16)
+- Starbucks (12e2cdf886ba4447b4befacaab5ced7c.23)
+- Stone Toad (73bf1a6c16ba4872866fbdd151f4c452.16)
+- Tennis Court 10 at Central Park (cf797d64d3e5392eb79bbc9384a3465f.16)
+- Western Union (0a42a215247a43e1af173507a98fd17f.23)
+- Wooden Amphitheater (93d65ab675354e7ba0c268b5c780a570.16)
+- Woodsborough Map (cf78b6b11d6f380ca1f7cda63e8c2cd0.16)
+
+## 9-3-2026
+
+### PokeStops Created 🆕
 
 - David M Wright Memorial Bench (e48c4a4d479a314bbb9790ace47909ed.16)
 
@@ -28,7 +85,7 @@
 
 ## 8-20-2026
 
-## PokeStops Upgraded To Gym 🆕
+### PokeStops Upgraded To Gym 🆕
 
 - Santa Clara Library Statue (200a432d91be4f0db989c206d5ee63d9.12)
 
@@ -36,7 +93,7 @@
 
 - Tennis Court Rules (0df7306a736d3ae2aa92e5c9c18f927b.16)
 
-## Power Spots Upgraded To PokeStop 🆕
+### Power Spots Upgraded To PokeStop 🆕
 
 - Sequoia Gigantea (70c2892af5ca31e2b271c4e03c2b9746.16)
 
