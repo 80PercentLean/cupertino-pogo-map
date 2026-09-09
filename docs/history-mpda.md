@@ -1,5 +1,64 @@
 # Memorial Park/De Anza College POI History
 
+## 9-8-2026
+
+### PokeStops Created 🆕
+
+- Bubb Patio (17707abe883439978a36309e2fd7aa01.16)
+- Welcome to Cupertino Sign - West (4a138979b423307eaf1134e8336e87b2.16)
+- Roundtree Community Pool (a625ba76a3073270845163148c49dc06.16)
+
+### Power Spot Enabled Pool ✅
+
+- Abundant Life Assembly Of God (b07c979aee9a419b84141dfcb17e9dd2.23)
+- Aidens Gazebo at Memorial Park (83abb8e46af44228a9b285ddbc18fc68.16)
+- Amazing Vijay - Magician (cf952a982a40492581e2a96e91dd52fd.23)
+- American Builders Construction Group Cupertino (b7d3b822863045c697d2ce502c0ad7ad.23)
+- Bicycle Rack (29a0dba42c2d4cac8def7f6cf3751afb.16)
+- Bleachers at Memorial Park (307b4313a9f93e70a83c0b7f03fb3e93.16)
+- Church of Jesus Christ of Latter Day Saints (c77335e81ae042c4945572f0afbad5a7.23)
+- Cupertino Campsite - Ambitious (175d1af2e58a331f8abb6ce07ff50cf1.16)
+- Cupertino Campsite - Dedicated (6f59eb65897a323d91f2e73aea4e5bff.16)
+- Cupertino Campsite - Selfless (65e0fa0d18a4366ca7cdc49f8f954531.16)
+- Cupertino Campsite - Social (3a3f7ff956e43a5fb0538ca1b27afa13.16)
+- Cupertino Historical Society (a973a46573844e84bfe3f06280c06603.12)
+- Cupertino Senior Center (b48fbca59ffb46c89329b05dcc43498d.23)
+- De Anza College Pool (420ff8ff17bb46fa87aa7fb04ab24122.23)
+- De Anza College Stadium & Track (05855a9f0064410c8795031ee5a50f9a.23)
+- De Anza Instrument Music Building (5ac385a466373981bc0c0a14d30762ef.16)
+- DeAnza College Carving (ad5bd7b034df4bd683a7e484b9494944.16)
+- East Cottage (bc9c6d92a7ab493e83f338d7a12a0458.16)
+- Faria CDC (8a120852051145a8b146d8b67e2ff2cc.23)
+- Genji Sushi (9b7e64790ff4472ab6acc815cfe09b6d.23)
+- Glenbrook Main Fountain (20fcc9a406f54509836994e74315f1ec.16)
+- Golden misery (b5678756c7273e839e79f4619d3f5844.16)
+- Henna Bash (902a64f8f1894d8c9f3960920c9f607e.23)
+- Home Of Christ IN Cupertino (fd7bd22db5a04fef8794dc783dccb711.23)
+- Leaning Tower of DeAnza (89a9f12ca4a64c1ea910487437ff5660.16)
+- Lifetime Activities - Cupertino (536c41655fde47d8badf3b42a544cd26.23)
+- Lifetime Tennis Bulletin Board (0bd8617af5043ab7ad638c73aff5915d.16)
+- Made by TessS Embroidery (e038eb1f18bb418a96f5583f29421b78.23)
+- McClellan Terrace Apartments (b535f4f52bca4c2580005a4a094d253c.23)
+- Memorial Park (baaf219aafc744bdaed3bd74aeec80d8.23)
+- Memorial Park BBQ Spot B (0d65c50b28de3aafae85ad96e12cf811.16)
+- Memorial Park Picnic Area Sign (ad00c2d425553236b3e3dfb3b5c35367.16)
+- Memorial Park Water Fountain (4f3aea5e10b24d9fa25d0cfc29aae42d.16)
+- MLC Fountain B (6bc7dd2ac69541b1b5a8e801fadab86a.16)
+- Nina Piano Lessons (7111a6ff48a94bed86b53d5db95eb105.23)
+- Northeast Bulletin Board (0fc1bd1fcabe30a4add34d6f4aadecad.16)
+- NW Entrance to Memorial Park (49dd51f3fbd03847bd1bf7eb59d37638.16)
+- Panda Express (d4bb990592aa4bdcad990c5e49e45c07.23)
+- Quad Mosaic - West (a51a102d011040e4967ef044b63e66d8.16)
+- Shelf of Skulls (560f9f27a1444b8c8346d158317ecad0.16)
+- Shell (f8892be3cd144981ba72a8a2d742f11e.23)
+- Smoke-Free Memorial Park (ab73728e90553414907c188d0df79dde.16)
+- The Commons Entrance Sign (2e41444e74343603bf7303d73dcde267.16)
+- Toyokawa Stone Lantern (31f847990f104b1bb6ac8027ec45ba4c.11)
+- Turtle Sculpture (e6caf1f03e3b438d9efab4e86ceac208.11)
+- Two as One (47c77e0e74b44eaca46574a503484946.12)
+- Western Union (fc40564d2e274a87af8074f6a1ebf9e9.23)
+- Winrows Corporation (a54eaeaf58b84ee7b1d339fa4941394f.23)
+
 ## 8-22-2026
 
 ### PokeStops Renamed

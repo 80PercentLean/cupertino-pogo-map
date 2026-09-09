@@ -2,21 +2,21 @@
 
 ## 9-4-2026
 
-## Power Spots Moved 🚚
+### Power Spots Moved 🚚
 
 - Hearth Neighborhood Gathering Area (62d0c318aeb336679c0472e8184db97b.16)
   - [-121.978013, 37.341305] ➡️ [-121.978013, 37.341305]
 
-## PokeStops Moved 🚚
+### PokeStops Moved 🚚
 
 - Hearth Statue (979b11ee0fbb30a8be114453499b96ca.16)
   - [-121.978249, 37.341073] ➡️ [-121.978812, 37.341757]
 
-## Power Spots Converted To PokeStops 🆕
+### Power Spots Converted To PokeStops 🆕
 
 - Hearth Neighborhood Gathering Area (62d0c318aeb336679c0472e8184db97b.16)
 
-## Power Spots Created 🆕
+### Power Spots Created 🆕
 
 - Pool at Alderwood Apartments (e8da132a3dec3accab80906950dc0f7f.16)
 - Loopkicks Mural (fc6fd6f5029939c9ae3e9ee75688fe53.16) {TODO: Might be PokeStop}
@@ -85,7 +85,7 @@
 
 ## 8-20-2026
 
-## PokeStops Upgraded To Gym 🆕
+### PokeStops Upgraded To Gym 🆕
 
 - Santa Clara Library Statue (200a432d91be4f0db989c206d5ee63d9.12)
 
@@ -93,7 +93,7 @@
 
 - Tennis Court Rules (0df7306a736d3ae2aa92e5c9c18f927b.16)
 
-## Power Spots Upgraded To PokeStop 🆕
+### Power Spots Upgraded To PokeStop 🆕
 
 - Sequoia Gigantea (70c2892af5ca31e2b271c4e03c2b9746.16)
 
