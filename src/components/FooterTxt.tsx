@@ -10,7 +10,7 @@ export default function FooterTxt() {
         GAMEFREAK.
       </p>
       <p className="text-pretty">
-        All images and names owned and trademarked by Nintendo, Niantic, The
+        All images and names owned and trademarked by Nintendo, Scopely, The
         Pokémon Company, and GAMEFREAK are property of their respective owners.
       </p>
     </>

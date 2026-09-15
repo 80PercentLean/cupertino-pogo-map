@@ -1,6 +1,6 @@
-# Use With Niantic Wayfarer: Tips For Wayfinders
+# Use With Wayfarer: Tips For Wayfinders
 
-This project provides many useful features specifically for Wayfinders which is the term used for users of [Niantic Wayfarer](https://wayfarer.nianticlabs.com).
+This project provides many useful features specifically for Wayfinders which is the term used for users of [Wayfarer](https://wayfarer.scopely.com).
 
 ## Visualizing S2 Cells
 

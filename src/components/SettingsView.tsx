@@ -212,7 +212,7 @@ export default function SettingsView() {
               </FieldLabel>
               <FieldDescription className="text-pretty">
                 This mode enables special features useful for planning &
-                submitting Wayspots for Niantic Wayfarer.
+                submitting Wayspots for Wayfarer.
               </FieldDescription>
             </FieldContent>
             <Switch

@@ -1,8 +1,8 @@
 # Motivation
 
-Originally, the main purpose for this project was to act as a tool to give insight and direction for [Niantic Wayfarer](https://wayfarer.nianticlabs.com) Wayspot submissions for our community with the intention of creating new points of interest in [Pokémon GO](https://pokemongo.com) like Gyms and PokéStops.
+Originally, the main purpose for this project was to act as a tool to give insight and direction for [Wayfarer](https://wayfarer.scopely.com) Wayspot submissions for our community with the intention of creating new points of interest in [Pokémon GO](https://pokemongo.com) like Gyms and PokéStops.
 
-The catalyst was when [Ingress split from Niantic Wayfarer](https://community.wayfarer.nianticlabs.com/t/ingress-last-sync-announcement/93862). Prior to this, we would use [Ingress Intel](https://intel.ingress.com) as it was the best way to visualize Wayspots on a map. When layered with the [Ingress Intel Total Conversion (IITC)](https://iitc.app) tool, we could visualize [Google S2 cells](https://s2geometry.io) which would further help to identify areas of our play space that needed nominations the most.
+The catalyst was when [Ingress split from Wayfarer](https://community.wayfarer.nianticlabs.com/t/ingress-last-sync-announcement/93862). Prior to this, we would use [Ingress Intel](https://intel.ingress.com) as it was the best way to visualize Wayspots on a map. When layered with the [Ingress Intel Total Conversion (IITC)](https://iitc.app) tool, we could visualize [Google S2 cells](https://s2geometry.io) which would further help to identify areas of our play space that needed nominations the most.
 
 The split removed our ability to visualize Wayspots and S2 cells, so we recreated the Wayspot data from Ingress Intel in [GeoJSON](https://geojson.org), and then manually updated it whenever new point of interests would appear in Pokémon GO. To draw the S2 cells, we generated them as GeoJSON with [osmcoverer](https://github.com/MzHub/osmcoverer).
 
