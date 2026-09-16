@@ -26,12 +26,21 @@ export default function PlacedMarkerView() {
   const { map } = use(MapContext);
   const activePopup = useStore((s) => s.activePopup);
   const addPlacedMarkerState = useStore((s) => s.addPlacedMarkerState);
+  const lat = useStore((s) => s.lat);
+  const lng = useStore((s) => s.lng);
   const placedMarkerStates = useStore((s) => s.placedMarkerStates);
+  const setLat = useStore((s) => s.setLat);
+  const setLng = useStore((s) => s.setLng);
   const updatePlacedMarkerState = useStore((s) => s.updatePlacedMarkerState);
 
   const removeIdQueryParam = useRemoveIdQueryParam();
   const setIdQueryParam = useSetIdQueryParam();
-  const { control, handleSubmit } = useForm<FormData>();
+  const { control, handleSubmit } = useForm<FormData>({
+    defaultValues: {
+      lat,
+      lng,
+    },
+  });
 
   const placedMarkerItems = placedMarkerStates.map(
     ({ id, isVisible, position }, i) => (
@@ -106,6 +115,10 @@ export default function PlacedMarkerView() {
                   aria-invalid={invalid}
                   step="any"
                   type="number"
+                  onChange={(e) => {
+                    field.onChange(e);
+                    setLat(parseFloat(e.target.value));
+                  }}
                 />
                 {invalid && <FieldError errors={[error]} />}
               </Field>
@@ -124,6 +137,10 @@ export default function PlacedMarkerView() {
                   aria-invalid={invalid}
                   step="any"
                   type="number"
+                  onChange={(e) => {
+                    field.onChange(e);
+                    setLng(parseFloat(e.target.value));
+                  }}
                 />
                 {invalid && <FieldError errors={[error]} />}
               </Field>

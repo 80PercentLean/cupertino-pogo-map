@@ -127,14 +127,20 @@ export interface StoreState {
   /** Hide UI overlay when true. */
   isUiOverlayHidden: boolean;
 
+  /** Latitude value for the placed marker tool. */
+  lat?: number;
+
   /** Latitude value for coordinate A for the distance calculator. */
   latA?: number;
 
-  /** Longitude value for coordinate A for the distance calculator. */
-  lngA?: number;
-
   /** Latitude value for coordinate B for the distance calculator. */
   latB?: number;
+
+  /** Longitude value for the placed marker tool. */
+  lng?: number;
+
+  /** Longitude value for coordinate A for the distance calculator. */
+  lngA?: number;
 
   /** Longitude value for coordinate B for the distance calculator. */
   lngB?: number;
@@ -222,14 +228,20 @@ export interface StoreState {
   /** Set the `isUiOverlayHidden` value. */
   setIsUiOverlayHidden: (val: StoreState["isUiOverlayHidden"]) => void;
 
+  /** Set the `lat` value. */
+  setLat: (val: StoreState["lat"]) => void;
+
   /** Set the `latA` value. */
   setLatA: (val: StoreState["latA"]) => void;
 
-  /** Set the `lngA` value. */
-  setLngA: (val: StoreState["lngA"]) => void;
-
   /** Set the `latB` value. */
   setLatB: (val: StoreState["latB"]) => void;
+
+  /** Set the `lng` value. */
+  setLng: (val: StoreState["lng"]) => void;
+
+  /** Set the `lngA` value. */
+  setLngA: (val: StoreState["lngA"]) => void;
 
   /** Set the `lngB` value. */
   setLngB: (val: StoreState["lngB"]) => void;
@@ -421,11 +433,15 @@ export const useStore = create<StoreState>()(
 
         isUiOverlayHidden: false,
 
+        lat: undefined,
+
         latA: undefined,
 
-        lngA: undefined,
-
         latB: undefined,
+
+        lng: undefined,
+
+        lngA: undefined,
 
         lngB: undefined,
 
@@ -544,11 +560,15 @@ export const useStore = create<StoreState>()(
             "setIsUiOverlayHidden",
           ),
 
+        setLat: (val) => set(() => ({ lat: val }), undefined, "setLat"),
+
         setLatA: (val) => set(() => ({ latA: val }), undefined, "setLatA"),
 
-        setLngA: (val) => set(() => ({ lngA: val }), undefined, "setLngA"),
-
         setLatB: (val) => set(() => ({ latB: val }), undefined, "setLatB"),
+
+        setLng: (val) => set(() => ({ lng: val }), undefined, "setLng"),
+
+        setLngA: (val) => set(() => ({ lngA: val }), undefined, "setLngA"),
 
         setLngB: (val) => set(() => ({ lngB: val }), undefined, "setLngB"),
 
