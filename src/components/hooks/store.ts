@@ -82,7 +82,7 @@ export interface StoreState {
   /** Disable all animations in the app when true. */
   disableAnimations: boolean;
 
-  /** Invert coordinates when copied and pasted together when true. */
+  /** Interpret coordinates as inverted when true, i.e. lng,lat instead of lat,lng. */
   invertCoords: boolean;
 
   /** Initial error message to display when the app first loads. */

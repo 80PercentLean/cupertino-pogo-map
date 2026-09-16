@@ -18,7 +18,11 @@ In the settings, you can enable **Wayfarer Mode** which gives you access to spec
 
 When enabled, the "Wayfarer Settings" section will appear in the settings screen.
 
-**We recommend enabling "Show hidden POIs" and "Show disabled power spots" to get a complete, one-to-one overview of the current map data.**
+**We recommend enabling the following to get a complete, one-to-one overview of the current map data:**
+
+- **Show hidden POIs**
+- **Show disabled power spots**
+- **Show impossible power spots**
 
 Additionally, you will gain access to the following features:
 
@@ -28,7 +32,7 @@ Additionally, you will gain access to the following features:
 - Show the no Power Spot zone for a specific POI which visualizes the 22m range in which Power Spots cannot be built around PokéStops & Gyms.
 - Show the no Community Ambassador POI zones which visualize the 30m range in which Community Campsite POIs cannot be built around other Wayfarer POIs.
 
-To demonstrate some of these features, here is what the popup looks like once Wayfarer Mode is enabled:
+To demonstrate some of these features, here is what the popup of a selected Gym looks like once Wayfarer Mode is enabled:
 
 ![Wayfarer Mode Popup](./images/wayfarer-mode-popup.png)
 

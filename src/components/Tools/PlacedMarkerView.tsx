@@ -25,16 +25,26 @@ interface FormData {
 
 /**
  * Parse the coordinate string into latitude and longitude values.
- * @param input
- * @returns
+ * @param coords Coordinate string
+ * @param invertCoords Interpret coords as inverted when true, i.e. lng,lat instead of lat,lng
+ * @returns An object containing the latitude and longitude values, or null if the input is invalid
  */
-const parseCoords = (input?: string) => {
-  if (input) {
-    const [lat, lng] = input
+const parseCoords = (coords?: string, invertCoords?: boolean) => {
+  if (coords) {
+    const vals = coords
       .trim()
       .split(",")
       .map((coord) => parseFloat(coord.trim()));
-    return { lat, lng };
+
+    if (vals.length !== 2) {
+      return null;
+    }
+
+    if (invertCoords) {
+      return { lat: vals[1], lng: vals[0] };
+    }
+
+    return { lat: vals[0], lng: vals[1] };
   }
 
   return null;
@@ -45,6 +55,7 @@ export default function PlacedMarkerView() {
   const activePopup = useStore((s) => s.activePopup);
   const addPlacedMarkerState = useStore((s) => s.addPlacedMarkerState);
   const coords = useStore((s) => s.coords);
+  const invertCoords = useStore((s) => s.invertCoords);
   const lat = useStore((s) => s.lat);
   const lng = useStore((s) => s.lng);
   const placedMarkerStates = useStore((s) => s.placedMarkerStates);
@@ -55,7 +66,7 @@ export default function PlacedMarkerView() {
 
   const removeIdQueryParam = useRemoveIdQueryParam();
   const setIdQueryParam = useSetIdQueryParam();
-  const { control, handleSubmit, setValue } = useForm<FormData>({
+  const { control, handleSubmit, register, setValue } = useForm<FormData>({
     defaultValues: {
       lat,
       lng,
@@ -128,7 +139,7 @@ export default function PlacedMarkerView() {
             </FieldLabel>
             <FieldDescription>
               Extract the latitude & longitude values from a string formatted as{" "}
-              <code>lat,lng</code>.
+              {invertCoords ? <code>lng,lat</code> : <code>lat,lng</code>}.
             </FieldDescription>
             <Input
               id="coords"
@@ -136,10 +147,9 @@ export default function PlacedMarkerView() {
               type="string"
               value={coords}
               onChange={(e) => {
-                console.log("fired", e.target.value);
                 setCoords(e.target.value);
 
-                const coordsResult = parseCoords(e.target.value);
+                const coordsResult = parseCoords(e.target.value, invertCoords);
 
                 if (coordsResult) {
                   setValue("lat", coordsResult.lat, {
@@ -170,6 +180,12 @@ export default function PlacedMarkerView() {
                   aria-invalid={invalid}
                   step="any"
                   type="number"
+                  {...register("lat", {
+                    valueAsNumber: true,
+                    validate: (value) =>
+                      Number.isFinite(value) ||
+                      "Latitude must be a valid number",
+                  })}
                   onChange={(e) => {
                     field.onChange(e);
                     setLat(parseFloat(e.target.value));
@@ -192,6 +208,12 @@ export default function PlacedMarkerView() {
                   aria-invalid={invalid}
                   step="any"
                   type="number"
+                  {...register("lng", {
+                    valueAsNumber: true,
+                    validate: (value) =>
+                      Number.isFinite(value) ||
+                      "Longitude must be a valid number",
+                  })}
                   onChange={(e) => {
                     field.onChange(e);
                     setLng(parseFloat(e.target.value));

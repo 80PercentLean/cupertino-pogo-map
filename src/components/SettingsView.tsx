@@ -347,9 +347,12 @@ export default function SettingsView() {
                     htmlFor="invert-coords"
                     className="cursor-pointer"
                   >
-                    Invert coordinates using the "Copy coords" button
+                    Invert coordinates
                   </FieldLabel>
                   <FieldDescription className="text-pretty">
+                    Invert coordinates when using the "Copy coords" button and
+                    inputting the coordinate string for the placed marker tool.
+                    <br />
                     Current copy coords format:{" "}
                     {invertCoords ? <code>lng,lat</code> : <code>lat,lng</code>}
                   </FieldDescription>
