@@ -76,6 +76,9 @@ export interface StoreState {
     stdRaidPath: boolean;
   };
 
+  /** Latitude, longitude coordinates as a string. */
+  coords?: string;
+
   /** Disable all animations in the app when true. */
   disableAnimations: boolean;
 
@@ -212,6 +215,9 @@ export interface StoreState {
 
   /** Set the `activePopup` value. */
   setActivePopup: (val: StoreState["activePopup"] | null) => void;
+
+  /** Set the `coords` value. */
+  setCoords: (val: StoreState["coords"]) => void;
 
   /** Set the `disableAnimations` value. */
   setDisableAnimations: (val: StoreState["disableAnimations"]) => void;
@@ -397,6 +403,8 @@ export const useStore = create<StoreState>()(
           stdRaidPath: true,
         },
 
+        coords: "",
+
         // Disable animations by default for E2E tests to allow visual tests to perform consistently
         disableAnimations,
 
@@ -532,6 +540,9 @@ export const useStore = create<StoreState>()(
 
         setActivePopup: (val) =>
           set(() => ({ activePopup: val }), undefined, "setActivePopup"),
+
+        setCoords: (val) =>
+          set(() => ({ coords: val }), undefined, "setCoords"),
 
         setDisableAnimations: (val) =>
           set(

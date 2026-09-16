@@ -9,6 +9,7 @@ import { useStore } from "../hooks/store";
 import { Button } from "../ui/button";
 import {
   Field,
+  FieldDescription,
   FieldError,
   FieldGroup,
   FieldLabel,
@@ -22,20 +23,39 @@ interface FormData {
   lng: number;
 }
 
+/**
+ * Parse the coordinate string into latitude and longitude values.
+ * @param input
+ * @returns
+ */
+const parseCoords = (input?: string) => {
+  if (input) {
+    const [lat, lng] = input
+      .trim()
+      .split(",")
+      .map((coord) => parseFloat(coord.trim()));
+    return { lat, lng };
+  }
+
+  return null;
+};
+
 export default function PlacedMarkerView() {
   const { map } = use(MapContext);
   const activePopup = useStore((s) => s.activePopup);
   const addPlacedMarkerState = useStore((s) => s.addPlacedMarkerState);
+  const coords = useStore((s) => s.coords);
   const lat = useStore((s) => s.lat);
   const lng = useStore((s) => s.lng);
   const placedMarkerStates = useStore((s) => s.placedMarkerStates);
+  const setCoords = useStore((s) => s.setCoords);
   const setLat = useStore((s) => s.setLat);
   const setLng = useStore((s) => s.setLng);
   const updatePlacedMarkerState = useStore((s) => s.updatePlacedMarkerState);
 
   const removeIdQueryParam = useRemoveIdQueryParam();
   const setIdQueryParam = useSetIdQueryParam();
-  const { control, handleSubmit } = useForm<FormData>({
+  const { control, handleSubmit, setValue } = useForm<FormData>({
     defaultValues: {
       lat,
       lng,
@@ -102,6 +122,41 @@ export default function PlacedMarkerView() {
       <form onSubmit={(e) => void handleSubmit(onSubmit, onError)(e)}>
         <FieldGroup className="mb-8">
           <FieldLegend>Manually add a placed marker</FieldLegend>
+          <Field>
+            <FieldLabel htmlFor="coords">
+              Coordinate String (Optional)
+            </FieldLabel>
+            <FieldDescription>
+              Extract the latitude & longitude values from a string formatted as{" "}
+              <code>lat,lng</code>.
+            </FieldDescription>
+            <Input
+              id="coords"
+              placeholder="37.325804,-122.042752"
+              type="string"
+              value={coords}
+              onChange={(e) => {
+                console.log("fired", e.target.value);
+                setCoords(e.target.value);
+
+                const coordsResult = parseCoords(e.target.value);
+
+                if (coordsResult) {
+                  setValue("lat", coordsResult.lat, {
+                    shouldValidate: true,
+                    shouldDirty: true,
+                  });
+                  setLat(coordsResult.lat);
+
+                  setValue("lng", coordsResult.lng, {
+                    shouldValidate: true,
+                    shouldDirty: true,
+                  });
+                  setLng(coordsResult.lng);
+                }
+              }}
+            />
+          </Field>
           <Controller
             name="lat"
             control={control}
