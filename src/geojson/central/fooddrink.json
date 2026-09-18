@@ -8,7 +8,7 @@
         "type": "fooddrink",
         "subtype": "orange-sq",
         "isPartner": true,
-        "desc": "<p>Orange Square is a Taiwanese fusion restaurant featuring bento-style meals, specialty boba teas, and authentic street-food inspired dishes.</p><p>Find their hours, menu, and more at: <a href=\"https://www.orangesq.com\" rel=\"noopener noreferrer\" target=\"_blank\">www.orangesq.com</a></p>",
+        "desc": "<p>Orange Square is a Taiwanese fusion restaurant featuring bento-style meals, specialty boba teas, and authentic street-food inspired dishes.</p><p>Use code <code>POKEMONGOXOSQ</code> at checkout for <b>10% off select items.</b></p><p>Find their hours and order online at: <a href=\"https://www.orangesq.com\" rel=\"noopener noreferrer\" target=\"_blank\">www.orangesq.com</a></p>",
         "marker-color": "#87ceeb",
         "marker-size": "small",
         "marker-symbol": "circle",
