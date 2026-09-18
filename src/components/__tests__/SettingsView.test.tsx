@@ -362,7 +362,7 @@ describe("wayfarer mode", () => {
     await expectWayfarerModeToTurnedOn(user);
 
     const switchEle = screen.getByRole("switch", {
-      name: /Invert coordinates using the/i,
+      name: /Invert coordinates/i,
     });
     expect(switchEle).toBeInTheDocument();
     expect(switchEle).not.toBeChecked();
