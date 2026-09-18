@@ -61,9 +61,7 @@ export default function InfoView() {
         </AccordionItem>
         <AccordionItem value="using-with-wayfarer">
           <AccordionTrigger className="cursor-pointer">
-            <h2 className="font-semibold text-balance">
-              Use With Niantic Wayfarer
-            </h2>
+            <h2 className="font-semibold text-balance">Use With Wayfarer</h2>
           </AccordionTrigger>
           <AccordionContent>
             <p className="text-pretty">
@@ -77,7 +75,7 @@ export default function InfoView() {
                 href="https://github.com/80PercentLean/cupertino-pogo-map/blob/main/docs/wayfarer-tips.md"
                 openNewWindow
               >
-                "Use With Niantic Wayfarer: Tips for Wayfinders" document
+                "Use With Wayfarer: Tips for Wayfinders" document
               </LinkExt>{" "}
               on our GitHub to learn how to make the most of the tools and
               features available on this map.
@@ -140,8 +138,8 @@ export default function InfoView() {
             <p className="text-pretty">
               Unfortunately, no. To do that, we'd need a real-time connection to
               the Wayfarer API. We intentionally avoid that because supporting
-              that would make this app non-compliant with Niantic's Terms of
-              Service.
+              that would make this app non-compliant with Scopely Explore's
+              Terms of Service.
             </p>
             <p className="mt-[1em] text-pretty">
               Instead, all of the data used by this map is manually curated.

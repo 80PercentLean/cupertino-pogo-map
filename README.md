@@ -8,7 +8,7 @@ Some notable features are:
 - Support for use on both desktop and mobile devices.
 - Get navigation instructions through Google Maps and shareable links for specific locations.
 - Place your own markers and share their locations to send people specific coordinates and directions.
-- Visualize [Google S2 cells](https://s2geometry.io) which can provide valuable insights for [Niantic Wayfinders](./docs/wayfarer-tips.md).
+- Visualize [Google S2 cells](https://s2geometry.io) which can provide valuable insights for [Wayfinders](./docs/wayfarer-tips.md).
 - Completely open source!
 
 ## Quick Start
@@ -43,7 +43,7 @@ The meetups view of this app communicates with the REST API ran by the [Goose Di
 
 ## Where does the map data come from and how do updates work?
 
-Some people have assumed this tool uses bots or scanners, but from the beginning we've designed it to comply with Niantic's Terms of Service.
+Some people have assumed this tool uses bots or scanners, but from the beginning we've designed it to comply with Scopely Explore's Terms of Service.
 
 The project is also fully open source, so anyone can review how it works and verify that no bots or scanners are used to collect map data.
 
@@ -56,7 +56,7 @@ The trade-off is that the process is manual and susceptible to human error, so s
 Here is more documentation that may be helpful for you:
 
 - [Motivation](./docs/motivation.md)
-- [Use With Niantic Wayfarer: Tips For Wayfinders](./docs/wayfarer-tips.md)
+- [Use With Wayfarer: Tips For Wayfinders](./docs/wayfarer-tips.md)
 - [Memorial Park/De Anza College POI History](./docs/history-mpda.md)
 - [Central Park POI History](./docs/history-central.md)
 - [Contributing](./docs/contributing.md)

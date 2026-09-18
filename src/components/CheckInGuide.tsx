@@ -137,12 +137,6 @@ export default function CheckInGuide() {
           to your account through your check-in.
         </p>
         <p className="leading-7 text-pretty">
-          In addition to check-ins and rewards, Campfire lets you chat with
-          fellow {GET_GROUP_NAME()} members, view a live top-down raid map, and
-          access other helpful features. We also use our Campfire group to host
-          contests, giveaways, and coordinate trading.
-        </p>
-        <p className="leading-7 text-pretty">
           Download Campfire by tapping the button below:
         </p>
         <Button asChild>

@@ -9,6 +9,7 @@ import { useStore } from "../hooks/store";
 import { Button } from "../ui/button";
 import {
   Field,
+  FieldDescription,
   FieldError,
   FieldGroup,
   FieldLabel,
@@ -22,16 +23,55 @@ interface FormData {
   lng: number;
 }
 
+/**
+ * Parse the coordinate string into latitude and longitude values.
+ * @param coords Coordinate string
+ * @param invertCoords Interpret coords as inverted when true, i.e. lng,lat instead of lat,lng
+ * @returns An object containing the latitude and longitude values, or null if the input is invalid
+ */
+const parseCoords = (coords?: string, invertCoords?: boolean) => {
+  if (coords) {
+    const vals = coords
+      .trim()
+      .split(",")
+      .map((coord) => parseFloat(coord.trim()));
+
+    if (vals.length !== 2) {
+      return null;
+    }
+
+    if (invertCoords) {
+      return { lat: vals[1], lng: vals[0] };
+    }
+
+    return { lat: vals[0], lng: vals[1] };
+  }
+
+  return null;
+};
+
 export default function PlacedMarkerView() {
   const { map } = use(MapContext);
   const activePopup = useStore((s) => s.activePopup);
   const addPlacedMarkerState = useStore((s) => s.addPlacedMarkerState);
+  const coords = useStore((s) => s.coords);
+  const invertCoords = useStore((s) => s.invertCoords);
+  const lat = useStore((s) => s.lat);
+  const lng = useStore((s) => s.lng);
   const placedMarkerStates = useStore((s) => s.placedMarkerStates);
+  const setCoords = useStore((s) => s.setCoords);
+  const setLat = useStore((s) => s.setLat);
+  const setLng = useStore((s) => s.setLng);
   const updatePlacedMarkerState = useStore((s) => s.updatePlacedMarkerState);
 
   const removeIdQueryParam = useRemoveIdQueryParam();
   const setIdQueryParam = useSetIdQueryParam();
-  const { control, handleSubmit } = useForm<FormData>();
+  const { control, handleSubmit, register, setValue } = useForm<FormData>({
+    defaultValues: {
+      lat,
+      lng,
+    },
+  });
 
   const placedMarkerItems = placedMarkerStates.map(
     ({ id, isVisible, position }, i) => (
@@ -93,6 +133,40 @@ export default function PlacedMarkerView() {
       <form onSubmit={(e) => void handleSubmit(onSubmit, onError)(e)}>
         <FieldGroup className="mb-8">
           <FieldLegend>Manually add a placed marker</FieldLegend>
+          <Field>
+            <FieldLabel htmlFor="coords">
+              Coordinate String (Optional)
+            </FieldLabel>
+            <FieldDescription>
+              Extract the latitude & longitude values from a string formatted as{" "}
+              {invertCoords ? <code>lng,lat</code> : <code>lat,lng</code>}.
+            </FieldDescription>
+            <Input
+              id="coords"
+              placeholder="37.325804,-122.042752"
+              type="string"
+              value={coords}
+              onChange={(e) => {
+                setCoords(e.target.value);
+
+                const coordsResult = parseCoords(e.target.value, invertCoords);
+
+                if (coordsResult) {
+                  setValue("lat", coordsResult.lat, {
+                    shouldValidate: true,
+                    shouldDirty: true,
+                  });
+                  setLat(coordsResult.lat);
+
+                  setValue("lng", coordsResult.lng, {
+                    shouldValidate: true,
+                    shouldDirty: true,
+                  });
+                  setLng(coordsResult.lng);
+                }
+              }}
+            />
+          </Field>
           <Controller
             name="lat"
             control={control}
@@ -106,6 +180,16 @@ export default function PlacedMarkerView() {
                   aria-invalid={invalid}
                   step="any"
                   type="number"
+                  {...register("lat", {
+                    valueAsNumber: true,
+                    validate: (value) =>
+                      Number.isFinite(value) ||
+                      "Latitude must be a valid number",
+                  })}
+                  onChange={(e) => {
+                    field.onChange(e);
+                    setLat(parseFloat(e.target.value));
+                  }}
                 />
                 {invalid && <FieldError errors={[error]} />}
               </Field>
@@ -124,6 +208,16 @@ export default function PlacedMarkerView() {
                   aria-invalid={invalid}
                   step="any"
                   type="number"
+                  {...register("lng", {
+                    valueAsNumber: true,
+                    validate: (value) =>
+                      Number.isFinite(value) ||
+                      "Longitude must be a valid number",
+                  })}
+                  onChange={(e) => {
+                    field.onChange(e);
+                    setLng(parseFloat(e.target.value));
+                  }}
                 />
                 {invalid && <FieldError errors={[error]} />}
               </Field>
