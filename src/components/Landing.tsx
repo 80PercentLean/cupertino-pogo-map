@@ -17,10 +17,12 @@ import {
   GET_LOCATION_LONG,
   MAP_PATH,
 } from "@/constants";
+import { ExternalLink, TriangleAlert } from "lucide-react";
 import { Link } from "react-router";
 
 import FooterTxt from "./FooterTxt";
 import { useSetDocTitle } from "./hooks";
+import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 
 /**
@@ -28,9 +30,44 @@ import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
  */
 export default function Landing() {
   useSetDocTitle(`Pokémon GO Community in ${GET_CITY()}, California`);
-
   return (
     <main className="mx-auto flex min-h-screen max-w-[65ch] flex-col items-center gap-4 p-4">
+      {GET_IS_CENTRAL() && (
+        <Alert className="mb-4 border-yellow-500/50 bg-yellow-500/10">
+          <TriangleAlert className="h-5 w-5 shrink-0 text-yellow-600" />
+          <AlertTitle>
+            Wild Goose will not be hosting a Mega Staraptor meetup!
+          </AlertTitle>
+          <AlertDescription className="space-y-3 text-sm">
+            <p className="mt-4">
+              The{" "}
+              <a
+                href="https://www.santaclaraca.gov/our-city/departments-g-z/parks-recreation/parks-recreation-special-events/art-wine-festival"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="text-blue-400 underline"
+              >
+                Santa Clara Art & Wine Festival
+              </a>{" "}
+              is happening at Central Park on Saturday, September 19. Please
+              feel free to bring your family and friends and attend as
+              non-Pokémon GO players!
+            </p>
+            <p>
+              If you still want to play,{" "}
+              <a
+                href="https://cmpf.re/JzOak5"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="text-blue-400 underline"
+              >
+                please join Cupertino PoGO's Mega Staraptor meetup in Memorial
+                Park starting at 2:00pm.
+              </a>
+            </p>
+          </AlertDescription>
+        </Alert>
+      )}
       <h1 className="text-center text-3xl font-extrabold tracking-tight text-balance">
         Welcome to {GET_GROUP_NAME()}!
       </h1>
