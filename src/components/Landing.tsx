@@ -17,7 +17,7 @@ import {
   GET_LOCATION_LONG,
   MAP_PATH,
 } from "@/constants";
-import { ExternalLink, TriangleAlert } from "lucide-react";
+import { TriangleAlert } from "lucide-react";
 import { Link } from "react-router";
 
 import FooterTxt from "./FooterTxt";
