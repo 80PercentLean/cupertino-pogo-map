@@ -418,7 +418,7 @@ _From now on, the history will only show the enabled power spots instead of show
 
 ## 4-1-26
 
-### Gyms Created 🆕
+### PokeStops Upgraded To Gym 🆕
 
 - Memorial Park Racket Sports Sign (318ffc114c0b3aaa9e38ca5c67176f85.16)
 
