@@ -175,8 +175,12 @@
         "source": "Wayfarer",
         "isCommunityContributed": true,
         "l14Id": "808fca6d",
-        "isHidden": true,
-        "photo": "5d99b340dcef3e58814c708d875c04b4.16.jpg"
+        "isHidden": false,
+        "photo": "5d99b340dcef3e58814c708d875c04b4.16.jpg",
+        "submitter": "80PercentLean",
+        "submitted": "2026-06-16T08:00:00Z",
+        "created": "2026-06-19T08:00:00Z",
+        "converted": "2026-09-04T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-121.979178, 37.346094],
