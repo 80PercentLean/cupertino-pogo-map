@@ -956,6 +956,17 @@
       }
     },
     {
+      "id": "ba37032685353fe7a77504f82f183957.16",
+      "properties": {
+        "name": "La Voz News – De Anza College",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2026-09-11T08:00:00Z",
+        "created": "2026-09-19T08:00:00Z"
+      }
+    },
+    {
       "id": "bb91e00b62824b33b67b284fdb113c03.16",
       "properties": {
         "name": "Kathleen Colligan Memorial Plaque",
@@ -1032,6 +1043,17 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "ingress": true
+      }
+    },
+    {
+      "id": "d05394c95d8137f9a584da7c392a3a68.16",
+      "properties": {
+        "name": "De Anza Court Rules",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2026-09-11T08:00:00Z",
+        "created": "2026-09-19T08:00:00Z"
       }
     },
     {
@@ -1213,15 +1235,6 @@
         "submitter": "80PercentLean",
         "submitted": "2025-10-29T08:00:00Z",
         "created": "2025-11-07T08:00:00Z"
-      }
-    },
-    {
-      "id": "f27231455c444fd9884669e148634f98.16",
-      "properties": {
-        "name": "Multicultural Center",
-        "type": "pokestop",
-        "source": "Wayfarer",
-        "ingress": true
       }
     },
     {

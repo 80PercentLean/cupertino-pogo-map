@@ -1,5 +1,17 @@
 # Memorial Park/De Anza College POI History
 
+## 9-19-2026
+
+### PokeStops Upgraded To Gym 🆕
+
+- Multicultural Center (f27231455c444fd9884669e148634f98.16)
+
+### PokeStops Created 🆕
+
+- De Anza Soccer Field - Coast Conference Banner (5891779531403fdaa42bb22027f04eed.16)
+- La Voz News – De Anza College (ba37032685353fe7a77504f82f183957.16)
+- De Anza Court Rules (d05394c95d8137f9a584da7c392a3a68.16)
+
 ## 9-8-2026
 
 ### PokeStops Created 🆕
