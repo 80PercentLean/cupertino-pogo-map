@@ -161,6 +161,16 @@
       }
     },
     {
+      "id": "f27231455c444fd9884669e148634f98.16",
+      "properties": {
+        "name": "Multicultural Center",
+        "type": "gym",
+        "source": "Wayfarer",
+        "ingress": true,
+        "converted": "2026-09-19T08:00:00Z"
+      }
+    },
+    {
       "id": "fa4517dcde244a41903380687e95d6cb.12",
       "properties": {
         "name": "\"Guardians Statue\", Memorial Park",

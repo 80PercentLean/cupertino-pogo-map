@@ -1,6 +1,33 @@
 # Central Park POI History
 
+## 9-21-2026
+
+### PokeStops Created
+
+- Alderwood Apartments Map (72a6d2a59e403061949fec919f3d79d7.16)
+- Alderwood Fountain III (9a6d10e7554132b79e8e59c853593afc.16)
+- Alderwood Apartments (afee3b7370053d578310c767972073f2.16)
+
+### PokeStops Moved 🚚
+
+- Alderwood Fountain (84c69ad643293c22a1cd0ed95768443c.16)
+  - [-121.98288, 37.341998] ➡️ [-121.982825, 37.342006]
+
+## 9-10-2026
+
+### PokeStops Created
+
+- Storybook Village Mural (a940f65b4081389a8b9d324d367d6746.16)
+
 ## 9-4-2026
+
+### PokeStops Upgraded To Gym 🆕
+
+- Boba Pup (5d99b340dcef3e58814c708d875c04b4.16)
+
+### PokeStops Created
+
+- Loopkicks Mural (fc6fd6f5029939c9ae3e9ee75688fe53.16)
 
 ### Power Spots Moved 🚚
 
@@ -16,10 +43,18 @@
 
 - Hearth Neighborhood Gathering Area (62d0c318aeb336679c0472e8184db97b.16)
 
+### Power Spots Blocked 🛑
+
+- CP Studios/Cheer Perfection Studios (1cfa0835cd2548c09f4b8f4bd917ad02.23)
+- Loopkicks Tricking (24c9ec8385ee4620810435a0bbb9a082.23)
+- Interstellar Gymnastics (4be26abdd0004b43adc953609a738cfb.23)
+- PE Fitness (7f0904fa5b164629805e20b8128280bd.23)
+- Silicon Valley Judo (83563ded62274211b62be125c5de880d.23)
+- Evo Sports Clubs (e4b021b4397c42cda76b47948a008ccb.23)
+
 ### Power Spots Created 🆕
 
 - Pool at Alderwood Apartments (e8da132a3dec3accab80906950dc0f7f.16)
-- Loopkicks Mural (fc6fd6f5029939c9ae3e9ee75688fe53.16) {TODO: Might be PokeStop}
 
 ### Power Spot Enabled Pool ✅
 

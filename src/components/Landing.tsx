@@ -17,12 +17,12 @@ import {
   GET_LOCATION_LONG,
   MAP_PATH,
 } from "@/constants";
-import { TriangleAlert } from "lucide-react";
+// import { TriangleAlert } from "lucide-react";
 import { Link } from "react-router";
 
 import FooterTxt from "./FooterTxt";
 import { useSetDocTitle } from "./hooks";
-import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
+// import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 
 /**
@@ -32,7 +32,7 @@ export default function Landing() {
   useSetDocTitle(`Pokémon GO Community in ${GET_CITY()}, California`);
   return (
     <main className="mx-auto flex min-h-screen max-w-[65ch] flex-col items-center gap-4 p-4">
-      {GET_IS_CENTRAL() && (
+      {/* {GET_IS_CENTRAL() && (
         <Alert className="mb-4 border-yellow-500/50 bg-yellow-500/10">
           <TriangleAlert className="h-5 w-5 shrink-0 text-yellow-600" />
           <AlertTitle>
@@ -67,7 +67,7 @@ export default function Landing() {
             </p>
           </AlertDescription>
         </Alert>
-      )}
+      )} */}
       <h1 className="text-center text-3xl font-extrabold tracking-tight text-balance">
         Welcome to {GET_GROUP_NAME()}!
       </h1>

@@ -42,7 +42,7 @@ test.each([["false"], ["true"]])(
     expect(link).toHaveAttribute("href", CAMPFIRE_PATH);
 
     if (IS_CENTRAL === "true") {
-      expect(screen.queryAllByText(/cupertino/i)).toHaveLength(2);
+      expect(screen.queryAllByText(/cupertino/i)).toHaveLength(1);
     } else {
       expect(screen.queryAllByText(/wild goose/i)).toHaveLength(1);
       expect(screen.queryAllByText(/santa clara/i)).toHaveLength(0);

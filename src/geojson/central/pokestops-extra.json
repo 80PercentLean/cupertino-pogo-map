@@ -110,18 +110,7 @@
         "isHidden": true
       }
     },
-    {
-      "id": "5d99b340dcef3e58814c708d875c04b4.16",
-      "properties": {
-        "name": "Boba Pup",
-        "type": "pokestop",
-        "source": "Wayfarer",
-        "isHidden": false,
-        "submitter": "80PercentLean",
-        "submitted": "2026-06-16T08:00:00Z",
-        "created": "2026-06-19T08:00:00Z"
-      }
-    },
+
     {
       "id": "66f40613ed16376393325213a1e50176.16",
       "properties": {
