@@ -16,11 +16,6 @@ import { type LatLngTuple } from "leaflet";
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 
-// TODO: This is only to migrate people with a legacy setting. Remove after a month or so.
-if (localStorage.getItem("isDisabled") === "true") {
-  localStorage.setItem("isImpossible", "true");
-}
-
 /** Global variable that allows placed markers to have a simple unique ID. */
 let placedMarkerCount = 0;
 
