@@ -1,5 +1,19 @@
 # Central Park POI History
 
+## 9-30-2026
+
+### PokeStops Upgraded To Gym 🆕
+
+- Central Park Playground (4215d73378b548c89c39f59849ac4b7a.16)
+
+### Gyms Removed 🗑️
+
+- Central Park Sign (f641a857c8a74334b59837d81f72dcde.16)
+
+### Power Spots Converted To PokeStops 🆕
+
+- Kiely Center Sign (c1120a1286b8393da913ac90a454959b.16)
+
 ## 9-21-2026
 
 ### PokeStops Created
