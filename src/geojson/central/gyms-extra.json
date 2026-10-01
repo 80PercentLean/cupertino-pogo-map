@@ -10,6 +10,15 @@
       }
     },
     {
+      "id": "4215d73378b548c89c39f59849ac4b7a.16",
+      "properties": {
+        "name": "Central Park Playground",
+        "type": "gym",
+        "source": "Wayfarer",
+        "converted": "2026-09-29T08:00:00Z"
+      }
+    },
+    {
       "id": "5d99b340dcef3e58814c708d875c04b4.16",
       "properties": {
         "name": "Boba Pup",
@@ -39,6 +48,27 @@
       },
       "geometry": {
         "coordinates": [-121.975407, 37.34194],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "f641a857c8a74334b59837d81f72dcde.16",
+      "properties": {
+        "checked": "2026-09-21T08:00:00Z",
+        "name": "Central Park Sign",
+        "type": "gym",
+        "removed": "2026-09-29T08:00:00Z",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fca65",
+        "photo": "f641a857c8a74334b59837d81f72dcde.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-121.97718, 37.339648],
         "type": "Point"
       },
       "type": "Feature"
