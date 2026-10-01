@@ -1,5 +1,12 @@
 # Memorial Park/De Anza College POI History
 
+## 9-30-2026
+
+### PokeStops Created 🆕
+
+- De Anza College Pickleball Courts (75ba35e7ba843a6182c7504b8988b049.16)
+- De Anza College East Entrance Sign (c4ac9af6eda939cdaaa3c9229623cec6.16)
+
 ## 9-19-2026
 
 ### PokeStops Upgraded To Gym 🆕

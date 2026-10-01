@@ -567,6 +567,17 @@
       }
     },
     {
+      "id": "75ba35e7ba843a6182c7504b8988b049.16",
+      "properties": {
+        "name": "De Anza College Pickleball Courts",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2026-09-11T08:00:00Z",
+        "created": "2026-09-22T08:00:00Z"
+      }
+    },
+    {
       "id": "77ce44fa26da3aacbb0f0d2f8b02d8bb.16",
       "properties": {
         "name": "Glenbrook Fire Pit Lounge",
@@ -1004,6 +1015,17 @@
         "type": "pokestop",
         "subtype": "showcase",
         "source": "Wayfarer"
+      }
+    },
+    {
+      "id": "c4ac9af6eda939cdaaa3c9229623cec6.16",
+      "properties": {
+        "name": "De Anza College East Entrance Sign",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2026-09-11T08:00:00Z",
+        "created": "2026-09-23T08:00:00Z"
       }
     },
     {
