@@ -47,6 +47,26 @@
       }
     },
     {
+      "id": "283368601cee4056ae24085707daa83b.23",
+      "properties": {
+        "checked": "2026-09-30T08:00:00Z",
+        "name": "Proper Hour Handyman Service",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca6f",
+        "removed": "2026-10-01T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-121.978746, 37.341476],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
       "id": "41a23fb2eaf23af69c41810285802aba.16",
       "properties": {
         "name": "Santa Clara Fire Station 3 Little Free Library",
@@ -115,6 +135,17 @@
       "type": "Feature"
     },
     {
+      "id": "688442e9e6253428b27478ef56955dcf.16",
+      "properties": {
+        "name": "Magical Bridge Plaque",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2026-09-17T08:00:00Z",
+        "created": "2026-10-03T08:00:00Z"
+      }
+    },
+    {
       "type": "Feature",
       "id": "6cc36bec73af386b9b20ce73ebd289ea.16",
       "properties": {
@@ -148,6 +179,26 @@
       },
       "geometry": {
         "coordinates": [-121.979495, 37.337366],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "86e89c24b908416e801c9a7334be7e71.23",
+      "properties": {
+        "checked": "2026-09-30T08:00:00Z",
+        "name": "Arusuvai Indian Restaurant",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca67",
+        "removed": "2026-09-30T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-121.972768, 37.339672],
         "type": "Point"
       },
       "type": "Feature"
@@ -222,11 +273,32 @@
       }
     },
     {
+      "id": "df580e9ca0084db9917da18ea950d18b.23",
+      "properties": {
+        "checked": "2026-09-30T08:00:00Z",
+        "name": "ABC Tax and Accounting",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca65",
+        "removed": "2026-10-01T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-121.976947, 37.337629],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
       "id": "e0230f47d8b54312b50d8863c5b6ab95.23",
       "properties": {
         "name": "La Palma Apartments",
         "type": "powerspot",
-        "source": "Wayfarer"
+        "source": "Wayfarer",
+        "isHidden": true
       }
     },
     {
