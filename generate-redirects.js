@@ -20,6 +20,12 @@ const urlCampfire = IS_CENTRAL
 
 const dynamicRedirects = [`/campfire ${urlCampfire} 301`];
 
+const urlDiscord = IS_CENTRAL
+  ? "https://discord.gg/5W2uwxMZHE"
+  : "https://discord.gg/Z5SYDeeK5s";
+
+dynamicRedirects.push(`/discord ${urlDiscord} 301`);
+
 if (!IS_CENTRAL) {
   dynamicRedirects.push(
     "/guide https://docs.google.com/document/d/1NCGM5HAbRauIoQV4E7ZWGc2-Kx3woO3BxWpeZeXX6eM/edit?usp=sharing 301",
