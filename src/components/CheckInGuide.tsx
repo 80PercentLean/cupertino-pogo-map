@@ -126,8 +126,8 @@ export default function CheckInGuide() {
           through the <b>Campfire app</b> for the smoothest experience.
         </p>
         <p className="leading-7 text-pretty">
-          <b>Niantic Campfire</b> is the Pokémon GO developer's official social
-          platform for the game.
+          <b>Scopley Explore Campfire</b> is the Pokémon GO developer's official
+          social platform for the game.
         </p>
         <p className="leading-7 text-pretty">
           <b>{GET_GROUP_NAME()}</b> is a Campfire group that hosts meetups
@@ -146,7 +146,7 @@ export default function CheckInGuide() {
             target="_blank"
             className="mt-[1em] w-full cursor-pointer text-center text-lg font-bold"
           >
-            Download the Niantic Campfire app! <ExternalLink />
+            Download the Scopley Explore Campfire app! <ExternalLink />
           </a>
         </Button>
         <p className="leading-7 text-pretty text-yellow-100">
