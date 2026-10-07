@@ -184,11 +184,11 @@ export default function Landing() {
             />
             <CardHeader className="w-full p-6">
               <CardTitle className="font-medium text-balance text-black">
-                Join Our Niantic Campfire Group
+                Join Our Campfire Group
               </CardTitle>
               <CardDescription className="text-pretty text-gray-600">
-                Stay up-to-date on meetups, collect check-in rewards, enter
-                contests/giveaways, and connect with the community.
+                Stay up-to-date on meetups, collect check-in rewards, and enter
+                giveaways on the official Pokémon GO social networking app.
               </CardDescription>
             </CardHeader>
           </Card>
@@ -219,7 +219,7 @@ export default function Landing() {
           </a>
         )}
         <a
-          href="https://pokemongolive.com/refer?code=8MC6XM6G6&source=InvitePage"
+          href="https://pokemongolive.com/refer?code=6B6RR3VQV&source=InvitePage"
           rel="noopener noreferrer"
           target="_blank"
           className="flex"
@@ -266,7 +266,7 @@ export default function Landing() {
               <CardDescription className="text-pretty text-gray-600">
                 Questions, feedback, partnership opportunities, or general
                 inquiries are all welcome! Submit this form and we'll e-mail you
-                back as soon as possible.
+                back ASAP.
               </CardDescription>
             </CardHeader>
           </Card>

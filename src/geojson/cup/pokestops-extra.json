@@ -870,6 +870,15 @@
       }
     },
     {
+      "id": "a625ba76a3073270845163148c49dc06.16",
+      "properties": {
+        "name": "Roundtree Community Pool",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true
+      }
+    },
+    {
       "id": "a71e5bbac79e42d0b4c0dbd0a3dc6e92.16",
       "properties": {
         "name": "De Anza Athletic Fields",

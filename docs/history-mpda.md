@@ -1,5 +1,58 @@
 # Memorial Park/De Anza College POI History
 
+## 10-6-2026
+
+### Power Spot Enabled Pool ✅
+
+- Abundant Life Assembly Of God (b07c979aee9a419b84141dfcb17e9dd2.23)
+- Amazing Vijay - Magician (cf952a982a40492581e2a96e91dd52fd.23)
+- American Builders Construction Group Cupertino (b7d3b822863045c697d2ce502c0ad7ad.23)
+- Bicycle Rack (29a0dba42c2d4cac8def7f6cf3751afb.16)
+- Bleachers at Memorial Park (307b4313a9f93e70a83c0b7f03fb3e93.16)
+- Bunny Stop (7721b502178030189962d6c764622c4c.16)
+- Central Bulletin Board (12d8560dcb1337d8b5a89672556df9be.16)
+- Church of Jesus Christ of Latter Day Saints (c77335e81ae042c4945572f0afbad5a7.23)
+- Cupertino Campsite - Ambitious (175d1af2e58a331f8abb6ce07ff50cf1.16)
+- Cupertino Campsite - Dedicated (6f59eb65897a323d91f2e73aea4e5bff.16)
+- Cupertino Campsite - Selfless (65e0fa0d18a4366ca7cdc49f8f954531.16)
+- Cupertino Campsite - Social (3a3f7ff956e43a5fb0538ca1b27afa13.16)
+- Cupertino Historical Society (a973a46573844e84bfe3f06280c06603.12)
+- Cupertino Senior Center (b48fbca59ffb46c89329b05dcc43498d.23)
+- De Anza College Bookstore (e90df635338a46c0a747366e66e159f5.23)
+- De Anza College Fujitsu Planetarium (1d8b7bfe6bb6442ebd397f99aa5454ba.23)
+- De Anza College Pool (420ff8ff17bb46fa87aa7fb04ab24122.23)
+- De Anza College Stadium & Track (05855a9f0064410c8795031ee5a50f9a.23)
+- De Anza Instrument Music Building (5ac385a466373981bc0c0a14d30762ef.16)
+- DeAnza College Carving (ad5bd7b034df4bd683a7e484b9494944.16)
+- East Cottage (bc9c6d92a7ab493e83f338d7a12a0458.16)
+- Evgo Electric Charging Station (d17612f095564a7485da8b27e375ecd3.23)
+- Faria CDC (8a120852051145a8b146d8b67e2ff2cc.23)
+- Glenbrook Main Fountain (20fcc9a406f54509836994e74315f1ec.16)
+- Home Of Christ IN Cupertino (fd7bd22db5a04fef8794dc783dccb711.23)
+- Lifetime Tennis (f0d0f13bcdf04299a8353029f0d5f3c0.23)
+- Lifetime Tennis Bulletin Board (0bd8617af5043ab7ad638c73aff5915d.16)
+- Made by TessS Embroidery (e038eb1f18bb418a96f5583f29421b78.23)
+- Magda Lattin Trinom (fd2196a55a8a4728b5783dfecd34c62e.11)
+- McClellan Terrace Apartments (b535f4f52bca4c2580005a4a094d253c.23)
+- Memorial Park (baaf219aafc744bdaed3bd74aeec80d8.23)
+- Memorial Park BBQ Spot B (0d65c50b28de3aafae85ad96e12cf811.16)
+- MLC Fountain B (6bc7dd2ac69541b1b5a8e801fadab86a.16)
+- Nina Piano Lessons (7111a6ff48a94bed86b53d5db95eb105.23)
+- Northeast Bulletin Board (0fc1bd1fcabe30a4add34d6f4aadecad.16)
+- NW Entrance to Memorial Park (49dd51f3fbd03847bd1bf7eb59d37638.16)
+- Panda Express (372e2f8b50d54ee7b98509f2f5aae5ce.23)
+- Payal Shah Yoga (a55ec5c9ecd74358b36729f9151a83e3.23)
+- Picnic and BBQ pit (901e917e9c4f3cf198d04b6bc5e32ef8.16)
+- Quad Mosaic - West (a51a102d011040e4967ef044b63e66d8.16)
+- Richard Kent Memorial (5713b98e832f48188235aa3c7d9293cd.16)
+- Shelf of Skulls (560f9f27a1444b8c8346d158317ecad0.16)
+- Shell (f8892be3cd144981ba72a8a2d742f11e.23)
+- Smoke-Free Memorial Park (ab73728e90553414907c188d0df79dde.16)
+- Stellar Motion (531d9c60fd7446068c0c9c154ec702e5.16)
+- The Commons Entrance Sign (2e41444e74343603bf7303d73dcde267.16)
+- Toyokawa Stone Lantern (31f847990f104b1bb6ac8027ec45ba4c.11)
+- Winrows Corporation (a54eaeaf58b84ee7b1d339fa4941394f.23)
+
 ## 9-30-2026
 
 ### PokeStops Created 🆕

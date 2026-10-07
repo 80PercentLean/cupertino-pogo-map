@@ -51,7 +51,7 @@ test.each([["false"], ["true"]])(
     }
 
     const campfireLink = await screen.findByRole("link", {
-      name: /Download the Niantic Campfire app/i,
+      name: /Download the Scopley Explore Campfire app/i,
     });
 
     expect(campfireLink).toBeInTheDocument();

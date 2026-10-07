@@ -110,7 +110,15 @@
         "isHidden": true
       }
     },
-
+    {
+      "id": "5ef271054b294dd794b45a34d138dd1e.16",
+      "properties": {
+        "name": "Lawn Bowling Green Sign",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "updated": "2026-10-04T08:00:00Z"
+      }
+    },
     {
       "id": "66f40613ed16376393325213a1e50176.16",
       "properties": {
@@ -357,6 +365,18 @@
         "type": "pokestop",
         "source": "Wayfarer",
         "isHidden": true
+      }
+    },
+    {
+      "id": "fccbd2e4313639b7b2c7a0a4ff0694ea.16",
+      "properties": {
+        "name": "1000 Kiely Apartments Community Center",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "isHidden": true,
+        "submitter": "80PercentLean",
+        "submitted": "2026-09-17T08:00:00Z",
+        "created": "2026-10-03T08:00:00Z"
       }
     },
     {
