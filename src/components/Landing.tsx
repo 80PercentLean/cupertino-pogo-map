@@ -219,7 +219,7 @@ export default function Landing() {
           </a>
         )}
         <a
-          href="https://pokemongolive.com/refer?code=8MC6XM6G6&source=InvitePage"
+          href="https://pokemongolive.com/refer?code=6B6RR3VQV&source=InvitePage"
           rel="noopener noreferrer"
           target="_blank"
           className="flex"
