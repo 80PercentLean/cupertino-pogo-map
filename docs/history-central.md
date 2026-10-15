@@ -1,5 +1,11 @@
 # Central Park POI History
 
+## 10-15-2026
+
+### Power Spots Created 🆕
+
+- Pickleball Court 5 at Central Park (258eeb6cf6f736599699f0f2f7523313.16)
+
 ## 10-5-2026
 
 ### PokeStops Created

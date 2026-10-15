@@ -1,5 +1,11 @@
 # Memorial Park/De Anza College POI History
 
+## 10-15-2026
+
+### PokeStops Created 🆕
+
+- Glenbrook Garden Resting Area (5561b4790bfb38b1bcaca69733b09ae4.16)
+
 ## 10-6-2026
 
 ### Power Spot Enabled Pool ✅
