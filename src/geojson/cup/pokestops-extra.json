@@ -441,6 +441,17 @@
       }
     },
     {
+      "id": "5561b4790bfb38b1bcaca69733b09ae4.16",
+      "properties": {
+        "name": "Glenbrook Garden Resting Area",
+        "type": "pokestop",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2026-08-10T08:00:00Z",
+        "created": "2026-10-11T08:00:00Z"
+      }
+    },
+    {
       "id": "56a1bc91673947848c37bd38ec5ffac0.16",
       "properties": {
         "name": "Memorial Park Playground",
