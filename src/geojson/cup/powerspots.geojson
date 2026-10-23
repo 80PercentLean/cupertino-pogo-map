@@ -1943,7 +1943,28 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fb44d",
-        "isHidden": true
+        "isHidden": true,
+        "removed": "2026-10-22T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-122.038659, 37.32686],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "7111a6ff48a94bed86b53d5db95eb105.23",
+      "properties": {
+        "checked": "2026-10-15T08:00:00Z",
+        "name": "Nina Piano Lessons",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fb44d",
+        "removed": "2026-10-22T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.038659, 37.32686],
@@ -2338,7 +2359,28 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fb453",
-        "isHidden": true
+        "isHidden": true,
+        "removed": "2026-10-22T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-122.038787, 37.320191],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "8a120852051145a8b146d8b67e2ff2cc.23",
+      "properties": {
+        "checked": "2026-10-15T08:00:00Z",
+        "name": "Faria CDC",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fb453",
+        "removed": "2026-10-22T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.038787, 37.320191],
@@ -2844,7 +2886,28 @@
         "source": "Wayfarer",
         "isCommunityContributed": false,
         "l14Id": "808fb453",
-        "isHidden": true
+        "isHidden": true,
+        "removed": "2026-10-22T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-122.040633, 37.321685],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "a54eaeaf58b84ee7b1d339fa4941394f.23",
+      "properties": {
+        "checked": "2026-10-15T08:00:00Z",
+        "name": "Winrows Corporation",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fb453",
+        "removed": "2026-10-22T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.040633, 37.321685],
@@ -2863,7 +2926,28 @@
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fb451"
+        "l14Id": "808fb451",
+        "removed": "2026-10-22T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-122.048149, 37.316145],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "a55ec5c9ecd74358b36729f9151a83e3.23",
+      "properties": {
+        "checked": "2026-10-15T08:00:00Z",
+        "name": "Payal Shah Yoga",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fb451",
+        "removed": "2026-10-22T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.048149, 37.316145],
@@ -3756,7 +3840,28 @@
         "marker-symbol": "circle",
         "source": "Wayfarer",
         "isCommunityContributed": false,
-        "l14Id": "808fb44d"
+        "l14Id": "808fb44d",
+        "removed": "2026-10-22T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-122.039552, 37.323657],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "d17612f095564a7485da8b27e375ecd3.23",
+      "properties": {
+        "checked": "2026-10-15T08:00:00Z",
+        "name": "Evgo Electric Charging Station",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fb44d",
+        "removed": "2026-10-22T08:00:00Z"
       },
       "geometry": {
         "coordinates": [-122.039552, 37.323657],
