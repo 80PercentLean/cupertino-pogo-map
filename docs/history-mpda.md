@@ -1,5 +1,31 @@
 # Memorial Park/De Anza College POI History
 
+## 10-26-2026
+
+### PokeStops Upgraded To Gym 🆕
+
+- De Anza College Beach Gate (534d292037c9374a9394be976e3e3e2b.16)
+
+### PokeStops Created 🆕
+
+- Cupertino Bike Route Sign to De Anza College (2829d03845c83665bc8e050c803420ea.16)
+- Point Reyes Patio (7eea578db8813a1ea76aca3378e3dc3c.16)
+- McClellan Terrace Map (97dff385c141381690f67396793f5a97.16)
+- Nature Benches (aecb59dfb4783950a6f37b4d7ede2487.16)
+- McClellan Terrace Playground (ccd2ddb073673b70891fa88a3e7b9c6c.16)
+- McClellan Terrace Pool (f4a39e0ae6153a499fd5ab2803845a9f.16)
+- Cupertino Bike Route Sign (e65ea275ac1b378f99652cc40a5b34d1.16)
+
+## 10-22-2026
+
+### Power Spots Removed 🗑️
+
+- Nina Piano Lessons (7111a6ff48a94bed86b53d5db95eb105.23)
+- Faria CDC (8a120852051145a8b146d8b67e2ff2cc.23)
+- Winrows Corporation (a54eaeaf58b84ee7b1d339fa4941394f.23)
+- Payal Shah Yoga (a55ec5c9ecd74358b36729f9151a83e3.23)
+- Evgo Electric Charging Station (d17612f095564a7485da8b27e375ecd3.23)
+
 ## 10-15-2026
 
 ### PokeStops Created 🆕
