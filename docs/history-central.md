@@ -1,5 +1,15 @@
 # Central Park POI History
 
+## 11-04-2026
+
+### PokeStops Created 🆕
+
+- Central Park Picnic Area – Santa Clara (3386b41992053171bd5f2c59b1b92adc.16)
+
+### Power Spots Created 🆕
+
+- Tennis Court 9 at Central Park (b2aecaf159d73b30ab1260e274260f66.16)
+
 ## 10-15-2026
 
 ### Power Spots Created 🆕
