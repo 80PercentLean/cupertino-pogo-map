@@ -1,5 +1,15 @@
 # Memorial Park/De Anza College POI History
 
+# 11-03-2026
+
+### PokeStops Upgraded To Gym 🆕
+
+- Westmont Park Villas (1f28ac6195203263b9c2ac04cadc3d16.16)
+
+### PokeStops Created 🆕
+
+- Cupertino Bike Route - Blackberry Farm (5704412655e838988f538c13753ecf77.16)
+
 ## 10-26-2026
 
 ### PokeStops Upgraded To Gym 🆕
