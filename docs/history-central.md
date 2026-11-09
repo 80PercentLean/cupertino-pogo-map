@@ -1,5 +1,19 @@
 # Central Park POI History
 
+## 11-09-2026
+
+### PokeStops Upgraded To Gym 🆕
+
+- West Tennis Courts Rules Sign at Central Park (1cdc415a64ce46f18beb536fa33741e2.16)
+
+### Power Spots Converted To PokeStops 🆕
+
+- Freedom Tree Central Park (dfb5f11fde184aec9238f80d8cf468c0.16)
+
+### Gyms Removed 🗑️
+
+- 50th Anniversary Of Second World War (1a38ef12079349a88de4e4f919f3f20c.16)
+
 ## 11-05-2026
 
 ### Power Spot Enabled Pool ✅

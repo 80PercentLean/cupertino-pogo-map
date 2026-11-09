@@ -1,6 +1,37 @@
 {
   "features": [
     {
+      "id": "1a38ef12079349a88de4e4f919f3f20c.16",
+      "properties": {
+        "checked": "2026-11-05T08:00:00Z",
+        "name": "50th Anniversary Of Second World War",
+        "type": "gym",
+        "removed": "2026-11-07T08:00:00Z",
+        "marker-color": "#ff2600",
+        "marker-size": "large",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": true,
+        "l14Id": "808fca6f",
+        "photo": "1a38ef12079349a88de4e4f919f3f20c.16.jpg"
+      },
+      "geometry": {
+        "coordinates": [-121.977494, 37.342037],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "1cdc415a64ce46f18beb536fa33741e2.16",
+      "properties": {
+        "name": "West Tennis Courts Rules Sign at Central Park",
+        "type": "gym",
+        "source": "Wayfarer",
+        "updated": "2026-08-09T08:00:00Z",
+        "converted": "2026-11-07T08:00:00Z"
+      }
+    },
+    {
       "id": "200a432d91be4f0db989c206d5ee63d9.12",
       "properties": {
         "name": "Santa Clara Library Statue",
