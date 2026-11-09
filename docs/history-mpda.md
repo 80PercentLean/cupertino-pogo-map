@@ -1,5 +1,96 @@
 # Memorial Park/De Anza College POI History
 
+## 11-09-2026
+
+### Power Spots Created 🆕
+
+- Balls of Fun (ef97894222ef30d59b30c06f104bbb4a.16)
+
+## 11-05-2026
+
+### Power Spot Enabled Pool ✅
+
+- Abundant Life Assembly Of God (b07c979aee9a419b84141dfcb17e9dd2.23)
+- Aidens Gazebo at Memorial Park (83abb8e46af44228a9b285ddbc18fc68.16)
+- Amazing Vijay - Magician (cf952a982a40492581e2a96e91dd52fd.23)
+- Bicycle Rack (29a0dba42c2d4cac8def7f6cf3751afb.16)
+- Bleachers at Memorial Park (307b4313a9f93e70a83c0b7f03fb3e93.16)
+- BUILD 33 (6d451b8126474f96bfa4d153ebc80857.23)
+- California History Center (3c19000eec33403e915af9b29348ec88.23)
+- Church of Jesus Christ of Latter Day Saints (c77335e81ae042c4945572f0afbad5a7.23)
+- Cupertino Campsite - Ambitious (175d1af2e58a331f8abb6ce07ff50cf1.16)
+- Cupertino Campsite - Dedicated (6f59eb65897a323d91f2e73aea4e5bff.16)
+- Cupertino Campsite - Selfless (65e0fa0d18a4366ca7cdc49f8f954531.16)
+- Cupertino Campsite - Social (3a3f7ff956e43a5fb0538ca1b27afa13.16)
+- Cupertino Historical Society (a973a46573844e84bfe3f06280c06603.12)
+- De Anza College Plaque (c3adc001297c49458120c74dcfeb42dd.16)
+- De Anza College Stadium & Track (05855a9f0064410c8795031ee5a50f9a.23)
+- De Anza College Stone (e89c02c00b574b2e98f6fac7f2d40e34.16)
+- De Anza Expedition (e168c5fe6bbe4d00af77d88a26bef382.16)
+- De Anza Instrument Music Building (5ac385a466373981bc0c0a14d30762ef.16)
+- Dream Boat (09373f8c231f4e0fb8b4f0e566c200bb.16)
+- Genji Sushi (9b7e64790ff4472ab6acc815cfe09b6d.23)
+- Glenbrook Main Fountain (20fcc9a406f54509836994e74315f1ec.16)
+- Henna Bash (902a64f8f1894d8c9f3960920c9f607e.23)
+- Home Of Christ IN Cupertino (fd7bd22db5a04fef8794dc783dccb711.23)
+- Ike''s Love & Sandwiches (80a081afff234c4ba3dea3a04c8f26ac.23)
+- In memory of Virginia J. Logan (b30f61b279c93f489023653df85f8cc7.16)
+- La Vita É Una Fontana (9bc3e5e15754404da54b3d9d120db8d8.11)
+- Lifetime Tennis (f0d0f13bcdf04299a8353029f0d5f3c0.23)
+- Lifetime Tennis Bulletin Board (0bd8617af5043ab7ad638c73aff5915d.16)
+- Made by TessS Embroidery (e038eb1f18bb418a96f5583f29421b78.23)
+- Magda Lattin Trinom (fd2196a55a8a4728b5783dfecd34c62e.11)
+- McClellan Terrace Apartments (b535f4f52bca4c2580005a4a094d253c.23)
+- Memorial Park (baaf219aafc744bdaed3bd74aeec80d8.23)
+- Memorial Park BBQ Spot B (0d65c50b28de3aafae85ad96e12cf811.16)
+- Memorial Park Picnic Area Sign (ad00c2d425553236b3e3dfb3b5c35367.16)
+- MLC Fountain B (6bc7dd2ac69541b1b5a8e801fadab86a.16)
+- Northeast Bulletin Board (0fc1bd1fcabe30a4add34d6f4aadecad.16)
+- NW Entrance to Memorial Park (49dd51f3fbd03847bd1bf7eb59d37638.16)
+- Quad Mosaic - West (a51a102d011040e4967ef044b63e66d8.16)
+- Shelf of Skulls (560f9f27a1444b8c8346d158317ecad0.16)
+- Shell (f8892be3cd144981ba72a8a2d742f11e.23)
+- The Commons Entrance Sign (2e41444e74343603bf7303d73dcde267.16)
+- Toyokawa Stone Lantern (31f847990f104b1bb6ac8027ec45ba4c.11)
+- Turtle Sculpture (e6caf1f03e3b438d9efab4e86ceac208.11)
+- Two as One (47c77e0e74b44eaca46574a503484946.12)
+
+## 11-04-2026
+
+### PokeStops Upgraded To Gym 🆕
+
+- Westmont Park Villas (1f28ac6195203263b9c2ac04cadc3d16.16)
+
+### PokeStops Created 🆕
+
+- Cupertino Bike Route - Blackberry Farm (5704412655e838988f538c13753ecf77.16)
+
+## 10-26-2026
+
+### PokeStops Upgraded To Gym 🆕
+
+- De Anza College Beach Gate (534d292037c9374a9394be976e3e3e2b.16)
+
+### PokeStops Created 🆕
+
+- Cupertino Bike Route Sign to De Anza College (2829d03845c83665bc8e050c803420ea.16)
+- Point Reyes Patio (7eea578db8813a1ea76aca3378e3dc3c.16)
+- McClellan Terrace Map (97dff385c141381690f67396793f5a97.16)
+- Nature Benches (aecb59dfb4783950a6f37b4d7ede2487.16)
+- McClellan Terrace Playground (ccd2ddb073673b70891fa88a3e7b9c6c.16)
+- McClellan Terrace Pool (f4a39e0ae6153a499fd5ab2803845a9f.16)
+- Cupertino Bike Route Sign (e65ea275ac1b378f99652cc40a5b34d1.16)
+
+## 10-22-2026
+
+### Power Spots Removed 🗑️
+
+- Nina Piano Lessons (7111a6ff48a94bed86b53d5db95eb105.23)
+- Faria CDC (8a120852051145a8b146d8b67e2ff2cc.23)
+- Winrows Corporation (a54eaeaf58b84ee7b1d339fa4941394f.23)
+- Payal Shah Yoga (a55ec5c9ecd74358b36729f9151a83e3.23)
+- Evgo Electric Charging Station (d17612f095564a7485da8b27e375ecd3.23)
+
 ## 10-15-2026
 
 ### PokeStops Created 🆕

@@ -1,5 +1,67 @@
 # Central Park POI History
 
+## 11-09-2026
+
+### PokeStops Upgraded To Gym 🆕
+
+- West Tennis Courts Rules Sign at Central Park (1cdc415a64ce46f18beb536fa33741e2.16)
+
+### Power Spots Converted To PokeStops 🆕
+
+- Freedom Tree Central Park (dfb5f11fde184aec9238f80d8cf468c0.16)
+
+### Gyms Removed 🗑️
+
+- 50th Anniversary Of Second World War (1a38ef12079349a88de4e4f919f3f20c.16)
+
+## 11-05-2026
+
+### Power Spot Enabled Pool ✅
+
+- Anytime Fitness (e32498c5784646c696a811121c965c14.23)
+- ARCO (eb869eefe48449749d9cf13115f38b36.23)
+- Basketball Courts at Central Park (32f738dc2e2e400bba6f81a3aef130fd.16)
+- Central Park Amphitheater (2f4aa8f8327e4e6992ac3be92d2c23a5.23)
+- Central Park Field Flagpole (f12d35072e9634448a35fefb3376fb6c.16)
+- Central Park Field Scoreboard (259d746144e63df4bfb166707e78dcf7.16)
+- Central Park Pond (0df134f5a6e839a9a8c1b27789a19a33.16)
+- Challenge (8fd39662012946029a0cfb5b4e3de930.16)
+- Chess board bench (1ddc96aa9cc03bcd9d09d78af204fbf3.16)
+- Edmond D Pickett Jr. Memorial (9ab541eb79f84a27a2d363832026207b.16)
+- Ganesha Indian Cuisine Sweets & Catering (7a5f0ec5a1974b0fb59b427eb3b20b11.23)
+- Lifetime Activities - Santa Clara (b3df68e1cdb342628bbd44e9d56c8f52.23)
+- Outdoor Plaza at the Community Recreation Center (4b260aed8a2c3c1b8a2391f352cc1e0e.16)
+- Passage (808219ce031d4232aecdaf6861088c52.16)
+- Reading Across Boundaries: Page (cf4d79a0983b4fae8caa4b45e654d45f.16)
+- Ross Dress for Less (aa4ca2addade47fe89fdae10a40269be.23)
+- Santa Clara Campsite - Empowering (96097a315972388f8fa7875aa67492b1.16)
+- Santa Clara Campsite - Genuine (76e7bb0095d1375c8fbc9c4383c6bf94.16)
+- Santa Clara Center Park Bridge (34378a83370241018d1ee79d241dd25f.16)
+- Santa Clara Central Park Bleachers (7095e2aef1d338c293647a9e38748baf.16)
+- Santa Clara Central Park Directional Information Sign (4af53920f8ad3550873fdfc4355abeb2.16)
+- Santa Clara Central Park Library Ceiling Artwork (c4a6136297513f5b87ad3adeb7f7c763.16)
+- Santa Clara Central Park Outdoor Gym (d2b8b4698dda35fea35b255d0936c6dd.16)
+- Santa Clara Central Park Picnic Area (38df85549710366cbcdc394bd983f186.16)
+- Santa Clara Central Park Picnic Area (a434d900f631321ea3d4996535a6b36e.16)
+- Santa Clara Tennis Center (d58b402148b340e69a42680e71656854.23)
+- Santa Clara Veterans Memorial (9a9639493d6a459994fae74b7830dd61.11)
+- St Justin’s Parish Information Board (13af55b7fd443ab59f1561b68b78c614.16)
+- Stone Toad (73bf1a6c16ba4872866fbdd151f4c452.16)
+- Taco Bell (5b661dcf54d34c658c410f2b850df826.23)
+- Tennis Court 10 at Central Park (cf797d64d3e5392eb79bbc9384a3465f.16)
+- Veterans Memorial Name Sign (0a02291d06c832178530389cf99936b7.16)
+- Woodsborough Map (cf78b6b11d6f380ca1f7cda63e8c2cd0.16)
+
+## 11-04-2026
+
+### PokeStops Created 🆕
+
+- Central Park Picnic Area – Santa Clara (3386b41992053171bd5f2c59b1b92adc.16)
+
+### Power Spots Created 🆕
+
+- Tennis Court 9 at Central Park (b2aecaf159d73b30ab1260e274260f66.16)
+
 ## 10-15-2026
 
 ### Power Spots Created 🆕
