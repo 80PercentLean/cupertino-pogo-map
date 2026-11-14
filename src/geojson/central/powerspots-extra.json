@@ -176,6 +176,26 @@
       }
     },
     {
+      "id": "7a5f0ec5a1974b0fb59b427eb3b20b11.23",
+      "properties": {
+        "checked": "2026-11-08T08:00:00Z",
+        "name": "Ganesha Indian Cuisine Sweets & Catering",
+        "type": "powerspot",
+        "marker-color": "#ff40ff",
+        "marker-size": "small",
+        "marker-symbol": "circle",
+        "source": "Wayfarer",
+        "isCommunityContributed": false,
+        "l14Id": "808fca6f",
+        "removed": "2026-11-10T08:00:00Z"
+      },
+      "geometry": {
+        "coordinates": [-121.979055, 37.345812],
+        "type": "Point"
+      },
+      "type": "Feature"
+    },
+    {
       "id": "7f6bc9394c8a426aafd1e8b0d9fe2f72.23",
       "properties": {
         "name": "Jehovah's Witnesses",
@@ -223,6 +243,17 @@
         "submitter": "80PercentLean",
         "submitted": "2026-07-29T08:00:00Z",
         "created": "2026-07-21T08:00:00Z"
+      }
+    },
+    {
+      "id": "9de89675a74f37ba867dbc43636b19ea.16",
+      "properties": {
+        "name": "Lifetime Activities West Bulletin Board",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2026-11-03T08:00:00Z",
+        "created": "2026-11-11T08:00:00Z"
       }
     },
     {
