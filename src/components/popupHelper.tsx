@@ -134,6 +134,7 @@ export const createBtnNoCaPoiZone = (
  * @param shareUrl The URL to share, otherwise it will default to the current page URL
  * @param modifierBtns Modifier buttons to use in the popup
  * @param type Type that determines share text
+ * @param subtype Subtype that can alter some functionality of the popup
  * @param renderHtml Set description HTML directly
  * @returns The content of the popup as a string
  */
@@ -148,6 +149,7 @@ export const createPopupContent = (
   shareUrl?: string,
   modifierBtns?: ModifierBtns,
   type?: CProperties["type"],
+  subtype?: CProperties["subtype"],
   renderHtml?: boolean,
 ) => {
   let description;
@@ -217,21 +219,23 @@ export const createPopupContent = (
             </>
           )}
         <div className="ml-auto flex gap-2">
-          <Button
-            asChild
-            size="icon"
-            title="Directions via Google Maps"
-            className="flex cursor-pointer flex-col gap-1 rounded-sm text-white! hover:text-emerald-500!"
-          >
-            <a
-              href={`https://maps.google.com/maps?q=${position[0]},${position[1]}`}
-              rel="noopener noreferrer"
-              target="_blank"
+          {subtype !== "closed" && (
+            <Button
+              asChild
+              size="icon"
+              title="Directions via Google Maps"
+              className="flex cursor-pointer flex-col gap-1 rounded-sm text-white! hover:text-emerald-500!"
             >
-              <Navigation2 />
-              <span className="text-[8px] uppercase">Nav</span>
-            </a>
-          </Button>
+              <a
+                href={`https://maps.google.com/maps?q=${position[0]},${position[1]}`}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Navigation2 />
+                <span className="text-[8px] uppercase">Nav</span>
+              </a>
+            </Button>
+          )}
           <Button
             size="icon"
             title="Share"

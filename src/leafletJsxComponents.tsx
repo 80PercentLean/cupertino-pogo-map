@@ -42,6 +42,37 @@ export function OrangeSq({ className }: { className?: string }) {
   );
 }
 
+export function ParkingClosed(
+  { className, isMarker }: { className?: string; isMarker?: boolean } = {
+    isMarker: true,
+  },
+) {
+  return (
+    <div
+      className={cn("relative inline-block text-xl text-shadow-sm", className)}
+      data-poitype={isMarker ? "parking" : undefined}
+    >
+      {emojiParking}
+      <div className="absolute top-0 -right-1 flex h-3 w-3 items-center justify-center rounded-full bg-red-600 text-xs leading-none font-bold text-white ring-1 ring-black">
+        <span className="-translate-y-px">×</span>
+      </div>
+    </div>
+  );
+}
+
+export function ParkingClosedHighlighted() {
+  return (
+    <div className="relative h-[26px] w-[26px]">
+      <div
+        className={`pointer-events-none absolute top-1/2 left-1/2 h-9 w-9 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white bg-[${ICON_HIGHLIGHT_COLOR}]/33`}
+      ></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none">
+        <ParkingClosed />
+      </div>
+    </div>
+  );
+}
+
 export function ParkingWarn(
   { className, isMarker }: { className?: string; isMarker?: boolean } = {
     isMarker: true,

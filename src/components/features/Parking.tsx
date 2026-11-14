@@ -2,6 +2,8 @@ import { parkingJson } from "@/geojson/data";
 
 import {
   iconParking,
+  iconParkingClosed,
+  iconParkingClosedHighlighted,
   iconParkingHighlighted,
   iconParkingWarn,
   iconParkingWarnHighlighted,
@@ -18,6 +20,8 @@ export default function Parking() {
       features={parkingJson.features}
       icon={(_, subtype) => {
         switch (subtype) {
+          case "closed":
+            return iconParkingClosed;
           case "conditionally-free":
             return iconParkingWarn;
           default:
@@ -26,6 +30,8 @@ export default function Parking() {
       }}
       iconHighlighted={(_, subtype) => {
         switch (subtype) {
+          case "closed":
+            return iconParkingClosedHighlighted;
           case "conditionally-free":
             return iconParkingWarnHighlighted;
           default:
@@ -34,10 +40,14 @@ export default function Parking() {
       }}
       renderHtml={true}
       subtitle={(_, { subtype } = {}) => {
-        if (subtype === "conditionally-free") {
-          return "Conditionally Free Parking";
+        switch (subtype) {
+          case "closed":
+            return "Closed Parking";
+          case "conditionally-free":
+            return "Conditionally Free Parking";
+          default:
+            return "Free Parking";
         }
-        return "Free Parking";
       }}
       type="parking"
     />

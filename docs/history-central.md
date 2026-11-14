@@ -1,5 +1,16 @@
 # Central Park POI History
 
+## 11-13-2026
+
+### PokeStops Created 🆕
+
+- Santa Clara Lawn Bowling Green (b2bcb02bea8335b7b058848ace9d6fe9.16)
+- Kiely Pond (a75e2b313a1739d4a0fb868d927d55f4.16)
+
+### Power Spots Created 🆕
+
+- Lifetime Activities West Bulletin Board (9de89675a74f37ba867dbc43636b19ea.16)
+
 ## 11-09-2026
 
 ### PokeStops Upgraded To Gym 🆕

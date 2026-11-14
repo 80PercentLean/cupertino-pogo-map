@@ -186,6 +186,7 @@ export default function PlacedMarker({ i }: Props) {
                 noPowerSpotZone: btnNoPowerSpotZone,
               },
               undefined,
+              undefined,
               true,
             )}
           </Popup>

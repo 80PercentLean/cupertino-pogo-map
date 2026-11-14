@@ -281,6 +281,17 @@
       }
     },
     {
+      "id": "b2bcb02bea8335b7b058848ace9d6fe9.16",
+      "properties": {
+        "name": "Santa Clara Lawn Bowling Green",
+        "type": "powerspot",
+        "source": "Wayfarer",
+        "submitter": "80PercentLean",
+        "submitted": "2026-10-03T08:00:00Z",
+        "created": "2026-11-13T08:00:00Z"
+      }
+    },
+    {
       "id": "b2f9c365dfaa35b5b34519186cede210.16",
       "properties": {
         "name": "Bay Area Pizza",
