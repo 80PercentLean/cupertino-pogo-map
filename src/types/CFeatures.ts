@@ -85,6 +85,7 @@ export interface CProperties {
   /** Subtype of a POI. */
   subtype:
     | "all-binary"
+    | "closed"
     | "conditionally-free"
     | "drink"
     | "food"

@@ -25,6 +25,8 @@ import {
   IconEmojiHighlighted,
   MeetupSpot,
   OrangeSq,
+  ParkingClosed,
+  ParkingClosedHighlighted,
   ParkingWarn,
   ParkingWarnHighlighted,
 } from "./leafletJsxComponents";
@@ -262,6 +264,19 @@ export const iconParkingHighlighted = divIcon({
   html: renderToString(
     <IconEmojiHighlighted>{emojiParking}</IconEmojiHighlighted>,
   ),
+});
+
+/** Leaflet icon for closed parking. */
+export const iconParkingClosed = divIcon({
+  className: "",
+  html: renderToString(<ParkingClosed />),
+  iconAnchor: [10, 10],
+});
+
+export const iconParkingClosedHighlighted = divIcon({
+  className: "",
+  iconAnchor: [10, 10],
+  html: renderToString(<ParkingClosedHighlighted />),
 });
 
 /** Leaflet icon for parking with restricted conditions. */

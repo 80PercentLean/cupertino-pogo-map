@@ -123,10 +123,10 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Community Recreation Center Parking Lot",
+        "name": "Community Recreation Center Parking Lot 🚫",
         "type": "parking",
-        "subtype": "free",
-        "desc": "<p>Free parking during Central Park's open hours.</p><p>This is a great parking lot for Raid Days & Raid Hours as it is close to the Community Recreation Center meetup spot where our guided Raid groups start.</p>",
+        "subtype": "closed",
+        "desc": "<p class=\"popup-txt-alert\">This parking lot will be closed for another event happening at the Commmunity Recreation Center!</p><p>Please use other parking options.</p>",
         "marker-color": "#00f",
         "marker-size": "medium",
         "marker-symbol": "circle"

@@ -285,6 +285,7 @@ export default function FeatureMarker({
     undefined,
     modifierBtns,
     type,
+    subtype,
     renderHtml,
   );
 

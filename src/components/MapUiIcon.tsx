@@ -14,7 +14,7 @@ import {
   imgPowerspot,
   imgShowcase,
 } from "@/leafletImgs";
-import { ParkingWarn } from "@/leafletJsxComponents";
+import { ParkingClosed, ParkingWarn } from "@/leafletJsxComponents";
 import {
   ICON_GYM_COLOR,
   ICON_POKESTOP_COLOR,
@@ -106,7 +106,9 @@ export default function UiMapIcon({
   }
 
   if (type === "parking") {
-    if (subtype === "conditionally-free") {
+    if (subtype === "closed") {
+      return <ParkingClosed isMarker={false} className={className} />;
+    } else if (subtype === "conditionally-free") {
       return <ParkingWarn isMarker={false} className={className} />;
     }
 
